@@ -10,11 +10,15 @@ One of the biggest benefits with modern data lakehouse architectures is that wit
 Fortunately, of the Synapse Pool types, Spark Pools and Data Explorer Pools both come with built-in mechanisms for auto-pausing their compute clusters when they are not in use (after a timeout period).
 
 ![Spark pause settings](/images/spark-pause-settings.png)
+*Figure 1 - Spark pool pause settings*
+
 This capability is neither earth shatteringly new nor unexpected, and something that Databricks has provided for some time. Of the two Data Exploration & Data Warehousing Pool types, Synapse Serverless Pool (otherwise know as the built-in Pool) by its very definition does not incur compute charges when it is not running.
 
 Therefore this leaves us with only dedicated SQL Pool to worry about and this is where our problems begin.
 
-Dedicated Pool no pause capability
+![Dedicated Pool no pause capability](/images/dedicatednopause.png)
+*Figure 2 - Dedicated Pool no pause capability*
+
 If you implement dedicated SQL Pool in your organisation, it probably won’t take you too long to realise that you do not have any automatic pause settings as your CEO starts to complain about Azure costs and you seek to optimise your environment. Bewilderingly perhaps, Microsoft have neglected to offer us this capability despite all the other Pool types providing cost effective compute options when not in use. Fortunately Microsoft provide a manual pause option allowing us to write our own pause and resume functionality, and we can turn to PowerShell Az or the Azure CLI to write some of this code.
 
 The problem should be broken down into two specific concerns and the first (and arguably most important) is to write the suspend and resume scripts. For each we will parameterise so that the script will be reusable for multiple instances of synapse across multiple subscriptions.
