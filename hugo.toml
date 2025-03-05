@@ -1,0 +1,23 @@
+baseURL = 'https://blog.retracement.me/'
+languageCode = 'en-us'
+title = 'tenbulls blog'
+theme = 'not-much'
+
+# Controls the navigation
+[[menu.main]]
+  identifier = "posts"
+  name = "posts"
+  title = "Posts"
+  url = "/posts"
+
+[[menu.main]]
+  identifier = "home"
+  name = "home"
+  title = "home"
+  url = "https://blog.retracement.me"
+  
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  title = "about"
+  url = "/"
