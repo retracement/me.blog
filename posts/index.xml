@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on tenbulls blog</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://blog.retracement.me/posts/</link>
     <description>Recent content in Posts on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Mar 2025 21:15:14 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.retracement.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Is My Azure Solution Running Slow</title>
-      <link>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
+      <link>https://blog.retracement.me/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
       <pubDate>Wed, 05 Mar 2025 21:15:14 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
+      <guid>https://blog.retracement.me/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
       <description>&lt;p&gt;As an Azure data professional, one of the most common questions you are most likely to hear from users is “why do cloud solutions often appear to have performance issues post-deployment“. This perception is particularly common for Azure migration projects moving on-premises into the cloud, but do these observations really match reality or are they misguided?&lt;/p&gt;&#xA;&lt;p&gt;In this introductory article, we will take a look into some of the reasons why Azure cloud-based solutions are often seen to be problematic, or in some cases, are problematic, and provide some ideas to avoid these negative perceptions in your cloud environment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Future Changes</title>
-      <link>http://localhost:1313/posts/2025/02/01/future-changes/</link>
+      <link>https://blog.retracement.me/posts/2025/02/01/future-changes/</link>
       <pubDate>Sat, 01 Feb 2025 20:20:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/02/01/future-changes/</guid>
+      <guid>https://blog.retracement.me/posts/2025/02/01/future-changes/</guid>
       <description>&lt;p&gt;Just a quick note to give an update on the future changes for this blog. Many long time readers out there might realise that what you are reading today no longer exists under its original domain and currently lives under its default WordPress domain namespace. Given that this blog has existed since 2009 and been linked to from a variety of popular sources and published materials, this is a big shift.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating Pause of Synapse Dedicated Pool Part I</title>
-      <link>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</link>
+      <link>https://blog.retracement.me/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</link>
       <pubDate>Sun, 18 Jun 2023 20:25:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</guid>
+      <guid>https://blog.retracement.me/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</guid>
       <description>&lt;p&gt;Synapse Analytics is an enterprise analytics engine that offers multiple (compute) Pool types that you can use for varying data processing and analytics requirements. Each Pool type has a slightly different cost model based upon its architecture, capabilities, and consumption patterns, but if we over simplify things, we can break these cost considerations down to compute costs and (in some cases) storage costs.&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits with modern data lakehouse architectures is that with the separation of compute and storage comes the ability to reduce costs when compute is not needed, and most importantly, not running.&lt;/p&gt;</description>
     </item>
   </channel>
