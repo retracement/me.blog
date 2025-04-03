@@ -1,4 +1,4 @@
-baseURL = 'https://blog.retracement.me/'
+baseURL = 'https://tenbulls.co.uk'
 languageCode = 'en-us'
 title = 'tenbulls blog'
 theme = 'not-much'
@@ -14,7 +14,7 @@ theme = 'not-much'
   identifier = "home"
   name = "home"
   title = "home"
-  url = "https://blog.retracement.me"
+  url = "https://tenbulls.co.uk"
   
 [[menu.main]]
   identifier = "about"
