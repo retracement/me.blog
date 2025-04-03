@@ -6,15 +6,9 @@
     <description>Recent content on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Mar 2025 21:15:14 +0000</lastBuildDate>
+    <copyright>Copyright © 2025 Mark Broadbent</copyright>
+    <lastBuildDate>Sat, 01 Feb 2025 20:20:43 +0000</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Why Is My Azure Solution Running Slow</title>
-      <link>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
-      <pubDate>Wed, 05 Mar 2025 21:15:14 +0000</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
-      <description>&lt;p&gt;As an Azure data professional, one of the most common questions you are most likely to hear from users is “why do cloud solutions often appear to have performance issues post-deployment“. This perception is particularly common for Azure migration projects moving on-premises into the cloud, but do these observations really match reality or are they misguided?&lt;/p&gt;&#xA;&lt;p&gt;In this introductory article, we will take a look into some of the reasons why Azure cloud-based solutions are often seen to be problematic, or in some cases, are problematic, and provide some ideas to avoid these negative perceptions in your cloud environment.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Future Changes</title>
       <link>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</link>
@@ -28,6 +22,27 @@
       <pubDate>Sun, 18 Jun 2023 20:25:00 +0000</pubDate>
       <guid>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</guid>
       <description>&lt;p&gt;Synapse Analytics is an enterprise analytics engine that offers multiple (compute) Pool types that you can use for varying data processing and analytics requirements. Each Pool type has a slightly different cost model based upon its architecture, capabilities, and consumption patterns, but if we over simplify things, we can break these cost considerations down to compute costs and (in some cases) storage costs.&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits with modern data lakehouse architectures is that with the separation of compute and storage comes the ability to reduce costs when compute is not needed, and most importantly, not running.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why Is My Azure Solution Running Slow</title>
+      <link>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
+      <pubDate>Tue, 31 Jan 2023 15:36:14 +0000</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
+      <description>&lt;p&gt;As an Azure data professional, one of the most common questions you are most likely to hear from users is “why do cloud solutions often appear to have performance issues post-deployment“. This perception is particularly common for Azure migration projects moving on-premises into the cloud, but do these observations really match reality or are they misguided?&lt;/p&gt;&#xA;&lt;p&gt;In this introductory article, we will take a look into some of the reasons why Azure cloud-based solutions are often seen to be problematic, or in some cases, are problematic, and provide some ideas to avoid these negative perceptions in your cloud environment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Encouraging Diversity in Leadership Roles</title>
+      <link>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</link>
+      <pubDate>Thu, 01 Sep 2022 21:19:27 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</guid>
+      <description>&lt;p&gt;Over 33 years ago I started my journey working in Information Technology (I.T.), and it is probably fair to say that I have worked my way slowly up from the absolute bottom of the pile to the modest heights of today.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem-with-it&#34;&gt;The problem with I.T.&lt;/h1&gt;&#xA;&lt;p&gt;As I look back over the years I cannot help but feel a sense of disappointment that during my long and arduous journey to the “top” I never really found someone of seniority (or power) who went out of their way to selflessly help me climb the greasy ladder of success in any of the organisations I worked at. I don’t think my experiences are particularly unique either.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Quick Introduction to Azure Purview</title>
+      <link>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</link>
+      <pubDate>Fri, 29 Jul 2022 07:15:27 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</guid>
+      <description>&lt;p&gt;Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
