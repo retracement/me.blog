@@ -2,6 +2,7 @@ baseURL = 'https://tenbulls.co.uk'
 languageCode = 'en-us'
 title = 'tenbulls blog'
 theme = 'not-much'
+copyright = 'Copyright © 2025 Mark Broadbent'
 
 # Controls the navigation
 [[menu.main]]
