@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tenbulls.co.uk/posts/</loc>
-    <lastmod>2025-04-05T13:35:36+01:00</lastmod>
+    <loc>https://tenbulls.co.uk/about/</loc>
+    <lastmod>2025-04-05T13:48:02+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/</loc>
+    <lastmod>2025-04-05T13:48:02+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/</loc>
     <lastmod>2025-04-05T13:35:36+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</loc>
