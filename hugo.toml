@@ -15,10 +15,10 @@ copyright = 'Copyright © 2025 Mark Broadbent'
   identifier = "home"
   name = "home"
   title = "home"
-  url = "https://tenbulls.co.uk"
+  url = "/"
   
 [[menu.main]]
   identifier = "about"
   name = "about"
   title = "about"
-  url = "/"
+  url = "/about"

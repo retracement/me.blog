@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2025 Mark Broadbent</copyright>
-    <lastBuildDate>Sat, 01 Feb 2025 20:20:43 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Apr 2025 13:48:02 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://tenbulls.co.uk/about/</link>
+      <pubDate>Sat, 05 Apr 2025 13:48:02 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/about/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/me-fin.webp&#34; alt=&#34;Me in Finland&#34; title=&#34;Me in Finland&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hi there and thank you for dropping by my pages!&#xA;My name is Mark Broadbent and I am a Microsoft Certified Master in SQL Server (there are approximately 28 of us in the UK and 220 worldwide, although this certification has now been grandfathered) and a former 7 time Microsoft Data Platform MVP focusing on Microsoft Azure, Azure DevOps, SQL Server, Administration, Development, Business Intelligence, Docker, Data Factory, and Cosmos DB. I also have strong expertise in concurrency, performance, high availability, disaster recovery, virtualization, Windows and Linux, C# and dotNET.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Future Changes</title>
       <link>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</link>
