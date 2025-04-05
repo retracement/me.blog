@@ -44,5 +44,12 @@
       <guid>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</guid>
       <description>&lt;p&gt;Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>SSIS Data Flow Performance Tuning</title>
+      <link>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</link>
+      <pubDate>Tue, 11 Aug 2020 15:18:01 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</guid>
+      <description>&lt;p&gt;Yes before you say it, I know SQL Server Integration Services is “old technology” but a lot of people are still using it, and in many cases are either still developing against it, or are looking to integrate/ migrate with other burgeoning technologies such as Azure Data Factory. In other words, if you are not currently using SSIS then this post is probably not for you -otherwise read on.&lt;/p&gt;&#xA;&lt;p&gt;If you are still one of the lucky ones to still be using SSIS, I thought it would be worth publishing these comprehensive notes taken from a session titled “SSIS Data Flow Performance Tuning” delivered at SQLBits 8 (Brighton) by the then “SSIS guru” Jamie Thomson. Notes have timings (in mins and seconds) against them, which correlate directly with the presentation times. The video is still available and can be downloaded from the &lt;a href=&#34;https://sqlbits.com/Sessions/Event8/SSIS_Dataflow_Performance_tuning&#34;&gt;SQLBits website&lt;/a&gt; so you can watch it (if required) and use the timings to follow along.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
