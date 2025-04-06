@@ -22,3 +22,9 @@ copyright = 'Copyright © {year} Mark Broadbent'
   name = "about"
   title = "about"
   url = "/about"
+
+[[menu.main]]
+  identifier = "meetup"
+  name = "meetup"
+  title = "meetup"
+  url = "https://www.meetup.com/hybrid-virtual-group/"

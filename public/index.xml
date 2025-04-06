@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Sat, 05 Apr 2025 13:48:02 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 06 Apr 2025 18:51:32 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restart of blog</title>
+      <link>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</link>
+      <pubDate>Sun, 06 Apr 2025 18:51:32 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2025/restart-plane-ai-600.png&#34; alt=&#34;Restarting&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well, I&amp;rsquo;ve finally made the shift to my new statically generated blog and am slowly migrating the content over. This operation is probably going to take me quite some time since I will need to go all the way back to 2009 and decide what posts and content I want to come across. There is possibly over a hundred posts (or more) to bring across! I&amp;rsquo;ll also be quite keen on bringing over some of my more useful resources (although they may need a huge revamp/ update) such as my Ultimate Resources Training Page and others.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>https://tenbulls.co.uk/about/</link>
