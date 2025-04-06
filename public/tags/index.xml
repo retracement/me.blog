@@ -6,7 +6,7 @@
     <description>Recent content in Tags on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2025 Mark Broadbent</copyright>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
     <atom:link href="https://tenbulls.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
