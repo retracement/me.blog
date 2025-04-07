@@ -3,11 +3,14 @@ date = '2022-07-29T07:15:27+01:00'
 draft = false
 title = 'A Quick Introduction to Azure Purview'
 +++
+
+![Data Catalog](/images/2022/catalogue-of-data-ai-600.png)
+
 Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.
 
 Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.
 
-Purview’s Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores <sub>*1</sub> – although we will detail some restrictions that may cause difficulties in doing so.
+Purview’s Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores<sub>*1</sub> – although we will detail some restrictions that may cause difficulties in doing so.
 
 In this quick post, we will detail the three key Purview capabilities at the time of writing.
 
@@ -39,15 +42,15 @@ Custom file types may be in use on the data lake, and whilst Purview does allow 
 It is also worth pointing out that while it is possible to manually edit your data assets (something you may need to do to apply a new classification), this currently prevents Purview from automatically updating the asset for the entire schema of the asset for future scans. Clearly, this shortfall would be an unacceptable problem when using Purview towards an integrated cataloging solution.
 
 # Summary
-With the release of Azure Purview, Microsoft provides us with a data governance solution that is aimed toward the Enterprise. Microsoft has not made any secret of its commitment to building upon Purview capabilities and intention towards integrating this service with many of its services and tooling. For example, it is possible to connect an Azure Synapse Workspace to a Purview account to provide Purview search functionality to Synapse <sub>*2</sub>. In this post, we have detailed a variety of functionality that is currently missing in this important service, and have also neglected to mention others <sub>*3</sub>.
+With the release of Azure Purview, Microsoft provides us with a data governance solution that is aimed toward the Enterprise. Microsoft has not made any secret of its commitment to building upon Purview capabilities and intention towards integrating this service with many of its services and tooling. For example, it is possible to connect an Azure Synapse Workspace to a Purview account to provide Purview search functionality to Synapse <sub>***2**</sub>. In this post, we have detailed a variety of functionality that is currently missing in this important service, and have also neglected to mention others <sub>***3**</sub>.
 
 Azure Purview should certainly be on your organisations radar for providing a cloud-native data dictionary, data lineage, and data classification solution, and is certainly an improvement upon Azure Data Factory, but before making the leap of faith, it is important to understand if it meets all your metadata requirements today.
 
 ---
 
 # Footnotes
-*1 A custom-built meta-store might be useful in an environment in which organisations have multiple toolsets to provide data governance capabilities, and reasons for doing so might include avoiding vendor lock-in, complementing missing functionality, or building upon pre-existing technical investments.
+***1** A custom-built meta-store might be useful in an environment in which organisations have multiple toolsets to provide data governance capabilities, and reasons for doing so might include avoiding vendor lock-in, complementing missing functionality, or building upon pre-existing technical investments.
 
-*2 See the Microsoft Learn article Discover, connect, and explore data in Synapse using Microsoft Purview
+***2** See the Microsoft Learn article Discover, connect, and explore data in Synapse using Microsoft Purview
 
-*3 While many of the current Purview shortfalls that exist at the time of writing are expected to be resolved over time, there are capabilities that Purview alone is not expected to address and will require additional services. A good example here is the lack of data quality and master data services functionality within Purview itself, although the use of third-party services such as Informatica or Cluedin are expected to integrate well with Purview.
+***3** While many of the current Purview shortfalls that exist at the time of writing are expected to be resolved over time, there are capabilities that Purview alone is not expected to address and will require additional services. A good example here is the lack of data quality and master data services functionality within Purview itself, although the use of third-party services such as Informatica or Cluedin are expected to integrate well with Purview.

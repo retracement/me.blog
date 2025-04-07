@@ -28,3 +28,8 @@ copyright = 'Copyright © {year} Mark Broadbent'
   name = "meetup"
   title = "meetup"
   url = "https://www.meetup.com/hybrid-virtual-group/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
