@@ -10,7 +10,7 @@ Azure Purview is Microsoft’s next-generation data catalog service in Azure whi
 
 Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.
 
-Purview’s Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores<sub>*1</sub> – although we will detail some restrictions that may cause difficulties in doing so.
+Purview’s Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores <sub>***1**</sub> – although we will detail some restrictions that may cause difficulties in doing so.
 
 In this quick post, we will detail the three key Purview capabilities at the time of writing.
 
