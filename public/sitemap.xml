@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://tenbulls.co.uk/</loc>
     <lastmod>2025-04-07T20:03:46+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://tenbulls.co.uk/posts/</loc>
     <lastmod>2025-04-07T20:03:46+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025/04/06/blog-update/</loc>
+    <loc>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://tenbulls.co.uk/about/</loc>
     <lastmod>2025-04-05T13:48:02+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025/02/01/future-changes/</loc>
+    <loc>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</loc>
     <lastmod>2025-02-01T20:20:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</loc>
+    <loc>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</loc>
     <lastmod>2023-06-18T20:25:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</loc>
+    <loc>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</loc>
     <lastmod>2023-01-31T15:36:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</loc>
+    <loc>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</loc>
     <lastmod>2022-09-01T21:19:27+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/</loc>
+    <loc>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</loc>
     <lastmod>2022-07-29T07:15:27+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2020/08/11/ssis-performance/</loc>
+    <loc>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</loc>
     <lastmod>2020-08-11T15:18:01+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2020/05/12/querying-azure-vm-state-with-powershell/</loc>
+    <loc>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</loc>
     <lastmod>2020-05-12T15:16:36+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://tenbulls.co.uk/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://tenbulls.co.uk/tags/</loc>
   </url>
 </urlset>
