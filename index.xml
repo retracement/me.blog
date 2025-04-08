@@ -72,5 +72,19 @@
       <guid>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</guid>
       <description>&lt;p&gt;I was recently given the task of identifying the state of an Azure VM so that an automation script using the &lt;code&gt;az vm run-command invoke&lt;/code&gt; would not fail if the VM was down or under a reboot.&lt;/p&gt;&#xA;&lt;p&gt;I initially thought the task would be really easy and a simple query of the VM state using &lt;code&gt;Get-AzVM&lt;/code&gt; would provide us with a running state property of the VM, but as it happens the state is a little abstracted.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Removing and Maintaining Azure Resource Group Deployments Based Upon Deployment Count</title>
+      <link>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</link>
+      <pubDate>Wed, 06 May 2020 11:37:47 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</guid>
+      <description>&lt;p&gt;Whenever you create or update an Azure resource, a new &lt;em&gt;deployment&lt;/em&gt; is created under the resources’ configured resource group. This deployment history is retained ad-infinitum until you eventually hit the hard limit of &lt;em&gt;800 deployments (per resource group)&lt;/em&gt;. You may think this figure is more than enough to accommodate all the possible resource changes that could ever be made in a resource group, but if you are running CICD pipelines to push out your Infrastructure as Code (IaC) (or create lots of resources per resource group) then it is very likely you will exhaust this figure very quickly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inconsistent result sets and another case against pessimistic isolation</title>
+      <link>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</link>
+      <pubDate>Mon, 27 Apr 2020 12:05:21 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</guid>
+      <description>&lt;p&gt;I’m a big fan of demonstrating when transaction processing goes bad in Database Management Systems because it is a reminder to us all to ensure that we know exactly what we are doing when we write our code. Not only should you test and execute your code multiple times in serial (for instance running in sequence in isolation), but you should also execute in parallel with itself or other potentially dependent transactions.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
