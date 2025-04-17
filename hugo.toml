@@ -33,3 +33,8 @@ copyright = 'Copyright © {year} Mark Broadbent'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# [params]
+# theme = "light"
+# palette = "dracula"
+# showThemeNotice = true
