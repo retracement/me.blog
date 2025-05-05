@@ -79,5 +79,26 @@
       <guid>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</guid>
       <description>&lt;p&gt;I’m a big fan of demonstrating when transaction processing goes bad in Database Management Systems because it is a reminder to us all to ensure that we know exactly what we are doing when we write our code. Not only should you test and execute your code multiple times in serial (for instance running in sequence in isolation), but you should also execute in parallel with itself or other potentially dependent transactions.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Restore Azure Devops Repository</title>
+      <link>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</link>
+      <pubDate>Tue, 14 Apr 2020 12:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</guid>
+      <description>&lt;p&gt;If you are using &lt;a href=&#34;https://azure.microsoft.com/en-gb/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt;, you might be comforted that your &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; repo is “in the Cloud” and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cannot delete old build definitions in Azure DevOps</title>
+      <link>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</link>
+      <pubDate>Wed, 25 Mar 2020 19:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</guid>
+      <description>&lt;p&gt;I have been experiencing a problem for quite a while now in my current environment, in that some of our old builds cannot be deleted. When you attempt to do so it results in the following error:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/cannotdel.webp&#34; alt=&#34;build error&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;One or more builds associated with the requested pipeline(s) are retained by a release. The pipeline(s) and builds will not be deleted.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many of our pipelines have undergone a lot of change over time to the degree it is not even obvious anymore why (or indeed where) these builds are being prevented from being dropped. The only thing that is clear is that until they can be, the old build definitions will remain.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Querying Azure Devops Rest Api With Powershell</title>
+      <link>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</link>
+      <pubDate>Wed, 11 Mar 2020 13:13:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/saddog.png&#34; alt=&#34;sad dog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use &lt;a href=&#34;https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md&#34;&gt;PowerShell to consume your Azure CLI DevOps result&lt;/a&gt; set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
