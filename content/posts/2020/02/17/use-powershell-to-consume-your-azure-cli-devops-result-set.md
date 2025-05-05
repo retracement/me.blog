@@ -1,5 +1,5 @@
 +++
-date = '2025-04-07T20:01:50+01:00'
+date = '2020-02-17T13:43:00+01:00'
 draft = true
 title = 'Use Powershell to Consume Your Azure Cli Devops Result Set'
 +++
