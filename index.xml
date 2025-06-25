@@ -107,5 +107,40 @@
       <guid>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/saddog.png&#34; alt=&#34;sad dog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use &lt;a href=&#34;https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md&#34;&gt;PowerShell to consume your Azure CLI DevOps result&lt;/a&gt; set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Dropbox Appears Stuck Synchronizing Files</title>
+      <link>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</link>
+      <pubDate>Tue, 25 Feb 2020 10:28:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</guid>
+      <description>&lt;p&gt;Normally I don’t like off-topic style posts, and &lt;a href=&#34;https://www.dropbox.com&#34;&gt;Dropbox&lt;/a&gt; is certainly not within my key areas of interest, however, I am an avid user and every now and then I run into a problem that is frustrating and worrying -given a large number of important files I store on that platform. This post is my placeholder to help myself – and hopefully you!&lt;/p&gt;&#xA;&lt;p&gt;I recently ran into an issue where my Dropbox icon just kept spinning and spinning and believed it was related to some weird conflict resolution problem across different machines that I had run into by accident.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Use Powershell to Consume Your Azure Cli Devops Result Set</title>
+      <link>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</link>
+      <pubDate>Mon, 17 Feb 2020 13:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</guid>
+      <description>&lt;p&gt;Use PowerShell to consume your Azure CLI DevOps result set&#xA;Before we get going it is probably first worth me pointing out (in case you are wondering) that the whole premise of this post stems from a lack of native Azure DevOps PowerShell Module. Yes there are a few solutions out there, but at the time of writing there is no official Microsoft PowerShell DevOps module, so we are stuck with using the CLI if you want to avoid using these other solutions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rewrite Your Powershell Azurerm to Az for Azure Devops Deployments</title>
+      <link>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</link>
+      <pubDate>Thu, 13 Feb 2020 14:58:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</guid>
+      <description>&lt;p&gt;I just wanted to get a quick post out on specific problem that I have just encountered from one of our Azure DevOps release pipelines in which one of the release stage tasks started failing for no reason (despite no obvious changes having been made). Hopefully this post will help others if you are also experiencing this problem and don’t know what to do.&lt;/p&gt;&#xA;&lt;p&gt;The error message was as follows for our task &lt;code&gt;Enable Firewall on Data Lake&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Azure Cli to Query Azure Devops</title>
+      <link>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</link>
+      <pubDate>Mon, 06 Jan 2020 20:41:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</guid>
+      <description>&lt;p&gt;In previous posts, I have touched upon the use of Azure Cloud Shell for generic querying of Azure resources and I thought it would be useful to quickly document its use for something a little more specific such as querying or manipulating &lt;a href=&#34;https://azure.microsoft.com/en-us/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt; through the command line.&lt;/p&gt;&#xA;&lt;p&gt;For my example, I will focus on something as mundane and straight-forward as querying the Azure DevOps repository meta-data (so that I can look at and compare branch settings against each other) but I hope you get the idea that this is just scratching the tip of the iceberg and the &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&#34;&gt;Azure CLI&lt;/a&gt; is a powerful tool to add to your arsenal of scripting languages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Encouraging diversity at technical events – volunteers and organisers</title>
+      <link>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</link>
+      <pubDate>Thu, 29 Aug 2019 19:28:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</guid>
+      <description>&lt;p&gt;In the third and final post of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of &lt;em&gt;volunteers and organisers&lt;/em&gt; at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what I mean by this term. According to the Merriam-Webster definition, diversity is “the condition of having or being composed of differing elements” and especially “the inclusion of different types of people (such as people of different races or cultures) in a group or organization”. I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
