@@ -15,9 +15,12 @@ After many days I decided to investigate further.
 Looking at the Dropbox icon feedback, all I could see was a large number of files apparently needing downloading, indexing of contents occurring, and a certain number of files uploading. The odd thing was that these stats just did not change.
 
 I decided to try and find out where the process was “stuck” and wanted to detect file access. Since my environment was Linux based I used the following:
-ls -l /proc/$(pidof dropbox)/fd | egrep -v 'pipe:|socket:|/dev'
 
-If you are using a Windows environment you can use the procman utility to monitor file access.
+```bash
+ls -l /proc/$(pidof dropbox)/fd | egrep -v 'pipe:|socket:|/dev'
+```
+
+If you are using a Windows environment you can use the [procman](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) utility to monitor file access.
 
 What this led me to (aside from access to the dropbox meta-database) was a directory path (coincidently the one and the same I had moved) which contained in its directory structure an empty folder name called .Dropbox.
 
@@ -27,5 +30,5 @@ SUCCESS!
 
 Dropbox started up and the icon was reporting movement with indexing, uploading, and downloading.
 
-Conclusion
+# Conclusion
 Just because Dropbox automates the synchronization of files does not mean that it can’t be prone to bugs or strange behaviors. Be careful of what you allow into your Dropbox folder (especially if you are consolidating folders from different machines) and be mindful to work your way backward of things you might have done to break synchronization.
