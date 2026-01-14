@@ -2,80 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tenbulls.co.uk/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</loc>
+    <loc>http://localhost:1313/posts/2025/04/06/blog-update/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-04-05T13:48:02+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</loc>
+    <loc>http://localhost:1313/posts/2025/02/01/future-changes/</loc>
     <lastmod>2025-02-01T20:20:43+00:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</loc>
+    <loc>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</loc>
     <lastmod>2023-06-18T20:25:00+00:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</loc>
+    <loc>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</loc>
     <lastmod>2023-01-31T15:36:14+00:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</loc>
+    <loc>http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</loc>
     <lastmod>2022-09-01T21:19:27+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</loc>
+    <loc>http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/</loc>
     <lastmod>2022-07-29T07:15:27+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</loc>
+    <loc>http://localhost:1313/posts/2020/08/11/ssis-performance/</loc>
     <lastmod>2020-08-11T15:18:01+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</loc>
+    <loc>http://localhost:1313/posts/2020/05/12/querying-azure-vm-state-with-powershell/</loc>
     <lastmod>2020-05-12T15:16:36+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</loc>
+    <loc>http://localhost:1313/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</loc>
     <lastmod>2020-05-06T11:37:47+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</loc>
+    <loc>http://localhost:1313/posts/2020/04/27/inconsistent-results/</loc>
     <lastmod>2020-04-27T12:05:21+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</loc>
+    <loc>http://localhost:1313/posts/2020/04/14/restore-azure-devops-repository/</loc>
     <lastmod>2020-04-14T12:34:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</loc>
+    <loc>http://localhost:1313/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</loc>
     <lastmod>2020-03-25T19:34:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</loc>
+    <loc>http://localhost:1313/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</loc>
     <lastmod>2020-03-11T13:13:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</loc>
+    <loc>http://localhost:1313/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</loc>
     <lastmod>2020-02-25T10:28:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</loc>
+    <loc>http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</loc>
     <lastmod>2020-02-17T13:43:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</loc>
+    <loc>http://localhost:1313/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</loc>
     <lastmod>2020-02-13T14:58:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</loc>
+    <loc>http://localhost:1313/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</loc>
     <lastmod>2020-01-06T20:41:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</loc>
+    <loc>http://localhost:1313/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</loc>
     <lastmod>2019-08-29T19:28:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</loc>
+    <loc>http://localhost:1313/posts/2019/07/25/diversity-at-technical-events-speakers/</loc>
     <lastmod>2019-07-25T21:30:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</loc>
+    <loc>http://localhost:1313/posts/2019/06/17/diversity-at-technical-events-attendees/</loc>
     <lastmod>2019-06-17T19:36:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</loc>
+    <loc>http://localhost:1313/posts/2019/05/31/azure-subscription-is-not-registered/</loc>
     <lastmod>2019-05-31T20:18:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/categories/</loc>
+    <loc>http://localhost:1313/posts/2017/08/08/learning-to-say-no/</loc>
+    <lastmod>2017-08-08T20:31:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
