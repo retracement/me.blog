@@ -21,7 +21,7 @@
       <link>https://tenbulls.co.uk/about/</link>
       <pubDate>Sat, 05 Apr 2025 13:48:02 +0100</pubDate>
       <guid>https://tenbulls.co.uk/about/</guid>
-      <description>&lt;img src=&#34;https://tenbulls.co.uk/images/shared/me-fin.webp&#34; alt=&#34;Me in Finland&#34; style=&#34;margin:50px;float:right&#34; /&gt;&#xD;&#xA;Hi there and thank you for dropping by my pages!&#xD;&#xA;My name is Mark Broadbent and I am a Microsoft Certified Master in SQL Server (there are approximately 28 of us in the UK and 220 worldwide, although this certification has now been grandfathered) and a former 7 time Microsoft Data Platform MVP focusing on Microsoft Azure, Azure DevOps, SQL Server, Administration, Development, Business Intelligence, Docker, Data Factory, and Cosmos DB. I also have strong expertise in concurrency, performance, high availability, disaster recovery, virtualization, Windows and Linux, C# and dotNET.&#xD;&#xA;&lt;p&gt;&lt;!--this is needed due to markdown not converting line space with picture--&gt;&#xD;&#xA;&lt;p&gt;I am the Technical Editor to &lt;a href=&#34;https://www.amazon.com/Microsoft-SQL-Server-2017-Linux-ebook/dp/B07DCH314W/&#34;&gt;SQL Server on Linux &lt;/a&gt; (published 2018, McGraw-Hill), and Technical Reviewer to &lt;a href=&#34;https://www.amazon.com/High-Performance-SQL-Server-Mission-Critical-ebook/dp/B08TQR3NMF&#34;&gt;High Performance SQL Server: Consistent Response for Mission-Critical Applications 2nd Edition&lt;/a&gt; (published 2021, Apress), &lt;a href=&#34;https://www.amazon.com/SQL-Server-Query-Tuning-Optimization/dp/1803242620&#34;&gt;SQL Server Query Tuning and Optimization: Optimize Microsoft SQL Server 2022 queries and applications&lt;/a&gt; (published 2022, Apress), and &lt;a href=&#34;https://www.amazon.com/Expert-Server-Transactions-Locking-Practitioners-ebook/dp/B07FXCW836&#34;&gt;Expert SQL Server Transactions and Locking Concurrency Internals for SQL Server Practitioners&lt;/a&gt; (published 2018, Apress).&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/me-fin.webp&#34; alt=&#34;Me in Finland&#34; title=&#34;Me in Finland&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hi there and thank you for dropping by my pages!&#xA;My name is Mark Broadbent and I am a Microsoft Certified Master in SQL Server (there are approximately 28 of us in the UK and 220 worldwide, although this certification has now been grandfathered) and a former 7 time Microsoft Data Platform MVP focusing on Microsoft Azure, Azure DevOps, SQL Server, Administration, Development, Business Intelligence, Docker, Data Factory, and Cosmos DB. I also have strong expertise in concurrency, performance, high availability, disaster recovery, virtualization, Windows and Linux, C# and dotNET.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Future Changes</title>
@@ -71,104 +71,6 @@
       <pubDate>Tue, 12 May 2020 15:16:36 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</guid>
       <description>&lt;p&gt;I was recently given the task of identifying the state of an Azure VM so that an automation script using the &lt;code&gt;az vm run-command invoke&lt;/code&gt; would not fail if the VM was down or under a reboot.&lt;/p&gt;&#xA;&lt;p&gt;I initially thought the task would be really easy and a simple query of the VM state using &lt;code&gt;Get-AzVM&lt;/code&gt; would provide us with a running state property of the VM, but as it happens the state is a little abstracted.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Removing and Maintaining Azure Resource Group Deployments Based Upon Deployment Count</title>
-      <link>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</link>
-      <pubDate>Wed, 06 May 2020 11:37:47 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</guid>
-      <description>&lt;p&gt;Whenever you create or update an Azure resource, a new &lt;em&gt;deployment&lt;/em&gt; is created under the resources’ configured resource group. This deployment history is retained ad-infinitum until you eventually hit the hard limit of &lt;em&gt;800 deployments (per resource group)&lt;/em&gt;. You may think this figure is more than enough to accommodate all the possible resource changes that could ever be made in a resource group, but if you are running CICD pipelines to push out your Infrastructure as Code (IaC) (or create lots of resources per resource group) then it is very likely you will exhaust this figure very quickly.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Inconsistent result sets and another case against pessimistic isolation</title>
-      <link>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</link>
-      <pubDate>Mon, 27 Apr 2020 12:05:21 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</guid>
-      <description>&lt;p&gt;I’m a big fan of demonstrating when transaction processing goes bad in Database Management Systems because it is a reminder to us all to ensure that we know exactly what we are doing when we write our code. Not only should you test and execute your code multiple times in serial (for instance running in sequence in isolation), but you should also execute in parallel with itself or other potentially dependent transactions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Restore Azure Devops Repository</title>
-      <link>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</link>
-      <pubDate>Tue, 14 Apr 2020 12:34:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</guid>
-      <description>&lt;p&gt;If you are using &lt;a href=&#34;https://azure.microsoft.com/en-gb/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt;, you might be comforted that your &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; repo is “in the Cloud” and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cannot delete old build definitions in Azure DevOps</title>
-      <link>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</link>
-      <pubDate>Wed, 25 Mar 2020 19:34:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</guid>
-      <description>&lt;p&gt;I have been experiencing a problem for quite a while now in my current environment, in that some of our old builds cannot be deleted. When you attempt to do so it results in the following error:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/cannotdel.webp&#34; alt=&#34;build error&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;One or more builds associated with the requested pipeline(s) are retained by a release. The pipeline(s) and builds will not be deleted.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many of our pipelines have undergone a lot of change over time to the degree it is not even obvious anymore why (or indeed where) these builds are being prevented from being dropped. The only thing that is clear is that until they can be, the old build definitions will remain.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Querying Azure Devops Rest Api With Powershell</title>
-      <link>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</link>
-      <pubDate>Wed, 11 Mar 2020 13:13:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/saddog.png&#34; alt=&#34;sad dog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use &lt;a href=&#34;https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md&#34;&gt;PowerShell to consume your Azure CLI DevOps result&lt;/a&gt; set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dropbox Appears Stuck Synchronizing Files</title>
-      <link>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</link>
-      <pubDate>Tue, 25 Feb 2020 10:28:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</guid>
-      <description>&lt;p&gt;Normally I don’t like off-topic style posts, and &lt;a href=&#34;https://www.dropbox.com&#34;&gt;Dropbox&lt;/a&gt; is certainly not within my key areas of interest, however, I am an avid user and every now and then I run into a problem that is frustrating and worrying -given a large number of important files I store on that platform. This post is my placeholder to help myself – and hopefully you!&lt;/p&gt;&#xA;&lt;p&gt;I recently ran into an issue where my Dropbox icon just kept spinning and spinning and believed it was related to some weird conflict resolution problem across different machines that I had run into by accident.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Use Powershell to Consume Your Azure Cli Devops Result Set</title>
-      <link>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</link>
-      <pubDate>Mon, 17 Feb 2020 13:43:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</guid>
-      <description>&lt;p&gt;Use PowerShell to consume your Azure CLI DevOps result set&#xA;Before we get going it is probably first worth me pointing out (in case you are wondering) that the whole premise of this post stems from a lack of native Azure DevOps PowerShell Module. Yes there are a few solutions out there, but at the time of writing there is no official Microsoft PowerShell DevOps module, so we are stuck with using the CLI if you want to avoid using these other solutions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Rewrite Your Powershell Azurerm to Az for Azure Devops Deployments</title>
-      <link>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</link>
-      <pubDate>Thu, 13 Feb 2020 14:58:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</guid>
-      <description>&lt;p&gt;I just wanted to get a quick post out on specific problem that I have just encountered from one of our Azure DevOps release pipelines in which one of the release stage tasks started failing for no reason (despite no obvious changes having been made). Hopefully this post will help others if you are also experiencing this problem and don’t know what to do.&lt;/p&gt;&#xA;&lt;p&gt;The error message was as follows for our task &lt;code&gt;Enable Firewall on Data Lake&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Using Azure Cli to Query Azure Devops</title>
-      <link>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</link>
-      <pubDate>Mon, 06 Jan 2020 20:41:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</guid>
-      <description>&lt;p&gt;In previous posts, I have touched upon the use of Azure Cloud Shell for generic querying of Azure resources and I thought it would be useful to quickly document its use for something a little more specific such as querying or manipulating &lt;a href=&#34;https://azure.microsoft.com/en-us/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt; through the command line.&lt;/p&gt;&#xA;&lt;p&gt;For my example, I will focus on something as mundane and straight-forward as querying the Azure DevOps repository meta-data (so that I can look at and compare branch settings against each other) but I hope you get the idea that this is just scratching the tip of the iceberg and the &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&#34;&gt;Azure CLI&lt;/a&gt; is a powerful tool to add to your arsenal of scripting languages.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Encouraging diversity at technical events – volunteers and organisers</title>
-      <link>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</link>
-      <pubDate>Thu, 29 Aug 2019 19:28:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</guid>
-      <description>&lt;p&gt;In the third and final post of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of &lt;em&gt;volunteers and organisers&lt;/em&gt; at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what I mean by this term. According to the Merriam-Webster definition, diversity is “the condition of having or being composed of differing elements” and especially “the inclusion of different types of people (such as people of different races or cultures) in a group or organization”. I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Encouraging diversity at technical events – speakers</title>
-      <link>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</link>
-      <pubDate>Thu, 25 Jul 2019 21:30:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</guid>
-      <description>&lt;p&gt;In the second of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of speakers at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what I mean by this term. According to the Merriam-Webster definition, diversity is &amp;ldquo;the condition of having or being composed of differing elements&amp;rdquo; and especially &amp;ldquo;the inclusion of different types of people (such as people of different races or cultures) in a group or organization&amp;rdquo;. I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Encouraging diversity at technical events – attendees</title>
-      <link>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</link>
-      <pubDate>Mon, 17 Jun 2019 19:36:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</guid>
-      <description>&lt;p&gt;In the first of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of &lt;em&gt;attendees&lt;/em&gt; at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what &lt;em&gt;I mean&lt;/em&gt; by this term. According to the &lt;a href=&#34;https://https://www.merriam-webster.com/dictionary/diversity&#34;&gt;Merriam-Webster&lt;/a&gt; definition, diversity is &amp;ldquo;&lt;em&gt;the condition of having or being composed of differing elements&lt;/em&gt;&amp;rdquo; and especially &amp;ldquo;&lt;em&gt;the inclusion of different types of people (such as people of different races or cultures) in a group or organization&lt;/em&gt;&amp;rdquo;. I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Azure subscription is not registered to use Cosmos DB namespace</title>
-      <link>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</link>
-      <pubDate>Fri, 31 May 2019 20:18:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</guid>
-      <description>&lt;p&gt;It is usually the simplest things that often leave me feeling like I am a complete dummy. One such issue I ran into fairly recently when trying to deploy Cosmos DB into an Azure subscription.&lt;/p&gt;&#xA;&lt;p&gt;From Azure DevOps I received the following error:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;2019-05-31T16:28:55.4288261Z ##[error]MissingSubscriptionRegistration : The subscription is not registered to use namespace ‘Microsoft.DocumentDB’. See &lt;a href=&#34;https://aka.ms/rps-not-found&#34;&gt;https://aka.ms/rps-not-found&lt;/a&gt; for how to register subscriptions.&#xA;2019-05-31T16:28:55.5005526Z ##[section]Finishing: Deploy Cosmos Account and Database with Shared Capacity&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Learning to say NO</title>
-      <link>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</link>
-      <pubDate>Tue, 08 Aug 2017 20:31:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</guid>
-      <description>&lt;p&gt;Thank you to Kendra Little who is hosting this month&amp;rsquo;s T-SQL Tuesday topic on &amp;ldquo;Interviewing Patterns and Anti-Patterns&amp;rdquo; - and what advice I might have for someone preparing for an interview. But instead of regurgitating the obvious advice you can find in other places, I&amp;rsquo;d rather talk about my own personal experiences, in-particular about a specific dark period in my professional career and how I avoided jumping into yet another bad experience.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
