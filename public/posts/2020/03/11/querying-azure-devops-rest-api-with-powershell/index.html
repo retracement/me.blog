@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Querying Azure Devops Rest Api With Powershell">
+  <meta property="og:description" content="In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use PowerShell to consume your Azure CLI DevOps result set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-03-11T13:13:00+01:00">
+    <meta property="article:modified_time" content="2020-03-11T13:13:00+01:00">
+
+<title>tenbulls blog | Querying Azure Devops Rest Api With Powershell</title>
+
+      <link rel="stylesheet" href="/css/main.min.00f01df266b05dd97de8e2de00428ba845400f8ddc6d3af05ccbfbec50481dd9.css" integrity="sha256-APAd8mawXdl96OLeAEKLqEVAD43cbTrwXMv77FBIHdk=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Querying Azure Devops Rest Api With Powershell</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2020-03-11T13:13:00&#43;01:00">March 11, 2020</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              6 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><img src="/images/2020/saddog.png" alt="sad dog"></p>
+<p>In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use <a href="/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md">PowerShell to consume your Azure CLI DevOps result</a> set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.</p>
+<p>There is a better way to query Azure Devops – Azure DevOps REST API to the rescue.</p>
+<hr>
+<p>Probably the first thing you will want to do is understand what kind of queries and actions you can make against the Azure DevOps REST API. These are not limited to reporting upon existing configurations, it can also be used to change configuration. For example, through the REST API we could POST a call to create a brand new release. For the purposes of simplicity we will simply query Azure DevOps in this article.</p>
+<p>In order to understand all the potential Azure DevOps queries and actions you can make through the Azure DevOps REST API you can refer to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0">Microsoft Azure DevOps Services REST API Reference</a>. We will return back to this reference when we look to make specific calls but before we get there, we will first break down the steps that you will need to take in order to successfully make your call.</p>
+<h1 id="create-your-pat-token">Create your PAT token</h1>
+<p>In order to securely communicate with Azure DevOps, you will first need to create a PAT token which will allow your code to make an authorized call to the REST API. This can be created by clicking the configuration icon from the toolbar of Azure DevOps.</p>
+<p><img src="/images/2020/pattoken.png" alt="PAT token"></p>
+<p>In my specific example I am going to create a PAT token with Full access, but it is recommended that you should create a Custom defined scope to limit the security surface area. Also note that you must set an expiration date to this token and once it expires, you will need either regenerate it, or create a new one to meet your personal requirements.</p>
+<p><a href="/images/2020/patdetails.png">PAT Details</a></p>
+<p>We can now use this PAT in your REST API call, but it is important to ensure this string uses <a href="https://en.wikipedia.org/wiki/Base64">Base64</a> encoding.</p>
+<h1 id="assign-and-encode-your-pat-token">Assign and encode your PAT token</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$personalToken = <span style="color:#e6db74">&#34;tiksj25oumfavuzr4316vhpxw2mywzbapxj7sw3x2xet3dml1ygy&#34;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Write-Host &#34;Initialize authentication context&#34; -ForegroundColor Yellow</span>
+</span></span><span style="display:flex;"><span>$token = [<span style="color:#66d9ef">System.Convert</span>]::ToBase64String([<span style="color:#66d9ef">System.Text.Encoding</span>]::ASCII.GetBytes(<span style="color:#e6db74">&#34;:</span>$($personalToken)<span style="color:#e6db74">&#34;</span>))
+</span></span><span style="display:flex;"><span>$header = @{authorization = <span style="color:#e6db74">&#34;Basic </span>$token<span style="color:#e6db74">&#34;</span>}
+</span></span></code></pre></div><h1 id="make-your-rest-api-call">Make your REST API call</h1>
+<p>From the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0">Microsoft Azure DevOps Services REST API Reference</a> select the REST API call URI that you need to use.</p>
+<p>In this first example, the URI chosen is used to query all existing Azure DevOps Projects. The following code invokes the Azure DevOps REST API call and iterates through each project.</p>
+<p>For example, to make a call to query all projects in your Azure DevOps organisation you can call the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/_apis/projects?api-version=5.0&#34;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>$output = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>$output.value | ForEach-Object {
+</span></span><span style="display:flex;"><span>    Write-Host $_.name
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In my case I get the following Projects returned:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Parts Unlimited
+</span></span><span style="display:flex;"><span>ACME Corp
+</span></span><span style="display:flex;"><span>Main Project
+</span></span><span style="display:flex;"><span>My Test Project
+</span></span></code></pre></div><hr>
+<h1 id="other-examples">Other examples</h1>
+<p>In the following examples I will perform some common queries against our Azure DevOps project. I will do my best to expand and implement new REST API calls over time in follow up posts.</p>
+<h1 id="query-all-build-definitions">Query all build definitions</h1>
+<p>In this example we will return the results in descending order. There is also a bit of further work needed to parse the definition output to improve the quality of the result set. I’ve left a few extra fields commented out for brevity.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Builds API call</span>
+</span></span><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/ACME%20Corp/_apis/build/builds?api-version=5.0&#34;</span>
+</span></span><span style="display:flex;"><span>$output = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>$output.value | Sort-Object id -Descending|ForEach-Object {
+</span></span><span style="display:flex;"><span>    Write-Host $_.buildNumber - $_.status - $_.reason<span style="color:#75715e"># - $_.definition - $_.url</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This returns the following builds:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>26740 - completed - schedule
+</span></span><span style="display:flex;"><span>20021 - completed - schedule
+</span></span><span style="display:flex;"><span>17436 - completed - schedule
+</span></span><span style="display:flex;"><span>14701 - completed - manual
+</span></span></code></pre></div><h1 id="query-all-release-pipeline-definitions">Query all release pipeline definitions</h1>
+<p>In this example we will pull back a sorted list of all release pipeline definitions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Release Definitions API call</span>
+</span></span><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://retracement.vsrm.visualstudio.com/ACME%20Corp/_apis/release/definitions?api-version=5.0&#34;</span>
+</span></span><span style="display:flex;"><span>$output = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>$output.value | Sort-Object name|ForEach-Object {
+</span></span><span style="display:flex;"><span>    Write-Host $_.name
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And we get all current release definitions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Big Daddy Release Pipeline
+</span></span><span style="display:flex;"><span>Little Tom Release Pipeline
+</span></span><span style="display:flex;"><span>Widgets Release Pipeline
+</span></span></code></pre></div><h1 id="query-all-repositories-in-a-project">Query all repositories in a project</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Repositories API call</span>
+</span></span><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/ACME%20Corp/_apis/git/repositories?api-version=6.0-preview.1&#34;</span>
+</span></span><span style="display:flex;"><span>$output = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>$output.value | ForEach-Object {
+</span></span><span style="display:flex;"><span>    Write-Host $_.id,$_.name
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The following repositories are returned:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ba008565-118a-41e6-878c-d7a8180bf734 Widget Database
+</span></span><span style="display:flex;"><span>49ebc167-8b48-4202-af4e-f8fd885aede1 Widget Notebooks
+</span></span><span style="display:flex;"><span>682c7ebf-11d1-443f-b0b0-fbd7f2bfdd71 ACME dotNet master
+</span></span><span style="display:flex;"><span>112635ba-c5e7-4c91-bae7-ff014cf36be4 ACME Helper
+</span></span></code></pre></div><h1 id="query-a-repository-branches">Query a repository branches</h1>
+<p>In this next example we will take a repository id and use this in our REST API call to query it’s branches.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Repository API call</span>
+</span></span><span style="display:flex;"><span>$repoId = <span style="color:#e6db74">&#34;ba008565-118a-41e6-878c-d7a8180bf734&#34;</span>
+</span></span><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/ACME%20Corp/_apis/git/repositories/</span>$repoId<span style="color:#e6db74">/refs?api-version=6.0-preview.1&#34;</span>
+</span></span><span style="display:flex;"><span>$output = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>$output.value | ForEach-Object {
+</span></span><span style="display:flex;"><span>    Write-Host $_.name
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The branches returned for this repo are as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ba008565-118a-41e6-878c-d7a8180bf734 refs/heads/mybrillfeature
+</span></span><span style="display:flex;"><span>ba008565-118a-41e6-878c-d7a8180bf734 refs/heads/development
+</span></span><span style="display:flex;"><span>ba008565-118a-41e6-878c-d7a8180bf734 refs/heads/master
+</span></span></code></pre></div><h1 id="query-all-branches-for-all-repositories-in-a-project">Query all branches for all repositories in a project</h1>
+<p>We can put the previous two API calls together to query all branches for all repositories.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">#branches for each repo</span>
+</span></span><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/ACME%20Corp/_apis/git/repositories?api-version=6.0-preview.1&#34;</span>
+</span></span><span style="display:flex;"><span>$repo = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>$repo.value | ForEach-Object {
+</span></span><span style="display:flex;"><span>    $repoId = $_.id
+</span></span><span style="display:flex;"><span>    $repoName = $_.name
+</span></span><span style="display:flex;"><span>    $url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/ACME%20Corp/_apis/git/repositories/</span>$repoId<span style="color:#e6db74">/refs?api-version=6.0-preview.1&#34;</span>
+</span></span><span style="display:flex;"><span>    $output = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>    $output.value | ForEach-Object {
+</span></span><span style="display:flex;"><span>        Write-Host $repoId - $repoName - $_.name
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This returns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ba008565-118a-41e6-878c-d7a8180bf734 - Widget Database - refs/heads/mybrillfeature
+</span></span><span style="display:flex;"><span>ba008565-118a-41e6-878c-d7a8180bf734 - Widget Database - refs/heads/development
+</span></span><span style="display:flex;"><span>ba008565-118a-41e6-878c-d7a8180bf734 - Widget Database - refs/heads/master
+</span></span><span style="display:flex;"><span>49ebc167-8b48-4202-af4e-f8fd885aede1 - Widget Notebooks - refs/heads/development
+</span></span><span style="display:flex;"><span>49ebc167-8b48-4202-af4e-f8fd885aede1 - Widget Notebooks - refs/heads/master
+</span></span><span style="display:flex;"><span>682c7ebf-11d1-443f-b0b0-fbd7f2bfdd71 - ACME dotNet master - refs/heads/development
+</span></span><span style="display:flex;"><span>682c7ebf-11d1-443f-b0b0-fbd7f2bfdd71 - ACME dotNet master - refs/heads/master
+</span></span><span style="display:flex;"><span>112635ba-c5e7-4c91-bae7-ff014cf36be4 - ACME Helper - refs/heads/development
+</span></span><span style="display:flex;"><span>112635ba-c5e7-4c91-bae7-ff014cf36be4 - ACME Helper - refs/heads/master
+</span></span></code></pre></div><h1 id="tabular-query-of-all-branches-for-all-repositories-in-a-project">Tabular query of all branches for all repositories in a project</h1>
+<p>And finally, our Azure DevOps REST API result set is far more useful as a tabular object so that we can manipulate it further in PowerShell (should we so wish) and perform various filters and sorts against it. So extending the previous example we will put our result set into a table object.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">#branches for each repo in a table</span>
+</span></span><span style="display:flex;"><span>$table = New-Object System.Data.DataTable <span style="color:#75715e">#create table and columns</span>
+</span></span><span style="display:flex;"><span>$table.Columns.Add(<span style="color:#e6db74">&#34;Id&#34;</span>)
+</span></span><span style="display:flex;"><span>$table.Columns.Add(<span style="color:#e6db74">&#34;Repository&#34;</span>)
+</span></span><span style="display:flex;"><span>$table.Columns.Add(<span style="color:#e6db74">&#34;Branch&#34;</span>)
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/ACME%20Corp/_apis/git/repositories?api-version=6.0-preview.1&#34;</span>
+</span></span><span style="display:flex;"><span>$repo = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>$repo.value | ForEach-Object {
+</span></span><span style="display:flex;"><span>    $repoId = $_.id
+</span></span><span style="display:flex;"><span>    $repoName = $_.name
+</span></span><span style="display:flex;"><span>    $url = <span style="color:#e6db74">&#34;https://retracement.visualstudio.com/ACME%20Corp/_apis/git/repositories/</span>$repoId<span style="color:#e6db74">/refs?api-version=6.0-preview.1&#34;</span>
+</span></span><span style="display:flex;"><span>    $output = Invoke-RestMethod -Uri $url -Method Get -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
+</span></span><span style="display:flex;"><span>    $output.value | ForEach-Object {
+</span></span><span style="display:flex;"><span>        $table.Rows.Add($repoId, $repoName, $_.name)|Out-Null
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>$table | select Repository, Branch | Sort-Object Repository, Branch| ft
+</span></span></code></pre></div><p>Querying the table object and filtering on two columns returns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Repository          Branch                                         
+</span></span><span style="display:flex;"><span>----------          ------
+</span></span><span style="display:flex;"><span>ACME dotNet master  refs/heads/development
+</span></span><span style="display:flex;"><span>ACME dotNet master  refs/heads/master
+</span></span><span style="display:flex;"><span>ACME Helper         refs/heads/development
+</span></span><span style="display:flex;"><span>ACME Helper         refs/heads/master
+</span></span><span style="display:flex;"><span>Widget Database     refs/heads/mybrillfeature
+</span></span><span style="display:flex;"><span>Widget Database     refs/heads/development
+</span></span><span style="display:flex;"><span>Widget Database     refs/heads/master
+</span></span><span style="display:flex;"><span>Widget Notebooks    refs/heads/development
+</span></span><span style="display:flex;"><span>Widget Notebooks    refs/heads/master
+</span></span></code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>As you have seen, the Azure DevOps API is not only very easy to use and consume through PowerShell (when you know how), but provides a much more comprehensive route to interface with Azure DevOps than the other techniques I have previously talked about (such as the Azure CLI).</p>
+<p>In future posts I will talk about implementing other queries and actions such listing all outstanding pull requests across repositories and even how to create a release.</p>
+<p>Hope you find this post useful, please leave your comments below!</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/">
+            <span>previous: </span>
+            <span>Dropbox Appears Stuck Synchronizing Files</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/">
+            <span>next: </span>
+            <span>Cannot delete old build definitions in Azure DevOps</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

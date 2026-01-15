@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tenbulls blog</title>
-    <link>https://tenbulls.co.uk/</link>
-    <description>Recent content on tenbulls blog</description>
+    <title>Posts on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/posts/</link>
+    <description>Recent content in Posts on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Sun, 06 Apr 2025 18:51:32 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Restart of blog</title>
       <link>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</link>
       <pubDate>Sun, 06 Apr 2025 18:51:32 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2025/restart-plane-ai-600.png&#34; alt=&#34;Restarting&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well, I&amp;rsquo;ve finally made the shift to my new statically generated blog and am slowly migrating the content over. This operation is probably going to take me quite some time since I will need to go all the way back to 2009 and decide what posts and content I want to come across. There is possibly over a hundred posts (or more) to bring across! I&amp;rsquo;ll also be quite keen on bringing over some of my more useful resources (although they may need a huge revamp/ update) such as my Ultimate Resources Training Page and others.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://tenbulls.co.uk/about/</link>
-      <pubDate>Sat, 05 Apr 2025 13:48:02 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/about/</guid>
-      <description>&lt;img src=&#34;https://tenbulls.co.uk/images/shared/me-fin.webp&#34; alt=&#34;Me in Finland&#34; style=&#34;margin:50px;float:right&#34; /&gt;&#xD;&#xA;Hi there and thank you for dropping by my pages!&#xD;&#xA;My name is Mark Broadbent and I am a Microsoft Certified Master in SQL Server (there are approximately 28 of us in the UK and 220 worldwide, although this certification has now been grandfathered) and a former 7 time Microsoft Data Platform MVP focusing on Microsoft Azure, Azure DevOps, SQL Server, Administration, Development, Business Intelligence, Docker, Data Factory, and Cosmos DB. I also have strong expertise in concurrency, performance, high availability, disaster recovery, virtualization, Windows and Linux, C# and dotNET.&#xD;&#xA;&lt;p&gt;&lt;!--this is needed due to markdown not converting line space with picture--&gt;&#xD;&#xA;&lt;p&gt;I am the Technical Editor to &lt;a href=&#34;https://www.amazon.com/Microsoft-SQL-Server-2017-Linux-ebook/dp/B07DCH314W/&#34;&gt;SQL Server on Linux &lt;/a&gt; (published 2018, McGraw-Hill), and Technical Reviewer to &lt;a href=&#34;https://www.amazon.com/High-Performance-SQL-Server-Mission-Critical-ebook/dp/B08TQR3NMF&#34;&gt;High Performance SQL Server: Consistent Response for Mission-Critical Applications 2nd Edition&lt;/a&gt; (published 2021, Apress), &lt;a href=&#34;https://www.amazon.com/SQL-Server-Query-Tuning-Optimization/dp/1803242620&#34;&gt;SQL Server Query Tuning and Optimization: Optimize Microsoft SQL Server 2022 queries and applications&lt;/a&gt; (published 2022, Apress), and &lt;a href=&#34;https://www.amazon.com/Expert-Server-Transactions-Locking-Practitioners-ebook/dp/B07FXCW836&#34;&gt;Expert SQL Server Transactions and Locking Concurrency Internals for SQL Server Practitioners&lt;/a&gt; (published 2018, Apress).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Future Changes</title>
