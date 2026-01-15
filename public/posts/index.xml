@@ -156,5 +156,12 @@
       <guid>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</guid>
       <description>&lt;p&gt;It is usually the simplest things that often leave me feeling like I am a complete dummy. One such issue I ran into fairly recently when trying to deploy Cosmos DB into an Azure subscription.&lt;/p&gt;&#xA;&lt;p&gt;From Azure DevOps I received the following error:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;2019-05-31T16:28:55.4288261Z ##[error]MissingSubscriptionRegistration : The subscription is not registered to use namespace ‘Microsoft.DocumentDB’. See &lt;a href=&#34;https://aka.ms/rps-not-found&#34;&gt;https://aka.ms/rps-not-found&lt;/a&gt; for how to register subscriptions.&#xA;2019-05-31T16:28:55.5005526Z ##[section]Finishing: Deploy Cosmos Account and Database with Shared Capacity&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Learning to say NO</title>
+      <link>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</link>
+      <pubDate>Tue, 08 Aug 2017 20:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</guid>
+      <description>&lt;p&gt;Thank you to Kendra Little who is hosting this month&amp;rsquo;s T-SQL Tuesday topic on &amp;ldquo;Interviewing Patterns and Anti-Patterns&amp;rdquo; - and what advice I might have for someone preparing for an interview. But instead of regurgitating the obvious advice you can find in other places, I&amp;rsquo;d rather talk about my own personal experiences, in-particular about a specific dark period in my professional career and how I avoided jumping into yet another bad experience.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

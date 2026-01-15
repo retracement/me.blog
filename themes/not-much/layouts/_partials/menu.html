@@ -11,10 +11,15 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav aria-label="breadcrumb" class="small">
-    <ol class="breadcrumb fw-bold">
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </ol>
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      </ol>
+    </div>
   </nav>
 {{- end }}
 
@@ -33,7 +38,7 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li class="breadcrumb-item">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
       <a
         {{- range $k, $v := $attrs }}
           {{- with $v }}
