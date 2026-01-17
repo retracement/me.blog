@@ -170,5 +170,33 @@
       <guid>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</guid>
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Recursive killing of SPIDs in a database for admin operations</title>
+      <link>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</link>
+      <pubDate>Wed, 27 May 2009 02:11:18 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</guid>
+      <description>&lt;p&gt;One problem that I have found particulary annoying of late when performing any database operation that requires connections to it to be disconnected, such as setting it offline or a restoring over the top of itself is getting rid of these connections. Obviously this can be achieved by listing the current spids connected to the database and performing a kill for each spid. This can be quite laborious and obvious does not address any spids coming live whilst you are busy killing the existing ones, so you can end up going around in circles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Login failure user is not associated with a trusted SQL Server connection</title>
+      <link>https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</link>
+      <pubDate>Tue, 31 Mar 2009 02:10:10 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</guid>
+      <description>&lt;p&gt;Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2009/untrusted.jpg&#34; alt=&#34;Login failed for user&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Auto generate RESTORE scripts from a live database</title>
+      <link>https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</link>
+      <pubDate>Thu, 19 Mar 2009 02:13:49 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</guid>
+      <description>&lt;p&gt;Have you ever performed a scripted restore or some of similar operation and then got entirely frustrated at the laborious and error prone nature of this exercise especially when the database consists of many datafiles and transaction log files?&lt;/p&gt;&#xA;&lt;p&gt;Of course the SQL Server 2005 GUI is very good at making the restore process much easier but it’s biggest failing is that it doesn’t preserve filenames (especially when the restored database name is changed). This is a very big problem when you have a large number of data files and causes a big headache.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to move your SQL Data and Log files correctly!</title>
+      <link>https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</link>
+      <pubDate>Thu, 05 Mar 2009 02:13:46 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</guid>
+      <description>&lt;p&gt;Recently I came across the &lt;code&gt;ALTER FILE&lt;/code&gt; part of the &lt;code&gt;ALTER DATABASE&lt;/code&gt; command and started thinking about its use when moving physical datafiles.&lt;/p&gt;&#xA;&lt;p&gt;I must admit that this particular part of the &lt;code&gt;ALTER DATABASE&lt;/code&gt; command has largely gone unused. Whilst the &lt;code&gt;REMOVE FILE&lt;/code&gt; part is infrequently used and the &lt;code&gt;ADD FILE&lt;/code&gt; part is possibly more so, the intuitive nature of the SQL 2005 and above GUI (and even SQL 7 and 2000 to some extent) has meant that resorting to various statements is largely unnecessary. In fact, the only times that I can really recall having resorted to the &lt;code&gt;MODIFY&lt;/code&gt; operator is when I have been renaming logical file names.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
