@@ -6,7 +6,7 @@ title = 'Learning to say NO'
 
 Thank you to Kendra Little who is hosting this month's T-SQL Tuesday topic on "Interviewing Patterns and Anti-Patterns" - and what advice I might have for someone preparing for an interview. But instead of regurgitating the obvious advice you can find in other places, I'd rather talk about my own personal experiences, in-particular about a specific dark period in my professional career and how I avoided jumping into yet another bad experience.
 
-I have written about my career lows elsewhere in these pages (and if you are really interested, you can read about them further in this post: SQLRally and beyond), but for your benefit, let's just describe this particular stage of my career as me having hit a professional brick wall. The early promise and excitement of my (then) new job had turned into daily dread and anxiety as I drove into work knowing that I had 8 hours of unhappiness ahead of me each day.
+I have written about my career lows elsewhere in these pages (and if you are really interested, you can read about them further in this post: [SQLRally and beyond](/posts/2012/01/25/sqlrally-and-beyond)), but for your benefit, let's just describe this particular stage of my career as me having hit a professional brick wall. The early promise and excitement of my (then) new job had turned into daily dread and anxiety as I drove into work knowing that I had 8 hours of unhappiness ahead of me each day.
 
 How did this happen yet again? Another position, another problem, and another difficult situation to navigate and I was starting to think that it really *must* be me. There must be something wrong with me to be experiencing problems all over again.
 

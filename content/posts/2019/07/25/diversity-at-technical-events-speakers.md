@@ -12,7 +12,7 @@ The following is not a comprehensive list, but I hope it will provide some food 
 
 # Promote your Call For Papers through other events and groups
 
-In a similar way that you would (if you were trying) to [encourage attendees](https://tenbulls.co.uk/2019/06/17/diversity-at-technical-events-attendees/) to your event, it is important that you also reach out to other community events and user groups to announce your Call For Papers. There are lots of groups like [Girls Who Code](https://https://uk.girlswhocode.com/) and [PASS Women In IT](https://https://wit.pass.org/) who would be a great starting point, but you should also think about even contacting non-technical groups and associations. This will give your event much more reach to communities beyond bridging more than just the gender balance and help make your speaking roster incredibly diverse, interesting, and appealing.
+In a similar way that you would (if you were trying) to [encourage attendees](todo:https://tenbulls.co.uk/2019/06/17/diversity-at-technical-events-attendees/) to your event, it is important that you also reach out to other community events and user groups to announce your Call For Papers. There are lots of groups like [Girls Who Code](https://https://uk.girlswhocode.com/) and [PASS Women In IT](https://https://wit.pass.org/) who would be a great starting point, but you should also think about even contacting non-technical groups and associations. This will give your event much more reach to communities beyond bridging more than just the gender balance and help make your speaking roster incredibly diverse, interesting, and appealing.
 
 # Seek non-technical Sessions
 

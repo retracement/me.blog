@@ -31,6 +31,7 @@ nav a, a {
 
 nav a:hover, a:hover, .list-post-title a:hover {
   text-decoration: underline !important;
+  background: lightyellow; /*custom for highlight on hover*/
 }
 
 .list-post-title a {
