@@ -178,6 +178,62 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>How to connect to SMB targets in Linux</title>
+      <link>https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</link>
+      <pubDate>Tue, 13 Oct 2009 21:32:15 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</guid>
+      <description>&lt;p&gt;After much scrabbling around for days I have finally found it.&lt;/p&gt;&#xA;&lt;p&gt;Let me explain. After a recent rebuild of my Linux Mint laptop I could not for the life of me remember how to connect back to a UNC. Although I obviously had the command syntax:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo mount -t cifs //hostname/share /media/unc -o user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;username&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It just would not work and kept throwing up the following error:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mount: cannot mount block device&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All I remembered doing from previously getting it to work was that (I thought) I needed to apt-get a package. Thankfully after much trawling around and another poster, I came across the package and hey presto all is working again:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Auto generate database GRANTs</title>
+      <link>https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/</link>
+      <pubDate>Wed, 16 Sep 2009 12:20:15 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/</guid>
+      <description>&lt;p&gt;Just a very quick post here, but sometimes when you wish to grant execute right for multiple stored procedures to a particular database user it is easier to simply run the following script in the respective database in order to generate this assignment script. This is far easier than using the 2005 and 2008 GUI interface (and even 2000/ 7) especially if there are a lot of procedures.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;USE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GRANT EXEC ON .&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; name &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; TO [user]&amp;#39;&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; sysobjects &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; xtype &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;P&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AND&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update (18th January 2026):&lt;/strong&gt; Upon migrating posts to my new site I notice that this script appears incomplete. Todo: Will seek to update it with a working script when I get the chance (despite its age).&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Check your constraints to check your integrity</title>
+      <link>https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</link>
+      <pubDate>Sun, 19 Jul 2009 21:48:15 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</guid>
+      <description>&lt;p&gt;Something that you probably don’t need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Started using Linux Mint</title>
+      <link>https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</link>
+      <pubDate>Sun, 19 Jul 2009 21:48:15 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</guid>
+      <description>&lt;p&gt;For a very long time now (over 10 years) I’ve been trying very hard to &amp;ldquo;get into&amp;rdquo; Linux and there has always been a major obstacle hit along the way to make me put the OS back on the shelf for another day. Over this last year I have been seriously looking into a few distributions and I am very impressed. Whilst everything is not perfect, I have been very surprised how polished everything is begining to look and if I was Microsoft I would be really starting to look over my shoulder.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to perform an emergency database restore when blocked by corrupt database</title>
+      <link>https://tenbulls.co.uk/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</link>
+      <pubDate>Sun, 19 Jul 2009 12:18:15 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</guid>
+      <description>&lt;p&gt;The other day a fellow dba was having a problem with removing a corrupt database from a SQL Server and was failing to remember that the physical architecture of SQL Server is actually quite simple. Every time he tried to drop the database or to fix the database allowing for data loss or even take the database offline, the server would complain that the database was in single user mode (even though it wasn’t). Anything he tried on this database was complained about, and he was at a loss on how to remove it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Issues when moving your SQL data and log files</title>
+      <link>https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/</link>
+      <pubDate>Tue, 09 Jun 2009 20:53:15 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/</guid>
+      <description>&lt;p&gt;You might recall that I recently touched upon how to go about moving your &lt;a href=&#34;https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach&#34;&gt;SQL data and log files correctly&lt;/a&gt;. In this post I will quickly walk through one common scenario.&lt;/p&gt;&#xA;&lt;p&gt;Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Name resolution for SQL Server instances</title>
+      <link>https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</link>
+      <pubDate>Tue, 09 Jun 2009 02:10:15 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</guid>
+      <description>&lt;p&gt;SQL Server instances are great for allowing multiple instances on a single windows host, but unlike with Oracle instances this does cause a very big headache when configuring applications that consume these servers, instances and its databases. In the Oracle world there are many different mechanisms for name resolution and one of the most common is the use of the &lt;code&gt;TNSNAMES&lt;/code&gt; file which effectively maps the database (think SQL instance) to the host. The Oracle database name is a unique identifier and does not have an “instance” postfix name like SQL server, so this lends itself very easily to application/ database name separation. In addition the Oracle instance is not tied to a particular hostname and therefore can be moved onto another physical host with very little reconfiguration required in order for applications to communicate to this new host location. To be more specific, when using &lt;code&gt;TNSNAMES&lt;/code&gt; resolution, all that would be necessary from the application perspective to reconfigure them to reflect a new database host would be to edit this file on all the application servers ensuring that this hostname is changed to reflect its new name for this specific database.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Preserve backup chain with COPY ONLY backups</title>
+      <link>https://tenbulls.co.uk/posts/2009/06/09/copy-only-backups-another-great-addition/</link>
+      <pubDate>Tue, 09 Jun 2009 02:09:41 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/06/09/copy-only-backups-another-great-addition/</guid>
+      <description>&lt;p&gt;A welcome addition to SQL 2005 and above is the inclusion of the &lt;code&gt;COPY_ONLY&lt;/code&gt; clause to the BACKUP statement.&lt;/p&gt;&#xA;&lt;p&gt;This overcomes the long time problem of breaking the backup chain for your automated backup jobs when taking adhoc backups. For instance, imagine that another dba has taken a full backup in preparation for a change request and then later that day an incident occurs (such as drive failure) which requires a point in time recovery of the database and its logs. Unfortunately your colleague has not informed anyone about their full backup and has gone home for the evening. You will be left in a situation where you can successfully restore your scheduled backups, a differential and possibly some transaction logs but only up to the point before the last full was taken. In order to recover the database properly you need to restore that last full and any subsequent logs, but unfortunately you cannot locate this last full backup.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Recursive killing of SPIDs in a database for admin operations</title>
       <link>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</link>
       <pubDate>Wed, 27 May 2009 02:11:18 +0100</pubDate>
