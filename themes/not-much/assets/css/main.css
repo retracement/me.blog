@@ -86,7 +86,7 @@ ul > li:has(input[type=checkbox]) {
 }
 
 code {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'Consolas', serif !important; /*customisation away from Red Hat Mono*/
 }
 
 code:not(.highlight *) {

@@ -2,207 +2,263 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tenbulls blog</title>
-    <link>https://tenbulls.co.uk/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Sun, 06 Apr 2025 18:51:32 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Restart of blog</title>
-      <link>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</link>
+      <link>http://localhost:1313/posts/2025/04/06/blog-update/</link>
       <pubDate>Sun, 06 Apr 2025 18:51:32 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2025/restart-plane-ai-600.png&#34; alt=&#34;Restarting&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well, I&amp;rsquo;ve finally made the shift to my new statically generated blog and am slowly migrating the content over. This operation is probably going to take me quite some time since I will need to go all the way back to 2009 and decide what posts and content I want to come across. There is possibly over a hundred posts (or more) to bring across! I&amp;rsquo;ll also be quite keen on bringing over some of my more useful resources (although they may need a huge revamp/ update) such as my Ultimate Resources Training Page and others.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/04/06/blog-update/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025/restart-plane-ai-600.png&#34; alt=&#34;Restarting&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well, I&amp;rsquo;ve finally made the shift to my new statically generated blog and am slowly migrating the content over. This operation is probably going to take me quite some time since I will need to go all the way back to 2009 and decide what posts and content I want to come across. There is possibly over a hundred posts (or more) to bring across! I&amp;rsquo;ll also be quite keen on bringing over some of my more useful resources (although they may need a huge revamp/ update) such as my Ultimate Resources Training Page and others.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://tenbulls.co.uk/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sat, 05 Apr 2025 13:48:02 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/about/</guid>
-      <description>&lt;img src=&#34;https://tenbulls.co.uk/images/shared/me-fin.webp&#34; alt=&#34;Me in Finland&#34; style=&#34;margin:50px;float:right&#34; /&gt;&#xD;&#xA;Hi there and thank you for dropping by my pages!&#xD;&#xA;My name is Mark Broadbent and I am a Microsoft Certified Master in SQL Server (there are approximately 28 of us in the UK and 220 worldwide, although this certification has now been grandfathered) and a former 7 time Microsoft Data Platform MVP focusing on Microsoft Azure, Azure DevOps, SQL Server, Administration, Development, Business Intelligence, Docker, Data Factory, and Cosmos DB. I also have strong expertise in concurrency, performance, high availability, disaster recovery, virtualization, Windows and Linux, C# and dotNET.&#xD;&#xA;&lt;p&gt;&lt;!--this is needed due to markdown not converting line space with picture--&gt;&#xD;&#xA;&lt;p&gt;I am the Technical Editor to &lt;a href=&#34;https://www.amazon.com/Microsoft-SQL-Server-2017-Linux-ebook/dp/B07DCH314W/&#34;&gt;SQL Server on Linux &lt;/a&gt; (published 2018, McGraw-Hill), and Technical Reviewer to &lt;a href=&#34;https://www.amazon.com/High-Performance-SQL-Server-Mission-Critical-ebook/dp/B08TQR3NMF&#34;&gt;High Performance SQL Server: Consistent Response for Mission-Critical Applications 2nd Edition&lt;/a&gt; (published 2021, Apress), &lt;a href=&#34;https://www.amazon.com/SQL-Server-Query-Tuning-Optimization/dp/1803242620&#34;&gt;SQL Server Query Tuning and Optimization: Optimize Microsoft SQL Server 2022 queries and applications&lt;/a&gt; (published 2022, Apress), and &lt;a href=&#34;https://www.amazon.com/Expert-Server-Transactions-Locking-Practitioners-ebook/dp/B07FXCW836&#34;&gt;Expert SQL Server Transactions and Locking Concurrency Internals for SQL Server Practitioners&lt;/a&gt; (published 2018, Apress).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/images/shared/me-fin.webp&#34; alt=&#34;Me in Finland&#34; style=&#34;margin:50px;float:right&#34; /&gt;&#xD;&#xA;Hi there and thank you for dropping by my pages!&#xD;&#xA;My name is Mark Broadbent and I am a Microsoft Certified Master in SQL Server (there are approximately 28 of us in the UK and 220 worldwide, although this certification has now been grandfathered) and a former 7 time Microsoft Data Platform MVP focusing on Microsoft Azure, Azure DevOps, SQL Server, Administration, Development, Business Intelligence, Docker, Data Factory, and Cosmos DB. I also have strong expertise in concurrency, performance, high availability, disaster recovery, virtualization, Windows and Linux, C# and dotNET.&#xD;&#xA;&lt;p&gt;&lt;!--this is needed due to markdown not converting line space with picture--&gt;&#xD;&#xA;&lt;p&gt;I am the Technical Editor to &lt;a href=&#34;https://www.amazon.com/Microsoft-SQL-Server-2017-Linux-ebook/dp/B07DCH314W/&#34;&gt;SQL Server on Linux &lt;/a&gt; (published 2018, McGraw-Hill), and Technical Reviewer to &lt;a href=&#34;https://www.amazon.com/High-Performance-SQL-Server-Mission-Critical-ebook/dp/B08TQR3NMF&#34;&gt;High Performance SQL Server: Consistent Response for Mission-Critical Applications 2nd Edition&lt;/a&gt; (published 2021, Apress), &lt;a href=&#34;https://www.amazon.com/SQL-Server-Query-Tuning-Optimization/dp/1803242620&#34;&gt;SQL Server Query Tuning and Optimization: Optimize Microsoft SQL Server 2022 queries and applications&lt;/a&gt; (published 2022, Apress), and &lt;a href=&#34;https://www.amazon.com/Expert-Server-Transactions-Locking-Practitioners-ebook/dp/B07FXCW836&#34;&gt;Expert SQL Server Transactions and Locking Concurrency Internals for SQL Server Practitioners&lt;/a&gt; (published 2018, Apress).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Future Changes</title>
-      <link>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</link>
+      <link>http://localhost:1313/posts/2025/02/01/future-changes/</link>
       <pubDate>Sat, 01 Feb 2025 20:20:43 +0000</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</guid>
+      <guid>http://localhost:1313/posts/2025/02/01/future-changes/</guid>
       <description>&lt;p&gt;Just a quick note to give an update on the future changes for this blog. Many long time readers out there might realise that what you are reading today no longer exists under its original domain and currently lives under its default WordPress domain namespace. Given that this blog has existed since 2009 and been linked to from a variety of popular sources and published materials, this is a big shift.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating Pause of Synapse Dedicated Pool Part I</title>
-      <link>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</link>
+      <link>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</link>
       <pubDate>Sun, 18 Jun 2023 20:25:00 +0000</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</guid>
+      <guid>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</guid>
       <description>&lt;p&gt;Synapse Analytics is an enterprise analytics engine that offers multiple (compute) Pool types that you can use for varying data processing and analytics requirements. Each Pool type has a slightly different cost model based upon its architecture, capabilities, and consumption patterns, but if we over simplify things, we can break these cost considerations down to compute costs and (in some cases) storage costs.&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits with modern data lakehouse architectures is that with the separation of compute and storage comes the ability to reduce costs when compute is not needed, and most importantly, not running.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why Is My Azure Solution Running Slow</title>
-      <link>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
+      <link>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
       <pubDate>Tue, 31 Jan 2023 15:36:14 +0000</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
+      <guid>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
       <description>&lt;p&gt;As an Azure data professional, one of the most common questions you are most likely to hear from users is “why do cloud solutions often appear to have performance issues post-deployment“. This perception is particularly common for Azure migration projects moving on-premises into the cloud, but do these observations really match reality or are they misguided?&lt;/p&gt;&#xA;&lt;p&gt;In this introductory article, we will take a look into some of the reasons why Azure cloud-based solutions are often seen to be problematic, or in some cases, are problematic, and provide some ideas to avoid these negative perceptions in your cloud environment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging Diversity in Leadership Roles</title>
-      <link>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</link>
+      <link>http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</link>
       <pubDate>Thu, 01 Sep 2022 21:19:27 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</guid>
+      <guid>http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</guid>
       <description>&lt;p&gt;Over 33 years ago I started my journey working in Information Technology (I.T.), and it is probably fair to say that I have worked my way slowly up from the absolute bottom of the pile to the modest heights of today.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem-with-it&#34;&gt;The problem with I.T.&lt;/h1&gt;&#xA;&lt;p&gt;As I look back over the years I cannot help but feel a sense of disappointment that during my long and arduous journey to the “top” I never really found someone of seniority (or power) who went out of their way to selflessly help me climb the greasy ladder of success in any of the organisations I worked at. I don’t think my experiences are particularly unique either.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Quick Introduction to Azure Purview</title>
-      <link>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</link>
+      <link>http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/</link>
       <pubDate>Fri, 29 Jul 2022 07:15:27 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2022/catalogue-of-data-ai-600.png&#34; alt=&#34;Data Catalog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2022/catalogue-of-data-ai-600.png&#34; alt=&#34;Data Catalog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSIS Data Flow Performance Tuning</title>
-      <link>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</link>
+      <link>http://localhost:1313/posts/2020/08/11/ssis-performance/</link>
       <pubDate>Tue, 11 Aug 2020 15:18:01 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</guid>
+      <guid>http://localhost:1313/posts/2020/08/11/ssis-performance/</guid>
       <description>&lt;p&gt;Yes before you say it, I know SQL Server Integration Services is “old technology” but a lot of people are still using it, and in many cases are either still developing against it, or are looking to integrate/ migrate with other burgeoning technologies such as Azure Data Factory. In other words, if you are not currently using SSIS then this post is probably not for you -otherwise read on.&lt;/p&gt;&#xA;&lt;p&gt;If you are still one of the lucky ones to still be using SSIS, I thought it would be worth publishing these comprehensive notes taken from a session titled “SSIS Data Flow Performance Tuning” delivered at SQLBits 8 (Brighton) by the then “SSIS guru” Jamie Thomson. Notes have timings (in mins and seconds) against them, which correlate directly with the presentation times. The video is still available and can be downloaded from the &lt;a href=&#34;https://sqlbits.com/Sessions/Event8/SSIS_Dataflow_Performance_tuning&#34;&gt;SQLBits website&lt;/a&gt; so you can watch it (if required) and use the timings to follow along.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Querying Azure Vm State With Powershell</title>
-      <link>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</link>
+      <link>http://localhost:1313/posts/2020/05/12/querying-azure-vm-state-with-powershell/</link>
       <pubDate>Tue, 12 May 2020 15:16:36 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</guid>
+      <guid>http://localhost:1313/posts/2020/05/12/querying-azure-vm-state-with-powershell/</guid>
       <description>&lt;p&gt;I was recently given the task of identifying the state of an Azure VM so that an automation script using the &lt;code&gt;az vm run-command invoke&lt;/code&gt; would not fail if the VM was down or under a reboot.&lt;/p&gt;&#xA;&lt;p&gt;I initially thought the task would be really easy and a simple query of the VM state using &lt;code&gt;Get-AzVM&lt;/code&gt; would provide us with a running state property of the VM, but as it happens the state is a little abstracted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Removing and Maintaining Azure Resource Group Deployments Based Upon Deployment Count</title>
-      <link>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</link>
+      <link>http://localhost:1313/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</link>
       <pubDate>Wed, 06 May 2020 11:37:47 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</guid>
+      <guid>http://localhost:1313/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</guid>
       <description>&lt;p&gt;Whenever you create or update an Azure resource, a new &lt;em&gt;deployment&lt;/em&gt; is created under the resources’ configured resource group. This deployment history is retained ad-infinitum until you eventually hit the hard limit of &lt;em&gt;800 deployments (per resource group)&lt;/em&gt;. You may think this figure is more than enough to accommodate all the possible resource changes that could ever be made in a resource group, but if you are running CICD pipelines to push out your Infrastructure as Code (IaC) (or create lots of resources per resource group) then it is very likely you will exhaust this figure very quickly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inconsistent result sets and another case against pessimistic isolation</title>
-      <link>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</link>
+      <link>http://localhost:1313/posts/2020/04/27/inconsistent-results/</link>
       <pubDate>Mon, 27 Apr 2020 12:05:21 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</guid>
+      <guid>http://localhost:1313/posts/2020/04/27/inconsistent-results/</guid>
       <description>&lt;p&gt;I’m a big fan of demonstrating when transaction processing goes bad in Database Management Systems because it is a reminder to us all to ensure that we know exactly what we are doing when we write our code. Not only should you test and execute your code multiple times in serial (for instance running in sequence in isolation), but you should also execute in parallel with itself or other potentially dependent transactions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Restore Azure Devops Repository</title>
-      <link>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</link>
+      <link>http://localhost:1313/posts/2020/04/14/restore-azure-devops-repository/</link>
       <pubDate>Tue, 14 Apr 2020 12:34:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</guid>
+      <guid>http://localhost:1313/posts/2020/04/14/restore-azure-devops-repository/</guid>
       <description>&lt;p&gt;If you are using &lt;a href=&#34;https://azure.microsoft.com/en-gb/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt;, you might be comforted that your &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; repo is “in the Cloud” and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cannot delete old build definitions in Azure DevOps</title>
-      <link>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</link>
+      <link>http://localhost:1313/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</link>
       <pubDate>Wed, 25 Mar 2020 19:34:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</guid>
-      <description>&lt;p&gt;I have been experiencing a problem for quite a while now in my current environment, in that some of our old builds cannot be deleted. When you attempt to do so it results in the following error:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/cannotdel.webp&#34; alt=&#34;build error&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;One or more builds associated with the requested pipeline(s) are retained by a release. The pipeline(s) and builds will not be deleted.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many of our pipelines have undergone a lot of change over time to the degree it is not even obvious anymore why (or indeed where) these builds are being prevented from being dropped. The only thing that is clear is that until they can be, the old build definitions will remain.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</guid>
+      <description>&lt;p&gt;I have been experiencing a problem for quite a while now in my current environment, in that some of our old builds cannot be deleted. When you attempt to do so it results in the following error:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2020/cannotdel.webp&#34; alt=&#34;build error&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;One or more builds associated with the requested pipeline(s) are retained by a release. The pipeline(s) and builds will not be deleted.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many of our pipelines have undergone a lot of change over time to the degree it is not even obvious anymore why (or indeed where) these builds are being prevented from being dropped. The only thing that is clear is that until they can be, the old build definitions will remain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Querying Azure Devops Rest Api With Powershell</title>
-      <link>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</link>
+      <link>http://localhost:1313/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</link>
       <pubDate>Wed, 11 Mar 2020 13:13:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/saddog.png&#34; alt=&#34;sad dog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use &lt;a href=&#34;https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md&#34;&gt;PowerShell to consume your Azure CLI DevOps result&lt;/a&gt; set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2020/saddog.png&#34; alt=&#34;sad dog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use &lt;a href=&#34;http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md&#34;&gt;PowerShell to consume your Azure CLI DevOps result&lt;/a&gt; set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dropbox Appears Stuck Synchronizing Files</title>
-      <link>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</link>
+      <link>http://localhost:1313/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</link>
       <pubDate>Tue, 25 Feb 2020 10:28:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</guid>
+      <guid>http://localhost:1313/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</guid>
       <description>&lt;p&gt;Normally I don’t like off-topic style posts, and &lt;a href=&#34;https://www.dropbox.com&#34;&gt;Dropbox&lt;/a&gt; is certainly not within my key areas of interest, however, I am an avid user and every now and then I run into a problem that is frustrating and worrying -given a large number of important files I store on that platform. This post is my placeholder to help myself – and hopefully you!&lt;/p&gt;&#xA;&lt;p&gt;I recently ran into an issue where my Dropbox icon just kept spinning and spinning and believed it was related to some weird conflict resolution problem across different machines that I had run into by accident.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Use Powershell to Consume Your Azure Cli Devops Result Set</title>
-      <link>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</link>
+      <link>http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</link>
       <pubDate>Mon, 17 Feb 2020 13:43:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</guid>
+      <guid>http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</guid>
       <description>&lt;p&gt;Use PowerShell to consume your Azure CLI DevOps result set&#xA;Before we get going it is probably first worth me pointing out (in case you are wondering) that the whole premise of this post stems from a lack of native Azure DevOps PowerShell Module. Yes there are a few solutions out there, but at the time of writing there is no official Microsoft PowerShell DevOps module, so we are stuck with using the CLI if you want to avoid using these other solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rewrite Your Powershell Azurerm to Az for Azure Devops Deployments</title>
-      <link>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</link>
+      <link>http://localhost:1313/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</link>
       <pubDate>Thu, 13 Feb 2020 14:58:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</guid>
+      <guid>http://localhost:1313/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</guid>
       <description>&lt;p&gt;I just wanted to get a quick post out on specific problem that I have just encountered from one of our Azure DevOps release pipelines in which one of the release stage tasks started failing for no reason (despite no obvious changes having been made). Hopefully this post will help others if you are also experiencing this problem and don’t know what to do.&lt;/p&gt;&#xA;&lt;p&gt;The error message was as follows for our task &lt;code&gt;Enable Firewall on Data Lake&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Azure Cli to Query Azure Devops</title>
-      <link>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</link>
+      <link>http://localhost:1313/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</link>
       <pubDate>Mon, 06 Jan 2020 20:41:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</guid>
+      <guid>http://localhost:1313/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</guid>
       <description>&lt;p&gt;In previous posts, I have touched upon the use of Azure Cloud Shell for generic querying of Azure resources and I thought it would be useful to quickly document its use for something a little more specific such as querying or manipulating &lt;a href=&#34;https://azure.microsoft.com/en-us/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt; through the command line.&lt;/p&gt;&#xA;&lt;p&gt;For my example, I will focus on something as mundane and straight-forward as querying the Azure DevOps repository meta-data (so that I can look at and compare branch settings against each other) but I hope you get the idea that this is just scratching the tip of the iceberg and the &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&#34;&gt;Azure CLI&lt;/a&gt; is a powerful tool to add to your arsenal of scripting languages.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging diversity at technical events – volunteers and organisers</title>
-      <link>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</link>
+      <link>http://localhost:1313/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</link>
       <pubDate>Thu, 29 Aug 2019 19:28:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</guid>
+      <guid>http://localhost:1313/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</guid>
       <description>&lt;p&gt;In the third and final post of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of &lt;em&gt;volunteers and organisers&lt;/em&gt; at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what I mean by this term. According to the Merriam-Webster definition, diversity is “the condition of having or being composed of differing elements” and especially “the inclusion of different types of people (such as people of different races or cultures) in a group or organization”. I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging diversity at technical events – speakers</title>
-      <link>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</link>
+      <link>http://localhost:1313/posts/2019/07/25/diversity-at-technical-events-speakers/</link>
       <pubDate>Thu, 25 Jul 2019 21:30:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</guid>
+      <guid>http://localhost:1313/posts/2019/07/25/diversity-at-technical-events-speakers/</guid>
       <description>&lt;p&gt;In the second of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of speakers at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what I mean by this term. According to the Merriam-Webster definition, diversity is &amp;ldquo;the condition of having or being composed of differing elements&amp;rdquo; and especially &amp;ldquo;the inclusion of different types of people (such as people of different races or cultures) in a group or organization&amp;rdquo;. I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging diversity at technical events – attendees</title>
-      <link>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</link>
+      <link>http://localhost:1313/posts/2019/06/17/diversity-at-technical-events-attendees/</link>
       <pubDate>Mon, 17 Jun 2019 19:36:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</guid>
+      <guid>http://localhost:1313/posts/2019/06/17/diversity-at-technical-events-attendees/</guid>
       <description>&lt;p&gt;In the first of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of &lt;em&gt;attendees&lt;/em&gt; at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what &lt;em&gt;I mean&lt;/em&gt; by this term. According to the &lt;a href=&#34;https://https://www.merriam-webster.com/dictionary/diversity&#34;&gt;Merriam-Webster&lt;/a&gt; definition, diversity is &amp;ldquo;&lt;em&gt;the condition of having or being composed of differing elements&lt;/em&gt;&amp;rdquo; and especially &amp;ldquo;&lt;em&gt;the inclusion of different types of people (such as people of different races or cultures) in a group or organization&lt;/em&gt;&amp;rdquo;. I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure subscription is not registered to use Cosmos DB namespace</title>
-      <link>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</link>
+      <link>http://localhost:1313/posts/2019/05/31/azure-subscription-is-not-registered/</link>
       <pubDate>Fri, 31 May 2019 20:18:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</guid>
+      <guid>http://localhost:1313/posts/2019/05/31/azure-subscription-is-not-registered/</guid>
       <description>&lt;p&gt;It is usually the simplest things that often leave me feeling like I am a complete dummy. One such issue I ran into fairly recently when trying to deploy Cosmos DB into an Azure subscription.&lt;/p&gt;&#xA;&lt;p&gt;From Azure DevOps I received the following error:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;2019-05-31T16:28:55.4288261Z ##[error]MissingSubscriptionRegistration : The subscription is not registered to use namespace ‘Microsoft.DocumentDB’. See &lt;a href=&#34;https://aka.ms/rps-not-found&#34;&gt;https://aka.ms/rps-not-found&lt;/a&gt; for how to register subscriptions.&#xA;2019-05-31T16:28:55.5005526Z ##[section]Finishing: Deploy Cosmos Account and Database with Shared Capacity&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning to say NO</title>
-      <link>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</link>
+      <link>http://localhost:1313/posts/2017/08/08/learning-to-say-no/</link>
       <pubDate>Tue, 08 Aug 2017 20:31:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</guid>
+      <guid>http://localhost:1313/posts/2017/08/08/learning-to-say-no/</guid>
       <description>&lt;p&gt;Thank you to Kendra Little who is hosting this month&amp;rsquo;s T-SQL Tuesday topic on &amp;ldquo;Interviewing Patterns and Anti-Patterns&amp;rdquo; - and what advice I might have for someone preparing for an interview. But instead of regurgitating the obvious advice you can find in other places, I&amp;rsquo;d rather talk about my own personal experiences, in-particular about a specific dark period in my professional career and how I avoided jumping into yet another bad experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLRally and Beyond</title>
-      <link>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</link>
+      <link>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</guid>
+      <guid>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</guid>
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>How to connect to SMB targets in Linux</title>
+      <link>http://localhost:1313/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</link>
+      <pubDate>Tue, 13 Oct 2009 21:32:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</guid>
+      <description>&lt;p&gt;After much scrabbling around for days I have finally found it.&lt;/p&gt;&#xA;&lt;p&gt;Let me explain. After a recent rebuild of my Linux Mint laptop I could not for the life of me remember how to connect back to a UNC. Although I obviously had the command syntax:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo mount -t cifs //hostname/share /media/unc -o user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;username&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It just would not work and kept throwing up the following error:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mount: cannot mount block device&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All I remembered doing from previously getting it to work was that (I thought) I needed to apt-get a package. Thankfully after much trawling around and another poster, I came across the package and hey presto all is working again:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Auto generate database GRANTs</title>
+      <link>http://localhost:1313/posts/2009/09/16/generating-grant-statements-because-its-quicker/</link>
+      <pubDate>Wed, 16 Sep 2009 12:20:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/09/16/generating-grant-statements-because-its-quicker/</guid>
+      <description>&lt;p&gt;Just a very quick post here, but sometimes when you wish to grant execute right for multiple stored procedures to a particular database user it is easier to simply run the following script in the respective database in order to generate this assignment script. This is far easier than using the 2005 and 2008 GUI interface (and even 2000/ 7) especially if there are a lot of procedures.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;USE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GRANT EXEC ON .&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; name &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; TO [user]&amp;#39;&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; sysobjects &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; xtype &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;P&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AND&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update (18th January 2026):&lt;/strong&gt; Upon migrating posts to my new site I notice that this script appears incomplete. Todo: Will seek to update it with a working script when I get the chance (despite its age).&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Check your constraints to check your integrity</title>
+      <link>http://localhost:1313/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</link>
+      <pubDate>Sun, 19 Jul 2009 21:48:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</guid>
+      <description>&lt;p&gt;Something that you probably don’t need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Started using Linux Mint</title>
+      <link>http://localhost:1313/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</link>
+      <pubDate>Sun, 19 Jul 2009 21:48:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</guid>
+      <description>&lt;p&gt;For a very long time now (over 10 years) I’ve been trying very hard to &amp;ldquo;get into&amp;rdquo; Linux and there has always been a major obstacle hit along the way to make me put the OS back on the shelf for another day. Over this last year I have been seriously looking into a few distributions and I am very impressed. Whilst everything is not perfect, I have been very surprised how polished everything is begining to look and if I was Microsoft I would be really starting to look over my shoulder.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to perform an emergency database restore when blocked by corrupt database</title>
+      <link>http://localhost:1313/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</link>
+      <pubDate>Sun, 19 Jul 2009 12:18:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</guid>
+      <description>&lt;p&gt;The other day a fellow dba was having a problem with removing a corrupt database from a SQL Server and was failing to remember that the physical architecture of SQL Server is actually quite simple. Every time he tried to drop the database or to fix the database allowing for data loss or even take the database offline, the server would complain that the database was in single user mode (even though it wasn’t). Anything he tried on this database was complained about, and he was at a loss on how to remove it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Issues when moving your SQL data and log files</title>
+      <link>http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/</link>
+      <pubDate>Tue, 09 Jun 2009 20:53:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/</guid>
+      <description>&lt;p&gt;You might recall that I recently touched upon how to go about moving your &lt;a href=&#34;http://localhost:1313/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach&#34;&gt;SQL data and log files correctly&lt;/a&gt;. In this post I will quickly walk through one common scenario.&lt;/p&gt;&#xA;&lt;p&gt;Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Name resolution for SQL Server instances</title>
+      <link>http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</link>
+      <pubDate>Tue, 09 Jun 2009 02:10:15 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</guid>
+      <description>&lt;p&gt;SQL Server instances are great for allowing multiple instances on a single windows host, but unlike with Oracle instances this does cause a very big headache when configuring applications that consume these servers, instances and its databases. In the Oracle world there are many different mechanisms for name resolution and one of the most common is the use of the &lt;code&gt;TNSNAMES&lt;/code&gt; file which effectively maps the database (think SQL instance) to the host. The Oracle database name is a unique identifier and does not have an “instance” postfix name like SQL server, so this lends itself very easily to application/ database name separation. In addition the Oracle instance is not tied to a particular hostname and therefore can be moved onto another physical host with very little reconfiguration required in order for applications to communicate to this new host location. To be more specific, when using &lt;code&gt;TNSNAMES&lt;/code&gt; resolution, all that would be necessary from the application perspective to reconfigure them to reflect a new database host would be to edit this file on all the application servers ensuring that this hostname is changed to reflect its new name for this specific database.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Preserve backup chain with COPY ONLY backups</title>
+      <link>http://localhost:1313/posts/2009/06/09/copy-only-backups-another-great-addition/</link>
+      <pubDate>Tue, 09 Jun 2009 02:09:41 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2009/06/09/copy-only-backups-another-great-addition/</guid>
+      <description>&lt;p&gt;A welcome addition to SQL 2005 and above is the inclusion of the &lt;code&gt;COPY_ONLY&lt;/code&gt; clause to the BACKUP statement.&lt;/p&gt;&#xA;&lt;p&gt;This overcomes the long time problem of breaking the backup chain for your automated backup jobs when taking adhoc backups. For instance, imagine that another dba has taken a full backup in preparation for a change request and then later that day an incident occurs (such as drive failure) which requires a point in time recovery of the database and its logs. Unfortunately your colleague has not informed anyone about their full backup and has gone home for the evening. You will be left in a situation where you can successfully restore your scheduled backups, a differential and possibly some transaction logs but only up to the point before the last full was taken. In order to recover the database properly you need to restore that last full and any subsequent logs, but unfortunately you cannot locate this last full backup.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Recursive killing of SPIDs in a database for admin operations</title>
-      <link>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</link>
+      <link>http://localhost:1313/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</link>
       <pubDate>Wed, 27 May 2009 02:11:18 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</guid>
+      <guid>http://localhost:1313/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</guid>
       <description>&lt;p&gt;One problem that I have found particulary annoying of late when performing any database operation that requires connections to it to be disconnected, such as setting it offline or a restoring over the top of itself is getting rid of these connections. Obviously this can be achieved by listing the current spids connected to the database and performing a kill for each spid. This can be quite laborious and obvious does not address any spids coming live whilst you are busy killing the existing ones, so you can end up going around in circles.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Login failure user is not associated with a trusted SQL Server connection</title>
-      <link>https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</link>
+      <link>http://localhost:1313/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</link>
       <pubDate>Tue, 31 Mar 2009 02:10:10 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</guid>
-      <description>&lt;p&gt;Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2009/untrusted.jpg&#34; alt=&#34;Login failed for user&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</guid>
+      <description>&lt;p&gt;Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2009/untrusted.jpg&#34; alt=&#34;Login failed for user&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Auto generate RESTORE scripts from a live database</title>
-      <link>https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</link>
+      <link>http://localhost:1313/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</link>
       <pubDate>Thu, 19 Mar 2009 02:13:49 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</guid>
+      <guid>http://localhost:1313/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</guid>
       <description>&lt;p&gt;Have you ever performed a scripted restore or some of similar operation and then got entirely frustrated at the laborious and error prone nature of this exercise especially when the database consists of many datafiles and transaction log files?&lt;/p&gt;&#xA;&lt;p&gt;Of course the SQL Server 2005 GUI is very good at making the restore process much easier but it’s biggest failing is that it doesn’t preserve filenames (especially when the restored database name is changed). This is a very big problem when you have a large number of data files and causes a big headache.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to move your SQL Data and Log files correctly!</title>
-      <link>https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</link>
+      <link>http://localhost:1313/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</link>
       <pubDate>Thu, 05 Mar 2009 02:13:46 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</guid>
+      <guid>http://localhost:1313/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</guid>
       <description>&lt;p&gt;Recently I came across the &lt;code&gt;ALTER FILE&lt;/code&gt; part of the &lt;code&gt;ALTER DATABASE&lt;/code&gt; command and started thinking about its use when moving physical datafiles.&lt;/p&gt;&#xA;&lt;p&gt;I must admit that this particular part of the &lt;code&gt;ALTER DATABASE&lt;/code&gt; command has largely gone unused. Whilst the &lt;code&gt;REMOVE FILE&lt;/code&gt; part is infrequently used and the &lt;code&gt;ADD FILE&lt;/code&gt; part is possibly more so, the intuitive nature of the SQL 2005 and above GUI (and even SQL 7 and 2000 to some extent) has meant that resorting to various statements is largely unnecessary. In fact, the only times that I can really recall having resorted to the &lt;code&gt;MODIFY&lt;/code&gt; operator is when I have been renaming logical file names.&lt;/p&gt;</description>
     </item>
   </channel>

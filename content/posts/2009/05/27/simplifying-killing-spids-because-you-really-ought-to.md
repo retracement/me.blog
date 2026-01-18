@@ -13,8 +13,8 @@ Obviously it is possible when altering a database to specify the option `WITH RO
 Anyway here is the stored procedure main body:
 
 ```sql
-@dbname sysname, –required option (the database from which to kill of any connected user based spids)
-@help bit = 0 –optional option (view help)
+@dbname sysname, --required option (the database from which to kill of any connected user based spids)
+@help bit = 0 --optional option (view help)
 AS
 SET NOCOUNT ON
 
@@ -36,14 +36,14 @@ SET NOCOUNT ON
 DECLARE @spid SMALLINT
 DECLARE @str VARCHAR(255)
 
-–just select the last spid and kill it and loop around until no more spids
+--just select the last spid and kill it and loop around until no more spids
 PRINT 'Killing user processes in database ' + @dbname
 PRINT 'Executing from SPID ' + CONVERT(VARCHAR,@@SPID)
-WHILE EXISTS(SELECT TOP 1 spid FROM master..sysprocesses WHERE dbid = DB_ID(@dbname) and spid > 50 and spid @@SPID) –user spids are 51 and higher
+WHILE EXISTS(SELECT TOP 1 spid FROM master..sysprocesses WHERE dbid = DB_ID(@dbname) and spid > 50 and spid @@SPID) --user spids are 51 and higher
 BEGIN
 SELECT TOP 1 @spid = spid
 FROM master..sysprocesses
-WHERE dbid = DB_ID(@dbname) and spid > 50 and spid @@SPID –user spids are 51 and higher
+WHERE dbid = DB_ID(@dbname) and spid > 50 and spid @@SPID --user spids are 51 and higher
 
 SET @str = 'KILL ' + CONVERT(VARCHAR, @spid)
 
