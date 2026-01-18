@@ -6,20 +6,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/">
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/">
   <meta property="og:site_name" content="tenbulls blog">
-  <meta property="og:title" content="How to connect to SMB targets in Linux">
-  <meta property="og:description" content="After much scrabbling around for days I have finally found it.
-Let me explain. After a recent rebuild of my Linux Mint laptop I could not for the life of me remember how to connect back to a UNC. Although I obviously had the command syntax:
-sudo mount -t cifs //hostname/share /media/unc -o user=username It just would not work and kept throwing up the following error:
-mount: cannot mount block device All I remembered doing from previously getting it to work was that (I thought) I needed to apt-get a package. Thankfully after much trawling around and another poster, I came across the package and hey presto all is working again:">
+  <meta property="og:title" content="A quick ramble about Linux Mint 8">
+  <meta property="og:description" content="Well, I’m just typing this from my new (extra) desktop setup at home installed to Linux Mint 8.
+I’ve got to say that it just keeps getting better. Unlike my recent disappointment with the latest Windows offerings (excepting Windows 7 because it is too early for me to fairly judge), I have been very pleased with the latest Mint offering. Not only does it retain it’s familiar interface (which I have to say is why linux may imo one day trump Windows), but it appears crisper, more user friendly and accessible than ever.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2009-10-13T21:32:15+01:00">
-    <meta property="article:modified_time" content="2009-10-13T21:32:15+01:00">
+    <meta property="article:published_time" content="2009-12-15T22:31:00+01:00">
+    <meta property="article:modified_time" content="2009-12-15T22:31:00+01:00">
 
-<title>tenbulls blog | How to connect to SMB targets in Linux</title>
+<title>tenbulls blog | A quick ramble about Linux Mint 8</title>
 
       <link rel="stylesheet" href="/css/main.min.5e6d4b8bef4cf3cae354ea15e90a2db1ba333d11c636b642cd2fdbbe3ed26e9d.css" integrity="sha256-Xm1Li&#43;9M88rjVOoV6QotsbozPRHGNrZCzS/bvj7Sbp0=" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
@@ -79,36 +77,29 @@ mount: cannot mount block device All I remembered doing from previously getting 
     </div>
     <div class="post">
       <header class="mb-4">
-        <h1 class="text-uppercase">How to connect to SMB targets in Linux</h1>
+        <h1 class="text-uppercase">A quick ramble about Linux Mint 8</h1>
         
         
         <div aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item small">
               
-              <time datetime="2009-10-13T21:32:15&#43;01:00">October 13, 2009</time>
+              <time datetime="2009-12-15T22:31:00&#43;01:00">December 15, 2009</time>
             </li>
             
             
             <li class="breadcrumb-item small">
-              2 minutes
+              1 minutes
             </li>
           </ol>
         </div>
       </header>
       
       <article>
-        <p>After much scrabbling around for days I have finally found it.</p>
-<p>Let me explain. After a recent rebuild of my Linux Mint laptop I could not for the life of me remember how to connect back to a UNC. Although I obviously had the command syntax:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mount -t cifs //hostname/share /media/unc -o user<span style="color:#f92672">=</span>username
-</span></span></code></pre></div><p>It just would not work and kept throwing up the following error:</p>
-<pre tabindex="0"><code>mount: cannot mount block device
-</code></pre><p>All I remembered doing from previously getting it to work was that (I thought) I needed to apt-get a package. Thankfully after much trawling around and another poster, I came across the package and hey presto all is working again:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install smbfs
-</span></span></code></pre></div><p>Well now at least my problem is blogged and hopefully there for all eternity for me to refer back to.</p>
-<p>Its small things like this that really put off Win-doze users from Linux (at one time myself included) and should imo be included by default in a distro, but I guess you cannot have everything otherwise it (Linux) would not be as fast and customizable for purpose as it is.</p>
-<p>Anyway back to copying those large files across my wireless connection…</p>
-<p><em><strong>Update (7th January 2013):</strong> As of Linux Mint 14 (Nadia) I no longer see this as a installable package, there is smbnetfs but I couldnt seem to get that to work. I installed cifs-utils -which does seem to work.</em></p>
+        <p>Well, I&rsquo;m just typing this from my new (extra) desktop setup at home installed to Linux Mint 8.</p>
+<p>I’ve got to say that it just keeps getting better. Unlike my recent disappointment with the latest Windows offerings (excepting Windows 7 because it is too early for me to fairly judge), I have been very pleased with the latest Mint offering. Not only does it retain it’s familiar interface (which I have to say is why linux may imo one day trump Windows), but it appears crisper, more user friendly and accessible than ever.</p>
+<p>I am now running 4 out of 5 desktop machines on Linux with one extra Virtual Windows XP installation – and this to me is just amazing from where I was 12 months ago. I do still however have the unenviable task of “owning” too many to count Windows servers running SQL Server (which is my bread and butter) to support.</p>
+<p>If only I could get MS SQL running on Linux, that really would be special ;-D</p>
 
       </article>
       
@@ -116,17 +107,17 @@ mount: cannot mount block device All I remembered doing from previously getting 
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/">
+        <a href="https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/">
             <span>previous: </span>
-            <span>Auto generate database GRANTs</span>
+            <span>Remember your database files when dropping OFFLINE databases</span>
         </a>
         
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/">
+        <a href="https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/">
             <span>next: </span>
-            <span>SQL 2005 Performance troubleshooting</span>
+            <span>Rejoining split files in Windows and Linux</span>
         </a>
         
     </div>

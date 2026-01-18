@@ -6,20 +6,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/">
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/">
   <meta property="og:site_name" content="tenbulls blog">
-  <meta property="og:title" content="How to connect to SMB targets in Linux">
-  <meta property="og:description" content="After much scrabbling around for days I have finally found it.
-Let me explain. After a recent rebuild of my Linux Mint laptop I could not for the life of me remember how to connect back to a UNC. Although I obviously had the command syntax:
-sudo mount -t cifs //hostname/share /media/unc -o user=username It just would not work and kept throwing up the following error:
-mount: cannot mount block device All I remembered doing from previously getting it to work was that (I thought) I needed to apt-get a package. Thankfully after much trawling around and another poster, I came across the package and hey presto all is working again:">
+  <meta property="og:title" content="Remember your database files when dropping OFFLINE databases">
+  <meta property="og:description" content="If I asked you the question, “what happens to the physical data files if you drop an offline database?” would would probably have to have a bit of a think about it. There are really only three potential outcomes here :-
+The DROP fails The DROP succeeds and removes the data files The DROP succeeds and leaves the data files Now if you think about the nature of the offline database the answer becomes a little more obvious. The OFFLINE database is simply meta data in the system catalog, there are no associations to files apart from that which exists within this meta. Therefore on this basis, if you remove an offline database, you are essentially removing the meta data. So on this basis you can deduce that the physical data files would remain – and this is exactly what happens (option 3).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2009-10-13T21:32:15+01:00">
-    <meta property="article:modified_time" content="2009-10-13T21:32:15+01:00">
+    <meta property="article:published_time" content="2009-12-13T23:04:00+01:00">
+    <meta property="article:modified_time" content="2009-12-13T23:04:00+01:00">
 
-<title>tenbulls blog | How to connect to SMB targets in Linux</title>
+<title>tenbulls blog | Remember your database files when dropping OFFLINE databases</title>
 
       <link rel="stylesheet" href="/css/main.min.5e6d4b8bef4cf3cae354ea15e90a2db1ba333d11c636b642cd2fdbbe3ed26e9d.css" integrity="sha256-Xm1Li&#43;9M88rjVOoV6QotsbozPRHGNrZCzS/bvj7Sbp0=" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
@@ -79,14 +77,14 @@ mount: cannot mount block device All I remembered doing from previously getting 
     </div>
     <div class="post">
       <header class="mb-4">
-        <h1 class="text-uppercase">How to connect to SMB targets in Linux</h1>
+        <h1 class="text-uppercase">Remember your database files when dropping OFFLINE databases</h1>
         
         
         <div aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item small">
               
-              <time datetime="2009-10-13T21:32:15&#43;01:00">October 13, 2009</time>
+              <time datetime="2009-12-13T23:04:00&#43;01:00">December 13, 2009</time>
             </li>
             
             
@@ -98,17 +96,16 @@ mount: cannot mount block device All I remembered doing from previously getting 
       </header>
       
       <article>
-        <p>After much scrabbling around for days I have finally found it.</p>
-<p>Let me explain. After a recent rebuild of my Linux Mint laptop I could not for the life of me remember how to connect back to a UNC. Although I obviously had the command syntax:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mount -t cifs //hostname/share /media/unc -o user<span style="color:#f92672">=</span>username
-</span></span></code></pre></div><p>It just would not work and kept throwing up the following error:</p>
-<pre tabindex="0"><code>mount: cannot mount block device
-</code></pre><p>All I remembered doing from previously getting it to work was that (I thought) I needed to apt-get a package. Thankfully after much trawling around and another poster, I came across the package and hey presto all is working again:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install smbfs
-</span></span></code></pre></div><p>Well now at least my problem is blogged and hopefully there for all eternity for me to refer back to.</p>
-<p>Its small things like this that really put off Win-doze users from Linux (at one time myself included) and should imo be included by default in a distro, but I guess you cannot have everything otherwise it (Linux) would not be as fast and customizable for purpose as it is.</p>
-<p>Anyway back to copying those large files across my wireless connection…</p>
-<p><em><strong>Update (7th January 2013):</strong> As of Linux Mint 14 (Nadia) I no longer see this as a installable package, there is smbnetfs but I couldnt seem to get that to work. I installed cifs-utils -which does seem to work.</em></p>
+        <p>If I asked you the question, “what happens to the physical data files if you drop an offline database?” would would probably have to have a bit of a think about it.
+There are really only three potential outcomes here :-</p>
+<ol>
+<li>The DROP fails</li>
+<li>The DROP succeeds and removes the data files</li>
+<li>The DROP succeeds and leaves the data files</li>
+</ol>
+<p>Now if you think about the nature of the offline database the answer becomes a little more obvious. The <code>OFFLINE</code> database is simply meta data in the system catalog, there are no associations to files apart from that which exists within this meta. Therefore on this basis, if you remove an offline database, you are essentially removing the meta data. So on this basis you can deduce that the physical data files would remain – and this is exactly what happens (option 3).</p>
+<p>Therefore it is very important to remember to tidy up your old data and log files on your operating system that will be orphaned over time due to decommissioning of old databases. For instance one technique I always use when a request has been submitted to remove a database (after the usual backup policies) is to firstly set the database to readonly for one week. If no problem records have not been raised during this time I will then set it to offline for another week, and then finally drop the database from the server.</p>
+<p>Now it is at this point that it is important to remember to remove those orphaned files from the server otherwise there will be valuable wasted OS space and believe me, if you were not aware of SQL Server&rsquo;s behavior when dropping databases, and you are dealing with very many databases, it is very easy to forget.</p>
 
       </article>
       
@@ -116,17 +113,17 @@ mount: cannot mount block device All I remembered doing from previously getting 
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/">
+        <a href="https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/">
             <span>previous: </span>
-            <span>Auto generate database GRANTs</span>
+            <span>Some observations to SQL 2008 clustering installation</span>
         </a>
         
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/">
+        <a href="https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/">
             <span>next: </span>
-            <span>SQL 2005 Performance troubleshooting</span>
+            <span>A quick ramble about Linux Mint 8</span>
         </a>
         
     </div>
