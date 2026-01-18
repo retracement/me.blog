@@ -178,6 +178,55 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Permanently changing xterm size defaults</title>
+      <link>https://tenbulls.co.uk/posts/2009/12/29/changing-xterm-size-defaults-for-good/</link>
+      <pubDate>Tue, 29 Dec 2009 15:52:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/12/29/changing-xterm-size-defaults-for-good/</guid>
+      <description>&lt;p&gt;Here’s a good tip from a fellow blogger which for all those people (like me) who have lots of tweeks and customisations here and there might just get fed up of constantly resizing their xterm settings. Works an absolute treat.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&#34;&gt;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2009/xtermdefaults.jpg&#34; alt=&#34;change xterm defaults&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its just a shame that it is currently not possible to do this through the xterm profile settings.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rejoining split files in Windows and Linux</title>
+      <link>https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</link>
+      <pubDate>Mon, 21 Dec 2009 14:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</guid>
+      <description>&lt;p&gt;If you frequently download large files in many parts then you are probably not a stranger to HJSplit. This application can be used to connect these parts back together and is quite frankly completely unnecessary since your operating system likely already has a way! So how do you do it?&lt;/p&gt;&#xA;&lt;p&gt;Lets say you have just downloaded the following files:-&lt;/p&gt;&#xA;&lt;p&gt;big_file_part.iso.001&#xA;big_file_part.iso.002&#xA;big_file_part.iso.003&lt;/p&gt;&#xA;&lt;p&gt;To join these into one big file:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;In Windows&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A quick ramble about Linux Mint 8</title>
+      <link>https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</link>
+      <pubDate>Tue, 15 Dec 2009 22:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</guid>
+      <description>&lt;p&gt;Well, I&amp;rsquo;m just typing this from my new (extra) desktop setup at home installed to Linux Mint 8.&lt;/p&gt;&#xA;&lt;p&gt;I’ve got to say that it just keeps getting better. Unlike my recent disappointment with the latest Windows offerings (excepting Windows 7 because it is too early for me to fairly judge), I have been very pleased with the latest Mint offering. Not only does it retain it’s familiar interface (which I have to say is why linux may imo one day trump Windows), but it appears crisper, more user friendly and accessible than ever.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Remember your database files when dropping OFFLINE databases</title>
+      <link>https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</link>
+      <pubDate>Sun, 13 Dec 2009 23:04:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</guid>
+      <description>&lt;p&gt;If I asked you the question, “what happens to the physical data files if you drop an offline database?” would would probably have to have a bit of a think about it.&#xA;There are really only three potential outcomes here :-&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The DROP fails&lt;/li&gt;&#xA;&lt;li&gt;The DROP succeeds and removes the data files&lt;/li&gt;&#xA;&lt;li&gt;The DROP succeeds and leaves the data files&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Now if you think about the nature of the offline database the answer becomes a little more obvious. The &lt;code&gt;OFFLINE&lt;/code&gt; database is simply meta data in the system catalog, there are no associations to files apart from that which exists within this meta. Therefore on this basis, if you remove an offline database, you are essentially removing the meta data. So on this basis you can deduce that the physical data files would remain – and this is exactly what happens (option 3).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Some observations to SQL 2008 clustering installation</title>
+      <link>https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</link>
+      <pubDate>Thu, 19 Nov 2009 13:23:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</guid>
+      <description>&lt;p&gt;Well these last few days I’ve been really in the thick of it trying to sort out clustering on two new UAT servers running Windows 2008 and get SQL 2008 setup in an active/ active configuration. It’s been a real struggle for several reasons. The first is that I was only given a couple of days to learn, implement and configure due to significant overruns from the Technical Support team and the second is due to the fact of how much has changed in this latest release of clustering.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloning and Expanding VirtualBox disks in Linux</title>
+      <link>https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</link>
+      <pubDate>Mon, 09 Nov 2009 13:46:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</guid>
+      <description>&lt;p&gt;You always know when someone is very knowledgeable about a subject by the way in which they answer a question. A simple question is always answered with a simple solution, and this is what happened to me recently when I wanted to expand or migrate a virtualbox virtual disk attached to a real physical disk partition so that I could double my capacity.&lt;/p&gt;&#xA;&lt;p&gt;The problem was that I had built a virtual machine with a 16GB disk and realised pretty quickly that it was not going to be enough, so I posed a question to the Linux gurus “how do I clone a disk in Linux?”. Sure enough the reply came &amp;ldquo;&lt;code&gt;dd if=source of=destination bb=512&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQL 2005 Performance troubleshooting</title>
+      <link>https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</link>
+      <pubDate>Mon, 02 Nov 2009 23:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</guid>
+      <description>&lt;p&gt;This is just a quick post pointing to what appears to be a really useful technet article on &lt;a href=&#34;http://technet.microsoft.com/en-us/library/cc966540.aspx&#34;&gt;Troubleshooting Performance Problems in SQL Server 2005&lt;/a&gt; with some custom scripts.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to connect to SMB targets in Linux</title>
       <link>https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</link>
       <pubDate>Tue, 13 Oct 2009 21:32:15 +0100</pubDate>
@@ -194,7 +243,7 @@
     <item>
       <title>Check your constraints to check your integrity</title>
       <link>https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</link>
-      <pubDate>Sun, 19 Jul 2009 21:48:15 +0100</pubDate>
+      <pubDate>Wed, 22 Jul 2009 11:33:15 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</guid>
       <description>&lt;p&gt;Something that you probably don’t need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.&lt;/p&gt;</description>
     </item>

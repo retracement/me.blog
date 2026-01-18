@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Cloning and Expanding VirtualBox disks in Linux">
+  <meta property="og:description" content="You always know when someone is very knowledgeable about a subject by the way in which they answer a question. A simple question is always answered with a simple solution, and this is what happened to me recently when I wanted to expand or migrate a virtualbox virtual disk attached to a real physical disk partition so that I could double my capacity.
+The problem was that I had built a virtual machine with a 16GB disk and realised pretty quickly that it was not going to be enough, so I posed a question to the Linux gurus “how do I clone a disk in Linux?”. Sure enough the reply came “dd if=source of=destination bb=512”.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-11-09T13:46:00+01:00">
+    <meta property="article:modified_time" content="2009-11-09T13:46:00+01:00">
+
+<title>tenbulls blog | Cloning and Expanding VirtualBox disks in Linux</title>
+
+      <link rel="stylesheet" href="/css/main.min.5e6d4b8bef4cf3cae354ea15e90a2db1ba333d11c636b642cd2fdbbe3ed26e9d.css" integrity="sha256-Xm1Li&#43;9M88rjVOoV6QotsbozPRHGNrZCzS/bvj7Sbp0=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Cloning and Expanding VirtualBox disks in Linux</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2009-11-09T13:46:00&#43;01:00">November 9, 2009</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>You always know when someone is very knowledgeable about a subject by the way in which they answer a question. A simple question is always answered with a simple solution, and this is what happened to me recently when I wanted to expand or migrate a virtualbox virtual disk attached to a real physical disk partition so that I could double my capacity.</p>
+<p>The problem was that I had built a virtual machine with a 16GB disk and realised pretty quickly that it was not going to be enough, so I posed a question to the Linux gurus “how do I clone a disk in Linux?”. Sure enough the reply came &ldquo;<code>dd if=source of=destination bb=512</code>&rdquo;.</p>
+<p>I have to say that I was a little bit taken aback by that response since I thought &ldquo;AHHHH THATS NICE AND EASY!&rdquo;</p>
+<p>I describe the steps I took below.</p>
+<p>First you need to shutdown your machine with the source drive. Then you need to create a destination drive to your required size and attach this to your virtual machine. Next you should obtain a Live Linux CD, I tried Knoppix and booted up.</p>
+<p>After opening a command prompt I queried the available hard drives and mounted the hda1 partition to identify that this was indeed the source drive and it was. I then umounted this partition. I then proceeded to copy the source disk to the destination disk by running the aforementioned command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/hda of<span style="color:#f92672">=</span>/dev/hdb bb<span style="color:#f92672">=</span><span style="color:#ae81ff">512</span>
+</span></span></code></pre></div><p><img src="/images/2009/copy_drive.jpg" alt="Copy drive"></p>
+<p>After a long wait and a completed copy, I then rebooted the machine so that the new disk partition was detected. I then intended on loading up GParted to expand the partition to fill out the entire drive but unfortunately Knoppix is lacking this utility. For simplicitys sake I decided to download Ubuntu Live CD and use that instead. Upon loading up GParted I checked that the disks were exactly what I thought they were.</p>
+<p><img src="/images/2009/gpartedsource.jpg" alt="Gparted Source"></p>
+<p>Next I selected my new disk and expanded the new partition to the drive maximum.</p>
+<p><img src="/images/2009/gparteddestination.jpg" alt="Gparted Destination"></p>
+<p><img src="/images/2009/gpartedexpand.jpg" alt="Gparted Expand"></p>
+<p>Once finished expanding I then applied all disk operations.</p>
+<p><img src="/images/2009/gpartedapply.jpg" alt="Gparted Apply"></p>
+<p>Finally I then shutdown the machine, promoted the newly created disk to primary and removed the old disk (keeping a temporary copy just in case) and finally booted back up. The perfect larger cloned drive boots up fine, and all without resorting to third party software such as Ghost and Partition Magic!</p>
+<p>I think the beauty of all this is the fact that this cloning technique obviously doesn’t just apply to Linux partitions/ installations or even VirtualBox disks, but could in exactly the same way be applied to physical disks. It also means that you don’t need to fork out on expensive cloning software, worry about creating bootable disks and dont even need to be a Linux guru to perform the operation. Simply download an image, burn it to CD, and you are off and running.</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/">
+            <span>previous: </span>
+            <span>SQL 2005 Performance troubleshooting</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/">
+            <span>next: </span>
+            <span>Some observations to SQL 2008 clustering installation</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
