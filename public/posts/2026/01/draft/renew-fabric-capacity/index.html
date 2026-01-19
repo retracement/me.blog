@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2026/01/draft/renew-fabric-capacity/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="How to renew your Fabric Trial Capacity">
+  <meta property="og:description" content="It is probably fair to say that Microsoft are usually quite generous in giving free access to many of their services and products when compared to other software and hardware vendors, and I think that this (in part) has helped elevate the adoption of their service usage by technical professionals much more than would otherwise be possible.
+There is no substitute for hands-on learning, and where there is no availability to vendor pre-built readily deployable free temporary labs, the only other options left to us are to roll out our own, or cross our fingers that a full trial exists.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-19T14:23:00+01:00">
+    <meta property="article:modified_time" content="2026-01-19T14:23:00+01:00">
+
+<title>tenbulls blog | How to renew your Fabric Trial Capacity</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">How to renew your Fabric Trial Capacity</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <span class="draft-label">DRAFT</span> &#183;
+              
+              <time datetime="2026-01-19T14:23:00&#43;01:00">January 19, 2026</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              2 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>It is probably fair to say that Microsoft are usually quite generous in giving free access to many of their services and products when compared to other software and hardware vendors, and I think that this (in part) has helped elevate the adoption of their service usage by technical professionals much more than would otherwise be possible.</p>
+<p>There is no substitute for hands-on learning, and where there is no availability to vendor pre-built readily deployable free temporary labs, the only other options left to us are to roll out our own, or cross our fingers that a full trial exists.</p>
+<p>Take Databricks as an example. They provide a few options such as their <a href="https://www.databricks.com/learn/free-edition">Free Edition</a> (otherwise known as the Community Edition), but it does have a bunch of <a href="https://docs.databricks.com/aws/en/getting-started/free-edition-limitations">limitations</a>.
+Alternatively you could sign up for the Databricks <a href="https://docs.databricks.com/aws/en/getting-started/free-trial">Trial Edition</a> and whilst this gives you a more functional cluster to play around with, it is still not without its <a href="https://docs.databricks.com/aws/en/getting-started/free-trial#trial-limits">limitations</a>. Most frustrating is the fact that the trial only lasts for 14 days!</p>
+<p>Compare and contrast this with Microsoft Fabric. Their trial lasts for a 60 day period and usually deploys using an F64 capacity! That said, there are a few features for this capacity that are <a href="https://learn.microsoft.com/en-us/fabric/enterprise/fabric-features">not supported under trial</a>, and the most notable of these (at the time of writing) include:</p>
+<ul>
+<li>Workspace-level private links</li>
+<li>ARM APIs and Terraform</li>
+<li>Fabric data agent</li>
+</ul>
+<p>I hope you would agree that Microsoft trial offering beats Databricks trial hands-down. However, even though 60 days is a long time in technology, it is not a long time when you are trying to learn technology. Whilst I have heard many people suggest that it is possible to reach out to Microsoft to extend your Trial Capacity period, Microsoft&rsquo;s official stance is that they cannot or will not do this. I have also heard from several people to indicate that sometimes you may get the option to extend your Trial period from within your Fabric profile (as it nears the end) -assuming that your trial has been sufficiently active, but this has not been my experience to date.</p>
+<p><img src="/images/2026/Fabric%20Profile.png" alt="Fabric user profile"></p>
+<p>Instead the only assured way to &ldquo;extend&rdquo; is to sign up for a new Trial. We will describe that approach below</p>
+<h1 id="dealing-with-your-expiring-trial-capacity">Dealing with your expiring Trial Capacity</h1>
+<h1 id="signing-up-for-trial-capacity-again">Signing up for Trial Capacity again</h1>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2025/04/06/blog-update/">
+            <span>previous: </span>
+            <span>Restart of blog</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
