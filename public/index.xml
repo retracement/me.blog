@@ -7,15 +7,8 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Mon, 19 Jan 2026 14:23:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 06 Apr 2025 18:51:32 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to renew your Fabric Trial Capacity</title>
-      <link>http://localhost:1313/posts/2026/01/draft/renew-fabric-capacity/</link>
-      <pubDate>Mon, 19 Jan 2026 14:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2026/01/draft/renew-fabric-capacity/</guid>
-      <description>&lt;p&gt;It is probably fair to say that Microsoft are usually quite generous in giving free access to many of their services and products when compared to other software and hardware vendors, and I think that this (in part) has helped elevate the adoption of their service usage by technical professionals much more than would otherwise be possible.&lt;/p&gt;&#xA;&lt;p&gt;There is no substitute for hands-on learning, and where there is no availability to vendor pre-built readily deployable free temporary labs, the only other options left to us are to roll out our own, or cross our fingers that a full trial exists.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Restart of blog</title>
       <link>http://localhost:1313/posts/2025/04/06/blog-update/</link>
@@ -183,6 +176,27 @@
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
       <guid>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</guid>
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Good practices for manual SQL script promotion</title>
+      <link>http://localhost:1313/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</link>
+      <pubDate>Thu, 25 Feb 2010 14:36:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</guid>
+      <description>&lt;p&gt;An often overlooked part of promoting DML scripts is knowing what the intention is going to be before one is run. For instance if you work in an environment with a high throughput of DML script promotions then there is a good chance that those scripts will be ran via change control and then the results fed back. However what happens when the result counts end up being incorrect (i.e different to what was anticipated)? A rollback occurs and we are then talking about possible availability issues.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disabling and Enabling Oracle Scheduled Jobs in sqlplus</title>
+      <link>http://localhost:1313/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</link>
+      <pubDate>Tue, 19 Jan 2010 14:23:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</guid>
+      <description>&lt;p&gt;The first thing you need to know is what jobs are scheduled and enabled. To do this we simply query the &lt;code&gt;dba_scheduler_jobs&lt;/code&gt; view as follows:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;owner&lt;/span&gt;, job_name, enabled &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; dba_scheduler_jobs;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/configschedjobs.webp&#34; alt=&#34;Query scheduled jobs&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Now we know what jobs are present and enabled/ disabled we can use the &lt;a href=&#34;https://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_sched.htm&#34;&gt;DBMS_SCHEDULER&lt;/a&gt; to change their status. The &lt;code&gt;DBMS_SCHEDULER&lt;/code&gt; is a package which provides a collection of scheduling functions and procedures and in our case since we wish to either disable or enable a job, we simply call its Disable or Enable procedure as follows:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Restoring Mozilla Thunderbird email</title>
+      <link>http://localhost:1313/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</link>
+      <pubDate>Sat, 02 Jan 2010 01:29:32 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</guid>
+      <description>&lt;p&gt;Thunderbird is quiet a nice little app, just about all you want from a mail client and no more. The no more part is good because it keeps it fast. MS Outlook, Microsoft&amp;rsquo;s &amp;ldquo;killer app&amp;rdquo; is a very decent client too and I for one am currently tied into it due to years of reliance, but that I sense is changing due to my more flexible attitude of late. The main problem with Outlook as with any of the MS products is the sense that you are firstly &amp;ldquo;tied in&amp;rdquo; and secondly that over time they start to look and behave like bloat-ware. This is not necessarily Microsoft&amp;rsquo;s fault, but probably down to the age of the products and endless drive to add new commercial features.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Permanently changing xterm size defaults</title>

@@ -3,13 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-19T14:23:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2026/01/draft/renew-fabric-capacity/</loc>
-    <lastmod>2026-01-19T14:23:00+01:00</lastmod>
+    <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-01-19T14:23:00+01:00</lastmod>
+    <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/04/06/blog-update/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
@@ -82,6 +79,12 @@
   </url><url>
     <loc>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</loc>
     <lastmod>2012-01-25T02:06:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</loc>
+    <lastmod>2010-01-19T14:23:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</loc>
+    <lastmod>2010-01-02T01:29:32+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2009/12/29/changing-xterm-size-defaults-for-good/</loc>
     <lastmod>2009-12-29T15:52:00+01:00</lastmod>
