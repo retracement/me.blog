@@ -16,12 +16,21 @@ Compare and contrast this with Microsoft Fabric. Their trial lasts for a 60 day 
 - ARM APIs and Terraform
 - Fabric data agent
 
-I hope you would agree that Microsoft trial offering beats Databricks trial hands-down. However, even though 60 days is a long time in technology, it is not a long time when you are trying to learn technology. Whilst I have heard many people suggest that it is possible to reach out to Microsoft to extend your Trial Capacity period, Microsoft's official stance is that they cannot or will not do this. I have also heard from several people to indicate that sometimes you may get the option to extend your Trial period from within your Fabric profile (as it nears the end) -assuming that your trial has been sufficiently active, but this has not been my experience to date.
+I hope you would agree that Microsoft trial offering beats Databricks trial hands-down. However, even though 60 days is a long time in technology, it is not a long time when you are trying to learn technology. Whilst I have heard many people suggest that it is possible to reach out to Microsoft to extend your Trial Capacity period, Microsoft's official stance is that they cannot or will not do this. I have also heard from several people to indicate that sometimes you may get the option to extend your Trial period from within your Fabric profile (as it nears the end) -assuming that your trial has been sufficiently active, but this has not been my experience to date*1.
 
 ![Fabric user profile](/images/2026/Fabric%20Profile.png)
 
-Instead the only assured way to "extend" is to sign up for a new Trial. We will describe that approach below
+Instead the only assured way to "extend" is to sign up for a new Trial. We will describe that approach below and some of your considerations before doing so.
 
 # Dealing with your expiring Trial Capacity
 
+If you assume the worst (that your Trial Capacity is not extending), then you have an immediate problem to resolve. More specifically you are going to need to move any of your Fabric workspaces created under your trial capacity to another capacity. Technically it is possible to have up to 5 concurrent capacities under a single tenant *2
+
 # Signing up for Trial Capacity again
+
+
+
+
+*1 The option to renew apparently appears automatically when there are only 7 days left on the trial capacity. I will update this post as soon as I am able to validate this. With my recent experience (which fell over the Christmas break) I did not access my Fabric capacity during this time. Sorry Santa!
+
+*2 Again I have not validated this, and would advise against too many sign ups against your tenant. Microsoft are reviewing Fabric usage patterns and clearly will not want their cloud services abused! Less is more (don't take advantage of a good thing).

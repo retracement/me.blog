@@ -10,16 +10,18 @@ My name is Mark Broadbent and I am a Microsoft Certified Master in SQL Server (t
 
 I am the Technical Editor to [SQL Server on Linux ](https://www.amazon.com/Microsoft-SQL-Server-2017-Linux-ebook/dp/B07DCH314W/) (published 2018, McGraw-Hill), and Technical Reviewer to [High Performance SQL Server: Consistent Response for Mission-Critical Applications 2nd Edition](https://www.amazon.com/High-Performance-SQL-Server-Mission-Critical-ebook/dp/B08TQR3NMF) (published 2021, Apress), [SQL Server Query Tuning and Optimization: Optimize Microsoft SQL Server 2022 queries and applications](https://www.amazon.com/SQL-Server-Query-Tuning-Optimization/dp/1803242620) (published 2022, Apress), and [Expert SQL Server Transactions and Locking Concurrency Internals for SQL Server Practitioners](https://www.amazon.com/Expert-Server-Transactions-Locking-Practitioners-ebook/dp/B07FXCW836) (published 2018, Apress).
 
-I am a strong believer in community and have previously founded and lead SQLSaturday Cambridge, SharePoint Saturday Cambridge, East Anglia SQL Server User Group, SQL Nexus (as co-founder), and [Hybrid Virtual Group](https://www.meetup.com/hybrid-virtual-group/) (of which is still running). I have been a recipient of the PASS Outstanding Volunteer award and Microsoft Community Contributor awards.
+I am a strong believer in community and have previously founded and lead SQLSaturday Cambridge, SharePoint Saturday Cambridge (both of which we rolled into SPS SQL Saturday Cambridge for their last couple of editions), East Anglia SQL Server User Group, SQL Nexus in Denmark (as co-founder), and the [Hybrid Virtual Group](https://www.meetup.com/hybrid-virtual-group/) (of which is still running with my good friend Mikael). I have been a recipient of the PASS Outstanding Volunteer award and Microsoft Community Contributor awards.
 
-I am an experienced international conference speaker, having delivered sessions to hundreds of on-premises and online events including Microsoft Future Decoded, PASS Summit, SQLRally, SQLSaturday, SQL Nexus, SQLBits, 24 Hours of PASS, and SQLRelay.
+I am an experienced international conference speaker, having delivered sessions to hundreds of on-premises and online events around the world including Microsoft Future Decoded, PASS Summit, SQLRally, SQLSaturday, SQL Nexus, SQLBits, 24 Hours of PASS, and SQLRelay.
 
 ---
 **More about me**
 
 In what would at one time have been a list as long of your arm of websites that mentioned me for a variety of my professional and community activies, has now over time dwindled to a handful of references. I've kept the remaining links for posterity (and no doubt a minor twinge of narcicism!) but slowly over time these will themselves cease to exist. It's all quite sad in a way since old memories and reflections in other peoples blogs are slowly falling out of existance as time moves ever slowly forward (particularly those who were once good friends), but those that remain are interesting to me nether-the-less.
 
+[Book Review: High Performance SQL Server](https://blog.greglow.com/2021/02/26/book-review-high-performance-sql-server)
 [Geeks on Screens with Coffee Season 1](https://www.youtube.com/watch?v=turqFatk_ew)<br/>
+[SQL SERVER KONFERENZ 2019: Implementing Delayed Durability in SQL Server (Mark Broadbent)](https://www.youtube.com/watch?v=LxZujHmNcpM)<br/>
 [I was awarded the Microsoft Data Platform MVP](https://t-sql.dk/2017/03/)<br/>
 [SPS Cambridge](https://www.myfatblog.co.uk/index.php/2017/09/sps-cambridge-big-changes-at-work-and-the-months-to-come/)<br/>
 [UK TechDays Online 2016](https://learn.microsoft.com/en-us/shows/techdaysonline-uk-techdays-online-2016/few-of-my-favourite-things-in-sql-server-2016)<br/>
