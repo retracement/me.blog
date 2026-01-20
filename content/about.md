@@ -26,14 +26,16 @@ In what would at one time have been a list as long of your arm of websites that 
 [SPS Cambridge 2017 review](https://www.myfatblog.co.uk/index.php/2017/09/sps-cambridge-big-changes-at-work-and-the-months-to-come/) by Paul Hunt<br/>
 [Dear SQLDBA](https://dearsqldba.libsyn.com/interview-advice-from-the-sql-server-community) by Kendra Little<br/>
 [UK TechDays Online 2016 - A few of my favourite things in SQL Server 2016](https://learn.microsoft.com/en-us/shows/techdaysonline-uk-techdays-online-2016/few-of-my-favourite-things-in-sql-server-2016) hosted by Andrew Fryer and presented by Mark Broadbent<br/>
+[Creative entertainment at SQL Saturday Cambridge](https://www.red-gate.com/blog/redgate-events/sql-saturday-cambridge-2) by Redgate's Annabel Bradford<br/>
+[Using aliases for SharePoint databases](https://theblobfarm.wordpress.com/2015/08/12/using-aliases-for-sharepoint-databases/) by Régis Baccaro<br/>
 [Nikoport PASS Summit 2014 Recap](http://www.nikoport.com/2014/11/16/pass-summit-2014-recap) by Niko Neugebauer<br/>
 [PASS Summit 2014....here it comes](http://wendyverse.blogspot.com/2014/10/pass-summit-2014here-it-comes.html) by Wendy Pastrick<br/>
 [Ask SQL Family 004 ](https://www.youtube.com/watch?v=DSNNzwBNqww) with Kamil Nowinski and guest Mark Broadbent<br/>
 [2014 Microsoft Most Valuable Professional for SQL Server](http://theblobfarm.wordpress.com/2014/04/02/2014-microsoft-most-valuable-professional-for-sql-server-2/) by Régis Baccaro<br/>
 [SQLCambs review](https://matt40k.uk/2014/08/sqlcambs/) by Matt Smith<br/>
 [SqlSaturday #267 – my chosen sessions](http://pedromsimoes.wordpress.com/2014/04/19/sqlsaturday-267-my-chosen-sessions/) by Pedro Simoes<br/>
-<a title="PASS Summit 2013 Program Survey Results" href="http://retracement.files.wordpress.com/2013/05/pass-summit-2013-program-survey-results.pdf" target="_blank" rel="noopener">PASS Summit 2013 Program Survey Results</a><br/>
-<a title="History repeats itself..." href="http://t-sql.dk/?p=750" target="_blank" rel="noopener">History repeats itself...</a><br>
+[PASS Summit 2013 Program Survey Results](/documents/pass-summit-2013-program-survey-results.pdf)<br/>
+[History repeats itself...](http://t-sql.dk/?p=750) by Jens Vestergaard<br/>
 <a title="My Experience As a SQL Bits First Timer" href="http://mattsaundersdba.wordpress.com/" target="_blank" rel="noopener">My Experience As a SQL Bits First Timer</a><br>
 <a title="Announcing DiTBits at SQLBits" href="http://jenstirrup.com/2013/04/22/announcing-ditbits-at-sqlbits/" target="_blank" rel="noopener">Announcing DiTBits at SQLBits</a><br>
 <a title="SQL Saturday in Edinburgh on June 2013" href="http://thinknook.com/sql-saturday-in-edinburgh-on-june-2013-2013-01-20/" target="_blank" rel="noopener">SQL Saturday in Edinburgh on June 2013</a><br>
@@ -46,3 +48,4 @@ In what would at one time have been a list as long of your arm of websites that 
 <a title="The PoSh DBA: Solutions using PowerShell and SQL Server" href="https://www.simple-talk.com/sql/database-administration/the-posh-dba-solutions-using-powershell-and-sql-server/" target="_blank" rel="noopener">The PoSh DBA: Solutions using PowerShell and SQL Server</a><br>
 <a title="Let the PASS Summit 2011 Begin! Wednesday Keynote" href="http://blog.datainspirations.com/2011/10/12/let-the-pass-summit-2011-begin-wednesday-keynote/" target="_blank" rel="noopener">Let the PASS Summit 2011 Begin! Wednesday Keynote</a><br>
 <a title="SQLBits 9–”Oops, I did it again” or “Come together”" href="http://dirkhondong.wordpress.com/2011/10/17/sqlbits-9oops-i-did-it-again-or-come-together/" target="_blank" rel="noopener">SQLBits 9–”Oops, I did it again” or “Come together”</a><br>
+[T-SQL Tuesday #13 Roundup](https://voiceofthedba.com/2010/12/17/t-sql-tuesday-13-roundup/) by Steve Jones<br/>

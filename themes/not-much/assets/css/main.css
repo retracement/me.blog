@@ -382,3 +382,13 @@ hr {
 .breadcrumb-item {
   font-size:large;
 }
+
+ /* Customisation - for bold*/
+strong {
+  background: DimGray; /*provide lighter background on bold text*/
+}
+
+ /* Customisation - for italic (em)*/
+em {
+  background: 	DarkSlateGray; /*provide lighter background on bold text*/
+}

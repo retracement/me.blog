@@ -171,6 +171,34 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Webcam troubleshooting on Linux</title>
+      <link>https://tenbulls.co.uk/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</link>
+      <pubDate>Mon, 10 May 2010 08:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</guid>
+      <description>&lt;p&gt;The other day, due to a long distance friendship, I really thought it was time to try and get Skype up and running on one of my Linux machines (currently running the Helena release of Mint).&lt;/p&gt;&#xA;&lt;p&gt;Upon plugging in the USB cam (a nice little Logitech Quickcam Communicate STX), all initially looked promising with a little blue light briefly coming on.&lt;/p&gt;&#xA;&lt;p&gt;Downloading and installation of Skype occurred without incident, and I then proceeded to set-up my account. Unfortunately when I can to set-up my video device, even though Skype looked like it could see one, clicking the test button just had no effect and the screen was black.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to load CHM files from external media in Windows</title>
+      <link>https://tenbulls.co.uk/posts/2010/04/24/loading-chm-files-from-external-media/</link>
+      <pubDate>Sat, 24 Apr 2010 22:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/04/24/loading-chm-files-from-external-media/</guid>
+      <description>&lt;p&gt;Another very quick but useful tip that I had to do several years back (and most recently a few days ago) was to have to tell Windows to ignore the usual security constraints and allow other data sources. Otherwise when you attempt to load e-books from these data sources, otherwise you will be blocked.&lt;/p&gt;&#xA;&lt;p&gt;To work around this you simply need to add the following registry file to your registry. Note that in my case the J: drive is a mapped network drive.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prometric madness - Compute Says: No</title>
+      <link>https://tenbulls.co.uk/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</link>
+      <pubDate>Wed, 21 Apr 2010 21:25:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</guid>
+      <description>&lt;p&gt;Today I spent a very entertaining 4 hours or so, finally taking (after 4 years of getting around to it) the SQL 2005 upgrade exam and had a bit of a &amp;lsquo;mare. My first problem with this exam was that it started off with 7 or 8 mini-exams and these were essentially very large case studies that each had 5-8 questions attached. Now my first problem was that I must have spent the first 8 minutes of my allocated 15 for this one case study trying to figure out where the first question was! The number was displaying 1/8, however clicking the &lt;em&gt;&amp;ldquo;Question&amp;rdquo;&lt;/em&gt; button simply didn’t change anything and I was left with the explanation of how to do these mini exams. Finally after coming across some text somewhere I realised that question 1 was in fact not a question but an introduction!!!! Was it beyond the wit of man to not start the question numbering post introduction?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to search Active Directory membership</title>
+      <link>https://tenbulls.co.uk/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough./</link>
+      <pubDate>Tue, 20 Apr 2010 13:14:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough./</guid>
+      <description>&lt;p&gt;Bit of a quickie here but a goody. Nothing really new either but since I’ve just spent the last 10 minutes piecing the command together (the last time around 6 years ago) I might as well make a record of it.&lt;/p&gt;&#xA;&lt;p&gt;So the problem is that you have a very long list of users and groups within an Active Directory group and screen shots don’t cut the mustard any more. The solution is to use the dsquery command line tool.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Good practices for manual SQL script promotion</title>
       <link>https://tenbulls.co.uk/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</link>
       <pubDate>Thu, 25 Feb 2010 14:36:00 +0100</pubDate>
