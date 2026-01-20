@@ -19,20 +19,20 @@ I am an experienced international conference speaker, having delivered sessions 
 
 In what would at one time have been a list as long of your arm of websites that mentioned me for a variety of my professional and community activies, has now over time dwindled to a handful of references. I've kept the remaining links for posterity (and no doubt a minor twinge of narcicism!) but slowly over time these will themselves cease to exist. It's all quite sad in a way since old memories and reflections in other peoples blogs are slowly falling out of existance as time moves ever slowly forward (particularly those who were once good friends), but those that remain are interesting to me nether-the-less.
 
-[Book Review: High Performance SQL Server](https://blog.greglow.com/2021/02/26/book-review-high-performance-sql-server)
-[Geeks on Screens with Coffee Season 1](https://www.youtube.com/watch?v=turqFatk_ew)<br/>
-[SQL SERVER KONFERENZ 2019: Implementing Delayed Durability in SQL Server (Mark Broadbent)](https://www.youtube.com/watch?v=LxZujHmNcpM)<br/>
-[I was awarded the Microsoft Data Platform MVP](https://t-sql.dk/2017/03/)<br/>
-[SPS Cambridge](https://www.myfatblog.co.uk/index.php/2017/09/sps-cambridge-big-changes-at-work-and-the-months-to-come/)<br/>
-[Kendra Little's Dear SQLDBA](https://dearsqldba.libsyn.com/interview-advice-from-the-sql-server-community)<br/>
-[UK TechDays Online 2016](https://learn.microsoft.com/en-us/shows/techdaysonline-uk-techdays-online-2016/few-of-my-favourite-things-in-sql-server-2016)<br/>
-<a title="Nikoport PASS Summit 2014 Recap" href="http://www.nikoport.com/2014/11/16/pass-summit-2014-recap" target="_blank" rel="noopener">Nikoport PASS Summit 2014 Recap</a><br>
-<a title="PASS Summit 2014....here it comes!" href="http://wendyverse.blogspot.com/2014/10/pass-summit-2014here-it-comes.html" target="_blank" rel="noopener">PASS Summit 2014....here it comes!</a><br>
-[Ask SQL Family](https://www.youtube.com/watch?v=DSNNzwBNqww)<br/>
-<a title="2014 Microsoft Most Valuable Professional for SQL Server" href="http://theblobfarm.wordpress.com/2014/04/02/2014-microsoft-most-valuable-professional-for-sql-server-2/" target="_blank" rel="noopener">2014 Microsoft Most Valuable Professional for SQL Server</a><br>
-<a title="Matt Smith SQLCambs" href="https://matt40k.uk/2014/08/sqlcambs/" target="_blank" rel="noopener">Matt Smith SQLCambs</a><br>
-<a title="Pedro Simoes SqlSaturday #267 – my chosen sessions" href="http://pedromsimoes.wordpress.com/2014/04/19/sqlsaturday-267-my-chosen-sessions/" target="_blank" rel="noopener">Pedro Simoes SqlSaturday #267 – my chosen sessions</a><br>
-<a title="PASS Summit 2013 Program Survey Results" href="http://retracement.files.wordpress.com/2013/05/pass-summit-2013-program-survey-results.pdf" target="_blank" rel="noopener">PASS Summit 2013 Program Survey Results</a>
+[Book Review: High Performance SQL Server](https://blog.greglow.com/2021/02/26/book-review-high-performance-sql-server) by Greg Low<br/>
+[Geeks on Screens with Coffee Season 1](https://www.youtube.com/watch?v=turqFatk_ew) with Mark Pryce-Maher and guest Mark Broadbent <br/>
+[SQL SERVER KONFERENZ 2019: Implementing Delayed Durability in SQL Server](https://www.youtube.com/watch?v=LxZujHmNcpM) presented by Mark Broadbent<br/>
+[I was awarded the Microsoft Data Platform MVP](https://t-sql.dk/2017/03/) by Jens Vestergaard<br/>
+[SPS Cambridge 2017 review](https://www.myfatblog.co.uk/index.php/2017/09/sps-cambridge-big-changes-at-work-and-the-months-to-come/) by Paul Hunt<br/>
+[Dear SQLDBA](https://dearsqldba.libsyn.com/interview-advice-from-the-sql-server-community) by Kendra Little<br/>
+[UK TechDays Online 2016 - A few of my favourite things in SQL Server 2016](https://learn.microsoft.com/en-us/shows/techdaysonline-uk-techdays-online-2016/few-of-my-favourite-things-in-sql-server-2016) hosted by Andrew Fryer and presented by Mark Broadbent<br/>
+[Nikoport PASS Summit 2014 Recap](http://www.nikoport.com/2014/11/16/pass-summit-2014-recap) by Niko Neugebauer<br/>
+[PASS Summit 2014....here it comes](http://wendyverse.blogspot.com/2014/10/pass-summit-2014here-it-comes.html) by Wendy Pastrick<br/>
+[Ask SQL Family 004 ](https://www.youtube.com/watch?v=DSNNzwBNqww) with Kamil Nowinski and guest Mark Broadbent<br/>
+[2014 Microsoft Most Valuable Professional for SQL Server](http://theblobfarm.wordpress.com/2014/04/02/2014-microsoft-most-valuable-professional-for-sql-server-2/) by Régis Baccaro<br/>
+[SQLCambs review](https://matt40k.uk/2014/08/sqlcambs/) by Matt Smith<br/>
+[SqlSaturday #267 – my chosen sessions](http://pedromsimoes.wordpress.com/2014/04/19/sqlsaturday-267-my-chosen-sessions/) by Pedro Simoes<br/>
+<a title="PASS Summit 2013 Program Survey Results" href="http://retracement.files.wordpress.com/2013/05/pass-summit-2013-program-survey-results.pdf" target="_blank" rel="noopener">PASS Summit 2013 Program Survey Results</a><br/>
 <a title="History repeats itself..." href="http://t-sql.dk/?p=750" target="_blank" rel="noopener">History repeats itself...</a><br>
 <a title="My Experience As a SQL Bits First Timer" href="http://mattsaundersdba.wordpress.com/" target="_blank" rel="noopener">My Experience As a SQL Bits First Timer</a><br>
 <a title="Announcing DiTBits at SQLBits" href="http://jenstirrup.com/2013/04/22/announcing-ditbits-at-sqlbits/" target="_blank" rel="noopener">Announcing DiTBits at SQLBits</a><br>
