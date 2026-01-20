@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2010/07/19/stub-out-your-bad-practices-when-deploying-object-promotions/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Using STUBs for object promotions">
+  <meta property="og:description" content="When a script is deployed in your production environment, how is it deployed? Are the scripts written to account for the object already existing and if so what actions are taken? But what if the object doesn’t exist, what then? All too often in these scenarios the usual style of deployment scripts I see being provided to database teams first detect the existence of said object and then drop it (should it exist). This then leaves the way clear for the script to perform its create statement. is there really anything wrong with this approach? Well yes, actually there is.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-07-19T12:18:00+01:00">
+    <meta property="article:modified_time" content="2010-07-19T12:18:00+01:00">
+
+<title>tenbulls blog | Using STUBs for object promotions</title>
+
+      <link rel="stylesheet" href="/css/main.min.e527a301080eb1b5d1bbc5aa41af83b36de499b1bcf899fc56d075ab38c5027c.css" integrity="sha256-5SejAQgOsbXRu8WqQa&#43;Ds23kmbG8&#43;Jn8VtB1qzjFAnw=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Using STUBs for object promotions</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-07-19T12:18:00&#43;01:00">July 19, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>When a script is deployed in your production environment, how is it deployed? Are the scripts written to account for the object already existing and if so what actions are taken? But what if the object doesn&rsquo;t exist, what then? All too often in these scenarios the usual style of deployment scripts I see being provided to database teams first detect the existence of said object and then drop it (should it exist). This then leaves the way clear for the script to perform its create statement. is there really anything wrong with this approach? Well yes, actually there is.</p>
+<p>Every time an object is dropped from a database you are also removing database user permissions to it. This sounds (and ought to be) blatantly obvious, but from my experience it doesn&rsquo;t really seem to be the case or perhaps is thought to be not too important. In the cases where a developer is aware of what is happening, they tend to add extra DCL to their promotional script so that security is added back in. Obviously from a DBA perspective, having the security of your database and objects open to manipulation (albeit through a legitimate route) is not a good thing and therefore active usage of DCL should be discouraged or forbidden for standard promotions.</p>
+<p><img src="/images/2010/johnsteelesmall.jpg" alt="Developers vs DBAs"></p>
+<p>For those developers who are not aware that dropping an object loses the permissions, I believe they must think that the permissions somehow remain intact for the database user itself so that when an object is recreated the permissions would become relevant again. <em>THIS IS NOT THE CASE!</em> Remember, when dropping and recreating an object, it results in a new objectid and so even if the permission set did remain on the database user they would not point to this new object anyway.</p>
+<p>A different approach to your scripting is needed. Logically you must ensure that if an object exists then it is <code>ALTER</code>ed and if and only if the object does not exist should you issue a <code>CREATE</code>. At no time whatsoever should a <code>DROP</code> ever be issued unless of course a complete and persistent removal of an object is the desired consequence.</p>
+<p>There are a couple of hurdles to overcome in order to achieve this. The first is that the <code>ALTER</code> and <code>CREATE</code> statements must be the first statements of a batch and secondly logical <code>IF…ELSE</code> constructs and <code>GOTO</code> operators cannot span batches, therefore how can it be possible to check to see if the required object already exists and to take the relevant action depending upon that result?</p>
+<p><img src="/images/2010/tearhair.jpg" alt="Tearing your hair out"></p>
+<p>The way around this issue is to have the object modification script to always flow sequentially and once any logical branching has completed to continue along the same path. Also the object change script should always perform an <code>ALTER</code> statement, and this can occur post <code>GO</code> batch separator. This gets around most of the problems but we haven&rsquo;t yet accounted for the possibility that the object may not exist. Since we are always performing an <code>ALTER</code> for the change script, all we simply have to worry about is ensuring that we create the object if it doesn&rsquo;t already exist. In this instance we still face the issue regarding the <code>CREATE</code> statement requiring its own batch, but the problem here is that in order to know whether a <code>CREATE</code> is necessary, a logical test needs to be performed, and the solution to this is not so obvious since the logical test means that the <code>CREATE</code> would not be the first line in a batch!</p>
+<p>The solution to this last problem is actually quite simple. We can execute the <code>CREATE</code> batch by utilizing the <code>EXEC</code> statement, and this is great since we can now nest this within a logical existence test. This solution meets all of our requirements. Permissions and objectids are retained, and the script is very simple to maintain. Only the <code>ALTER</code> code segment would need to be updated for future code revisions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>USE dbaadmin
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">IF</span> OBJECT_ID (N<span style="color:#e6db74">&#39;usp_killspids&#39;</span>) <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">EXEC</span> (<span style="color:#e6db74">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    CREATE PROCEDURE usp_killspids AS
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    SELECT &#39;&#39;This is a stub procedure, implementation of it will
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     be created by an ALTER statement&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#39;</span>)
+</span></span><span style="display:flex;"><span>    PRINT <span style="color:#e6db74">&#39;Procedure usp_killspids does not exists, creating a
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     stub procedure before executing create script...&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> PROC [dbo].[usp_killspids]
+</span></span><span style="display:flex;"><span>.....
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">AS</span>
+</span></span><span style="display:flex;"><span>.....
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div>
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2010/07/09/just-cant-get-no-sit-isfaction-70-451/">
+            <span>previous: </span>
+            <span>More Prometric problems</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2010/07/28/make-your-tabs-more-readable-in-ssms/">
+            <span>next: </span>
+            <span>Make your query tabs more readable in SSMS</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
