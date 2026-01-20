@@ -1,7 +1,7 @@
 +++
 date = '2010-04-21T21:25:00+01:00'
 draft = false
-title = 'Prometric madness - Compute Says: No'
+title = 'Prometric madness - Computer Says: No'
 +++
 
 Today I spent a very entertaining 4 hours or so, finally taking (after 4 years of getting around to it) the SQL 2005 upgrade exam and had a bit of a 'mare. My first problem with this exam was that it started off with 7 or 8 mini-exams and these were essentially very large case studies that each had 5-8 questions attached. Now my first problem was that I must have spent the first 8 minutes of my allocated 15 for this one case study trying to figure out where the first question was! The number was displaying 1/8, however clicking the *"Question"* button simply didn’t change anything and I was left with the explanation of how to do these mini exams. Finally after coming across some text somewhere I realised that question 1 was in fact not a question but an introduction!!!! Was it beyond the wit of man to not start the question numbering post introduction?
