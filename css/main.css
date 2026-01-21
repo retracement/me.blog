@@ -392,3 +392,9 @@ strong {
 em {
   background: 	DarkSlateGray; /*provide lighter background on bold text*/
 }
+
+ /* Customisation - for blockquote (in markdown its >)*/
+blockquote {
+  background: 	DarkSlateGray; /*provide lighter background on bold text*/
+  font-style: italic;
+}
