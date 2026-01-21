@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2010/11/26/dastardly-database-and-password-hiding/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Dastardly database hiding">
+  <meta property="og:description" content="I’ve been recently going through the first part of one of Redgate’s excellent free ebooks The Red Gate Guide to SQL Server Team-based Development and was rather amused when I came across the section talking about creating what they term shape tables. Essentially what this means is to use the shape ascii codes in order to name a table. I remember a very very long time ago when I was still (almost) in short trousers reading an article suggesting that user passwords should incorporate various invisible ascii codes (such as escape codes) in their respective passwords, since this would render dictionary password cracking tools pretty much useless. It would also help if someone was looking over your shoulder – yes they have just observed you type MyP@ssw0rd but they didn’t quite catch that ascii code you also typed did they?!">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-11-26T13:44:00+01:00">
+    <meta property="article:modified_time" content="2010-11-26T13:44:00+01:00">
+
+<title>tenbulls blog | Dastardly database hiding</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Dastardly database hiding</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-11-26T13:44:00&#43;01:00">November 26, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>I&rsquo;ve been recently going through the first part of one of Redgate&rsquo;s excellent free ebooks <a href="https://www.simple-talk.com/books/sql-books/the-red-gate-guide-to-sql-server-team-based-development/">The Red Gate Guide to SQL Server Team-based Development</a> and was rather amused when I came across the section talking about creating what they term <em>shape</em> tables. Essentially what this means is to use the shape ascii codes in order to name a table. I remember a very very long time ago when I was still (almost) in short trousers reading an article suggesting that user passwords should incorporate various invisible ascii codes (such as escape codes) in their respective passwords, since this would render dictionary password cracking tools pretty much useless. It would also help if someone was looking over your shoulder – yes they have just observed you type <em>MyP@ssw0rd</em> but they didn&rsquo;t quite catch that ascii code you also typed did they?!</p>
+<p>Anyway, all this got me thinking (yes sometimes this does happen) specifically I started wondering <em>if databases could be named using ascii/extended ascii for those invisible codes?</em></p>
+<p><img src="/images/2010/invisible_man1.jpg" alt="Invisible man"></p>
+<p>For those of you who are not aware of how to type out an ascii code it is fairly simple. All you need to do is hold down the ALT key whilst typing out the numeric decimal code and releasing the ALT key. Depending upon what the code and the text editor you are in, the code may or may not cause a character to be input. For instance typing ALT+032 will cause a normal empty space to be input to your editor.</p>
+<p>After much trial, error and disappointment I was not having much success with invisible codes although I did find one immediate surprise -namely that you can call databases with no names! I&rsquo;m sure I must have read this somewhere but my conscious self does not recall it. One interesting thing about this, is that irrespective of how many spaces you put between your squared brackets it is always interpreted as the same name so essentially you can only create one database using spaces (or ascii 032).</p>
+<p>But much toying later I finally I had my eureka moment! I found that invisible ascii code 255 does generate an invisible character which isn&rsquo;t interpreted as an empty space. Even more interesting was that unlike ascii 032, multiple codes were being taken as a unique database name meaning that multiple databases could be created each with an apparent blank name – a good one for scaring your junior dbas :).</p>
+<p>So is there any use for doing this? Actually I can think of a couple but would be interested in any of your suggestions. I may at some stage follow this post up to go through a few of them.</p>
+<p><img src="/images/2010/magical-blank-databases.png" alt="Create and drop databases"></p>
+<p>I eventually decided to return back to the subject of user passwords. I again wondered if it was possible to use my magic ascii code of 255 when creating a SQL login. Yet again this took and the &ldquo;empty space&rdquo; was in fact being treated as a real character. In other words I couldn&rsquo;t substitute it for a SPACE. This is a very good thing because it means SQL login passwords can made be even more complex be using a combination of this code and real spaces. Actually I have a suspicion that you could probably use ascii 255 for naming any SQL Server object such as tables, columns, functions etc. or even use it in your data. I&rsquo;d be very interested to here about any tests you perform so please get in touch if you do.</p>
+<p>I can envisage several really interesting security uses of using this technique of using the hidden character within your database name and may at some point test these scenarios out, but I would be irresponsible if I didn&rsquo;t warn you to be careful. Firstly I do not know of the official stance on using this ascii code for object naming and it is just possible that future versions may break the way it currently works, although I think this is unlikely. Secondly because this code is invisible you might get into a situation where you cannot remember the sequence yourself particularly in the case of an old legacy database – although I cant currently think of a situation where you would not be able to recover from this but maybe further testing using certain scenarios and SQL technologies may reveal something and of course if I do find something…I&rsquo;ll let you know!</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/">
+            <span>previous: </span>
+            <span>Different differential backup behaviour between SQL versions</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="http://localhost:1313/posts/2010/11/30/the-fantastically-forgetful-ip-stack/">
+            <span>next: </span>
+            <span>The fantastically forgetful IP stack</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

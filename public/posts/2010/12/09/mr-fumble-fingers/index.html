@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2010/12/09/mr-fumble-fingers/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Mr. Fumble Fingers - a case against clustering">
+  <meta property="og:description" content="If you are not perfect (and I am guessing you are not!) you will have been in that situation where you have clicked your mouse button (substitute with your own horror story) and then almost immediately thought what have I done! followed by an intense feeling of self loathing, self pity and general hopelessness.
+Actually as DBA’s, being fallible is not really an option and is why our positions of risk are usually rewarded on many various levels -of which higher salaries only play a small part of it. In the early days of my long IT career I recall two scenarios that I remember that feeling of despair (stories which I’ll save for another rainy day) but on both of those occasions they were ironically Cluster related and on both occasions I could argue the mistakes had been entirely preventable -and not just by myself. One issue was related to hardware and the other to the software setup.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-12-09T14:27:00+01:00">
+    <meta property="article:modified_time" content="2010-12-09T14:27:00+01:00">
+
+<title>tenbulls blog | Mr. Fumble Fingers - a case against clustering</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Mr. Fumble Fingers - a case against clustering</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-12-09T14:27:00&#43;01:00">December 9, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>If you are not perfect (and I am guessing you are not!) you will have been in that situation where you have clicked your mouse button (substitute with your own horror story) and then almost immediately thought <em>what have I done!</em> followed by an intense feeling of self loathing, self pity and general hopelessness.</p>
+<p>Actually as DBA&rsquo;s, being fallible is not really an option and is why our positions of risk are usually rewarded on many various levels -of which higher salaries only play a small part of it. In the early days of my long IT career I recall two scenarios that I remember that feeling of despair (stories which I&rsquo;ll save for another rainy day) but on both of those occasions they were ironically Cluster related and on both occasions I could argue the mistakes had been entirely preventable -and not just by myself. One issue was related to hardware and the other to the software setup.</p>
+<p><img src="/images/2010/driving_with_a_phone21.jpg" alt="About to crash"></p>
+<p>There is a fallacy in IT departments with no experience of this technology that SQL Server Clustering automatically equals High Availability, and this belief is fundamentally wrong if your HA environment is in the wrong hands. Versions of Clustering prior to Windows and SQL 2008 was even more prone to failure due to mismanagement and misconfiguration.</p>
+<p>A point I have labored over the years to get across to various middle and senior level management personnel was that the entire Clustering infrastructure (should it ever be implemented) needed to be treated as a completely separate entity and have highly experienced and trained support staff managing it. Administrative access to the environment would be restricted only to that specialized team and would comprise of only the best and most experienced DBAs, Network engineers, Windows, and SAN admins. If you fail to get the message across then the story <em>will not</em> have a happy ending.</p>
+<p><img src="/images/2010/spanking.jpg" alt="Naughty boy"></p>
+<p>Unfortunately, in so many instances, IT departments integrate Clustering into their support infrastructure in exactly the same way in which they would any other new technology and this is when problems will strike and turn your HA solution into a smoldering piece of rubble (or as good as).</p>
+<p>SQL Server Clustering is a fantastic piece of technology in the right hands and is getting better in every single iteration but it has to be understood and managed correctly. It is sensitive to change (and this could even be something as innocuous as firmware updates to your SAN) and when it goes wrong usually requires a wide generalized skill set and specialized SQL and Clustering knowledge to fix problems. Much of the time many problems could have been avoided had you put in place the right support structure.</p>
+<p>Whilst I always think of SQL Server Clustering as <em>Higher Availability</em>, implemented incorrectly you might as well think of it as <em>Hopefully Available</em>.</p>
+<p>Happy Clustering!</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2010/12/06/more-cluster-group-network-names/">
+            <span>previous: </span>
+            <span>How to rename a SQL Failover Cluster </span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/">
+            <span>next: </span>
+            <span>SQLRally and Beyond</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2010/12/06/more-cluster-group-network-names/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="How to rename a SQL Failover Cluster ">
+  <meta property="og:description" content="Most recently I came across a couple of tweets on the #sqlhelp hash tag regarding changing a Cluster Group network name. Helpfully a knowledge base article was offered up to the person asking the original question. The article How to: Rename a SQL Server Failover Cluster Instance gave some very easy steps and advice to perform this action. However a comment was made regarding what exactly the Cluster Group Network name was. It was stated that “It is merely a DNS name” and this is not correct and may get you into hot water if you take that comment at face value.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-12-06T13:39:00+01:00">
+    <meta property="article:modified_time" content="2010-12-06T13:39:00+01:00">
+
+<title>tenbulls blog | How to rename a SQL Failover Cluster </title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">How to rename a SQL Failover Cluster </h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-12-06T13:39:00&#43;01:00">December 6, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Most recently I came across a couple of tweets on the #sqlhelp hash tag regarding changing a Cluster Group network name. Helpfully a knowledge base article was offered up to the person asking the original question. The article <a href="https://msdn.microsoft.com/en-us/library/ms178083.aspx">How to: Rename a SQL Server Failover Cluster Instance</a> gave some very easy steps and advice to perform this action. However a comment was made regarding what exactly the Cluster Group Network name was. It was stated that <em>&ldquo;It is merely a DNS name&rdquo;</em> and this is not correct and may get you into hot water if you take that comment at face value.</p>
+<p><img src="/images/2010/take-advice-carefully.jpg" alt="Not so easy"></p>
+<p>You may remember my post <a href="/posts/2010/10/22/use-protection-to-stay-available">Protect your failover cluster names</a> you might recall me discussing why and how you should protect your Cluster Group network names. Firstly to reiterate, the names are simply Active Directory machine name entries -just like any other Windows Domain server or desktop. These also have a respective DNS entry for the configured Cluster Group IP address.</p>
+<p>Performing this change actually does two different things.</p>
+<ol>
+<li>Updates the Network name in Active Directory, renaming it to reflect the new name.</li>
+<li>Creates a new A record (otherwise known as a host record) in DNS to map your new network name to it&rsquo;s respective IP.</li>
+</ol>
+<p>The first step is of particular importance. The key term here is update (not create). Should you or your Active Directory administrator make the disastrous decision to remove the original network name prior to the change then nearly all is lost so don&rsquo;t do this! In a further post I will demonstrate one way in which to recover from this situation.</p>
+<p>For the second step, the DNS entry is simply being created. This means that the old record will be left behind so you should ensure that this is tidied up post change over.</p>
+<p>So without further ado I think I should demonstrate the Cluster Group network name change. Once we have determined the network name that we wish to change the first thing we will do is have a quick look within Active Directory to check that the account does exist (which of course it should).</p>
+<p><img src="/images/2010/activesdirectory1.png" alt="Cluster Group Name"></p>
+<p>If you also look up this <code>A</code> record in DNS you will note that the IP address that it resolves to will be the same as your Cluster Group network name&rsquo;s dependent IP address. The process to changing the name is incredibly simple. Whilst the network name is active, bring up it&rsquo;s properties window.</p>
+<p><img src="/images/2010/changename1.png" alt="Name properties button"></p>
+<p>So the next step is to enter your desired network name in the misleadingly titled textbox of <code>DNS Name</code>. Changing this will update your existing network name within Active Directory and create your new DNS <code>A</code> record as described earlier.</p>
+<p><img src="/images/2010/changename2.png" alt="Name properties"></p>
+<p>Clicking the Apply button at this stage is not your last chance to back out however the next dialog is, so be sure this is what you want to do. You will be informed that proceeding will cause any existing clients to this network name connectivity problems (well what did you expect!). Click Yes and your changes will be updated. The network name cluster resource will go offline temporarily and once the changes have been made will automatically come back online under the new name.</p>
+<p><img src="/images/2010/changename3.png" alt="Confirmation to change"></p>
+<p>So one final check, after going into DNS and checking that your DNS <code>A</code> record has been created (you can potentially remove the old one at this stage) we should then check active directory to review the network name change.</p>
+<p><img src="/images/2010/activesdirectory2.png" alt="Name name in Active Directory"></p>
+<p>In conclusion I would just like to add that when listening to advise on forums, newsgroups, Twitter, websites and blogs (including mine) please ensure that you bear in mind <em>everyone is fallible</em>. Even though advise and information will be given with the best of intentions it can still be incorrect. if you blindly follow advise without your own thorough research and background validation you may land yourself in very hot water. Even the most highly skilled professionals can get it wrong sometimes (including MVPs), as I am sure they would themselves readily acknowledge, so it is important that you (if possible) test any recommended solution in a test environment before proceeding in a live one.</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/">
+            <span>previous: </span>
+            <span>SQLBits 7 the forgotten photos part 1</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="http://localhost:1313/posts/2010/12/09/mr-fumble-fingers/">
+            <span>next: </span>
+            <span>Mr. Fumble Fingers - a case against clustering</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

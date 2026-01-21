@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="What the Business says is not what the Business wants">
+  <meta property="og:description" content="Steve Jones, editor at large of SQL Server Central is this month hosting the latest T-SQL Tuesday and luckily I have managed to be organized enough to make a note in my Calendar so that I may finally contribute. A big thank you also goes to Steve who gave plenty of notice for this iteration of T-SQL Tuesday. If you don’t already know, the idea behind T-SQL Tuesday was created by Adam Machanic to improve the sharing of ideas and co-operation between SQL Server Professionals and if you would like to know more then you should check out Adam’s first ever post.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-12-14T00:07:00+01:00">
+    <meta property="article:modified_time" content="2010-12-14T00:07:00+01:00">
+
+<title>tenbulls blog | What the Business says is not what the Business wants</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">What the Business says is not what the Business wants</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-12-14T00:07:00&#43;01:00">December 14, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              8 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><img src="/images/2010/tsql2sday150x15032.webp" alt="TSQL Tuesday"></p>
+<p>Steve Jones, editor at large of SQL Server Central is this month hosting the latest <a href="https://www.sqlservercentral.com/blogs/steve_jones/archive/2010/12/07/t_2D00_sql-tuesday-_2300_13-_2D00_-what-the-business-says-is-not-what-the-business-wants.aspx">T-SQL Tuesday</a> and luckily I have managed to be organized enough to make a note in my Calendar so that I may finally contribute. A big thank you also goes to Steve who gave plenty of notice for this iteration of T-SQL Tuesday. If you don&rsquo;t already know, the idea behind T-SQL Tuesday was created by Adam Machanic to improve the sharing of ideas and co-operation between SQL Server Professionals and if you would like to know more then you should check out Adam&rsquo;s <a href="https://sqlblog.com/blogs/adam_machanic/archive/2009/11/30/invitation-to-participate-in-t-sql-tuesday-001-date-time-tricks.aspx">first ever post</a>.</p>
+<p><strong>Beware of Business solutions to Technical problems</strong></p>
+<p>The official topic for this month is <em>&ldquo;What issues have you had in interacting with the business to get your job done&rdquo;</em>, and I whilst I think that the experience of most DBAs talking to the Business will usually have resulted in lots of hair pulling (perhaps I am wrong), it is probably quite important to point out that when you are communicating to them this is YOUR ideal opportunity to get a particular message across. For instance if you are discussing the potential implementation of a new system that is going to cause your backup window severe lack of available time to complete, then now is your time to think about your current capacity and plan ahead for the future. I would suggest that if you cannot cope with extra unexpected load now, then you are failing to allow for future growth and communicate this across to the relevant people. I believe it is always important to provide the Business with an alternative solution rather than simply feeding back to them that a proposed implementation will not work. More importantly I think that it is necessary to give a detailed projection of what value your solution will add to the Business and why. The key word here is <em>value</em> and needs to be communicated from a Business perspective so that it can be understood, value is one concept the Business is very familiar with.</p>
+<p>The bottom line is that if you fail to convince the Business from a technical front of the rights and wrongs of a new system, you may well have their solution enforced on you. Obviously their solution may have been designed by somebody technical -whether it be a third party supplier or even someone internally, but it will still be their solution.</p>
+<p><img src="/images/2010/business-processes.jpg" alt="Business processes"></p>
+<p><strong>Be careful in your approach</strong></p>
+<p>Something I have just mentioned is also very important to remember, the concept of ownership of a solution. Remember that if you are going to disapprove of a request or proposal from the Business it is important to keep in mind that this requirement and possible solution will be loosely owned by somebody (or even many people) and you will be more influential in your negotiation if you are mindful of this and tactful in your approach.</p>
+<p>Another point I would like to make (which is I believe one of the things Steve has already pointed out) is that a requirement or proposal may have been arrived at due to a limited amount of knowledge of what is possible. It is entirely feasible that the Business may have changed their expectations and requirements in order to accommodate what they believe is deliverable. This may result in a request that is fundamentally wrong. Always try to understand what key requirement is at the root of their request in order for you to separate the wheat from the chaff. It is possible that a very expensive and complicated upgrade to a system could be avoided simply be asking the right questions and being able to provide and deliver functionality that may already be present (or possible) in your existing system .</p>
+<p><strong>Have the courage to speak up</strong></p>
+<p>So how do you get to the stage where you are discussing your concerns with the Business? One sure fire way to avoid this scenario is to blindly follow instruction irrespective of any concern you might have and this is a recipe for disaster. I cannot tell you the number of times I have witnessed IT professionals (and I&rsquo;m using that term loosely here guys) complaining about something they have been asked to do which in their opinion is fundamentally wrong or flawed and yet will not vocalize their concerns to someone who can action change or prevent it happening altogether (should good reason exist) for fear of coming across as a <em>trouble maker</em>. If you do not vocalize your concerns and blindly perform the action then you are complicit to any problems that may arise from doing so. Ask yourself <em>what actions would cause you to speak up?</em> If your line manager asked you to drop your companies internal Accounting database, would you just do it?&quot;. There is obviously a skill to raising concerns in a constructive manner and I guess it can sometimes be quite hard to do – I certainly don&rsquo;t pretend I&rsquo;m an authority on this, but I can at least appreciate when I could have done it better. I would far rather speak up and flag my concerns and get it wrong from time to time than be quiet and get it wrong ALL of the time.</p>
+<p><strong>The only certainty is: change is constant</strong></p>
+<p>I remember one particular problem related to a data refresh that had started to fail on a regular basis and was taking longer and longer to succeed. I had initially created the transfer in response to a very basic Business request which was only going to be used by a single person for reporting and the transfer was deemed as <em>unimportant</em> and therefore if the job failed overnight it could simply wait to attempt a run the next day. I had designed the job to use a mixture of T-SQL and (it was a very early adoption of) SSIS and it worked very very well for a matter of years.</p>
+<p>Something changed though over the years, the job started to fail more frequently and the Business surprisingly started to get more and more irate every time it failed. During important periods support staff were assigned the task of monitoring this job throughout the night (at no cost to the Business!) and things continued this way for a little while longer. My protests regarding the whole purpose of this job, why it had been put there and the original agreement were conveniently ignored since what was deemed more important was accommodating and supporting the Business requirement rather than understanding why this job had become so important and the focus for much frustration.</p>
+<p>Finally, a crunch meeting with the Business was arranged and I and some senior people from the Business and a few others who were involved in the Business Processes got around a table and <em>talked</em>.</p>
+<p><img src="/images/2010/avp_chess.jpg" alt="Alien vs Predator"></p>
+<p>One thing that became blatantly apparent to me was that the Business did not understand that this job was (and always had been) <em>non-critical</em>. Another thing they had not appreciated was that even though they were being given the impression that we were providing a 24×7 service supporting this job by individuals of varying seniority, I had to make it clear to them that this wasn&rsquo;t actually the case and that without a formalized service level agreement this could never be the case. I also explained that due to the length of time that the job was taking to complete (by this time a grand total of 9 hours), should any failure occur during the transfer and assuming the failure was successfully picked up by someone immediately then the job would still not have time to complete for the window in which they wished the dataset to be available.</p>
+<p>One very surprising and alarming thing that came out of this discussion from the other direction was that my humble transfer had now become the center of a huge SSAS reporting process involving other third party systems. This is something that happened over a long time and occurred in part due to the complex and diverse release mechanisms that existed in my place of work. I can assure you that I could say more about this and why it shouldn&rsquo;t have happened, but that would be a different T-SQL Tuesday discussion!</p>
+<p>I could also talk a very long time about what happened next, but I have already rambled for far too long. I really want to conclude by saying that the net result of the discussion was that the Business agreed to a short term and medium term strategy for the transfer. Namely I would make short term improvements straight away so that at very least we could try to get the job to resume from key stages in its execution should it fail, secondly on failure the previous days dataset would remain intact allowing the dependent Business analytics to still function from it. These changes alone overcame nearly all of the short term problems but I also ensured that the Business understood that we would make best efforts in the short term to ensure that the job succeeded but a rewrite was necessary and a formalized SLA stating exactly what their expectations and our deliverables were was required. The medium term strategy involved flagging the job as part of a Business critical process and it was assigned to a team of people allocated a number of man hours to improve the transfer where possible and putting it into a formalized support strategy.</p>
+<p>Most of the time in any company where the Business and I.T. departments are experiencing difficulties, they are normally occurring not because of any unsolvable problems but usually because of a lack of communication from both sides. Over a very long period of time as demonstrated by my example this can result in a very exaggerated misunderstanding and lack of value in the I.T. deliverables on many levels. If this sounds like your organization don&rsquo;t delay and get talking!</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2010/12/09/mr-fumble-fingers/">
+            <span>previous: </span>
+            <span>Mr. Fumble Fingers - a case against clustering</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/">
+            <span>next: </span>
+            <span>SQLRally and Beyond</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

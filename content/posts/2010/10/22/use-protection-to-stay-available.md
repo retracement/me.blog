@@ -1,5 +1,5 @@
 +++
-date = '2010-10-21T12:17:00+01:00'
+date = '2010-10-22T12:17:00+01:00'
 draft = false
 title = 'Protect your failover cluster names'
 +++

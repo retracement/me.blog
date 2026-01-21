@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2010/11/23/disk-partition-alignment/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Understanding disk partition alignment">
+  <meta property="og:description" content="I’m sure by now most of you will have heard about Disk Partition Alignment and why it is so important (and not just for use with SQL Server IO Subsystems). I’m really quite interested in how many companies have actually sat up and smelt the coffee and addressed this issue? This problem is something that DBA’s quite readily acknowledge is a potential area of concern, but we usually have to rely on our SAN and Server administrators being one step ahead of the game in actively addressing the situation.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-11-23T14:29:00+01:00">
+    <meta property="article:modified_time" content="2010-11-23T14:29:00+01:00">
+
+<title>tenbulls blog | Understanding disk partition alignment</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Understanding disk partition alignment</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-11-23T14:29:00&#43;01:00">November 23, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>I&rsquo;m sure by now most of you will have heard about Disk Partition Alignment and why it is so important (and not just for use with SQL Server IO Subsystems). I&rsquo;m really quite interested in how many companies have actually sat up and smelt the coffee and addressed this issue? This problem is something that DBA&rsquo;s quite readily acknowledge is a potential area of concern, but we usually have to rely on our SAN and Server administrators being one step ahead of the game in actively addressing the situation.</p>
+<p>Who do you think you are kidding!</p>
+<p>I&rsquo;ve experienced first hand on several occasions different DBA&rsquo;s flagging this issue as serious to those guys only to experience blank or puzzled looks or (at worst) a lack of desire to address the issue.</p>
+<p><img src="/images/2010/sssh.jpg" alt="Don&rsquo;t talk about it"></p>
+<p>The reality is that Disk Partition Alignment sounds nuts. Right? It is really one of those problems that you really wouldn&rsquo;t expect to find in modern day computing and the work around sounds almost like it is an April fools joke. The lack of uptake in addressing this problem is probably the biggest reason why this issue has now been addressed in Windows 2008 automatically, but unfortunately the story will not end there.</p>
+<p>Since a partition may be misaligned in previous versions of Windows at partition creation time, the problem will not be resolved until it is destroyed and recreated. This could be quite a painful exercise of moving data back and forth from old to new partitions and in those cases of very large full partitions may not actually be technically feasible until a secondary storage array has been obtained (and business downtime arranged) to make this operation possible. Another issue to bear in mind when you are recreating new partitions (after destroying the old) within Windows 2008 is that the Partition Alignment <em>may</em> have already been addressed by an on the ball SAN administrator at the SAN level. This will obviously mean that …yes you have guessed it…your new Windows 2008 partition will then be misaligned! This is something to watch out for.</p>
+<p>Anyway without further ado, here are a couple of useful urls for a more detailed look at this subject. This first url is quite simply excellent and should tell you everything you need to know.</p>
+<p><a href="https://msdn.microsoft.com/en-us/library/dd758814%28SQL.100%29.aspx">Disk Partition Alignment Best Practices for SQL Server</a></p>
+<p>The next two urls are supplementary:</p>
+<p><a href="https://support.microsoft.com/kb/300415">A Description of the Diskpart Command-Line Utility</a>
+<a href="http://sqlblogcasts.com/blogs/grumpyolddba/archive/2008/04/03/disk-partition-alignment-sans-and-diskpart.aspx">Disk Partition Alignment (SANs and Diskpart )</a></p>
+<p>In conclusion, the next time your company is putting in a new Disk Subsystem whether it be SAN or even DAS, don&rsquo;t forget to bring up the subject of partition alignment with your administrators and ensure that you all address this problem from the beginning.</p>
+<p><em><strong>Update (24th November 2010):</strong>
+I&rsquo;ve asked to clarify a couple of things in this post a little bit by Mladen Prajdic – the inventor of the great SSMS tools pack and although I can&rsquo;t promise it will make any more sense to others I shall do my best…here goes…. OK, so the particular area of confusion is the part where I discuss SAN admins addressing the partition alignment at the SAN level. What I mean by this is that it is possible for the SAN admins to do some SAN level magic to offset the partition which will not be visible to Windows. Therefore it is important that you ensure that you speak to them to determine that this has/ hasn&rsquo;t been done, although it would be unlikely since as my post states there seems to be a general apathy by the storage admins to partition alignment. Secondly, Windows NTFS filesystem cluster size should be compatible with the physical array stripe size. In both cases they should be 64Kb. The area of the SQL CAT article that touches on this is the section titled &ldquo;Essential Correlations: Partition Offset, File Allocation Unit Size, and Stripe Unit Size&rdquo;.</em></p>
+<p><em>Hope this was OK Mladen?</em></p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2010/11/22/back-to-front-mirror/">
+            <span>previous: </span>
+            <span>Understanding Database Mirroring modes of operation</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="http://localhost:1313/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/">
+            <span>next: </span>
+            <span>Different differential backup behaviour between SQL versions</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

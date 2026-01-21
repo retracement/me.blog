@@ -2,233 +2,263 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tenbulls.co.uk/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</loc>
+    <loc>http://localhost:1313/posts/2025/04/06/blog-update/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-04-05T13:48:02+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</loc>
+    <loc>http://localhost:1313/posts/2025/02/01/future-changes/</loc>
     <lastmod>2025-02-01T20:20:43+00:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</loc>
+    <loc>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</loc>
     <lastmod>2023-06-18T20:25:00+00:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</loc>
+    <loc>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</loc>
     <lastmod>2023-01-31T15:36:14+00:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</loc>
+    <loc>http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</loc>
     <lastmod>2022-09-01T21:19:27+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</loc>
+    <loc>http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/</loc>
     <lastmod>2022-07-29T07:15:27+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</loc>
+    <loc>http://localhost:1313/posts/2020/08/11/ssis-performance/</loc>
     <lastmod>2020-08-11T15:18:01+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</loc>
+    <loc>http://localhost:1313/posts/2020/05/12/querying-azure-vm-state-with-powershell/</loc>
     <lastmod>2020-05-12T15:16:36+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</loc>
+    <loc>http://localhost:1313/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</loc>
     <lastmod>2020-05-06T11:37:47+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</loc>
+    <loc>http://localhost:1313/posts/2020/04/27/inconsistent-results/</loc>
     <lastmod>2020-04-27T12:05:21+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</loc>
+    <loc>http://localhost:1313/posts/2020/04/14/restore-azure-devops-repository/</loc>
     <lastmod>2020-04-14T12:34:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</loc>
+    <loc>http://localhost:1313/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</loc>
     <lastmod>2020-03-25T19:34:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</loc>
+    <loc>http://localhost:1313/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</loc>
     <lastmod>2020-03-11T13:13:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</loc>
+    <loc>http://localhost:1313/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</loc>
     <lastmod>2020-02-25T10:28:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</loc>
+    <loc>http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</loc>
     <lastmod>2020-02-17T13:43:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</loc>
+    <loc>http://localhost:1313/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</loc>
     <lastmod>2020-02-13T14:58:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</loc>
+    <loc>http://localhost:1313/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</loc>
     <lastmod>2020-01-06T20:41:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</loc>
+    <loc>http://localhost:1313/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</loc>
     <lastmod>2019-08-29T19:28:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</loc>
+    <loc>http://localhost:1313/posts/2019/07/25/diversity-at-technical-events-speakers/</loc>
     <lastmod>2019-07-25T21:30:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</loc>
+    <loc>http://localhost:1313/posts/2019/06/17/diversity-at-technical-events-attendees/</loc>
     <lastmod>2019-06-17T19:36:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</loc>
+    <loc>http://localhost:1313/posts/2019/05/31/azure-subscription-is-not-registered/</loc>
     <lastmod>2019-05-31T20:18:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</loc>
+    <loc>http://localhost:1313/posts/2017/08/08/learning-to-say-no/</loc>
     <lastmod>2017-08-08T20:31:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</loc>
+    <loc>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</loc>
     <lastmod>2012-01-25T02:06:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</loc>
+    <loc>http://localhost:1313/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/</loc>
+    <lastmod>2010-12-14T00:07:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/12/09/mr-fumble-fingers/</loc>
+    <lastmod>2010-12-09T14:27:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/12/06/more-cluster-group-network-names/</loc>
+    <lastmod>2010-12-06T13:39:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</loc>
+    <lastmod>2010-12-01T15:05:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/11/30/the-fantastically-forgetful-ip-stack/</loc>
+    <lastmod>2010-11-30T10:56:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/11/26/dastardly-database-and-password-hiding/</loc>
+    <lastmod>2010-11-26T13:44:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/</loc>
+    <lastmod>2010-11-24T13:47:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/11/23/disk-partition-alignment/</loc>
+    <lastmod>2010-11-23T14:29:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/11/22/back-to-front-mirror/</loc>
+    <lastmod>2010-11-22T14:13:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/10/27/nxtgenug-guerrilla-tactics-review/</loc>
+    <lastmod>2010-10-27T12:11:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/10/22/use-protection-to-stay-available/</loc>
+    <lastmod>2010-10-22T12:17:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</loc>
     <lastmod>2010-10-21T13:59:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</loc>
-    <lastmod>2010-10-21T12:17:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/10/11/generate-your-cluster-logs/</loc>
+    <loc>http://localhost:1313/posts/2010/10/11/generate-your-cluster-logs/</loc>
     <lastmod>2010-10-11T11:58:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/</loc>
+    <loc>http://localhost:1313/posts/2010/10/08/cluster-aint-misbehavin/</loc>
     <lastmod>2010-10-08T11:04:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/09/23/when-cloud-goes-wrong/</loc>
+    <loc>http://localhost:1313/posts/2010/09/23/when-cloud-goes-wrong/</loc>
     <lastmod>2010-09-23T09:19:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/09/21/a-week-at-oracle-university/</loc>
+    <loc>http://localhost:1313/posts/2010/09/21/a-week-at-oracle-university/</loc>
     <lastmod>2010-09-21T18:25:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</loc>
+    <loc>http://localhost:1313/posts/2010/09/19/speaker-training-day/</loc>
     <lastmod>2010-09-19T18:16:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/09/16/corrupt-behaviour/</loc>
+    <loc>http://localhost:1313/posts/2010/09/16/corrupt-behaviour/</loc>
     <lastmod>2010-09-16T15:58:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/09/07/cloning-your-virtual-disks/</loc>
+    <loc>http://localhost:1313/posts/2010/09/07/cloning-your-virtual-disks/</loc>
     <lastmod>2010-09-07T14:23:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</loc>
+    <loc>http://localhost:1313/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</loc>
     <lastmod>2010-09-06T16:02:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/09/02/what-a-real-server-should-be/</loc>
+    <loc>http://localhost:1313/posts/2010/09/02/what-a-real-server-should-be/</loc>
     <lastmod>2010-09-02T19:38:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</loc>
+    <loc>http://localhost:1313/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</loc>
     <lastmod>2010-08-22T09:26:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</loc>
+    <loc>http://localhost:1313/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</loc>
     <lastmod>2010-08-10T11:21:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop/</loc>
+    <loc>http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop/</loc>
     <lastmod>2010-08-03T22:40:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/07/30/greens-are-good-ssms-script-feedback/</loc>
+    <loc>http://localhost:1313/posts/2010/07/30/greens-are-good-ssms-script-feedback/</loc>
     <lastmod>2010-07-30T14:56:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/07/28/make-your-tabs-more-readable-in-ssms/</loc>
+    <loc>http://localhost:1313/posts/2010/07/28/make-your-tabs-more-readable-in-ssms/</loc>
     <lastmod>2010-07-28T14:24:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/07/19/stub-out-your-bad-practices-when-deploying-object-promotions/</loc>
+    <loc>http://localhost:1313/posts/2010/07/19/stub-out-your-bad-practices-when-deploying-object-promotions/</loc>
     <lastmod>2010-07-19T12:18:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/07/09/just-cant-get-no-sit-isfaction-70-451/</loc>
+    <loc>http://localhost:1313/posts/2010/07/09/just-cant-get-no-sit-isfaction-70-451/</loc>
     <lastmod>2010-07-09T12:42:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/07/08/how-to-set-and-manage-your-sql-server-default-paths/</loc>
+    <loc>http://localhost:1313/posts/2010/07/08/how-to-set-and-manage-your-sql-server-default-paths/</loc>
     <lastmod>2010-07-08T23:59:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/05/30/make-your-life-easier-write-an-app-make-rad-work-for-you/</loc>
+    <loc>http://localhost:1313/posts/2010/05/30/make-your-life-easier-write-an-app-make-rad-work-for-you/</loc>
     <lastmod>2010-05-30T16:41:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/05/20/ssms-query-pane-bug-in-windows-7-its-bugging-me/</loc>
+    <loc>http://localhost:1313/posts/2010/05/20/ssms-query-pane-bug-in-windows-7-its-bugging-me/</loc>
     <lastmod>2010-05-20T14:05:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/05/13/windows-7-install-sit-back-and-watch/</loc>
+    <loc>http://localhost:1313/posts/2010/05/13/windows-7-install-sit-back-and-watch/</loc>
     <lastmod>2010-05-13T20:17:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</loc>
+    <loc>http://localhost:1313/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</loc>
     <lastmod>2010-05-12T20:53:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</loc>
+    <loc>http://localhost:1313/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</loc>
     <lastmod>2010-05-10T08:47:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/04/24/loading-chm-files-from-external-media/</loc>
+    <loc>http://localhost:1313/posts/2010/04/24/loading-chm-files-from-external-media/</loc>
     <lastmod>2010-04-24T22:43:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</loc>
+    <loc>http://localhost:1313/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</loc>
     <lastmod>2010-04-21T21:25:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough/</loc>
+    <loc>http://localhost:1313/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough/</loc>
     <lastmod>2010-04-20T13:14:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</loc>
+    <loc>http://localhost:1313/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</loc>
     <lastmod>2010-02-25T14:36:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</loc>
+    <loc>http://localhost:1313/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</loc>
     <lastmod>2010-01-19T14:23:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</loc>
+    <loc>http://localhost:1313/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</loc>
     <lastmod>2010-01-02T01:29:32+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/12/29/changing-xterm-size-defaults-for-good/</loc>
+    <loc>http://localhost:1313/posts/2009/12/29/changing-xterm-size-defaults-for-good/</loc>
     <lastmod>2009-12-29T15:52:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</loc>
+    <loc>http://localhost:1313/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</loc>
     <lastmod>2009-12-21T14:06:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</loc>
+    <loc>http://localhost:1313/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</loc>
     <lastmod>2009-12-15T22:31:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</loc>
+    <loc>http://localhost:1313/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</loc>
     <lastmod>2009-12-13T23:04:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</loc>
+    <loc>http://localhost:1313/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</loc>
     <lastmod>2009-11-19T13:23:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</loc>
+    <loc>http://localhost:1313/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</loc>
     <lastmod>2009-11-09T13:46:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</loc>
+    <loc>http://localhost:1313/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</loc>
     <lastmod>2009-11-02T23:07:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</loc>
+    <loc>http://localhost:1313/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</loc>
     <lastmod>2009-10-13T21:32:15+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/</loc>
+    <loc>http://localhost:1313/posts/2009/09/16/generating-grant-statements-because-its-quicker/</loc>
     <lastmod>2009-09-16T12:20:15+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</loc>
+    <loc>http://localhost:1313/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</loc>
     <lastmod>2009-07-22T11:33:15+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</loc>
+    <loc>http://localhost:1313/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</loc>
     <lastmod>2009-07-19T21:48:15+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</loc>
+    <loc>http://localhost:1313/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</loc>
     <lastmod>2009-07-19T12:18:15+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/</loc>
+    <loc>http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/</loc>
     <lastmod>2009-06-09T20:53:15+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</loc>
+    <loc>http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</loc>
     <lastmod>2009-06-09T02:10:15+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/06/09/copy-only-backups-another-great-addition/</loc>
+    <loc>http://localhost:1313/posts/2009/06/09/copy-only-backups-another-great-addition/</loc>
     <lastmod>2009-06-09T02:09:41+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</loc>
+    <loc>http://localhost:1313/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</loc>
     <lastmod>2009-05-27T02:11:18+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</loc>
+    <loc>http://localhost:1313/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</loc>
     <lastmod>2009-03-31T02:10:10+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</loc>
+    <loc>http://localhost:1313/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</loc>
     <lastmod>2009-03-19T02:13:49+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</loc>
+    <loc>http://localhost:1313/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</loc>
     <lastmod>2009-03-05T02:13:46+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Different differential backup behaviour between SQL versions">
+  <meta property="og:description" content="The other day I ran into a rather unique problem with a database when attempting to maintain it’s transaction log. As it turned out my particular issue was related to old replication code -which I hope to post about at a later date, but essentially I needed to clear down some of the logfile’s VLFs which I was struggling to perform. Anything I attempted to maintain it failed, however if I performed Transactional log backups, they would also fail due to the fact that there was no Full database backup in existence. Since the database was huge, and a full backup would have taken up to 12 hours to perform, it raised quite an interesting question namely was there a way to force a Transactional log backup?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-11-24T13:47:00+01:00">
+    <meta property="article:modified_time" content="2010-11-24T13:47:00+01:00">
+
+<title>tenbulls blog | Different differential backup behaviour between SQL versions</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Different differential backup behaviour between SQL versions</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-11-24T13:47:00&#43;01:00">November 24, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>The other day I ran into a rather unique problem with a database when attempting to maintain it&rsquo;s transaction log. As it turned out my particular issue was related to old replication code -which I hope to post about at a later date, but essentially I needed to clear down some of the logfile&rsquo;s VLFs which I was struggling to perform. Anything I attempted to maintain it failed, however if I performed Transactional log backups, they would also fail due to the fact that there was no Full database backup in existence. Since the database was huge, and a full backup would have taken up to 12 hours to perform, it raised quite an interesting question namely <em>was there a way to force a Transactional log backup</em>?</p>
+<p>My good friend Allen Dunn came up with the idea of taking a Differential backup first instead, but I had already tried this. However Alan insisted that it did work and upon questioning him further it transpired that he was doing so on a SQL 2005 server.</p>
+<p><img src="/images/2010/twitterwithalan.png" alt="Twitter with Alan"></p>
+<p>I was particularly interested since I was convinced that I had observed this exact same behaviour on that platform as well several years back, so I decided to run some tests. Below you will see the T-SQL code that I scrambled together to test, but essentially the test would first attempt a Differential backup on a new database (that obviously would not have a Full backup) and then followed the test up with a Transactional log backup on a new database. I was surprised to find that the behaviour does indeed differ between SQL 2005 and 2008.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> NOCOUNT <span style="color:#66d9ef">ON</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">@@</span><span style="color:#66d9ef">VERSION</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">IF</span> db_id(<span style="color:#e6db74">&#39;PuzzledDB&#39;</span>) <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">DATABASE</span> PuzzledDB
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> PuzzledDB
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--try performing differential backup with no full in place
+</span></span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP <span style="color:#66d9ef">DATABASE</span> PuzzledDB <span style="color:#66d9ef">TO</span> DISK <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C:\PuzzledDB.diff&#39;</span> <span style="color:#66d9ef">WITH</span> DIFFERENTIAL
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">IF</span> db_id(<span style="color:#e6db74">&#39;PuzzledDB&#39;</span>) <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">DATABASE</span> PuzzledDB
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> PuzzledDB
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--try performing transaction log backup with no full in place
+</span></span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP LOG PuzzledDB <span style="color:#66d9ef">TO</span> DISK <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C:\PuzzledDB.log&#39;</span>
+</span></span></code></pre></div><p>As you will see below the screen shot of the results from the SQL 2008 server did confirm exactly what I had experienced that not only the Differential backups require a full backup to have been taken, but also the Transactional log backups do too. I think this behaviour is understandable for normal operations on the basis that either backup without a corresponding <em>FULL</em> would essentially be useless for recovery purposes:</p>
+<p><img src="/images/2010/2008backup.png" alt="2008 backup"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Microsoft SQL Server 2008 (SP1) - 10.0.2531.0 (Intel X86) Mar 29 2009 10:27:29 Copyright (c) 1988-2008 Microsoft Corporation Enterprise Edition on Windows NT 5.2  (Build 3790: Service Pack 2)
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Msg 3035, Level 16, State 1, Line 9
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Cannot perform a differential backup for database &#34;PuzzledDB&#34;, because a current database backup does not exist. Perform a full database backup by reissuing BACKUP DATABASE, omitting the WITH DIFFERENTIAL option.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Msg 3013, Level 16, State 1, Line 9
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP DATABASE is terminating abnormally.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Msg 4214, Level 16, State 1, Line 16
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP LOG cannot be performed because there is no current database backup.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Msg 3013, Level 16, State 1, Line 16
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP LOG is terminating abnormally.
+</span></span></code></pre></div><p>Now here comes the surprise… As Alan quite rightly said, a differential backup works in SQL 2005! Interestingly the transactional log backups still fail with the same error:</p>
+<p><img src="/images/2010/2005backup.png" alt="2005 backup"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Microsoft SQL Server 2005 - 9.00.4035.00 (Intel X86) Nov 24 2008 13:01:59 Copyright (c) 1988-2005 Microsoft Corporation Enterprise Edition on Windows NT 5.2 (Build 3790: Service Pack 2)
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Processed 184 pages for database &#39;PuzzledDB&#39;, file &#39;PuzzledDB&#39; on file 3.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Processed 1 pages for database &#39;PuzzledDB&#39;, file &#39;PuzzledDB_log&#39; on file 3.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP DATABASE WITH DIFFERENTIAL successfully processed 185 pages in 0.342 seconds (4.410 MB/sec).
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Msg 4214, Level 16, State 1, Line 16
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP LOG cannot be performed because there is no current database backup.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>Msg 3013, Level 16, State 1, Line 16
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>BACKUP LOG is terminating abnormally.
+</span></span></code></pre></div><p>I&rsquo;m not entirely sure why the ability to take Differentials on databases that haven&rsquo;t had a Full backup taken first (SQL 2008) has been removed or whether it being allowed in SQL 2005 was an oversight for that release. Personally I do not like this kind of &ldquo;Nanny&rdquo; style computing in restricting our actions because I believe that by forcing us down one resolution route hinders our ability to make an informed judgement to take another course of action. Going back to my initial problem that I touched upon at the beginning, I believe that had the transaction log backups been allowed to run they probably still wouldn&rsquo;t have resolved my problem with the VLF&rsquo;s, but what this would have done is shown me very early on that something else was <em>fundamentally wrong</em> in the database configuration and therefore arrived at a solution faster than I did.</p>
+<p><strong>Disclaimer:</strong> For important databases you should always try to guarantee that you are able to meet your RPO, this means always having a Full backup and any relevant Differential with respective Transaction log backups (depending upon your SLA and RPO). What this means to YOU as a DBA is to AVOID performing any operation that will break this chain!</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2010/11/23/disk-partition-alignment/">
+            <span>previous: </span>
+            <span>Understanding disk partition alignment</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="http://localhost:1313/posts/2010/11/26/dastardly-database-and-password-hiding/">
+            <span>next: </span>
+            <span>Dastardly database hiding</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
