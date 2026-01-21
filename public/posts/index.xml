@@ -171,6 +171,97 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>More cluster disk corruption</title>
+      <link>https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</link>
+      <pubDate>Thu, 21 Oct 2010 13:59:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</guid>
+      <description>&lt;p&gt;Ironically not more than a week or so after I emphasised the importance for DBAs to check file system integrity in my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/&#34;&gt;Recovering from corruption in SQL Failover Cluster&lt;/a&gt;, another incident raises it&amp;rsquo;s ugly head. The post highlighted that file system corruption can cause unusual behaviour with your SQL instance, so when the other day the following errors in the event log were passed to me, I knew exactly what to look at.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Protect your failover cluster names</title>
+      <link>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</link>
+      <pubDate>Thu, 21 Oct 2010 12:17:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</guid>
+      <description>&lt;p&gt;One of the biggest worries for us grumpy DBAs are the risks which are posed to us due to our reliance on other teams, specialists and technologies in order to maintain a working and efficient SQL Server infrastructure. This was one of the key concepts when I put together my Thinking outside the Box talk for &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQLBits&lt;/a&gt; 7, and insist that we need to understand, get involved and help communicate best practices to our colleagues and fellow IT professionals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to generate failover cluster logs</title>
+      <link>https://tenbulls.co.uk/posts/2010/10/11/generate-your-cluster-logs/</link>
+      <pubDate>Mon, 11 Oct 2010 11:58:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/10/11/generate-your-cluster-logs/</guid>
+      <description>&lt;p&gt;Windows and SQL Clustering can be a tricky business, but fortunately most of the administration and troubleshooting can be performed through the GUI. Obviously the same argument can apply that the simplicity of any GUI can be it&amp;rsquo;s downfall in the sense that it opens up something complicated to the inexperienced. This can be a recipe for disaster on Clusters but as mentioned in previous posts is really down to your IT structures to restrict access to them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Recovering from corruption in SQL Failover Cluster</title>
+      <link>https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/</link>
+      <pubDate>Fri, 08 Oct 2010 11:04:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/</guid>
+      <description>&lt;p&gt;One of the great things about SQL Clustered Instances is that they generally give a much greater possibility for High Availability which is obviously the whole point of them. However one of the more commonly overlooked considerations is the fact that by their very design you are introducing extra complexity to your environment and this can be counter-productive and work against what you are trying to achieve in the first place. For instance if you allow unqualified and inexperienced people to access and even administrate your SQL Clusters then you could be in for a world of pain. I have seen it time and time again and yet those kind of classic mistakes seem to keep being allowed to happen. In order to highlight this point further, imagine your sysadmins, operators and DBA&amp;rsquo;s going about their everyday management of systems oblivious to the fact that what they are working on is actually a clustered node. They could be creating a Network Share, stopping a Service or even installing software without realizing what they are doing and the potential risk they are taking. It is for this very reason that I believe that Windows Clusters in particular require a specialized team in order to support them because we want to maintain the High Availability don&amp;rsquo;t we folks?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When the Cloud approach goes wrong</title>
+      <link>https://tenbulls.co.uk/posts/2010/09/23/when-cloud-goes-wrong/</link>
+      <pubDate>Thu, 23 Sep 2010 09:19:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/09/23/when-cloud-goes-wrong/</guid>
+      <description>&lt;p&gt;Around 2 or 3 years ago I made a conscious effort to try to detach myself a little from any one Operating System for my personal Documents, Favorites, RSS feeds and those sorts of things and therefore attempted to start using Cloud based technologies to achieve this goal.&lt;/p&gt;&#xA;&lt;p&gt;Well the other day I went into my Bloglines account and was greeted with the following message:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/bloglines.png&#34; alt=&#34;Bloglines&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;What particularly annoys me about this is the fact that they are just shutting down the service. No handing over to the community, no attempt at selling it on, not even a suggestion or arrangement of where you should move your feeds to. Their reasons for the shutdown are pretty lame too, but essentially boil down to the fact that they are focusing on their &lt;em&gt;&amp;ldquo;commercial&amp;rdquo;&lt;/em&gt; activities. Certain functionality and settings will now be lost forever and should I have not seen this shutdown message (perhaps I was on holiday for 1 month) then it begs the question of what would happen to my feeds then.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A week at Oracle University</title>
+      <link>https://tenbulls.co.uk/posts/2010/09/21/a-week-at-oracle-university/</link>
+      <pubDate>Tue, 21 Sep 2010 18:25:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/09/21/a-week-at-oracle-university/</guid>
+      <description>&lt;p&gt;About a month ago I went into the Big Smoke to spend the week at the &lt;a href=&#34;https://www.oracle.com/global/uk/education/maps/london_oracle.html&#34;&gt;Oracle University&lt;/a&gt; premises at 1 South Place. I was attending the &lt;a href=&#34;https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getCourseDesc?dc=D50311GC10&amp;amp;p_org_id=28&amp;amp;lang=US&#34;&gt;11g R1 Oracle RAC course&lt;/a&gt; and since I am very knowledgeable about high availability solutions, I was especially looking forward to filling in the one last piece of the jigsaw. I had already been on &lt;a href=&#34;https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getCourseDesc?dc=D17316GC20&amp;amp;p_org_id=1001&amp;amp;lang=US&#34;&gt;Oracle&amp;rsquo;s 10g Data Guard course&lt;/a&gt; – which for the benefit of you SQL boffins is the equivalent of SQL Server mirroring. RAC of course is an acronym for Real Application Clusters and you can think of it as being similar to SQL Clustering but differs greatly in the sense that an Oracle instance is (or can be) effectively scaled out with the addition of extra nodes and due to the potential processing and memory available can theoretically be scaled up.&#xA;Rumor has it that something similar is being worked on for the next major release of SQL Server, but I am really not too sure whether this is fact or fiction. One thing I really liked about RAC is that when it works you can imagine it being really special, however like all of the other Oracle exposure I have had I was again left with a sense of bemusement due to all of the warnings we received such as don&amp;rsquo;t click this or don&amp;rsquo;t type that otherwise catastrophe will strike. The classic example of this in the notes was the warning about when you uninstall a node from the cluster to ensure that you do not miss the last part of the command. I think the following was the offending command :-&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQLBits Speaker Training Day</title>
+      <link>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</link>
+      <pubDate>Sun, 19 Sep 2010 18:16:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</guid>
+      <description>&lt;p&gt;A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn&amp;rsquo;t). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn&amp;rsquo;t been to that building for around 3 years I&amp;rsquo;m not sure how she could have done …still it&amp;rsquo;s always nice to be &amp;ldquo;recognized&amp;rdquo; 🙂&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>An approach to dealing with database corruptoin</title>
+      <link>https://tenbulls.co.uk/posts/2010/09/16/corrupt-behaviour/</link>
+      <pubDate>Thu, 16 Sep 2010 15:58:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/09/16/corrupt-behaviour/</guid>
+      <description>&lt;p&gt;After attending Paul and Kimberly&amp;rsquo;s excellent Masterclass in London a few months ago, I made a scribble in my notepad to play around a little more with self induced corrupted DBs (yes you read that right!). Part of Paul&amp;rsquo;s demonstration showed various recovery techniques and gotchas when you are unfortunate enough to be hit with corruption problems. Having been exposed to quite a few situations in live environments, I am not exactly a stranger to DBCC CHECKDB and fixing corruption issues, but the session was definitely enlightening and taught me some useful things.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloning your VirtualBox virtual disks</title>
+      <link>https://tenbulls.co.uk/posts/2010/09/07/cloning-your-virtual-disks/</link>
+      <pubDate>Tue, 07 Sep 2010 14:23:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/09/07/cloning-your-virtual-disks/</guid>
+      <description>&lt;p&gt;The cloning of disk images (especially Windows) can present a few problems from the OS perspective which I shall expand upon shortly, however depending upon the Virtualization solution that you are using there can be a few problems to overcome unique to that solution.&lt;/p&gt;&#xA;&lt;h1 id=&#34;get-a-new-guid&#34;&gt;Get a new GUID&lt;/h1&gt;&#xA;&lt;p&gt;VirtualBox uses a GUIDs in several places to uniquely identify various things. I&amp;rsquo;m not really sure I like this, and haven&amp;rsquo;t really thought about why it is required, but it could have something to do with the multi-platform support of VirtualBox and its VMs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VirtualBox virtual disk corruption when using ext4 host partitions</title>
+      <link>https://tenbulls.co.uk/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</link>
+      <pubDate>Mon, 06 Sep 2010 16:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</guid>
+      <description>&lt;p&gt;Sometimes it is not always a great idea to be running the latest and greatest, and it seems that there is a small problem when VirtualBox virtual machines have their virtual disks housed on ext4 filesystems. I am sure that this will be corrected at some point, but in the meantime luckily there is a simple workaround.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;When the virtual machine is first started up, and if the error condition is satisfied, you are prompt with the warning message.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microsofts new GUI-less server OS</title>
+      <link>https://tenbulls.co.uk/posts/2010/09/02/what-a-real-server-should-be/</link>
+      <pubDate>Thu, 02 Sep 2010 19:38:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/09/02/what-a-real-server-should-be/</guid>
+      <description>&lt;p&gt;So I stumbled on this the other day and I really like this idea.&lt;/p&gt;&#xA;&lt;p&gt;Anyone who remembers the days of Novell NetWare being King of the LANs would likely agree that you don&amp;rsquo;t need a fancy GUI to have a server. Something which is still relevant to UX&amp;rsquo;s today and thankfully Microsoft are starting to take notice. One thing I really like about Microsoft is that they do listen and are not too arrogant to think that only their opinion is the only one that matters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to query your database relationships</title>
+      <link>https://tenbulls.co.uk/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</link>
+      <pubDate>Sun, 22 Aug 2010 09:26:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</guid>
+      <description>&lt;p&gt;Last year I wrote about how to manage your table constraints in &lt;a href=&#34;https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity&#34;&gt;Check your constraints to check your integrity&lt;/a&gt; but one thing that is missing from this post is how do you determine what relationships exist between tables in order for you to temporarily disable them. This can be particularly tiresome on relationship heavy schemas.&lt;/p&gt;&#xA;&lt;p&gt;Luckily there are two quite useful stored procedures that you can use to show you them and they are &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms189813.aspx&#34;&gt;sp_pkeys&lt;/a&gt; and &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms175090(v=SQL.105).aspx&#34;&gt;sp_fkeys&lt;/a&gt;. The first stored procedure will display a primary key for a given table and the second can display a list of all tables with a defined foreign key relationship to the specified primary table.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to create CD ISO image In Linux</title>
+      <link>https://tenbulls.co.uk/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</link>
+      <pubDate>Tue, 10 Aug 2010 11:21:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</guid>
+      <description>&lt;p&gt;You may recall me mentioning the dd command from a previous post many moons ago in &lt;a href=&#34;https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard&#34;&gt;Cloning and Expanding VirtualBox Disks&lt;/a&gt; and saw for yourself how incredibly easy Linux and useful can be at times. Well lets put dd to a similar use -and a common necessity for all of us from time to time, especially in relation to building virtual machines quickly. I am of course talking about creating ISO cd/dvd images from physical media.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>My Big Fat Greek Desktop</title>
       <link>https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop/</link>
       <pubDate>Tue, 03 Aug 2010 22:40:00 +0100</pubDate>

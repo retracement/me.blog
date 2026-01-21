@@ -1,0 +1,34 @@
++++
+date = '2010-09-21T18:25:00+01:00'
+draft = false
+title = 'A week at Oracle University'
++++
+
+About a month ago I went into the Big Smoke to spend the week at the [Oracle University](https://www.oracle.com/global/uk/education/maps/london_oracle.html) premises at 1 South Place. I was attending the [11g R1 Oracle RAC course](https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getCourseDesc?dc=D50311GC10&p_org_id=28&lang=US) and since I am very knowledgeable about high availability solutions, I was especially looking forward to filling in the one last piece of the jigsaw. I had already been on [Oracle's 10g Data Guard course](https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getCourseDesc?dc=D17316GC20&p_org_id=1001&lang=US) – which for the benefit of you SQL boffins is the equivalent of SQL Server mirroring. RAC of course is an acronym for Real Application Clusters and you can think of it as being similar to SQL Clustering but differs greatly in the sense that an Oracle instance is (or can be) effectively scaled out with the addition of extra nodes and due to the potential processing and memory available can theoretically be scaled up.
+Rumor has it that something similar is being worked on for the next major release of SQL Server, but I am really not too sure whether this is fact or fiction. One thing I really liked about RAC is that when it works you can imagine it being really special, however like all of the other Oracle exposure I have had I was again left with a sense of bemusement due to all of the warnings we received such as don't click this or don't type that otherwise catastrophe will strike. The classic example of this in the notes was the warning about when you uninstall a node from the cluster to ensure that you do not miss the last part of the command. I think the following was the offending command :-
+
+```bash
+./runInstaller –updateNodeList ORACLE_HOME= "CLUSTER_NODES=" –local
+```
+
+… One wrong move and your entire RAC Cluster nodes would have the instance un-installed. Now, can you imagine being in a large investment bank and having a RAC Cluster consisting of 20 nodes and then for whatever reason needing to remove an instance from one node …and then boom you make that fatal mistake. You will almost definitely be marched from your desk to the front door.
+
+![Big mistake](/images/2010/nelson.jpg)
+
+This is why (I believe) that in most companies where production is critical to operations, those servers are probably never touched. For instance a friend of mine who works for a financial investment fund recently told me that their Oracle server never ever receives promotions. Everything is currently working fine and so nothing is ever changed. I am sure this is partly out of fear of something being changed for the worse.
+
+Moving back to the SQL world, I could never see an identical situation occurring. A similar one yes, but not to the point where no improvements are ever made because of a fear of breaking something. I think this is partly down to the confidence that SQL really doesn't hold any really nasty gotchas. Certainly not to the same degree that oracle does. An Oracle DBA I used to work with regularly told me horror stories about disasters occurring which were simply down to the DBAs trusting in the product and product patches, and ultimately being marched off the premises -scary stuff!
+
+![Stupid](/images/2010/mail_stupid.jpg)
+
+Anyway a couple of things really made me giggle on Oracle's premises. All our RAC nodes used Linux -which is absolutely fine, although it wasn't apparent at the time whether this was OEL or not. The thing that amused me though was the fact that all client machines were Windows 2000! Yes you heard it right, not Linux not even XP or Windows 7 but Windows 2000. For a company that has such a dislike of another company and for them to not only be using their desktop OS but using a ten year old version, makes them look rather foolish in my opinion.
+
+Another bizarre thing was the Open Access PC's which allows guests access to the Internet. Firstly they were (again) Windows and secondly and most importantly did not have Java installed, rendering their use to me fairly useless for the Java based web pages that I needed to look at. What is the most amusing thing here you might ask? Well, who now owns Java?!
+
+![Bizzare](/images/2010/tiger3.jpg)
+
+Returning back to the course itself, I have to say I enjoyed it in varying degrees. Far too much talking and not enough playing/ breaking though – but that's not the trainers fault, he is just following the coursework. The RAC Cluster that was assigned to my partner and I worked fine for three days, but then one evening, without us changing anything … failed. One node completely went down and the other into limbo! To me it looked like disk corruption from the error messages that were being given but nothing conclusive. The instructor wasn't sure either and promised a repair and reboot overnight but upon arriving the next day he said that it strangely had come back on its own. My confidence in the product was not high by this stage. Oh yes have I mentioned, Oracle University courses do not use printed courseware now. That is all very commendable you might say, but think about the first thing people will do when they get the chance back at work. This will usually mean more paper usage since Oracle booklets used to be A5 in size and is not your standard printer fare is it. So that's double the paper usage per person per course. The only reason I can see for them taking this decision is to squeeze even more savings for their profits. It's all a bit silly really, not one person on the course was happy about this.
+
+Now I think about it, one more thing which I just found utterly ludicrous was the fact that once the course had started, our instructor explained to us the difference between the 11g R1 RAC course and the 11g R2 one. Essentially it boils down to the fact that the differences between R1 and R2 is so great, that you could say that 11g R1 is more like the 10g RAC course and the R2 is an entirely different product! You really couldn't make it up could you?! I mean, if you compare this to SQL 2008 and the R2 release (or even any major SQL release since and including version 7) I think that if you took training in any one major feature, then the skill learned would have been to a large degree transferable to the next version's feature. The only exception I can think of off the top of my head is Notification Services, which was new to SQL 2005 and scrapped in 2008. DTS and Integration services is not the same thing and in any event we are talking about a 5 year release difference between those features.
+
+Look Oracle, I'm open to you and your products (in fact I use some of the none database ones), but I have one thing to say to you and hope you go away and have a good long think about it….you could and should do better.

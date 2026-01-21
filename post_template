@@ -3,3 +3,12 @@ date = 'yyyy-mm-ddThh:mm:00+01:00'
 draft = false
 title = '<title>'
 +++
+
+Replace folling char
+“ --> "
+” --> "
+’ --> '
+‘ --> '
+
+ :- --> :
+:- --> :
