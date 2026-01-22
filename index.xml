@@ -178,18 +178,102 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!&lt;/p&gt;&#xA;&lt;p&gt;I’ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Troubleshoot SQL Service connectivity</title>
+      <link>https://tenbulls.co.uk/posts/2010/12/23/dynamic-ports-are-dangerous/</link>
+      <pubDate>Thu, 23 Dec 2010 13:20:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/12/23/dynamic-ports-are-dangerous/</guid>
+      <description>&lt;p&gt;We had a fairly interesting incident recently where there had been some significant network issues which even once they had been resolved had left various connectivity problems to several of our SQL Instances. I thought it would be useful to take a few screen shots and demonstrate my thought process when this sort of reported incident occurs.&lt;/p&gt;&#xA;&lt;p&gt;The first thing I am aware of is that our development support team has stated that an application is having problems connecting to the SQL Server. OK well the first thing I think is &lt;em&gt;lets try it for ourselves under my own system administrator security context&lt;/em&gt;. The security angle is important since the problem may be related to access rights. The result of my attempt is that we at least prove that something is not quite working as it should and the instance cannot be connected to for whatever reason.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaking at SQLRally 2011!</title>
+      <link>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</link>
+      <pubDate>Thu, 16 Dec 2010 13:42:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
+      <description>&lt;p&gt;I am very pleased/ proud to announce that I have submitted 2 abstracts for presentations to &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; and should I be chosen they will be given in Orlando, Florida between May 11th to May 13th. For those of you not already aware, SQLRally is a little bit like a mini SQL PASS Summit and enables people from the East Coast of America to visit an event closer to them should they have not been able to attend the PASS Summit due to the distance and cost restrictions. It has been devised to fill the gap between SQL Saturday events and more can be found by visiting this &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/About.aspx&#34;&gt;url&lt;/a&gt;. I believe it is going to be a great success. Should I be chosen to present at SQLRally, which will be a tall order given the very strong competition it will be only my second time going to a SQL Event in the States (PASS 2010 was my first) it will be my very first visit to the East Coast.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What the Business says is not what the Business wants</title>
+      <link>https://tenbulls.co.uk/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/</link>
+      <pubDate>Tue, 14 Dec 2010 00:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Steve Jones, editor at large of SQL Server Central is this month hosting the latest &lt;a href=&#34;https://www.sqlservercentral.com/blogs/steve_jones/archive/2010/12/07/t_2D00_sql-tuesday-_2300_13-_2D00_-what-the-business-says-is-not-what-the-business-wants.aspx&#34;&gt;T-SQL Tuesday&lt;/a&gt; and luckily I have managed to be organized enough to make a note in my Calendar so that I may finally contribute. A big thank you also goes to Steve who gave plenty of notice for this iteration of T-SQL Tuesday. If you don&amp;rsquo;t already know, the idea behind T-SQL Tuesday was created by Adam Machanic to improve the sharing of ideas and co-operation between SQL Server Professionals and if you would like to know more then you should check out Adam&amp;rsquo;s &lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/archive/2009/11/30/invitation-to-participate-in-t-sql-tuesday-001-date-time-tricks.aspx&#34;&gt;first ever post&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mr. Fumble Fingers - a case against clustering</title>
+      <link>https://tenbulls.co.uk/posts/2010/12/09/mr-fumble-fingers/</link>
+      <pubDate>Thu, 09 Dec 2010 14:27:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/12/09/mr-fumble-fingers/</guid>
+      <description>&lt;p&gt;If you are not perfect (and I am guessing you are not!) you will have been in that situation where you have clicked your mouse button (substitute with your own horror story) and then almost immediately thought &lt;em&gt;what have I done!&lt;/em&gt; followed by an intense feeling of self loathing, self pity and general hopelessness.&lt;/p&gt;&#xA;&lt;p&gt;Actually as DBA&amp;rsquo;s, being fallible is not really an option and is why our positions of risk are usually rewarded on many various levels -of which higher salaries only play a small part of it. In the early days of my long IT career I recall two scenarios that I remember that feeling of despair (stories which I&amp;rsquo;ll save for another rainy day) but on both of those occasions they were ironically Cluster related and on both occasions I could argue the mistakes had been entirely preventable -and not just by myself. One issue was related to hardware and the other to the software setup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to rename a SQL Failover Cluster </title>
+      <link>https://tenbulls.co.uk/posts/2010/12/06/more-cluster-group-network-names/</link>
+      <pubDate>Mon, 06 Dec 2010 13:39:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/12/06/more-cluster-group-network-names/</guid>
+      <description>&lt;p&gt;Most recently I came across a couple of tweets on the #sqlhelp hash tag regarding changing a Cluster Group network name. Helpfully a knowledge base article was offered up to the person asking the original question. The article &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms178083.aspx&#34;&gt;How to: Rename a SQL Server Failover Cluster Instance&lt;/a&gt; gave some very easy steps and advice to perform this action. However a comment was made regarding what exactly the Cluster Group Network name was. It was stated that &lt;em&gt;&amp;ldquo;It is merely a DNS name&amp;rdquo;&lt;/em&gt; and this is not correct and may get you into hot water if you take that comment at face value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQLBits 7 the forgotten photos part 1</title>
+      <link>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</link>
+      <pubDate>Wed, 01 Dec 2010 15:05:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</guid>
+      <description>&lt;p&gt;Several weeks back I attached my Blackberry to my PC to clear down all the photos in preparation for SQL Pass and I stumbled across these grainy old photos taken during those rainy few days in York. It all seems like a lifetime ago now and much has happened to me since &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQL Bits&lt;/a&gt; 7, but this was my story of an interesting and enjoyable but all too brief few days.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The fantastically forgetful IP stack</title>
+      <link>https://tenbulls.co.uk/posts/2010/11/30/the-fantastically-forgetful-ip-stack/</link>
+      <pubDate>Tue, 30 Nov 2010 10:56:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/11/30/the-fantastically-forgetful-ip-stack/</guid>
+      <description>&lt;p&gt;So the first thing you are probably wondering is… &lt;em&gt;does this post have anything to do with SQL Server?&lt;/em&gt; Well if you have ever listened to my views on specialization and generalization you may be aware of the fact that I strongly believe that we all should be running our own sand-boxed virtualized environment distinctly separate from our corporate virtual environment and you (the humble DBA) will be your own Domain and Server admin -master of your own educational destiny. I am of course talking about one of the my key concepts that I like to practice myself, namely trying to be what I term a DBA 2.5. More on this though another time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dastardly database hiding</title>
+      <link>https://tenbulls.co.uk/posts/2010/11/26/dastardly-database-and-password-hiding/</link>
+      <pubDate>Fri, 26 Nov 2010 13:44:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/11/26/dastardly-database-and-password-hiding/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been recently going through the first part of one of Redgate&amp;rsquo;s excellent free ebooks &lt;a href=&#34;https://www.simple-talk.com/books/sql-books/the-red-gate-guide-to-sql-server-team-based-development/&#34;&gt;The Red Gate Guide to SQL Server Team-based Development&lt;/a&gt; and was rather amused when I came across the section talking about creating what they term &lt;em&gt;shape&lt;/em&gt; tables. Essentially what this means is to use the shape ascii codes in order to name a table. I remember a very very long time ago when I was still (almost) in short trousers reading an article suggesting that user passwords should incorporate various invisible ascii codes (such as escape codes) in their respective passwords, since this would render dictionary password cracking tools pretty much useless. It would also help if someone was looking over your shoulder – yes they have just observed you type &lt;em&gt;MyP@ssw0rd&lt;/em&gt; but they didn&amp;rsquo;t quite catch that ascii code you also typed did they?!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Different differential backup behaviour between SQL versions</title>
+      <link>https://tenbulls.co.uk/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/</link>
+      <pubDate>Wed, 24 Nov 2010 13:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/</guid>
+      <description>&lt;p&gt;The other day I ran into a rather unique problem with a database when attempting to maintain it&amp;rsquo;s transaction log. As it turned out my particular issue was related to old replication code -which I hope to post about at a later date, but essentially I needed to clear down some of the logfile&amp;rsquo;s VLFs which I was struggling to perform. Anything I attempted to maintain it failed, however if I performed Transactional log backups, they would also fail due to the fact that there was no Full database backup in existence. Since the database was huge, and a full backup would have taken up to 12 hours to perform, it raised quite an interesting question namely &lt;em&gt;was there a way to force a Transactional log backup&lt;/em&gt;?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding disk partition alignment</title>
+      <link>https://tenbulls.co.uk/posts/2010/11/23/disk-partition-alignment/</link>
+      <pubDate>Tue, 23 Nov 2010 14:29:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/11/23/disk-partition-alignment/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m sure by now most of you will have heard about Disk Partition Alignment and why it is so important (and not just for use with SQL Server IO Subsystems). I&amp;rsquo;m really quite interested in how many companies have actually sat up and smelt the coffee and addressed this issue? This problem is something that DBA&amp;rsquo;s quite readily acknowledge is a potential area of concern, but we usually have to rely on our SAN and Server administrators being one step ahead of the game in actively addressing the situation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding Database Mirroring modes of operation</title>
+      <link>https://tenbulls.co.uk/posts/2010/11/22/back-to-front-mirror/</link>
+      <pubDate>Mon, 22 Nov 2010 14:13:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/11/22/back-to-front-mirror/</guid>
+      <description>&lt;p&gt;SQL Server database mirroring was obviously a great feature first introduced in SQL 2005 and will improve even further in the next big release (Denali) but quite surprising to me is how drastically the order in which the transactions are committed differ between both modes of operation.&lt;/p&gt;&#xA;&lt;p&gt;To recap, there are two types of mirroring (High Performance and High Safety) so lets look at exactly how these two types work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NxtGenUG Guerrilla tactics presentation review</title>
+      <link>https://tenbulls.co.uk/posts/2010/10/27/nxtgenug-guerrilla-tactics-review/</link>
+      <pubDate>Wed, 27 Oct 2010 12:11:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/10/27/nxtgenug-guerrilla-tactics-review/</guid>
+      <description>&lt;p&gt;Last night I attended the &lt;a href=&#34;https://www.nxtgenug.net/Default.aspx&#34;&gt;NxtGenUG&lt;/a&gt; meeting in Cambridge for my first time to see Peter Marriott blog|twitter give his presentation &lt;a href=&#34;https://www.nxtgenug.net/ViewEvent.aspx?EventID=348&#34;&gt;Guerrilla tactics – Performance Testing MS SQL Server Applications&lt;/a&gt; and I very much enjoyed myself. I also expected to bump into Guy Smith Ferrier &lt;a href=&#34;https://www.guysmithferrier.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/#!/GuySmithFerrier&#34;&gt;twitter&lt;/a&gt; but sadly he could not make it and was called at short notice to present in Birmingham. Both presenters I had previously met during my recent visit to Microsoft in Reading and was very much looking forward to this event.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Protect your failover cluster names</title>
+      <link>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</link>
+      <pubDate>Fri, 22 Oct 2010 12:17:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</guid>
+      <description>&lt;p&gt;One of the biggest worries for us grumpy DBAs are the risks which are posed to us due to our reliance on other teams, specialists and technologies in order to maintain a working and efficient SQL Server infrastructure. This was one of the key concepts when I put together my Thinking outside the Box talk for &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQLBits&lt;/a&gt; 7, and insist that we need to understand, get involved and help communicate best practices to our colleagues and fellow IT professionals.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>More cluster disk corruption</title>
       <link>https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</link>
       <pubDate>Thu, 21 Oct 2010 13:59:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</guid>
       <description>&lt;p&gt;Ironically not more than a week or so after I emphasised the importance for DBAs to check file system integrity in my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/&#34;&gt;Recovering from corruption in SQL Failover Cluster&lt;/a&gt;, another incident raises it&amp;rsquo;s ugly head. The post highlighted that file system corruption can cause unusual behaviour with your SQL instance, so when the other day the following errors in the event log were passed to me, I knew exactly what to look at.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Protect your failover cluster names</title>
-      <link>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</link>
-      <pubDate>Thu, 21 Oct 2010 12:17:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</guid>
-      <description>&lt;p&gt;One of the biggest worries for us grumpy DBAs are the risks which are posed to us due to our reliance on other teams, specialists and technologies in order to maintain a working and efficient SQL Server infrastructure. This was one of the key concepts when I put together my Thinking outside the Box talk for &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQLBits&lt;/a&gt; 7, and insist that we need to understand, get involved and help communicate best practices to our colleagues and fellow IT professionals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to generate failover cluster logs</title>
