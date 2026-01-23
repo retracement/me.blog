@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Check your constraints to check your integrity">
+  <meta property="og:description" content="Something that you probably don’t need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-07-22T11:33:15+01:00">
+    <meta property="article:modified_time" content="2009-07-22T11:33:15+01:00">
+
+<title>tenbulls blog | Check your constraints to check your integrity</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Check your constraints to check your integrity</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2009-07-22T11:33:15&#43;01:00">July 22, 2009</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              2 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Something that you probably don&rsquo;t need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.</p>
+<p>For instance assume that there is an inventory database that has two tables, one called server (which has an entry for each server host) and one called instance (one for each SQL Server instance). If the PK-&gt;FK constraint is on the server host name itself then should the physical server every undergo a rename (perhaps due to new naming standard policy) then it this key constraint no longer works.</p>
+<p>In order to update either of the fields in each table, you first need to alter the constraint so that it doesn&rsquo;t check the data being entered.</p>
+<p>e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">--disable the constraint
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> instances
+</span></span><span style="display:flex;"><span>NOCHECK <span style="color:#66d9ef">CONSTRAINT</span> FK_Instances_Servers
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--first update the foreign key/s
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> instances <span style="color:#66d9ef">SET</span> serverid <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;prd1a&#39;</span> <span style="color:#66d9ef">WHERE</span> serverid <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;frodo&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--then update the primary key/s
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> servers <span style="color:#66d9ef">SET</span> serverid <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;prd1a&#39;</span> <span style="color:#66d9ef">WHERE</span> serverid <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;frodo&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--reenable the constraint
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">TABLE</span> instances
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CHECK</span> <span style="color:#66d9ef">CONSTRAINT</span> FK_Instances_Servers
+</span></span></code></pre></div><p>Great so you have now changed the data, but really having disabled the constraint you really ought to check that all constraints are good:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">--check constraints in all tables
+</span></span></span><span style="display:flex;"><span>DBCC CHECKCONSTRAINTS
+</span></span></code></pre></div><p>Now special mention should go to the CHECKCONSTRAINTS consistency check because if you still have a disabled constraint then this will not be checked. In order to make sure you check everything irrespective of whether a constraint is active or not you should issue the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>DBCC CHECKCONSTRAINTS <span style="color:#66d9ef">WITH</span> ALL_CONSTRAINTS
+</span></span></code></pre></div><p>It is possible to check a specified constraint or table using this command see <a href="http://msdn.microsoft.com/en-us/library/ms189496(SQL.90).aspx">Books Online</a> for more information.</p>
+<p>To avoid the necessity of ever needing to change primary and foreign key field generic keys should be used, for instance an integer or random alphanumeric key. This would ensure that the constraint key data is disassociated from the real data.</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/">
+            <span>previous: </span>
+            <span>Started using Linux Mint</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/">
+            <span>next: </span>
+            <span>Auto generate database GRANTs</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Some observations to SQL 2008 clustering installation">
+  <meta property="og:description" content="Well these last few days I’ve been really in the thick of it trying to sort out clustering on two new UAT servers running Windows 2008 and get SQL 2008 setup in an active/ active configuration. It’s been a real struggle for several reasons. The first is that I was only given a couple of days to learn, implement and configure due to significant overruns from the Technical Support team and the second is due to the fact of how much has changed in this latest release of clustering.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-11-19T13:23:00+01:00">
+    <meta property="article:modified_time" content="2009-11-19T13:23:00+01:00">
+
+<title>tenbulls blog | Some observations to SQL 2008 clustering installation</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Some observations to SQL 2008 clustering installation</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2009-11-19T13:23:00&#43;01:00">November 19, 2009</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Well these last few days I&rsquo;ve been really in the thick of it trying to sort out clustering on two new UAT servers running Windows 2008 and get SQL 2008 setup in an active/ active configuration. It&rsquo;s been a real struggle for several reasons. The first is that I was only given a couple of days to learn, implement and configure due to significant overruns from the Technical Support team and the second is due to the fact of how much has changed in this latest release of clustering.</p>
+<p>The most significant difference from a Windows perspective is the simplifying the setup of the cluster. In fact, I almost found it too easy and straightforward to the extent where it started to frustrate. The prime example of this is the way in which the wizard automatically assumes what you want and selects it without even providing pre-install opportunity to change it. This is the case in point with the Quorum drive. Not only did the wizard decide the &ldquo;most suitable drive&rdquo; behind the scenes, it didn&rsquo;t give me the chance to change it and also selected the clustering model that I should be using. Post install it is very easy to change and surprisingly seems to work well, but for a relative expert user of clustering, this is not a welcome change. The previous incarnation of clustering auto-selected a Quorum but provided the chance to change it during the setup.</p>
+<p>Within the SQL Server setup, the install/s were fairly simple, but one change that is both good and bad in equal measure is the synchronous nature of the installer. For instance in order to setup the fail-over instance, first, you must install on the first node through the &ldquo;Create Cluster&rdquo; option and then once setup on the other node/s adds them through the &ldquo;Add Node&rdquo; option. I think this actually works quite well, allows for higher availability of the cluster and possibly is less prone to error – in particular, I am thinking of the SQL 2005 cluster install problem where multi-node install failure is caused by being logged onto more than one of the nodes during install!</p>
+<p>The Service Pack installation appears to have been made ever so slightly easier to perform using this technique, and I have to admit that on previous cluster versions my heart would skip a few beats during Service Pack-ing the SQL cluster because of the asynchronous install and it being prone to failure.</p>
+<p>All in all, the changes are not too bad (in fact so far a slight improvement) -which unfortunately is not what I would say about Windows 2008. It&rsquo;s simply ghastly.</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/">
+            <span>previous: </span>
+            <span>Cloning and Expanding VirtualBox disks in Linux</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/">
+            <span>next: </span>
+            <span>Remember your database files when dropping OFFLINE databases</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

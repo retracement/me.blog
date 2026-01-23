@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2010/10/11/generate-your-cluster-logs/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="How to generate failover cluster logs">
+  <meta property="og:description" content="Windows and SQL Clustering can be a tricky business, but fortunately most of the administration and troubleshooting can be performed through the GUI. Obviously the same argument can apply that the simplicity of any GUI can be it’s downfall in the sense that it opens up something complicated to the inexperienced. This can be a recipe for disaster on Clusters but as mentioned in previous posts is really down to your IT structures to restrict access to them.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-10-11T11:58:00+01:00">
+    <meta property="article:modified_time" content="2010-10-11T11:58:00+01:00">
+
+<title>tenbulls blog | How to generate failover cluster logs</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">How to generate failover cluster logs</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-10-11T11:58:00&#43;01:00">October 11, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              2 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Windows and SQL Clustering can be a tricky business, but fortunately most of the administration and troubleshooting can be performed through the GUI. Obviously the same argument can apply that the simplicity of any GUI can be it&rsquo;s downfall in the sense that it opens up something complicated to the inexperienced. This can be a recipe for disaster on Clusters but as mentioned in previous posts is really down to your IT structures to restrict access to them.</p>
+<p>Beginner to moderate level Clustering administrators may not be aware of this, but there is much you can (and sometimes must) perform from the command line. In day to day running activities there is usually no need to do so but knowing that various possibilities are available to you from the command line can be an absolute life saver. I also want to add that there have been numerous posts recently from various professional&rsquo;s blogs about managing Clusters from Powershell, but this is not what I am discussing. The commands I refer to are the native executables that are installed through the setup of Clustering.</p>
+<p>I recently came across a great post about one such command, thanks to being pointed in the direction of Joe Sack from a tweet by Gavin Payne (<a href="https://blog.gavinpayneuk.com">blog</a> | <a href="https://twitter.com/GavinPayneUK">twitter</a>). I immediately noticed the post from Joe (seeing the word Clustering always catches my attention) and decided to take a look and encourage you to <a href="https://blogs.msdn.com/b/joesack/archive/2010/02/09/dba-101-collecting-and-interpreting-failover-cluster-logs.aspx">check it out</a>. He effectively discusses generating the Cluster log files for Windows 2008 Clusters so I decided to try it out myself quickly. Trying is the only sure fire way to remembering in my humble opinion!</p>
+<p>Running the command will generate all the logs for each Clustered node in your specified location. Should any node be offline then the command will simply generate an RPC error for that node.</p>
+<p>So the first thing you need to do is run the command to generate those logs.</p>
+<p><img src="/images/2010/generate_logs1.png" alt="Generate cluster logs"></p>
+<p>Once all those lovely logs have been generated (it appears to be one per node) you can review them for your enjoyment.</p>
+<p><img src="/images/2010/logs.png" alt="View log"></p>
+<p>As you can see when a problem hits, just knowing how to do this could aid you in your quest to solve the issue much faster than otherwise. Hopefully in future posts I can have a look into what other things you might want to use the native command line for when configuring your Clusters.</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/">
+            <span>previous: </span>
+            <span>Recovering from corruption in SQL Failover Cluster</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/">
+            <span>next: </span>
+            <span>More cluster disk corruption</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

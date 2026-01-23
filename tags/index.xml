@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/</link>
+    <description>Recent content in Tags on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Wed, 25 Jan 2012 02:06:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLRally</title>
+      <link>https://tenbulls.co.uk/tags/sqlrally/</link>
+      <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlrally/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clustering</title>
+      <link>https://tenbulls.co.uk/tags/clustering/</link>
+      <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/clustering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HADR</title>
+      <link>https://tenbulls.co.uk/tags/hadr/</link>
+      <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/hadr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://tenbulls.co.uk/tags/sql/</link>
+      <pubDate>Tue, 15 Feb 2011 16:49:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLBits</title>
+      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
+      <pubDate>Sat, 12 Feb 2011 19:48:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://tenbulls.co.uk/tags/performance/</link>
+      <pubDate>Tue, 08 Feb 2011 21:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TSQL Tuesday</title>
+      <link>https://tenbulls.co.uk/tags/tsql-tuesday/</link>
+      <pubDate>Tue, 08 Feb 2011 12:50:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/tsql-tuesday/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fluxbox</title>
+      <link>https://tenbulls.co.uk/tags/fluxbox/</link>
+      <pubDate>Tue, 25 Jan 2011 07:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/fluxbox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://tenbulls.co.uk/tags/linux/</link>
+      <pubDate>Tue, 25 Jan 2011 07:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>https://tenbulls.co.uk/tags/learning/</link>
+      <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PASS Summit</title>
+      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
+      <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Certification</title>
+      <link>https://tenbulls.co.uk/tags/certification/</link>
+      <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/certification/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

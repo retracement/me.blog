@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/categories/</link>
+    <description>Recent content in Categories on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Wed, 25 Jan 2012 02:06:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal Development</title>
+      <link>https://tenbulls.co.uk/categories/personal-development/</link>
+      <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/categories/personal-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>https://tenbulls.co.uk/categories/technology/</link>
+      <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/categories/technology/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="More cluster disk corruption">
+  <meta property="og:description" content="Ironically not more than a week or so after I emphasised the importance for DBAs to check file system integrity in my recent post Recovering from corruption in SQL Failover Cluster, another incident raises it’s ugly head. The post highlighted that file system corruption can cause unusual behaviour with your SQL instance, so when the other day the following errors in the event log were passed to me, I knew exactly what to look at.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-10-21T13:59:00+01:00">
+    <meta property="article:modified_time" content="2010-10-21T13:59:00+01:00">
+
+<title>tenbulls blog | More cluster disk corruption</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">More cluster disk corruption</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2010-10-21T13:59:00&#43;01:00">October 21, 2010</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Ironically not more than a week or so after I emphasised the importance for DBAs to check file system integrity in my recent post <a href="/posts/2010/10/08/cluster-aint-misbehavin/">Recovering from corruption in SQL Failover Cluster</a>, another incident raises it&rsquo;s ugly head. The post highlighted that file system corruption can cause unusual behaviour with your SQL instance, so when the other day the following errors in the event log were passed to me, I knew exactly what to look at.</p>
+<p>In this first error Event ID 823:</p>
+<blockquote>
+<p>The operating system returned error 21 (error not found) to SQL Server during a read at offset 0x000000000a0000 in file &lsquo;R:\Microsoft SQL Server\MSSQL.1\DATA\tempdb.mdf&rsquo;&quot;</p>
+</blockquote>
+<p>It is fairly obvious that this error relates in some way to the file system. The clue is in the words <em>&ldquo;operating system returned&rdquo;</em>.</p>
+<p><img src="/images/2010/corruption1_c.png" alt="Application log"></p>
+<p>The next error Event ID 9645:</p>
+<blockquote>
+<p>An error occurred in the service broker manager, Error: 823, State: 2</p>
+</blockquote>
+<p>This is less obviously related to the first, however there does indeed appear to be a pattern in the Application error log where by one error follows the other. The other thing that you will note is that the error code listed in the description matches the Event ID of the previous error.</p>
+<p><img src="/images/2010/corruption2_c.png" alt="Event 9645"></p>
+<p>Anyway, irrespective of whether we believe there is a connection, let us troubleshoot the first problem. So the absolute first thing you need to ensure is that the file system has no errors. Let us run a read only <code>chkdsk</code> against it…</p>
+<p><img src="/images/2010/corruption3_c.png" alt="chkdsk"></p>
+<p>Unsurprisingly we find that there are issues. Since this disk is actually a Clustered disk resource we need to ensure that we <code>OFFLINE</code> any resource that is dependant on it. When we run the <code>chkdsk /f</code> we will have to close all open file handles. Should any dependant resource be left <code>ONLINE</code> then we will find our Clustered Group failing over and we want to avoid that happening. We can leave the SQL Network Name and SQL IP Address both <code>ONLINE</code> but don&rsquo;t forget not to touch your disks. If you <code>OFFLINE</code> them you will not be able to fix them!</p>
+<p><img src="/images/2010/corruption4_c.png" alt="offline services"></p>
+<p>So once we have taken everything <code>OFFLINE</code> we can then fix the file system.</p>
+<p><img src="/images/2010/corruption6_c.png" alt="chkdsk /f"></p>
+<p>It is usually prudent to run another read only chkdsk post fix to ensure that this time it comes back clear, but once you are happy then all your <code>OFFLINE</code> resources can be turned back on.</p>
+<p>Another final point to note is that when you get these file system corruption issues, they usually happen for a reason. They are generally suggestive that you may have a failing drive on you RAID array, and certainly in this particular instance this was the root cause of the problems. Our hardware management software gave us a delayed signal of impending drive failure a few days later, so this was definitely an early warning signal, and is perhaps is time to check you have replacement drives available to swap out. Most importantly at this stage you should <em>ENSURE</em> your Full and Transaction Log backups are succeeding in the event something goes horribly wrong and if you have a DR solution then start planning for failover.</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2010/10/11/generate-your-cluster-logs/">
+            <span>previous: </span>
+            <span>How to generate failover cluster logs</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/">
+            <span>next: </span>
+            <span>Protect your failover cluster names</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
