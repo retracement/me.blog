@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VirtualBox on tenbulls blog</title>
+    <link>http://localhost:1313/tags/virtualbox/</link>
+    <description>Recent content in VirtualBox on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Mon, 21 Mar 2011 13:23:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VirtualBox random behaviour</title>
+      <link>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</link>
+      <pubDate>Mon, 21 Mar 2011 13:23:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</guid>
+      <description>&lt;p&gt;Disclaimer: If you want to learn something then stop reading this post now …however if you (like me) take enjoyment in the weird, unusual and unexplained then please continue reading on.&lt;/p&gt;&#xA;&lt;p&gt;Regular readers of my ramblings will by now appreciate that I love VirtualBox and I&amp;rsquo;ve been using it for a considerable amount of time -long before those Oracle boys muscled in on Sun, and just recently I saw something that I found a little puzzling.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

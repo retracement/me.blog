@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="A Quick Introduction to Azure Purview">
   <meta property="og:description" content="Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.
@@ -19,10 +19,10 @@ Azure Purview can be used to inventory, classify, map, and govern your on-premis
 
 <title>tenbulls blog | A Quick Introduction to Azure Purview</title>
 
-      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
 
-      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+      <script src="/js/main.js"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -70,6 +70,12 @@ Azure Purview can be used to inventory, classify, map, and govern your on-premis
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -97,9 +103,9 @@ Azure Purview can be used to inventory, classify, map, and govern your on-premis
       
       <article>
         <p><img src="/images/2022/catalogue-of-data-ai-600.png" alt="Data Catalog"></p>
-<p>Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.</p>
+<p>Azure Purview is Microsoft&rsquo;s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.</p>
 <p>Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.</p>
-<p>Purview’s Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores <sub>*<strong>1</strong></sub> – although we will detail some restrictions that may cause difficulties in doing so.</p>
+<p>Purview&rsquo;s Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores <sub>*<strong>1</strong></sub> – although we will detail some restrictions that may cause difficulties in doing so.</p>
 <p>In this quick post, we will detail the three key Purview capabilities at the time of writing.</p>
 <h1 id="data-catalogue">Data Catalogue</h1>
 <p>The key component of Azure Purview is its data cataloging capabilities, but in order to scan data sources, they must first be defined as scan definitions. Purview can then automatically connect to these data sources and build up a list of objects and their schemas as data assets. The unified platform looks at these data assets, document their data lineages, and applies data classification.</p>
@@ -109,7 +115,7 @@ Azure Purview can be used to inventory, classify, map, and govern your on-premis
 <h1 id="data-lineage">Data lineage</h1>
 <p>Data lineage is important since it helps you understand your data supply chain. Specifically, we want to know where does data come from and where does it go to? How is the data transformed, and how is it consumed?</p>
 <p>Purview implements basic data lineage capabilities and will automatically pick up the lineage of assets by scanning certain services such as Azure Data Factory. Lineage can be established by scanning these service pipelines and determining which assets are related through copy activities. The lineage view shows which columns exist in each of these assets. Unfortunately, at present only the Data Activity copy activity is supported, meaning that all of the transformation and other activities are not.</p>
-<p>We have already touched upon some of the lineage shortfalls with Power BI assets and won’t repeat them again in this section, but just be aware they exist. There are other missing data lineage capabilities, and this includes a lack of current support for database views. This is obviously a big hole in the Data lineage capability and will hopefully be addressed in the future.</p>
+<p>We have already touched upon some of the lineage shortfalls with Power BI assets and won&rsquo;t repeat them again in this section, but just be aware they exist. There are other missing data lineage capabilities, and this includes a lack of current support for database views. This is obviously a big hole in the Data lineage capability and will hopefully be addressed in the future.</p>
 <h1 id="data-classification">Data classification</h1>
 <p>Data classification is equally important and helps you provide business context to your data, identify PII data (that may or may not be a risk), and empowers consumers to find valuable trustworthy data through the use of those tags.</p>
 <p>Defining data sources does not automatically define or start a collection or classification, it simply just defines the source. Therefore, in order to get these insights from the data source, you need to configure a new scan – which is essentially just a name, credentials, and scope. For example, a scope applied to a scan of a data lake source could select specific folders for scanning, or to scan everything from its root.</p>
@@ -131,7 +137,7 @@ Azure Purview can be used to inventory, classify, map, and govern your on-premis
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/">
+        <a href="http://localhost:1313/posts/2020/08/11/ssis-performance/">
             <span>previous: </span>
             <span>SSIS Data Flow Performance Tuning</span>
         </a>
@@ -139,7 +145,7 @@ Azure Purview can be used to inventory, classify, map, and govern your on-premis
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/">
+        <a href="http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/">
             <span>next: </span>
             <span>Encouraging Diversity in Leadership Roles</span>
         </a>

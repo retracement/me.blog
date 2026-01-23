@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TSQL Tuesday on tenbulls blog</title>
+    <link>http://localhost:1313/tags/tsql-tuesday/</link>
+    <description>Recent content in TSQL Tuesday on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Tue, 08 Mar 2011 00:06:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tsql-tuesday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType</title>
+      <link>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</link>
+      <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying Publish button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &amp;ldquo;Aggregation&amp;rdquo; by the most excellent grrlgeek – Jes Borland (Twitter | Blog)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automate now to save time later</title>
+      <link>http://localhost:1313/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</link>
+      <pubDate>Tue, 08 Feb 2011 12:50:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s T-SQL Tuesday time again and this month I&amp;rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright &lt;a href=&#34;https://sqlasylum.wordpress.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/SqlAsylum&#34;&gt;twitter&lt;/a&gt; and the subject of the month is all about &amp;ldquo;Automation in SQL Server&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Start as you mean to go on</title>
+      <link>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
+      <pubDate>Tue, 11 Jan 2011 02:03:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

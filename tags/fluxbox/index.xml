@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fluxbox on tenbulls blog</title>
+    <link>http://localhost:1313/tags/fluxbox/</link>
+    <description>Recent content in Fluxbox on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Tue, 25 Jan 2011 07:31:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fluxbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Gnome to Flux</title>
+      <link>http://localhost:1313/posts/2011/01/25/from-gnome-to-flux/</link>
+      <pubDate>Tue, 25 Jan 2011 07:31:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/25/from-gnome-to-flux/</guid>
+      <description>&lt;p&gt;In between the time I am looking into all things SQL and all things Microsoft I am usually tinkering in Linux, and this usually consists of tweaking my user desktop environment so that I may have a more productive and enjoyable experience – you might recall the post &lt;a href=&#34;http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop&#34;&gt;My Big Fat Greek Desktop&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/my_menu.png&#34; alt=&#34;Flux Menu&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I knew the time would come when I would finally move on from the &lt;a href=&#34;https://www.gnome.org/&#34;&gt;Gnome&lt;/a&gt; desktop on my trusty Linux boxes, and I had toyed with that idea several times without the jump. Over the last few weeks and months I have been trialling &lt;a href=&#34;https://blog.linuxmint.com/?p=1523&#34;&gt;Linux Mint Fluxbox&lt;/a&gt; edition and to be honest I really didn&amp;rsquo;t like it at first. One of the things that struck me was the simplicity of it, but then that was the whole point for the move. Simplicity equals speed and speed equals productivity as long as I could navigate my way around. One of the things that I first hated about this desktop that I now love, was the right-click behaviour on the taskbar. For instance if you right-click any running application on the taskbar, a close signal is sent to the application. At this stage you might be thinking that this would drive you mad and believe me for a small amount of time it did -until I started to realise actually how many times I right-click applications in Gnome or Windows and then do something with the context menu -which is usually always to close anyway. This action has now been reduced to a one-click operation, and I find that I am not constantly minimizing or maximizing windows all the time because I can close applications very quickly and tend to do just that. The other part of the equation (opening applications) can also be performed very quickly by moving the mouse to any part of the blank desktop, some of which can always be found at the bottom left and bottom right of the taskbar and right-clicking. This initially was a real pain until I discovered that the Fluxbox menus can be easily edited and customized to your requirements via a simple text edit of the menu files under the .fluxbox directory in your home.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

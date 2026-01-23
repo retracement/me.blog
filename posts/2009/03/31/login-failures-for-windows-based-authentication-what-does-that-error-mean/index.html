@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="Login failure user is not associated with a trusted SQL Server connection">
-  <meta property="og:description" content="Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.">
+  <meta property="og:description" content="Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user “. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -18,10 +18,10 @@
 
 <title>tenbulls blog | Login failure user is not associated with a trusted SQL Server connection</title>
 
-      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
 
-      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+      <script src="/js/main.js"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -69,6 +69,12 @@
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -95,7 +101,7 @@
       </header>
       
       <article>
-        <p>Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.</p>
+        <p>Have you ever come across the following login failure within the SQL Server error logs? &ldquo;Login failed for user &ldquo;. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.</p>
 <p><img src="/images/2009/untrusted.jpg" alt="Login failed for user"></p>
 <p>One reason I have seen this happen is when a user has already authenticated to Windows and then changes their password – which is a perfectly reasonable thing to do. It seems that logging off and back on again resolves this issue, but you would think Windows would have updated its SID both remotely and locally! It is unclear to me why the warning does not display the user account in this situation, but most probably has something to do with the system attempting to reverse map the SID to a user name. Since the SID is probably out of date it is possible that windows cannot find it in its database.</p>
 <p>In conclusion though, I believe these authentication errors can most probably be ignored since they are not necessarily someone trying to gain unauthorized access to the SQL Server, just someone who has not updated their SID.</p>
@@ -106,7 +112,7 @@
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/">
+        <a href="http://localhost:1313/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/">
             <span>previous: </span>
             <span>Auto generate RESTORE scripts from a live database</span>
         </a>
@@ -114,7 +120,7 @@
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/">
+        <a href="http://localhost:1313/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/">
             <span>next: </span>
             <span>Recursive killing of SPIDs in a database for admin operations</span>
         </a>
