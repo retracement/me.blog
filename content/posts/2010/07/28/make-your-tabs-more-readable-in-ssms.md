@@ -11,7 +11,7 @@ For me this is fantastic, since it removes one of my few pet hates introduced by
 
 ![Pre tab change](/images/2010/pre_tab_change.jpg)
 
-From SSMS, select *Tools/ Options* and under the *Text Editor* node remove all the connection settings you don’t want in the tab.
+From SSMS, select *Tools/ Options* and under the *Text Editor* node remove all the connection settings you don't want in the tab.
 
 ![Tab settings](/images/2010/tab_settings1.jpg)
 

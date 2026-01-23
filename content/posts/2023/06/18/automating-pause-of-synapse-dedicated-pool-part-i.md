@@ -19,7 +19,7 @@ Therefore this leaves us with only dedicated SQL Pool to worry about and this is
 ![Dedicated Pool no pause capability](/images/dedicatednopause.png)
 *Figure 2 - Dedicated Pool no pause capability*
 
-If you implement dedicated SQL Pool in your organisation, it probably won’t take you too long to realise that you do not have any automatic pause settings as your CEO starts to complain about Azure costs and you seek to optimise your environment. Bewilderingly perhaps, Microsoft have neglected to offer us this capability despite all the other Pool types providing cost effective compute options when not in use. Fortunately Microsoft provide a manual pause option allowing us to write our own pause and resume functionality, and we can turn to PowerShell Az or the Azure CLI to write some of this code.
+If you implement dedicated SQL Pool in your organisation, it probably won't take you too long to realise that you do not have any automatic pause settings as your CEO starts to complain about Azure costs and you seek to optimise your environment. Bewilderingly perhaps, Microsoft have neglected to offer us this capability despite all the other Pool types providing cost effective compute options when not in use. Fortunately Microsoft provide a manual pause option allowing us to write our own pause and resume functionality, and we can turn to PowerShell Az or the Azure CLI to write some of this code.
 
 The problem should be broken down into two specific concerns and the first (and arguably most important) is to write the suspend and resume scripts. For each we will parameterise so that the script will be reusable for multiple instances of synapse across multiple subscriptions.
 
@@ -64,7 +64,7 @@ $sqlPoolStatus = $sqlPool.Status
 ```
 All of the code so far will be the same in both the suspend and resume scripts.
 
-Now that the sqlPool object is defined, let’s now write the core part of the suspend script. If the sqlPool is already paused or pausing we should not do anything else. The following script checks that the pool is not in either of these two states and assuming that is the case will suspend the pool.
+Now that the sqlPool object is defined, let's now write the core part of the suspend script. If the sqlPool is already paused or pausing we should not do anything else. The following script checks that the pool is not in either of these two states and assuming that is the case will suspend the pool.
 
 ```powershell
 if($sqlPoolStatus -eq '"Paused"' -Or $sqlPoolStatus -eq '"Pausing"'){

@@ -1,4 +1,6 @@
 +++
+categories = ['Personal Development']
+tags = ['SQLBits','PASS Summit','Certification']
 date = '2011-01-01T23:59:00+01:00'
 draft = false
 title = '2010 in reflection'

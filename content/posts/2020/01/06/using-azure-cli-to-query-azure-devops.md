@@ -8,7 +8,7 @@ In previous posts, I have touched upon the use of Azure Cloud Shell for generic 
 
 For my example, I will focus on something as mundane and straight-forward as querying the Azure DevOps repository meta-data (so that I can look at and compare branch settings against each other) but I hope you get the idea that this is just scratching the tip of the iceberg and the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) is a powerful tool to add to your arsenal of scripting languages.
 
-The whole end-end process required to query Azure DevOps is itself is a relatively straight-forward affair -especially when you know exactly what you are doing (isn’t everything!) but before we get there, you will first need to have access to the Azure CLI. You have two ways of using it, the first being to install it locally -and instructions to do this can be found via an earlier post titled "[AzureRM, Azure CLI and the PowerShell Az Module]()". Alternatively, you may also use the Azure CLI through Azure Cloud Shell (i.e. directly from Azure) as detailed in another of my posts titled "[Introduction to Azure Cloud Shell]()".
+The whole end-end process required to query Azure DevOps is itself is a relatively straight-forward affair -especially when you know exactly what you are doing (isn't everything!) but before we get there, you will first need to have access to the Azure CLI. You have two ways of using it, the first being to install it locally -and instructions to do this can be found via an earlier post titled "[AzureRM, Azure CLI and the PowerShell Az Module]()". Alternatively, you may also use the Azure CLI through Azure Cloud Shell (i.e. directly from Azure) as detailed in another of my posts titled "[Introduction to Azure Cloud Shell]()".
 
 # Configure az devops pre-requisites
 
@@ -59,7 +59,7 @@ By doing so, you will note that the extension provides devops subgroup commands 
 az devops team list
 ```
 
-As the help context shows, the extension also provides “related groups” (such as repos) to manage other facets of Azure DevOps. In our specific example, we want to query all available repos for our Azure DevOps project. We can do this as follows:
+As the help context shows, the extension also provides "related groups" (such as repos) to manage other facets of Azure DevOps. In our specific example, we want to query all available repos for our Azure DevOps project. We can do this as follows:
 
 ```powershell
 az repos list

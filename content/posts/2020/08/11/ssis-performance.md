@@ -3,9 +3,9 @@ date = '2020-08-11T15:18:01+01:00'
 draft = false
 title = 'SSIS Data Flow Performance Tuning'
 +++
-Yes before you say it, I know SQL Server Integration Services is “old technology” but a lot of people are still using it, and in many cases are either still developing against it, or are looking to integrate/ migrate with other burgeoning technologies such as Azure Data Factory. In other words, if you are not currently using SSIS then this post is probably not for you -otherwise read on.
+Yes before you say it, I know SQL Server Integration Services is "old technology" but a lot of people are still using it, and in many cases are either still developing against it, or are looking to integrate/ migrate with other burgeoning technologies such as Azure Data Factory. In other words, if you are not currently using SSIS then this post is probably not for you -otherwise read on.
 
-If you are still one of the lucky ones to still be using SSIS, I thought it would be worth publishing these comprehensive notes taken from a session titled “SSIS Data Flow Performance Tuning” delivered at SQLBits 8 (Brighton) by the then “SSIS guru” Jamie Thomson. Notes have timings (in mins and seconds) against them, which correlate directly with the presentation times. The video is still available and can be downloaded from the [SQLBits website](https://sqlbits.com/Sessions/Event8/SSIS_Dataflow_Performance_tuning) so you can watch it (if required) and use the timings to follow along.
+If you are still one of the lucky ones to still be using SSIS, I thought it would be worth publishing these comprehensive notes taken from a session titled "SSIS Data Flow Performance Tuning" delivered at SQLBits 8 (Brighton) by the then "SSIS guru" Jamie Thomson. Notes have timings (in mins and seconds) against them, which correlate directly with the presentation times. The video is still available and can be downloaded from the [SQLBits website](https://sqlbits.com/Sessions/Event8/SSIS_Dataflow_Performance_tuning) so you can watch it (if required) and use the timings to follow along.
 
 ---
 
@@ -33,7 +33,7 @@ Asynchronous components are ones that consume a data buffer on input, do process
 
 **6m.** Asynchronous components can also be categorized as partially blocking or fully blocking. e.g sort component is fully blocking and is because all upstream buffers are needed before sending sorted output downstream. An example of a partially blocking component is the merge join component which can send output before it has all upstream buffers.
 
-**7m05s.** Synchronous components output the exact number of rows inputted. They are generally very quick and use the same buffers for IO. Examples are: derived column, conditional split, and multicast. In the case of a conditional split, even if rows don’t match the condition, they are still outputted but are excluded from the input of the next components (they are classed as “dangling rows”).
+**7m05s.** Synchronous components output the exact number of rows inputted. They are generally very quick and use the same buffers for IO. Examples are: derived column, conditional split, and multicast. In the case of a conditional split, even if rows don't match the condition, they are still outputted but are excluded from the input of the next components (they are classed as "dangling rows").
 Multicast outputs are not duplicating rows for inputs (although logically it does). Instead, pointer magic is used.
 
 **8m33s.** Asynchronous components create new buffers, have differently shaped (row count or column count) IO buffers, and can have different numbers of rows for input and outputs. Are usually slower. Examples are the aggregate and sort components.
@@ -54,7 +54,7 @@ For instance:
 
    ![OLE DB Source Editor](/images/2020/oledb-source-editor.webp)
 
-- Parse only when needed (or leave them as strings). The flat file source adapter will more efficiently read strings, so if you really don’t need to do it then don’t. For instance, converting to datetime is quite an expensive operation (see below). You can potentially do conversion downstream after something like aggregation.
+- Parse only when needed (or leave them as strings). The flat file source adapter will more efficiently read strings, so if you really don't need to do it then don't. For instance, converting to datetime is quite an expensive operation (see below). You can potentially do conversion downstream after something like aggregation.
 
    ![Flat File Connection Manager](/images/2020/flat-file-conn-manager.webp)
 
@@ -63,13 +63,13 @@ Instead, he uses a merge join component against the lookup data set. Says you ne
 
 ![Merge Join Component](/images/2020/merge-join.png)
 
-Because the lookup data is type 2, there will be potentially more records in our merged output he uses a conditional split component to remove those rows that don’t meet the predicates (ie where the effective date is between the startdate and enddate).
+Because the lookup data is type 2, there will be potentially more records in our merged output he uses a conditional split component to remove those rows that don't meet the predicates (ie where the effective date is between the startdate and enddate).
 
 ![Split Component](/images/2020/split-component.png)
 
 **30m.** Shows a demo about pulling in records from csv without parsing the file from the flat file adapter and instead of bringing in each row as a whole. This is undoubtedly quicker (especially if you had mostly duplicates and a very small subset), but you would still need to parse (and derive the columns).
 
-In order to bring in each row as an unparsed row, I believe he used the “Ragged right” method (as below) which you configure in the Flat file connection manager.
+In order to bring in each row as an unparsed row, I believe he used the "Ragged right" method (as below) which you configure in the Flat file connection manager.
 
 ![Flat File Connection Manager Editor](/images/2020/flat-file-conn-manager-editor.webp)
 
@@ -85,7 +85,7 @@ See the technique below for parsing the columns manually.
 - Consider using Raw files – these are a very good way to pass data across data flows – they are essentially a copy of the buffer data dumped to disk. Could also be a great way to do some form of checkpointing to the workflow. Write to raw is very quick as is read from raw.
 - Using 64bit SSIS is better to ensure larger addressable memory space.
 - Keep columns narrow. By default the string column sizes will default to 50 – this can be a performance killer. Make them no bigger than the size they need to be – the reason for this is that it will prevent SSIS over-allocating memory.
-- Increase Default BufferMaxSize & DefaultBufferMaxRows where necessary to improve performance – see the “SQL 2005 Integration Services: Performance Tuning Techniques” white paper by Microsoft (Elizabeth Vitt et al) and also the “SQL 2012 SSIS Operational and Tuning Guide” white paper by Microsoft looks very useful too!
+- Increase Default BufferMaxSize & DefaultBufferMaxRows where necessary to improve performance – see the "SQL 2005 Integration Services: Performance Tuning Techniques" white paper by Microsoft (Elizabeth Vitt et al) and also the "SQL 2012 SSIS Operational and Tuning Guide" white paper by Microsoft looks very useful too!
 - Point BufferTempStoragePath/ BLOBTempStoragePath at fast drives.
 - Optimise the destination (use fast load, table lock, simple/bulk logged recovery/ disable indexes).
 - Identify bottlenecks.

@@ -48,7 +48,7 @@ Statuses[1]                :
   DisplayStatus            : VM deallocated
 ```
 
-This is quite good in that we have lots of information about our VM and associated resource states. We can see that it is a Generation 1 VM and see the state of our disks and our VM. More specifically we see the `Statuses[1]` element and it’s Code property to get our VM status.
+This is quite good in that we have lots of information about our VM and associated resource states. We can see that it is a Generation 1 VM and see the state of our disks and our VM. More specifically we see the `Statuses[1]` element and it's Code property to get our VM status.
 
 The possible Code states are:
 
@@ -60,7 +60,7 @@ The possible Code states are:
 We now have enough information to write our PowerShell code.
 
 # Querying Azure VM state
-As touched upon earlier, we need to access the `PSVirtualMachineInstanceView` object and access the `Statuses[1]` element and it’s Code property. This gives us a `$provisioningState` value that we can test against our static state (in our case PowerState/running).
+As touched upon earlier, we need to access the `PSVirtualMachineInstanceView` object and access the `Statuses[1]` element and it's Code property. This gives us a `$provisioningState` value that we can test against our static state (in our case PowerState/running).
 
 If the state is not running then we will keep looping with a 5 second wait. The previous state is tracked only for output sugar so that we will only write to the screen on a state change:
 

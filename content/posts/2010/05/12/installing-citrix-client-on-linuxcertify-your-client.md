@@ -2,9 +2,11 @@
 date = '2010-05-12T20:53:00+01:00'
 draft = false
 title = 'Installing the Citrix client on Linux'
+categories = ['Technology']
+tags = ['Linux']
 +++
 
-The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix’s website download the tarball of the Citrix Receiver.
+The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix's website download the tarball of the Citrix Receiver.
 
 ![Citrix clients](/images/2010/citrix1.jpg)
 
@@ -16,7 +18,7 @@ Extract the tarball…
 
 ![Run setup](/images/2010/citrix3.jpg)
 
-Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message *"You have not chosen to trust "", the issuer of the server’s security certificate (SSL error 61)."*
+Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message *"You have not chosen to trust "", the issuer of the server's security certificate (SSL error 61)."*
 
 ![Client error](/images/2010/citrix4.jpg)
 

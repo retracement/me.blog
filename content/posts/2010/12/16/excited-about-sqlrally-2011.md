@@ -2,6 +2,8 @@
 date = '2010-12-16T13:42:00+01:00'
 draft = false
 title = 'Speaking at SQLRally 2011!'
+categories = ['Personal Development']
+tags = ['SQLBits','SQLRally']
 +++
 
 I am very pleased/ proud to announce that I have submitted 2 abstracts for presentations to [SQLRally](https://www.sqlpass.org/sqlrally/2011/) and should I be chosen they will be given in Orlando, Florida between May 11th to May 13th. For those of you not already aware, SQLRally is a little bit like a mini SQL PASS Summit and enables people from the East Coast of America to visit an event closer to them should they have not been able to attend the PASS Summit due to the distance and cost restrictions. It has been devised to fill the gap between SQL Saturday events and more can be found by visiting this [url](https://www.sqlpass.org/sqlrally/2011/About.aspx). I believe it is going to be a great success. Should I be chosen to present at SQLRally, which will be a tall order given the very strong competition it will be only my second time going to a SQL Event in the States (PASS 2010 was my first) it will be my very first visit to the East Coast.

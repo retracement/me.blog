@@ -29,6 +29,13 @@ copyright = 'Copyright © {year} Mark Broadbent'
   title = "meetup"
   url = "https://www.meetup.com/hybrid-virtual-group/"
 
+[[menu.main]]
+  identifier = "tags"
+  name = "tags"
+  title = "Tags"
+  url = "/tags"
+
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

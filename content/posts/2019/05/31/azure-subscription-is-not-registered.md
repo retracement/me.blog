@@ -9,7 +9,7 @@ It is usually the simplest things that often leave me feeling like I am a comple
 From Azure DevOps I received the following error:
 
 
-> 2019-05-31T16:28:55.4288261Z ##[error]MissingSubscriptionRegistration : The subscription is not registered to use namespace ‘Microsoft.DocumentDB’. See https://aka.ms/rps-not-found for how to register subscriptions.
+> 2019-05-31T16:28:55.4288261Z ##[error]MissingSubscriptionRegistration : The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.
 > 2019-05-31T16:28:55.5005526Z ##[section]Finishing: Deploy Cosmos Account and Database with Shared Capacity
 
 

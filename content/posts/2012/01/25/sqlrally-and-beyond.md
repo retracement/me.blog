@@ -2,18 +2,20 @@
 date = '2012-01-25T02:06:00+01:00'
 draft = false
 title = 'SQLRally and Beyond'
+categories = ['Personal Development']
+tags = ['SQLRally']
 +++
 I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.
 
-I shan’t bore you with my excuses or reasons for my inactivity but what matters is I’m back!
+I shan't bore you with my excuses or reasons for my inactivity but what matters is I'm back!
 
-I’ve been seeing an increasing amount of noise about [SQLRally Dallas](http://www.sqlpass.org/sqlrally/2012/dallas/) and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.
+I've been seeing an increasing amount of noise about [SQLRally Dallas](http://www.sqlpass.org/sqlrally/2012/dallas/) and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.
 
 Six years or so ago I joined a company with big hopes and promises and after starting a small family (and growing it further after joining) I was looking for a period of stability and a platform to learn, improve and share my skills. In short, I knew that come what may, as good or bad as things might get, I was there for the long haul.
 
-Not long after joining, my skills and talent for other technologies were recognised and when the need for a specialized “crack” team supporting a critical troublesome in-house application, I was identified as their man. This position (I was told) would be permanent and was absolutely vital to the running of the company operation. There was one small problem -I didn’t want it and regretfully declined. My reasons were many but I had joined the company as a SQL Server SME and saw the very broad set of skills required to support one single application platform as a regression in my ever growing expertise in SQL Server (and increasing knowledge in Oracle) and did my best to explain this.
+Not long after joining, my skills and talent for other technologies were recognised and when the need for a specialized "crack" team supporting a critical troublesome in-house application, I was identified as their man. This position (I was told) would be permanent and was absolutely vital to the running of the company operation. There was one small problem -I didn't want it and regretfully declined. My reasons were many but I had joined the company as a SQL Server SME and saw the very broad set of skills required to support one single application platform as a regression in my ever growing expertise in SQL Server (and increasing knowledge in Oracle) and did my best to explain this.
 
-Unfortunately for me, the Technical Director at the time (let’s give him a fictitious name of Dennis) told me in no uncertain terms that this would be the last time I ever refused him. Three months into my new job, everything had turned sour overnight simply due to me being good at what I do.
+Unfortunately for me, the Technical Director at the time (let's give him a fictitious name of Dennis) told me in no uncertain terms that this would be the last time I ever refused him. Three months into my new job, everything had turned sour overnight simply due to me being good at what I do.
 
 Years would pass and with each new year would bring a new job offer somewhere else for an ever increasing Salary, but I would always find a reason not to take it -probably the thought of repeating the same mistakes again was always the biggest reason to avoid saying yes.
 
@@ -23,7 +25,7 @@ Although I have been helping in forums and the like on and off for a long period
 
 About a month or so later I took a week off work and self-financed a trip to the [SQLPASS 2010 Summit](http://www.sqlpass.org/summit/na2010/) (my very first time) and met some absolutely amazingly talented people which is probably another story for another time.
 
-Whilst in Seattle I decided that should the opportunity arise, I wanted to attempt a presentation in America and would submit and hope for the best. [SQLRally Orlando](http://www.sqlpass.org/sqlrally/2011/orlando/) was announced and my submissions went in. Although I didn’t make the first cut, my submission received the joint highest votes for the runners up and quite incredibly I was eventually selected as a wildcard! Totally brilliant and I was thrilled!
+Whilst in Seattle I decided that should the opportunity arise, I wanted to attempt a presentation in America and would submit and hope for the best. [SQLRally Orlando](http://www.sqlpass.org/sqlrally/2011/orlando/) was announced and my submissions went in. Although I didn't make the first cut, my submission received the joint highest votes for the runners up and quite incredibly I was eventually selected as a wildcard! Totally brilliant and I was thrilled!
 
 This time (unlike Seattle) I thought I would approach Dennis and see if my company would like to contribute in any way since there would be obvious technical benefits to the organization. The response did not surprise me. He said that my speaking and attending sessions at SQLRally (or anywhere else) had absolutely no benefit to the company at all. I have never forgotten the impact that sentence made upon me. The situation was made even more ironic when a few days later I was assigned to an important scalability project (for someone had personally requested that I should be the resource).
 
@@ -52,7 +54,7 @@ What has happened to me since my return?
 - Set up the [Cambridgeshire SQL Server User Group](https://sqlcambs.org.uk/) (an official PASS Chapter)
 - Presented In defence of being Pessimistic at the [SQLCambs Chapter](https://sqlcambs.org.uk/) in Cambridge, UK
 
-Going forward I am currently :-
+Going forward I am currently:
 
 - Signed onto the [SQL Server 2008 Microsoft Certified Master (MCM) Accelerated Exam Preparation Program](https://sqlmcm.quickstart.com/)
 - Due to present at the [Maidenhead SQL Server User Group](https://sqlserverfaq.com/events/341/Maidenhead-UG-meeting-sessions-by-Mark-Broadbent-and-Richard-Douglas.aspx)

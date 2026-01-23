@@ -6,7 +6,7 @@ title = 'Encouraging diversity at technical events – attendees'
 
 In the first of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of *attendees* at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.
 
-Before we start talking about diversity, I think it is first important to define what *I mean* by this term. According to the [Merriam-Webster](https://https://www.merriam-webster.com/dictionary/diversity) definition, diversity is "*the condition of having or being composed of differing elements*" and especially "*the inclusion of different types of people (such as people of different races or cultures) in a group or organization*". I don’t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.
+Before we start talking about diversity, I think it is first important to define what *I mean* by this term. According to the [Merriam-Webster](https://https://www.merriam-webster.com/dictionary/diversity) definition, diversity is "*the condition of having or being composed of differing elements*" and especially "*the inclusion of different types of people (such as people of different races or cultures) in a group or organization*". I don't quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.
 
 The following is not a comprehensive list, but I hope it will provide some food for thought when you start planning your next event.
 
@@ -22,7 +22,7 @@ Have contact details for problems to be reported to – and make everyone aware 
 
 I once held a conference at an event space that had stairs and few lifts. After being contacted by a wheel-chair bound attendee in advance of an up-and-coming event, it became clear that we would have to assign a member of the volunteer staff to assist with the attendee in order for them to move from session to session. He was also arriving by train and getting a taxi to and from the event, so we also needed to arrange special dispensation into the event grounds to allow the taxi in and out since we were not allowed to use their private parking or access and the nearest public car park was a 15-minute walk away.
 
-Clearly an event’s accessibility is going to affect who is going to want (or be able) to attend your event and it might not be obvious what someone’s ability might be.
+Clearly an event's accessibility is going to affect who is going to want (or be able) to attend your event and it might not be obvious what someone's ability might be.
 
 You should look to make accessibility both in/ around and to/ from the event as painless possible -but it is also critical that you provide a point of contact for inquiries where extra help might be needed.
 
@@ -53,7 +53,7 @@ Name badges are a rather personal thing. Not everyone wants their twitter handle
 
 # Respect opt-outs
 
-Probably one of the most frustrating aspects of attending an event is getting spammed. Whilst this is annoying to many, to those from diverse backgrounds, the thought of having their personal private details distributed to complete strangers is probably a step too far. If someone states that they want to opt-out of sponsor communications, then ensure their details are not passed onto anyone else. Clearly GDPR means you should be handling other people’s data with care already!
+Probably one of the most frustrating aspects of attending an event is getting spammed. Whilst this is annoying to many, to those from diverse backgrounds, the thought of having their personal private details distributed to complete strangers is probably a step too far. If someone states that they want to opt-out of sponsor communications, then ensure their details are not passed onto anyone else. Clearly GDPR means you should be handling other people's data with care already!
 
 ---
 

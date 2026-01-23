@@ -2,6 +2,8 @@
 date = '2010-08-03T22:40:00+01:00'
 draft = false
 title = 'My Big Fat Greek Desktop'
+categories = ['Technology']
+tags = ['Linux']
 +++
 
 **Disclaimer:**
@@ -16,7 +18,7 @@ I've recently been suffering from unexplained machine freeze for several weeks a
 
 Over quite a considerable period of time I had come to grow and love my GUI customizations of my Linux host (Mint 7) and it had everything. It looked slick, had little effects which looked cool such as the magic carpet effect when minimizing Gnome windows and it was fast. My Windows XP guest ran beautifully fast within its virtual environment (arguably as fast as native) and since I was addressing the whole 5GB of RAM (1.5GB more than my original 32 bit XP build could) I wasn't even losing out on memory).
 
-I even migrated to a new Windows guest, a brand spanking new Windows 7 build and I was quite proud of my flexibility on my lovely desktop. I mean what could go wrong, if I didn't like it I could just use my old guest. Hell I could even run them together until I was satisfied the day had come to decommission XP. Things continued for a while in a state of Nirvana. Linux host, Windows 7 guest and a whole multitude of lovely things in the background. At this point I shall not discuss how I'd “merged” my Linux home and desktop with my Windows documents and desktop, but just be assured they got along just dandy. Two OS's working as one.
+I even migrated to a new Windows guest, a brand spanking new Windows 7 build and I was quite proud of my flexibility on my lovely desktop. I mean what could go wrong, if I didn't like it I could just use my old guest. Hell I could even run them together until I was satisfied the day had come to decommission XP. Things continued for a while in a state of Nirvana. Linux host, Windows 7 guest and a whole multitude of lovely things in the background. At this point I shall not discuss how I'd "merged" my Linux home and desktop with my Windows documents and desktop, but just be assured they got along just dandy. Two OS's working as one.
 
 Over time something happened and I didn't know what. I would arrive in the morning to find the keyboard lights all on but unresponsive to touch (or hammer) and a blackened monitor. Initially I would just cold boot the machine in frustration and lose everything that was un-saved. Over time I learnt that the Linux host was still active and therefore installed the SSH Daemon so now first thing I could ssh in and save the state of my VirtualBox guest and then put the machine through a soft reboot. This continued for some weeks until the fateful day I told you about earlier.
 
@@ -35,7 +37,7 @@ The .gconf folder contains various Gnome (Windows environment) based customizati
 Anyway to cut a very long story short, the next morning my machine had not frozen – Yay! The day after that, it still hadn't failed. Better still my machine and all guests absolutely fly. I've been very careful about what I've altered, but with a few bits of tinkering here and there my desktop is back to looking damn sexy again.
 
 # So why are you telling me this?
-Well the first thing I want to say is that when you make customizations to any environment, you should make sure you remember that you have made them and always remember to have a “Last Known Good” backup available. Easier said than done I know, but it could have saved me a little pain had I remembered what I had changed all those weeks back and could easily revert what I had done.
+Well the first thing I want to say is that when you make customizations to any environment, you should make sure you remember that you have made them and always remember to have a "Last Known Good" backup available. Easier said than done I know, but it could have saved me a little pain had I remembered what I had changed all those weeks back and could easily revert what I had done.
 
 The second point I want to make is related to the GUI itself on Linux. I am pretty sure that the settings I had changed which caused me the issue occurred after playing with the compiz manager setting lots of fancy effects. Be very careful of the compiz changes you make and always remember what you did.
 

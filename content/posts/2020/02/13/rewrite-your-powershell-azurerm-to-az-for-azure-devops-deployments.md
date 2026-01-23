@@ -4,7 +4,7 @@ draft = false
 title = 'Rewrite Your Powershell Azurerm to Az for Azure Devops Deployments'
 +++
 
-I just wanted to get a quick post out on specific problem that I have just encountered from one of our Azure DevOps release pipelines in which one of the release stage tasks started failing for no reason (despite no obvious changes having been made). Hopefully this post will help others if you are also experiencing this problem and don’t know what to do.
+I just wanted to get a quick post out on specific problem that I have just encountered from one of our Azure DevOps release pipelines in which one of the release stage tasks started failing for no reason (despite no obvious changes having been made). Hopefully this post will help others if you are also experiencing this problem and don't know what to do.
 
 The error message was as follows for our task `Enable Firewall on Data Lake`
 

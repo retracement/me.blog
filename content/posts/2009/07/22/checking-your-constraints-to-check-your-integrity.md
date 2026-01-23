@@ -3,11 +3,11 @@ date = '2009-07-22T11:33:15+01:00'
 draft = false
 title = 'Check your constraints to check your integrity'
 +++
-Something that you probably don’t need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.
+Something that you probably don't need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.
 
 For instance assume that there is an inventory database that has two tables, one called server (which has an entry for each server host) and one called instance (one for each SQL Server instance). If the PK->FK constraint is on the server host name itself then should the physical server every undergo a rename (perhaps due to new naming standard policy) then it this key constraint no longer works.
 
-In order to update either of the fields in each table, you first need to alter the constraint so that it doesn’t check the data being entered.
+In order to update either of the fields in each table, you first need to alter the constraint so that it doesn't check the data being entered.
 
 e.g.
 ```sql

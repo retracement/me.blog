@@ -6,11 +6,11 @@ title = 'A Quick Introduction to Azure Purview'
 
 ![Data Catalog](/images/2022/catalogue-of-data-ai-600.png)
 
-Azure Purview is Microsoft’s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.
+Azure Purview is Microsoft's next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.
 
 Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.
 
-Purview’s Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores <sub>***1**</sub> – although we will detail some restrictions that may cause difficulties in doing so.
+Purview's Unified Platform implements the Apache Atlas API allowing both read and write capabilities against it. Having this capability provides the ability for external applications to easily query and update the data catalog or it could be used for integration with other services and solutions such as custom-built metadata stores <sub>***1**</sub> – although we will detail some restrictions that may cause difficulties in doing so.
 
 In this quick post, we will detail the three key Purview capabilities at the time of writing.
 
@@ -28,7 +28,7 @@ Data lineage is important since it helps you understand your data supply chain. 
 
 Purview implements basic data lineage capabilities and will automatically pick up the lineage of assets by scanning certain services such as Azure Data Factory. Lineage can be established by scanning these service pipelines and determining which assets are related through copy activities. The lineage view shows which columns exist in each of these assets. Unfortunately, at present only the Data Activity copy activity is supported, meaning that all of the transformation and other activities are not.
 
-We have already touched upon some of the lineage shortfalls with Power BI assets and won’t repeat them again in this section, but just be aware they exist. There are other missing data lineage capabilities, and this includes a lack of current support for database views. This is obviously a big hole in the Data lineage capability and will hopefully be addressed in the future.
+We have already touched upon some of the lineage shortfalls with Power BI assets and won't repeat them again in this section, but just be aware they exist. There are other missing data lineage capabilities, and this includes a lack of current support for database views. This is obviously a big hole in the Data lineage capability and will hopefully be addressed in the future.
 
 # Data classification
 Data classification is equally important and helps you provide business context to your data, identify PII data (that may or may not be a risk), and empowers consumers to find valuable trustworthy data through the use of those tags.

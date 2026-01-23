@@ -72,7 +72,7 @@ In the following examples I will perform some common queries against our Azure D
 
 # Query all build definitions
 
-In this example we will return the results in descending order. There is also a bit of further work needed to parse the definition output to improve the quality of the result set. I’ve left a few extra fields commented out for brevity.
+In this example we will return the results in descending order. There is also a bit of further work needed to parse the definition output to improve the quality of the result set. I've left a few extra fields commented out for brevity.
 
 ```powershell
 # Builds API call
@@ -135,7 +135,7 @@ ba008565-118a-41e6-878c-d7a8180bf734 Widget Database
 
 # Query a repository branches
 
-In this next example we will take a repository id and use this in our REST API call to query it’s branches.
+In this next example we will take a repository id and use this in our REST API call to query it's branches.
 
 ```powershell
 # Repository API call

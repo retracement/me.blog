@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on tenbulls blog</title>
+    <link>http://localhost:1313/tags/learning/</link>
+    <description>Recent content in Learning on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Sun, 16 Jan 2011 20:06:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Goodbye SQL 7</title>
+      <link>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</link>
+      <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</guid>
+      <description>&lt;p&gt;I cannot let the week go by without a special goodbye to an old friend. If you hadn&amp;rsquo;t already heard, &lt;a href=&#34;https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0&#34;&gt;SQL 7.0 support officially ended on the 11th January&lt;/a&gt; of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in how I got started with SQL Server and you haven&amp;rsquo;t done so already, you might want to take a quick peek at my &lt;a href=&#34;http://localhost:1313/about&#34;&gt;about&lt;/a&gt; page. Here I mention how I quite insightfully (read luckily) took a training opportunity and put myself on a SQL 7 beta course rather than the one my company was expecting – one for SQL 6.5. That decision had a very big effect on my future IT career. Whilst at the training centre I remember that there was a guy there who claimed that he had been one of the first 100 people in the world to certify as an MCSE+i and his efforts to do so had been made a little easier because of the fact that he had apparently been based in Saudi Arabia for six months in a company that had not only a testing centre but all course materials available to him. He said of being out there &lt;em&gt;&amp;ldquo;well what else can you do for 6 months in Saudi? I thought I might as well do something productive!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Start as you mean to go on</title>
+      <link>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
+      <pubDate>Tue, 11 Jan 2011 02:03:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

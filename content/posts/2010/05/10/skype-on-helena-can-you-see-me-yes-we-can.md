@@ -2,6 +2,8 @@
 date = '2010-05-10T08:47:00+01:00'
 draft = false
 title = 'Webcam troubleshooting on Linux'
+categories = ['Technology']
+tags = ['Linux']
 +++
 
 The other day, due to a long distance friendship, I really thought it was time to try and get Skype up and running on one of my Linux machines (currently running the Helena release of Mint).

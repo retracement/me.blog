@@ -3,7 +3,7 @@ date = '2009-03-31T02:10:10+01:00'
 draft = false
 title = 'Login failure user is not associated with a trusted SQL Server connection'
 +++
-Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.
+Have you ever come across the following login failure within the SQL Server error logs? "Login failed for user ". (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.
 
 ![Login failed for user](/images/2009/untrusted.jpg)
 

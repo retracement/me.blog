@@ -4,7 +4,7 @@ draft = false
 title = 'Understanding Query Editor save highlighting'
 +++
 
-It’s the little things in life that please me, and there have been a few things of late I have noticed or directed to which have left that warm fuzzy feeling.
+It's the little things in life that please me, and there have been a few things of late I have noticed or directed to which have left that warm fuzzy feeling.
 The latest is a nice little feature that appears to have been present for a very long time. Why I have not noticed (or paid attention) to it so far is beyond me.
 
 After writing a script in SSMS if you wish to reuse it, then it is probably a very good idea to save it now. However, before you do, have a look to the side of the script and you will notice a yellowish colour by the side of it.

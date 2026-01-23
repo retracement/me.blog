@@ -4,8 +4,8 @@ draft = false
 title = 'Remember your database files when dropping OFFLINE databases'
 +++
 
-If I asked you the question, “what happens to the physical data files if you drop an offline database?” would would probably have to have a bit of a think about it.
-There are really only three potential outcomes here :-
+If I asked you the question, "what happens to the physical data files if you drop an offline database?" would would probably have to have a bit of a think about it.
+There are really only three potential outcomes here:
 
 1. The DROP fails
 1. The DROP succeeds and removes the data files

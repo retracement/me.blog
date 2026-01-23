@@ -3,9 +3,9 @@ date = '2020-04-14T12:34:00+01:00'
 draft = false
 title = 'Restore Azure Devops Repository'
 +++
-If you are using [Azure DevOps](https://azure.microsoft.com/en-gb/services/devops/), you might be comforted that your [Git](https://git-scm.com/) repo is “in the Cloud” and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.
+If you are using [Azure DevOps](https://azure.microsoft.com/en-gb/services/devops/), you might be comforted that your [Git](https://git-scm.com/) repo is "in the Cloud" and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.
 
-When you delete an Azure DevOps repository, it is initially soft-deleted to the “recycle bin”. After a period of time (oddly I have failed to find an offical Microsoft reference stating exactly what this but I believe it is 28 days) it is automatically purged and hard-deleted. Although there is no GUI support to restore your soft-deleted repositories, that ability is exposed through the Azure DevOps REST API, but frustratingly the [Microsoft Azure DevOps Services REST API Reference](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0) does not provide a worked example in the [Repositories – Restore Repository From Recycle Bin](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/restore%20repository%20from%20recycle%20bin?view=azure-devops-rest-5.1) API call page.
+When you delete an Azure DevOps repository, it is initially soft-deleted to the "recycle bin". After a period of time (oddly I have failed to find an offical Microsoft reference stating exactly what this but I believe it is 28 days) it is automatically purged and hard-deleted. Although there is no GUI support to restore your soft-deleted repositories, that ability is exposed through the Azure DevOps REST API, but frustratingly the [Microsoft Azure DevOps Services REST API Reference](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0) does not provide a worked example in the [Repositories – Restore Repository From Recycle Bin](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/restore%20repository%20from%20recycle%20bin?view=azure-devops-rest-5.1) API call page.
 
 To make your life easier, I will provide the solution below!
 
@@ -17,7 +17,7 @@ Within my blog so far I have provided several worked examples of making a REST A
 
 Once you have assigned your `$header` variable from an encoded PAT token (_as documented in the aforementioned article_) you are ready to roll!
 
-# Set your repository’s Organisation and project
+# Set your repository's Organisation and project
 Each project will contain its own set of Azure repositories. Ensure you provide the correct values for your organization and project- and ensure that for any names with spaces are correctly replaced using `%20` (so that a valid url can be formed).
 
 ```powershell
@@ -27,7 +27,7 @@ $project = "ACME%20Corp"
 ---
 
 # REST API call to list repositories in the recycleBin
-From the [Microsoft Azure DevOps Services REST API Reference](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0) we can call the [Repositories – List](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-5.1) REST API call to return a list of all deleted repositories in our recycleBin for our organization’s project.
+From the [Microsoft Azure DevOps Services REST API Reference](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0) we can call the [Repositories – List](https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-5.1) REST API call to return a list of all deleted repositories in our recycleBin for our organization's project.
 
 We will first build up our `$url` using the variables set earlier.
 
@@ -77,7 +77,7 @@ Now we can return back to the [Repositories – Restore Repository From Recycle 
 
 ```powershell
 $url = "https://dev.azure.com/$organization/$project/_apis/git/recycleBin/repositories/" + $repoId +"?api-version=5.1-preview.1"
-$body = ConvertTo-Json @{“deleted”= "false"}
+$body = ConvertTo-Json @{"deleted"= "false"}
 Invoke-RestMethod -Uri $url -Method Patch -Body ($body) -ContentType "application/json" -Headers $header
 ```
 

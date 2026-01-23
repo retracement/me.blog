@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2020/04/14/restore-azure-devops-repository/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="Restore Azure Devops Repository">
   <meta property="og:description" content="If you are using Azure DevOps, you might be comforted that your Git repo is “in the Cloud” and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.">
@@ -18,10 +18,10 @@
 
 <title>tenbulls blog | Restore Azure Devops Repository</title>
 
-      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
 
-      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+      <script src="/js/main.js"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -69,6 +69,12 @@
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -95,20 +101,20 @@
       </header>
       
       <article>
-        <p>If you are using <a href="https://azure.microsoft.com/en-gb/services/devops/">Azure DevOps</a>, you might be comforted that your <a href="https://git-scm.com/">Git</a> repo is “in the Cloud” and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.</p>
-<p>When you delete an Azure DevOps repository, it is initially soft-deleted to the “recycle bin”. After a period of time (oddly I have failed to find an offical Microsoft reference stating exactly what this but I believe it is 28 days) it is automatically purged and hard-deleted. Although there is no GUI support to restore your soft-deleted repositories, that ability is exposed through the Azure DevOps REST API, but frustratingly the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0">Microsoft Azure DevOps Services REST API Reference</a> does not provide a worked example in the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/restore%20repository%20from%20recycle%20bin?view=azure-devops-rest-5.1">Repositories – Restore Repository From Recycle Bin</a> API call page.</p>
+        <p>If you are using <a href="https://azure.microsoft.com/en-gb/services/devops/">Azure DevOps</a>, you might be comforted that your <a href="https://git-scm.com/">Git</a> repo is &ldquo;in the Cloud&rdquo; and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.</p>
+<p>When you delete an Azure DevOps repository, it is initially soft-deleted to the &ldquo;recycle bin&rdquo;. After a period of time (oddly I have failed to find an offical Microsoft reference stating exactly what this but I believe it is 28 days) it is automatically purged and hard-deleted. Although there is no GUI support to restore your soft-deleted repositories, that ability is exposed through the Azure DevOps REST API, but frustratingly the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0">Microsoft Azure DevOps Services REST API Reference</a> does not provide a worked example in the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/restore%20repository%20from%20recycle%20bin?view=azure-devops-rest-5.1">Repositories – Restore Repository From Recycle Bin</a> API call page.</p>
 <p>To make your life easier, I will provide the solution below!</p>
 <hr>
 <h1 id="getting-started-with-azure-devops-rest-api-and-pat-token">Getting started with Azure DevOps REST API and PAT token</h1>
 <p>Within my blog so far I have provided several worked examples of making a REST API call to Azure DevOps. If you are new to this, I suggest you first check out my post titled <a href="/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell">Querying Azure DevOps REST API with PowerShell</a>.</p>
 <p>Once you have assigned your <code>$header</code> variable from an encoded PAT token (<em>as documented in the aforementioned article</em>) you are ready to roll!</p>
-<h1 id="set-your-repositorys-organisation-and-project">Set your repository’s Organisation and project</h1>
+<h1 id="set-your-repositorys-organisation-and-project">Set your repository&rsquo;s Organisation and project</h1>
 <p>Each project will contain its own set of Azure repositories. Ensure you provide the correct values for your organization and project- and ensure that for any names with spaces are correctly replaced using <code>%20</code> (so that a valid url can be formed).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$organization = <span style="color:#e6db74">&#34;retracement&#34;</span>
 </span></span><span style="display:flex;"><span>$project = <span style="color:#e6db74">&#34;ACME%20Corp&#34;</span>
 </span></span></code></pre></div><hr>
 <h1 id="rest-api-call-to-list-repositories-in-the-recyclebin">REST API call to list repositories in the recycleBin</h1>
-<p>From the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0">Microsoft Azure DevOps Services REST API Reference</a> we can call the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-5.1">Repositories – List</a> REST API call to return a list of all deleted repositories in our recycleBin for our organization’s project.</p>
+<p>From the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.0">Microsoft Azure DevOps Services REST API Reference</a> we can call the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/list?view=azure-devops-rest-5.1">Repositories – List</a> REST API call to return a list of all deleted repositories in our recycleBin for our organization&rsquo;s project.</p>
 <p>We will first build up our <code>$url</code> using the variables set earlier.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://dev.azure.com/</span>$organization<span style="color:#e6db74">/</span>$project<span style="color:#e6db74">/_apis/git/recycleBin/repositories?api-version=5.1-preview.1&#34;</span>
 </span></span></code></pre></div><p>Now that all variables are set we can make our REST API call and iterate over all deleted repositories.</p>
@@ -136,7 +142,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$repoId = <span style="color:#e6db74">&#34;3b1bbfe0-470d-4724-bc69-6ec29ff88cb5&#34;</span>
 </span></span></code></pre></div><p>Now we can return back to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/restore%20repository%20from%20recycle%20bin?view=azure-devops-rest-5.1">Repositories – Restore Repository From Recycle Bin</a> REST API call page as use this to build out our new url. As you will see, the url contains our <code>$repoId</code> and we will also create a <code>$body</code> variable set to a JSON key value pair setting the <code>deleted</code> property to false. This JSON body is passed into our REST API call using the <code>Patch</code> Method.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$url = <span style="color:#e6db74">&#34;https://dev.azure.com/</span>$organization<span style="color:#e6db74">/</span>$project<span style="color:#e6db74">/_apis/git/recycleBin/repositories/&#34;</span> + $repoId +<span style="color:#e6db74">&#34;?api-version=5.1-preview.1&#34;</span>
-</span></span><span style="display:flex;"><span>$body = ConvertTo-Json @{<span style="color:#960050;background-color:#1e0010">“</span>deleted<span style="color:#960050;background-color:#1e0010">”</span>= <span style="color:#e6db74">&#34;false&#34;</span>}
+</span></span><span style="display:flex;"><span>$body = ConvertTo-Json @{<span style="color:#e6db74">&#34;deleted&#34;</span>= <span style="color:#e6db74">&#34;false&#34;</span>}
 </span></span><span style="display:flex;"><span>Invoke-RestMethod -Uri $url -Method Patch -Body ($body) -ContentType <span style="color:#e6db74">&#34;application/json&#34;</span> -Headers $header
 </span></span></code></pre></div><p>The output of our final REST API call results in:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>id            : 3b1bbfe0-470d-4724-bc69-6ec29ff88cb5
@@ -161,7 +167,7 @@
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/">
+        <a href="http://localhost:1313/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/">
             <span>previous: </span>
             <span>Cannot delete old build definitions in Azure DevOps</span>
         </a>
@@ -169,7 +175,7 @@
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/">
+        <a href="http://localhost:1313/posts/2020/04/27/inconsistent-results/">
             <span>next: </span>
             <span>Inconsistent result sets and another case against pessimistic isolation</span>
         </a>

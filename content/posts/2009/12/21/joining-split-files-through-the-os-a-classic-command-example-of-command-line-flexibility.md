@@ -2,11 +2,13 @@
 date = '2009-12-21T14:06:00+01:00'
 draft = false
 title = 'Rejoining split files in Windows and Linux'
+categories = ['Technology']
+tags = ['Linux']
 +++
 
 If you frequently download large files in many parts then you are probably not a stranger to HJSplit. This application can be used to connect these parts back together and is quite frankly completely unnecessary since your operating system likely already has a way! So how do you do it?
 
-Lets say you have just downloaded the following files:-
+Lets say you have just downloaded the following files:
 
 big_file_part.iso.001
 big_file_part.iso.002

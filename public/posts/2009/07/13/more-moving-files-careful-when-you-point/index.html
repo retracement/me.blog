@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="Issues when moving your SQL data and log files">
   <meta property="og:description" content="You might recall that I recently touched upon how to go about moving your SQL data and log files correctly. In this post I will quickly walk through one common scenario.
@@ -19,10 +19,10 @@ Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafi
 
 <title>tenbulls blog | Issues when moving your SQL data and log files</title>
 
-      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
 
-      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+      <script src="/js/main.js"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -70,6 +70,12 @@ Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafi
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -97,8 +103,8 @@ Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafi
       
       <article>
         <p>You might recall that I recently touched upon how to go about moving your <a href="/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach">SQL data and log files correctly</a>. In this post I will quickly walk through one common scenario.</p>
-<p>Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.</p>
-<p>Its only at this stage that you realise that you forgot to make a note of all the source locations and you start cursing and hoping that you dont have to move back that 300GB worth of files in order to bring the databases back up to run <code>EXEC sp_helpfile</code> or query the databases’ sysfiles table.</p>
+<p>Ok so your in a hurry and you&rsquo;ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.</p>
+<p>Its only at this stage that you realise that you forgot to make a note of all the source locations and you start cursing and hoping that you dont have to move back that 300GB worth of files in order to bring the databases back up to run <code>EXEC sp_helpfile</code> or query the databases&rsquo; sysfiles table.</p>
 <p>After a biscuit and a cup of tea you remember that this is only after all meta data and should be stored in the master database. Upon further examination you find the sysaltfiles table and are able to reference the filegroup name and original location so that you may now issue the <code>ALTER DATABASE</code> command.</p>
 <p>Thankfully this all works a treat and you may now stop panicking.</p>
 <p>A couple of points of interest here. Firstly I wondered whether after repointing the database in this situation whether a simple <code>ALTER DATABASE SET ONLINE</code> would be enough or whether you would have to at first <code>OFFLINE</code>. Well as you would hope would happen, all SQL requires is that you issue the <code>ONLINE</code> directive. The other interesting thing that I noticed is that should you mistype the repointing statement, SSMS returns a rather misleading error message which suggests that something not very pleasant may have happened to your datafile, when in fact you have simply entered a wrong statement.</p>
@@ -110,7 +116,7 @@ Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafi
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/">
+        <a href="http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/">
             <span>previous: </span>
             <span>Name resolution for SQL Server instances</span>
         </a>
@@ -118,7 +124,7 @@ Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafi
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/">
+        <a href="http://localhost:1313/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/">
             <span>next: </span>
             <span>How to perform an emergency database restore when blocked by corrupt database</span>
         </a>

@@ -25,7 +25,7 @@ To demonstrate what I mean, lets launch a query window within SSMS and type some
 
 ![No right click](/images/2010/right1.jpg)
 
-Strangely next I’m going to do something slightly different. With the selected text I’m going to right click and hold the mouse over it and drag across the screen.
+Strangely next I'm going to do something slightly different. With the selected text I'm going to right click and hold the mouse over it and drag across the screen.
 
 ![drag](/images/2010/right2.jpg)
 
@@ -33,7 +33,7 @@ Upon release this mouse we still get a context menu coming up which allows up to
 
 ![menu after drag](/images/2010/right3.jpg)
 
-Let’s now move into the Messages (Results pane will do also) pane of the query window and right click.
+Let's now move into the Messages (Results pane will do also) pane of the query window and right click.
 
 ![message right click](/images/2010/right4.jpg)
 

@@ -3,7 +3,7 @@ date = '2020-05-06T11:37:47+01:00'
 draft = false
 title = 'Removing and Maintaining Azure Resource Group Deployments Based Upon Deployment Count'
 +++
-Whenever you create or update an Azure resource, a new *deployment* is created under the resources’ configured resource group. This deployment history is retained ad-infinitum until you eventually hit the hard limit of *800 deployments (per resource group)*. You may think this figure is more than enough to accommodate all the possible resource changes that could ever be made in a resource group, but if you are running CICD pipelines to push out your Infrastructure as Code (IaC) (or create lots of resources per resource group) then it is very likely you will exhaust this figure very quickly.
+Whenever you create or update an Azure resource, a new *deployment* is created under the resources' configured resource group. This deployment history is retained ad-infinitum until you eventually hit the hard limit of *800 deployments (per resource group)*. You may think this figure is more than enough to accommodate all the possible resource changes that could ever be made in a resource group, but if you are running CICD pipelines to push out your Infrastructure as Code (IaC) (or create lots of resources per resource group) then it is very likely you will exhaust this figure very quickly.
 
 Every time a release pipeline runs, regardless of whether you are changing resources or not, all configured and enabled deployments in the pipeline will result in a new deployment record. You can view all historic deployments in the Azure Portal for each resource group by selecting its Deployments item under the Settings pane (see below).
 
@@ -11,7 +11,7 @@ Every time a release pipeline runs, regardless of whether you are changing resou
 
 In the example above you will note that we only have 4 deployments that have been created in this resource group. When the hard limit is eventually hit, all subsequent deployments to that specific resource group will fail.
 
-# Microsoft’s solution
+# Microsoft's solution
 Microsoft provide a solution to this in the MS doc titled [Resolve error when deployment count exceeds 800](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-quota-exceeded) which allows you to programmatically remove deployments (through Azure CLI or PowerShell Az) based upon a deployment date and this is made possible because of the Timestamp property. I have also seen many blog posts that simply seem to regurgitate this Microsoft code giving really just one solution – to maintain deployments based on date.
 
 This is all well and good if your deployments span many weeks or months and that the counts are predictable, based on date-time, but what happens if you have highly active, highly unpredictable, or high number of resources per resource group?

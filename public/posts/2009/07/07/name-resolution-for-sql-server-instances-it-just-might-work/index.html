@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="Name resolution for SQL Server instances">
   <meta property="og:description" content="SQL Server instances are great for allowing multiple instances on a single windows host, but unlike with Oracle instances this does cause a very big headache when configuring applications that consume these servers, instances and its databases. In the Oracle world there are many different mechanisms for name resolution and one of the most common is the use of the TNSNAMES file which effectively maps the database (think SQL instance) to the host. The Oracle database name is a unique identifier and does not have an “instance” postfix name like SQL server, so this lends itself very easily to application/ database name separation. In addition the Oracle instance is not tied to a particular hostname and therefore can be moved onto another physical host with very little reconfiguration required in order for applications to communicate to this new host location. To be more specific, when using TNSNAMES resolution, all that would be necessary from the application perspective to reconfigure them to reflect a new database host would be to edit this file on all the application servers ensuring that this hostname is changed to reflect its new name for this specific database.">
@@ -18,10 +18,10 @@
 
 <title>tenbulls blog | Name resolution for SQL Server instances</title>
 
-      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
 
-      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+      <script src="/js/main.js"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -69,6 +69,12 @@
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -95,8 +101,8 @@
       </header>
       
       <article>
-        <p>SQL Server instances are great for allowing multiple instances on a single windows host, but unlike with Oracle instances this does cause a very big headache when configuring applications that consume these servers, instances and its databases. In the Oracle world there are many different mechanisms for name resolution and one of the most common is the use of the <code>TNSNAMES</code> file which effectively maps the database (think SQL instance) to the host. The Oracle database name is a unique identifier and does not have an “instance” postfix name like SQL server, so this lends itself very easily to application/ database name separation. In addition the Oracle instance is not tied to a particular hostname and therefore can be moved onto another physical host with very little reconfiguration required in order for applications to communicate to this new host location. To be more specific, when using <code>TNSNAMES</code> resolution, all that would be necessary from the application perspective to reconfigure them to reflect a new database host would be to edit this file on all the application servers ensuring that this hostname is changed to reflect its new name for this specific database.</p>
-<p>Is something similar possible on SQL Server? I don’t recall ever seeing any “enterprise” solution to this problem and have racked my brains over one. The biggest problem is the way in which SQL Server uses instance names. In order to communicate to an instance name, first the hostname needs to be resolved. Once this hostname is resolved the client will then communicate with the host and attempt to resolve the second part of the name, the instance name. Once this final part has been resolved then the client can communicate directly to the instance. So when the transport mechanism is TCP/IP the client will be communicating with a unique TCP port number which the Server instance will be running on.</p>
+        <p>SQL Server instances are great for allowing multiple instances on a single windows host, but unlike with Oracle instances this does cause a very big headache when configuring applications that consume these servers, instances and its databases. In the Oracle world there are many different mechanisms for name resolution and one of the most common is the use of the <code>TNSNAMES</code> file which effectively maps the database (think SQL instance) to the host. The Oracle database name is a unique identifier and does not have an &ldquo;instance&rdquo; postfix name like SQL server, so this lends itself very easily to application/ database name separation. In addition the Oracle instance is not tied to a particular hostname and therefore can be moved onto another physical host with very little reconfiguration required in order for applications to communicate to this new host location. To be more specific, when using <code>TNSNAMES</code> resolution, all that would be necessary from the application perspective to reconfigure them to reflect a new database host would be to edit this file on all the application servers ensuring that this hostname is changed to reflect its new name for this specific database.</p>
+<p>Is something similar possible on SQL Server? I don&rsquo;t recall ever seeing any &ldquo;enterprise&rdquo; solution to this problem and have racked my brains over one. The biggest problem is the way in which SQL Server uses instance names. In order to communicate to an instance name, first the hostname needs to be resolved. Once this hostname is resolved the client will then communicate with the host and attempt to resolve the second part of the name, the instance name. Once this final part has been resolved then the client can communicate directly to the instance. So when the transport mechanism is TCP/IP the client will be communicating with a unique TCP port number which the Server instance will be running on.</p>
 <p>The instance name of the SQL server is unique only upon the physical host that it is currently running on, therefore it is perfectly possible to have many different hosts each running with an identical instance name. Much the same way as many different hosts may each have a default instance running. Any solution first needs to be able to resolve to a different physical host (and be changed with ease) and secondly needs to be able to associate itself to an instance name. If the instance name can be made irrelevant then when a database instance is migrated onto a new host, a unique (and possibly different from the source) instance name can be given.</p>
 <p>I did first think of using DNS aliases to solve this problem, but this does not address the instance name only the hostname. In fact I could not think of any mechanism at all to communicate to an instance name (and obfuscate them from the application), that is until I started thinking about SQL Server client aliases. These are not something I have really spent a great deal of time using, but provide for a similar kind of technique to Oracle <code>TNSNAMES</code>. Even more interesting or surprising is that they allow for long names. For instance <code>my server 1</code> might map directly to a SQL host instance <code>srv1\ins1</code>. The limitation of this solution is that it is strictly client based, and so as it stands not an enterprise solution. In order to create or change client aliases, it is necessary to use the Client Network utility however if you delve a little deeper you will find that all this is doing is simply adding a registry string entry. Knowing this makes deployment very easy, because it means that all that is necessary is to maintain a registry file, updating deleting and inserting new entries where necessary and using Active Directory to deploy these registry entries across the enterprise. This means that very rapidly you can switch over an application to point to a new host/ instance with very little effort.</p>
 
@@ -106,7 +112,7 @@
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2009/06/09/copy-only-backups-another-great-addition/">
+        <a href="http://localhost:1313/posts/2009/06/09/copy-only-backups-another-great-addition/">
             <span>previous: </span>
             <span>Preserve backup chain with COPY ONLY backups</span>
         </a>
@@ -114,7 +120,7 @@
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/">
+        <a href="http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/">
             <span>next: </span>
             <span>Issues when moving your SQL data and log files</span>
         </a>

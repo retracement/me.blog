@@ -1,7 +1,9 @@
 +++
-date = 'yyyy-mm-ddThh:mm:00+01:00'
-draft = false
+date = '2011-04-01Thh:mm:00+01:00'
+draft = true
 title = '<title>'
+categories = ['Personal Development','Technology']
+tags =['SQL','VirtualBox','Linux','SQLBits','SQLRally','PASS Summit','Certification','SQLHelp','TSQL Tuesday','Funny']
 +++
 
 Replace folling char

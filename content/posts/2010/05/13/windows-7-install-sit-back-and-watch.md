@@ -8,11 +8,11 @@ Well I'm not really going to go into any detail right now about my experiences s
 
 ![Loading](/images/2010/windows001.jpg)
 
-One thing for sure is that the interface does look nice and polished. However first booting up from your media you are presented with this unappealing boot sequence. Shame they didn’t give a nice custard yellow colour to the bar, it would have looked very much like the NT 4 loader.
+One thing for sure is that the interface does look nice and polished. However first booting up from your media you are presented with this unappealing boot sequence. Shame they didn't give a nice custard yellow colour to the bar, it would have looked very much like the NT 4 loader.
 
 ![Starting](/images/2010/windows003.jpg)
 
-And then it happens, wow we go from a dull, boring and we’ve seen it all before screen to a lovely colourful little animation. Very nice, very pointless, but graphically appealing.
+And then it happens, wow we go from a dull, boring and we've seen it all before screen to a lovely colourful little animation. Very nice, very pointless, but graphically appealing.
 
 Well things continue along the same vein from screen to screen, yes indeed the installation screens do look nicely done.
 
@@ -34,7 +34,7 @@ Any modern installation I would expect to copy and expand via memory, and if thi
 
 ![Calendar](/images/2010/windows020.jpg)
 
-I particularly liked the screen to set the time-zone. This is very aesthetically pleasing and doesn’t have any of those slight irritations such as pointless action buttons on the windows (such as close or minimize)
+I particularly liked the screen to set the time-zone. This is very aesthetically pleasing and doesn't have any of those slight irritations such as pointless action buttons on the windows (such as close or minimize)
 
 ![Installed](/images/2010/windows023.jpg)
 

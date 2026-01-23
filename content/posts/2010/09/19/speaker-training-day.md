@@ -2,6 +2,8 @@
 date = '2010-09-19T18:16:00+01:00'
 draft = false
 title = 'SQLBits Speaker Training Day'
+categories = ['Personal Development']
+tags = ['SQLBits']
 +++
 
 A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn't). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn't been to that building for around 3 years I'm not sure how she could have done …still it's always nice to be "recognized" 🙂
@@ -10,7 +12,7 @@ Once inside, I met many great people. Several were well known faces such as Mike
 
 ![Developers!Developers!Developers!](/images/2010/microsoft-mix-2008-steve-ballmer.jpg)
 
-I was actually quite amazed at how Social Networking is starting to bring together all of these people and make unfamiliar people familiar without really having to have met them, it is a really exciting time I think. If you are interested in what you should be doing in order to extend your Social Network then I believe everyone should be involved and doing the following three things :-
+I was actually quite amazed at how Social Networking is starting to bring together all of these people and make unfamiliar people familiar without really having to have met them, it is a really exciting time I think. If you are interested in what you should be doing in order to extend your Social Network then I believe everyone should be involved and doing the following three things:
 
 1. Reading lots of Blogs (and hopefully writing one)
 1. Active on Twitter for their relevant field of expertise

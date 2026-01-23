@@ -5,9 +5,9 @@ title = 'Issues when moving your SQL data and log files'
 +++
 You might recall that I recently touched upon how to go about moving your [SQL data and log files correctly](/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach). In this post I will quickly walk through one common scenario.
 
-Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.
+Ok so your in a hurry and you've stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.
 
-Its only at this stage that you realise that you forgot to make a note of all the source locations and you start cursing and hoping that you dont have to move back that 300GB worth of files in order to bring the databases back up to run `EXEC sp_helpfile` or query the databases’ sysfiles table.
+Its only at this stage that you realise that you forgot to make a note of all the source locations and you start cursing and hoping that you dont have to move back that 300GB worth of files in order to bring the databases back up to run `EXEC sp_helpfile` or query the databases' sysfiles table.
 
 After a biscuit and a cup of tea you remember that this is only after all meta data and should be stored in the master database. Upon further examination you find the sysaltfiles table and are able to reference the filegroup name and original location so that you may now issue the `ALTER DATABASE` command.
 
