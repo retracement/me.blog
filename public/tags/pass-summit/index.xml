@@ -2,32 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PASS Summit on tenbulls blog</title>
-    <link>http://localhost:1313/tags/pass-summit/</link>
+    <link>https://tenbulls.co.uk/tags/pass-summit/</link>
     <description>Recent content in PASS Summit on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 25 Mar 2011 12:49:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pass-summit/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Everybody wants to be important</title>
-      <link>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</link>
-      <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &amp;ldquo;self-development&amp;rdquo; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the &amp;ldquo;Meet an MVP&amp;rdquo; lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table. I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising them and said &amp;ldquo;the clue is in the name….self!….so why are you listening to someone else!&amp;rdquo;. However in all seriousness, for me I personally believe that the &amp;ldquo;self&amp;rdquo; actually means that we always need to examine ourselves and our behaviour in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 16 Jan 2011 20:06:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/pass-summit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goodbye SQL 7</title>
-      <link>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</link>
       <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</guid>
-      <description>&lt;p&gt;I cannot let the week go by without a special goodbye to an old friend. If you hadn&amp;rsquo;t already heard, &lt;a href=&#34;https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0&#34;&gt;SQL 7.0 support officially ended on the 11th January&lt;/a&gt; of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in how I got started with SQL Server and you haven&amp;rsquo;t done so already, you might want to take a quick peek at my &lt;a href=&#34;http://localhost:1313/about&#34;&gt;about&lt;/a&gt; page. Here I mention how I quite insightfully (read luckily) took a training opportunity and put myself on a SQL 7 beta course rather than the one my company was expecting – one for SQL 6.5. That decision had a very big effect on my future IT career. Whilst at the training centre I remember that there was a guy there who claimed that he had been one of the first 100 people in the world to certify as an MCSE+i and his efforts to do so had been made a little easier because of the fact that he had apparently been based in Saudi Arabia for six months in a company that had not only a testing centre but all course materials available to him. He said of being out there &lt;em&gt;&amp;ldquo;well what else can you do for 6 months in Saudi? I thought I might as well do something productive!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</guid>
+      <description>&lt;p&gt;I cannot let the week go by without a special goodbye to an old friend. If you hadn&amp;rsquo;t already heard, &lt;a href=&#34;https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0&#34;&gt;SQL 7.0 support officially ended on the 11th January&lt;/a&gt; of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in how I got started with SQL Server and you haven&amp;rsquo;t done so already, you might want to take a quick peek at my &lt;a href=&#34;https://tenbulls.co.uk/about&#34;&gt;about&lt;/a&gt; page. Here I mention how I quite insightfully (read luckily) took a training opportunity and put myself on a SQL 7 beta course rather than the one my company was expecting – one for SQL 6.5. That decision had a very big effect on my future IT career. Whilst at the training centre I remember that there was a guy there who claimed that he had been one of the first 100 people in the world to certify as an MCSE+i and his efforts to do so had been made a little easier because of the fact that he had apparently been based in Saudi Arabia for six months in a company that had not only a testing centre but all course materials available to him. He said of being out there &lt;em&gt;&amp;ldquo;well what else can you do for 6 months in Saudi? I thought I might as well do something productive!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>2010 in reflection</title>
-      <link>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</link>
       <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</guid>
       <description>&lt;p&gt;Firstly let me wish you all a very happy New Year and secondly a big thank you to all of you who have been dropping by my blog and I sincerely hope you continue to do so. I&amp;rsquo;ve been seeing at least a 10% month on month growth in traffic since the start of the year and its the prospect that I might be producing something (however remote) of interest to someone makes my efforts even more rewarding. I would also like to pay my respects to all those other Bloggers in the Blogosphere who provide great content for me to consume – more on this in the next few days. Also lets not forget the Tweeps, and if you do both then a huge big-up to you!&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,39 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQLRally on tenbulls blog</title>
-    <link>http://localhost:1313/tags/sqlrally/</link>
+    <link>https://tenbulls.co.uk/tags/sqlrally/</link>
     <description>Recent content in SQLRally on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Wed, 25 Jan 2012 02:06:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sqlrally/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/sqlrally/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQLRally and Beyond</title>
-      <link>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</link>
+      <link>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</guid>
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan&amp;rsquo;t bore you with my excuses or reasons for my inactivity but what matters is I&amp;rsquo;m back!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>SQLRally is live!</title>
-      <link>http://localhost:1313/posts/2011/02/25/sqlrally-area-is-live/</link>
-      <pubDate>Fri, 25 Feb 2011 16:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/25/sqlrally-area-is-live/</guid>
-      <description>&lt;p&gt;Over the coming weeks and months leading up to SQLRally, I will be adding information, news and more detail about my presentation. For now though the root area is live which is effectively the &amp;ldquo;press release&amp;rdquo; provided to the selected speakers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/sqlrally_banner_240x120_1.webp&#34; alt=&#34;SQLRally Orlando&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;Click picture for more&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t forget, if you do see me wandering around in Orlando, to say hello. It&amp;rsquo;s always great to meet new people and I am always humbled by the high level of skill in the SQL community. Also (and most importantly) expanding our IT Professional Support Network will ensure that we always will have an ear to bend when we have technical problems.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>My submitted SQLRally sessions</title>
-      <link>http://localhost:1313/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</link>
       <pubDate>Thu, 27 Jan 2011 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/sqlrally1.png&#34; alt=&#34;SQLRally logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several months ago, I submitted two sessions to SQLRally with great enthusiasm as detailed in this post. The first &amp;ldquo;The Great High Availability Hustle&amp;rdquo; I had been thinking about for a very long time and is hopefully going to fill a void that has existed for too long. As a DBA, if you are not already using Clustering I guarantee that you will be, sooner or later. SQL 2008 finally gave us true HA product for the Enterprise and I believe SQL High Availability is going to start gaining traction and market share over the coming months and years. But there is a problem with this. I believe that probably nearly every DBA that has become competent with SQL Clustering will at one point have had a baptism of fire with the technology.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/sqlrally1.png&#34; alt=&#34;SQLRally logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several months ago, I submitted two sessions to SQLRally with great enthusiasm as detailed in this post. The first &amp;ldquo;The Great High Availability Hustle&amp;rdquo; I had been thinking about for a very long time and is hopefully going to fill a void that has existed for too long. As a DBA, if you are not already using Clustering I guarantee that you will be, sooner or later. SQL 2008 finally gave us true HA product for the Enterprise and I believe SQL High Availability is going to start gaining traction and market share over the coming months and years. But there is a problem with this. I believe that probably nearly every DBA that has become competent with SQL Clustering will at one point have had a baptism of fire with the technology.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLRally 2011!</title>
-      <link>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</link>
       <pubDate>Thu, 16 Dec 2010 13:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
       <description>&lt;p&gt;I am very pleased/ proud to announce that I have submitted 2 abstracts for presentations to &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; and should I be chosen they will be given in Orlando, Florida between May 11th to May 13th. For those of you not already aware, SQLRally is a little bit like a mini SQL PASS Summit and enables people from the East Coast of America to visit an event closer to them should they have not been able to attend the PASS Summit due to the distance and cost restrictions. It has been devised to fill the gap between SQL Saturday events and more can be found by visiting this &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/About.aspx&#34;&gt;url&lt;/a&gt;. I believe it is going to be a great success. Should I be chosen to present at SQLRally, which will be a tall order given the very strong competition it will be only my second time going to a SQL Event in the States (PASS 2010 was my first) it will be my very first visit to the East Coast.&lt;/p&gt;</description>
     </item>
   </channel>
