@@ -185,6 +185,27 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan&amp;rsquo;t bore you with my excuses or reasons for my inactivity but what matters is I&amp;rsquo;m back!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Add metadata to your audio files</title>
+      <link>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
+      <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
+      <description>&lt;p&gt;In my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to rip audio from your training videos</title>
+      <link>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
+      <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Although the following post is Linux related my dear SQL Server geek, you might just find what I am about to say useful in your pursuit of SQL Server greatness. If this possibility doesn’t interest you then I advise to stop reading right&amp;hellip; now!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t normally publish short blog posts and as a result, when I am really busy, it means nothing gets posted due to the large amount of time the bigger articles take. However from time to time I see something that I really want to shout about and this is one of those times.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using SQL Server Scalable Shared Database</title>
+      <link>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
+      <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don’t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn’t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The real value of attending SQLRally</title>
       <link>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</link>
       <pubDate>Wed, 18 May 2011 18:43:00 +0100</pubDate>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Using SQL Server Scalable Shared Database">
+  <meta property="og:description" content="Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!
+The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don’t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn’t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-05-25T23:24:00+01:00">
+    <meta property="article:modified_time" content="2011-05-25T23:24:00+01:00">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="SQLRally">
+    <meta property="article:tag" content="Scalability">
+
+<title>tenbulls blog | Using SQL Server Scalable Shared Database</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Using SQL Server Scalable Shared Database</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2011-05-25T23:24:00&#43;01:00">May 25, 2011</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              5 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><img src="/images/2011/orders.jpg" alt="Presentation slide"></p>
+<p>Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!</p>
+<p>The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don’t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn’t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.</p>
+<p><img src="/images/2011/scalable.jpg" alt="Scalable Shared Database"></p>
+<p>I am definitely not the first presenter that a demo has not quite succeeded and I won’t be the last, but the important thing is that I offered a solution to the audience….”I’ll post a blog!”. So here we are and here it is, all the information you really need to setup your Scalable Shared Database.</p>
+<p>The first thing we need to do is to provision our shared storage that will eventually be presented to all our SQL Instance servers in order that they can be part of the SSD Cluster. In my demo I used an iSCSI target but in your production environment you will most probably be attaching to your SAN LUNS via HBA cards.</p>
+<p>It is important that you only attach the storage to only one of the servers until you have performed all the actions necessary to prepare the database and storage so that it can become a Scalable Shared Database. Once you have created your database on this shared target, it is important that you stop any activity to it and you will note that I have checkpointed so that any dirty pages are gracefully flushed to disk. Next you can then set the database to read-only and finally can take it offline. Please note that the official instructions suggest you should detach the database. I am not a big fan of detaching databases (shan’t go into that now) but if you would prefer to do that instead then it is a perfectly sensible approach.</p>
+<p><img src="/images/2011/1-first-database.jpg" alt="First database"><br/>
+<em>Seed database needs to be set to read-only and then taken offline</em></p>
+<p>So once the database has been set to readonly and taken offline, this should mean that you should not have any open file handles to the volume. If you do then the next step will fail, what we need to do is set the volume to readonly and this is done by the diskpart utility.</p>
+<p><img src="/images/2011/3-set_volume_readonly.jpg" alt="Volume readonly"><br/>
+<em>Set volume to read-only</em></p>
+<p>First query the volume id numbers by running the <code>list volume</code> statement. In my example above you will note that my shared drive has a volume id of 3. You need to select this volume in order that you can change its attribute, I therefore selected it by entering <code>select volume=3</code>. The final part of the preparation is to change the volume to read-only and we do so by entering <code>attribute volume set readonly</code>.</p>
+<p>Now at this stage, if this attribute really has been set then any attempt to create new files or folders on it will fail as the screen cap below demonstrates.</p>
+<p><img src="/images/2011/4-test_volume_for_write.jpg" alt="Test write protection"><br/>
+<em>Can no longer write to read-only volume&hellip; obviously!</em></p>
+<p>At this stage we are all ready to go! We can bring our SSD online on our very first instance and as you can see below, the database is open for business :).</p>
+<p><img src="/images/2011/5-bring_online.jpg" alt="Bring database online"><br/>
+Bring database back online</p>
+<p>For all subsequent nodes you will need to connect the shared disk target to them. It is probably best that you do this one at a time only after you have added in the Scalable Shared Database to the instance, although theoretically it shouldn’t matter a jot.</p>
+<p><img src="/images/2011/6-reconnect_target_on_next_server.jpg" alt="Connect iscsi target"><br/>
+connect to target on next server</p>
+<p>We are now very close to completing this exercise and the final stage is to attach to our SSD located on our read-only shared storage. Simply execute the CREATE DATABASE .. FOR ATTACH statement and voilà, we have my friends a lovely jubbly 2 node SSD cluster.</p>
+<p><img src="/images/2011/8-complete_attach.jpg" alt="Complete attach"><br/>
+<em>Attach the read-only database on the read-only volume to your second instance</em></p>
+<p>As you can see, the procedure for creating a Scalable Shared Database is incredibly straightforward and has many benefits in certain situations and I will cover some of these in future posts as well as some of the drawbacks and possible alternative solutions. For now I hope you have enjoyed reading about something that is very rarely used, talked about or even known about. I only hope that Microsoft do build on this technology and give us something that really will set tongues wagging, a Read/Write Scalable Shared Database&hellip; <em>PRETTY PLEASE</em>!</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sqlrally/">SQLRally</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/scalability/">Scalability</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/">
+            <span>previous: </span>
+            <span>The real value of attending SQLRally</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/">
+            <span>next: </span>
+            <span>How to rip audio from your training videos</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
