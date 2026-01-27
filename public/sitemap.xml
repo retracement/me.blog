@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tenbulls.co.uk/</loc>
-    <lastmod>2025-04-06T18:51:32+01:00</lastmod>
+    <lastmod>2026-01-27T00:06:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/enlightenment/</loc>
+    <lastmod>2026-01-27T00:06:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/enlightenment/training-resources/</loc>
+    <lastmod>2026-01-27T00:06:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/</loc>
     <lastmod>2025-04-06T18:51:32+01:00</lastmod>
@@ -92,6 +98,75 @@
     <loc>https://tenbulls.co.uk/tags/</loc>
     <lastmod>2012-01-25T02:06:00+01:00</lastmod>
   </url><url>
+    <loc>https://tenbulls.co.uk/tags/public-speaking/</loc>
+    <lastmod>2011-05-18T18:43:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</loc>
+    <lastmod>2011-05-18T18:43:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
+    <lastmod>2011-04-20T15:42:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</loc>
+    <lastmod>2011-04-20T15:42:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/funny/</loc>
+    <lastmod>2011-04-01T14:51:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</loc>
+    <lastmod>2011-04-01T14:51:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/linux/</loc>
+    <lastmod>2011-04-01T14:51:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sql/</loc>
+    <lastmod>2011-04-01T14:51:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/categories/technology/</loc>
+    <lastmod>2011-04-01T14:51:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/business-intelligence/</loc>
+    <lastmod>2011-03-29T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</loc>
+    <lastmod>2011-03-29T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/training/</loc>
+    <lastmod>2011-03-29T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</loc>
+    <lastmod>2011-03-25T12:49:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
+    <lastmod>2011-03-25T12:49:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlhelp/</loc>
+    <lastmod>2011-03-25T12:49:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/virtualbox/</loc>
+    <lastmod>2011-03-21T13:23:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</loc>
+    <lastmod>2011-03-21T13:23:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</loc>
+    <lastmod>2011-03-09T12:01:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</loc>
+    <lastmod>2011-03-08T00:06:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/tsql-tuesday/</loc>
+    <lastmod>2011-03-08T00:06:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/03/04/job-category/</loc>
+    <lastmod>2011-03-04T16:12:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlagent/</loc>
+    <lastmod>2011-03-04T16:12:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</loc>
+    <lastmod>2011-02-25T16:34:00+01:00</lastmod>
+  </url><url>
     <loc>https://tenbulls.co.uk/tags/clustering/</loc>
     <lastmod>2011-02-17T19:38:00+01:00</lastmod>
   </url><url>
@@ -101,17 +176,8 @@
     <loc>https://tenbulls.co.uk/tags/hadr/</loc>
     <lastmod>2011-02-17T19:38:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/categories/technology/</loc>
-    <lastmod>2011-02-17T19:38:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</loc>
     <lastmod>2011-02-15T16:49:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sql/</loc>
-    <lastmod>2011-02-15T16:49:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
-    <lastmod>2011-02-12T19:48:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</loc>
     <lastmod>2011-02-12T19:48:00+01:00</lastmod>
@@ -123,9 +189,6 @@
     <lastmod>2011-02-08T21:07:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</loc>
-    <lastmod>2011-02-08T12:50:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/tsql-tuesday/</loc>
     <lastmod>2011-02-08T12:50:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/</loc>
@@ -140,16 +203,10 @@
     <loc>https://tenbulls.co.uk/posts/2011/01/25/from-gnome-to-flux/</loc>
     <lastmod>2011-01-25T07:31:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/linux/</loc>
-    <lastmod>2011-01-25T07:31:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</loc>
     <lastmod>2011-01-16T20:06:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/learning/</loc>
-    <lastmod>2011-01-16T20:06:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
     <lastmod>2011-01-16T20:06:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</loc>

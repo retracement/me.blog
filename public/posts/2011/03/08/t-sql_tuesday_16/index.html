@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
-<meta property="og:url" content="http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType">
   <meta property="og:description" content="Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying Publish button to be pressed. But why you might ask? (OK well you didn’t ask but I’m going to tell you anyway). 🙂
-The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn’t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month “Aggregation” by the most excellent grrlgeek – Jes Borland (Twitter | Blog)">
+The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn’t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month Aggregation by the most excellent grrlgeek – Jes Borland (Twitter | Blog)">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -21,10 +21,10 @@ The reason that I decided to make that extra special bit of effort to write some
 
 <title>tenbulls blog | SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType</title>
 
-    <link rel="stylesheet" href="/css/main.css">
-      <link rel="stylesheet" href="/css/palette/default.css">
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
 
-      <script src="/js/main.js"></script>
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -92,8 +92,6 @@ The reason that I decided to make that extra special bit of effort to write some
           <ol class="breadcrumb">
             <li class="breadcrumb-item small">
               
-              <span class="draft-label">DRAFT</span> &#183;
-              
               <time datetime="2011-03-08T00:06:00&#43;01:00">March 8, 2011</time>
             </li>
             
@@ -107,13 +105,13 @@ The reason that I decided to make that extra special bit of effort to write some
       
       <article>
         <p><img src="/images/2011/tsql2sday150x15032.webp" alt="TSQL Tuesday"></p>
-<p>Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying Publish button to be pressed. But why you might ask? (OK well you didn&rsquo;t ask but I&rsquo;m going to tell you anyway). 🙂</p>
-<p>The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &ldquo;Aggregation&rdquo; by the most excellent grrlgeek – Jes Borland (Twitter | Blog)</p>
-<p>But why didn&rsquo;t you have any idea of what to write you say? (yep I know you still didn&rsquo;t say anything, but please try and make an effort here, I&rsquo;m doing my best you know). Well looking back over my career I can&rsquo;t really recall a single incident that I thought &ldquo;WOW I did a good job with that aggregation routine!&rdquo; – perhaps it happened but I don&rsquo;t remember it. Nope, in the world of DBA I&rsquo;ve tended to be focused more on the infrastructure and administration side of things which has meant not too many reasons for me to writing an aggregation query.</p>
+<p>Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying <em>Publish</em> button to be pressed. But why you might ask? (OK well you didn&rsquo;t ask but I&rsquo;m going to tell you anyway). 🙂</p>
+<p>The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month <em>Aggregation</em> by the most excellent grrlgeek – Jes Borland (<a href="https://twitter.com/#!/grrl_geek">Twitter</a> | <a href="https://blogs.lessthandot.com/index.php/All/?author=420">Blog</a>)</p>
+<p>But why didn&rsquo;t you have any idea of what to write you say? (yep I know you still didn&rsquo;t say anything, but please try and make an effort here, I&rsquo;m doing my best you know). Well looking back over my career I can&rsquo;t really recall a single incident that I thought <em>WOW I did a good job with that aggregation routine!</em> – perhaps it happened but I don&rsquo;t remember it. Nope, in the world of DBA I&rsquo;ve tended to be focused more on the infrastructure and administration side of things which has meant not too many reasons for me to writing an aggregation query.</p>
 <p><img src="/images/2011/confused_again.jpg" alt="Trying to find inspiration"></p>
-<p>But not wanting to be left out of the party I racked my brains about what exactly I could contribute to this month&rsquo;s poser. Then it dawned on me that I have already been aggregating something of my own. Over the last few weeks I&rsquo;ve been working on the &ldquo;Enlightenment&rdquo; section of my Blog, which to be honest before the changes really wasn&rsquo;t going to teach you too much.</p>
+<p>But not wanting to be left out of the party I racked my brains about what exactly I could contribute to this month&rsquo;s poser. Then it dawned on me that I have already been aggregating something of my own. Over the last few weeks I&rsquo;ve been working on the <a href="/enlightenment">Enlightenment</a> section of my Blog, which to be honest before the changes really wasn&rsquo;t going to teach you too much.</p>
 <p>I&rsquo;ve been furiously going through many of my bookmarks and references to Free material on the Web and putting them all together in one place for your and my enjoyment. Of particular interest to you is the quite a lengthy list of training Videos. It is simply quite amazing how much Video footage is available free on the Internet today and I&rsquo;ve not even bothered with obvious sources like YouTube. If you don&rsquo;t like the Videos then why not check out the Audio section and download some Podcasts. Failing that you could check out the Articles area where you can link to download free Books or fantastic White Papers.</p>
-<p>Well this is all still work in progress, and I will continue adding to these pages as time goes on but for now I hope you enjoy what you currently have available to you. You can jump to the root &ldquo;Training Resources&rdquo; page or via the Enlightenment menu option.</p>
+<p>Well this is all still work in progress, and I will continue adding to these pages as time goes on but for now I hope you enjoy what you currently have available to you. You can jump to the root Training Resources page or via the <a href="/enlightenment">Enlightenment</a> menu option.</p>
 <p>Happy Training!</p>
 
       </article>
@@ -128,7 +126,7 @@ The reason that I decided to make that extra special bit of effort to write some
       <div class="row">
     <div class="col-md">
         
-        <a href="http://localhost:1313/posts/2011/03/04/job-category/">
+        <a href="https://tenbulls.co.uk/posts/2011/03/04/job-category/">
             <span>previous: </span>
             <span>Categorise your SQL Agent jobs</span>
         </a>
@@ -136,7 +134,7 @@ The reason that I decided to make that extra special bit of effort to write some
     </div>
     <div class="col-md text-md-end">
         
-        <a href="http://localhost:1313/posts/2011/03/09/business_intelligence_seminar_2011/">
+        <a href="https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/">
             <span>next: </span>
             <span>A visit to the Microsoft Business Intelligence Seminar 2011</span>
         </a>

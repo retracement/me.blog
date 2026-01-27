@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business Intelligence on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/business-intelligence/</link>
+    <description>Recent content in Business Intelligence on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Tue, 29 Mar 2011 00:00:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/business-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft Business Intelligence Seminar 2011</title>
+      <link>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</link>
+      <pubDate>Tue, 29 Mar 2011 00:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</guid>
+      <description>&lt;p&gt;The seminar was given on the Microsoft Campus at Reading UK on the 3rd March 2011. The presentation was split into four sections and the end of each section represents a real world intermission. You would be advised to download the slides (download link in notes) and follow the notes as you step through the slides. I personally think there is some excellent information embedded in these notes, your job now oh dear Business Analyst is start “data mining” for what is important and what is not! Within these notes you will also find a video link to last years presentation. Unfortunately due to the &lt;em&gt;NDA&lt;/em&gt; nature of some of the information talked about this years session, it was not recorded.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A visit to the Microsoft Business Intelligence Seminar 2011</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</link>
+      <pubDate>Wed, 09 Mar 2011 12:01:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</guid>
+      <description>&lt;p&gt;Last week I visited Microsoft for the Microsoft Business Intelligence Seminar presentation given by  Rafal Lukawiecki (&lt;a href=&#34;https://twitter.com/rafaldotnet&#34;&gt;Twitter&lt;/a&gt;|&lt;a href=&#34;https://rafal.net/&#34;&gt;Blog&lt;/a&gt;). I must say that I found this one of the most valuable full day presentations that I have watched in a VERY long time for many different reasons. It is probably fair to say that I have probably not engaged BI as much as I probably should have over the last few years, since I have been focused on many other things. However it was plain to see that much of Rafal&amp;rsquo;s vision for the future of BI in IT was a very real possibility and as such is a compelling reason for me to re-engage. Certainly since the introduction of SQL 2000 Analysis Services, I am impressed by the pace in which the technology has matured.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

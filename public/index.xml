@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Sun, 06 Apr 2025 18:51:32 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2026 00:06:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ultimate Training Resources Page</title>
+      <link>https://tenbulls.co.uk/enlightenment/training-resources/</link>
+      <pubDate>Tue, 27 Jan 2026 00:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/enlightenment/training-resources/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Update (27th January 2026):&lt;/em&gt; Currently the Ultimate Training Resources Page section of the new website has not been migrated. I&amp;rsquo;ll seek to build this back up over time.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Restart of blog</title>
       <link>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</link>
@@ -176,6 +183,76 @@
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</guid>
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan&amp;rsquo;t bore you with my excuses or reasons for my inactivity but what matters is I&amp;rsquo;m back!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The real value of attending SQLRally</title>
+      <link>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</link>
+      <pubDate>Wed, 18 May 2011 18:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</guid>
+      <description>&lt;p&gt;&lt;em&gt;(This post was written primarily whilst travelling back from SQLRally and subsequently edited, amended and added to where necessary before publishing)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’m currently sat here at Orlando Airport and I am able to reflect a little bit whilst waiting to board my plane back to the U.K. after having spent the last 5 days of preparation, learning and socialising at SQLRally and I need to ask myself &lt;em&gt;was it worth the expense?&lt;/em&gt;. I’m not too sure how many attendees or indeed speakers were from Europe but I am pretty sure I was one of a very small number and therefore the cost to myself was indeed far more than it would have cost for the majority of the attendees. It is therefore important that I look at the return on investment of not just my attending the event, but also of me speaking. One key thing to remember about going to conferences, is that the knowledge &lt;em&gt;retained&lt;/em&gt; is usually very little of what you have actually heard but hopefully with the efforts of the presenters, the materials provided will help to reinforce the important parts of this knowledge. It is true that I went to some excellent presentations but was sadly unable to attend many of them due to the amount of work I felt I needed to do on the preparation of my own session since I was really not quite happy where I was at. This particular point is a key take home for me, and I &lt;em&gt;must&lt;/em&gt; now ensure that I am far more prepared going forward. Unfortunately due to working commitments, family and other events it is sometimes easier said than done.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQLBits 8 - a presenters review</title>
+      <link>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</link>
+      <pubDate>Wed, 20 Apr 2011 15:42:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</guid>
+      <description>&lt;p&gt;Nearly two weeks has passed after another SQLBits and what another fabulous event. After an incredibly early morning train journey down to Brighton for the excellent Thursday training session with Thomas Kejser and an enjoyable time presenting my &lt;em&gt;SQL Server Clustering for Dummies&lt;/em&gt; session I am well and truly back down to earth with a thump.&lt;/p&gt;&#xA;&lt;p&gt;Personal highs for me were :-&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Finally getting to meet Allan Hirt and not only that but I had a Geo-Cluster debate with him in the speaker room.&lt;/li&gt;&#xA;&lt;li&gt;Meeting a few of the new first time SQLBits speakers -in particular Atul Thakor (blog|twitter) who I had a very long chat with in the speaker room and on the morning before his presentation. He had run into lots of problems with his laptop and demos prior to his session -which can strike the best of us, but managed to keep his wits about him an plow onto success when he finally came to present. What a top guy, and look forward to meeting him again in a User Group or another conference.&lt;/li&gt;&#xA;&lt;li&gt;Recognizing some audience members in my Clustering for Dummies session from my SQLBits 7 session. I ran into a couple of them later on and said a big thanks for the support, gave them my personal email and very much hope they do drop me a mail sometime to say hello.&lt;/li&gt;&#xA;&lt;li&gt;Bumping into some old faces…people I’ve met in Seattle, previous UK conferences and User Groups and old colleagues. A special big-up to Judith Kinsella who made the effort to come to my presentation (which threw me when I saw her in the audience), although she keeps telling me that I remind her of John Peel and just can’t take me seriously 🙂🙂🙂&lt;/li&gt;&#xA;&lt;li&gt;Being able to enjoy the experience a little more, due to familiarity of proceedings. Anyone who presents at a major conference for the first time will tell you that it is all a bit of a daze, stressful and is a big unknown what you have let yourself in for. This time I knew what to expect, what I was doing and what I needed to do.&lt;/li&gt;&#xA;&lt;li&gt;Seeing some great presentations.&lt;/li&gt;&#xA;&lt;li&gt;Excellent weather!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/introduction.jpg&#34; alt=&#34;Mark Broadbent Introduction&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;In full flow!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to run SQL Server on Linux</title>
+      <link>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</link>
+      <pubDate>Fri, 01 Apr 2011 14:51:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</guid>
+      <description>&lt;p&gt;&lt;em&gt;UPDATE 2011-04-10: PLEASE NOTE THIS WAS AN APRILS FOOL JOKE 🙂&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well I have finally cracked it, after years of trying (and a little help from the R2 release) to get SQL Server to install and run happily on the Linux Platform. I could hardly believe it when it all came together, but I&amp;rsquo;m very pleased that it has. What is even more exciting is that the performance of the SQL Engine is going through the roof.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microsoft Business Intelligence Seminar 2011</title>
+      <link>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</link>
+      <pubDate>Tue, 29 Mar 2011 00:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</guid>
+      <description>&lt;p&gt;The seminar was given on the Microsoft Campus at Reading UK on the 3rd March 2011. The presentation was split into four sections and the end of each section represents a real world intermission. You would be advised to download the slides (download link in notes) and follow the notes as you step through the slides. I personally think there is some excellent information embedded in these notes, your job now oh dear Business Analyst is start “data mining” for what is important and what is not! Within these notes you will also find a video link to last years presentation. Unfortunately due to the &lt;em&gt;NDA&lt;/em&gt; nature of some of the information talked about this years session, it was not recorded.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Everybody wants to be important</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</link>
+      <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &lt;em&gt;self-development&lt;/em&gt; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the *Meet an MVP lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table.&lt;/p&gt;&#xA;&lt;p&gt;I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising self-improvement training and said &lt;em&gt;&amp;ldquo;the clue is in the name….self! &amp;hellip;so why are you listening to someone else!&amp;rdquo;&lt;/em&gt;. For myself I believe that the &amp;ldquo;self&amp;rdquo; in the name self-improvement actually means that we always need to examine ourselves (and our behaviour) in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VirtualBox random behaviour</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</link>
+      <pubDate>Mon, 21 Mar 2011 13:23:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; If you want to learn something then stop reading this post now&amp;hellip; however if you (like me) take enjoyment in the weird, unusual, and unexplained, then please continue reading on.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Regular readers of my ramblings will by now appreciate that I love VirtualBox and I&amp;rsquo;ve been using it for a considerable amount of time -long before those Oracle boys muscled in on Sun, and just recently I saw something that I found a little puzzling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A visit to the Microsoft Business Intelligence Seminar 2011</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</link>
+      <pubDate>Wed, 09 Mar 2011 12:01:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</guid>
+      <description>&lt;p&gt;Last week I visited Microsoft for the Microsoft Business Intelligence Seminar presentation given by  Rafal Lukawiecki (&lt;a href=&#34;https://twitter.com/rafaldotnet&#34;&gt;Twitter&lt;/a&gt;|&lt;a href=&#34;https://rafal.net/&#34;&gt;Blog&lt;/a&gt;). I must say that I found this one of the most valuable full day presentations that I have watched in a VERY long time for many different reasons. It is probably fair to say that I have probably not engaged BI as much as I probably should have over the last few years, since I have been focused on many other things. However it was plain to see that much of Rafal&amp;rsquo;s vision for the future of BI in IT was a very real possibility and as such is a compelling reason for me to re-engage. Certainly since the introduction of SQL 2000 Analysis Services, I am impressed by the pace in which the technology has matured.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</link>
+      <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Categorise your SQL Agent jobs</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/04/job-category/</link>
+      <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/04/job-category/</guid>
+      <description>&lt;p&gt;Perhaps you are one of those people who&amp;rsquo;s house is immaculate? The lid is firmly placed back on the toothpaste, shoes left in a neat pile, coat in the cupboard. You know the sort of thing? Well I&amp;rsquo;m not quite like that but I try to be. Organized effort is a good thing and although it might not be obvious at the time can make life so much more easier further down the line.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQLRally is live!</title>
+      <link>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</link>
+      <pubDate>Fri, 25 Feb 2011 16:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</guid>
+      <description>&lt;p&gt;Over the coming weeks and months leading up to SQLRally, I will be adding information, news and more detail about my presentation. For now though the root area is live which is effectively the &amp;ldquo;press release&amp;rdquo; provided to the selected speakers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://tenbulls.co.uk/tags/sqlrally&#34;&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/sqlrally_banner_240x120_1.webp&#34; alt=&#34;SQLRally Orlando&#34;&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t forget, if you do see me wandering around in Orlando, to say hello. It&amp;rsquo;s always great to meet new people and I am always humbled by the high level of skill in the SQL community. Also (and most importantly) expanding our IT Professional Support Network will ensure that we always will have an ear to bend when we have technical problems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clustering nodes on different subnets</title>

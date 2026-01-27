@@ -1,9 +1,29 @@
 +++
-date = '2011-04-01Thh:mm:00+01:00'
+date = '2011-05-xxThh:mm:00+01:00'
 draft = true
 title = '<title>'
 categories = ['Personal Development','Technology']
-tags =['SQL','VirtualBox','Linux','SQLBits','SQLRally','PASS Summit','Certification','SQLHelp','TSQL Tuesday','Funny']
+tags = [
+        'Business Intelligence'
+        ,'Certification'
+        ,'Clustering'
+        ,'Fluxbox'
+        ,'Funny'
+        ,'HADR'
+        ,'Learning'
+        ,'Linux'
+        ,'PASS Summit'
+        ,'Performance'
+        ,'Public Speaking'
+        ,'SQL'
+        ,'SQLAgent'
+        ,'SQLBits'
+        ,'SQLHelp'
+        ,'SQLRally'
+        ,'Training'
+        ,'TSQL Tuesday'
+        ,'VirtualBox'
+        ]
 +++
 
 Replace folling char
