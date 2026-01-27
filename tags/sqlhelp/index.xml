@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQLHelp on tenbulls blog</title>
-    <link>http://localhost:1313/tags/sqlhelp/</link>
+    <link>https://tenbulls.co.uk/tags/sqlhelp/</link>
     <description>Recent content in SQLHelp on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Fri, 25 Mar 2011 12:49:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sqlhelp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/sqlhelp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Everybody wants to be important</title>
-      <link>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</link>
       <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &amp;ldquo;self-development&amp;rdquo; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the &amp;ldquo;Meet an MVP&amp;rdquo; lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table. I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising them and said &amp;ldquo;the clue is in the name….self!….so why are you listening to someone else!&amp;rdquo;. However in all seriousness, for me I personally believe that the &amp;ldquo;self&amp;rdquo; actually means that we always need to examine ourselves and our behaviour in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &lt;em&gt;self-development&lt;/em&gt; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the *Meet an MVP lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table.&lt;/p&gt;&#xA;&lt;p&gt;I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising self-improvement training and said &lt;em&gt;&amp;ldquo;the clue is in the name….self! &amp;hellip;so why are you listening to someone else!&amp;rdquo;&lt;/em&gt;. For myself I believe that the &amp;ldquo;self&amp;rdquo; in the name self-improvement actually means that we always need to examine ourselves (and our behaviour) in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

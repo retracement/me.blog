@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLAgent on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/sqlagent/</link>
+    <description>Recent content in SQLAgent on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Fri, 04 Mar 2011 16:12:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/sqlagent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Categorise your SQL Agent jobs</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/04/job-category/</link>
+      <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/04/job-category/</guid>
+      <description>&lt;p&gt;Perhaps you are one of those people who&amp;rsquo;s house is immaculate? The lid is firmly placed back on the toothpaste, shoes left in a neat pile, coat in the cupboard. You know the sort of thing? Well I&amp;rsquo;m not quite like that but I try to be. Organized effort is a good thing and although it might not be obvious at the time can make life so much more easier further down the line.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

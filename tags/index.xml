@@ -17,6 +17,90 @@
       <description></description>
     </item>
     <item>
+      <title>Public Speaking</title>
+      <link>https://tenbulls.co.uk/tags/public-speaking/</link>
+      <pubDate>Wed, 18 May 2011 18:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/public-speaking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLBits</title>
+      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
+      <pubDate>Wed, 20 Apr 2011 15:42:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Funny</title>
+      <link>https://tenbulls.co.uk/tags/funny/</link>
+      <pubDate>Fri, 01 Apr 2011 14:51:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/funny/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://tenbulls.co.uk/tags/linux/</link>
+      <pubDate>Fri, 01 Apr 2011 14:51:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://tenbulls.co.uk/tags/sql/</link>
+      <pubDate>Fri, 01 Apr 2011 14:51:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business Intelligence</title>
+      <link>https://tenbulls.co.uk/tags/business-intelligence/</link>
+      <pubDate>Tue, 29 Mar 2011 00:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/business-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>https://tenbulls.co.uk/tags/training/</link>
+      <pubDate>Tue, 29 Mar 2011 00:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/training/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PASS Summit</title>
+      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
+      <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLHelp</title>
+      <link>https://tenbulls.co.uk/tags/sqlhelp/</link>
+      <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlhelp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VirtualBox</title>
+      <link>https://tenbulls.co.uk/tags/virtualbox/</link>
+      <pubDate>Mon, 21 Mar 2011 13:23:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/virtualbox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TSQL Tuesday</title>
+      <link>https://tenbulls.co.uk/tags/tsql-tuesday/</link>
+      <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/tsql-tuesday/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLAgent</title>
+      <link>https://tenbulls.co.uk/tags/sqlagent/</link>
+      <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlagent/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Clustering</title>
       <link>https://tenbulls.co.uk/tags/clustering/</link>
       <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
@@ -31,31 +115,10 @@
       <description></description>
     </item>
     <item>
-      <title>SQL</title>
-      <link>https://tenbulls.co.uk/tags/sql/</link>
-      <pubDate>Tue, 15 Feb 2011 16:49:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQLBits</title>
-      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
-      <pubDate>Sat, 12 Feb 2011 19:48:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Performance</title>
       <link>https://tenbulls.co.uk/tags/performance/</link>
       <pubDate>Tue, 08 Feb 2011 21:07:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/performance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TSQL Tuesday</title>
-      <link>https://tenbulls.co.uk/tags/tsql-tuesday/</link>
-      <pubDate>Tue, 08 Feb 2011 12:50:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/tsql-tuesday/</guid>
       <description></description>
     </item>
     <item>
@@ -66,24 +129,10 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>https://tenbulls.co.uk/tags/linux/</link>
-      <pubDate>Tue, 25 Jan 2011 07:31:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Learning</title>
       <link>https://tenbulls.co.uk/tags/learning/</link>
       <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PASS Summit</title>
-      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
-      <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
       <description></description>
     </item>
     <item>

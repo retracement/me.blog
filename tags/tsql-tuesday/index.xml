@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Tue, 08 Feb 2011 12:50:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 08 Mar 2011 00:06:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/tsql-tuesday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType</title>
+      <link>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</link>
+      <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Automate now to save time later</title>
       <link>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</link>
