@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on tenbulls blog</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://tenbulls.co.uk/categories/</link>
     <description>Recent content in Categories on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Wed, 25 Jan 2012 02:06:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal Development</title>
-      <link>http://localhost:1313/categories/personal-development/</link>
+      <link>https://tenbulls.co.uk/categories/personal-development/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/categories/personal-development/</guid>
+      <guid>https://tenbulls.co.uk/categories/personal-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>http://localhost:1313/categories/technology/</link>
-      <pubDate>Wed, 14 Sep 2011 12:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/categories/technology/</guid>
+      <link>https://tenbulls.co.uk/categories/technology/</link>
+      <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/categories/technology/</guid>
       <description></description>
     </item>
   </channel>

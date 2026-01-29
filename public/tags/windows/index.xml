@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on tenbulls blog</title>
-    <link>http://localhost:1313/tags/windows/</link>
+    <link>https://tenbulls.co.uk/tags/windows/</link>
     <description>Recent content in Windows on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Tue, 30 Aug 2011 22:34:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to increase your OS Virtual Processors</title>
-      <link>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
       <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
       <description>&lt;p&gt;There usually comes a time in your Virtual Machine life-cycle that you think&amp;hellip; &lt;em&gt;I wish I’d given that baby more processors for me to play with!&lt;/em&gt; This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as &lt;em&gt;Processor Affinity&lt;/em&gt; and &lt;em&gt;MAXDOP&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Add metadata to your audio files</title>
-      <link>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
       <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
-      <description>&lt;p&gt;In my recent post &lt;a href=&#34;http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
+      <description>&lt;p&gt;In my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

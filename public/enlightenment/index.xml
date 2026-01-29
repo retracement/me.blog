@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enlightenments on tenbulls blog</title>
-    <link>http://localhost:1313/enlightenment/</link>
+    <link>https://tenbulls.co.uk/enlightenment/</link>
     <description>Recent content in Enlightenments on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Tue, 27 Jan 2026 00:06:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/enlightenment/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/enlightenment/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ultimate Training Resources Page</title>
-      <link>http://localhost:1313/enlightenment/training-resources/</link>
+      <link>https://tenbulls.co.uk/enlightenment/training-resources/</link>
       <pubDate>Tue, 27 Jan 2026 00:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/enlightenment/training-resources/</guid>
+      <guid>https://tenbulls.co.uk/enlightenment/training-resources/</guid>
       <description>&lt;p&gt;&lt;em&gt;Update (27th January 2026):&lt;/em&gt; Currently the Ultimate Training Resources Page section of the new website has not been migrated. I&amp;rsquo;ll seek to build this back up over time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft Business Intelligence Seminar 2011</title>
-      <link>http://localhost:1313/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</link>
+      <link>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</link>
       <pubDate>Tue, 29 Mar 2011 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</guid>
+      <guid>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</guid>
       <description>&lt;p&gt;The seminar was given on the Microsoft Campus at Reading UK on the 3rd March 2011. The presentation was split into four sections and the end of each section represents a real world intermission. You would be advised to download the slides (download link in notes) and follow the notes as you step through the slides. I personally think there is some excellent information embedded in these notes, your job now oh dear Business Analyst is start “data mining” for what is important and what is not! Within these notes you will also find a video link to last years presentation. Unfortunately due to the &lt;em&gt;NDA&lt;/em&gt; nature of some of the information talked about this years session, it was not recorded.&lt;/p&gt;</description>
     </item>
   </channel>

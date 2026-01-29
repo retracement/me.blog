@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on tenbulls blog</title>
-    <link>http://localhost:1313/tags/books/</link>
+    <link>https://tenbulls.co.uk/tags/books/</link>
     <description>Recent content in Books on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Fri, 19 Aug 2011 14:02:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review of Inside the SQL Server Query Optimizer</title>
-      <link>http://localhost:1313/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
       <pubDate>Fri, 19 Aug 2011 14:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/2011/insidequerysmall.jpg&#34; alt=&#34;Inside the SQL Server Query Optimizer&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (&lt;a href=&#34;https://www.benjaminnevarez.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/#!/BenjaminNevarez&#34;&gt;twitter&lt;/a&gt;) is one of those. As someone I’ve been following technically for several years, when I saw that his book &lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;Inside the SQL Server Query Optimizer&lt;/a&gt; had been released to the Kindle format, I immediately clicked the purchase button and I haven’t been disappointed.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/insidequerysmall.jpg&#34; alt=&#34;Inside the SQL Server Query Optimizer&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (&lt;a href=&#34;https://www.benjaminnevarez.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/#!/BenjaminNevarez&#34;&gt;twitter&lt;/a&gt;) is one of those. As someone I’ve been following technically for several years, when I saw that his book &lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;Inside the SQL Server Query Optimizer&lt;/a&gt; had been released to the Kindle format, I immediately clicked the purchase button and I haven’t been disappointed.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

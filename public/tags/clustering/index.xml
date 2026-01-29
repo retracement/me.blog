@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clustering on tenbulls blog</title>
-    <link>http://localhost:1313/tags/clustering/</link>
+    <link>https://tenbulls.co.uk/tags/clustering/</link>
     <description>Recent content in Clustering on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Thu, 17 Feb 2011 19:38:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clustering nodes on different subnets</title>
-      <link>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
       <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s rather ironic that the answer to a question that came my way recently, had been sitting in my feed-reader for the last month. Apart from the length of time that the item/s had been sitting there, I had opened them on numerous occasions and re-marked as &lt;em&gt;unread&lt;/em&gt; because I believed they needed more than just a quick skim.&lt;/p&gt;&#xA;&lt;p&gt;I consider myself very experienced with SQL Clustering but one cannot know everything about everything. I&amp;rsquo;m endeavouring to fill any gaps in order to be not just very good, but hopefully at some point a leading (or how about &lt;em&gt;the leading&lt;/em&gt; expert in this field. Right now there are only a few people that I am aware of that I consider to be authorities in SQL Clustering -at least people I can learn from, I&amp;rsquo;ve even been using it as long as some of them. There will of course be more experts who I am unaware of but the ones I follow are Geoff Hiten, Allan Hirt and Symon Perriman of course! Whether I achieve my own personal aims will depend upon how many other areas of specialism I lend my eye to, but one can only try and right now I think I&amp;rsquo;ve been heading in the right direction.&lt;/p&gt;</description>
     </item>
   </channel>

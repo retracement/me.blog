@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQLBits on tenbulls blog</title>
-    <link>http://localhost:1313/tags/sqlbits/</link>
+    <link>https://tenbulls.co.uk/tags/sqlbits/</link>
     <description>Recent content in SQLBits on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Mon, 01 Aug 2011 13:42:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sqlbits/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/sqlbits/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Standing upon the shoulders of Giants</title>
-      <link>http://localhost:1313/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
       <pubDate>Mon, 01 Aug 2011 13:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
       <description>&lt;p&gt;In the very late nineties and early naughties I used to co-habit the Microsoft Newsgroups (which was then located at &lt;em&gt;news.microsoft.com&lt;/em&gt; over the NNTP protocol), and in particular I posted primarily on the SQL Server forums to help others where I could. A by product of my helping out was of course learning lots of hints, tips and best practices from other users and there is a lesson in that for everybody.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 8 - a presenters review</title>
-      <link>http://localhost:1313/posts/2011/04/20/sqlbits-8-finis/</link>
+      <link>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</link>
       <pubDate>Wed, 20 Apr 2011 15:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/04/20/sqlbits-8-finis/</guid>
-      <description>&lt;p&gt;Nearly two weeks has passed after another SQLBits and what another fabulous event. After an incredibly early morning train journey down to Brighton for the excellent Thursday training session with Thomas Kejser and an enjoyable time presenting my &lt;em&gt;SQL Server Clustering for Dummies&lt;/em&gt; session I am well and truly back down to earth with a thump.&lt;/p&gt;&#xA;&lt;p&gt;Personal highs for me were :-&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Finally getting to meet Allan Hirt and not only that but I had a Geo-Cluster debate with him in the speaker room.&lt;/li&gt;&#xA;&lt;li&gt;Meeting a few of the new first time SQLBits speakers -in particular Atul Thakor (blog|twitter) who I had a very long chat with in the speaker room and on the morning before his presentation. He had run into lots of problems with his laptop and demos prior to his session -which can strike the best of us, but managed to keep his wits about him an plow onto success when he finally came to present. What a top guy, and look forward to meeting him again in a User Group or another conference.&lt;/li&gt;&#xA;&lt;li&gt;Recognizing some audience members in my Clustering for Dummies session from my SQLBits 7 session. I ran into a couple of them later on and said a big thanks for the support, gave them my personal email and very much hope they do drop me a mail sometime to say hello.&lt;/li&gt;&#xA;&lt;li&gt;Bumping into some old faces…people I’ve met in Seattle, previous UK conferences and User Groups and old colleagues. A special big-up to Judith Kinsella who made the effort to come to my presentation (which threw me when I saw her in the audience), although she keeps telling me that I remind her of John Peel and just can’t take me seriously 🙂🙂🙂&lt;/li&gt;&#xA;&lt;li&gt;Being able to enjoy the experience a little more, due to familiarity of proceedings. Anyone who presents at a major conference for the first time will tell you that it is all a bit of a daze, stressful and is a big unknown what you have let yourself in for. This time I knew what to expect, what I was doing and what I needed to do.&lt;/li&gt;&#xA;&lt;li&gt;Seeing some great presentations.&lt;/li&gt;&#xA;&lt;li&gt;Excellent weather!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/introduction.jpg&#34; alt=&#34;Mark Broadbent Introduction&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;In full flow!&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</guid>
+      <description>&lt;p&gt;Nearly two weeks has passed after another SQLBits and what another fabulous event. After an incredibly early morning train journey down to Brighton for the excellent Thursday training session with Thomas Kejser and an enjoyable time presenting my &lt;em&gt;SQL Server Clustering for Dummies&lt;/em&gt; session I am well and truly back down to earth with a thump.&lt;/p&gt;&#xA;&lt;p&gt;Personal highs for me were :-&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Finally getting to meet Allan Hirt and not only that but I had a Geo-Cluster debate with him in the speaker room.&lt;/li&gt;&#xA;&lt;li&gt;Meeting a few of the new first time SQLBits speakers -in particular Atul Thakor (blog|twitter) who I had a very long chat with in the speaker room and on the morning before his presentation. He had run into lots of problems with his laptop and demos prior to his session -which can strike the best of us, but managed to keep his wits about him an plow onto success when he finally came to present. What a top guy, and look forward to meeting him again in a User Group or another conference.&lt;/li&gt;&#xA;&lt;li&gt;Recognizing some audience members in my Clustering for Dummies session from my SQLBits 7 session. I ran into a couple of them later on and said a big thanks for the support, gave them my personal email and very much hope they do drop me a mail sometime to say hello.&lt;/li&gt;&#xA;&lt;li&gt;Bumping into some old faces…people I’ve met in Seattle, previous UK conferences and User Groups and old colleagues. A special big-up to Judith Kinsella who made the effort to come to my presentation (which threw me when I saw her in the audience), although she keeps telling me that I remind her of John Peel and just can’t take me seriously 🙂🙂🙂&lt;/li&gt;&#xA;&lt;li&gt;Being able to enjoy the experience a little more, due to familiarity of proceedings. Anyone who presents at a major conference for the first time will tell you that it is all a bit of a daze, stressful and is a big unknown what you have let yourself in for. This time I knew what to expect, what I was doing and what I needed to do.&lt;/li&gt;&#xA;&lt;li&gt;Seeing some great presentations.&lt;/li&gt;&#xA;&lt;li&gt;Excellent weather!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/introduction.jpg&#34; alt=&#34;Mark Broadbent Introduction&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;In full flow!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 7 the forgotten photos part 2</title>
-      <link>http://localhost:1313/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</link>
       <pubDate>Sat, 12 Feb 2011 19:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</guid>
       <description>&lt;p&gt;Well &lt;a href=&#34;https://sqlbits.com/default.aspx&#34;&gt;SQLBits&lt;/a&gt; 8 voting has now ended so perhaps it is a good time to publish the second and final post of the series. I wonder if any of my sessions will get selected this time? One of my submitted sessions is the same one that has made it to the reserve list for the first ever &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; in Orlando and although slightly disappointed at just making the reserve list I was very proud that out of all the reserve sessions I came joint top (I took 38% of the vote in my category). The winner of that category is the well known Edwin Sarmiento (&lt;a href=&#34;https://bassplayerdoc.blogspot.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/bassplayerdoc&#34;&gt;twitter&lt;/a&gt;) and he is an absolutely smashing chap so I&amp;rsquo;m nothing but pleased for him.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2010 in reflection</title>
-      <link>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</link>
       <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</guid>
       <description>&lt;p&gt;Firstly let me wish you all a very happy New Year and secondly a big thank you to all of you who have been dropping by my blog and I sincerely hope you continue to do so. I&amp;rsquo;ve been seeing at least a 10% month on month growth in traffic since the start of the year and its the prospect that I might be producing something (however remote) of interest to someone makes my efforts even more rewarding. I would also like to pay my respects to all those other Bloggers in the Blogosphere who provide great content for me to consume – more on this in the next few days. Also lets not forget the Tweeps, and if you do both then a huge big-up to you!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLRally 2011!</title>
-      <link>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</link>
       <pubDate>Thu, 16 Dec 2010 13:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
       <description>&lt;p&gt;I am very pleased/ proud to announce that I have submitted 2 abstracts for presentations to &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; and should I be chosen they will be given in Orlando, Florida between May 11th to May 13th. For those of you not already aware, SQLRally is a little bit like a mini SQL PASS Summit and enables people from the East Coast of America to visit an event closer to them should they have not been able to attend the PASS Summit due to the distance and cost restrictions. It has been devised to fill the gap between SQL Saturday events and more can be found by visiting this &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/About.aspx&#34;&gt;url&lt;/a&gt;. I believe it is going to be a great success. Should I be chosen to present at SQLRally, which will be a tall order given the very strong competition it will be only my second time going to a SQL Event in the States (PASS 2010 was my first) it will be my very first visit to the East Coast.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 7 the forgotten photos part 1</title>
-      <link>http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</link>
       <pubDate>Wed, 01 Dec 2010 15:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</guid>
       <description>&lt;p&gt;Several weeks back I attached my Blackberry to my PC to clear down all the photos in preparation for SQL Pass and I stumbled across these grainy old photos taken during those rainy few days in York. It all seems like a lifetime ago now and much has happened to me since &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQL Bits&lt;/a&gt; 7, but this was my story of an interesting and enjoyable but all too brief few days.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits Speaker Training Day</title>
-      <link>http://localhost:1313/posts/2010/09/19/speaker-training-day/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</link>
       <pubDate>Sun, 19 Sep 2010 18:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/19/speaker-training-day/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</guid>
       <description>&lt;p&gt;A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn&amp;rsquo;t). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn&amp;rsquo;t been to that building for around 3 years I&amp;rsquo;m not sure how she could have done …still it&amp;rsquo;s always nice to be &amp;ldquo;recognized&amp;rdquo; 🙂&lt;/p&gt;</description>
     </item>
   </channel>

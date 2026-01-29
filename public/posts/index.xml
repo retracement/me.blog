@@ -2,809 +2,802 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on tenbulls blog</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://tenbulls.co.uk/posts/</link>
     <description>Recent content in Posts on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Sun, 06 Apr 2025 18:51:32 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Restart of blog</title>
-      <link>http://localhost:1313/posts/2025/04/06/blog-update/</link>
+      <link>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</link>
       <pubDate>Sun, 06 Apr 2025 18:51:32 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2025/04/06/blog-update/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025/restart-plane-ai-600.png&#34; alt=&#34;Restarting&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well, I&amp;rsquo;ve finally made the shift to my new statically generated blog and am slowly migrating the content over. This operation is probably going to take me quite some time since I will need to go all the way back to 2009 and decide what posts and content I want to come across. There is possibly over a hundred posts (or more) to bring across! I&amp;rsquo;ll also be quite keen on bringing over some of my more useful resources (although they may need a huge revamp/ update) such as my Ultimate Resources Training Page and others.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2025/04/06/blog-update/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2025/restart-plane-ai-600.png&#34; alt=&#34;Restarting&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well, I&amp;rsquo;ve finally made the shift to my new statically generated blog and am slowly migrating the content over. This operation is probably going to take me quite some time since I will need to go all the way back to 2009 and decide what posts and content I want to come across. There is possibly over a hundred posts (or more) to bring across! I&amp;rsquo;ll also be quite keen on bringing over some of my more useful resources (although they may need a huge revamp/ update) such as my Ultimate Resources Training Page and others.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Future Changes</title>
-      <link>http://localhost:1313/posts/2025/02/01/future-changes/</link>
+      <link>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</link>
       <pubDate>Sat, 01 Feb 2025 20:20:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/02/01/future-changes/</guid>
+      <guid>https://tenbulls.co.uk/posts/2025/02/01/future-changes/</guid>
       <description>&lt;p&gt;Just a quick note to give an update on the future changes for this blog. Many long time readers out there might realise that what you are reading today no longer exists under its original domain and currently lives under its default WordPress domain namespace. Given that this blog has existed since 2009 and been linked to from a variety of popular sources and published materials, this is a big shift.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating Pause of Synapse Dedicated Pool Part I</title>
-      <link>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</link>
+      <link>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</link>
       <pubDate>Sun, 18 Jun 2023 20:25:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</guid>
+      <guid>https://tenbulls.co.uk/posts/2023/06/18/automating-pause-of-synapse-dedicated-pool-part-i/</guid>
       <description>&lt;p&gt;Synapse Analytics is an enterprise analytics engine that offers multiple (compute) Pool types that you can use for varying data processing and analytics requirements. Each Pool type has a slightly different cost model based upon its architecture, capabilities, and consumption patterns, but if we over simplify things, we can break these cost considerations down to compute costs and (in some cases) storage costs.&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits with modern data lakehouse architectures is that with the separation of compute and storage comes the ability to reduce costs when compute is not needed, and most importantly, not running.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why Is My Azure Solution Running Slow</title>
-      <link>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
+      <link>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</link>
       <pubDate>Tue, 31 Jan 2023 15:36:14 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
+      <guid>https://tenbulls.co.uk/posts/2023/01/31/why-is-my-azure-solution-running-slow/</guid>
       <description>&lt;p&gt;As an Azure data professional, one of the most common questions you are most likely to hear from users is &amp;ldquo;why do cloud solutions often appear to have performance issues post-deployment&amp;rdquo;. This perception is particularly common for Azure migration projects moving on-premises into the cloud, but do these observations really match reality or are they misguided?&lt;/p&gt;&#xA;&lt;p&gt;In this introductory article, we will take a look into some of the reasons why Azure cloud-based solutions are often seen to be problematic, or in some cases, are problematic, and provide some ideas to avoid these negative perceptions in your cloud environment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging Diversity in Leadership Roles</title>
-      <link>http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</link>
+      <link>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</link>
       <pubDate>Thu, 01 Sep 2022 21:19:27 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</guid>
+      <guid>https://tenbulls.co.uk/posts/2022/09/01/encouraging-diversity-in-leadership-roles/</guid>
       <description>&lt;p&gt;Over 33 years ago I started my journey working in Information Technology (I.T.), and it is probably fair to say that I have worked my way slowly up from the absolute bottom of the pile to the modest heights of today.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem-with-it&#34;&gt;The problem with I.T.&lt;/h1&gt;&#xA;&lt;p&gt;As I look back over the years I cannot help but feel a sense of disappointment that during my long and arduous journey to the &amp;ldquo;top&amp;rdquo; I never really found someone of seniority (or power) who went out of their way to selflessly help me climb the greasy ladder of success in any of the organisations I worked at. I don&amp;rsquo;t think my experiences are particularly unique either.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Quick Introduction to Azure Purview</title>
-      <link>http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/</link>
+      <link>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</link>
       <pubDate>Fri, 29 Jul 2022 07:15:27 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2022/07/29/a-quick-introduction-to-azure-purview/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2022/catalogue-of-data-ai-600.png&#34; alt=&#34;Data Catalog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview is Microsoft&amp;rsquo;s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2022/07/29/a-quick-introduction-to-azure-purview/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2022/catalogue-of-data-ai-600.png&#34; alt=&#34;Data Catalog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview is Microsoft&amp;rsquo;s next-generation data catalog service in Azure which is a direct replacement for the first-generation service known as Azure Data Catalog. While some people refer to Purview as Azure Data Catalog v2, It is important to note that Purview is more of a re-write of Azure Data Catalog rather than an upgrade, and as such, no migration path between both services currently exists.&lt;/p&gt;&#xA;&lt;p&gt;Azure Purview can be used to inventory, classify, map, and govern your on-premises, multi-cloud, and SaaS data estate, providing a holistic up-to-date map of your data with automatic data discovery, data classification, and end-to-end data lineage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSIS Data Flow Performance Tuning</title>
-      <link>http://localhost:1313/posts/2020/08/11/ssis-performance/</link>
+      <link>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</link>
       <pubDate>Tue, 11 Aug 2020 15:18:01 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/08/11/ssis-performance/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/08/11/ssis-performance/</guid>
       <description>&lt;p&gt;Yes before you say it, I know SQL Server Integration Services is &amp;ldquo;old technology&amp;rdquo; but a lot of people are still using it, and in many cases are either still developing against it, or are looking to integrate/ migrate with other burgeoning technologies such as Azure Data Factory. In other words, if you are not currently using SSIS then this post is probably not for you -otherwise read on.&lt;/p&gt;&#xA;&lt;p&gt;If you are still one of the lucky ones to still be using SSIS, I thought it would be worth publishing these comprehensive notes taken from a session titled &amp;ldquo;SSIS Data Flow Performance Tuning&amp;rdquo; delivered at SQLBits 8 (Brighton) by the then &amp;ldquo;SSIS guru&amp;rdquo; Jamie Thomson. Notes have timings (in mins and seconds) against them, which correlate directly with the presentation times. The video is still available and can be downloaded from the &lt;a href=&#34;https://sqlbits.com/Sessions/Event8/SSIS_Dataflow_Performance_tuning&#34;&gt;SQLBits website&lt;/a&gt; so you can watch it (if required) and use the timings to follow along.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Querying Azure Vm State With Powershell</title>
-      <link>http://localhost:1313/posts/2020/05/12/querying-azure-vm-state-with-powershell/</link>
+      <link>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</link>
       <pubDate>Tue, 12 May 2020 15:16:36 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/05/12/querying-azure-vm-state-with-powershell/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/05/12/querying-azure-vm-state-with-powershell/</guid>
       <description>&lt;p&gt;I was recently given the task of identifying the state of an Azure VM so that an automation script using the &lt;code&gt;az vm run-command invoke&lt;/code&gt; would not fail if the VM was down or under a reboot.&lt;/p&gt;&#xA;&lt;p&gt;I initially thought the task would be really easy and a simple query of the VM state using &lt;code&gt;Get-AzVM&lt;/code&gt; would provide us with a running state property of the VM, but as it happens the state is a little abstracted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Removing and Maintaining Azure Resource Group Deployments Based Upon Deployment Count</title>
-      <link>http://localhost:1313/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</link>
+      <link>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</link>
       <pubDate>Wed, 06 May 2020 11:37:47 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/05/06/removing-and-maintaining-azure-resource-group-deployments-based-upon-deployment-count/</guid>
       <description>&lt;p&gt;Whenever you create or update an Azure resource, a new &lt;em&gt;deployment&lt;/em&gt; is created under the resources&amp;rsquo; configured resource group. This deployment history is retained ad-infinitum until you eventually hit the hard limit of &lt;em&gt;800 deployments (per resource group)&lt;/em&gt;. You may think this figure is more than enough to accommodate all the possible resource changes that could ever be made in a resource group, but if you are running CICD pipelines to push out your Infrastructure as Code (IaC) (or create lots of resources per resource group) then it is very likely you will exhaust this figure very quickly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inconsistent result sets and another case against pessimistic isolation</title>
-      <link>http://localhost:1313/posts/2020/04/27/inconsistent-results/</link>
+      <link>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</link>
       <pubDate>Mon, 27 Apr 2020 12:05:21 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/04/27/inconsistent-results/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/04/27/inconsistent-results/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a big fan of demonstrating when transaction processing goes bad in Database Management Systems because it is a reminder to us all to ensure that we know exactly what we are doing when we write our code. Not only should you test and execute your code multiple times in serial (for instance running in sequence in isolation), but you should also execute in parallel with itself or other potentially dependent transactions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Restore Azure Devops Repository</title>
-      <link>http://localhost:1313/posts/2020/04/14/restore-azure-devops-repository/</link>
+      <link>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</link>
       <pubDate>Tue, 14 Apr 2020 12:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/04/14/restore-azure-devops-repository/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/04/14/restore-azure-devops-repository/</guid>
       <description>&lt;p&gt;If you are using &lt;a href=&#34;https://azure.microsoft.com/en-gb/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt;, you might be comforted that your &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git&lt;/a&gt; repo is &amp;ldquo;in the Cloud&amp;rdquo; and automatically has availability and disaster guarantees. However you (or someone else) still have the ability to accidentally (or maliciously) delete repos from Azure DevOps Repos. Surprisingly, at the time of writing, there is no GUI based option to restore your repo. This might initially instill a sense of panic as you frantically search for the latest local clone to replace your remote – but there is a better way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cannot delete old build definitions in Azure DevOps</title>
-      <link>http://localhost:1313/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</link>
+      <link>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</link>
       <pubDate>Wed, 25 Mar 2020 19:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</guid>
-      <description>&lt;p&gt;I have been experiencing a problem for quite a while now in my current environment, in that some of our old builds cannot be deleted. When you attempt to do so it results in the following error:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2020/cannotdel.webp&#34; alt=&#34;build error&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;One or more builds associated with the requested pipeline(s) are retained by a release. The pipeline(s) and builds will not be deleted.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many of our pipelines have undergone a lot of change over time to the degree it is not even obvious anymore why (or indeed where) these builds are being prevented from being dropped. The only thing that is clear is that until they can be, the old build definitions will remain.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2020/03/25/delete-old-build-definitions-in-azure-devops/</guid>
+      <description>&lt;p&gt;I have been experiencing a problem for quite a while now in my current environment, in that some of our old builds cannot be deleted. When you attempt to do so it results in the following error:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/cannotdel.webp&#34; alt=&#34;build error&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;One or more builds associated with the requested pipeline(s) are retained by a release. The pipeline(s) and builds will not be deleted.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many of our pipelines have undergone a lot of change over time to the degree it is not even obvious anymore why (or indeed where) these builds are being prevented from being dropped. The only thing that is clear is that until they can be, the old build definitions will remain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Querying Azure Devops Rest Api With Powershell</title>
-      <link>http://localhost:1313/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</link>
+      <link>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</link>
       <pubDate>Wed, 11 Mar 2020 13:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2020/saddog.png&#34; alt=&#34;sad dog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use &lt;a href=&#34;http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md&#34;&gt;PowerShell to consume your Azure CLI DevOps result&lt;/a&gt; set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2020/03/11/querying-azure-devops-rest-api-with-powershell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2020/saddog.png&#34; alt=&#34;sad dog&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In previous posts we have talked about trying to use and consume Azure DevOps using PowerShell and utilizing the Azure CLI. In particular, my post titled Use &lt;a href=&#34;https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set.md&#34;&gt;PowerShell to consume your Azure CLI DevOps result&lt;/a&gt; set painted a rather frustrating picture when trying to manipulate the tabular dataset from the Azure CLI. Furthermore, our functionality is restricted to only those commands implemented by the Azure CLI Azure DevOps add-in -as will become increasingly obvious, this is limited to say the least.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dropbox Appears Stuck Synchronizing Files</title>
-      <link>http://localhost:1313/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</link>
+      <link>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</link>
       <pubDate>Tue, 25 Feb 2020 10:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/02/25/dropbox-appears-stuck-synchronizing-files/</guid>
       <description>&lt;p&gt;Normally I don&amp;rsquo;t like off-topic style posts, and &lt;a href=&#34;https://www.dropbox.com&#34;&gt;Dropbox&lt;/a&gt; is certainly not within my key areas of interest, however, I am an avid user and every now and then I run into a problem that is frustrating and worrying -given a large number of important files I store on that platform. This post is my placeholder to help myself – and hopefully you!&lt;/p&gt;&#xA;&lt;p&gt;I recently ran into an issue where my Dropbox icon just kept spinning and spinning and believed it was related to some weird conflict resolution problem across different machines that I had run into by accident.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Use Powershell to Consume Your Azure Cli Devops Result Set</title>
-      <link>http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</link>
+      <link>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</link>
       <pubDate>Mon, 17 Feb 2020 13:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/02/17/use-powershell-to-consume-your-azure-cli-devops-result-set/</guid>
       <description>&lt;p&gt;Use PowerShell to consume your Azure CLI DevOps result set&#xA;Before we get going it is probably first worth me pointing out (in case you are wondering) that the whole premise of this post stems from a lack of native Azure DevOps PowerShell Module. Yes there are a few solutions out there, but at the time of writing there is no official Microsoft PowerShell DevOps module, so we are stuck with using the CLI if you want to avoid using these other solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rewrite Your Powershell Azurerm to Az for Azure Devops Deployments</title>
-      <link>http://localhost:1313/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</link>
+      <link>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</link>
       <pubDate>Thu, 13 Feb 2020 14:58:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/02/13/rewrite-your-powershell-azurerm-to-az-for-azure-devops-deployments/</guid>
       <description>&lt;p&gt;I just wanted to get a quick post out on specific problem that I have just encountered from one of our Azure DevOps release pipelines in which one of the release stage tasks started failing for no reason (despite no obvious changes having been made). Hopefully this post will help others if you are also experiencing this problem and don&amp;rsquo;t know what to do.&lt;/p&gt;&#xA;&lt;p&gt;The error message was as follows for our task &lt;code&gt;Enable Firewall on Data Lake&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Azure Cli to Query Azure Devops</title>
-      <link>http://localhost:1313/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</link>
+      <link>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</link>
       <pubDate>Mon, 06 Jan 2020 20:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</guid>
+      <guid>https://tenbulls.co.uk/posts/2020/01/06/using-azure-cli-to-query-azure-devops/</guid>
       <description>&lt;p&gt;In previous posts, I have touched upon the use of Azure Cloud Shell for generic querying of Azure resources and I thought it would be useful to quickly document its use for something a little more specific such as querying or manipulating &lt;a href=&#34;https://azure.microsoft.com/en-us/services/devops/&#34;&gt;Azure DevOps&lt;/a&gt; through the command line.&lt;/p&gt;&#xA;&lt;p&gt;For my example, I will focus on something as mundane and straight-forward as querying the Azure DevOps repository meta-data (so that I can look at and compare branch settings against each other) but I hope you get the idea that this is just scratching the tip of the iceberg and the &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest&#34;&gt;Azure CLI&lt;/a&gt; is a powerful tool to add to your arsenal of scripting languages.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging diversity at technical events – volunteers and organisers</title>
-      <link>http://localhost:1313/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</link>
+      <link>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</link>
       <pubDate>Thu, 29 Aug 2019 19:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</guid>
+      <guid>https://tenbulls.co.uk/posts/2019/08/29/diversity-at-technical-events-volunteers-and-organisers/</guid>
       <description>&lt;p&gt;In the third and final post of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of &lt;em&gt;volunteers and organisers&lt;/em&gt; at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what I mean by this term. According to the Merriam-Webster definition, diversity is &amp;ldquo;the condition of having or being composed of differing elements&amp;rdquo; and especially &amp;ldquo;the inclusion of different types of people (such as people of different races or cultures) in a group or organization&amp;rdquo;. I don&amp;rsquo;t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging diversity at technical events – speakers</title>
-      <link>http://localhost:1313/posts/2019/07/25/diversity-at-technical-events-speakers/</link>
+      <link>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</link>
       <pubDate>Thu, 25 Jul 2019 21:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2019/07/25/diversity-at-technical-events-speakers/</guid>
+      <guid>https://tenbulls.co.uk/posts/2019/07/25/diversity-at-technical-events-speakers/</guid>
       <description>&lt;p&gt;In the second of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of speakers at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what I mean by this term. According to the Merriam-Webster definition, diversity is &amp;ldquo;the condition of having or being composed of differing elements&amp;rdquo; and especially &amp;ldquo;the inclusion of different types of people (such as people of different races or cultures) in a group or organization&amp;rdquo;. I don&amp;rsquo;t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encouraging diversity at technical events – attendees</title>
-      <link>http://localhost:1313/posts/2019/06/17/diversity-at-technical-events-attendees/</link>
+      <link>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</link>
       <pubDate>Mon, 17 Jun 2019 19:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2019/06/17/diversity-at-technical-events-attendees/</guid>
+      <guid>https://tenbulls.co.uk/posts/2019/06/17/diversity-at-technical-events-attendees/</guid>
       <description>&lt;p&gt;In the first of this three-part series, I will be exploring a few thoughts and ideas regarding how we can encourage diversity of &lt;em&gt;attendees&lt;/em&gt; at technical events. I have been organising events as far back as 2010 so I have (no doubt) been responsible for many failures (and hopefully a few successes) in promoting and hosting events to the community.&lt;/p&gt;&#xA;&lt;p&gt;Before we start talking about diversity, I think it is first important to define what &lt;em&gt;I mean&lt;/em&gt; by this term. According to the &lt;a href=&#34;https://https://www.merriam-webster.com/dictionary/diversity&#34;&gt;Merriam-Webster&lt;/a&gt; definition, diversity is &amp;ldquo;&lt;em&gt;the condition of having or being composed of differing elements&lt;/em&gt;&amp;rdquo; and especially &amp;ldquo;&lt;em&gt;the inclusion of different types of people (such as people of different races or cultures) in a group or organization&lt;/em&gt;&amp;rdquo;. I don&amp;rsquo;t quite think this extends far enough, and I see personally see diversity as the inclusion of all people regardless of their gender, sexual orientation, ability, physical appearance, age, size, race, or religion. Our aim, therefore, should be to provide a harassment-free conference experience in which everyone can enjoy this in equal measure.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure subscription is not registered to use Cosmos DB namespace</title>
-      <link>http://localhost:1313/posts/2019/05/31/azure-subscription-is-not-registered/</link>
+      <link>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</link>
       <pubDate>Fri, 31 May 2019 20:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2019/05/31/azure-subscription-is-not-registered/</guid>
+      <guid>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</guid>
       <description>&lt;p&gt;It is usually the simplest things that often leave me feeling like I am a complete dummy. One such issue I ran into fairly recently when trying to deploy Cosmos DB into an Azure subscription.&lt;/p&gt;&#xA;&lt;p&gt;From Azure DevOps I received the following error:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;2019-05-31T16:28:55.4288261Z ##[error]MissingSubscriptionRegistration : The subscription is not registered to use namespace &amp;lsquo;Microsoft.DocumentDB&amp;rsquo;. See &lt;a href=&#34;https://aka.ms/rps-not-found&#34;&gt;https://aka.ms/rps-not-found&lt;/a&gt; for how to register subscriptions.&#xA;2019-05-31T16:28:55.5005526Z ##[section]Finishing: Deploy Cosmos Account and Database with Shared Capacity&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning to say NO</title>
-      <link>http://localhost:1313/posts/2017/08/08/learning-to-say-no/</link>
+      <link>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</link>
       <pubDate>Tue, 08 Aug 2017 20:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2017/08/08/learning-to-say-no/</guid>
+      <guid>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</guid>
       <description>&lt;p&gt;Thank you to Kendra Little who is hosting this month&amp;rsquo;s T-SQL Tuesday topic on &amp;ldquo;Interviewing Patterns and Anti-Patterns&amp;rdquo; - and what advice I might have for someone preparing for an interview. But instead of regurgitating the obvious advice you can find in other places, I&amp;rsquo;d rather talk about my own personal experiences, in-particular about a specific dark period in my professional career and how I avoided jumping into yet another bad experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLRally and Beyond</title>
-      <link>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</link>
+      <link>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</guid>
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan&amp;rsquo;t bore you with my excuses or reasons for my inactivity but what matters is I&amp;rsquo;m back!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>When should you use NOLOCK?</title>
-      <link>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</link>
-      <pubDate>Wed, 14 Sep 2011 12:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>How to increase your OS Virtual Processors</title>
-      <link>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
       <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
       <description>&lt;p&gt;There usually comes a time in your Virtual Machine life-cycle that you think&amp;hellip; &lt;em&gt;I wish I’d given that baby more processors for me to play with!&lt;/em&gt; This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as &lt;em&gt;Processor Affinity&lt;/em&gt; and &lt;em&gt;MAXDOP&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Review of Inside the SQL Server Query Optimizer</title>
-      <link>http://localhost:1313/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
       <pubDate>Fri, 19 Aug 2011 14:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/2011/insidequerysmall.jpg&#34; alt=&#34;Inside the SQL Server Query Optimizer&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (&lt;a href=&#34;https://www.benjaminnevarez.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/#!/BenjaminNevarez&#34;&gt;twitter&lt;/a&gt;) is one of those. As someone I’ve been following technically for several years, when I saw that his book &lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;Inside the SQL Server Query Optimizer&lt;/a&gt; had been released to the Kindle format, I immediately clicked the purchase button and I haven’t been disappointed.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/insidequerysmall.jpg&#34; alt=&#34;Inside the SQL Server Query Optimizer&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (&lt;a href=&#34;https://www.benjaminnevarez.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/#!/BenjaminNevarez&#34;&gt;twitter&lt;/a&gt;) is one of those. As someone I’ve been following technically for several years, when I saw that his book &lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;Inside the SQL Server Query Optimizer&lt;/a&gt; had been released to the Kindle format, I immediately clicked the purchase button and I haven’t been disappointed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Standing upon the shoulders of Giants</title>
-      <link>http://localhost:1313/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
       <pubDate>Mon, 01 Aug 2011 13:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
       <description>&lt;p&gt;In the very late nineties and early naughties I used to co-habit the Microsoft Newsgroups (which was then located at &lt;em&gt;news.microsoft.com&lt;/em&gt; over the NNTP protocol), and in particular I posted primarily on the SQL Server forums to help others where I could. A by product of my helping out was of course learning lots of hints, tips and best practices from other users and there is a lesson in that for everybody.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Sun isn’t shining for the Solstice</title>
-      <link>http://localhost:1313/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</link>
+      <link>https://tenbulls.co.uk/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</link>
       <pubDate>Sun, 31 Jul 2011 20:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</guid>
       <description>&lt;p&gt;So today I was surprised (slightly) to pick up a tweet by the excellent Grant Fritchey (&lt;a href=&#34;https://www.scarydba.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/#!/gfritchey&#34;&gt;twitter&lt;/a&gt;) regarding the fact that &lt;a href=&#34;https://www.sqlsolstice.com/&#34;&gt;SQL Solstice&lt;/a&gt; had been cancelled due to a lack of interest. I say that I was only slightly surprised for a few reasons. The first is that the event was a new initiative and just by that very fact, was never going to be a certainty. Secondly, the United States is no stranger to SQL events. Not only do they host the largest SQL Server convention in the world (&lt;a href=&#34;https://www.sqlpass.org/summit/2011/&#34;&gt;SQL PASS Summit&lt;/a&gt;), but have also a new initiative called SQLRally, in which I was lucky enough to speak at the inaugural event in &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/&#34;&gt;Orlando&lt;/a&gt; this May just past. I believe the intention for SQLRally is for it to rotate bi-yearly between the States and Europe and the success of &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/nordic/&#34;&gt;SQLRally Nordic&lt;/a&gt; will (I believe) be the making or death of that initiative. I personally believe SQLRally is work in progress and will become a great success over time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Database corruption - Your mistake, my problem!</title>
-      <link>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
       <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month’s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I’ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here’s my entry…&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month’s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I’ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here’s my entry…&lt;/p&gt;</description>
     </item>
     <item>
       <title>Add metadata to your audio files</title>
-      <link>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
       <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
-      <description>&lt;p&gt;In my recent post &lt;a href=&#34;http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
+      <description>&lt;p&gt;In my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to rip audio from your training videos</title>
-      <link>http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
       <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Although the following post is Linux related my dear SQL Server geek, you might just find what I am about to say useful in your pursuit of SQL Server greatness. If this possibility doesn’t interest you then I advise to stop reading right&amp;hellip; now!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t normally publish short blog posts and as a result, when I am really busy, it means nothing gets posted due to the large amount of time the bigger articles take. However from time to time I see something that I really want to shout about and this is one of those times.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using SQL Server Scalable Shared Database</title>
-      <link>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
+      <link>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
       <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don’t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn’t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don’t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn’t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The real value of attending SQLRally</title>
-      <link>http://localhost:1313/posts/2011/05/18/the-real-value-of-attending-sqlrally/</link>
+      <link>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</link>
       <pubDate>Wed, 18 May 2011 18:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/05/18/the-real-value-of-attending-sqlrally/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</guid>
       <description>&lt;p&gt;&lt;em&gt;(This post was written primarily whilst travelling back from SQLRally and subsequently edited, amended and added to where necessary before publishing)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’m currently sat here at Orlando Airport and I am able to reflect a little bit whilst waiting to board my plane back to the U.K. after having spent the last 5 days of preparation, learning and socialising at SQLRally and I need to ask myself &lt;em&gt;was it worth the expense?&lt;/em&gt;. I’m not too sure how many attendees or indeed speakers were from Europe but I am pretty sure I was one of a very small number and therefore the cost to myself was indeed far more than it would have cost for the majority of the attendees. It is therefore important that I look at the return on investment of not just my attending the event, but also of me speaking. One key thing to remember about going to conferences, is that the knowledge &lt;em&gt;retained&lt;/em&gt; is usually very little of what you have actually heard but hopefully with the efforts of the presenters, the materials provided will help to reinforce the important parts of this knowledge. It is true that I went to some excellent presentations but was sadly unable to attend many of them due to the amount of work I felt I needed to do on the preparation of my own session since I was really not quite happy where I was at. This particular point is a key take home for me, and I &lt;em&gt;must&lt;/em&gt; now ensure that I am far more prepared going forward. Unfortunately due to working commitments, family and other events it is sometimes easier said than done.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 8 - a presenters review</title>
-      <link>http://localhost:1313/posts/2011/04/20/sqlbits-8-finis/</link>
+      <link>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</link>
       <pubDate>Wed, 20 Apr 2011 15:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/04/20/sqlbits-8-finis/</guid>
-      <description>&lt;p&gt;Nearly two weeks has passed after another SQLBits and what another fabulous event. After an incredibly early morning train journey down to Brighton for the excellent Thursday training session with Thomas Kejser and an enjoyable time presenting my &lt;em&gt;SQL Server Clustering for Dummies&lt;/em&gt; session I am well and truly back down to earth with a thump.&lt;/p&gt;&#xA;&lt;p&gt;Personal highs for me were :-&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Finally getting to meet Allan Hirt and not only that but I had a Geo-Cluster debate with him in the speaker room.&lt;/li&gt;&#xA;&lt;li&gt;Meeting a few of the new first time SQLBits speakers -in particular Atul Thakor (blog|twitter) who I had a very long chat with in the speaker room and on the morning before his presentation. He had run into lots of problems with his laptop and demos prior to his session -which can strike the best of us, but managed to keep his wits about him an plow onto success when he finally came to present. What a top guy, and look forward to meeting him again in a User Group or another conference.&lt;/li&gt;&#xA;&lt;li&gt;Recognizing some audience members in my Clustering for Dummies session from my SQLBits 7 session. I ran into a couple of them later on and said a big thanks for the support, gave them my personal email and very much hope they do drop me a mail sometime to say hello.&lt;/li&gt;&#xA;&lt;li&gt;Bumping into some old faces…people I’ve met in Seattle, previous UK conferences and User Groups and old colleagues. A special big-up to Judith Kinsella who made the effort to come to my presentation (which threw me when I saw her in the audience), although she keeps telling me that I remind her of John Peel and just can’t take me seriously 🙂🙂🙂&lt;/li&gt;&#xA;&lt;li&gt;Being able to enjoy the experience a little more, due to familiarity of proceedings. Anyone who presents at a major conference for the first time will tell you that it is all a bit of a daze, stressful and is a big unknown what you have let yourself in for. This time I knew what to expect, what I was doing and what I needed to do.&lt;/li&gt;&#xA;&lt;li&gt;Seeing some great presentations.&lt;/li&gt;&#xA;&lt;li&gt;Excellent weather!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/introduction.jpg&#34; alt=&#34;Mark Broadbent Introduction&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;In full flow!&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</guid>
+      <description>&lt;p&gt;Nearly two weeks has passed after another SQLBits and what another fabulous event. After an incredibly early morning train journey down to Brighton for the excellent Thursday training session with Thomas Kejser and an enjoyable time presenting my &lt;em&gt;SQL Server Clustering for Dummies&lt;/em&gt; session I am well and truly back down to earth with a thump.&lt;/p&gt;&#xA;&lt;p&gt;Personal highs for me were :-&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Finally getting to meet Allan Hirt and not only that but I had a Geo-Cluster debate with him in the speaker room.&lt;/li&gt;&#xA;&lt;li&gt;Meeting a few of the new first time SQLBits speakers -in particular Atul Thakor (blog|twitter) who I had a very long chat with in the speaker room and on the morning before his presentation. He had run into lots of problems with his laptop and demos prior to his session -which can strike the best of us, but managed to keep his wits about him an plow onto success when he finally came to present. What a top guy, and look forward to meeting him again in a User Group or another conference.&lt;/li&gt;&#xA;&lt;li&gt;Recognizing some audience members in my Clustering for Dummies session from my SQLBits 7 session. I ran into a couple of them later on and said a big thanks for the support, gave them my personal email and very much hope they do drop me a mail sometime to say hello.&lt;/li&gt;&#xA;&lt;li&gt;Bumping into some old faces…people I’ve met in Seattle, previous UK conferences and User Groups and old colleagues. A special big-up to Judith Kinsella who made the effort to come to my presentation (which threw me when I saw her in the audience), although she keeps telling me that I remind her of John Peel and just can’t take me seriously 🙂🙂🙂&lt;/li&gt;&#xA;&lt;li&gt;Being able to enjoy the experience a little more, due to familiarity of proceedings. Anyone who presents at a major conference for the first time will tell you that it is all a bit of a daze, stressful and is a big unknown what you have let yourself in for. This time I knew what to expect, what I was doing and what I needed to do.&lt;/li&gt;&#xA;&lt;li&gt;Seeing some great presentations.&lt;/li&gt;&#xA;&lt;li&gt;Excellent weather!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/introduction.jpg&#34; alt=&#34;Mark Broadbent Introduction&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;In full flow!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to run SQL Server on Linux</title>
-      <link>http://localhost:1313/posts/2011/04/01/how-to-run-sql-server-on-linux/</link>
+      <link>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</link>
       <pubDate>Fri, 01 Apr 2011 14:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/04/01/how-to-run-sql-server-on-linux/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</guid>
       <description>&lt;p&gt;&lt;em&gt;UPDATE 2011-04-10: PLEASE NOTE THIS WAS AN APRILS FOOL JOKE 🙂&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well I have finally cracked it, after years of trying (and a little help from the R2 release) to get SQL Server to install and run happily on the Linux Platform. I could hardly believe it when it all came together, but I&amp;rsquo;m very pleased that it has. What is even more exciting is that the performance of the SQL Engine is going through the roof.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everybody wants to be important</title>
-      <link>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</link>
       <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &lt;em&gt;self-development&lt;/em&gt; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the *Meet an MVP lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table.&lt;/p&gt;&#xA;&lt;p&gt;I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising self-improvement training and said &lt;em&gt;&amp;ldquo;the clue is in the name….self! &amp;hellip;so why are you listening to someone else!&amp;rdquo;&lt;/em&gt;. For myself I believe that the &amp;ldquo;self&amp;rdquo; in the name self-improvement actually means that we always need to examine ourselves (and our behaviour) in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtualBox random behaviour</title>
-      <link>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</link>
       <pubDate>Mon, 21 Mar 2011 13:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; If you want to learn something then stop reading this post now&amp;hellip; however if you (like me) take enjoyment in the weird, unusual, and unexplained, then please continue reading on.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Regular readers of my ramblings will by now appreciate that I love VirtualBox and I&amp;rsquo;ve been using it for a considerable amount of time -long before those Oracle boys muscled in on Sun, and just recently I saw something that I found a little puzzling.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A visit to the Microsoft Business Intelligence Seminar 2011</title>
-      <link>http://localhost:1313/posts/2011/03/09/business_intelligence_seminar_2011/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</link>
       <pubDate>Wed, 09 Mar 2011 12:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/09/business_intelligence_seminar_2011/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</guid>
       <description>&lt;p&gt;Last week I visited Microsoft for the Microsoft Business Intelligence Seminar presentation given by  Rafal Lukawiecki (&lt;a href=&#34;https://twitter.com/rafaldotnet&#34;&gt;Twitter&lt;/a&gt;|&lt;a href=&#34;https://rafal.net/&#34;&gt;Blog&lt;/a&gt;). I must say that I found this one of the most valuable full day presentations that I have watched in a VERY long time for many different reasons. It is probably fair to say that I have probably not engaged BI as much as I probably should have over the last few years, since I have been focused on many other things. However it was plain to see that much of Rafal&amp;rsquo;s vision for the future of BI in IT was a very real possibility and as such is a compelling reason for me to re-engage. Certainly since the introduction of SQL 2000 Analysis Services, I am impressed by the pace in which the technology has matured.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType</title>
-      <link>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</link>
       <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Categorise your SQL Agent jobs</title>
-      <link>http://localhost:1313/posts/2011/03/04/job-category/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/04/job-category/</link>
       <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/04/job-category/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/04/job-category/</guid>
       <description>&lt;p&gt;Perhaps you are one of those people who&amp;rsquo;s house is immaculate? The lid is firmly placed back on the toothpaste, shoes left in a neat pile, coat in the cupboard. You know the sort of thing? Well I&amp;rsquo;m not quite like that but I try to be. Organized effort is a good thing and although it might not be obvious at the time can make life so much more easier further down the line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLRally is live!</title>
-      <link>http://localhost:1313/posts/2011/02/25/sqlrally-area-is-live/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</link>
       <pubDate>Fri, 25 Feb 2011 16:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/25/sqlrally-area-is-live/</guid>
-      <description>&lt;p&gt;Over the coming weeks and months leading up to SQLRally, I will be adding information, news and more detail about my presentation. For now though the root area is live which is effectively the &amp;ldquo;press release&amp;rdquo; provided to the selected speakers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/tags/sqlrally&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/2011/sqlrally_banner_240x120_1.webp&#34; alt=&#34;SQLRally Orlando&#34;&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t forget, if you do see me wandering around in Orlando, to say hello. It&amp;rsquo;s always great to meet new people and I am always humbled by the high level of skill in the SQL community. Also (and most importantly) expanding our IT Professional Support Network will ensure that we always will have an ear to bend when we have technical problems.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</guid>
+      <description>&lt;p&gt;Over the coming weeks and months leading up to SQLRally, I will be adding information, news and more detail about my presentation. For now though the root area is live which is effectively the &amp;ldquo;press release&amp;rdquo; provided to the selected speakers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://tenbulls.co.uk/tags/sqlrally&#34;&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/sqlrally_banner_240x120_1.webp&#34; alt=&#34;SQLRally Orlando&#34;&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t forget, if you do see me wandering around in Orlando, to say hello. It&amp;rsquo;s always great to meet new people and I am always humbled by the high level of skill in the SQL community. Also (and most importantly) expanding our IT Professional Support Network will ensure that we always will have an ear to bend when we have technical problems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clustering nodes on different subnets</title>
-      <link>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
       <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s rather ironic that the answer to a question that came my way recently, had been sitting in my feed-reader for the last month. Apart from the length of time that the item/s had been sitting there, I had opened them on numerous occasions and re-marked as &lt;em&gt;unread&lt;/em&gt; because I believed they needed more than just a quick skim.&lt;/p&gt;&#xA;&lt;p&gt;I consider myself very experienced with SQL Clustering but one cannot know everything about everything. I&amp;rsquo;m endeavouring to fill any gaps in order to be not just very good, but hopefully at some point a leading (or how about &lt;em&gt;the leading&lt;/em&gt; expert in this field. Right now there are only a few people that I am aware of that I consider to be authorities in SQL Clustering -at least people I can learn from, I&amp;rsquo;ve even been using it as long as some of them. There will of course be more experts who I am unaware of but the ones I follow are Geoff Hiten, Allan Hirt and Symon Perriman of course! Whether I achieve my own personal aims will depend upon how many other areas of specialism I lend my eye to, but one can only try and right now I think I&amp;rsquo;ve been heading in the right direction.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating your SQL snapshots</title>
-      <link>http://localhost:1313/posts/2011/02/15/automating-your-snapshots/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</link>
       <pubDate>Tue, 15 Feb 2011 16:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/15/automating-your-snapshots/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</guid>
       <description>&lt;p&gt;A little while ago I was talking to someone about possibilities of reporting from SQL Server to avoid impacting the production server and the very first thing that sprang to mind was for them to use snapshotting from a mirror. They had already considered this option but it was not really viable because an almost real-time reporting solution was required. It wasn&amp;rsquo;t until later that I wondered whether I had not really been precise enough in my explanation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 7 the forgotten photos part 2</title>
-      <link>http://localhost:1313/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</link>
       <pubDate>Sat, 12 Feb 2011 19:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</guid>
       <description>&lt;p&gt;Well &lt;a href=&#34;https://sqlbits.com/default.aspx&#34;&gt;SQLBits&lt;/a&gt; 8 voting has now ended so perhaps it is a good time to publish the second and final post of the series. I wonder if any of my sessions will get selected this time? One of my submitted sessions is the same one that has made it to the reserve list for the first ever &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; in Orlando and although slightly disappointed at just making the reserve list I was very proud that out of all the reserve sessions I came joint top (I took 38% of the vote in my category). The winner of that category is the well known Edwin Sarmiento (&lt;a href=&#34;https://bassplayerdoc.blogspot.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/bassplayerdoc&#34;&gt;twitter&lt;/a&gt;) and he is an absolutely smashing chap so I&amp;rsquo;m nothing but pleased for him.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where to go for WAIT stat information</title>
-      <link>http://localhost:1313/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</link>
       <pubDate>Tue, 08 Feb 2011 21:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</guid>
       <description>&lt;p&gt;Fairly recently I was talking with a rather talented SQL Specialist internally at Microsoft and was asked the question by him as to where I get my Wait Stat information from. Query tuning isn&amp;rsquo;t really something I currently am required to do on a regular basis so I tend to get my information as and when I need it (even though I have a couple of articles and urls bookmarked I couldn&amp;rsquo;t particularly reference them in a conversation so perhaps I could go one better and officially post them). My answer then was that I Bing for my Wait Stat references (actually replace that with another search engine – but I was on the MS site!).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automate now to save time later</title>
-      <link>http://localhost:1313/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</link>
       <pubDate>Tue, 08 Feb 2011 12:50:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s T-SQL Tuesday time again and this month I&amp;rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright &lt;a href=&#34;https://sqlasylum.wordpress.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/SqlAsylum&#34;&gt;twitter&lt;/a&gt; and the subject of the month is all about &amp;ldquo;Automation in SQL Server&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s T-SQL Tuesday time again and this month I&amp;rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright &lt;a href=&#34;https://sqlasylum.wordpress.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/SqlAsylum&#34;&gt;twitter&lt;/a&gt; and the subject of the month is all about &amp;ldquo;Automation in SQL Server&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is Disaster Recovery?</title>
-      <link>http://localhost:1313/posts/2011/02/01/what-is-dr/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/</link>
       <pubDate>Tue, 01 Feb 2011 19:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/01/what-is-dr/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/</guid>
       <description>&lt;p&gt;I was recently asked &lt;em&gt;&amp;ldquo;What is DR?&amp;rdquo;&lt;/em&gt; when talking about SQL Clustering, Mirroring and the like to someone. The question was asked not because they didn&amp;rsquo;t know but because they were interested in what I thought. The answer is quite simple right?&lt;/p&gt;&#xA;&lt;p&gt;After a moments pause I answered, &lt;em&gt;Disaster Recovery is the ability to restore a companies IT infrastructure to a minimum level required in order for that company to continue operating&lt;/em&gt;. OK so that wasn&amp;rsquo;t a really great response and of course DR means different things to different people, so it is probably important that we can be as explicit as possible. When the business asks &lt;em&gt;&amp;ldquo;Have you got a DR strategy in place&amp;rdquo;&lt;/em&gt;, I personally believe that we should already have established with the Business what they would class as &lt;em&gt;&amp;ldquo;Recovery&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My submitted SQLRally sessions</title>
-      <link>http://localhost:1313/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</link>
       <pubDate>Thu, 27 Jan 2011 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/sqlrally1.png&#34; alt=&#34;SQLRally logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several months ago, I submitted two sessions to SQLRally with great enthusiasm as detailed in this post. The first &amp;ldquo;The Great High Availability Hustle&amp;rdquo; I had been thinking about for a very long time and is hopefully going to fill a void that has existed for too long. As a DBA, if you are not already using Clustering I guarantee that you will be, sooner or later. SQL 2008 finally gave us true HA product for the Enterprise and I believe SQL High Availability is going to start gaining traction and market share over the coming months and years. But there is a problem with this. I believe that probably nearly every DBA that has become competent with SQL Clustering will at one point have had a baptism of fire with the technology.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/sqlrally1.png&#34; alt=&#34;SQLRally logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several months ago, I submitted two sessions to SQLRally with great enthusiasm as detailed in this post. The first &amp;ldquo;The Great High Availability Hustle&amp;rdquo; I had been thinking about for a very long time and is hopefully going to fill a void that has existed for too long. As a DBA, if you are not already using Clustering I guarantee that you will be, sooner or later. SQL 2008 finally gave us true HA product for the Enterprise and I believe SQL High Availability is going to start gaining traction and market share over the coming months and years. But there is a problem with this. I believe that probably nearly every DBA that has become competent with SQL Clustering will at one point have had a baptism of fire with the technology.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From Gnome to Flux</title>
-      <link>http://localhost:1313/posts/2011/01/25/from-gnome-to-flux/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/25/from-gnome-to-flux/</link>
       <pubDate>Tue, 25 Jan 2011 07:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/25/from-gnome-to-flux/</guid>
-      <description>&lt;p&gt;In between the time I am looking into all things SQL and all things Microsoft I am usually tinkering in Linux, and this usually consists of tweaking my user desktop environment so that I may have a more productive and enjoyable experience – you might recall the post &lt;a href=&#34;http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop&#34;&gt;My Big Fat Greek Desktop&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/my_menu.png&#34; alt=&#34;Flux Menu&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I knew the time would come when I would finally move on from the &lt;a href=&#34;https://www.gnome.org/&#34;&gt;Gnome&lt;/a&gt; desktop on my trusty Linux boxes, and I had toyed with that idea several times without the jump. Over the last few weeks and months I have been trialling &lt;a href=&#34;https://blog.linuxmint.com/?p=1523&#34;&gt;Linux Mint Fluxbox&lt;/a&gt; edition and to be honest I really didn&amp;rsquo;t like it at first. One of the things that struck me was the simplicity of it, but then that was the whole point for the move. Simplicity equals speed and speed equals productivity as long as I could navigate my way around. One of the things that I first hated about this desktop that I now love, was the right-click behaviour on the taskbar. For instance if you right-click any running application on the taskbar, a close signal is sent to the application. At this stage you might be thinking that this would drive you mad and believe me for a small amount of time it did -until I started to realise actually how many times I right-click applications in Gnome or Windows and then do something with the context menu -which is usually always to close anyway. This action has now been reduced to a one-click operation, and I find that I am not constantly minimizing or maximizing windows all the time because I can close applications very quickly and tend to do just that. The other part of the equation (opening applications) can also be performed very quickly by moving the mouse to any part of the blank desktop, some of which can always be found at the bottom left and bottom right of the taskbar and right-clicking. This initially was a real pain until I discovered that the Fluxbox menus can be easily edited and customized to your requirements via a simple text edit of the menu files under the .fluxbox directory in your home.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/25/from-gnome-to-flux/</guid>
+      <description>&lt;p&gt;In between the time I am looking into all things SQL and all things Microsoft I am usually tinkering in Linux, and this usually consists of tweaking my user desktop environment so that I may have a more productive and enjoyable experience – you might recall the post &lt;a href=&#34;https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop&#34;&gt;My Big Fat Greek Desktop&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/my_menu.png&#34; alt=&#34;Flux Menu&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I knew the time would come when I would finally move on from the &lt;a href=&#34;https://www.gnome.org/&#34;&gt;Gnome&lt;/a&gt; desktop on my trusty Linux boxes, and I had toyed with that idea several times without the jump. Over the last few weeks and months I have been trialling &lt;a href=&#34;https://blog.linuxmint.com/?p=1523&#34;&gt;Linux Mint Fluxbox&lt;/a&gt; edition and to be honest I really didn&amp;rsquo;t like it at first. One of the things that struck me was the simplicity of it, but then that was the whole point for the move. Simplicity equals speed and speed equals productivity as long as I could navigate my way around. One of the things that I first hated about this desktop that I now love, was the right-click behaviour on the taskbar. For instance if you right-click any running application on the taskbar, a close signal is sent to the application. At this stage you might be thinking that this would drive you mad and believe me for a small amount of time it did -until I started to realise actually how many times I right-click applications in Gnome or Windows and then do something with the context menu -which is usually always to close anyway. This action has now been reduced to a one-click operation, and I find that I am not constantly minimizing or maximizing windows all the time because I can close applications very quickly and tend to do just that. The other part of the equation (opening applications) can also be performed very quickly by moving the mouse to any part of the blank desktop, some of which can always be found at the bottom left and bottom right of the taskbar and right-clicking. This initially was a real pain until I discovered that the Fluxbox menus can be easily edited and customized to your requirements via a simple text edit of the menu files under the .fluxbox directory in your home.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goodbye SQL 7</title>
-      <link>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</link>
       <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</guid>
-      <description>&lt;p&gt;I cannot let the week go by without a special goodbye to an old friend. If you hadn&amp;rsquo;t already heard, &lt;a href=&#34;https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0&#34;&gt;SQL 7.0 support officially ended on the 11th January&lt;/a&gt; of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in how I got started with SQL Server and you haven&amp;rsquo;t done so already, you might want to take a quick peek at my &lt;a href=&#34;http://localhost:1313/about&#34;&gt;about&lt;/a&gt; page. Here I mention how I quite insightfully (read luckily) took a training opportunity and put myself on a SQL 7 beta course rather than the one my company was expecting – one for SQL 6.5. That decision had a very big effect on my future IT career. Whilst at the training centre I remember that there was a guy there who claimed that he had been one of the first 100 people in the world to certify as an MCSE+i and his efforts to do so had been made a little easier because of the fact that he had apparently been based in Saudi Arabia for six months in a company that had not only a testing centre but all course materials available to him. He said of being out there &lt;em&gt;&amp;ldquo;well what else can you do for 6 months in Saudi? I thought I might as well do something productive!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</guid>
+      <description>&lt;p&gt;I cannot let the week go by without a special goodbye to an old friend. If you hadn&amp;rsquo;t already heard, &lt;a href=&#34;https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0&#34;&gt;SQL 7.0 support officially ended on the 11th January&lt;/a&gt; of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in how I got started with SQL Server and you haven&amp;rsquo;t done so already, you might want to take a quick peek at my &lt;a href=&#34;https://tenbulls.co.uk/about&#34;&gt;about&lt;/a&gt; page. Here I mention how I quite insightfully (read luckily) took a training opportunity and put myself on a SQL 7 beta course rather than the one my company was expecting – one for SQL 6.5. That decision had a very big effect on my future IT career. Whilst at the training centre I remember that there was a guy there who claimed that he had been one of the first 100 people in the world to certify as an MCSE+i and his efforts to do so had been made a little easier because of the fact that he had apparently been based in Saudi Arabia for six months in a company that had not only a testing centre but all course materials available to him. He said of being out there &lt;em&gt;&amp;ldquo;well what else can you do for 6 months in Saudi? I thought I might as well do something productive!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Start as you mean to go on</title>
-      <link>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
       <pubDate>Tue, 11 Jan 2011 02:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Review image hex data before storing it in a database</title>
-      <link>http://localhost:1313/posts/2011/01/10/checking-your-images-in-adhoc-updates/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/10/checking-your-images-in-adhoc-updates/</link>
       <pubDate>Mon, 10 Jan 2011 13:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/10/checking-your-images-in-adhoc-updates/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/01/10/checking-your-images-in-adhoc-updates/</guid>
       <description>&lt;p&gt;I really had to laugh (and not in a good way) when a request recently dropped into my lap to update a production database server with the script like the one that you will see shortly below. It is my firm belief that NO DML should ever be applied directly to production (Yes you read that right… &lt;em&gt;NO DML&lt;/em&gt;). You might be thinking to yourself, &lt;em&gt;&amp;ldquo;well that&amp;rsquo;s a bit weird, what&amp;rsquo;s the point of having the database then if you can&amp;rsquo;t even query it?&amp;rdquo;&lt;/em&gt; and that is a valid point. The key words in my original statement are &lt;em&gt;applied directly&lt;/em&gt; and by that I mean querying or updating the Database via the native SQL application tools such as &lt;code&gt;sqlcmd&lt;/code&gt; or more likely SSMS. If you are having to do so then I am betting there are usually one of the two following problems with your production system:&lt;/p&gt;</description>
     </item>
     <item>
       <title>2010 in reflection</title>
-      <link>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</link>
       <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</guid>
       <description>&lt;p&gt;Firstly let me wish you all a very happy New Year and secondly a big thank you to all of you who have been dropping by my blog and I sincerely hope you continue to do so. I&amp;rsquo;ve been seeing at least a 10% month on month growth in traffic since the start of the year and its the prospect that I might be producing something (however remote) of interest to someone makes my efforts even more rewarding. I would also like to pay my respects to all those other Bloggers in the Blogosphere who provide great content for me to consume – more on this in the next few days. Also lets not forget the Tweeps, and if you do both then a huge big-up to you!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Troubleshoot SQL Service connectivity</title>
-      <link>http://localhost:1313/posts/2010/12/23/dynamic-ports-are-dangerous/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/23/dynamic-ports-are-dangerous/</link>
       <pubDate>Thu, 23 Dec 2010 13:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/23/dynamic-ports-are-dangerous/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/23/dynamic-ports-are-dangerous/</guid>
       <description>&lt;p&gt;We had a fairly interesting incident recently where there had been some significant network issues which even once they had been resolved had left various connectivity problems to several of our SQL Instances. I thought it would be useful to take a few screen shots and demonstrate my thought process when this sort of reported incident occurs.&lt;/p&gt;&#xA;&lt;p&gt;The first thing I am aware of is that our development support team has stated that an application is having problems connecting to the SQL Server. OK well the first thing I think is &lt;em&gt;lets try it for ourselves under my own system administrator security context&lt;/em&gt;. The security angle is important since the problem may be related to access rights. The result of my attempt is that we at least prove that something is not quite working as it should and the instance cannot be connected to for whatever reason.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLRally 2011!</title>
-      <link>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</link>
       <pubDate>Thu, 16 Dec 2010 13:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
       <description>&lt;p&gt;I am very pleased/ proud to announce that I have submitted 2 abstracts for presentations to &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; and should I be chosen they will be given in Orlando, Florida between May 11th to May 13th. For those of you not already aware, SQLRally is a little bit like a mini SQL PASS Summit and enables people from the East Coast of America to visit an event closer to them should they have not been able to attend the PASS Summit due to the distance and cost restrictions. It has been devised to fill the gap between SQL Saturday events and more can be found by visiting this &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/About.aspx&#34;&gt;url&lt;/a&gt;. I believe it is going to be a great success. Should I be chosen to present at SQLRally, which will be a tall order given the very strong competition it will be only my second time going to a SQL Event in the States (PASS 2010 was my first) it will be my very first visit to the East Coast.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What the Business says is not what the Business wants</title>
-      <link>http://localhost:1313/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/</link>
       <pubDate>Tue, 14 Dec 2010 00:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Steve Jones, editor at large of SQL Server Central is this month hosting the latest &lt;a href=&#34;https://www.sqlservercentral.com/blogs/steve_jones/archive/2010/12/07/t_2D00_sql-tuesday-_2300_13-_2D00_-what-the-business-says-is-not-what-the-business-wants.aspx&#34;&gt;T-SQL Tuesday&lt;/a&gt; and luckily I have managed to be organized enough to make a note in my Calendar so that I may finally contribute. A big thank you also goes to Steve who gave plenty of notice for this iteration of T-SQL Tuesday. If you don&amp;rsquo;t already know, the idea behind T-SQL Tuesday was created by Adam Machanic to improve the sharing of ideas and co-operation between SQL Server Professionals and if you would like to know more then you should check out Adam&amp;rsquo;s &lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/archive/2009/11/30/invitation-to-participate-in-t-sql-tuesday-001-date-time-tricks.aspx&#34;&gt;first ever post&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/12/14/t-sql-tuesday-13-what-the-business-says-is-not-what-the-business-wants/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Steve Jones, editor at large of SQL Server Central is this month hosting the latest &lt;a href=&#34;https://www.sqlservercentral.com/blogs/steve_jones/archive/2010/12/07/t_2D00_sql-tuesday-_2300_13-_2D00_-what-the-business-says-is-not-what-the-business-wants.aspx&#34;&gt;T-SQL Tuesday&lt;/a&gt; and luckily I have managed to be organized enough to make a note in my Calendar so that I may finally contribute. A big thank you also goes to Steve who gave plenty of notice for this iteration of T-SQL Tuesday. If you don&amp;rsquo;t already know, the idea behind T-SQL Tuesday was created by Adam Machanic to improve the sharing of ideas and co-operation between SQL Server Professionals and if you would like to know more then you should check out Adam&amp;rsquo;s &lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/archive/2009/11/30/invitation-to-participate-in-t-sql-tuesday-001-date-time-tricks.aspx&#34;&gt;first ever post&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mr. Fumble Fingers - a case against clustering</title>
-      <link>http://localhost:1313/posts/2010/12/09/mr-fumble-fingers/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/09/mr-fumble-fingers/</link>
       <pubDate>Thu, 09 Dec 2010 14:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/09/mr-fumble-fingers/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/09/mr-fumble-fingers/</guid>
       <description>&lt;p&gt;If you are not perfect (and I am guessing you are not!) you will have been in that situation where you have clicked your mouse button (substitute with your own horror story) and then almost immediately thought &lt;em&gt;what have I done!&lt;/em&gt; followed by an intense feeling of self loathing, self pity and general hopelessness.&lt;/p&gt;&#xA;&lt;p&gt;Actually as DBA&amp;rsquo;s, being fallible is not really an option and is why our positions of risk are usually rewarded on many various levels -of which higher salaries only play a small part of it. In the early days of my long IT career I recall two scenarios that I remember that feeling of despair (stories which I&amp;rsquo;ll save for another rainy day) but on both of those occasions they were ironically Cluster related and on both occasions I could argue the mistakes had been entirely preventable -and not just by myself. One issue was related to hardware and the other to the software setup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to rename a SQL Failover Cluster </title>
-      <link>http://localhost:1313/posts/2010/12/06/more-cluster-group-network-names/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/06/more-cluster-group-network-names/</link>
       <pubDate>Mon, 06 Dec 2010 13:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/06/more-cluster-group-network-names/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/06/more-cluster-group-network-names/</guid>
       <description>&lt;p&gt;Most recently I came across a couple of tweets on the #sqlhelp hash tag regarding changing a Cluster Group network name. Helpfully a knowledge base article was offered up to the person asking the original question. The article &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms178083.aspx&#34;&gt;How to: Rename a SQL Server Failover Cluster Instance&lt;/a&gt; gave some very easy steps and advice to perform this action. However a comment was made regarding what exactly the Cluster Group Network name was. It was stated that &lt;em&gt;&amp;ldquo;It is merely a DNS name&amp;rdquo;&lt;/em&gt; and this is not correct and may get you into hot water if you take that comment at face value.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 7 the forgotten photos part 1</title>
-      <link>http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</link>
       <pubDate>Wed, 01 Dec 2010 15:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</guid>
       <description>&lt;p&gt;Several weeks back I attached my Blackberry to my PC to clear down all the photos in preparation for SQL Pass and I stumbled across these grainy old photos taken during those rainy few days in York. It all seems like a lifetime ago now and much has happened to me since &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQL Bits&lt;/a&gt; 7, but this was my story of an interesting and enjoyable but all too brief few days.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The fantastically forgetful IP stack</title>
-      <link>http://localhost:1313/posts/2010/11/30/the-fantastically-forgetful-ip-stack/</link>
+      <link>https://tenbulls.co.uk/posts/2010/11/30/the-fantastically-forgetful-ip-stack/</link>
       <pubDate>Tue, 30 Nov 2010 10:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/11/30/the-fantastically-forgetful-ip-stack/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/11/30/the-fantastically-forgetful-ip-stack/</guid>
       <description>&lt;p&gt;So the first thing you are probably wondering is… &lt;em&gt;does this post have anything to do with SQL Server?&lt;/em&gt; Well if you have ever listened to my views on specialization and generalization you may be aware of the fact that I strongly believe that we all should be running our own sand-boxed virtualized environment distinctly separate from our corporate virtual environment and you (the humble DBA) will be your own Domain and Server admin -master of your own educational destiny. I am of course talking about one of the my key concepts that I like to practice myself, namely trying to be what I term a DBA 2.5. More on this though another time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dastardly database hiding</title>
-      <link>http://localhost:1313/posts/2010/11/26/dastardly-database-and-password-hiding/</link>
+      <link>https://tenbulls.co.uk/posts/2010/11/26/dastardly-database-and-password-hiding/</link>
       <pubDate>Fri, 26 Nov 2010 13:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/11/26/dastardly-database-and-password-hiding/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/11/26/dastardly-database-and-password-hiding/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been recently going through the first part of one of Redgate&amp;rsquo;s excellent free ebooks &lt;a href=&#34;https://www.simple-talk.com/books/sql-books/the-red-gate-guide-to-sql-server-team-based-development/&#34;&gt;The Red Gate Guide to SQL Server Team-based Development&lt;/a&gt; and was rather amused when I came across the section talking about creating what they term &lt;em&gt;shape&lt;/em&gt; tables. Essentially what this means is to use the shape ascii codes in order to name a table. I remember a very very long time ago when I was still (almost) in short trousers reading an article suggesting that user passwords should incorporate various invisible ascii codes (such as escape codes) in their respective passwords, since this would render dictionary password cracking tools pretty much useless. It would also help if someone was looking over your shoulder – yes they have just observed you type &lt;em&gt;MyP@ssw0rd&lt;/em&gt; but they didn&amp;rsquo;t quite catch that ascii code you also typed did they?!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Different differential backup behaviour between SQL versions</title>
-      <link>http://localhost:1313/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/</link>
+      <link>https://tenbulls.co.uk/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/</link>
       <pubDate>Wed, 24 Nov 2010 13:47:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/11/24/differential-backup-behaviour-between-sql-versions/</guid>
       <description>&lt;p&gt;The other day I ran into a rather unique problem with a database when attempting to maintain it&amp;rsquo;s transaction log. As it turned out my particular issue was related to old replication code -which I hope to post about at a later date, but essentially I needed to clear down some of the logfile&amp;rsquo;s VLFs which I was struggling to perform. Anything I attempted to maintain it failed, however if I performed Transactional log backups, they would also fail due to the fact that there was no Full database backup in existence. Since the database was huge, and a full backup would have taken up to 12 hours to perform, it raised quite an interesting question namely &lt;em&gt;was there a way to force a Transactional log backup&lt;/em&gt;?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding disk partition alignment</title>
-      <link>http://localhost:1313/posts/2010/11/23/disk-partition-alignment/</link>
+      <link>https://tenbulls.co.uk/posts/2010/11/23/disk-partition-alignment/</link>
       <pubDate>Tue, 23 Nov 2010 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/11/23/disk-partition-alignment/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/11/23/disk-partition-alignment/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m sure by now most of you will have heard about Disk Partition Alignment and why it is so important (and not just for use with SQL Server IO Subsystems). I&amp;rsquo;m really quite interested in how many companies have actually sat up and smelt the coffee and addressed this issue? This problem is something that DBA&amp;rsquo;s quite readily acknowledge is a potential area of concern, but we usually have to rely on our SAN and Server administrators being one step ahead of the game in actively addressing the situation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Database Mirroring modes of operation</title>
-      <link>http://localhost:1313/posts/2010/11/22/back-to-front-mirror/</link>
+      <link>https://tenbulls.co.uk/posts/2010/11/22/back-to-front-mirror/</link>
       <pubDate>Mon, 22 Nov 2010 14:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/11/22/back-to-front-mirror/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/11/22/back-to-front-mirror/</guid>
       <description>&lt;p&gt;SQL Server database mirroring was obviously a great feature first introduced in SQL 2005 and will improve even further in the next big release (Denali) but quite surprising to me is how drastically the order in which the transactions are committed differ between both modes of operation.&lt;/p&gt;&#xA;&lt;p&gt;To recap, there are two types of mirroring (High Performance and High Safety) so lets look at exactly how these two types work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NxtGenUG Guerrilla tactics presentation review</title>
-      <link>http://localhost:1313/posts/2010/10/27/nxtgenug-guerrilla-tactics-review/</link>
+      <link>https://tenbulls.co.uk/posts/2010/10/27/nxtgenug-guerrilla-tactics-review/</link>
       <pubDate>Wed, 27 Oct 2010 12:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/10/27/nxtgenug-guerrilla-tactics-review/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/10/27/nxtgenug-guerrilla-tactics-review/</guid>
       <description>&lt;p&gt;Last night I attended the &lt;a href=&#34;https://www.nxtgenug.net/Default.aspx&#34;&gt;NxtGenUG&lt;/a&gt; meeting in Cambridge for my first time to see Peter Marriott blog|twitter give his presentation &lt;a href=&#34;https://www.nxtgenug.net/ViewEvent.aspx?EventID=348&#34;&gt;Guerrilla tactics – Performance Testing MS SQL Server Applications&lt;/a&gt; and I very much enjoyed myself. I also expected to bump into Guy Smith Ferrier &lt;a href=&#34;https://www.guysmithferrier.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/#!/GuySmithFerrier&#34;&gt;twitter&lt;/a&gt; but sadly he could not make it and was called at short notice to present in Birmingham. Both presenters I had previously met during my recent visit to Microsoft in Reading and was very much looking forward to this event.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Protect your failover cluster names</title>
-      <link>http://localhost:1313/posts/2010/10/22/use-protection-to-stay-available/</link>
+      <link>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</link>
       <pubDate>Fri, 22 Oct 2010 12:17:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/10/22/use-protection-to-stay-available/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/10/22/use-protection-to-stay-available/</guid>
       <description>&lt;p&gt;One of the biggest worries for us grumpy DBAs are the risks which are posed to us due to our reliance on other teams, specialists and technologies in order to maintain a working and efficient SQL Server infrastructure. This was one of the key concepts when I put together my Thinking outside the Box talk for &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQLBits&lt;/a&gt; 7, and insist that we need to understand, get involved and help communicate best practices to our colleagues and fellow IT professionals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>More cluster disk corruption</title>
-      <link>http://localhost:1313/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</link>
+      <link>https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</link>
       <pubDate>Thu, 21 Oct 2010 13:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</guid>
-      <description>&lt;p&gt;Ironically not more than a week or so after I emphasised the importance for DBAs to check file system integrity in my recent post &lt;a href=&#34;http://localhost:1313/posts/2010/10/08/cluster-aint-misbehavin/&#34;&gt;Recovering from corruption in SQL Failover Cluster&lt;/a&gt;, another incident raises it&amp;rsquo;s ugly head. The post highlighted that file system corruption can cause unusual behaviour with your SQL instance, so when the other day the following errors in the event log were passed to me, I knew exactly what to look at.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/10/21/chk-your-dsk-ironing-out-those-abnormalities/</guid>
+      <description>&lt;p&gt;Ironically not more than a week or so after I emphasised the importance for DBAs to check file system integrity in my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/&#34;&gt;Recovering from corruption in SQL Failover Cluster&lt;/a&gt;, another incident raises it&amp;rsquo;s ugly head. The post highlighted that file system corruption can cause unusual behaviour with your SQL instance, so when the other day the following errors in the event log were passed to me, I knew exactly what to look at.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to generate failover cluster logs</title>
-      <link>http://localhost:1313/posts/2010/10/11/generate-your-cluster-logs/</link>
+      <link>https://tenbulls.co.uk/posts/2010/10/11/generate-your-cluster-logs/</link>
       <pubDate>Mon, 11 Oct 2010 11:58:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/10/11/generate-your-cluster-logs/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/10/11/generate-your-cluster-logs/</guid>
       <description>&lt;p&gt;Windows and SQL Clustering can be a tricky business, but fortunately most of the administration and troubleshooting can be performed through the GUI. Obviously the same argument can apply that the simplicity of any GUI can be it&amp;rsquo;s downfall in the sense that it opens up something complicated to the inexperienced. This can be a recipe for disaster on Clusters but as mentioned in previous posts is really down to your IT structures to restrict access to them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recovering from corruption in SQL Failover Cluster</title>
-      <link>http://localhost:1313/posts/2010/10/08/cluster-aint-misbehavin/</link>
+      <link>https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/</link>
       <pubDate>Fri, 08 Oct 2010 11:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/10/08/cluster-aint-misbehavin/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/10/08/cluster-aint-misbehavin/</guid>
       <description>&lt;p&gt;One of the great things about SQL Clustered Instances is that they generally give a much greater possibility for High Availability which is obviously the whole point of them. However one of the more commonly overlooked considerations is the fact that by their very design you are introducing extra complexity to your environment and this can be counter-productive and work against what you are trying to achieve in the first place. For instance if you allow unqualified and inexperienced people to access and even administrate your SQL Clusters then you could be in for a world of pain. I have seen it time and time again and yet those kind of classic mistakes seem to keep being allowed to happen. In order to highlight this point further, imagine your sysadmins, operators and DBA&amp;rsquo;s going about their everyday management of systems oblivious to the fact that what they are working on is actually a clustered node. They could be creating a Network Share, stopping a Service or even installing software without realizing what they are doing and the potential risk they are taking. It is for this very reason that I believe that Windows Clusters in particular require a specialized team in order to support them because we want to maintain the High Availability don&amp;rsquo;t we folks?&lt;/p&gt;</description>
     </item>
     <item>
       <title>When the Cloud approach goes wrong</title>
-      <link>http://localhost:1313/posts/2010/09/23/when-cloud-goes-wrong/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/23/when-cloud-goes-wrong/</link>
       <pubDate>Thu, 23 Sep 2010 09:19:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/23/when-cloud-goes-wrong/</guid>
-      <description>&lt;p&gt;Around 2 or 3 years ago I made a conscious effort to try to detach myself a little from any one Operating System for my personal Documents, Favorites, RSS feeds and those sorts of things and therefore attempted to start using Cloud based technologies to achieve this goal.&lt;/p&gt;&#xA;&lt;p&gt;Well the other day I went into my Bloglines account and was greeted with the following message:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/bloglines.png&#34; alt=&#34;Bloglines&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;What particularly annoys me about this is the fact that they are just shutting down the service. No handing over to the community, no attempt at selling it on, not even a suggestion or arrangement of where you should move your feeds to. Their reasons for the shutdown are pretty lame too, but essentially boil down to the fact that they are focusing on their &lt;em&gt;&amp;ldquo;commercial&amp;rdquo;&lt;/em&gt; activities. Certain functionality and settings will now be lost forever and should I have not seen this shutdown message (perhaps I was on holiday for 1 month) then it begs the question of what would happen to my feeds then.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/09/23/when-cloud-goes-wrong/</guid>
+      <description>&lt;p&gt;Around 2 or 3 years ago I made a conscious effort to try to detach myself a little from any one Operating System for my personal Documents, Favorites, RSS feeds and those sorts of things and therefore attempted to start using Cloud based technologies to achieve this goal.&lt;/p&gt;&#xA;&lt;p&gt;Well the other day I went into my Bloglines account and was greeted with the following message:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/bloglines.png&#34; alt=&#34;Bloglines&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;What particularly annoys me about this is the fact that they are just shutting down the service. No handing over to the community, no attempt at selling it on, not even a suggestion or arrangement of where you should move your feeds to. Their reasons for the shutdown are pretty lame too, but essentially boil down to the fact that they are focusing on their &lt;em&gt;&amp;ldquo;commercial&amp;rdquo;&lt;/em&gt; activities. Certain functionality and settings will now be lost forever and should I have not seen this shutdown message (perhaps I was on holiday for 1 month) then it begs the question of what would happen to my feeds then.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A week at Oracle University</title>
-      <link>http://localhost:1313/posts/2010/09/21/a-week-at-oracle-university/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/21/a-week-at-oracle-university/</link>
       <pubDate>Tue, 21 Sep 2010 18:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/21/a-week-at-oracle-university/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/21/a-week-at-oracle-university/</guid>
       <description>&lt;p&gt;About a month ago I went into the Big Smoke to spend the week at the &lt;a href=&#34;https://www.oracle.com/global/uk/education/maps/london_oracle.html&#34;&gt;Oracle University&lt;/a&gt; premises at 1 South Place. I was attending the &lt;a href=&#34;https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getCourseDesc?dc=D50311GC10&amp;amp;p_org_id=28&amp;amp;lang=US&#34;&gt;11g R1 Oracle RAC course&lt;/a&gt; and since I am very knowledgeable about high availability solutions, I was especially looking forward to filling in the one last piece of the jigsaw. I had already been on &lt;a href=&#34;https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getCourseDesc?dc=D17316GC20&amp;amp;p_org_id=1001&amp;amp;lang=US&#34;&gt;Oracle&amp;rsquo;s 10g Data Guard course&lt;/a&gt; – which for the benefit of you SQL boffins is the equivalent of SQL Server mirroring. RAC of course is an acronym for Real Application Clusters and you can think of it as being similar to SQL Clustering but differs greatly in the sense that an Oracle instance is (or can be) effectively scaled out with the addition of extra nodes and due to the potential processing and memory available can theoretically be scaled up.&#xA;Rumor has it that something similar is being worked on for the next major release of SQL Server, but I am really not too sure whether this is fact or fiction. One thing I really liked about RAC is that when it works you can imagine it being really special, however like all of the other Oracle exposure I have had I was again left with a sense of bemusement due to all of the warnings we received such as don&amp;rsquo;t click this or don&amp;rsquo;t type that otherwise catastrophe will strike. The classic example of this in the notes was the warning about when you uninstall a node from the cluster to ensure that you do not miss the last part of the command. I think the following was the offending command:&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits Speaker Training Day</title>
-      <link>http://localhost:1313/posts/2010/09/19/speaker-training-day/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</link>
       <pubDate>Sun, 19 Sep 2010 18:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/19/speaker-training-day/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</guid>
       <description>&lt;p&gt;A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn&amp;rsquo;t). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn&amp;rsquo;t been to that building for around 3 years I&amp;rsquo;m not sure how she could have done …still it&amp;rsquo;s always nice to be &amp;ldquo;recognized&amp;rdquo; 🙂&lt;/p&gt;</description>
     </item>
     <item>
       <title>An approach to dealing with database corruptoin</title>
-      <link>http://localhost:1313/posts/2010/09/16/corrupt-behaviour/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/16/corrupt-behaviour/</link>
       <pubDate>Thu, 16 Sep 2010 15:58:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/16/corrupt-behaviour/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/16/corrupt-behaviour/</guid>
       <description>&lt;p&gt;After attending Paul and Kimberly&amp;rsquo;s excellent Masterclass in London a few months ago, I made a scribble in my notepad to play around a little more with self induced corrupted DBs (yes you read that right!). Part of Paul&amp;rsquo;s demonstration showed various recovery techniques and gotchas when you are unfortunate enough to be hit with corruption problems. Having been exposed to quite a few situations in live environments, I am not exactly a stranger to DBCC CHECKDB and fixing corruption issues, but the session was definitely enlightening and taught me some useful things.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cloning your VirtualBox virtual disks</title>
-      <link>http://localhost:1313/posts/2010/09/07/cloning-your-virtual-disks/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/07/cloning-your-virtual-disks/</link>
       <pubDate>Tue, 07 Sep 2010 14:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/07/cloning-your-virtual-disks/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/07/cloning-your-virtual-disks/</guid>
       <description>&lt;p&gt;The cloning of disk images (especially Windows) can present a few problems from the OS perspective which I shall expand upon shortly, however depending upon the Virtualization solution that you are using there can be a few problems to overcome unique to that solution.&lt;/p&gt;&#xA;&lt;h1 id=&#34;get-a-new-guid&#34;&gt;Get a new GUID&lt;/h1&gt;&#xA;&lt;p&gt;VirtualBox uses a GUIDs in several places to uniquely identify various things. I&amp;rsquo;m not really sure I like this, and haven&amp;rsquo;t really thought about why it is required, but it could have something to do with the multi-platform support of VirtualBox and its VMs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtualBox virtual disk corruption when using ext4 host partitions</title>
-      <link>http://localhost:1313/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</link>
       <pubDate>Mon, 06 Sep 2010 16:02:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/06/virtualb-disk-corruption-on-ext4-file-systems/</guid>
       <description>&lt;p&gt;Sometimes it is not always a great idea to be running the latest and greatest, and it seems that there is a small problem when VirtualBox virtual machines have their virtual disks housed on ext4 filesystems. I am sure that this will be corrected at some point, but in the meantime luckily there is a simple workaround.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;When the virtual machine is first started up, and if the error condition is satisfied, you are prompt with the warning message.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsofts new GUI-less server OS</title>
-      <link>http://localhost:1313/posts/2010/09/02/what-a-real-server-should-be/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/02/what-a-real-server-should-be/</link>
       <pubDate>Thu, 02 Sep 2010 19:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/02/what-a-real-server-should-be/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/02/what-a-real-server-should-be/</guid>
       <description>&lt;p&gt;So I stumbled on this the other day and I really like this idea.&lt;/p&gt;&#xA;&lt;p&gt;Anyone who remembers the days of Novell NetWare being King of the LANs would likely agree that you don&amp;rsquo;t need a fancy GUI to have a server. Something which is still relevant to UX&amp;rsquo;s today and thankfully Microsoft are starting to take notice. One thing I really like about Microsoft is that they do listen and are not too arrogant to think that only their opinion is the only one that matters.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to query your database relationships</title>
-      <link>http://localhost:1313/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</link>
+      <link>https://tenbulls.co.uk/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</link>
       <pubDate>Sun, 22 Aug 2010 09:26:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</guid>
-      <description>&lt;p&gt;Last year I wrote about how to manage your table constraints in &lt;a href=&#34;http://localhost:1313/posts/2009/07/22/checking-your-constraints-to-check-your-integrity&#34;&gt;Check your constraints to check your integrity&lt;/a&gt; but one thing that is missing from this post is how do you determine what relationships exist between tables in order for you to temporarily disable them. This can be particularly tiresome on relationship heavy schemas.&lt;/p&gt;&#xA;&lt;p&gt;Luckily there are two quite useful stored procedures that you can use to show you them and they are &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms189813.aspx&#34;&gt;sp_pkeys&lt;/a&gt; and &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms175090(v=SQL.105).aspx&#34;&gt;sp_fkeys&lt;/a&gt;. The first stored procedure will display a primary key for a given table and the second can display a list of all tables with a defined foreign key relationship to the specified primary table.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/08/22/its-all-in-a-relationship-finding-your-constraints/</guid>
+      <description>&lt;p&gt;Last year I wrote about how to manage your table constraints in &lt;a href=&#34;https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity&#34;&gt;Check your constraints to check your integrity&lt;/a&gt; but one thing that is missing from this post is how do you determine what relationships exist between tables in order for you to temporarily disable them. This can be particularly tiresome on relationship heavy schemas.&lt;/p&gt;&#xA;&lt;p&gt;Luckily there are two quite useful stored procedures that you can use to show you them and they are &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms189813.aspx&#34;&gt;sp_pkeys&lt;/a&gt; and &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms175090(v=SQL.105).aspx&#34;&gt;sp_fkeys&lt;/a&gt;. The first stored procedure will display a primary key for a given table and the second can display a list of all tables with a defined foreign key relationship to the specified primary table.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to create CD ISO image In Linux</title>
-      <link>http://localhost:1313/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</link>
+      <link>https://tenbulls.co.uk/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</link>
       <pubDate>Tue, 10 Aug 2010 11:21:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</guid>
-      <description>&lt;p&gt;You may recall me mentioning the dd command from a previous post many moons ago in &lt;a href=&#34;http://localhost:1313/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard&#34;&gt;Cloning and Expanding VirtualBox Disks&lt;/a&gt; and saw for yourself how incredibly easy Linux and useful can be at times. Well lets put dd to a similar use -and a common necessity for all of us from time to time, especially in relation to building virtual machines quickly. I am of course talking about creating ISO cd/dvd images from physical media.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</guid>
+      <description>&lt;p&gt;You may recall me mentioning the dd command from a previous post many moons ago in &lt;a href=&#34;https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard&#34;&gt;Cloning and Expanding VirtualBox Disks&lt;/a&gt; and saw for yourself how incredibly easy Linux and useful can be at times. Well lets put dd to a similar use -and a common necessity for all of us from time to time, especially in relation to building virtual machines quickly. I am of course talking about creating ISO cd/dvd images from physical media.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Big Fat Greek Desktop</title>
-      <link>http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop/</link>
+      <link>https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop/</link>
       <pubDate>Tue, 03 Aug 2010 22:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt;&#xA;Although this post may look at first to be about Linux and whilst many of you visiting this post will be either Windows or SQL centric you might think this is not for you. &lt;em&gt;Actually you are exactly the right people to be reading it because I want you to understand that you have options out there open to you&lt;/em&gt;. Your desktop can be a blank piece of paper and you can draw what you want. You are not constrained by software boundaries if you do not want to be. My desktop is all about flexibility, speed and usability. I can do anything I want whether it be Linux, Windows, SQL, Oracle whatever on my beloved desktop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Query Editor save highlighting</title>
-      <link>http://localhost:1313/posts/2010/07/30/greens-are-good-ssms-script-feedback/</link>
+      <link>https://tenbulls.co.uk/posts/2010/07/30/greens-are-good-ssms-script-feedback/</link>
       <pubDate>Fri, 30 Jul 2010 14:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/07/30/greens-are-good-ssms-script-feedback/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/07/30/greens-are-good-ssms-script-feedback/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s the little things in life that please me, and there have been a few things of late I have noticed or directed to which have left that warm fuzzy feeling.&#xA;The latest is a nice little feature that appears to have been present for a very long time. Why I have not noticed (or paid attention) to it so far is beyond me.&lt;/p&gt;&#xA;&lt;p&gt;After writing a script in SSMS if you wish to reuse it, then it is probably a very good idea to save it now. However, before you do, have a look to the side of the script and you will notice a yellowish colour by the side of it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Make your query tabs more readable in SSMS</title>
-      <link>http://localhost:1313/posts/2010/07/28/make-your-tabs-more-readable-in-ssms/</link>
+      <link>https://tenbulls.co.uk/posts/2010/07/28/make-your-tabs-more-readable-in-ssms/</link>
       <pubDate>Wed, 28 Jul 2010 14:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/07/28/make-your-tabs-more-readable-in-ssms/</guid>
-      <description>&lt;p&gt;Just the other day I came across a post by Simon Sabin that highlighted some useful status bar and tab settings that have been introduced in SQL Server 2008.&lt;/p&gt;&#xA;&lt;p&gt;For me this is fantastic, since it removes one of my few pet hates introduced by SSMS.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/pre_tab_change.jpg&#34; alt=&#34;Pre tab change&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;From SSMS, select &lt;em&gt;Tools/ Options&lt;/em&gt; and under the &lt;em&gt;Text Editor&lt;/em&gt; node remove all the connection settings you don&amp;rsquo;t want in the tab.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/07/28/make-your-tabs-more-readable-in-ssms/</guid>
+      <description>&lt;p&gt;Just the other day I came across a post by Simon Sabin that highlighted some useful status bar and tab settings that have been introduced in SQL Server 2008.&lt;/p&gt;&#xA;&lt;p&gt;For me this is fantastic, since it removes one of my few pet hates introduced by SSMS.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/pre_tab_change.jpg&#34; alt=&#34;Pre tab change&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;From SSMS, select &lt;em&gt;Tools/ Options&lt;/em&gt; and under the &lt;em&gt;Text Editor&lt;/em&gt; node remove all the connection settings you don&amp;rsquo;t want in the tab.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using STUBs for object promotions</title>
-      <link>http://localhost:1313/posts/2010/07/19/stub-out-your-bad-practices-when-deploying-object-promotions/</link>
+      <link>https://tenbulls.co.uk/posts/2010/07/19/stub-out-your-bad-practices-when-deploying-object-promotions/</link>
       <pubDate>Mon, 19 Jul 2010 12:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/07/19/stub-out-your-bad-practices-when-deploying-object-promotions/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/07/19/stub-out-your-bad-practices-when-deploying-object-promotions/</guid>
       <description>&lt;p&gt;When a script is deployed in your production environment, how is it deployed? Are the scripts written to account for the object already existing and if so what actions are taken? But what if the object doesn&amp;rsquo;t exist, what then? All too often in these scenarios the usual style of deployment scripts I see being provided to database teams first detect the existence of said object and then drop it (should it exist). This then leaves the way clear for the script to perform its create statement. is there really anything wrong with this approach? Well yes, actually there is.&lt;/p&gt;</description>
     </item>
     <item>
       <title>More Prometric problems</title>
-      <link>http://localhost:1313/posts/2010/07/09/just-cant-get-no-sit-isfaction-70-451/</link>
+      <link>https://tenbulls.co.uk/posts/2010/07/09/just-cant-get-no-sit-isfaction-70-451/</link>
       <pubDate>Fri, 09 Jul 2010 12:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/07/09/just-cant-get-no-sit-isfaction-70-451/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/07/09/just-cant-get-no-sit-isfaction-70-451/</guid>
       <description>&lt;p&gt;What on earth is going on? I sometimes think the world is going mad and that I&amp;rsquo;m the last person alive who is sane. But then, come to think of it, isn&amp;rsquo;t that the first sign of madness?&lt;/p&gt;&#xA;&lt;p&gt;Not all that long ago I had a right fiasco with my SQL 2005 upgrade exam as blogged about previously in &lt;a href=&#34;http://tenbulls.co.uk/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/&#34;&gt;Prometric madness - Computer Says: No&lt;/a&gt;. Well, what I haven&amp;rsquo;t said since then is that a month later, I went straight on to upgrading to my SQL 2008 MCITP. The exam itself went smoothly enough (although I couldn&amp;rsquo;t find my passport in the morning) but once completed, the test centre started having all sorts of problems with the certificate printer and started to talk about turning things off and on again (such as the PC that I sat the test on). After about 20 minutes of them panicking the printer suddenly whirred into action and all was good with the world again and my stress levels dropped back to normal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to set and manage your SQL Server default paths</title>
-      <link>http://localhost:1313/posts/2010/07/08/how-to-set-and-manage-your-sql-server-default-paths/</link>
+      <link>https://tenbulls.co.uk/posts/2010/07/08/how-to-set-and-manage-your-sql-server-default-paths/</link>
       <pubDate>Thu, 08 Jul 2010 23:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/07/08/how-to-set-and-manage-your-sql-server-default-paths/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/07/08/how-to-set-and-manage-your-sql-server-default-paths/</guid>
       <description>&lt;p&gt;Good practice in any SQL installation is to ensure that all builds have commonality. This ensures that administrating more than one server becomes much easier to perform since, as an administrator you should never have any nasty surprises (such as finding the TEMPDB installed on the System partition).&lt;/p&gt;&#xA;&lt;p&gt;One such default that should always be set for every SQL instance installed is the default file paths for the &lt;code&gt;DATA&lt;/code&gt; file (&lt;code&gt;mdf&lt;/code&gt;/&lt;code&gt;ndf&lt;/code&gt;) drive, the &lt;code&gt;LOG&lt;/code&gt; file (&lt;code&gt;ldf&lt;/code&gt;) drive and the &lt;code&gt;BACKUP&lt;/code&gt; file drive. SQL Server will use and default to values that have been specified on installation, but sometimes it is not always convenient, desirable or possible to set these to your final destinations at this point. In fact in my automated build, I am only really interested in the drive in which the system databases will be located. This removes the dependency upon many multiple drives at the time of installation, and post installation reconfiguration can take place when all drive arrays have been made ready.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Develop query tool to return multi-query results</title>
-      <link>http://localhost:1313/posts/2010/05/30/make-your-life-easier-write-an-app-make-rad-work-for-you/</link>
+      <link>https://tenbulls.co.uk/posts/2010/05/30/make-your-life-easier-write-an-app-make-rad-work-for-you/</link>
       <pubDate>Sun, 30 May 2010 16:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/05/30/make-your-life-easier-write-an-app-make-rad-work-for-you/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/05/30/make-your-life-easier-write-an-app-make-rad-work-for-you/</guid>
       <description>&lt;p&gt;Quite often I come across scenarios where you know what you need to do, you know how to do them, but know the way to do it will be very repetitive in SSMS. In these instances the best way to overcome them is to create a few queries and join them up into a little applet.&lt;/p&gt;&#xA;&lt;p&gt;One such example I had recently was that we wanted a way to very quickly check several servers for privileged database and server role membership.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSMS query pane bug in Windows 7</title>
-      <link>http://localhost:1313/posts/2010/05/20/ssms-query-pane-bug-in-windows-7-its-bugging-me/</link>
+      <link>https://tenbulls.co.uk/posts/2010/05/20/ssms-query-pane-bug-in-windows-7-its-bugging-me/</link>
       <pubDate>Thu, 20 May 2010 14:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/05/20/ssms-query-pane-bug-in-windows-7-its-bugging-me/</guid>
-      <description>&lt;p&gt;Are you familiar with this menu?&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/right0.jpg&#34; alt=&#34;Menu&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Are you sure?&lt;/p&gt;&#xA;&lt;p&gt;Do you use it a lot?&lt;/p&gt;&#xA;&lt;p&gt;Yep me too&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Most of you will already know how to get this menu within SSMS, and one such way (the way I always use) is to right click the white space within a Query window. One of the reasons you might wish to do this could be because you are copying text. Well in Windows 7 this does not seem to work any more. I initially noticed the problem when using my spanking new SQL 2008 R2 client installation. After several installations on a couple of platforms it appears that the issue is not specific to SQL 2008 R2 but is actually related to running on Windows 7. The following all display this behaviour :&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/05/20/ssms-query-pane-bug-in-windows-7-its-bugging-me/</guid>
+      <description>&lt;p&gt;Are you familiar with this menu?&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/right0.jpg&#34; alt=&#34;Menu&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Are you sure?&lt;/p&gt;&#xA;&lt;p&gt;Do you use it a lot?&lt;/p&gt;&#xA;&lt;p&gt;Yep me too&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Most of you will already know how to get this menu within SSMS, and one such way (the way I always use) is to right click the white space within a Query window. One of the reasons you might wish to do this could be because you are copying text. Well in Windows 7 this does not seem to work any more. I initially noticed the problem when using my spanking new SQL 2008 R2 client installation. After several installations on a couple of platforms it appears that the issue is not specific to SQL 2008 R2 but is actually related to running on Windows 7. The following all display this behaviour :&lt;/p&gt;</description>
     </item>
     <item>
       <title>First view on installing Windows 7</title>
-      <link>http://localhost:1313/posts/2010/05/13/windows-7-install-sit-back-and-watch/</link>
+      <link>https://tenbulls.co.uk/posts/2010/05/13/windows-7-install-sit-back-and-watch/</link>
       <pubDate>Thu, 13 May 2010 20:17:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/05/13/windows-7-install-sit-back-and-watch/</guid>
-      <description>&lt;p&gt;Well I&amp;rsquo;m not really going to go into any detail right now about my experiences so far with Windows 7, but I just wanted to show just what the installer looks like. I&amp;rsquo;ve heard all sorts of things about it being quicker and less painful in Windows 7 and I guess if I am being honest that might be largely true.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/windows001.jpg&#34; alt=&#34;Loading&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;One thing for sure is that the interface does look nice and polished. However first booting up from your media you are presented with this unappealing boot sequence. Shame they didn&amp;rsquo;t give a nice custard yellow colour to the bar, it would have looked very much like the NT 4 loader.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/05/13/windows-7-install-sit-back-and-watch/</guid>
+      <description>&lt;p&gt;Well I&amp;rsquo;m not really going to go into any detail right now about my experiences so far with Windows 7, but I just wanted to show just what the installer looks like. I&amp;rsquo;ve heard all sorts of things about it being quicker and less painful in Windows 7 and I guess if I am being honest that might be largely true.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/windows001.jpg&#34; alt=&#34;Loading&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;One thing for sure is that the interface does look nice and polished. However first booting up from your media you are presented with this unappealing boot sequence. Shame they didn&amp;rsquo;t give a nice custard yellow colour to the bar, it would have looked very much like the NT 4 loader.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing the Citrix client on Linux</title>
-      <link>http://localhost:1313/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</link>
+      <link>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</link>
       <pubDate>Wed, 12 May 2010 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</guid>
-      <description>&lt;p&gt;The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&amp;rsquo;s website download the tarball of the Citrix Receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/citrix1.jpg&#34; alt=&#34;Citrix clients&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Extract the tarball…&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/citrix2.jpg&#34; alt=&#34;Extract&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;…and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/citrix3.jpg&#34; alt=&#34;Run setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message &lt;em&gt;&amp;ldquo;You have not chosen to trust &amp;ldquo;&amp;rdquo;, the issuer of the server&amp;rsquo;s security certificate (SSL error 61).&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</guid>
+      <description>&lt;p&gt;The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&amp;rsquo;s website download the tarball of the Citrix Receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix1.jpg&#34; alt=&#34;Citrix clients&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Extract the tarball…&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix2.jpg&#34; alt=&#34;Extract&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;…and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix3.jpg&#34; alt=&#34;Run setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message &lt;em&gt;&amp;ldquo;You have not chosen to trust &amp;ldquo;&amp;rdquo;, the issuer of the server&amp;rsquo;s security certificate (SSL error 61).&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Webcam troubleshooting on Linux</title>
-      <link>http://localhost:1313/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</link>
+      <link>https://tenbulls.co.uk/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</link>
       <pubDate>Mon, 10 May 2010 08:47:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</guid>
       <description>&lt;p&gt;The other day, due to a long distance friendship, I really thought it was time to try and get Skype up and running on one of my Linux machines (currently running the Helena release of Mint).&lt;/p&gt;&#xA;&lt;p&gt;Upon plugging in the USB cam (a nice little Logitech Quickcam Communicate STX), all initially looked promising with a little blue light briefly coming on.&lt;/p&gt;&#xA;&lt;p&gt;Downloading and installation of Skype occurred without incident, and I then proceeded to set-up my account. Unfortunately when I can to set-up my video device, even though Skype looked like it could see one, clicking the test button just had no effect and the screen was black.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to load CHM files from external media in Windows</title>
-      <link>http://localhost:1313/posts/2010/04/24/loading-chm-files-from-external-media/</link>
+      <link>https://tenbulls.co.uk/posts/2010/04/24/loading-chm-files-from-external-media/</link>
       <pubDate>Sat, 24 Apr 2010 22:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/04/24/loading-chm-files-from-external-media/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/04/24/loading-chm-files-from-external-media/</guid>
       <description>&lt;p&gt;Another very quick but useful tip that I had to do several years back (and most recently a few days ago) was to have to tell Windows to ignore the usual security constraints and allow other data sources. Otherwise when you attempt to load e-books from these data sources, otherwise you will be blocked.&lt;/p&gt;&#xA;&lt;p&gt;To work around this you simply need to add the following registry file to your registry. Note that in my case the J: drive is a mapped network drive.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometric madness - Computer Says: No</title>
-      <link>http://localhost:1313/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</link>
+      <link>https://tenbulls.co.uk/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</link>
       <pubDate>Wed, 21 Apr 2010 21:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/04/21/prometric-madness-nightmare-on-examination-street/</guid>
       <description>&lt;p&gt;Today I spent a very entertaining 4 hours or so, finally taking (after 4 years of getting around to it) the SQL 2005 upgrade exam and had a bit of a &amp;lsquo;mare. My first problem with this exam was that it started off with 7 or 8 mini-exams and these were essentially very large case studies that each had 5-8 questions attached. Now my first problem was that I must have spent the first 8 minutes of my allocated 15 for this one case study trying to figure out where the first question was! The number was displaying 1/8, however clicking the &lt;em&gt;&amp;ldquo;Question&amp;rdquo;&lt;/em&gt; button simply didn&amp;rsquo;t change anything and I was left with the explanation of how to do these mini exams. Finally after coming across some text somewhere I realised that question 1 was in fact not a question but an introduction!!!! Was it beyond the wit of man to not start the question numbering post introduction?&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to search Active Directory membership</title>
-      <link>http://localhost:1313/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough/</link>
+      <link>https://tenbulls.co.uk/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough/</link>
       <pubDate>Tue, 20 Apr 2010 13:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/04/20/searching-active-directory-membership-when-a-gui-just-aint-enough/</guid>
       <description>&lt;p&gt;Bit of a quickie here but a goody. Nothing really new either but since I&amp;rsquo;ve just spent the last 10 minutes piecing the command together (the last time around 6 years ago) I might as well make a record of it.&lt;/p&gt;&#xA;&lt;p&gt;So the problem is that you have a very long list of users and groups within an Active Directory group and screen shots don&amp;rsquo;t cut the mustard any more. The solution is to use the dsquery command line tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Good practices for manual SQL script promotion</title>
-      <link>http://localhost:1313/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</link>
+      <link>https://tenbulls.co.uk/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</link>
       <pubDate>Thu, 25 Feb 2010 14:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/02/25/promoting-tsql-scripts-keeping-control-of-changes/</guid>
       <description>&lt;p&gt;An often overlooked part of promoting DML scripts is knowing what the intention is going to be before one is run. For instance if you work in an environment with a high throughput of DML script promotions then there is a good chance that those scripts will be ran via change control and then the results fed back. However what happens when the result counts end up being incorrect (i.e different to what was anticipated)? A rollback occurs and we are then talking about possible availability issues.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disabling and Enabling Oracle Scheduled Jobs in sqlplus</title>
-      <link>http://localhost:1313/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</link>
+      <link>https://tenbulls.co.uk/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</link>
       <pubDate>Tue, 19 Jan 2010 14:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</guid>
-      <description>&lt;p&gt;The first thing you need to know is what jobs are scheduled and enabled. To do this we simply query the &lt;code&gt;dba_scheduler_jobs&lt;/code&gt; view as follows:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;owner&lt;/span&gt;, job_name, enabled &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; dba_scheduler_jobs;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/configschedjobs.webp&#34; alt=&#34;Query scheduled jobs&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Now we know what jobs are present and enabled/ disabled we can use the &lt;a href=&#34;https://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_sched.htm&#34;&gt;DBMS_SCHEDULER&lt;/a&gt; to change their status. The &lt;code&gt;DBMS_SCHEDULER&lt;/code&gt; is a package which provides a collection of scheduling functions and procedures and in our case since we wish to either disable or enable a job, we simply call its Disable or Enable procedure as follows:&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/01/19/disabling-and-enabling-oracle-scheduled-jobs-in-sqlplus/</guid>
+      <description>&lt;p&gt;The first thing you need to know is what jobs are scheduled and enabled. To do this we simply query the &lt;code&gt;dba_scheduler_jobs&lt;/code&gt; view as follows:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;owner&lt;/span&gt;, job_name, enabled &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; dba_scheduler_jobs;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/configschedjobs.webp&#34; alt=&#34;Query scheduled jobs&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Now we know what jobs are present and enabled/ disabled we can use the &lt;a href=&#34;https://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_sched.htm&#34;&gt;DBMS_SCHEDULER&lt;/a&gt; to change their status. The &lt;code&gt;DBMS_SCHEDULER&lt;/code&gt; is a package which provides a collection of scheduling functions and procedures and in our case since we wish to either disable or enable a job, we simply call its Disable or Enable procedure as follows:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Restoring Mozilla Thunderbird email</title>
-      <link>http://localhost:1313/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</link>
+      <link>https://tenbulls.co.uk/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</link>
       <pubDate>Sat, 02 Jan 2010 01:29:32 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/01/02/restoring-mozilla-thunderbird-email-changing-your-outlook/</guid>
       <description>&lt;p&gt;Thunderbird is quiet a nice little app, just about all you want from a mail client and no more. The no more part is good because it keeps it fast. MS Outlook, Microsoft&amp;rsquo;s &amp;ldquo;killer app&amp;rdquo; is a very decent client too and I for one am currently tied into it due to years of reliance, but that I sense is changing due to my more flexible attitude of late. The main problem with Outlook as with any of the MS products is the sense that you are firstly &amp;ldquo;tied in&amp;rdquo; and secondly that over time they start to look and behave like bloat-ware. This is not necessarily Microsoft&amp;rsquo;s fault, but probably down to the age of the products and endless drive to add new commercial features.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Permanently changing xterm size defaults</title>
-      <link>http://localhost:1313/posts/2009/12/29/changing-xterm-size-defaults-for-good/</link>
+      <link>https://tenbulls.co.uk/posts/2009/12/29/changing-xterm-size-defaults-for-good/</link>
       <pubDate>Tue, 29 Dec 2009 15:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/12/29/changing-xterm-size-defaults-for-good/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a good tip from a fellow blogger which for all those people (like me) who have lots of tweeks and customisations here and there might just get fed up of constantly resizing their xterm settings. Works an absolute treat.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&#34;&gt;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2009/xtermdefaults.jpg&#34; alt=&#34;change xterm defaults&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its just a shame that it is currently not possible to do this through the xterm profile settings.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2009/12/29/changing-xterm-size-defaults-for-good/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a good tip from a fellow blogger which for all those people (like me) who have lots of tweeks and customisations here and there might just get fed up of constantly resizing their xterm settings. Works an absolute treat.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&#34;&gt;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2009/xtermdefaults.jpg&#34; alt=&#34;change xterm defaults&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its just a shame that it is currently not possible to do this through the xterm profile settings.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rejoining split files in Windows and Linux</title>
-      <link>http://localhost:1313/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</link>
+      <link>https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</link>
       <pubDate>Mon, 21 Dec 2009 14:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</guid>
       <description>&lt;p&gt;If you frequently download large files in many parts then you are probably not a stranger to HJSplit. This application can be used to connect these parts back together and is quite frankly completely unnecessary since your operating system likely already has a way! So how do you do it?&lt;/p&gt;&#xA;&lt;p&gt;Lets say you have just downloaded the following files:&lt;/p&gt;&#xA;&lt;p&gt;big_file_part.iso.001&#xA;big_file_part.iso.002&#xA;big_file_part.iso.003&lt;/p&gt;&#xA;&lt;p&gt;To join these into one big file:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;In Windows&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A quick ramble about Linux Mint 8</title>
-      <link>http://localhost:1313/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</link>
+      <link>https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</link>
       <pubDate>Tue, 15 Dec 2009 22:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</guid>
       <description>&lt;p&gt;Well, I&amp;rsquo;m just typing this from my new (extra) desktop setup at home installed to Linux Mint 8.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve got to say that it just keeps getting better. Unlike my recent disappointment with the latest Windows offerings (excepting Windows 7 because it is too early for me to fairly judge), I have been very pleased with the latest Mint offering. Not only does it retain it&amp;rsquo;s familiar interface (which I have to say is why linux may imo one day trump Windows), but it appears crisper, more user friendly and accessible than ever.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Remember your database files when dropping OFFLINE databases</title>
-      <link>http://localhost:1313/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</link>
+      <link>https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</link>
       <pubDate>Sun, 13 Dec 2009 23:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/</guid>
       <description>&lt;p&gt;If I asked you the question, &amp;ldquo;what happens to the physical data files if you drop an offline database?&amp;rdquo; would would probably have to have a bit of a think about it.&#xA;There are really only three potential outcomes here:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The DROP fails&lt;/li&gt;&#xA;&lt;li&gt;The DROP succeeds and removes the data files&lt;/li&gt;&#xA;&lt;li&gt;The DROP succeeds and leaves the data files&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Now if you think about the nature of the offline database the answer becomes a little more obvious. The &lt;code&gt;OFFLINE&lt;/code&gt; database is simply meta data in the system catalog, there are no associations to files apart from that which exists within this meta. Therefore on this basis, if you remove an offline database, you are essentially removing the meta data. So on this basis you can deduce that the physical data files would remain – and this is exactly what happens (option 3).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Some observations to SQL 2008 clustering installation</title>
-      <link>http://localhost:1313/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</link>
+      <link>https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</link>
       <pubDate>Thu, 19 Nov 2009 13:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/11/19/observations-with-sql-2008-clustering-simplifying-the-installer/</guid>
       <description>&lt;p&gt;Well these last few days I&amp;rsquo;ve been really in the thick of it trying to sort out clustering on two new UAT servers running Windows 2008 and get SQL 2008 setup in an active/ active configuration. It&amp;rsquo;s been a real struggle for several reasons. The first is that I was only given a couple of days to learn, implement and configure due to significant overruns from the Technical Support team and the second is due to the fact of how much has changed in this latest release of clustering.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cloning and Expanding VirtualBox disks in Linux</title>
-      <link>http://localhost:1313/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</link>
+      <link>https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</link>
       <pubDate>Mon, 09 Nov 2009 13:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</guid>
       <description>&lt;p&gt;You always know when someone is very knowledgeable about a subject by the way in which they answer a question. A simple question is always answered with a simple solution, and this is what happened to me recently when I wanted to expand or migrate a virtualbox virtual disk attached to a real physical disk partition so that I could double my capacity.&lt;/p&gt;&#xA;&lt;p&gt;The problem was that I had built a virtual machine with a 16GB disk and realised pretty quickly that it was not going to be enough, so I posed a question to the Linux gurus &amp;ldquo;how do I clone a disk in Linux?&amp;rdquo;. Sure enough the reply came &amp;ldquo;&lt;code&gt;dd if=source of=destination bb=512&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQL 2005 Performance troubleshooting</title>
-      <link>http://localhost:1313/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</link>
+      <link>https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</link>
       <pubDate>Mon, 02 Nov 2009 23:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/11/02/sql-2005-performance-troubleshooting-article-quite-useful-really/</guid>
       <description>&lt;p&gt;This is just a quick post pointing to what appears to be a really useful technet article on &lt;a href=&#34;http://technet.microsoft.com/en-us/library/cc966540.aspx&#34;&gt;Troubleshooting Performance Problems in SQL Server 2005&lt;/a&gt; with some custom scripts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to connect to SMB targets in Linux</title>
-      <link>http://localhost:1313/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</link>
+      <link>https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</link>
       <pubDate>Tue, 13 Oct 2009 21:32:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/10/13/mounting-unc-paths-on-linux-dont-forget-your-smb/</guid>
       <description>&lt;p&gt;After much scrabbling around for days I have finally found it.&lt;/p&gt;&#xA;&lt;p&gt;Let me explain. After a recent rebuild of my Linux Mint laptop I could not for the life of me remember how to connect back to a UNC. Although I obviously had the command syntax:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo mount -t cifs //hostname/share /media/unc -o user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;username&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It just would not work and kept throwing up the following error:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mount: cannot mount block device&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All I remembered doing from previously getting it to work was that (I thought) I needed to apt-get a package. Thankfully after much trawling around and another poster, I came across the package and hey presto all is working again:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Auto generate database GRANTs</title>
-      <link>http://localhost:1313/posts/2009/09/16/generating-grant-statements-because-its-quicker/</link>
+      <link>https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/</link>
       <pubDate>Wed, 16 Sep 2009 12:20:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/09/16/generating-grant-statements-because-its-quicker/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/09/16/generating-grant-statements-because-its-quicker/</guid>
       <description>&lt;p&gt;Just a very quick post here, but sometimes when you wish to grant execute right for multiple stored procedures to a particular database user it is easier to simply run the following script in the respective database in order to generate this assignment script. This is far easier than using the 2005 and 2008 GUI interface (and even 2000/ 7) especially if there are a lot of procedures.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;USE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;GRANT EXEC ON .&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; name &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; TO [user]&amp;#39;&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; sysobjects &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; xtype &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;P&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AND&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update (18th January 2026):&lt;/strong&gt; Upon migrating posts to my new site I notice that this script appears incomplete. Todo: Will seek to update it with a working script when I get the chance (despite its age).&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Check your constraints to check your integrity</title>
-      <link>http://localhost:1313/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</link>
+      <link>https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</link>
       <pubDate>Wed, 22 Jul 2009 11:33:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/07/22/checking-your-constraints-to-check-your-integrity/</guid>
       <description>&lt;p&gt;Something that you probably don&amp;rsquo;t need to do every day is to change the data in the foreign key field. Generally, depending upon how your application is designed these would be relatively irrelevant and are simply just a mechanism to constrain the data on the key and logically join it together. In a situation where the primary and foreign key data actually describes a physical entity, it is feasible that when the physical entity changes name it makes perfect sense that the foreign and primary key data ought to change to reflect that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Started using Linux Mint</title>
-      <link>http://localhost:1313/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</link>
+      <link>https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</link>
       <pubDate>Sun, 19 Jul 2009 21:48:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</guid>
       <description>&lt;p&gt;For a very long time now (over 10 years) I&amp;rsquo;ve been trying very hard to &amp;ldquo;get into&amp;rdquo; Linux and there has always been a major obstacle hit along the way to make me put the OS back on the shelf for another day. Over this last year I have been seriously looking into a few distributions and I am very impressed. Whilst everything is not perfect, I have been very surprised how polished everything is begining to look and if I was Microsoft I would be really starting to look over my shoulder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to perform an emergency database restore when blocked by corrupt database</title>
-      <link>http://localhost:1313/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</link>
+      <link>https://tenbulls.co.uk/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</link>
       <pubDate>Sun, 19 Jul 2009 12:18:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/07/22/recovering-suspect-databases-but-what-if-you-cant-remove-the-old-one/</guid>
       <description>&lt;p&gt;The other day a fellow dba was having a problem with removing a corrupt database from a SQL Server and was failing to remember that the physical architecture of SQL Server is actually quite simple. Every time he tried to drop the database or to fix the database allowing for data loss or even take the database offline, the server would complain that the database was in single user mode (even though it wasn&amp;rsquo;t). Anything he tried on this database was complained about, and he was at a loss on how to remove it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Issues when moving your SQL data and log files</title>
-      <link>http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/</link>
+      <link>https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/</link>
       <pubDate>Tue, 09 Jun 2009 20:53:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/</guid>
-      <description>&lt;p&gt;You might recall that I recently touched upon how to go about moving your &lt;a href=&#34;http://localhost:1313/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach&#34;&gt;SQL data and log files correctly&lt;/a&gt;. In this post I will quickly walk through one common scenario.&lt;/p&gt;&#xA;&lt;p&gt;Ok so your in a hurry and you&amp;rsquo;ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/</guid>
+      <description>&lt;p&gt;You might recall that I recently touched upon how to go about moving your &lt;a href=&#34;https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach&#34;&gt;SQL data and log files correctly&lt;/a&gt;. In this post I will quickly walk through one common scenario.&lt;/p&gt;&#xA;&lt;p&gt;Ok so your in a hurry and you&amp;rsquo;ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Name resolution for SQL Server instances</title>
-      <link>http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</link>
+      <link>https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</link>
       <pubDate>Tue, 09 Jun 2009 02:10:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/</guid>
       <description>&lt;p&gt;SQL Server instances are great for allowing multiple instances on a single windows host, but unlike with Oracle instances this does cause a very big headache when configuring applications that consume these servers, instances and its databases. In the Oracle world there are many different mechanisms for name resolution and one of the most common is the use of the &lt;code&gt;TNSNAMES&lt;/code&gt; file which effectively maps the database (think SQL instance) to the host. The Oracle database name is a unique identifier and does not have an &amp;ldquo;instance&amp;rdquo; postfix name like SQL server, so this lends itself very easily to application/ database name separation. In addition the Oracle instance is not tied to a particular hostname and therefore can be moved onto another physical host with very little reconfiguration required in order for applications to communicate to this new host location. To be more specific, when using &lt;code&gt;TNSNAMES&lt;/code&gt; resolution, all that would be necessary from the application perspective to reconfigure them to reflect a new database host would be to edit this file on all the application servers ensuring that this hostname is changed to reflect its new name for this specific database.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Preserve backup chain with COPY ONLY backups</title>
-      <link>http://localhost:1313/posts/2009/06/09/copy-only-backups-another-great-addition/</link>
+      <link>https://tenbulls.co.uk/posts/2009/06/09/copy-only-backups-another-great-addition/</link>
       <pubDate>Tue, 09 Jun 2009 02:09:41 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/06/09/copy-only-backups-another-great-addition/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/06/09/copy-only-backups-another-great-addition/</guid>
       <description>&lt;p&gt;A welcome addition to SQL 2005 and above is the inclusion of the &lt;code&gt;COPY_ONLY&lt;/code&gt; clause to the BACKUP statement.&lt;/p&gt;&#xA;&lt;p&gt;This overcomes the long time problem of breaking the backup chain for your automated backup jobs when taking adhoc backups. For instance, imagine that another dba has taken a full backup in preparation for a change request and then later that day an incident occurs (such as drive failure) which requires a point in time recovery of the database and its logs. Unfortunately your colleague has not informed anyone about their full backup and has gone home for the evening. You will be left in a situation where you can successfully restore your scheduled backups, a differential and possibly some transaction logs but only up to the point before the last full was taken. In order to recover the database properly you need to restore that last full and any subsequent logs, but unfortunately you cannot locate this last full backup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recursive killing of SPIDs in a database for admin operations</title>
-      <link>http://localhost:1313/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</link>
+      <link>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</link>
       <pubDate>Wed, 27 May 2009 02:11:18 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/05/27/simplifying-killing-spids-because-you-really-ought-to/</guid>
       <description>&lt;p&gt;One problem that I have found particulary annoying of late when performing any database operation that requires connections to it to be disconnected, such as setting it offline or a restoring over the top of itself is getting rid of these connections. Obviously this can be achieved by listing the current spids connected to the database and performing a kill for each spid. This can be quite laborious and obvious does not address any spids coming live whilst you are busy killing the existing ones, so you can end up going around in circles.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Login failure user is not associated with a trusted SQL Server connection</title>
-      <link>http://localhost:1313/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</link>
+      <link>https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</link>
       <pubDate>Tue, 31 Mar 2009 02:10:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</guid>
-      <description>&lt;p&gt;Have you ever come across the following login failure within the SQL Server error logs? &amp;ldquo;Login failed for user &amp;ldquo;. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2009/untrusted.jpg&#34; alt=&#34;Login failed for user&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/</guid>
+      <description>&lt;p&gt;Have you ever come across the following login failure within the SQL Server error logs? &amp;ldquo;Login failed for user &amp;ldquo;. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2009/untrusted.jpg&#34; alt=&#34;Login failed for user&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Auto generate RESTORE scripts from a live database</title>
-      <link>http://localhost:1313/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</link>
+      <link>https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</link>
       <pubDate>Thu, 19 Mar 2009 02:13:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/03/19/auto-generating-statements-every-dba-should-try-one/</guid>
       <description>&lt;p&gt;Have you ever performed a scripted restore or some of similar operation and then got entirely frustrated at the laborious and error prone nature of this exercise especially when the database consists of many datafiles and transaction log files?&lt;/p&gt;&#xA;&lt;p&gt;Of course the SQL Server 2005 GUI is very good at making the restore process much easier but it&amp;rsquo;s biggest failing is that it doesn&amp;rsquo;t preserve filenames (especially when the restored database name is changed). This is a very big problem when you have a large number of data files and causes a big headache.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to move your SQL Data and Log files correctly!</title>
-      <link>http://localhost:1313/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</link>
+      <link>https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</link>
       <pubDate>Thu, 05 Mar 2009 02:13:46 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach/</guid>
       <description>&lt;p&gt;Recently I came across the &lt;code&gt;ALTER FILE&lt;/code&gt; part of the &lt;code&gt;ALTER DATABASE&lt;/code&gt; command and started thinking about its use when moving physical datafiles.&lt;/p&gt;&#xA;&lt;p&gt;I must admit that this particular part of the &lt;code&gt;ALTER DATABASE&lt;/code&gt; command has largely gone unused. Whilst the &lt;code&gt;REMOVE FILE&lt;/code&gt; part is infrequently used and the &lt;code&gt;ADD FILE&lt;/code&gt; part is possibly more so, the intuitive nature of the SQL 2005 and above GUI (and even SQL 7 and 2000 to some extent) has meant that resorting to various statements is largely unnecessary. In fact, the only times that I can really recall having resorted to the &lt;code&gt;MODIFY&lt;/code&gt; operator is when I have been renaming logical file names.&lt;/p&gt;</description>
     </item>
   </channel>
