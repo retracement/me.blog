@@ -3,7 +3,7 @@ date = '2011-02-25T16:34:00+01:00'
 draft = false
 title = 'SQLRally is live!'
 categories = ['Personal Development']
-tags = ['SQLRally']
+tags = ['SQLRally','Public Speaking']
 +++
 
 

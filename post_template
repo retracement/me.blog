@@ -1,5 +1,5 @@
 +++
-date = '2011-05-xxThh:mm:00+01:00'
+date = '2011-08-xxThh:mm:00+01:00'
 draft = true
 title = '<title>'
 categories = ['Personal Development','Technology']
@@ -34,3 +34,4 @@ Replace folling char
 
  :- --> :
 :- --> :
+… --> ...

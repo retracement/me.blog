@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Certification on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/certification/</link>
+    <link>http://localhost:1313/tags/certification/</link>
     <description>Recent content in Certification on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Sat, 01 Jan 2011 23:59:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/certification/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/certification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2010 in reflection</title>
-      <link>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</link>
+      <link>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</link>
       <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</guid>
+      <guid>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</guid>
       <description>&lt;p&gt;Firstly let me wish you all a very happy New Year and secondly a big thank you to all of you who have been dropping by my blog and I sincerely hope you continue to do so. I&amp;rsquo;ve been seeing at least a 10% month on month growth in traffic since the start of the year and its the prospect that I might be producing something (however remote) of interest to someone makes my efforts even more rewarding. I would also like to pay my respects to all those other Bloggers in the Blogosphere who provide great content for me to consume – more on this in the next few days. Also lets not forget the Tweeps, and if you do both then a huge big-up to you!&lt;/p&gt;</description>
     </item>
   </channel>

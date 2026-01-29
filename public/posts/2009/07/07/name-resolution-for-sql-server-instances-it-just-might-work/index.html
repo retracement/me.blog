@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
-<meta property="og:url" content="https://tenbulls.co.uk/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2009/07/07/name-resolution-for-sql-server-instances-it-just-might-work/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="Name resolution for SQL Server instances">
   <meta property="og:description" content="SQL Server instances are great for allowing multiple instances on a single windows host, but unlike with Oracle instances this does cause a very big headache when configuring applications that consume these servers, instances and its databases. In the Oracle world there are many different mechanisms for name resolution and one of the most common is the use of the TNSNAMES file which effectively maps the database (think SQL instance) to the host. The Oracle database name is a unique identifier and does not have an “instance” postfix name like SQL server, so this lends itself very easily to application/ database name separation. In addition the Oracle instance is not tied to a particular hostname and therefore can be moved onto another physical host with very little reconfiguration required in order for applications to communicate to this new host location. To be more specific, when using TNSNAMES resolution, all that would be necessary from the application perspective to reconfigure them to reflect a new database host would be to edit this file on all the application servers ensuring that this hostname is changed to reflect its new name for this specific database.">
@@ -18,10 +18,10 @@
 
 <title>tenbulls blog | Name resolution for SQL Server instances</title>
 
-      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
 
-      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+      <script src="/js/main.js"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -112,7 +112,7 @@
       <div class="row">
     <div class="col-md">
         
-        <a href="https://tenbulls.co.uk/posts/2009/06/09/copy-only-backups-another-great-addition/">
+        <a href="http://localhost:1313/posts/2009/06/09/copy-only-backups-another-great-addition/">
             <span>previous: </span>
             <span>Preserve backup chain with COPY ONLY backups</span>
         </a>
@@ -120,7 +120,7 @@
     </div>
     <div class="col-md text-md-end">
         
-        <a href="https://tenbulls.co.uk/posts/2009/07/13/more-moving-files-careful-when-you-point/">
+        <a href="http://localhost:1313/posts/2009/07/13/more-moving-files-careful-when-you-point/">
             <span>next: </span>
             <span>Issues when moving your SQL data and log files</span>
         </a>

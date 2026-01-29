@@ -3,8 +3,7 @@ date = '2011-01-27T10:41:00+01:00'
 draft = false
 title = 'My submitted SQLRally sessions'
 categories = ['Personal Development']
-tags =['SQLRally']
-
+tags =['SQLRally','Public Speaking']
 +++
 
 ![SQLRally logo](/images/2011/sqlrally1.png)

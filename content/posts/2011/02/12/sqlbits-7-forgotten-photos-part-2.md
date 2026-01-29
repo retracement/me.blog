@@ -3,7 +3,7 @@ date = '2011-02-12T19:48:00+01:00'
 draft = false
 title = 'SQLBits 7 the forgotten photos part 2'
 categories = ['Personal Development']
-tags = ['SQLBits']
+tags = ['SQLBits','Public Speaking']
 +++
 
 Well [SQLBits](https://sqlbits.com/default.aspx) 8 voting has now ended so perhaps it is a good time to publish the second and final post of the series. I wonder if any of my sessions will get selected this time? One of my submitted sessions is the same one that has made it to the reserve list for the first ever [SQLRally](https://www.sqlpass.org/sqlrally/2011/) in Orlando and although slightly disappointed at just making the reserve list I was very proud that out of all the reserve sessions I came joint top (I took 38% of the vote in my category). The winner of that category is the well known Edwin Sarmiento ([blog](https://bassplayerdoc.blogspot.com/)|[twitter](https://twitter.com/bassplayerdoc)) and he is an absolutely smashing chap so I'm nothing but pleased for him.

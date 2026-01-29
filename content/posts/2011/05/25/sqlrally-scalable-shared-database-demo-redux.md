@@ -3,7 +3,7 @@ date = '2011-05-25T23:24:00+01:00'
 draft = false
 title = 'Using SQL Server Scalable Shared Database'
 categories = ['Technology']
-tags = ['SQL','SQLRally','Scalability']
+tags = ['SQL','SQLRally','Scalability','Public Speaking']
 +++
 
 ![Presentation slide](/images/2011/orders.jpg)

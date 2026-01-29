@@ -3,7 +3,7 @@ date = '2011-01-16T20:06:00+01:00'
 draft = false
 title = 'Goodbye SQL 7'
 categories = ['Personal Development']
-tags =['PASS Summit','Learning']
+tags =['PASS Summit','Learning','Public Speaking']
 +++
 
 I cannot let the week go by without a special goodbye to an old friend. If you hadn't already heard, [SQL 7.0 support officially ended on the 11th January](https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0) of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.

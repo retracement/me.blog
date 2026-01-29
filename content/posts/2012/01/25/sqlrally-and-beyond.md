@@ -3,7 +3,7 @@ date = '2012-01-25T02:06:00+01:00'
 draft = false
 title = 'SQLRally and Beyond'
 categories = ['Personal Development']
-tags = ['SQLRally']
+tags = ['SQLRally','Public Speaking']
 +++
 I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.
 

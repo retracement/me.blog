@@ -3,7 +3,7 @@ date = '2010-09-19T18:16:00+01:00'
 draft = false
 title = 'SQLBits Speaker Training Day'
 categories = ['Personal Development']
-tags = ['SQLBits']
+tags = ['SQLBits','Public Speaking']
 +++
 
 A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn't). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn't been to that building for around 3 years I'm not sure how she could have done …still it's always nice to be "recognized" 🙂

@@ -3,7 +3,7 @@ date = '2010-12-01T15:05:00+01:00'
 draft = false
 title = 'SQLBits 7 the forgotten photos part 1'
 categories = ['Personal Development']
-tags = ['SQLBits']
+tags = ['SQLBits','Public Speaking']
 +++
 
 Several weeks back I attached my Blackberry to my PC to clear down all the photos in preparation for SQL Pass and I stumbled across these grainy old photos taken during those rainy few days in York. It all seems like a lifetime ago now and much has happened to me since [SQL Bits](https://sqlbits.com) 7, but this was my story of an interesting and enjoyable but all too brief few days.

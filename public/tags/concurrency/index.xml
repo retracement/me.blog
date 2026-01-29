@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concurrency on tenbulls blog</title>
+    <link>http://localhost:1313/tags/concurrency/</link>
+    <description>Recent content in Concurrency on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Wed, 14 Sep 2011 12:31:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When should you use NOLOCK?</title>
+      <link>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</link>
+      <pubDate>Wed, 14 Sep 2011 12:31:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,9 +1,9 @@
 +++
-categories = ['Personal Development']
-tags = ['SQLBits','PASS Summit','Certification']
 date = '2011-01-01T23:59:00+01:00'
 draft = false
 title = '2010 in reflection'
+categories = ['Personal Development']
+tags = ['SQLBits','PASS Summit','Certification','Public Speaking']
 +++
 
 Firstly let me wish you all a very happy New Year and secondly a big thank you to all of you who have been dropping by my blog and I sincerely hope you continue to do so. I've been seeing at least a 10% month on month growth in traffic since the start of the year and its the prospect that I might be producing something (however remote) of interest to someone makes my efforts even more rewarding. I would also like to pay my respects to all those other Bloggers in the Blogosphere who provide great content for me to consume – more on this in the next few days. Also lets not forget the Tweeps, and if you do both then a huge big-up to you!
