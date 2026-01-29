@@ -10,10 +10,73 @@
     <lastBuildDate>Wed, 25 Jan 2012 02:06:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Public Speaking</title>
+      <link>https://tenbulls.co.uk/tags/public-speaking/</link>
+      <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/public-speaking/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>SQLRally</title>
       <link>https://tenbulls.co.uk/tags/sqlrally/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/sqlrally/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VirtualBox</title>
+      <link>https://tenbulls.co.uk/tags/virtualbox/</link>
+      <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/virtualbox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://tenbulls.co.uk/tags/windows/</link>
+      <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>https://tenbulls.co.uk/tags/books/</link>
+      <pubDate>Fri, 19 Aug 2011 14:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/books/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://tenbulls.co.uk/tags/sql/</link>
+      <pubDate>Fri, 19 Aug 2011 14:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLBits</title>
+      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
+      <pubDate>Mon, 01 Aug 2011 13:42:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL Solstice</title>
+      <link>https://tenbulls.co.uk/tags/sql-solstice/</link>
+      <pubDate>Sun, 31 Jul 2011 20:36:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql-solstice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Corruption</title>
+      <link>https://tenbulls.co.uk/tags/corruption/</link>
+      <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/corruption/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TSQL Tuesday</title>
+      <link>https://tenbulls.co.uk/tags/tsql-tuesday/</link>
+      <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/tsql-tuesday/</guid>
       <description></description>
     </item>
     <item>
@@ -28,13 +91,6 @@
       <link>https://tenbulls.co.uk/tags/utilities/</link>
       <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/utilities/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Windows</title>
-      <link>https://tenbulls.co.uk/tags/windows/</link>
-      <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/windows/</guid>
       <description></description>
     </item>
     <item>
@@ -56,27 +112,6 @@
       <link>https://tenbulls.co.uk/tags/scalability/</link>
       <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/scalability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQL</title>
-      <link>https://tenbulls.co.uk/tags/sql/</link>
-      <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Public Speaking</title>
-      <link>https://tenbulls.co.uk/tags/public-speaking/</link>
-      <pubDate>Wed, 18 May 2011 18:43:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/public-speaking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQLBits</title>
-      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
-      <pubDate>Wed, 20 Apr 2011 15:42:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
       <description></description>
     </item>
     <item>
@@ -112,20 +147,6 @@
       <link>https://tenbulls.co.uk/tags/sqlhelp/</link>
       <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/sqlhelp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>VirtualBox</title>
-      <link>https://tenbulls.co.uk/tags/virtualbox/</link>
-      <pubDate>Mon, 21 Mar 2011 13:23:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/virtualbox/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TSQL Tuesday</title>
-      <link>https://tenbulls.co.uk/tags/tsql-tuesday/</link>
-      <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/tsql-tuesday/</guid>
       <description></description>
     </item>
     <item>

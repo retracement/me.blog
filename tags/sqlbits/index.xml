@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 20 Apr 2011 15:42:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 01 Aug 2011 13:42:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sqlbits/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Standing upon the shoulders of Giants</title>
+      <link>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
+      <pubDate>Mon, 01 Aug 2011 13:42:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
+      <description>&lt;p&gt;In the very late nineties and early naughties I used to co-habit the Microsoft Newsgroups (which was then located at &lt;em&gt;news.microsoft.com&lt;/em&gt; over the NNTP protocol), and in particular I posted primarily on the SQL Server forums to help others where I could. A by product of my helping out was of course learning lots of hints, tips and best practices from other users and there is a lesson in that for everybody.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>SQLBits 8 - a presenters review</title>
       <link>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</link>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL Solstice on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/sql-solstice/</link>
+    <description>Recent content in SQL Solstice on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Sun, 31 Jul 2011 20:36:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/sql-solstice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Sun isn’t shining for the Solstice</title>
+      <link>https://tenbulls.co.uk/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</link>
+      <pubDate>Sun, 31 Jul 2011 20:36:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</guid>
+      <description>&lt;p&gt;So today I was surprised (slightly) to pick up a tweet by the excellent Grant Fritchey (&lt;a href=&#34;https://www.scarydba.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/#!/gfritchey&#34;&gt;twitter&lt;/a&gt;) regarding the fact that &lt;a href=&#34;https://www.sqlsolstice.com/&#34;&gt;SQL Solstice&lt;/a&gt; had been cancelled due to a lack of interest. I say that I was only slightly surprised for a few reasons. The first is that the event was a new initiative and just by that very fact, was never going to be a certainty. Secondly, the United States is no stranger to SQL events. Not only do they host the largest SQL Server convention in the world (&lt;a href=&#34;https://www.sqlpass.org/summit/2011/&#34;&gt;SQL PASS Summit&lt;/a&gt;), but have also a new initiative called SQLRally, in which I was lucky enough to speak at the inaugural event in &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/&#34;&gt;Orlando&lt;/a&gt; this May just past. I believe the intention for SQLRally is for it to rotate bi-yearly between the States and Europe and the success of &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/nordic/&#34;&gt;SQLRally Nordic&lt;/a&gt; will (I believe) be the making or death of that initiative. I personally believe SQLRally is work in progress and will become a great success over time.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

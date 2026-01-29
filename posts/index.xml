@@ -171,6 +171,41 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan&amp;rsquo;t bore you with my excuses or reasons for my inactivity but what matters is I&amp;rsquo;m back!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>How to increase your OS Virtual Processors</title>
+      <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
+      <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
+      <description>&lt;p&gt;There usually comes a time in your Virtual Machine life-cycle that you think&amp;hellip; &lt;em&gt;I wish I’d given that baby more processors for me to play with!&lt;/em&gt; This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as &lt;em&gt;Processor Affinity&lt;/em&gt; and &lt;em&gt;MAXDOP&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Review of Inside the SQL Server Query Optimizer</title>
+      <link>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
+      <pubDate>Fri, 19 Aug 2011 14:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/insidequerysmall.jpg&#34; alt=&#34;Inside the SQL Server Query Optimizer&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (&lt;a href=&#34;https://www.benjaminnevarez.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/#!/BenjaminNevarez&#34;&gt;twitter&lt;/a&gt;) is one of those. As someone I’ve been following technically for several years, when I saw that his book &lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;Inside the SQL Server Query Optimizer&lt;/a&gt; had been released to the Kindle format, I immediately clicked the purchase button and I haven’t been disappointed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Standing upon the shoulders of Giants</title>
+      <link>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
+      <pubDate>Mon, 01 Aug 2011 13:42:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
+      <description>&lt;p&gt;In the very late nineties and early naughties I used to co-habit the Microsoft Newsgroups (which was then located at &lt;em&gt;news.microsoft.com&lt;/em&gt; over the NNTP protocol), and in particular I posted primarily on the SQL Server forums to help others where I could. A by product of my helping out was of course learning lots of hints, tips and best practices from other users and there is a lesson in that for everybody.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Sun isn’t shining for the Solstice</title>
+      <link>https://tenbulls.co.uk/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</link>
+      <pubDate>Sun, 31 Jul 2011 20:36:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/07/31/the-sun-isnt-shining-for-the-solstice/</guid>
+      <description>&lt;p&gt;So today I was surprised (slightly) to pick up a tweet by the excellent Grant Fritchey (&lt;a href=&#34;https://www.scarydba.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/#!/gfritchey&#34;&gt;twitter&lt;/a&gt;) regarding the fact that &lt;a href=&#34;https://www.sqlsolstice.com/&#34;&gt;SQL Solstice&lt;/a&gt; had been cancelled due to a lack of interest. I say that I was only slightly surprised for a few reasons. The first is that the event was a new initiative and just by that very fact, was never going to be a certainty. Secondly, the United States is no stranger to SQL events. Not only do they host the largest SQL Server convention in the world (&lt;a href=&#34;https://www.sqlpass.org/summit/2011/&#34;&gt;SQL PASS Summit&lt;/a&gt;), but have also a new initiative called SQLRally, in which I was lucky enough to speak at the inaugural event in &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/&#34;&gt;Orlando&lt;/a&gt; this May just past. I believe the intention for SQLRally is for it to rotate bi-yearly between the States and Europe and the success of &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/nordic/&#34;&gt;SQLRally Nordic&lt;/a&gt; will (I believe) be the making or death of that initiative. I personally believe SQLRally is work in progress and will become a great success over time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database corruption - Your mistake, my problem!</title>
+      <link>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
+      <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month’s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I’ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here’s my entry…&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Add metadata to your audio files</title>
       <link>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
       <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>

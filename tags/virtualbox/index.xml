@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Mon, 21 Mar 2011 13:23:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 30 Aug 2011 22:34:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to increase your OS Virtual Processors</title>
+      <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
+      <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
+      <description>&lt;p&gt;There usually comes a time in your Virtual Machine life-cycle that you think&amp;hellip; &lt;em&gt;I wish I’d given that baby more processors for me to play with!&lt;/em&gt; This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as &lt;em&gt;Processor Affinity&lt;/em&gt; and &lt;em&gt;MAXDOP&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>VirtualBox random behaviour</title>
       <link>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</link>
