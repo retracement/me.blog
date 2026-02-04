@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Tue, 30 Aug 2011 22:34:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 13 Dec 2011 22:00:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualising disk space usage</title>
+      <link>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
+      <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it’s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month’s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to increase your OS Virtual Processors</title>
       <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>

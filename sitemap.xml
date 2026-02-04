@@ -101,16 +101,73 @@
     <loc>https://tenbulls.co.uk/tags/</loc>
     <lastmod>2012-01-25T02:06:00+01:00</lastmod>
   </url><url>
+    <loc>https://tenbulls.co.uk/categories/technology/</loc>
+    <lastmod>2011-12-13T22:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/utilities/</loc>
+    <lastmod>2011-12-13T22:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</loc>
+    <lastmod>2011-12-13T22:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/windows/</loc>
+    <lastmod>2011-12-13T22:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/availability-groups/</loc>
+    <lastmod>2011-11-25T00:55:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/clustering/</loc>
+    <lastmod>2011-11-25T00:55:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</loc>
+    <lastmod>2011-11-25T00:55:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sql/</loc>
+    <lastmod>2011-11-25T00:55:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/concurrency/</loc>
+    <lastmod>2011-11-17T22:29:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</loc>
+    <lastmod>2011-11-17T22:29:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/10/24/pass-the-dutchie/</loc>
+    <lastmod>2011-10-24T11:31:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlcambs/</loc>
+    <lastmod>2011-10-24T11:31:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</loc>
+    <lastmod>2011-10-14T15:59:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
+    <lastmod>2011-10-14T15:59:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</loc>
+    <lastmod>2011-10-12T08:16:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/10/12/my-alarm-clock-worked/</loc>
+    <lastmod>2011-10-12T07:30:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</loc>
+    <lastmod>2011-10-09T20:27:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
+    <lastmod>2011-10-03T16:13:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</loc>
+    <lastmod>2011-10-03T16:13:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</loc>
+    <lastmod>2011-09-27T21:12:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</loc>
+    <lastmod>2011-09-14T12:31:00+01:00</lastmod>
+  </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</loc>
     <lastmod>2011-08-30T22:34:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/categories/technology/</loc>
-    <lastmod>2011-08-30T22:34:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/tags/virtualbox/</loc>
-    <lastmod>2011-08-30T22:34:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/windows/</loc>
     <lastmod>2011-08-30T22:34:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/books/</loc>
@@ -118,12 +175,6 @@
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</loc>
     <lastmod>2011-08-19T14:02:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sql/</loc>
-    <lastmod>2011-08-19T14:02:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
-    <lastmod>2011-08-01T13:42:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</loc>
     <lastmod>2011-08-01T13:42:00+01:00</lastmod>
@@ -147,9 +198,6 @@
     <lastmod>2011-06-09T20:07:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/audio/</loc>
-    <lastmod>2011-06-09T20:07:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/utilities/</loc>
     <lastmod>2011-06-09T20:07:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/ffmpeg/</loc>
@@ -191,9 +239,6 @@
     <loc>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</loc>
     <lastmod>2011-03-25T12:49:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
-    <lastmod>2011-03-25T12:49:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/tags/sqlhelp/</loc>
     <lastmod>2011-03-25T12:49:00+01:00</lastmod>
   </url><url>
@@ -214,9 +259,6 @@
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</loc>
     <lastmod>2011-02-25T16:34:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/clustering/</loc>
-    <lastmod>2011-02-17T19:38:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</loc>
     <lastmod>2011-02-17T19:38:00+01:00</lastmod>

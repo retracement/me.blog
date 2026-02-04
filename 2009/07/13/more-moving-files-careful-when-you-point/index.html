@@ -70,6 +70,12 @@ Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafi
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -97,8 +103,8 @@ Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafi
       
       <article>
         <p>You might recall that I recently touched upon how to go about moving your <a href="/posts/2009/03/05/moving-sql-server-data-and-log-files-dont-detach">SQL data and log files correctly</a>. In this post I will quickly walk through one common scenario.</p>
-<p>Ok so your in a hurry and you’ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.</p>
-<p>Its only at this stage that you realise that you forgot to make a note of all the source locations and you start cursing and hoping that you dont have to move back that 300GB worth of files in order to bring the databases back up to run <code>EXEC sp_helpfile</code> or query the databases’ sysfiles table.</p>
+<p>Ok so your in a hurry and you&rsquo;ve stopped your SQL Service. All relevant datafiles have been moved to a new location and you are ready to roll. SQL Service has been started back up and unfortunately (but you expected this) none of the user databases whose files you moved have come back up. Well thats alright you say, because you are going to repoint them.</p>
+<p>Its only at this stage that you realise that you forgot to make a note of all the source locations and you start cursing and hoping that you dont have to move back that 300GB worth of files in order to bring the databases back up to run <code>EXEC sp_helpfile</code> or query the databases&rsquo; sysfiles table.</p>
 <p>After a biscuit and a cup of tea you remember that this is only after all meta data and should be stored in the master database. Upon further examination you find the sysaltfiles table and are able to reference the filegroup name and original location so that you may now issue the <code>ALTER DATABASE</code> command.</p>
 <p>Thankfully this all works a treat and you may now stop panicking.</p>
 <p>A couple of points of interest here. Firstly I wondered whether after repointing the database in this situation whether a simple <code>ALTER DATABASE SET ONLINE</code> would be enough or whether you would have to at first <code>OFFLINE</code>. Well as you would hope would happen, all SQL requires is that you issue the <code>ONLINE</code> directive. The other interesting thing that I noticed is that should you mistype the repointing statement, SSMS returns a rather misleading error message which suggests that something not very pleasant may have happened to your datafile, when in fact you have simply entered a wrong statement.</p>

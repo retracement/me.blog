@@ -70,6 +70,12 @@ Of course the SQL Server 2005 GUI is very good at making the restore process muc
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -97,7 +103,7 @@ Of course the SQL Server 2005 GUI is very good at making the restore process muc
       
       <article>
         <p>Have you ever performed a scripted restore or some of similar operation and then got entirely frustrated at the laborious and error prone nature of this exercise especially when the database consists of many datafiles and transaction log files?</p>
-<p>Of course the SQL Server 2005 GUI is very good at making the restore process much easier but it’s biggest failing is that it doesn’t preserve filenames (especially when the restored database name is changed). This is a very big problem when you have a large number of data files and causes a big headache.</p>
+<p>Of course the SQL Server 2005 GUI is very good at making the restore process much easier but it&rsquo;s biggest failing is that it doesn&rsquo;t preserve filenames (especially when the restored database name is changed). This is a very big problem when you have a large number of data files and causes a big headache.</p>
 <p>My solution is to use TSQL to auto generate a restore script, and I have found this to work very well and is much faster and more flexible than the GUI approach. When performing operations such as setting up a database mirror (since this can be a more repetitive process AND it is fairly important to preserve file paths) this code really becomes quite useful.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">--Ensure that connection is set to source database to
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">--generate restore script from
@@ -116,7 +122,7 @@ Of course the SQL Server 2005 GUI is very good at making the restore process muc
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">--output statement
 </span></span></span><span style="display:flex;"><span>PRINT <span style="color:#f92672">@@</span>cmd
-</span></span></code></pre></div><p>Running this under the context of the master database would generate the following script:-</p>
+</span></span></code></pre></div><p>Running this under the context of the master database would generate the following script:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>RESTORE <span style="color:#66d9ef">DATABASE</span> master <span style="color:#66d9ef">FROM</span> DISK <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C:\backuppath\backupfile.bak&#39;</span>  <span style="color:#66d9ef">WITH</span> STATS <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, NORECOVERY
 </span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">MOVE</span> <span style="color:#e6db74">&#39;master&#39;</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;D:\sql2005\MSSQL.1\MSSQL\DATA\master.mdf&#39;</span>
 </span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">MOVE</span> <span style="color:#e6db74">&#39;mastlog&#39;</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;D:\sql2005\MSSQL.1\MSSQL\DATA\mastlog.ldf&#39;</span>

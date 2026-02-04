@@ -18,6 +18,7 @@ Once complete you should try launching a published Citrix Application. At this s
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2010-05-12T20:53:00+01:00">
     <meta property="article:modified_time" content="2010-05-12T20:53:00+01:00">
+    <meta property="article:tag" content="Linux">
 
 <title>tenbulls blog | Installing the Citrix client on Linux</title>
 
@@ -72,6 +73,12 @@ Once complete you should try launching a published Citrix Application. At this s
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -98,13 +105,13 @@ Once complete you should try launching a published Citrix Application. At this s
       </header>
       
       <article>
-        <p>The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix’s website download the tarball of the Citrix Receiver.</p>
+        <p>The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&rsquo;s website download the tarball of the Citrix Receiver.</p>
 <p><img src="/images/2010/citrix1.jpg" alt="Citrix clients"></p>
 <p>Extract the tarball…</p>
 <p><img src="/images/2010/citrix2.jpg" alt="Extract"></p>
 <p>…and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.</p>
 <p><img src="/images/2010/citrix3.jpg" alt="Run setup"></p>
-<p>Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message <em>&ldquo;You have not chosen to trust &ldquo;&rdquo;, the issuer of the server’s security certificate (SSL error 61).&rdquo;</em></p>
+<p>Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message <em>&ldquo;You have not chosen to trust &ldquo;&rdquo;, the issuer of the server&rsquo;s security certificate (SSL error 61).&rdquo;</em></p>
 <p><img src="/images/2010/citrix4.jpg" alt="Client error"></p>
 <p>Now what is particularly confusing if you look at the installed certificates in Firefox you will no doubt see that it is already present (the certificate in the error message could vary between sites). This is all actually a bit misleading, because actually the Citrix client is looking within its own keystore for the certificate. If Firefox does contain the certificate that the Citrix client requires, the procedure to export it is very simple. Select <em>Edit/ Preferences/ Advanced/ View Certificates/ Authorities/ Export…</em></p>
 <p><img src="/images/2010/citrix5.jpg" alt="Export"></p>
@@ -114,6 +121,11 @@ Once complete you should try launching a published Citrix Application. At this s
 
       </article>
       
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/linux/">Linux</a>
+  </div>
 
       <div class="row">
     <div class="col-md">

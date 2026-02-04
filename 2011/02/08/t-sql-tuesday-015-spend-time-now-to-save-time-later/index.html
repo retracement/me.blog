@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Automate now to save time later">
+  <meta property="og:description" content="It’s T-SQL Tuesday time again and this month I’m a little late off the starting block. This time it is being hosted by Pat Wright blog|twitter and the subject of the month is all about “Automation in SQL Server”.
+So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-02-08T12:50:00+01:00">
+    <meta property="article:modified_time" content="2011-02-08T12:50:00+01:00">
+    <meta property="article:tag" content="TSQL Tuesday">
+
+<title>tenbulls blog | Automate now to save time later</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Automate now to save time later</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2011-02-08T12:50:00&#43;01:00">February 8, 2011</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><img src="/images/2011/tsql2sday150x15032.webp" alt="TSQL Tuesday"></p>
+<p>It&rsquo;s T-SQL Tuesday time again and this month I&rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright <a href="https://sqlasylum.wordpress.com">blog</a>|<a href="http://twitter.com/SqlAsylum">twitter</a> and the subject of the month is all about &ldquo;Automation in SQL Server&rdquo;.</p>
+<p>So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.</p>
+<p>So when should we automate? There are lots of answers to this question and here are a few possibilities:</p>
+<ul>
+<li>To enforce standards – for instance naming through run-time script checks.</li>
+<li>For repetitive tasks – how often are you prepared to repeat a task before you bang your head against a wall?</li>
+<li>For time consuming operations -if you can automate a task you can schedule it to run out of hours.</li>
+<li>To simplify/ customise operations in an easy to use way -finding blocked spids is easy via querying DMVs, but doing so via executing a stored procedure or custom view could be even easier.</li>
+</ul>
+<p>In my current environment one very common task is to refresh databases from adhoc backups of like databases from other environments, and scripting the restore statement every time can be a big pain. In particular I want to ensure that the file names of the database to be refreshed are overwritten (remain the same) so I have written a quick script that simplifys this exercise somewhat. I don&rsquo;t pretend it is the finished article and need to make improvements, but it does enough right now. Please note that I am using the compatibility view <code>sysfiles</code> for the reason of backwards compatibility at this stage (so the code can run on SQL 2000). This is how to use it:</p>
+<ol>
+<li>On the server that you are going to overwrite the database in question, load up the script in SSMS and change context into that database.</li>
+<li>For the @backupfilefull variable, assign the location to the full backup file of the database you wish to restore.</li>
+<li>Execute the script and it will output a T-SQL script that you can copy and execute.</li>
+</ol>
+<p>Please be warned that <em>this will OVERWRITE the database</em> specified in the script but will at least first will backup the transaction log. Also note that I do not attempt to kill off SPIDs from the database so at least if you do make a blunder, if your database is active it gives you a chance of it failing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- =============================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Author:            Mark Broadbent
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Create date: 01/01/2009
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Description: generates script to restore the current context database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Version: 0.1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- =============================================
+</span></span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--this script generates a script to restore the current context database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--set source database to generate restore script from
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>backupfilefull SYSNAME
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>databasename SYSNAME
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> <span style="color:#f92672">@</span>databasename <span style="color:#f92672">=</span> db_name()
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--set path to source database backup file
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> <span style="color:#f92672">@</span>backupfilefull <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@@</span>cmd VARCHAR(<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> <span style="color:#f92672">@@</span>cmd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;--***WARNING*** this script will completely overwrite the database name&#39;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; that has been specified please CHECK this connection is on the correct deployment&#39;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; server!!!&#39;</span> <span style="color:#f92672">+</span> CHAR(<span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> <span style="color:#f92672">@@</span>cmd <span style="color:#f92672">=</span> <span style="color:#f92672">@@</span>cmd <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;BACKUP LOG &#39;</span> <span style="color:#f92672">+</span> <span style="color:#f92672">@</span>databasename <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; TO DISK = &#39;&#39;&#39;</span> <span style="color:#f92672">+</span> <span style="color:#f92672">@</span>backupfilefull 
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_tail_of_log_prior_to_norecovery_mode.log&#39;&#39; WITH STATS = 1, NORECOVERY&#39;</span> <span style="color:#f92672">+</span> CHAR(<span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--generate restore statement
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> <span style="color:#f92672">@@</span>cmd <span style="color:#f92672">=</span> <span style="color:#f92672">@@</span>cmd <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;RESTORE DATABASE &#39;</span> <span style="color:#f92672">+</span> <span style="color:#f92672">@</span>databasename <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; FROM DISK = &#39;&#39;&#39;</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">+</span> <span style="color:#f92672">@</span>backupfilefull <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&#39;&#39; WITH STATS = 1, NORECOVERY&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">@@</span>cmd <span style="color:#f92672">=</span> <span style="color:#f92672">@@</span>cmd <span style="color:#f92672">+</span> CHAR(<span style="color:#ae81ff">10</span>) <span style="color:#f92672">+</span><span style="color:#e6db74">&#39;,MOVE &#39;&#39;&#39;</span> <span style="color:#f92672">+</span> RTRIM(name) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&#39;&#39; TO &#39;&#39;&#39;</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">+</span> RTRIM(filename) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&#39;&#39;&#39;</span> <span style="color:#66d9ef">FROM</span> sysfiles
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--output generated restore script
+</span></span></span><span style="display:flex;"><span>PRINT <span style="color:#f92672">@@</span>cmd
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--ensure connection leaves context
+</span></span></span><span style="display:flex;"><span>USE MASTER
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>Well I hope you find this script useful, and please remember to be careful with it – I take no responsibility for it&rsquo;s use. 🙂</p>
+<p>So to wrap up this post, I&rsquo;ll pose the question &ldquo;How do we know when is a good time to automate?&rdquo; and from my experience I would suggest that the answer is usually always. Even on those occasions where your automation code is never used again for the purpose you wrote it for, nine times out of ten I bet you will refer back to it and use snippets of it for something else. Always try to… <em>spend time now to save time later!</em></p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/tsql-tuesday/">TSQL Tuesday</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/">
+            <span>previous: </span>
+            <span>What is Disaster Recovery?</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/">
+            <span>next: </span>
+            <span>Where to go for WAIT stat information</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

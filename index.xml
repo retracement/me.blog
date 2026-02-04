@@ -185,6 +185,83 @@
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan&amp;rsquo;t bore you with my excuses or reasons for my inactivity but what matters is I&amp;rsquo;m back!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Visualising disk space usage</title>
+      <link>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
+      <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it’s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month’s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Keep your Availability Group listener name short</title>
+      <link>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</link>
+      <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</guid>
+      <description>&lt;p&gt;Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I’d found in Linux Gnome which he had never seen before &lt;em&gt;&amp;ldquo;after all his years working with the product&amp;rdquo;&lt;/em&gt;. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won’t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lock Compatibility Matrix 1.2</title>
+      <link>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</link>
+      <pubDate>Thu, 17 Nov 2011 22:29:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</guid>
+      <description>&lt;p&gt;A couple of months back I published my version of SQL Server’s Lock Compatibility Matrix under the post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix&#34;&gt;Fancy a decent Compatibility Matrix?&lt;/a&gt; since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.&lt;/p&gt;&#xA;&lt;p&gt;One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and &lt;em&gt;told the story&lt;/em&gt; of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&amp;gt; GO (i.e. lock grant), RED -&amp;gt; STOP (i.e. lock wait). BUT that doesn&amp;rsquo;t help colour blind people very much does it!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cambridgeshire SQL Server User Group joins PASS</title>
+      <link>https://tenbulls.co.uk/posts/2011/10/24/pass-the-dutchie/</link>
+      <pubDate>Mon, 24 Oct 2011 11:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/10/24/pass-the-dutchie/</guid>
+      <description>&lt;p&gt;Anyone old enough to remember this song from the eighties will remember the catchy lyrics and tune:-&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Pass the Duchie pon the left hand side pass the Duchie pon the left hand side&amp;hellip; It gonna burn&amp;hellip;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&amp;hellip;Ah yes, I’ve now got my foot tapping away remembering the good old days of my youth :). The song (as some of you will be aware) is about passing a cooking pot around and sharing food with each other, but the more astute of you will know that it was based upon a track titled &lt;em&gt;Pass the Kouchie&lt;/em&gt; -a ditty about smoking cannabis! &lt;sub&gt;*1&lt;/sub&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NOLOCK hits Mythbusters!</title>
+      <link>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</link>
+      <pubDate>Fri, 14 Oct 2011 15:59:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</guid>
+      <description>&lt;p&gt;Exactly one month to this very day I wrote the article &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock&#34;&gt;When should you use NOLOCK?&lt;/a&gt; which explained exactly when the use of the &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation level was acceptable and when it wasn’t. I also revealed that it not only takes out a &lt;em&gt;Schema Stability (Sch-S)&lt;/em&gt; lock on the object (which is documented in Books Online for the hint) but also took out a special &lt;em&gt;Shared (S) Bulk Operation&lt;/em&gt; lock when used on heaps. This latter behaviour is not even mentioned in Books Online for the hint and as far as I know, has never been documented or mentioned anywhere else before.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>At the Bloggers Table - Post 2</title>
+      <link>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</link>
+      <pubDate>Wed, 12 Oct 2011 08:16:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</guid>
+      <description>&lt;p&gt;Well the keynote speech has begun, Ted Kummert is on stage and the focus at the beginning has been very much on the Community and SQL Azure. It is clear to me that Microsoft recognize the value of our amazing community -and they should because together we are helping to shape that future of this product into something that is becoming truly amazing. There was a time when Oracle DBA’s used to look down on SQL Server, but now they are worried and are desperately trying to get up to speed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>At the Bloggers Table - Post 1</title>
+      <link>https://tenbulls.co.uk/posts/2011/10/12/my-alarm-clock-worked/</link>
+      <pubDate>Wed, 12 Oct 2011 07:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/10/12/my-alarm-clock-worked/</guid>
+      <description>&lt;p&gt;Well the good news is my alarm clock worked!&lt;/p&gt;&#xA;&lt;p&gt;So the time is around 7:30 am and I managed to get out of bed for my second official appointment of the PASS Summit 2011 and things are getting warmed up. I’m sat here on the front row of the Blogger table whilst to my left I have Brent Ozar, Aaron Bertrand and to my right Wes Brown and the Midnight DBA’s. If that wasn’t enough in front of me I have Stacia Misner and behind me I have Wendy Dance and Glen Berry! I don’t know how I managed this gig but it feels really good and it is an absolute pleasure to be part of it all.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Im gonna be on the Bloggers Table!</title>
+      <link>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</link>
+      <pubDate>Sun, 09 Oct 2011 20:27:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</guid>
+      <description>&lt;p&gt;So I’m currently sat here in the lounge of the &lt;a href=&#34;https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/&#34;&gt;Seattle Sheraton&lt;/a&gt; and finally have time to reflect upon my week ahead here at this years &lt;a href=&#34;https://www.sqlpass.org/summit/2011/&#34;&gt;SQLPASS Summit&lt;/a&gt;. At this point in time it is very hard to say exactly how busy I am going to be this week but I suspect that my time here will be slightly more focused than last time since I have a few more responsibilities than before.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQLBits 9 Slidedeck for READPAST &amp; Furious</title>
+      <link>https://tenbulls.co.uk/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</link>
+      <pubDate>Mon, 03 Oct 2011 16:13:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</guid>
+      <description>&lt;p&gt;I am very pleased to publish the slide-deck for my Friday presentation &lt;a href=&#34;https://sqlbits.com/Sessions/Event9/READPAST__Furious_Transactions_Locking_and_Isolation&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking and Isolation&lt;/a&gt;. Just click &lt;a href=&#34;https://tenbulls.co.uk/documents/readpastfurious.pdf&#34;&gt;here&lt;/a&gt; to obtain the slide-deck in PDF format.&lt;/p&gt;&#xA;&lt;p&gt;I had an absolutely fantastic time giving the presentation and really enjoyed the audience participation (though it took some of you guys a bit of time to warm up 🙂). No seriously, the thing that makes all those weeks/ months of preparation and collation of material worthwhile is the possibility that I have managed to communicate something of value to you all -and &lt;em&gt;hopefully&lt;/em&gt; I managed to do that. I learnt a massive amount of stuff myself in the process of preparing for this session and I cannot wait for the next time (whenever this may be).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fancy a decent Compatibility Matrix?</title>
+      <link>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</link>
+      <pubDate>Tue, 27 Sep 2011 21:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</guid>
+      <description>&lt;p&gt;Have you ever taken a look at Microsoft’s published &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms186396.aspx&#34;&gt;compatibility matrix&lt;/a&gt; for SQL Server lock compatibility? If you have, then I don’t need to tell you that it sucks in a very big way.&lt;/p&gt;&#xA;&lt;p&gt;Have no fear, I have painstakingly redrawn at better one (via PowerPoint no less!) and am making available to you totally free of charge as a lovely PDF slide found via &lt;a href=&#34;https://tenbulls.co.uk/documents/readpastfuriouslockcompatibilitymatrix.pdf&#34;&gt;here&lt;/a&gt;&amp;hellip; Why you ask? Because I love you all!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When should you use NOLOCK?</title>
+      <link>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</link>
+      <pubDate>Wed, 14 Sep 2011 12:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</guid>
+      <description>&lt;p&gt;Well the quick answer to that question is never. And there you have it, the quickest blog post in history (perhaps!).&lt;/p&gt;&#xA;&lt;p&gt;…Except that I should really have said &lt;em&gt;&amp;ldquo;When should you use &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation or hint?&amp;rdquo;&lt;/em&gt; and then the question takes a little more of a surprising turn. Let me first start and explain why I have categorically ruled against the use of &lt;code&gt;NOLOCK&lt;/code&gt;. The reason, is that at some point in the dim and distant future Microsoft may decide to remove this hint from the product. If they could do it today, they probably would; the only thing that is really stopping them is the numerous lines of external T-SQL code that dirtys the floors of many Development teams around the world.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to increase your OS Virtual Processors</title>
       <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
       <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>

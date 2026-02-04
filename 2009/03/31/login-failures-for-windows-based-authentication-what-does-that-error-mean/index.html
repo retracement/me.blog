@@ -9,7 +9,7 @@
 <meta property="og:url" content="https://tenbulls.co.uk/posts/2009/03/31/login-failures-for-windows-based-authentication-what-does-that-error-mean/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="Login failure user is not associated with a trusted SQL Server connection">
-  <meta property="og:description" content="Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.">
+  <meta property="og:description" content="Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user “. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -69,6 +69,12 @@
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -95,7 +101,7 @@
       </header>
       
       <article>
-        <p>Have you ever come across the following login failure within the SQL Server error logs? “Login failed for user ”. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.</p>
+        <p>Have you ever come across the following login failure within the SQL Server error logs? &ldquo;Login failed for user &ldquo;. (Note the empty user name). This is all a bit unusual if you think about it. Since the user attempting the authentication should theoretically have already been authenticated to the windows domain, you would have expected that this user-name would be displayed here in the authentication failure.</p>
 <p><img src="/images/2009/untrusted.jpg" alt="Login failed for user"></p>
 <p>One reason I have seen this happen is when a user has already authenticated to Windows and then changes their password – which is a perfectly reasonable thing to do. It seems that logging off and back on again resolves this issue, but you would think Windows would have updated its SID both remotely and locally! It is unclear to me why the warning does not display the user account in this situation, but most probably has something to do with the system attempting to reverse map the SID to a user name. Since the SID is probably out of date it is possible that windows cannot find it in its database.</p>
 <p>In conclusion though, I believe these authentication errors can most probably be ignored since they are not necessarily someone trying to gain unauthorized access to the SQL Server, just someone who has not updated their SID.</p>

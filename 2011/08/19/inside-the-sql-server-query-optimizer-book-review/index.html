@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Review of Inside the SQL Server Query Optimizer">
+  <meta property="og:description" content="There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (blog|twitter) is one of those. As someone I’ve been following technically for several years, when I saw that his book Inside the SQL Server Query Optimizer had been released to the Kindle format, I immediately clicked the purchase button and I haven’t been disappointed.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-08-19T14:02:00+01:00">
+    <meta property="article:modified_time" content="2011-08-19T14:02:00+01:00">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="Books">
+
+<title>tenbulls blog | Review of Inside the SQL Server Query Optimizer</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Review of Inside the SQL Server Query Optimizer</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2011-08-19T14:02:00&#43;01:00">August 19, 2011</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><a href="https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603"><img src="/images/2011/insidequerysmall.jpg" alt="Inside the SQL Server Query Optimizer"></a></p>
+<p>There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (<a href="https://www.benjaminnevarez.com/">blog</a>|<a href="http://twitter.com/#!/BenjaminNevarez">twitter</a>) is one of those. As someone I’ve been following technically for several years, when I saw that his book <a href="https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603">Inside the SQL Server Query Optimizer</a> had been released to the Kindle format, I immediately clicked the purchase button and I haven’t been disappointed.</p>
+<p>What is particularly obvious upon reading is that Benjamin is not only a subject matter expert on the SQL Server Query Optimizer and Query Optimization, but is passionate and enthusiastic about it which translates directly onto the pages, making for a very enjoyable experience. Probably the biggest way in which this book differs from similar efforts by other experts in this area is the way in which it takes an inside-out approach to this subject rather than an outside-in approach and for me this methodology works really really well.</p>
+<p><img src="/images/2011/query-onion.jpg" alt="Query Onion"><br/>
+<em>This is not a loop join!</em></p>
+<p>If you can, try to imagine Query Optimization as being a bit like layers of an Onion with the Optimizer itself sitting firmly in the centre. When reading other books on the subject I have found myself getting quite frustrated as they slowly peel off each layer and never really seem to hit the centre. This always makes me feel as though I didn’t really know what happened behind the scenes (even if I understood the why). This book is different and Benjamin takes this metaphorical Onion and slices it in two revealing what lies in the centre and slowly building onto it bit by bit.</p>
+<p>What I really like most about Inside the SQL Server Query Optimizer is the fact that it is not just a revealing read but a very practical guide to Optimization for the reader and demonstrates optimization with lots of pictures of example queries, query plans, statistics and estimations. What this means is that even if you are a relative beginner at Query Optimization this book will be readily accessible to you. Expert readers also have much to learn from its pages since the book pretty much covers everything you need to know about the Query Optimizer and Optimization.</p>
+<p>One thing I particularly like is the fact that this book even talks about Optimizing Data Warehouse workloads and manages to keep the discussion at a level that is not only informative but understandable, and this is no small feat. I also love all those little tricks and tips provided throughout the book such as “right-click anywhere on the execution plan window to display a pop-up window and select <code>Show Execution Plan XML</code>&hellip;” as a way to quickly change your query plan into XML format -which can be very useful for third-party tools such as <a href="https://www.sqlsentry.com/plan-explorer/sql-server-query-view.asp">SQLSentry’s Plan Explorer</a>. As somebody who infrequently has to look into Optimization these kind of tips are invaluable and leave you wondering how you’d missed them in the first place!</p>
+<p>My only criticism I have that with this book is that Benjamin has left me wanting more from him! I therefore look forward to seeing further efforts from him and recommend that you add this to your own personal library without delay making it an essential purchase.</p>
+<hr>
+<p>Before I close this review, it wouldn’t be complete without mentioning that the Kindle edition of the book has been beautifully rendered and contains colour for its diagrams rather than grey-scale pictures, which is a really nice touch for anyone using a Kindle App to read it their device. So regardless of whatever format you decide upon I am sure you won’t be disappointed.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/books/">Books</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/">
+            <span>previous: </span>
+            <span>Standing upon the shoulders of Giants</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/">
+            <span>next: </span>
+            <span>How to increase your OS Virtual Processors</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

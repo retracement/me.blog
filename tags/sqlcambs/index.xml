@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLCambs on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/sqlcambs/</link>
+    <description>Recent content in SQLCambs on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Mon, 24 Oct 2011 11:31:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/sqlcambs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cambridgeshire SQL Server User Group joins PASS</title>
+      <link>https://tenbulls.co.uk/posts/2011/10/24/pass-the-dutchie/</link>
+      <pubDate>Mon, 24 Oct 2011 11:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/10/24/pass-the-dutchie/</guid>
+      <description>&lt;p&gt;Anyone old enough to remember this song from the eighties will remember the catchy lyrics and tune:-&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Pass the Duchie pon the left hand side pass the Duchie pon the left hand side&amp;hellip; It gonna burn&amp;hellip;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&amp;hellip;Ah yes, I’ve now got my foot tapping away remembering the good old days of my youth :). The song (as some of you will be aware) is about passing a cooking pot around and sharing food with each other, but the more astute of you will know that it was based upon a track titled &lt;em&gt;Pass the Kouchie&lt;/em&gt; -a ditty about smoking cannabis! &lt;sub&gt;*1&lt;/sub&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

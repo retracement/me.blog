@@ -9,7 +9,7 @@
 <meta property="og:url" content="https://tenbulls.co.uk/posts/2009/12/13/dropping-offline-databases-dont-forget-your-files/">
   <meta property="og:site_name" content="tenbulls blog">
   <meta property="og:title" content="Remember your database files when dropping OFFLINE databases">
-  <meta property="og:description" content="If I asked you the question, “what happens to the physical data files if you drop an offline database?” would would probably have to have a bit of a think about it. There are really only three potential outcomes here :-
+  <meta property="og:description" content="If I asked you the question, “what happens to the physical data files if you drop an offline database?” would would probably have to have a bit of a think about it. There are really only three potential outcomes here:
 The DROP fails The DROP succeeds and removes the data files The DROP succeeds and leaves the data files Now if you think about the nature of the offline database the answer becomes a little more obvious. The OFFLINE database is simply meta data in the system catalog, there are no associations to files apart from that which exists within this meta. Therefore on this basis, if you remove an offline database, you are essentially removing the meta data. So on this basis you can deduce that the physical data files would remain – and this is exactly what happens (option 3).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -70,6 +70,12 @@ The DROP fails The DROP succeeds and removes the data files The DROP succeeds an
       >posts</a>
       
     </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
       </ol>
     </div>
   </nav>
@@ -96,8 +102,8 @@ The DROP fails The DROP succeeds and removes the data files The DROP succeeds an
       </header>
       
       <article>
-        <p>If I asked you the question, “what happens to the physical data files if you drop an offline database?” would would probably have to have a bit of a think about it.
-There are really only three potential outcomes here :-</p>
+        <p>If I asked you the question, &ldquo;what happens to the physical data files if you drop an offline database?&rdquo; would would probably have to have a bit of a think about it.
+There are really only three potential outcomes here:</p>
 <ol>
 <li>The DROP fails</li>
 <li>The DROP succeeds and removes the data files</li>

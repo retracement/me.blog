@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Availability Groups on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/availability-groups/</link>
+    <description>Recent content in Availability Groups on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Fri, 25 Nov 2011 00:55:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/availability-groups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keep your Availability Group listener name short</title>
+      <link>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</link>
+      <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</guid>
+      <description>&lt;p&gt;Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I’d found in Linux Gnome which he had never seen before &lt;em&gt;&amp;ldquo;after all his years working with the product&amp;rdquo;&lt;/em&gt;. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won’t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
