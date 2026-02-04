@@ -65,4 +65,4 @@ GO
 
 Well I hope you find this script useful, and please remember to be careful with it – I take no responsibility for it's use. 🙂
 
-So to wrap up this post, I'll pose the question "How do we know when is a good time to automate?" and from my experience I would suggest that the answer is usually always. Even on those occasions where your automation code is never used again for the purpose you wrote it for, nine times out of ten I bet you will refer back to it and use snippets of it for something else. Always try to… *spend time now to save time later!*
+So to wrap up this post, I'll pose the question "How do we know when is a good time to automate?" and from my experience I would suggest that the answer is usually always. Even on those occasions where your automation code is never used again for the purpose you wrote it for, nine times out of ten I bet you will refer back to it and use snippets of it for something else. Always try to... *spend time now to save time later!*

@@ -6,7 +6,7 @@ categories = ['Technology']
 tags = ['Windows','VirtualBox']
 +++
 
-There usually comes a time in your Virtual Machine life-cycle that you think... *I wish I’d given that baby more processors for me to play with!* This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as *Processor Affinity* and *MAXDOP*.
+There usually comes a time in your Virtual Machine life-cycle that you think... *I wish I'd given that baby more processors for me to play with!* This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as *Processor Affinity* and *MAXDOP*.
 
 So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes...
 
@@ -14,11 +14,11 @@ The first thing we shall do is look at exactly how many processors are activily 
 
 ![Task Manager](/images/2011/taskman1.jpg)
 
-The next thing I will do is run `msconfig.exe` (Start/ Run/ msconfig.exe) and click the Boot tab. Now click the *Advanced options...* button and from the *BOOT Advanced Options* dialog, click the dropdown list just underneath the tickbox for *Number of processors*. As you can see it is currently set to *2* and there isn’t any scope for changing it right now, so come out of this screen and close msconfig. Next shutdown your Virtual Machine.
+The next thing I will do is run `msconfig.exe` (Start/ Run/ msconfig.exe) and click the Boot tab. Now click the *Advanced options...* button and from the *BOOT Advanced Options* dialog, click the dropdown list just underneath the tickbox for *Number of processors*. As you can see it is currently set to *2* and there isn't any scope for changing it right now, so come out of this screen and close msconfig. Next shutdown your Virtual Machine.
 
 ![msconfig](/images/2011/msconfig1.jpg)
 
-From your Virtual Machine console for your Virtualization platform, bump up the number of virtual processors you wish to allocate and when you are ready, start your machine back up. As you can see, I’ve given my bad boy another 2 extra processors 🙂
+From your Virtual Machine console for your Virtualization platform, bump up the number of virtual processors you wish to allocate and when you are ready, start your machine back up. As you can see, I've given my bad boy another 2 extra processors 🙂
 
 ![Increase virtual processors](/images/2011/increase-processors.jpg)
 

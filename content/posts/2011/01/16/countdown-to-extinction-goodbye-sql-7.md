@@ -16,7 +16,7 @@ For those of you that might not remember that far back, the old style MCSE+i was
 
 ![PASS 2010 Welcome](/images/2011/welcome.jpg)
 
-So moving forward in time by around 13 years… *You're simply the best… better than all the rest…better than anyone… anyone I've ever met* and so on. 🙂 During the [SQL PASS 2010](https://www.sqlpass.org/summit/na2010/) keynote speech, after the infamous and most enjoyable Tina Turner impresario, we witnessed a video introduction of what happened to SQL Server in order to get where we are today. I am of course talking about the decision to throw away the entire code-base and start again, performing a complete product rewrite. We saw photos of the development team sprawling fast asleep over sofas after working into the early hours and it was quite insightful to realise exactly how much effort had gone into this version.
+So moving forward in time by around 13 years... *You're simply the best... better than all the rest...better than anyone... anyone I've ever met* and so on. 🙂 During the [SQL PASS 2010](https://www.sqlpass.org/summit/na2010/) keynote speech, after the infamous and most enjoyable Tina Turner impresario, we witnessed a video introduction of what happened to SQL Server in order to get where we are today. I am of course talking about the decision to throw away the entire code-base and start again, performing a complete product rewrite. We saw photos of the development team sprawling fast asleep over sofas after working into the early hours and it was quite insightful to realise exactly how much effort had gone into this version.
 
 ![Tina does PASS](/images/2011/tina.jpg)
 

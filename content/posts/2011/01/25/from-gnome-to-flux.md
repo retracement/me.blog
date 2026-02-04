@@ -31,6 +31,6 @@ export GNOME_DESKTOP_SESSION_ID=1
 /opt/TweetDeck/bin/TweetDeck
 ```
 
-Of course you now need to make the shell script executable and set-up a short-cut to it in your menu file, but once that is sorted….. its Twitter time!
+Of course you now need to make the shell script executable and set-up a short-cut to it in your menu file, but once that is sorted..... its Twitter time!
 
 Something else I need to seriously look into is the fact that Linux Mint Fluxbox edition is only released as an x86 edition and I *really* want to be running x64. So the workaround is (apparently) to install the lightweight [Linux Mint x64 xfce](https://www.linuxmint.com/edition.php?id=63) release and then install the Fluxbox Desktop. I am sure with a bit of tinkering this will all work just dandy and I hope to attempt it at some point.

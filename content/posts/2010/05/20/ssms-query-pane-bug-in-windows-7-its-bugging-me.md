@@ -21,7 +21,7 @@ Most of you will already know how to get this menu within SSMS, and one such way
 - SQL 2008 R2
 - (SQL 2000 not tested)
 
-To demonstrate what I mean, lets launch a query window within SSMS and type some text and execute the query. OK so now lets say we want to copy a selection of text. After selecting, and right clicking the mouse….nothing.
+To demonstrate what I mean, lets launch a query window within SSMS and type some text and execute the query. OK so now lets say we want to copy a selection of text. After selecting, and right clicking the mouse....nothing.
 
 ![No right click](/images/2010/right1.jpg)
 

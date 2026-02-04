@@ -15,6 +15,6 @@ I recently mentioned having visited this session to SQL Developer and Powershell
 
 Therefore after putting my notes through my own process of data-cleansing, hoping you may find them of use in some way. Please remember that for some of the notes it may not always be explicitly obvious as to their intent, but hopefully most of them will be and I've taken a little effort to make them so. Secondly some of the notes from what I understand may not be public domain so please bear that in mind, because things discussed may change in the future. Finally remember that the notes may contain inaccuracies due to several factors. Firstly I am not perfect (shock horror!) and secondly it is very difficult to capture expended accurate notes during a flowing presentation -since I don't do shorthand.
 
-If you were at the event, please let me know of any inaccuracies. I hope you find them of use…
+If you were at the event, please let me know of any inaccuracies. I hope you find them of use...
 
 Please click [here](/enlightenment/presentation-notepad/microsoft-bi-seminar-2011) to access the presentation notes or access through the Enlightenment menu.

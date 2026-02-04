@@ -10,15 +10,15 @@ tags = ['SQL','SQLRally','Scalability','Public Speaking']
 
 Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!
 
-The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don’t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn’t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.
+The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don't think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn't because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.
 
 ![Scalable Shared Database](/images/2011/scalable.jpg)
 
-I am definitely not the first presenter that a demo has not quite succeeded and I won’t be the last, but the important thing is that I offered a solution to the audience….”I’ll post a blog!”. So here we are and here it is, all the information you really need to setup your Scalable Shared Database.
+I am definitely not the first presenter that a demo has not quite succeeded and I won't be the last, but the important thing is that I offered a solution to the audience...."I'll post a blog!". So here we are and here it is, all the information you really need to setup your Scalable Shared Database.
 
 The first thing we need to do is to provision our shared storage that will eventually be presented to all our SQL Instance servers in order that they can be part of the SSD Cluster. In my demo I used an iSCSI target but in your production environment you will most probably be attaching to your SAN LUNS via HBA cards.
 
-It is important that you only attach the storage to only one of the servers until you have performed all the actions necessary to prepare the database and storage so that it can become a Scalable Shared Database. Once you have created your database on this shared target, it is important that you stop any activity to it and you will note that I have checkpointed so that any dirty pages are gracefully flushed to disk. Next you can then set the database to read-only and finally can take it offline. Please note that the official instructions suggest you should detach the database. I am not a big fan of detaching databases (shan’t go into that now) but if you would prefer to do that instead then it is a perfectly sensible approach.
+It is important that you only attach the storage to only one of the servers until you have performed all the actions necessary to prepare the database and storage so that it can become a Scalable Shared Database. Once you have created your database on this shared target, it is important that you stop any activity to it and you will note that I have checkpointed so that any dirty pages are gracefully flushed to disk. Next you can then set the database to read-only and finally can take it offline. Please note that the official instructions suggest you should detach the database. I am not a big fan of detaching databases (shan't go into that now) but if you would prefer to do that instead then it is a perfectly sensible approach.
 
 ![First database](/images/2011/1-first-database.jpg)<br/>
 *Seed database needs to be set to read-only and then taken offline*
@@ -40,7 +40,7 @@ At this stage we are all ready to go! We can bring our SSD online on our very fi
 ![Bring database online](/images/2011/5-bring_online.jpg)<br/>
 Bring database back online
 
-For all subsequent nodes you will need to connect the shared disk target to them. It is probably best that you do this one at a time only after you have added in the Scalable Shared Database to the instance, although theoretically it shouldn’t matter a jot.
+For all subsequent nodes you will need to connect the shared disk target to them. It is probably best that you do this one at a time only after you have added in the Scalable Shared Database to the instance, although theoretically it shouldn't matter a jot.
 
 ![Connect iscsi target](/images/2011/6-reconnect_target_on_next_server.jpg)<br/>
 connect to target on next server

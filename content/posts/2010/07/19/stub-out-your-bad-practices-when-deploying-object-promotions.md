@@ -14,7 +14,7 @@ For those developers who are not aware that dropping an object loses the permiss
 
 A different approach to your scripting is needed. Logically you must ensure that if an object exists then it is `ALTER`ed and if and only if the object does not exist should you issue a `CREATE`. At no time whatsoever should a `DROP` ever be issued unless of course a complete and persistent removal of an object is the desired consequence.
 
-There are a couple of hurdles to overcome in order to achieve this. The first is that the `ALTER` and `CREATE` statements must be the first statements of a batch and secondly logical `IF…ELSE` constructs and `GOTO` operators cannot span batches, therefore how can it be possible to check to see if the required object already exists and to take the relevant action depending upon that result?
+There are a couple of hurdles to overcome in order to achieve this. The first is that the `ALTER` and `CREATE` statements must be the first statements of a batch and secondly logical `IF...ELSE` constructs and `GOTO` operators cannot span batches, therefore how can it be possible to check to see if the required object already exists and to take the relevant action depending upon that result?
 
 ![Tearing your hair out](/images/2010/tearhair.jpg)
 

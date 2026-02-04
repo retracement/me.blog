@@ -29,7 +29,7 @@ Whilst in Seattle I decided that should the opportunity arise, I wanted to attem
 
 This time (unlike Seattle) I thought I would approach Dennis and see if my company would like to contribute in any way since there would be obvious technical benefits to the organization. The response did not surprise me. He said that my speaking and attending sessions at SQLRally (or anywhere else) had absolutely no benefit to the company at all. I have never forgotten the impact that sentence made upon me. The situation was made even more ironic when a few days later I was assigned to an important scalability project (for someone had personally requested that I should be the resource).
 
-…… The title of my presentation : "[Orders of magnitude-Scaling your SQL Server Data](https://www.slideshare.net/retracement/orders-ofmagnitudescaleoutyoursqlserverdataslideshare)".
+...... The title of my presentation : "[Orders of magnitude-Scaling your SQL Server Data](https://www.slideshare.net/retracement/orders-ofmagnitudescaleoutyoursqlserverdataslideshare)".
 
 Like the SQLPASS Summit, I fully financed my trip to SQLRally and used a week of my holiday entitlement and came to a decision. I realised that however much I tried to improve myself socially and technically (and help others), Dennis would never support my efforts in any way. A few days later I received a permanent job offer from another firm offering a substantial salary increase (almost double) and I..... turned it down!
 

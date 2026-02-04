@@ -62,7 +62,7 @@ Msg 3013, Level 16, State 1, Line 16
 BACKUP LOG is terminating abnormally.
 ```
 
-Now here comes the surprise… As Alan quite rightly said, a differential backup works in SQL 2005! Interestingly the transactional log backups still fail with the same error:
+Now here comes the surprise... As Alan quite rightly said, a differential backup works in SQL 2005! Interestingly the transactional log backups still fail with the same error:
 
 ![2005 backup](/images/2010/2005backup.png)
 

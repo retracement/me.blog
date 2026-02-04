@@ -12,7 +12,7 @@ Although this post may look at first to be about Linux and whilst many of you vi
 This post also shows how you can use Linux and make it more usable, way beyond what you might expect from this humble open source OS. Go on, live a little!
 
 # In the Beginning
-I've recently been suffering from unexplained machine freeze for several weeks and decided enough was enough. Resolve or upgrade, but no more cold boots first thing in the morning. I'm getting ahead of myself though, let's go back to the start of the problem…
+I've recently been suffering from unexplained machine freeze for several weeks and decided enough was enough. Resolve or upgrade, but no more cold boots first thing in the morning. I'm getting ahead of myself though, let's go back to the start of the problem...
 
 ![Flip over desk](/images/2010/flip_over_desk.jpg)
 
@@ -66,7 +66,7 @@ Last for this post, but certainly not least you have the *Compiz Settings Manage
 
 ![Be careful with your compiz](/images/2010/compiz.jpg)
 
-# …and finally
+# ...and finally
 So now our work is done, my desktop is complete (for today at least) and its looking just like I want it. So I think it is only fair I present it to you.
 
 ![Welcome to my world](/images/2010/topbananaobf.png)

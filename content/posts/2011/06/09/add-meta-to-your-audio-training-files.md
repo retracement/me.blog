@@ -15,6 +15,6 @@ Rescue comes in the form of a quite awesome piece of freeware (it is in my top 1
 ![MP3Tag](/images/2011/mp3tag2.jpg)<br/>
 *Set your meta tags*
 
-I’ve now given you the whole solution to ripping audio files from your training videos so you can become much more productive with your time and hopefully technically excellent. So what are you waiting for?... get ripping and tagging!
+I've now given you the whole solution to ripping audio files from your training videos so you can become much more productive with your time and hopefully technically excellent. So what are you waiting for?... get ripping and tagging!
 
-p.s. I should add before I go that I didn’t have to use Windows to run MP3Tag. If you only have a Linux machine then it runs perfectly happily within [WINE (Wine Is Not Emulator)](https://www.winehq.org/) on Linux, however that choice is totally up to you 🙂
+p.s. I should add before I go that I didn't have to use Windows to run MP3Tag. If you only have a Linux machine then it runs perfectly happily within [WINE (Wine Is Not Emulator)](https://www.winehq.org/) on Linux, however that choice is totally up to you 🙂

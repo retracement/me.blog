@@ -8,7 +8,7 @@ Over 33 years ago I started my journey working in Information Technology (I.T.),
 # The problem with I.T.
 As I look back over the years I cannot help but feel a sense of disappointment that during my long and arduous journey to the "top" I never really found someone of seniority (or power) who went out of their way to selflessly help me climb the greasy ladder of success in any of the organisations I worked at. I don't think my experiences are particularly unique either.
 
-The reasons why I think this has been my experience in I.T. so far is perhaps a topic for another (lengthy) post sometime, but there is one that I feel provides the best explanation…
+The reasons why I think this has been my experience in I.T. so far is perhaps a topic for another (lengthy) post sometime, but there is one that I feel provides the best explanation...
 
 I.T. is a highly competitive industry and the people that work within it are often insular enough that their entire focus is often centered around their own success (and possible failures) and less so on the growth of others around them. I think there is often an irrational fear in the workplace that helping others rise through the ranks will somehow prevent you and your achievements from getting noticed and rewarded.
 

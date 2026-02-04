@@ -12,11 +12,11 @@ Regular readers of my ramblings will by now appreciate that I love VirtualBox an
 
 Remember that flight simulator hidden away in MS Excel from over ten years back? I love seeing unusual behaviour displayed by applications and even more so when the behaviour looks like it has been put there for a reason. So what I have seen is not quite an Easter Egg but I would love to know the explanation of why, what is happening is happening.
 
-When I go to create a virtual machine you will note that the operating system is defaulted to Windows XP. OK no surprises there…
+When I go to create a virtual machine you will note that the operating system is defaulted to Windows XP. OK no surprises there...
 
 ![Trill](/images/2011/trill.png)
 
-…so far I have typed *trill* for my VM machine with a view to typing *trillian*. Then as I enter the next *i* you will note the operating system changes to Linux!
+...so far I have typed *trill* for my VM machine with a view to typing *trillian*. Then as I enter the next *i* you will note the operating system changes to Linux!
 
 ![Trilli](/images/2011/trilli.png)
 

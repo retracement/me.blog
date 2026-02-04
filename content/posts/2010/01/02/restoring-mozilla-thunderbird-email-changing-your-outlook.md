@@ -12,4 +12,4 @@ The first step of the merge was to create a new folder from within the Thunderbi
 
 Now you will notice all the old emails in this new folder, so all that is left is to select all these emails and move them into the current inbox. Once done you can then remove the new folder you created earlier and thats it!
 
-…btw….Happy New Year!
+...btw....Happy New Year!

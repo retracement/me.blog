@@ -10,4 +10,4 @@ Anyone who remembers the days of Novell NetWare being King of the LANs would lik
 
 ![Windows 2008 OS installer options](/images/2010/i_think_i_like_you.png)
 
-I shan't go into why I believe a GUI is not something for a server right now, but all I can say is that I shall be looking into the restrictions and possibilities of the Server Core Installation in due course. I am confident that this could be the beginning of the end for GUI based servers for Windows, but then it couldn't really be called Windows any more could it? How about … "Microsoft Server – Solid, fast and dependable!".
+I shan't go into why I believe a GUI is not something for a server right now, but all I can say is that I shall be looking into the restrictions and possibilities of the Server Core Installation in due course. I am confident that this could be the beginning of the end for GUI based servers for Windows, but then it couldn't really be called Windows any more could it? How about ... "Microsoft Server – Solid, fast and dependable!".

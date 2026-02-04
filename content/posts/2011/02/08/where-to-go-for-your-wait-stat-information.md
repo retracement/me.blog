@@ -26,6 +26,6 @@ So the next time you are "waiting" perhaps you might want to find out why and ch
 
 [Performance Monitoring Tools: SQL Server 2008 Activity Monitor](https://www.informit.com/guides/content.aspx?g=sqlserver&seqNum=329) by Buck Woody – yeah I know this one aint really about DMVs and Wait Stats but quite frankly it might be a good place to start!
 
-[Top SQL Server 2005 Performance Issues for OLTP Applications](https://sqlcat.com/top10lists/archive/2007/11/21/top-sql-server-2005-performance-issues-for-oltp-applications.aspx) – a very simple but useful 6 point article to help you troubleshoot your system (courtesy of a great DBA Sean Kotze …who currently isn't on or using Twitter, Blog, LinkedIn etc!)
+[Top SQL Server 2005 Performance Issues for OLTP Applications](https://sqlcat.com/top10lists/archive/2007/11/21/top-sql-server-2005-performance-issues-for-oltp-applications.aspx) – a very simple but useful 6 point article to help you troubleshoot your system (courtesy of a great DBA Sean Kotze ...who currently isn't on or using Twitter, Blog, LinkedIn etc!)
 
 Now I'm sure I had a few more urls on this subject, but as always when you go looking for something you can never find it. Well if I do come across any others then I will update this post with them, but for now I hope this small selection of links helps you troubleshoot your Wait Stats.

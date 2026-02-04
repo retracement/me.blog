@@ -6,7 +6,7 @@ categories = ['Personal Development']
 tags = ['SQLBits','Public Speaking']
 +++
 
-A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn't). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn't been to that building for around 3 years I'm not sure how she could have done …still it's always nice to be "recognized" 🙂
+A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn't). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn't been to that building for around 3 years I'm not sure how she could have done ...still it's always nice to be "recognized" 🙂
 
 Once inside, I met many great people. Several were well known faces such as Mike Taulty, Andrew Fryer and Simon Sabin (all of whom I'd been privileged to meet before), several up and coming individuals such as Quest's Iain Kick and many other faces that are making an impact in the world of SQL Server such as Neil Hambly and Dave Ballantyne.
 

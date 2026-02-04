@@ -34,7 +34,7 @@ In what would at one time have been a list as long of your arm of websites that 
 [2014 Microsoft Most Valuable Professional for SQL Server](http://theblobfarm.wordpress.com/2014/04/02/2014-microsoft-most-valuable-professional-for-sql-server-2/) by Régis Baccaro<br/>
 [SQLCambs review](https://matt40k.uk/2014/08/sqlcambs/) by Matt Smith<br/>
 [SqlSaturday #267 – my chosen sessions](http://pedromsimoes.wordpress.com/2014/04/19/sqlsaturday-267-my-chosen-sessions/) by Pedro Simoes<br/>
-[PASS Summit 2013 Program Survey Results](/documents/pass-summit-2013-program-survey-results.pdf)<br/>
+[PASS Summit 2013 Program Survey Results](/documents/pass-summit-2013-program-survey-results.pdf) by PASS<br/>
 [History repeats itself...](http://t-sql.dk/?p=750) by Jens Vestergaard<br/>
 <a title="My Experience As a SQL Bits First Timer" href="http://mattsaundersdba.wordpress.com/" target="_blank" rel="noopener">My Experience As a SQL Bits First Timer</a> by Matt Saunders<br>
 <a title="Announcing DiTBits at SQLBits" href="http://jenstirrup.com/2013/04/22/announcing-ditbits-at-sqlbits/" target="_blank" rel="noopener">Announcing DiTBits at SQLBits</a> by Jen Stirrup<br>

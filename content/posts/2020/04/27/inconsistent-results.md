@@ -198,7 +198,7 @@ As with nearly all cases of inconsistencies and strange transactional behaviors,
 
 Finally, when we look towards In-Memory OLTP (IMOLTP), given that under the covers IMOLTP uses an entirely different (and optimistic) concurrency model and is completely lock and latch free, it is perhaps no surprise that no issues were experienced there. These tests add yet more weight (if you even needed it) to a move towards (on-disk) optimistic or In-Memory OLTP.
 
-When this issue was first reported by Erland, Paul Randal ([b](https://www.sqlskills.com/blogs/paul/)|[t](https://x.com/PaulRandal)) of SQLSkills confirmed that was a known behavior and offered up his post titled [Read committed doesn't guarantee much…](https://www.sqlskills.com/blogs/paul/read-committed-doesnt-guarantee-much/). While a quick read of Paul's post will on the face of it look like the same issue as the one I describe, the one thing that does not align is the use of a HEAP table -since we have added a clustered index our example.
+When this issue was first reported by Erland, Paul Randal ([b](https://www.sqlskills.com/blogs/paul/)|[t](https://x.com/PaulRandal)) of SQLSkills confirmed that was a known behavior and offered up his post titled [Read committed doesn't guarantee much...](https://www.sqlskills.com/blogs/paul/read-committed-doesnt-guarantee-much/). While a quick read of Paul's post will on the face of it look like the same issue as the one I describe, the one thing that does not align is the use of a HEAP table -since we have added a clustered index our example.
 
 That aside, I believe the biggest trigger for this specific problem is very similar and that the following are pivotal to things going wrong:
 - The use of a table Cluster GUID

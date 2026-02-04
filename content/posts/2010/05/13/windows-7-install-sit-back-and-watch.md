@@ -16,7 +16,7 @@ And then it happens, wow we go from a dull, boring and we've seen it all before 
 
 Well things continue along the same vein from screen to screen, yes indeed the installation screens do look nicely done.
 
-Well that is until this strange one. Bizarrely we have a old style window with list boxes inside to select language and region settings. Note to UI designer, a panel might have stood out less and kept a little more in keeping with the feel of things… still what do I know?
+Well that is until this strange one. Bizarrely we have a old style window with list boxes inside to select language and region settings. Note to UI designer, a panel might have stood out less and kept a little more in keeping with the feel of things... still what do I know?
 
 ![Install](/images/2010/windows004.jpg)
 
@@ -26,7 +26,7 @@ Possibly my biggest scratch of the head moments came when I saw the *"Install No
 
 ![Install now](/images/2010/windows005.jpg)
 
-Yeah of course I want to and then the *"Installing Windows…"* window. Get this, first it goes and *"Copying windows files" and strangely then needs to *"Expanding Windows files". Hello! Anyone thought about that.
+Yeah of course I want to and then the *"Installing Windows..."* window. Get this, first it goes and *"Copying windows files" and strangely then needs to *"Expanding Windows files". Hello! Anyone thought about that.
 
 ![Installing](/images/2010/windows011.jpg)
 

@@ -34,7 +34,7 @@ Once the training day was over, I met up with the "SQL wizard", DBA Steve Hindma
 
 ![Steve on the wall](/images/2010/shindmarshukdba.jpg)
 
-By the time we reached York Minster the Great British weather had realized that I had foolishly left my coat behind in the hotel because I thought that I would be ….wait for it…. "too hot". The rain absolutely sheeted down and by the time I walked into Ye Olde English Pub (fictional pub name) and I resembled a drowned rat! Still a good night was had by all, lots of beer, chips and a curry to wash it all down.
+By the time we reached York Minster the Great British weather had realized that I had foolishly left my coat behind in the hotel because I thought that I would be ....wait for it.... "too hot". The rain absolutely sheeted down and by the time I walked into Ye Olde English Pub (fictional pub name) and I resembled a drowned rat! Still a good night was had by all, lots of beer, chips and a curry to wash it all down.
 
 In [part 2](/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2) I'll talk about what happened over Friday and Saturday sessions.
 

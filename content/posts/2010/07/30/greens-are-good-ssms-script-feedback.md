@@ -11,11 +11,11 @@ After writing a script in SSMS if you wish to reuse it, then it is probably a ve
 
 ![New script](/images/2010/ssmscolor1.jpg)
 
-Now I shall save my script…
+Now I shall save my script...
 
 ![Save](/images/2010/ssmscolor2.jpg)
 
-…Notice the colour that is now next to the script lines, it has turned a lovely shade of green. This appears to indicate that each line has been saved.
+...Notice the colour that is now next to the script lines, it has turned a lovely shade of green. This appears to indicate that each line has been saved.
 
 ![Saved script](/images/2010/ssmscolor3.jpg)
 

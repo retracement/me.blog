@@ -69,8 +69,8 @@ The following output is returned:
 ```
 ProviderNamespace : Microsoft.DocumentDB
 RegistrationState : Registering
-ResourceTypes     : {databaseAccounts, databaseAccountNames, operations, operationResults…}
-Locations         : {Australia Central, Australia East, Australia Southeast, Canada Central…}
+ResourceTypes     : {databaseAccounts, databaseAccountNames, operations, operationResults...}
+Locations         : {Australia Central, Australia East, Australia Southeast, Canada Central...}
 ```
 
 If it is not obvious you would unregister a provider namespace (if you wanted to make it unavailable) using the [Unregister-AzResourceProvider](https://docs.microsoft.com/en-us/powershell/module/az.resources/unregister-azresourceprovider?view=azps-3.6.1) cmdlet as follows:

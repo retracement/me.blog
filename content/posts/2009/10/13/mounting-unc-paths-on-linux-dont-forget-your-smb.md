@@ -28,7 +28,7 @@ Well now at least my problem is blogged and hopefully there for all eternity for
 
 Its small things like this that really put off Win-doze users from Linux (at one time myself included) and should imo be included by default in a distro, but I guess you cannot have everything otherwise it (Linux) would not be as fast and customizable for purpose as it is.
 
-Anyway back to copying those large files across my wireless connection…
+Anyway back to copying those large files across my wireless connection...
 
 
 _**Update (7th January 2013):** As of Linux Mint 14 (Nadia) I no longer see this as a installable package, there is smbnetfs but I couldnt seem to get that to work. I installed cifs-utils -which does seem to work._

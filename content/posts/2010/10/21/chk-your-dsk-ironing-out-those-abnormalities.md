@@ -20,7 +20,7 @@ This is less obviously related to the first, however there does indeed appear to
 
 ![Event 9645](/images/2010/corruption2_c.png)
 
-Anyway, irrespective of whether we believe there is a connection, let us troubleshoot the first problem. So the absolute first thing you need to ensure is that the file system has no errors. Let us run a read only `chkdsk` against it…
+Anyway, irrespective of whether we believe there is a connection, let us troubleshoot the first problem. So the absolute first thing you need to ensure is that the file system has no errors. Let us run a read only `chkdsk` against it...
 
 ![chkdsk](/images/2010/corruption3_c.png)
 
