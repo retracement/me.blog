@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="whoisactive on SQL 2000">
+  <meta property="og:description" content="Yes yes yes I know we are currently on SQL 2012 but just hear me out for a second…
+I think I am probably one of the only people on the planet who has not (yet) used Adam Machanic’s (blog|twitter) whoisactive Stored Procedure. One of the reasons for this is that going right back to the days of SQL Server 2000 I had rolled my own stored procedure which worked very nicely and did everything that I ever needed it to.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2012-04-17T18:38:00+01:00">
+    <meta property="article:modified_time" content="2012-04-17T18:38:00+01:00">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="SQLHelp">
+
+<title>tenbulls blog | whoisactive on SQL 2000</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">whoisactive on SQL 2000</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2012-04-17T18:38:00&#43;01:00">April 17, 2012</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              6 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Yes yes yes I <em>know</em> we are currently on SQL 2012 but just hear me out for a second…</p>
+<p>I think I am probably one of the only people on the planet who has not (yet) used Adam Machanic’s (<a href="https://sqlblog.com/blogs/adam_machanic/default.aspx">blog</a>|<a href="https://sqlblog.com/blogs/adam_machanic/archive/2011/04/27/who-is-active-v11-00-a-month-of-activity-monitoring-part-27-of-30.aspx">twitter</a>) whoisactive Stored Procedure. One of the reasons for this is that going right back to the days of SQL Server 2000 I had rolled my own stored procedure which worked very nicely and did everything that I ever needed it to.</p>
+<p>With the advent of SQL Server 2005 came the ever so useful DMOs and whilst these gave an even more insightful portal into the guts of SQL 2005 (and now all versions above) internals, my own Stored Procedure still gave me all the information I needed. If there was any extra information I needed to obtain, I would usually delve into the DMVs using code snippets taken primarily from Louis Davidson or Glenn Berry.</p>
+<p>I’ll be honest. I never got around to rewriting the code I wrote -I got lazy people! I always intended on doing so, but never quite found the time or excuse.</p>
+<p>Well today whilst monitoring Twitter’s <em>#SQLHELP</em> hashtag I came across a request for a SQL 2000 version of whoisactive. I offered up my dusty ol’ proc and it was gratefully accepted&hellip;</p>
+<hr>
+<p>Please be aware the the following code has been provided as is, taken straight from my very own (old) scripted <em>&ldquo;dbaadmin&rdquo;</em> solution database targeted specifically towards SQL 2000 but has been tested and works up to (at least) SQL 2008R2 (I have not tested on SQL 2012). Because of this, my <code>usp_activity</code> Stored Procedure requires two prerequisites to work:</p>
+<ol>
+<li>A dbaadmin database</li>
+<li>An activity table created in the dbaadmin database</li>
+</ol>
+<p>I appreciate that in your environment, you may have your own administrative databases -but luckily I have extensively commented my code so it really shouldn’t be very difficult for you to do the switch. With respect to the activity table, that is simply needed for the capture parameter if you wish to persist activity statistics. If that is not something that you need, then again you can remove the code segment for that and therefore remove the dependency.</p>
+<p>Before I give you the code let me tell you roughly how it works. In SQL 2000, in order to obtain the last executed statement for a SPID we would use <a href="https://msdn.microsoft.com/en-us/library/ms187730.aspx">DBCC INPUTBUFFER(spidid)</a>. The other part of the equation is the querying of the <code>master.dbo.sysprocesses</code> table to view all active SPIDs on our instance. Unfortunately, since the <code>DBCC</code> result set is being returned per SPID and not as a tabular result set for all, we are unable to join our last executed statement result to the sysprocesses result set. In addition, the second challenge is that in order to store the output of each <code>DBCC INPUTBUFFER</code> request (using the <code>INSERT EXEC</code> technique)  we must insert each item separately into a table as is. The output does not have a SPID id and therefore this means we are missing the join key in this table. To overcome this second challenge I simply perform the insert (into a table that has a column for a SPID id) and then update the SPID number as a separate operation. We perform our <code>DBCC INPUTBUFFER</code> for each SPID in succession using a cursor. Now we have our last executed statement table with respective SPID ids. More importantly we have also solved our first problem and are able to join our <code>sysprocesses</code> data (first captured into a temporary table) against our statement data &hellip;who needs DMOs!</p>
+<p>The stored procedure uses a selection of named parameters with defaults and the most important of these is the <code>@help</code> parameter.</p>
+<p>If you execute the stored procedure as follows :-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">exec</span> dbo.usp_activity <span style="color:#f92672">@</span>help<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>Then you will receive the very useful help output :-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Help Specified.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    @dbname sysname = &#39;&#39;, --optional option (if unspecified all activity is captured, otherwise only activity for specified database is captured)
+</span></span><span style="display:flex;"><span>    @capture bit = 0, --optional option (if unspecified results are not captured, otherwise enables capture process activity to dbaadmin..activity table)
+</span></span><span style="display:flex;"><span>    @show bit = 1, --optional option (show process list (default))
+</span></span><span style="display:flex;"><span>    @excludespid int = 0, --optional option (exclude spidid from process list (default))
+</span></span><span style="display:flex;"><span>    @filteronspid int = 0, --optional option (display only spid, 0 for all spids (default))
+</span></span><span style="display:flex;"><span>    @blockedonly int = 0, --optional option (display only spids participating in blocking, 0 for all active spids (default))
+</span></span><span style="display:flex;"><span>    @simple int = 0, --option option (display cut down column list for result set)
+</span></span><span style="display:flex;"><span>    @help bit = 0 --optional option (view help)
+</span></span></code></pre></div><p>If you wish to return all current SPIDs then leave off all parameters OR if you wish to return all SPIDs currently running in a database context then specify the <code>@dbname</code> parameter. One parameter that comes in very useful is <code>@blockedonly</code> and will return only blockers or blocked SPIDs by specifying a value of 1:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">exec</span> dbo.usp_activity <span style="color:#f92672">@</span>blockedonly<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>This returns a very useful amount of information about our blockers and blocked SPIDs and has saved my bacon on many occasions (result set below has been condensed):
+<img src="/images/2012/spid4.png" alt="usp_activity result set"></p>
+<p>I shan’t go into any more detail about any of the other parameters or how you would use them since I think they are fairly obvious but if not they shouldn’t take you very long to figure them out. So for now I shall list the code that you will need to setup <code>usp_activity</code>.</p>
+<p>First we create the dbaadmin database.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> dbaadmin
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>Next we need to create the activity table within the dbaadmin database.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>USE [dbaadmin]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> ANSI_NULLS <span style="color:#66d9ef">ON</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> QUOTED_IDENTIFIER <span style="color:#66d9ef">ON</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span>USE dbaadmin
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">IF</span> <span style="color:#e6db74">&#39;activity&#39;</span> <span style="color:#66d9ef">IN</span> (<span style="color:#66d9ef">SELECT</span> NAME <span style="color:#66d9ef">FROM</span> sysobjects <span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">TYPE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;U&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span>
+</span></span><span style="display:flex;"><span>PRINT <span style="color:#e6db74">&#39;Table activity already exists, dropping before executing create script...&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> activity
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- =============================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Author:        Mark Broadbent
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Create date: 13/02/2001
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- Description:    Creates activity table to store results for stored procedure usp_activity
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- =============================================
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> [dbo].[activity](
+</span></span><span style="display:flex;"><span>[<span style="color:#66d9ef">database</span>] [nvarchar](<span style="color:#ae81ff">128</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[spid] [smallint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[kpid] [smallint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[blocked] [smallint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[waittype] [binary](<span style="color:#ae81ff">2</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[waittime] [bigint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[lastwaittype] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">32</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[waitresource] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">256</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[dbid] [smallint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[uid] [smallint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[cpu] [int] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[physical_io] [bigint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[memusage] [int] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[login_time] [datetime] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[last_batch] [datetime] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[ecid] [smallint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[open_tran] [smallint] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[status] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">30</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[sid] [binary](<span style="color:#ae81ff">86</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[hostname] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">128</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[program_name] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">128</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[hostprocess] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">8</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[cmd] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">16</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[nt_domain] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">128</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[nt_username] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">128</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[net_address] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">12</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[net_library] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">12</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[loginame] [<span style="color:#66d9ef">nchar</span>](<span style="color:#ae81ff">128</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[context_info] [binary](<span style="color:#ae81ff">128</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[sql_handle] [binary](<span style="color:#ae81ff">20</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[stmt_start] [int] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[stmt_end] [int] <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[request_id] [int] <span style="color:#66d9ef">NULL</span>,    <span style="color:#75715e">--new column in sysprocesses in 2005
+</span></span></span><span style="display:flex;"><span>[eventtype] [nvarchar](<span style="color:#ae81ff">30</span>) <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[<span style="color:#66d9ef">parameters</span>] [int] <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[eventinfo] [varchar](<span style="color:#ae81ff">4000</span>) <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>[snaptime] [smalldatetime] <span style="color:#66d9ef">NULL</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>) <span style="color:#66d9ef">ON</span> [<span style="color:#66d9ef">PRIMARY</span>]
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> ANSI_PADDING <span style="color:#66d9ef">OFF</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>PRINT <span style="color:#e6db74">&#39;=======================================================================================================&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">IF</span> <span style="color:#e6db74">&#39;activity&#39;</span> <span style="color:#66d9ef">IN</span> (<span style="color:#66d9ef">SELECT</span> NAME <span style="color:#66d9ef">FROM</span> sysobjects <span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">TYPE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;U&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span>
+</span></span><span style="display:flex;"><span>PRINT <span style="color:#e6db74">&#39;Table activity successfully created...&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>And finally the Stored Procedure itself must be created.</p>
+<p>You can download the entire script from <a href="https://bit.ly/1fhTcZv">here</a>.</p>
+<p>So there you have it. I don’t pretend for one minute that the T-SQL code is perfect, even during the process of putting this post together I spotted a couple of things that should be changed such as wrong choices for datatypes and a slightly roundabout way for checking the existence of objects, but the important thing is that the code works and works well. Therefore if you are still using SQL Server 2000 in your existing environment and need whoisactive style functionality then look know further. Enjoy.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sqlhelp/">SQLHelp</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/04/13/schedule-so-far/">
+            <span>previous: </span>
+            <span>Schedule so far</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/">
+            <span>next: </span>
+            <span>Remember your OS when upgrading to SQL 2012</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

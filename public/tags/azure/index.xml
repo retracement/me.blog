@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/azure/</link>
+    <description>Recent content in Azure on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Thu, 25 Apr 2019 17:40:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Azure Cloud Shell</title>
+      <link>https://tenbulls.co.uk/posts/2019/04/25/introduction-to-azure-cloud-shell/</link>
+      <pubDate>Thu, 25 Apr 2019 17:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2019/04/25/introduction-to-azure-cloud-shell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/cloudshell.jpg&#34; alt=&#34;On the beach&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In my last couple of posts, I have described the remote management of Azure through the command line from what was essentially a fat (or thick) client. This gives you an awful lot of scripting and automation control over the platform by using either the Azure CLI or PowerShell through the PowerShell Az Module. This is perfect for most cases, but what if you are using an unsupported Operating System or you only have access to the browser (perhaps via a thin client)?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AzureRM, Azure CLI and the PowerShell Az Module</title>
+      <link>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
+      <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

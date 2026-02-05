@@ -107,13 +107,13 @@ Once complete you should try launching a published Citrix Application. At this s
       <article>
         <p>The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&rsquo;s website download the tarball of the Citrix Receiver.</p>
 <p><img src="/images/2010/citrix1.jpg" alt="Citrix clients"></p>
-<p>Extract the tarball…</p>
+<p>Extract the tarball&hellip;</p>
 <p><img src="/images/2010/citrix2.jpg" alt="Extract"></p>
-<p>…and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.</p>
+<p>&hellip;and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.</p>
 <p><img src="/images/2010/citrix3.jpg" alt="Run setup"></p>
 <p>Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message <em>&ldquo;You have not chosen to trust &ldquo;&rdquo;, the issuer of the server&rsquo;s security certificate (SSL error 61).&rdquo;</em></p>
 <p><img src="/images/2010/citrix4.jpg" alt="Client error"></p>
-<p>Now what is particularly confusing if you look at the installed certificates in Firefox you will no doubt see that it is already present (the certificate in the error message could vary between sites). This is all actually a bit misleading, because actually the Citrix client is looking within its own keystore for the certificate. If Firefox does contain the certificate that the Citrix client requires, the procedure to export it is very simple. Select <em>Edit/ Preferences/ Advanced/ View Certificates/ Authorities/ Export…</em></p>
+<p>Now what is particularly confusing if you look at the installed certificates in Firefox you will no doubt see that it is already present (the certificate in the error message could vary between sites). This is all actually a bit misleading, because actually the Citrix client is looking within its own keystore for the certificate. If Firefox does contain the certificate that the Citrix client requires, the procedure to export it is very simple. Select <em>Edit/ Preferences/ Advanced/ View Certificates/ Authorities/ Export&hellip;</em></p>
 <p><img src="/images/2010/citrix5.jpg" alt="Export"></p>
 <p>After you have exported the certificate in X500 format to the cacerts directory of the Citrix Receiver, the error message should hopefully be no more. Should you struggle to locate the required certificate within Firefox, then your Citrix administrator should be able to provide you with the required one.</p>
 <p><img src="/images/2010/citrix6.jpg" alt="post installation"></p>

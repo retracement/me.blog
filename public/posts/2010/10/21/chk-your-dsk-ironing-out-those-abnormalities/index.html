@@ -114,7 +114,7 @@
 </blockquote>
 <p>This is less obviously related to the first, however there does indeed appear to be a pattern in the Application error log where by one error follows the other. The other thing that you will note is that the error code listed in the description matches the Event ID of the previous error.</p>
 <p><img src="/images/2010/corruption2_c.png" alt="Event 9645"></p>
-<p>Anyway, irrespective of whether we believe there is a connection, let us troubleshoot the first problem. So the absolute first thing you need to ensure is that the file system has no errors. Let us run a read only <code>chkdsk</code> against it…</p>
+<p>Anyway, irrespective of whether we believe there is a connection, let us troubleshoot the first problem. So the absolute first thing you need to ensure is that the file system has no errors. Let us run a read only <code>chkdsk</code> against it&hellip;</p>
 <p><img src="/images/2010/corruption3_c.png" alt="chkdsk"></p>
 <p>Unsurprisingly we find that there are issues. Since this disk is actually a Clustered disk resource we need to ensure that we <code>OFFLINE</code> any resource that is dependant on it. When we run the <code>chkdsk /f</code> we will have to close all open file handles. Should any dependant resource be left <code>ONLINE</code> then we will find our Clustered Group failing over and we want to avoid that happening. We can leave the SQL Network Name and SQL IP Address both <code>ONLINE</code> but don&rsquo;t forget not to touch your disks. If you <code>OFFLINE</code> them you will not be able to fix them!</p>
 <p><img src="/images/2010/corruption4_c.png" alt="offline services"></p>

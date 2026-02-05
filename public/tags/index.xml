@@ -7,13 +7,167 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 25 Jan 2012 02:06:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 17:40:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure</title>
+      <link>https://tenbulls.co.uk/tags/azure/</link>
+      <pubDate>Thu, 25 Apr 2019 17:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell</title>
+      <link>https://tenbulls.co.uk/tags/powershell/</link>
+      <pubDate>Thu, 25 Apr 2019 17:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure CLI</title>
+      <link>https://tenbulls.co.uk/tags/azure-cli/</link>
+      <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/azure-cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AzureRM</title>
+      <link>https://tenbulls.co.uk/tags/azurerm/</link>
+      <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/azurerm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://tenbulls.co.uk/tags/linux/</link>
+      <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/linux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Public Speaking</title>
       <link>https://tenbulls.co.uk/tags/public-speaking/</link>
-      <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
+      <pubDate>Mon, 01 Oct 2012 18:11:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/public-speaking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLSaturday</title>
+      <link>https://tenbulls.co.uk/tags/sqlsaturday/</link>
+      <pubDate>Mon, 01 Oct 2012 18:11:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlsaturday/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>https://tenbulls.co.uk/tags/automation/</link>
+      <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>https://tenbulls.co.uk/tags/installation/</link>
+      <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/installation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://tenbulls.co.uk/tags/sql/</link>
+      <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://tenbulls.co.uk/tags/windows/</link>
+      <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PASS Summit</title>
+      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
+      <pubDate>Fri, 04 May 2012 18:03:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLBits</title>
+      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
+      <pubDate>Fri, 04 May 2012 18:03:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upgrade</title>
+      <link>https://tenbulls.co.uk/tags/upgrade/</link>
+      <pubDate>Tue, 24 Apr 2012 19:18:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/upgrade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLHelp</title>
+      <link>https://tenbulls.co.uk/tags/sqlhelp/</link>
+      <pubDate>Tue, 17 Apr 2012 18:38:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlhelp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Availability Groups</title>
+      <link>https://tenbulls.co.uk/tags/availability-groups/</link>
+      <pubDate>Thu, 05 Apr 2012 15:56:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/availability-groups/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clustering</title>
+      <link>https://tenbulls.co.uk/tags/clustering/</link>
+      <pubDate>Thu, 05 Apr 2012 15:56:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/clustering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HADR</title>
+      <link>https://tenbulls.co.uk/tags/hadr/</link>
+      <pubDate>Thu, 05 Apr 2012 15:56:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/hadr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>24HOP</title>
+      <link>https://tenbulls.co.uk/tags/24hop/</link>
+      <pubDate>Mon, 26 Mar 2012 15:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/24hop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storage</title>
+      <link>https://tenbulls.co.uk/tags/storage/</link>
+      <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/storage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utilities</title>
+      <link>https://tenbulls.co.uk/tags/utilities/</link>
+      <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/utilities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VirtualBox</title>
+      <link>https://tenbulls.co.uk/tags/virtualbox/</link>
+      <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/virtualbox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://tenbulls.co.uk/tags/security/</link>
+      <pubDate>Mon, 30 Jan 2012 14:29:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/security/</guid>
       <description></description>
     </item>
     <item>
@@ -21,41 +175,6 @@
       <link>https://tenbulls.co.uk/tags/sqlrally/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/sqlrally/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Utilities</title>
-      <link>https://tenbulls.co.uk/tags/utilities/</link>
-      <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/utilities/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Windows</title>
-      <link>https://tenbulls.co.uk/tags/windows/</link>
-      <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/windows/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Availability Groups</title>
-      <link>https://tenbulls.co.uk/tags/availability-groups/</link>
-      <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/availability-groups/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Clustering</title>
-      <link>https://tenbulls.co.uk/tags/clustering/</link>
-      <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/clustering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQL</title>
-      <link>https://tenbulls.co.uk/tags/sql/</link>
-      <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sql/</guid>
       <description></description>
     </item>
     <item>
@@ -70,27 +189,6 @@
       <link>https://tenbulls.co.uk/tags/sqlcambs/</link>
       <pubDate>Mon, 24 Oct 2011 11:31:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/sqlcambs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PASS Summit</title>
-      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
-      <pubDate>Fri, 14 Oct 2011 15:59:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQLBits</title>
-      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
-      <pubDate>Mon, 03 Oct 2011 16:13:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>VirtualBox</title>
-      <link>https://tenbulls.co.uk/tags/virtualbox/</link>
-      <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/virtualbox/</guid>
       <description></description>
     </item>
     <item>
@@ -136,13 +234,6 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>https://tenbulls.co.uk/tags/linux/</link>
-      <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Scalability</title>
       <link>https://tenbulls.co.uk/tags/scalability/</link>
       <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
@@ -171,24 +262,10 @@
       <description></description>
     </item>
     <item>
-      <title>SQLHelp</title>
-      <link>https://tenbulls.co.uk/tags/sqlhelp/</link>
-      <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sqlhelp/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>SQLAgent</title>
       <link>https://tenbulls.co.uk/tags/sqlagent/</link>
       <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/sqlagent/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HADR</title>
-      <link>https://tenbulls.co.uk/tags/hadr/</link>
-      <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/hadr/</guid>
       <description></description>
     </item>
     <item>

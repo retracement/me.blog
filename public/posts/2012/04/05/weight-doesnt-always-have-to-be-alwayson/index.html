@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Weight doesnt ALWAYS have to be AlwaysOn">
+  <meta property="og:description" content="One thing I keep hearing myself mentioning more and more in conversation (and most recently in a discussion group at SQLBits a few days ago) is the ability to configure your Windows Cluster Quorum for situations where each cluster node may not be of equal importance.
+In SQL Server 2012 we have various high availability enhancements and improvements and most of these are branded under the term AlwaysOn. In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won’t bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2012-04-05T15:56:00+01:00">
+    <meta property="article:modified_time" content="2012-04-05T15:56:00+01:00">
+    <meta property="article:tag" content="Availability Groups">
+    <meta property="article:tag" content="Clustering">
+    <meta property="article:tag" content="HADR">
+    <meta property="article:tag" content="SQL">
+
+<title>tenbulls blog | Weight doesnt ALWAYS have to be AlwaysOn</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Weight doesnt ALWAYS have to be AlwaysOn</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2012-04-05T15:56:00&#43;01:00">April 5, 2012</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              6 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>One thing I keep hearing myself mentioning more and more in conversation (and most recently in a discussion group at <a href="https://sqlbits.com/">SQLBits</a> a few days ago) is the ability to configure your Windows Cluster Quorum for situations where each cluster node may not be of equal importance.</p>
+<p>In <a href="https://www.microsoft.com/sqlserver/en/us/default.aspx">SQL Server 2012</a> we have various high availability enhancements and improvements and most of these are branded under the term <a href="https://www.microsoft.com/sqlserver/en/us/solutions-technologies/mission-critical-operations/SQL-Server-2012-high-availability.aspx">AlwaysOn</a>. In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won’t bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.</p>
+<p>One of the biggest reasons why Windows Clustering has been adopted as a pre-requisite for AlwaysOn Availability Groups is to use the mechanism known as the <em>Quorum</em> that provides a voting mechanism to determine which nodes can collectively be considered to be still <em>&ldquo;alive&rdquo;</em> and which nodes can be singularly or collectively be considered to have <em>&ldquo;failed&rdquo;</em>. This mechanism is a very important concept to AlwaysOn since it prevents the classic <em>split brain</em> problem. With respect to Availability Groups it also means that the Database Witness server that is used for Database Mirroring is not needed to implement this technology and because of this, is more scalable and reliable than it otherwise would be. <sub>*1</sub></p>
+<p><img src="/images/2012/clones21.jpg" alt="Not so cute clones"><br/>
+<em>Quorum is not so CUTE!</em></p>
+<p>As you may also be aware, in Windows 2008/R2 there are four types of <a href="https://technet.microsoft.com/en-us/library/cc731739.aspx">Quorum model</a> that you may use and these are:</p>
+<ul>
+<li><strong>Node Majority</strong> -where more than half the nodes must remain active.</li>
+<li><strong>Node and Disk Majority</strong> -where the disk acts as an extra vote and that more than half the votes must be available.</li>
+<li><strong>Node and File Share Majority</strong> -where the file share acts as an extra vote and that more than half the votes must be available.</li>
+<li><strong>No Majority: Disk Only</strong> -the disk quorum must remain available.</li>
+</ul>
+<p>In all cases, should the required situations not be true, each Windows Cluster Node’s Cluster Service will automatically shutdown since <em>Quorum</em> is lost.</p>
+<p>In situations where the total number of Cluster Nodes is an odd number then you would traditionally use the Node Majority Quorum model so that you could lose a total of half of your cluster nodes minus one before having a cluster failure. Otherwise the other three Quorum models should be considered (generally Disk Only Quorum could be a valid option when the node count is one or two but should otherwise only be considered in special cases).</p>
+<p>What is not commonly known is that a Cluster Node does not <em>HAVE</em> to have a quorum vote. By default they do, but it is possible to set what is known as <em>Node Weight</em> to zero. Before we come onto that though, you are probably wondering exactly why you would want to do this? Well there are several scenarios that make this a desirable thing to do such as in situations where you have implemented a Geo-Cluster (a Cluster across Geographic locations).</p>
+<p>Consider the following diagram :-</p>
+<p><img src="/images/2012/cluster600.png" alt="Windows Cluster"><br/>
+<em>AlwaysOn FCI or AG nodes across sites</em></p>
+<p>As you can see we have Site A and Site B each hosting a selection of Cluster Nodes. It is possible that each node might be hosting a standalone instance of SQL Server and is simply part of a Windows Cluster because we are using Availability Groups (so each can house a Replica) OR it might be that we have implemented SQL Failover Clustered Instances perhaps because that we require the ability to fail SQL instances across sites.</p>
+<p>Now in the scenario we propose (and assuming we choose a Quorum model of Node Majority) the total number of Quorum votes equals five. Imagine then that we suddenly have a failure of Node C. Since the number of votes would then equal four we would still have <em>quorum</em>. Now consider the prospect that we lose connectivity to Site B. This event would not only cause the Cluster Service for nodes on Site B to shut down (since their total votes of two would be less than the required majority of three) but would also cause the Cluster Service for nodes on Site A to shut down since there would also only be two votes available.</p>
+<p>Although the Cluster Nodes on Site A could be forced to start, we have unfortunately lost availability (however temporarily) and more importantly requires manual intervention. Perhaps a slightly more elegant solution would be to set the Node Weight of  Node D and E to zero meaning that nodes A,B and C are the only ones that can cast a vote to make quorum (making a total Quorum count of three). In the event of a loss of one node on Site A and a loss of connectivity to Site B, two voting nodes will still be casting a quorum majority thereby keeping the Cluster available.</p>
+<p>So lets now move onto how you are able to set your Node Weight for your Cluster nodes. Unsurprisingly we can set the Cluster node Node Weight through a property called <em>NodeWeight</em> but this is not accessible by default. This can be demonstrated by using the following PowerShell script (first we must import the failover clustering module):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Import-Module failoverclusters
+</span></span><span style="display:flex;"><span>Get-Clusternode|Format-Table -auto -property Name, State, NodeWeight
+</span></span></code></pre></div><p>We get the following result:-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Name         State NodeWeight
+</span></span><span style="display:flex;"><span>----         ----- ----------
+</span></span><span style="display:flex;"><span>wonko           Up
+</span></span><span style="display:flex;"><span>wowbagger       Up
+</span></span></code></pre></div><p>However upon installing <a href="https://support.microsoft.com/kb/2494036">Hotfix 2494036</a> (which I should add requires a reboot to take effect) this makes the <em>NodeWeight</em> property accessible:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Name         State NodeWeight
+</span></span><span style="display:flex;"><span>----         ----- ----------
+</span></span><span style="display:flex;"><span>wonko           Up          1
+</span></span><span style="display:flex;"><span>wowbagger       Up          0
+</span></span></code></pre></div><p>As you can see from the above, I have already set the NodeWeight of wowbagger to zero and I did so by running the following PowerShell command:-</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>(Get-ClusterNode <span style="color:#e6db74">&#34;wowbagger&#34;</span>).NodeWeight = <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><p>Before you get all Jackie Chan on me and set some of your Cluster Nodes node weights to zero you should first seriously sit down and draw up a design strategy as to whether this makes sense to do so. In the scenario I proposed “the Business” had stipulated that a loss of Site B or any of the Cluster Nodes within it should not in any way effect the availability of the primary Site A but by doing so we reduce the total number of possible failures on site A to a maximum of one failure in a Cluster containing five nodes! Therefore be very careful and cautious and only when necessary remember that your Cluster Node weight doesn’t always have to be AlwaysOn.</p>
+<hr>
+<p><em><sub>*1</sub> This is a contentious issue for some (including me) since unlike with Database Mirroring, AlwaysOn Availability Groups (since it uses Windows Clustering) requires that a single Active Directory Domain spans each Geographic location.</em></p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/availability-groups/">Availability Groups</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/clustering/">Clustering</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/hadr/">HADR</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/">
+            <span>previous: </span>
+            <span>Presenting Moves Like Jagger – my 24HOP baptism</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/04/13/schedule-so-far/">
+            <span>next: </span>
+            <span>Schedule so far</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

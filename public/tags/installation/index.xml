@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/installation/</link>
+    <description>Recent content in Installation on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Wed, 19 Sep 2012 18:47:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using the SQL Server Installation Wizard on Server Core!</title>
+      <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
+      <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
+      <description>&lt;p&gt;Ever heard the phrase &lt;em&gt;&amp;ldquo;just because you can, doesn’t mean you should?&amp;rdquo;&lt;/em&gt;. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn’t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I’m getting ahead of myself, first let me describe our scenario.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

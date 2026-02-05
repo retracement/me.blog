@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Tue, 07 Jun 2011 20:04:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 01 Feb 2019 13:18:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AzureRM, Azure CLI and the PowerShell Az Module</title>
+      <link>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
+      <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to rip audio from your training videos</title>
       <link>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
       <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Although the following post is Linux related my dear SQL Server geek, you might just find what I am about to say useful in your pursuit of SQL Server greatness. If this possibility doesn’t interest you then I advise to stop reading right&amp;hellip; now!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t normally publish short blog posts and as a result, when I am really busy, it means nothing gets posted due to the large amount of time the bigger articles take. However from time to time I see something that I really want to shout about and this is one of those times.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Although the following post is Linux related my dear SQL Server geek, you might just find what I am about to say useful in your pursuit of SQL Server greatness. If this possibility doesn&amp;rsquo;t interest you then I advise to stop reading right&amp;hellip; now!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t normally publish short blog posts and as a result, when I am really busy, it means nothing gets posted due to the large amount of time the bigger articles take. However from time to time I see something that I really want to shout about and this is one of those times.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to run SQL Server on Linux</title>
@@ -49,7 +56,7 @@
       <link>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</link>
       <pubDate>Wed, 12 May 2010 20:53:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</guid>
-      <description>&lt;p&gt;The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&amp;rsquo;s website download the tarball of the Citrix Receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix1.jpg&#34; alt=&#34;Citrix clients&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Extract the tarball…&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix2.jpg&#34; alt=&#34;Extract&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;…and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix3.jpg&#34; alt=&#34;Run setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message &lt;em&gt;&amp;ldquo;You have not chosen to trust &amp;ldquo;&amp;rdquo;, the issuer of the server&amp;rsquo;s security certificate (SSL error 61).&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&amp;rsquo;s website download the tarball of the Citrix Receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix1.jpg&#34; alt=&#34;Citrix clients&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Extract the tarball&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix2.jpg&#34; alt=&#34;Extract&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip;and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix3.jpg&#34; alt=&#34;Run setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message &lt;em&gt;&amp;ldquo;You have not chosen to trust &amp;ldquo;&amp;rdquo;, the issuer of the server&amp;rsquo;s security certificate (SSL error 61).&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Webcam troubleshooting on Linux</title>

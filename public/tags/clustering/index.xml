@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 25 Nov 2011 00:55:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 05 Apr 2012 15:56:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weight doesnt ALWAYS have to be AlwaysOn</title>
+      <link>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>
+      <pubDate>Thu, 05 Apr 2012 15:56:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</guid>
+      <description>&lt;p&gt;One thing I keep hearing myself mentioning more and more in conversation (and most recently in a discussion group at &lt;a href=&#34;https://sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; a few days ago) is the ability to configure your Windows Cluster Quorum for situations where each cluster node may not be of equal importance.&lt;/p&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/default.aspx&#34;&gt;SQL Server 2012&lt;/a&gt; we have various high availability enhancements and improvements and most of these are branded under the term &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/solutions-technologies/mission-critical-operations/SQL-Server-2012-high-availability.aspx&#34;&gt;AlwaysOn&lt;/a&gt;. In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won’t bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Keep your Availability Group listener name short</title>
       <link>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</link>
       <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</guid>
-      <description>&lt;p&gt;Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I’d found in Linux Gnome which he had never seen before &lt;em&gt;&amp;ldquo;after all his years working with the product&amp;rdquo;&lt;/em&gt;. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won’t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I&amp;rsquo;d found in Linux Gnome which he had never seen before &lt;em&gt;&amp;ldquo;after all his years working with the product&amp;rdquo;&lt;/em&gt;. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won&amp;rsquo;t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clustering nodes on different subnets</title>

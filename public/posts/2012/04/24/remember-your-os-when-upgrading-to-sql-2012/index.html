@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Remember your OS when upgrading to SQL 2012">
+  <meta property="og:description" content="Probably as far back as the end of last year when I first started putting material together for my Enter the Dragon and Moves like Jagger presentations and giving very early mash up presentations of them combined together, I started emphasising one very important upgrade consideration which is very often ignored. It is also a fact that is quite nicely touched upon by Glenn Berry (twitter|blog) in his excellent book SQL Server Hardware and if you have yet to discover its unique delights then I strongly advise you to check it out.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2012-04-24T19:18:00+01:00">
+    <meta property="article:modified_time" content="2012-04-24T19:18:00+01:00">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="Upgrade">
+    <meta property="article:tag" content="Windows">
+
+<title>tenbulls blog | Remember your OS when upgrading to SQL 2012</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Remember your OS when upgrading to SQL 2012</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2012-04-24T19:18:00&#43;01:00">April 24, 2012</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Probably as far back as the end of last year when I first started putting material together for my Enter the Dragon and Moves like Jagger presentations and giving very early mash up presentations of them combined together, I started emphasising one very important upgrade consideration which is very often ignored. It is also a fact that is quite nicely touched upon by Glenn Berry (<a href="https://twitter.com/#!/glennalanberry">twitter</a>|<a href="https://sqlserverperformance.wordpress.com/">blog</a>) in his excellent book SQL Server Hardware and if you have yet to discover its unique delights then I strongly advise you to check it out.</p>
+<p>The consideration I am talking about is of course the mainstream support dates of our Hardware and Software but most specifically the Operating System (in our case Windows) which is the one of most concern.</p>
+<p><img src="/images/2012/mainstream_24hoursofpassppt_moves_like_jagger.jpg" alt="Mainstream support"><br/>
+<em>Spot the problem?</em></p>
+<p>During my Moves Like Jagger – Upgrading to SQL Server 2012 presentation (most recently given to <a href="https://www.sqlpass.org/24hours/spring2012/SessionsbySchedule/SessionDetails.aspx?sid=2562">24HOP</a>) I have discussed that should you decide to upgrade to SQL Server 2012 then you should watch out for the mainstream support end dates for Windows 2008 and Windows 2008 R2. If you are installing SQL 2012 to Windows Server Core then your only consideration anyway is Windows 2008 R2 (SP1) otherwise using Windows 2008 (SP2) is a supported Operating System. However from a mainstream support perspective the version of Windows you use is kind of irrelevant since (as you can see in the slide above) each expires on exactly the same date -surprisingly mid July next year!</p>
+<p>Yes people you heard me right, should you choose to upgrade your environment to SQL 2012 today, tomorrow or have already done so, then I hope you have taken this into consideration -for if your company are not prepared to pay for Extended Support then you could be looking at yet another upgrade (this time the OS) sometime next year. This scenario is one very strong reason why if you have implemented SQL 2012 in an Availability Group or Clustered configuration you can probably give yourself a pat on the back right now. It is going to simplify your OS upgrade and maintain a level of High Availability where this is required.</p>
+<p><img src="/images/2012/beautiful-cottage.jpg" alt="Beautiful cottage"><br/>
+<em>Beautiful now, but rebuild costs could be large!</em></p>
+<p>At the turn of the year I went slightly out on a limb by saying that because of the Mainstream Support expiry dates it was my firm belief that Microsoft would release their newest Operating System (I called it Windows 8 Server at the time 🙂) before mid July and that if you did not have a compelling reason to upgrade to SQL 2012 now, then it is probably a good idea to wait a while.</p>
+<p>Well so far my guesstimate appears to be coming true. We now know that the next Server release of Windows is called Windows 2012 (I personally like the fact it is in-line with the Server based Application names) and  today I have seen the following url- <a href="https://blogs.technet.com/b/windowsserver/archive/2012/04/24/windows-server-2012-release-candidate-timing.aspx?">Windows Server 2012 Release Candidate Timing</a>. So we know by the very name that the OS is coming this year and at the time of writing all indications point to an imminent release but let me stress that I have no inside knowledge and this is all guesswork so please don’t get upset if the release happens on the 31st of December 2012 -however unlikely!</p>
+<p>In summary I believe you should take three approaches to implementing SQL Server 2012 at this present time:</p>
+<ol>
+<li>The first and probably my most recommended option would be to wait for (hopefully only) a few more months if you can until the release of Windows 2012.</li>
+</ol>
+<p>The second and third options are to plan for the Mainstream Support end of Windows 2008/R2 by :-</p>
+<ol start="2">
+<li>Arranging and paying for Extended Support.</li>
+<li>Implementing SQL 2012 in an HA configuration that enables you up blow away your base Operating System and start again (for instance using AlwaysOn or even Peer to Peer Replication are possible routes you can take).</li>
+</ol>
+<p>Whatever you do, don’t forget the obvious&hellip; and remember your dates.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/upgrade/">Upgrade</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/windows/">Windows</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/">
+            <span>previous: </span>
+            <span>whoisactive on SQL 2000</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/">
+            <span>next: </span>
+            <span>Change and make a difference</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

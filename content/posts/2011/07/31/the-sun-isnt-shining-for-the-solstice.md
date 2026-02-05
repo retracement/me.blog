@@ -1,7 +1,7 @@
 +++
 date = '2011-07-31T20:36:00+01:00'
 draft = false
-title = 'The Sun isn't shining for the Solstice'
+title = 'The Sun isnt shining for the Solstice'
 categories = ['Personal Development']
 tags = ['SQL Solstice']
 +++
@@ -32,4 +32,3 @@ I really hope that SQL Solstice or any of the possible contenders do actually su
 Coincidently (and ironically) SQL Server Magazine published the following article a few days ago: [What Is the Future of the Paid SQL Server Conference Model?](https://www.sqlmag.com/article/sql-server/future-paid-sql-server-conference-model-140001)
 
 Can SQL Solstice succeed sometime in the future? Only time will tell, but this is not a good start.
-

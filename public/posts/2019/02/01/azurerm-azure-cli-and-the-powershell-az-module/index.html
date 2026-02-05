@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="AzureRM, Azure CLI and the PowerShell Az Module">
+  <meta property="og:description" content="There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.
+It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-02-01T13:18:00+01:00">
+    <meta property="article:modified_time" content="2019-02-01T13:18:00+01:00">
+    <meta property="article:tag" content="Azure">
+    <meta property="article:tag" content="PowerShell">
+    <meta property="article:tag" content="AzureRM">
+    <meta property="article:tag" content="Azure CLI">
+    <meta property="article:tag" content="Linux">
+
+<title>tenbulls blog | AzureRM, Azure CLI and the PowerShell Az Module</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">AzureRM, Azure CLI and the PowerShell Az Module</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2019-02-01T13:18:00&#43;01:00">February 1, 2019</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              8 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><img src="/images/2019/azurecli.png" alt="Azure CLI"></p>
+<p>There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.</p>
+<p>It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.</p>
+<hr>
+<h1 id="powershell-core-on-linux">PowerShell Core (on Linux)</h1>
+<p>If you are running a Linux machine, to use AzureRM or the new PowerShell Az module you will first need to install PowerShell Core for Linux. Installation is fairly easy to perform and you can follow <a href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-6">this post</a> using the relevant section for your particular distribution and release. In my specific case, I am running Linux Mint 18.1 Serena, however, to get my Ubuntu version I first run the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>more /etc/os-release
+</span></span></code></pre></div><p>This returns:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>NAME<span style="color:#f92672">=</span><span style="color:#ae81ff">\&#34;</span>Linux Mint<span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">VERSION=&#34;</span>18.1 <span style="color:#f92672">(</span>Serena<span style="color:#f92672">)</span><span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ID=linuxmint
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ID_LIKE=ubuntu
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">PRETTY_NAME=&#34;</span>Linux Mint 18.1<span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">VERSION_ID=&#34;</span>18.1<span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">HOME_URL=&#34;</span>http://www.linuxmint.com/<span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">SUPPORT_URL=&#34;</span>http://forums.linuxmint.com/<span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">BUG_REPORT_URL=&#34;</span>http://bugs.launchpad.net/linuxmint/<span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">VERSION_CODENAME=serena
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">UBUNTU_CODENAME=xenial
+</span></span></span></code></pre></div><p>As you can see, the <em>UBUNTU_CODENAME</em> is <em>xenial</em>. So if I visit the <a href="https://wiki.ubuntu.com/Releases">Ubuntu list of releases</a> page, I can see that xenial equates to version 16.04.x LTS. This means that (for me at least) I can follow the PowerShell on Linux installation section titled <a href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-6#ubuntu-1604">Ubuntu 16.04</a> (instructions provided below simply as an example):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Download the Microsoft repository GPG keys</span>
+</span></span><span style="display:flex;"><span>wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Register the Microsoft repository GPG keys</span>
+</span></span><span style="display:flex;"><span>sudo dpkg -i packages-microsoft-prod.deb
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Update the list of products</span>
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install PowerShell</span>
+</span></span><span style="display:flex;"><span>sudo apt-get install -y powershell
+</span></span></code></pre></div><p>To enter a PowerShell session in Linux, you simply type the following within a bash prompt (in Windows you instead use the powershell executable):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pwsh
+</span></span></code></pre></div><p><img src="/images/2019/pwsh-1.png" alt="PowerShell on Linux"></p>
+<h1 id="azurerm-module-aka-azure-powershell">AzureRM module (aka Azure PowerShell)</h1>
+<p><em>Before you read further, you should understand that AzureRM is deprecated, and if you are currently using it to manage to Azure resources, then you should seriously consider migrating to one of the other options described in the next sections (and removing AzureRM from your system).</em></p>
+<p>I first came across the AzureRM PowerShell Module many years ago when I wanted to manage Azure Resources from my Windows laptop through PowerShell. At the time, this was the only way of doing so from the command line, and the functionality of AzureRM was provided by (in Windows at least) a downloadable installer to make the module available to PowerShell. You can check out the latest version and instructions for AzureRM by visiting <a href="https://docs.microsoft.com/en-us/powershell/azure/azurerm/install-azurerm-ps?view=azurermps-6.13.0">here</a>, but as mentioned earlier, you should avoid attempting this and instead use the Azure CLI or PowerShell Az module as described in the next sections. At the last time of trying, attempts to install AzureRM via PowerShell Core in Linux resulted in failure with warning messages pointing to the PowerShell Az module, so you are forced to go to the newer options anyway.</p>
+<p>Upon import into your PowerShell environment, the AzureRM module provided up to 134 commandlets (in version 2) so that you could manage all your Azure subscription resources via PowerShell.</p>
+<hr>
+<h1 id="azure-cli">Azure CLI</h1>
+<p>The Azure CLI was intended as the defacto cross-platform command-line tool for managing Azure resources. Version 1 was originally conceived and written using node.js, and offered the ability to manage Azure resources from Linux and macOS, as well as from Windows (prior to PowerShell Core being available on macOS and Linux). Version 2 of the Azure CLI was re-written in python for better platform compatibility and as such, there is now not always direct one-one compatibility between commands across those versions. Obviously, you should use version 2 where possible.</p>
+<p>Head over to Microsoft docs article titled <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest">Install the Azure CLI</a> for instructions on installing the CLI for your operating system of choice, or you might also be interested in how to do so on my personal Linux distribution of choice (Linux Mint) in my post titled <a href="https://tenbulls.co.uk/2018/12/01/installing-azure-cli-on-linux-mint/">Installing Azure CLI on Linux Mint</a>. Installing the Azure CLI will enable the ability to use the az command syntax from within your Windows command prompt, or via your PowerShell prompt, or through bash (if you are specifically using Linux).</p>
+<p>Once installed, to use the Azure CLI you will prefix any instruction with the <code>az</code> command. Thankfully there is strong contextual help so you can simply run <code>az</code> for a full list of available subcommands, or provide a specific subcommand for help on that.</p>
+<p>To execute an az command, you will first need to login to your Microsoft account (that you use to access your Azure subscription/s) as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az login
+</span></span></code></pre></div><p>This will return the following message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Note, we have launched a browser for you to login.
+</span></span><span style="display:flex;"><span>For old experience with device code,
+</span></span><span style="display:flex;"><span>use &#34;az login --use-device-code&#34;
+</span></span></code></pre></div><p>A browser window will be automatically launched for Azure and require you to log in with your credentials. Alternatively (as you can see in the message), you can use the old authentication method (which is especially useful if your machine does not have a browser). In this case, you would run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az login --use-device-code
+</span></span></code></pre></div><p>Then log into your account from a browser entering the device code provided.</p>
+<p>Either way, after you have done this, we can issue our az commands against our Azure resources, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az vm list
+</span></span></code></pre></div><p>Would list out all current Azure IaaS VMs in your subscription.
+Another useful tip with az is to use the <em>find</em> subcommand to search through command documentation for a specific phrase. For example if I want to search for Cosmos DB related commands I would use the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az find --search-query cosmos
+</span></span></code></pre></div><p>Returns the following list of commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>`az cosmosdb database show`
+</span></span><span style="display:flex;"><span>    Shows an Azure Cosmos DB database
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb database create`
+</span></span><span style="display:flex;"><span>    Creates an Azure Cosmos DB database
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb database delete`
+</span></span><span style="display:flex;"><span>    Deletes an Azure Cosmos DB database
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb collection create`
+</span></span><span style="display:flex;"><span>    Creates an Azure Cosmos DB collection
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb collection delete`
+</span></span><span style="display:flex;"><span>    Deletes an Azure Cosmos DB collection
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb collection update`
+</span></span><span style="display:flex;"><span>    Updates an Azure Cosmos DB collection
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb database`
+</span></span><span style="display:flex;"><span>    Manage Azure Cosmos DB databases.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb collection`
+</span></span><span style="display:flex;"><span>    Manage Azure Cosmos DB collections.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb delete`
+</span></span><span style="display:flex;"><span>    Deletes an Azure Cosmos DB database account.
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>`az cosmosdb update`
+</span></span><span style="display:flex;"><span>    Update an Azure Cosmos DB database account.
+</span></span></code></pre></div><h1 id="az-powershell-module">Az PowerShell module</h1>
+<p>You might have already questioned that if PowerShell already had a way to manage Azure resources (through the AzureRM module) and we now have the Azure CLI (providing the cross-platform Az functionality), how could there be any synergy between those two environments?</p>
+<p>The answer is that there isn&rsquo;t. This is one reason why AzureRM is deprecated.</p>
+<p>With the arrival of PowerShell Core on Linux and macOS, it became possible to import the AzureRM module also into those environments, and yet as we have already found out, the Azure CLI was the newer mechanism to manage Azure resources. The problem is that both used different commands to do so (however subtle). In December 2018, Microsoft addressed this situation by introducing the new PowerShell Az module to replace AzureRM which gave a level of synergy between managing Azure resources through the Azure CLI and managing resources through PowerShell. This really means that if you understand one command line environment, your scripts will be relatively easily transferable into the other.</p>
+<p>If you are looking to migrate from AzureRM to the new Azure Az module then you should check out this excellent <a href="https://about-azure.com/2018/12/21/how-to-migrate-azure-powershell-from-azurerm-to-the-new-az-module/">post by Martin Brandl</a>. It is also worth you checking out this announcement from Microsoft titled <a href="https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az">Introducing the new Azure PowerShell Az module</a>.</p>
+<p>To install the PowerShell Az module you can follow the Microsoft article titled <a href="https://docs.microsoft.com/en-us/powershell/azure/install-az-ps">Install the Azure PowerShell module</a>. As you will read, you must install this module in an elevated prompt, otherwise, the installation will fail. On PowerShell Core for Linux this means that from bash you would first elevate your PowerShell session as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pwsh
+</span></span></code></pre></div><p>Then you can run the following PowerShell Install-Module command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Install-Module -Name Az -AllowClobber
+</span></span></code></pre></div><p>Once installed and imported, you are now able to utilize this new PowerShell Az module but must first login to your Azure account using the following PowerShell command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Connect-AzAccount
+</span></span></code></pre></div><p>This will return a message similar to the one below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>WARNING: To sign in, use a web browser to open
+</span></span><span style="display:flex;"><span>the page https://microsoft.com/devicelogin and
+</span></span><span style="display:flex;"><span>enter the code D8ZYJCM2V to authenticate.
+</span></span></code></pre></div><p>Once you have performed this action, your Az module in PowerShell will be ready to use. For instance, we can now list IaaS VMs in PowerShell as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-AzVM
+</span></span></code></pre></div><p>As you may note, there is a correlation between this command and the Azure CLI command (<code>az vm list</code>) that we ran earlier. However, it is important to realize that the functionality and behavior of the PowerShell Az module and Azure CLI are not identical. For instance, in this specific case, the Azure CLI will return a verbose result set in YAML format by default whereas the PowerShell Az module returns the results in a shortened tabular format.</p>
+<hr>
+<h1 id="summary">Summary</h1>
+<p>Hopefully, it is clear by now that the AzureRM module is redundant across all environments and if you need the ability to manage resources in Azure through PowerShell then the Az module is what you should be using. However, given the ease of multi-platform deployment and use of the Azure CLI, it is probably something you should not ignore and arguably might prefer over PowerShell Az (or at very least run both alongside each other). For example, at the time of writing, exporting an Azure resource template to PowerShell results in code that uses AzureRM rather than PowerShell Az whereas exporting to CLI uses (of course) the Azure CLI itself.</p>
+<p>There is also an argument that the Azure CLI is far better suited to Azure automated deployments over ARM templates due to its brevity, and this is discussed in detail by Pascal Naber in his excellent post titled <a href="https://pascalnaber.wordpress.com/2018/11/11/stop-using-arm-templates-use-the-azure-cli-instead/">Stop using ARM templates! Use the Azure CLI instead</a>.</p>
+<p>Whether you eventually decide to favor Azure CLI over PowerShell Az (or use both), I sincerely hope this post has helped clear up any confusion you may have between all the available command line options to manage Azure resources -I know it had confused me!</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/azure/">Azure</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/powershell/">PowerShell</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/azurerm/">AzureRM</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/azure-cli/">Azure CLI</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/linux/">Linux</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/">
+            <span>previous: </span>
+            <span>Learning to say NO</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2019/04/25/introduction-to-azure-cloud-shell/">
+            <span>next: </span>
+            <span>Introduction to Azure Cloud Shell</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
