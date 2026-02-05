@@ -80,17 +80,131 @@
     <loc>https://tenbulls.co.uk/posts/2019/05/31/azure-subscription-is-not-registered/</loc>
     <lastmod>2019-05-31T20:18:00+01:00</lastmod>
   </url><url>
+    <loc>https://tenbulls.co.uk/tags/azure/</loc>
+    <lastmod>2019-04-25T17:40:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/categories/</loc>
+    <lastmod>2019-04-25T17:40:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2019/04/25/introduction-to-azure-cloud-shell/</loc>
+    <lastmod>2019-04-25T17:40:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/powershell/</loc>
+    <lastmod>2019-04-25T17:40:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/</loc>
+    <lastmod>2019-04-25T17:40:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/categories/technology/</loc>
+    <lastmod>2019-04-25T17:40:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/azure-cli/</loc>
+    <lastmod>2019-02-01T13:18:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/azurerm/</loc>
+    <lastmod>2019-02-01T13:18:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</loc>
+    <lastmod>2019-02-01T13:18:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/linux/</loc>
+    <lastmod>2019-02-01T13:18:00+01:00</lastmod>
+  </url><url>
     <loc>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</loc>
     <lastmod>2017-08-08T20:31:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/categories/</loc>
-    <lastmod>2012-01-25T02:06:00+01:00</lastmod>
+    <loc>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</loc>
+    <lastmod>2012-10-01T18:11:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/categories/personal-development/</loc>
-    <lastmod>2012-01-25T02:06:00+01:00</lastmod>
+    <lastmod>2012-10-01T18:11:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/public-speaking/</loc>
-    <lastmod>2012-01-25T02:06:00+01:00</lastmod>
+    <lastmod>2012-10-01T18:11:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlsaturday/</loc>
+    <lastmod>2012-10-01T18:11:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/automation/</loc>
+    <lastmod>2012-09-19T18:47:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/installation/</loc>
+    <lastmod>2012-09-19T18:47:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sql/</loc>
+    <lastmod>2012-09-19T18:47:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</loc>
+    <lastmod>2012-09-19T18:47:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/windows/</loc>
+    <lastmod>2012-09-19T18:47:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</loc>
+    <lastmod>2012-09-12T11:26:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</loc>
+    <lastmod>2012-05-04T18:03:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
+    <lastmod>2012-05-04T18:03:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
+    <lastmod>2012-05-04T18:03:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</loc>
+    <lastmod>2012-04-24T19:18:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/upgrade/</loc>
+    <lastmod>2012-04-24T19:18:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlhelp/</loc>
+    <lastmod>2012-04-17T18:38:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/</loc>
+    <lastmod>2012-04-17T18:38:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/04/13/schedule-so-far/</loc>
+    <lastmod>2012-04-13T19:24:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/availability-groups/</loc>
+    <lastmod>2012-04-05T15:56:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/clustering/</loc>
+    <lastmod>2012-04-05T15:56:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/hadr/</loc>
+    <lastmod>2012-04-05T15:56:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</loc>
+    <lastmod>2012-04-05T15:56:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/24hop/</loc>
+    <lastmod>2012-03-26T15:07:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</loc>
+    <lastmod>2012-03-26T15:07:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</loc>
+    <lastmod>2012-03-14T12:43:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/storage/</loc>
+    <lastmod>2012-03-14T12:43:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/utilities/</loc>
+    <lastmod>2012-03-14T12:43:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/virtualbox/</loc>
+    <lastmod>2012-03-14T12:43:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</loc>
+    <lastmod>2012-02-16T21:50:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/security/</loc>
+    <lastmod>2012-01-30T14:29:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</loc>
+    <lastmod>2012-01-30T14:29:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/sqlrally/</loc>
     <lastmod>2012-01-25T02:06:00+01:00</lastmod>
@@ -98,31 +212,10 @@
     <loc>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</loc>
     <lastmod>2012-01-25T02:06:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/</loc>
-    <lastmod>2012-01-25T02:06:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/categories/technology/</loc>
-    <lastmod>2011-12-13T22:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/utilities/</loc>
-    <lastmod>2011-12-13T22:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</loc>
     <lastmod>2011-12-13T22:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/windows/</loc>
-    <lastmod>2011-12-13T22:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/availability-groups/</loc>
-    <lastmod>2011-11-25T00:55:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/clustering/</loc>
-    <lastmod>2011-11-25T00:55:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</loc>
-    <lastmod>2011-11-25T00:55:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sql/</loc>
     <lastmod>2011-11-25T00:55:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/concurrency/</loc>
@@ -140,9 +233,6 @@
     <loc>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</loc>
     <lastmod>2011-10-14T15:59:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
-    <lastmod>2011-10-14T15:59:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</loc>
     <lastmod>2011-10-12T08:16:00+01:00</lastmod>
   </url><url>
@@ -151,9 +241,6 @@
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</loc>
     <lastmod>2011-10-09T20:27:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
-    <lastmod>2011-10-03T16:13:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</loc>
     <lastmod>2011-10-03T16:13:00+01:00</lastmod>
@@ -165,9 +252,6 @@
     <lastmod>2011-09-14T12:31:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</loc>
-    <lastmod>2011-08-30T22:34:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/virtualbox/</loc>
     <lastmod>2011-08-30T22:34:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/books/</loc>
@@ -206,9 +290,6 @@
     <loc>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</loc>
     <lastmod>2011-06-07T20:04:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/linux/</loc>
-    <lastmod>2011-06-07T20:04:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/tags/scalability/</loc>
     <lastmod>2011-05-25T23:24:00+01:00</lastmod>
   </url><url>
@@ -239,9 +320,6 @@
     <loc>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</loc>
     <lastmod>2011-03-25T12:49:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/sqlhelp/</loc>
-    <lastmod>2011-03-25T12:49:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</loc>
     <lastmod>2011-03-21T13:23:00+01:00</lastmod>
   </url><url>
@@ -261,9 +339,6 @@
     <lastmod>2011-02-25T16:34:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</loc>
-    <lastmod>2011-02-17T19:38:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/hadr/</loc>
     <lastmod>2011-02-17T19:38:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</loc>

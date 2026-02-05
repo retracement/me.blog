@@ -7,42 +7,49 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 14 Oct 2011 15:59:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 04 May 2012 18:03:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/pass-summit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change and make a difference</title>
+      <link>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</link>
+      <pubDate>Fri, 04 May 2012 18:03:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Let me tell you a story&amp;hellip;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/sqlsat162_print_small.jpg&#34; alt=&#34;SQLSaturday #162 Cambridge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is a drizzly night in November and I am sat with a bunch of people I have never met before. They are all eating and I am not (one too many Whiskys the night before). They all appear to know each other and are vigorously moving from subject to subject with enthusiasm and I am listening intently to the conversation but not really saying too much.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NOLOCK hits Mythbusters!</title>
       <link>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</link>
       <pubDate>Fri, 14 Oct 2011 15:59:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</guid>
-      <description>&lt;p&gt;Exactly one month to this very day I wrote the article &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock&#34;&gt;When should you use NOLOCK?&lt;/a&gt; which explained exactly when the use of the &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation level was acceptable and when it wasn’t. I also revealed that it not only takes out a &lt;em&gt;Schema Stability (Sch-S)&lt;/em&gt; lock on the object (which is documented in Books Online for the hint) but also took out a special &lt;em&gt;Shared (S) Bulk Operation&lt;/em&gt; lock when used on heaps. This latter behaviour is not even mentioned in Books Online for the hint and as far as I know, has never been documented or mentioned anywhere else before.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Exactly one month to this very day I wrote the article &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock&#34;&gt;When should you use NOLOCK?&lt;/a&gt; which explained exactly when the use of the &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation level was acceptable and when it wasn&amp;rsquo;t. I also revealed that it not only takes out a &lt;em&gt;Schema Stability (Sch-S)&lt;/em&gt; lock on the object (which is documented in Books Online for the hint) but also took out a special &lt;em&gt;Shared (S) Bulk Operation&lt;/em&gt; lock when used on heaps. This latter behaviour is not even mentioned in Books Online for the hint and as far as I know, has never been documented or mentioned anywhere else before.&lt;/p&gt;</description>
     </item>
     <item>
       <title>At the Bloggers Table - Post 2</title>
       <link>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</link>
       <pubDate>Wed, 12 Oct 2011 08:16:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</guid>
-      <description>&lt;p&gt;Well the keynote speech has begun, Ted Kummert is on stage and the focus at the beginning has been very much on the Community and SQL Azure. It is clear to me that Microsoft recognize the value of our amazing community -and they should because together we are helping to shape that future of this product into something that is becoming truly amazing. There was a time when Oracle DBA’s used to look down on SQL Server, but now they are worried and are desperately trying to get up to speed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Well the keynote speech has begun, Ted Kummert is on stage and the focus at the beginning has been very much on the Community and SQL Azure. It is clear to me that Microsoft recognize the value of our amazing community -and they should because together we are helping to shape that future of this product into something that is becoming truly amazing. There was a time when Oracle DBA&amp;rsquo;s used to look down on SQL Server, but now they are worried and are desperately trying to get up to speed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>At the Bloggers Table - Post 1</title>
       <link>https://tenbulls.co.uk/posts/2011/10/12/my-alarm-clock-worked/</link>
       <pubDate>Wed, 12 Oct 2011 07:30:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/10/12/my-alarm-clock-worked/</guid>
-      <description>&lt;p&gt;Well the good news is my alarm clock worked!&lt;/p&gt;&#xA;&lt;p&gt;So the time is around 7:30 am and I managed to get out of bed for my second official appointment of the PASS Summit 2011 and things are getting warmed up. I’m sat here on the front row of the Blogger table whilst to my left I have Brent Ozar, Aaron Bertrand and to my right Wes Brown and the Midnight DBA’s. If that wasn’t enough in front of me I have Stacia Misner and behind me I have Wendy Dance and Glen Berry! I don’t know how I managed this gig but it feels really good and it is an absolute pleasure to be part of it all.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Well the good news is my alarm clock worked!&lt;/p&gt;&#xA;&lt;p&gt;So the time is around 7:30 am and I managed to get out of bed for my second official appointment of the PASS Summit 2011 and things are getting warmed up. I&amp;rsquo;m sat here on the front row of the Blogger table whilst to my left I have Brent Ozar, Aaron Bertrand and to my right Wes Brown and the Midnight DBA&amp;rsquo;s. If that wasn&amp;rsquo;t enough in front of me I have Stacia Misner and behind me I have Wendy Dance and Glen Berry! I don&amp;rsquo;t know how I managed this gig but it feels really good and it is an absolute pleasure to be part of it all.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Im gonna be on the Bloggers Table!</title>
       <link>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</link>
       <pubDate>Sun, 09 Oct 2011 20:27:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</guid>
-      <description>&lt;p&gt;So I’m currently sat here in the lounge of the &lt;a href=&#34;https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/&#34;&gt;Seattle Sheraton&lt;/a&gt; and finally have time to reflect upon my week ahead here at this years &lt;a href=&#34;https://www.sqlpass.org/summit/2011/&#34;&gt;SQLPASS Summit&lt;/a&gt;. At this point in time it is very hard to say exactly how busy I am going to be this week but I suspect that my time here will be slightly more focused than last time since I have a few more responsibilities than before.&lt;/p&gt;</description>
+      <description>&lt;p&gt;So I&amp;rsquo;m currently sat here in the lounge of the &lt;a href=&#34;https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/&#34;&gt;Seattle Sheraton&lt;/a&gt; and finally have time to reflect upon my week ahead here at this years &lt;a href=&#34;https://www.sqlpass.org/summit/2011/&#34;&gt;SQLPASS Summit&lt;/a&gt;. At this point in time it is very hard to say exactly how busy I am going to be this week but I suspect that my time here will be slightly more focused than last time since I have a few more responsibilities than before.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everybody wants to be important</title>
       <link>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</link>
       <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &lt;em&gt;self-development&lt;/em&gt; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the *Meet an MVP lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table.&lt;/p&gt;&#xA;&lt;p&gt;I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising self-improvement training and said &lt;em&gt;&amp;ldquo;the clue is in the name….self! &amp;hellip;so why are you listening to someone else!&amp;rdquo;&lt;/em&gt;. For myself I believe that the &amp;ldquo;self&amp;rdquo; in the name self-improvement actually means that we always need to examine ourselves (and our behaviour) in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &lt;em&gt;self-development&lt;/em&gt; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the *Meet an MVP lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table.&lt;/p&gt;&#xA;&lt;p&gt;I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising self-improvement training and said &lt;em&gt;&amp;ldquo;the clue is in the name&amp;hellip;.self! &amp;hellip;so why are you listening to someone else!&amp;rdquo;&lt;/em&gt;. For myself I believe that the &amp;ldquo;self&amp;rdquo; in the name self-improvement actually means that we always need to examine ourselves (and our behaviour) in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goodbye SQL 7</title>

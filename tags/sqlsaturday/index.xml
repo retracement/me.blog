@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLSaturday on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/sqlsaturday/</link>
+    <description>Recent content in SQLSaturday on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Mon, 01 Oct 2012 18:11:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/sqlsaturday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Memoirs of SQLSaturday Cambridge #162 - Speaker Dinner</title>
+      <link>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</link>
+      <pubDate>Mon, 01 Oct 2012 18:11:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</guid>
+      <description>&lt;p&gt;Probably one of the most over-looked parts of any big or small SQL Event can sometimes be the speaker dinner -which essentially boils down to one thing… the organisers way of showing their appreciation to the speakers who have traveled far and wide usually at their own expense to present expert technical content at no cost to the attendees.&lt;/p&gt;&#xA;&lt;p&gt;As a fairly regular speaker myself, I have experienced many events who have either made very little effort with the dinner, poorly handled its organization (meaning many speakers aren’t even informed that it is happening) or simply don’t bother arranging one at all. And whilst I don’t want to suggest that by organizing an event you absolutely &lt;em&gt;MUST&lt;/em&gt; provide a speaker dinner in order for the event to be regarded as a success, I do personally feel that the speaker meal helps define your event and give it a &lt;em&gt;feel&lt;/em&gt; or your &lt;em&gt;stamp of identity&lt;/em&gt; -and hopefully one along the lines that you were aiming for.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Memoirs of SQLSaturday Cambridge #162 - Precons</title>
+      <link>https://tenbulls.co.uk/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</link>
+      <pubDate>Wed, 12 Sep 2012 11:26:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</guid>
+      <description>&lt;p&gt;Days have passed since we closed the first ever SQLSaturday to hit the shores of the UK and I write with an element of sadness that it is over, relief that my time can start to be more of my own again for other projects, and optimism of what may come.&lt;/p&gt;&#xA;&lt;p&gt;When I first set out on the path of recording what I view as very much a mixture of personal and technical journal in the pages of this blog (and hopefully at times a good resource for others), I always intended to write at least one post per month. I always viewed it as a cardinal sin to let things slip, but unfortunately I truly underestimated the enormity of the work involved in planning, implementing and executing a major IT event. Now it is almost over (there are still many small administrative issues to complete) I think it is fair to say that Team &lt;a href=&#34;https://www.sqlsaturday.com/162/eventhome.aspx&#34;&gt;SQLSaturday #162 Cambridge&lt;/a&gt; are able to take a deep breath and be proud of what we did.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Change and make a difference</title>
+      <link>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</link>
+      <pubDate>Fri, 04 May 2012 18:03:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Let me tell you a story&amp;hellip;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/sqlsat162_print_small.jpg&#34; alt=&#34;SQLSaturday #162 Cambridge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is a drizzly night in November and I am sat with a bunch of people I have never met before. They are all eating and I am not (one too many Whiskys the night before). They all appear to know each other and are vigorously moving from subject to subject with enthusiasm and I am listening intently to the conversation but not really saying too much.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

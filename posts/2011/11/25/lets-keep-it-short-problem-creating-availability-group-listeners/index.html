@@ -104,13 +104,13 @@
       </header>
       
       <article>
-        <p>Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I’d found in Linux Gnome which he had never seen before <em>&ldquo;after all his years working with the product&rdquo;</em>. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won’t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.</p>
+        <p>Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I&rsquo;d found in Linux Gnome which he had never seen before <em>&ldquo;after all his years working with the product&rdquo;</em>. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won&rsquo;t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.</p>
 <p>Whilst playing around with SQL Server 2012 (Denali) Availability groups, I discovered that there is a restriction set on the size of the listener name that you are able to enter through the GUI.</p>
-<p>Let me demonstrate…</p>
+<p>Let me demonstrate&hellip;</p>
 <p>First I will create a new DNS host name called <em>readpastandfurious</em> which you should note is 18 characters long.</p>
 <p><img src="/images/2011/createdns.png" alt="Create new A record"><br/>
-<em>Create our “longish” DNS host record</em></p>
-<p>And of course there isn’t a problem creating this record since the restriction upon the size of the DNS host name is (I believe 24 characters).</p>
+<em>Create our &ldquo;longish&rdquo; DNS host record</em></p>
+<p>And of course there isn&rsquo;t a problem creating this record since the restriction upon the size of the DNS host name is (I believe 24 characters).</p>
 <p><img src="/images/2011/dnscreated.png" alt="DNS record created"><br/>
 <em>DNS Server will now resolve our host record</em></p>
 <p>Next I decide to create an Availability Group Listener via the SSMS GUI wizard and am very surprised when I can only type in 15 characters! Obviously this text field must have been programmatically restricted since by default the GUI text fields would not be limited.</p>
@@ -123,7 +123,7 @@
 </span></span></code></pre></div><p><img src="/images/2011/queryworks.png" alt="Successful create through T-SQL">
 <em>&hellip;but as I suspected, via TSQL is hunky dory</em>**</p>
 <hr>
-<p>My conclusion then is that this behaviour is almost certainly a bug and was introduced by a programmer who either doesn’t understand the difference between NETBIOS and DNS or blindly assumed that 15 characters is enough?! In any event I believe this is a problem and have therefore raised a connect item for this issue <a href="https://connect.microsoft.com/SQLServer/feedback/details/708320/availability-group-listener-restricted-to-15-char-via-the-gui">here</a> give it a vote up if you believe you might fall prey to this issue at some point in the future!</p>
+<p>My conclusion then is that this behaviour is almost certainly a bug and was introduced by a programmer who either doesn&rsquo;t understand the difference between NETBIOS and DNS or blindly assumed that 15 characters is enough?! In any event I believe this is a problem and have therefore raised a connect item for this issue <a href="https://connect.microsoft.com/SQLServer/feedback/details/708320/availability-group-listener-restricted-to-15-char-via-the-gui">here</a> give it a vote up if you believe you might fall prey to this issue at some point in the future!</p>
 
       </article>
       

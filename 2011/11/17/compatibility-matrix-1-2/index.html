@@ -104,11 +104,11 @@ One thing that has bothered me about my version from the very beginning was the 
       </header>
       
       <article>
-        <p>A couple of months back I published my version of SQL Server’s Lock Compatibility Matrix under the post <a href="/posts/2011/09/27/fancy-a-decent-compatibility-matrix">Fancy a decent Compatibility Matrix?</a> since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.</p>
+        <p>A couple of months back I published my version of SQL Server&rsquo;s Lock Compatibility Matrix under the post <a href="/posts/2011/09/27/fancy-a-decent-compatibility-matrix">Fancy a decent Compatibility Matrix?</a> since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.</p>
 <p>One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and <em>told the story</em> of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&gt; GO (i.e. lock grant), RED -&gt; STOP (i.e. lock wait). BUT that doesn&rsquo;t help colour blind people very much does it!</p>
 <p>Well the time has finally come to redress that issue and provide a matrix that is (hopefully) colour blind friendly. I have made the following changes:</p>
 <ol>
-<li>Lightened the green so that it wasn’t so garish and made it slightly easier on the eye.</li>
+<li>Lightened the green so that it wasn&rsquo;t so garish and made it slightly easier on the eye.</li>
 <li>Substituted the garish red for a deep blue. The reason I chose blue was for the <em>coldness</em> to (hopefully) still <em>&ldquo;tell the story&rdquo;</em> through colours.</li>
 <li>Minor changes to the Legends (for purely indulgent reasons).</li>
 <li>Changed the legend descriptions for green and red to <em>compatible</em> and <em>incompatible</em> since I believe they are better than <em>No Conflict</em> and <em>Conflict</em>.</li>
