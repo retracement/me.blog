@@ -7,7 +7,7 @@ tags =['TSQL Tuesday', 'Learning']
 
 +++
 
-![TSQL Tuesday](/images/2011/tsql2sday150x15032.webp)
+![TSQL Tuesday](/images/shared/tsql2sday150x15032.webp)
 
 I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else's contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).
 

@@ -6,7 +6,7 @@ categories = ['Technology']
 tags = ['Windows','Utilities']
 +++
 
-![T-SQL Tuesday](/images/2011/tsql2sday150x15032.webp)
+![T-SQL Tuesday](/images/shared/tsql2sday150x15032.webp)
 
 Wow, it's been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!
 

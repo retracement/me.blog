@@ -6,7 +6,7 @@ categories = ['Personal Development']
 tags =['TSQL Tuesday']
 +++
 
-![TSQL Tuesday](/images/2011/tsql2sday150x15032.webp)
+![TSQL Tuesday](/images/shared/tsql2sday150x15032.webp)
 
 It's T-SQL Tuesday time again and this month I'm a little late off the starting block. This time it is being hosted by Pat Wright [blog](https://sqlasylum.wordpress.com)|[twitter](http://twitter.com/SqlAsylum) and the subject of the month is all about "Automation in SQL Server".
 

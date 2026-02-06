@@ -23,5 +23,26 @@
       <guid>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Installing Azure CLI on Linux Mint</title>
+      <link>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</link>
+      <pubDate>Sat, 01 Dec 2018 21:35:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</guid>
+      <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Create multiple dashboards in the Azure Portal</title>
+      <link>https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</link>
+      <pubDate>Thu, 01 Nov 2018 10:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</guid>
+      <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upload files to your Azure VM instance</title>
+      <link>https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</link>
+      <pubDate>Wed, 20 Mar 2013 17:19:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</guid>
+      <description>&lt;p&gt;Sometimes some of the simplest tips are the best, and recently I was trying to figure out just how to upload SQL Server 2012 Enterprise/ Developer Edition installation files to my Windows Azure Virtual Machine since my pre-provisioned copy of SQL Server (Evaluation Edition) had expired.&lt;/p&gt;&#xA;&lt;p&gt;As it turned out I realized pretty quickly that I didn’t need to bother since the VM also comes with a copy of SQL Server 2012 Evaluation Edition media pre-loaded at the root of the &lt;em&gt;C:\&lt;/em&gt; drive. All I had to do therefore was to grab an existing Developer Edition license key and run the Evaluation Edition media setup and step through the Edition Upgrade to &lt;em&gt;convert&lt;/em&gt; my existing instance.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

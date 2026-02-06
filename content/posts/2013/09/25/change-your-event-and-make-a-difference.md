@@ -1,0 +1,42 @@
++++
+date = '2013-09-25T22:52:00+01:00'
+draft = false
+title = 'Change (your event) and make a difference!'
+categories = ['Personal Development']
+tags = ['Community','SQLSaturday','Charity','PASS Summit']
++++
+
+
+Regular readers may remember a post I wrote many moons ago in which I described just how exactly [SQLSaturday Cambridge started](/posts/2012/05/04/change-and-make-a-difference) and hopefully gave a lesson in why we should all attempt to grow as much as possible as individuals and embrace (unforeseen) opportunities, as and when they appear. These days I suppose you could describe me as a seasoned presenter (note: seasoning doesn’t necessarily equal good 🙂) and [SQLSaturday Cambridge](https://www.sqlsaturday.com/228/eventhome.aspx) is soon to celebrate its second birthday and outing this coming Friday and Saturday. I know I have only just scratched the surface of what I could become and what I would like to be and that I only have myself and genetic limitations to get in the way of my *"enlightenment"*.
+
+So many things have happened since that drizzly Seattle night, both good and bad, and I have seen more places than I would ever have imagined to see “pre-retirement” and look back with a strange sense of satisfaction and regret. Becoming a speaker on a subject that I adore has been without doubt one of the most rewarding things I have ever done with my time on both a personal and professional level. I have met so many of you gifted funny and welcoming people that I feel truly blessed to have met you all. But taking on the challenge of travelling and presenting whilst supporting and nuturing a very young family has presented many challenges, compromises, disagreements and regrets.
+
+I remember being at the PASS Summit in 2011 and queuing to present my lightning talk outside the presentation room for what seemed like an eternity whilst the previous session overran for longer than I really care to remember. I remember the slow steady pump of adrenaline flowing into my veins as my heart began to beat ever faster and thinking to myself “Keep calm. Keep calm. Keep calm! Nerves are good, steady yourself old boy and use it to your advantage…”. After all, this was not just any old conference, it was the PASS Summit! I comforted myself that this was only a lightning talk, and it was only 10 minutes of me blagging the fact that I could present, could be funny and could avoid falling flat on my face, and let’s face it by now I was starting to get used to all this.
+
+Then something happened outside that room that stayed with me from that day. Whilst I queued with a list of (now) familiar faces I made an attempt to focus on the conversation which was occurring between my fellow lightning talk speakers. The discussion was around the subject of presenting and I believe one of the speakers mentioned their busy travel schedule, their family and their commitments. I can’t remember exactly why they mentioned it, but mention it they did. Then, clear as day, I remember Allen White ([twitter](https://twitter.com/SQLRunr)|[blog](https://sqlblog.com/blogs/allen_white/)) saying that his children were grown up now but he would have never done this (speaking/ travelling) when they were younger since there is just too much time spent away from them and that it wasn’t really fair on them, and they grow up too quickly anyway.
+
+![Sink Hole](/images/2013/sink_hole.jpg)
+
+My heart sank a little, but only for a moment. Yes my children were young, but I would make the time up to them. And hey …I was different. They probably see more of me than the average Dad …and speaking was going to help me (us) in so many different ways... and... and I was having a great time!
+
+As the years rolled by and with more and more conferences crossed off the list I began to reflect upon exactly **what** I had achieved. The more time away from the family unit was starting to take its toll and I was running out of justification for this amount of time away from home. Excuses such as “it will be good for my career” or “we will realise the value of this in years to come” or “this is my work!” were beginning to sound ridiculous. I don’t think speaking had ever really made me any money up to this stage or even threatened to make me money. More employable for sure, but more money? Not a chance.
+
+Costs involved in travelling and lost income could never be compensated by any *rate increase* and in 2012 I presented well over 20 times to big and small conferences and spent approximately one month in total of my life travelling to present *"for the good of the community"*. But the strain on my relationship and my obvious lost time with my kids was starting  to be painfully obvious to me. The words of Allan White were starting to ring in my ears a little louder so I started to cut back and be a little more selective.
+
+My biggest problem was that the more I cut back and more selective I got, the more I thought about all those times I had presented and as to the value of being at the event I had attended and spoken at (not just for me but to other people). From volunteers to speakers to attendees, we all play our part in making an event what it is and usually go home buzzing about what a great time we all had and how much the community has benefited from our involvement, but I think that the more I saw the value and sacrifice of my own personal family time, the more these thoughts felt hollow. Without a shadow of a doubt the community was benefiting exponentially from everyone’s efforts but it just didn’t seem to be enough.
+
+Recent personal events in my life has thrown a new perspective on exactly how much time I am able to dedicate to the SQL Server Community -certainly for the foreseeable future at very least. They do however mean that I have given great thought into exactly what our SQL Events can mean to us and others. What exactly is our Community? Where does it begin and end? Why do they even need to have boundaries? Why do we need to reach out to people to draw them into our Community?
+
+...Why don’t we just reach out?
+
+As a SQLSaturday event leader I believe I have been given an opportunity to make a difference. With our first Cambridge event we all had a fabulous time and whilst we didn’t change the world, I am sure lots of people benefited in some way.
+
+I want us all to make a bigger difference.
+
+![CLIC Sargent](/images/2013/clic_sargent.jpg)
+
+I want to use our opportunity and reach out to help more than just the community we live and work in. I think this may be the first time this has happened at a SQLSaturday, but either way, today SQLSaturday Cambridge is announcing that this time around we are supporting two very special causes. Firstly we are publicizing and encourage people become Blood Donors, secondly we are supporting and collecting for a leading Children’s Cancer Charity known as [CLIC Sargent](https://www.younglivesvscancer.org.uk/) who provide support for children and their families coming to terms with this terrible situation. During the event we will be collecting loose change or *larger coins* in collection tins throughout the day and more importantly <mark>we pledge to match all donations up to a total value of £1000 ($1600)!</mark> And that is not all. On the Saturday, Buck Woody will also be presenting a 3 hour “mini-con” entitled ” Creating Your Best Technical Presentation: A Speaker Workshop” for would be presenters and business professionals. <mark>The cost of attending this mini-con will be £20 and every penny will go directly to our charity!</mark> This is essentially a full pre-conference session crammed into four hours and represents probably the cheapest “pre-conference” session that you will ever be able to attend.
+
+Whilst it is important that all of this is done discreetly (since nobody wants SQLSaturday’s to become purely charity fund raising days), just give what you can or want to. From today I am calling on all SQLSaturday event leaders to seriously think about what YOU and YOUR event can do for the wider community. Maybe one day we could look back and say that SQLSaturday and PASS has raised $$$$$$$$$$$$$ for good causes? How amazing would that be.
+
+If you are an attendee, sponsor, event organizer or speaker to SQLSaturday #228 Cambridge and like me have been trying to put a value to your attendance at conferences, this time will be different. This time you are not only helping the Community, you are helping to SAVE LIVES!

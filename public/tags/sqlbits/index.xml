@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 04 May 2012 18:03:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 04 Mar 2014 09:02:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sqlbits/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLBits 12 Announced!</title>
+      <link>https://tenbulls.co.uk/posts/2014/02/11/03/04/twelve-is-a-magic-number/</link>
+      <pubDate>Tue, 04 Mar 2014 09:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/02/11/03/04/twelve-is-a-magic-number/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/coltsfoot_rock_small.png&#34; alt=&#34;Coltsfoot Rock&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A massive congratulations to the &lt;a href=&#34;https://www.sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; team for announcing what will become the 12th iteration of the UKs finest and largest SQL Server conference. Putting on events at this scale by such a small core team demands huge respect and I sincerely thank them for doing so. I have personally learnt a ton of information and grown as a person and as a SQL Professional because of their efforts and I know many others in the industry feel the same way too.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I love SQLBits</title>
+      <link>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</link>
+      <pubDate>Tue, 09 Apr 2013 21:55:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s been a long time since I last wrote a T-SQL Tuesday post but the combination of a great topic along with a spare 5 minutes of downtime has resulted in my contribution to the mix this month.&lt;/p&gt;&#xA;&lt;p&gt;This time around T-SQL Tuesday is hosted by Bob Pusateri (&lt;a href=&#34;https://www.bobpusateri.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLBob&#34;&gt;twitter&lt;/a&gt;) and his chosen topic is &lt;strong&gt;how did you come to love presenting?&lt;/strong&gt;. So here goes…&lt;/p&gt;&#xA;&lt;p&gt;In 2010 I had traveled to my very first conference as a presenter. So there I was, stood on the stage in front of a motley collection of SQL professionals, realizing the enormity of what was about to happen.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Change and make a difference</title>
       <link>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</link>

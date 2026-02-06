@@ -4,7 +4,7 @@ draft = false
 title = 'What the Business says is not what the Business wants'
 +++
 
-![TSQL Tuesday](/images/2010/tsql2sday150x15032.webp)
+![TSQL Tuesday](/images/shared/tsql2sday150x15032.webp)
 
 Steve Jones, editor at large of SQL Server Central is this month hosting the latest [T-SQL Tuesday](https://www.sqlservercentral.com/blogs/steve_jones/archive/2010/12/07/t_2D00_sql-tuesday-_2300_13-_2D00_-what-the-business-says-is-not-what-the-business-wants.aspx) and luckily I have managed to be organized enough to make a note in my Calendar so that I may finally contribute. A big thank you also goes to Steve who gave plenty of notice for this iteration of T-SQL Tuesday. If you don't already know, the idea behind T-SQL Tuesday was created by Adam Machanic to improve the sharing of ideas and co-operation between SQL Server Professionals and if you would like to know more then you should check out Adam's [first ever post](https://sqlblog.com/blogs/adam_machanic/archive/2009/11/30/invitation-to-participate-in-t-sql-tuesday-001-date-time-tricks.aspx).
 

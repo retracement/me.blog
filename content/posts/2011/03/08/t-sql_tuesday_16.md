@@ -6,7 +6,7 @@ categories = ['Personal Development','Technology']
 tags = ['TSQL Tuesday','Training']
 +++
 
-![TSQL Tuesday](/images/2011/tsql2sday150x15032.webp)
+![TSQL Tuesday](/images/shared/tsql2sday150x15032.webp)
 
 Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying *Publish* button to be pressed. But why you might ask? (OK well you didn't ask but I'm going to tell you anyway). 🙂
 

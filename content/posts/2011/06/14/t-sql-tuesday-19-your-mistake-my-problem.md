@@ -6,7 +6,7 @@ categories = ['Technology']
 tags = ['SQL','Corruption','TSQL Tuesday']
 +++
 
-![TSQL Tuesday](/images/2011/tsql2sday150x15032.webp)
+![TSQL Tuesday](/images/shared/tsql2sday150x15032.webp)
 
 This month's T-SQL Tuesday is brought to you by Allen Kinsel ([blog](https://www.allenkinsel.com)|[twitter](https://twitter.com/sqlinsaneo)) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I've not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley ([blog](https://sqlblog.com/blogs/rob_farley/)|[twitter](https://twitter.com/rob_farley)) is up to because he is always on time every time! Here's my entry...
 

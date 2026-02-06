@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 19 Aug 2011 14:02:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2014 12:10:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Read your old CHM files from network storage on Windows</title>
+      <link>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
+      <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
+      <description>&lt;p&gt;I was just recently going through my old SQL Server documents and reference material and attempting to organize and tidy things up, when I re-discovered a huge collection of literature that even now is incredibly useful. The only problem is that many of these old electronic books and files are stored in &lt;em&gt;CHM&lt;/em&gt; format. Those old timers of you will remember that this was how SQL Server Books online was deployed up to and including SQL Server 2000.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Review of Inside the SQL Server Query Optimizer</title>
       <link>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
