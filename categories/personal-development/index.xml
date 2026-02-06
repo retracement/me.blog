@@ -7,8 +7,57 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Mon, 01 Oct 2012 18:11:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 04 Mar 2014 09:02:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/categories/personal-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLBits 12 Announced!</title>
+      <link>https://tenbulls.co.uk/posts/2014/02/11/03/04/twelve-is-a-magic-number/</link>
+      <pubDate>Tue, 04 Mar 2014 09:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/02/11/03/04/twelve-is-a-magic-number/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/coltsfoot_rock_small.png&#34; alt=&#34;Coltsfoot Rock&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A massive congratulations to the &lt;a href=&#34;https://www.sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; team for announcing what will become the 12th iteration of the UKs finest and largest SQL Server conference. Putting on events at this scale by such a small core team demands huge respect and I sincerely thank them for doing so. I have personally learnt a ton of information and grown as a person and as a SQL Professional because of their efforts and I know many others in the industry feel the same way too.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQLSaturday Cambridge raises £££ for charity!</title>
+      <link>https://tenbulls.co.uk/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</link>
+      <pubDate>Sun, 29 Sep 2013 20:46:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</guid>
+      <description>&lt;p&gt;We are very pleased to announce that the final figures of the SQLSaturday Cambridge fundraising has been counted.&lt;/p&gt;&#xA;&lt;p&gt;Some of you will know that we were collecting for Children’s Cancer Charity &lt;a href=&#34;https://www.younglivesvscancer.org.uk/&#34;&gt;CLIC Sargent&lt;/a&gt; and the reasons why we were doing this can be understood by reading my previous post &lt;a href=&#34;https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference&#34;&gt;Change (your event) and make a difference!&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The amount collected at the event through various different means amounts to &lt;strong&gt;£490.03&lt;/strong&gt;!!!&lt;/p&gt;&#xA;&lt;p&gt;SQLSaturday Cambridge are therefore honoring our commitment to match this figure, which means that &lt;mark&gt;we are therfore donating a grand total of £980.06 to charity&lt;/mark&gt;. I’m hoping to write a bit more about this further in due course.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Change (your event) and make a difference!</title>
+      <link>https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference/</link>
+      <pubDate>Wed, 25 Sep 2013 22:52:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference/</guid>
+      <description>&lt;p&gt;Regular readers may remember a post I wrote many moons ago in which I described just how exactly &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference&#34;&gt;SQLSaturday Cambridge started&lt;/a&gt; and hopefully gave a lesson in why we should all attempt to grow as much as possible as individuals and embrace (unforeseen) opportunities, as and when they appear. These days I suppose you could describe me as a seasoned presenter (note: seasoning doesn’t necessarily equal good 🙂) and &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; is soon to celebrate its second birthday and outing this coming Friday and Saturday. I know I have only just scratched the surface of what I could become and what I would like to be and that I only have myself and genetic limitations to get in the way of my &lt;em&gt;&amp;ldquo;enlightenment&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Countdown to SQLSaturday Edinburgh</title>
+      <link>https://tenbulls.co.uk/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</link>
+      <pubDate>Thu, 06 Jun 2013 10:25:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2013/xeventjonathan2.jpg&#34; alt=&#34;Jonathan Kehayias&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;A pre-conference good enough for Super heros&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In exactly 2 days time the United Kingdom’s 3rd SQLSaturday will be in full swing, showcasing a group of SQL Server MVPs, MCMs and Community experts. This will be the very first time that SQLSaturday has happened in Scotland and it is going to be fantastic to bolster the PASS membership and exposure in that area which can only good news for all concerned.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Selected again for the PASS Summit</title>
+      <link>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</link>
+      <pubDate>Wed, 22 May 2013 15:27:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</guid>
+      <description>&lt;p&gt;Well it is that time of year again where the results of the PASS Summit 2013 session selections become public. This year was of course a very difficult one to get selected since (I believe) a record number of submissions were received -but thankfully I still managed to knock one session (out of four) into the back of the net. I would also like to take this opportunity to congratulate all the other selected Speakers (especially if this is your first time at the Summit) and commiserations to all those who were not successful on this occasion. I know the usual inquests and finger pointing will naturally ensue by a small handful of people who feel personally aggrieved that they weren’t successful, but believe me when I say that the process is as fair as I could expect, but not without room for improvement (more on this very soon in a follow up post).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I love SQLBits</title>
+      <link>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</link>
+      <pubDate>Tue, 09 Apr 2013 21:55:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s been a long time since I last wrote a T-SQL Tuesday post but the combination of a great topic along with a spare 5 minutes of downtime has resulted in my contribution to the mix this month.&lt;/p&gt;&#xA;&lt;p&gt;This time around T-SQL Tuesday is hosted by Bob Pusateri (&lt;a href=&#34;https://www.bobpusateri.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLBob&#34;&gt;twitter&lt;/a&gt;) and his chosen topic is &lt;strong&gt;how did you come to love presenting?&lt;/strong&gt;. So here goes…&lt;/p&gt;&#xA;&lt;p&gt;In 2010 I had traveled to my very first conference as a presenter. So there I was, stood on the stage in front of a motley collection of SQL professionals, realizing the enormity of what was about to happen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My recent achievements</title>
+      <link>https://tenbulls.co.uk/posts/2012/12/23/santa-comes-early/</link>
+      <pubDate>Sun, 23 Dec 2012 09:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/12/23/santa-comes-early/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/kumar_christmas_smaller.jpg&#34; alt=&#34;Kumar Christmas&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;With days to go before Santa boards his sleigh and pulls back on the reigns tethering his trusty magical flying reindeer to perform what is probably the most incredible feat of logistical planning and execution the world has ever seen, I can look back on the last few months with surprise, satisfaction and appreciation and thank those people who have helped to make my run up to Christmas an extremely rewarding and happy affair.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Memoirs of SQLSaturday Cambridge #162 - Speaker Dinner</title>
       <link>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</link>
@@ -140,7 +189,7 @@
       <link>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</link>
       <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLRally is live!</title>
@@ -161,7 +210,7 @@
       <link>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</link>
       <pubDate>Tue, 08 Feb 2011 12:50:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s T-SQL Tuesday time again and this month I&amp;rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright &lt;a href=&#34;https://sqlasylum.wordpress.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/SqlAsylum&#34;&gt;twitter&lt;/a&gt; and the subject of the month is all about &amp;ldquo;Automation in SQL Server&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s T-SQL Tuesday time again and this month I&amp;rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright &lt;a href=&#34;https://sqlasylum.wordpress.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/SqlAsylum&#34;&gt;twitter&lt;/a&gt; and the subject of the month is all about &amp;ldquo;Automation in SQL Server&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My submitted SQLRally sessions</title>
@@ -182,7 +231,7 @@
       <link>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
       <pubDate>Tue, 11 Jan 2011 02:03:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
     </item>
     <item>
       <title>2010 in reflection</title>

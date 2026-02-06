@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Installing Azure CLI on Linux Mint">
+  <meta property="og:description" content="The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control Microsoft Azure easily through the command line, then it is probably something you should have.
+I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an Ubuntu derivative distribution such as Linux Mint. Microsoft’s basic installation guide Install Azure CLI with apt has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-12-01T21:35:00+01:00">
+    <meta property="article:modified_time" content="2018-12-01T21:35:00+01:00">
+    <meta property="article:tag" content="Azure CLI">
+    <meta property="article:tag" content="PowerShell">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Azure">
+
+<title>tenbulls blog | Installing Azure CLI on Linux Mint</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Installing Azure CLI on Linux Mint</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2018-12-01T21:35:00&#43;01:00">December 1, 2018</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control <a href="https://portal.azure.com">Microsoft Azure</a> easily through the command line, then it is probably something you should have.</p>
+<p>I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an <a href="https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives">Ubuntu derivative distribution</a> such as <a href="https://linuxmint.com/">Linux Mint</a>. Microsoft’s basic installation guide <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest">Install Azure CLI with apt</a> has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:</p>
+<p><img src="/images/2018/installazurecli.png" alt="Install Azure CLI"></p>
+<p>If you run steps 1 to 3 you will not observe a problem at the time of execution but will hit an error on running the first line of step 4. We see the following error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Ign:13 https://packages.microsoft.com/repos/azure-cli serena/main Translation-en
+</span></span><span style="display:flex;"><span>Reading package lists... Done
+</span></span><span style="display:flex;"><span>W: The repository &#39;https://packages.microsoft.com/repos/azure-cli serena Release&#39; does not have a Release file.
+</span></span><span style="display:flex;"><span>N: Data from such a repository can&#39;t be authenticated and is therefore potentially dangerous to use.
+</span></span><span style="display:flex;"><span>N: See apt-secure(8) manpage for repository creation and user configuration details.
+</span></span><span style="display:flex;"><span>E: Failed to fetch https://packages.microsoft.com/repos/azure-cli/dists/serena/main/binary-amd64/Packages  404  Not Found
+</span></span><span style="display:flex;"><span>E: Some index files failed to download. They have been ignored, or old ones used instead.
+</span></span></code></pre></div><p>In the highlighted line we can quite clearly see the <em>404 Not Found</em> error, and if we take a look inside the <code>/etc/apt/sources.list.d/azure-cli.list</code> file (created in step 2), you will see that it contains that repository path generated, which is, of course, the problem.</p>
+<p>Linux Mint uses its own release codenames and so the default script (provided by Microsoft) picks this up rather than the (required) Ubuntu release name for the Microsoft software repository. See the <code>$(lsb_release -cs)</code> piece of code in their script. So before we first start with the Microsoft code, you will need to find the Mint release name and replace this with the correct Ubuntu package base.</p>
+<p>Find out your Linux Mint short codename by running the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lsb_release -cs
+</span></span></code></pre></div><p>In my case, I am running Linux Mint Serena. Next, so I now need to find out the short codename of the Ubuntu base build that my edition of Mint is derived from. To do this, visit the <a href="https://linuxmint.com/download_all.php">Linux Mint Releases page</a>.</p>
+<p>From this page, I can see that <em>Serena</em> uses the <em>Xenial</em> package base (as below):</p>
+<p><img src="/images/2018/mintrelease.png" alt="Linux Mint Releases"></p>
+<p>All we need to do is add the right repository path for the right package base. There are two ways to do this. The first you can simply edit <code>/etc/apt/sources.list.d/azure-cli.list</code> and replace (in my case) <code>serena</code> with <code>xenial</code> as we have done below.</p>
+<p><img src="/images/2018/path.png" alt="add to package base"></p>
+<p>Alternatively, you can edit (and hard code) the variable substitution within script 2 and rerun (this programmatically does the same thing we performed manually above):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>AZ_REPO<span style="color:#f92672">=</span>xenial
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ </span>$AZ_REPO<span style="color:#e6db74"> main&#34;</span> | <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    sudo tee /etc/apt/sources.list.d/azure-cli.list
+</span></span></code></pre></div><p>And that’s it, once the right package base has been corrected, you can rerun the step 4 script which should no longer error. Azure CLI is now ready for you to manage and deploy your Azure resources from your lovely Linux Ubuntu derivative distribution! Check out <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage">Common Azure CLI commands for managing Azure resources</a> for some guidance on how to use it.</p>
+<p>I’ll give it a try and attempt to list all my Azure resource groups in tabular format:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az group list --output table
+</span></span></code></pre></div><p>Which gives me:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Name                                      Location     Status
+</span></span><span style="display:flex;"><span>----------------------------------------  -----------  ---------
+</span></span><span style="display:flex;"><span>cloud-shell-storage-westeurope            westeurope   Succeeded
+</span></span><span style="display:flex;"><span>future_decoded_demo                       eastus2      Succeeded
+</span></span><span style="display:flex;"><span>Gothenburg                                northeurope  Succeeded
+</span></span><span style="display:flex;"><span>mysql                                     northeurope  Succeeded
+</span></span><span style="display:flex;"><span>sql2014sp1                                northeurope  Succeeded
+</span></span><span style="display:flex;"><span>sqlonlinux                                uksouth      Succeeded
+</span></span><span style="display:flex;"><span>stretchgroup-gothenburg-northeurope       northeurope  Succeeded
+</span></span><span style="display:flex;"><span>stretchgroup-hhserverf-sql01-northeurope  northeurope  Succeeded
+</span></span><span style="display:flex;"><span>stretchgroup-techdaysvm-northeurope       northeurope  Succeeded
+</span></span><span style="display:flex;"><span>techdays                                  northeurope  Succeeded
+</span></span><span style="display:flex;"><span>Testing                                   eastus       Succeeded
+</span></span></code></pre></div><p>As you can see, Azure CLI is very cool and you should start using it now, so don’t let minor configuration difficulties stop you!</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/azure-cli/">Azure CLI</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/powershell/">PowerShell</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/linux/">Linux</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/azure/">Azure</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/">
+            <span>previous: </span>
+            <span>Create multiple dashboards in the Azure Portal</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/">
+            <span>next: </span>
+            <span>AzureRM, Azure CLI and the PowerShell Az Module</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

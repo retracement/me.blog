@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Upload files to your Azure VM instance">
+  <meta property="og:description" content="Sometimes some of the simplest tips are the best, and recently I was trying to figure out just how to upload SQL Server 2012 Enterprise/ Developer Edition installation files to my Windows Azure Virtual Machine since my pre-provisioned copy of SQL Server (Evaluation Edition) had expired.
+As it turned out I realized pretty quickly that I didn’t need to bother since the VM also comes with a copy of SQL Server 2012 Evaluation Edition media pre-loaded at the root of the C:\ drive. All I had to do therefore was to grab an existing Developer Edition license key and run the Evaluation Edition media setup and step through the Edition Upgrade to convert my existing instance.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2013-03-20T17:19:00+01:00">
+    <meta property="article:modified_time" content="2013-03-20T17:19:00+01:00">
+    <meta property="article:tag" content="Azure">
+    <meta property="article:tag" content="AzureVM">
+
+<title>tenbulls blog | Upload files to your Azure VM instance</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Upload files to your Azure VM instance</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2013-03-20T17:19:00&#43;01:00">March 20, 2013</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              2 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Sometimes some of the simplest tips are the best, and recently I was trying to figure out just how to upload SQL Server 2012 Enterprise/ Developer Edition installation files to my Windows Azure Virtual Machine since my pre-provisioned copy of SQL Server (Evaluation Edition) had expired.</p>
+<p>As it turned out I realized pretty quickly that I didn’t need to bother since the VM also comes with a copy of SQL Server 2012 Evaluation Edition media pre-loaded at the root of the <em>C:\</em> drive. All I had to do therefore was to grab an existing Developer Edition license key and run the Evaluation Edition media setup and step through the Edition Upgrade to <em>convert</em> my existing instance.</p>
+<p>However, I also knew that there were other utilities and tools (and possibly other installation media) that I would want to bring into my Azure VM and it all felt slightly restrictive. After checking out the <a href="https://manage.windowsazure.com">Windows Azure Management Dashboard</a> I could not find any options whatsoever to upload files to my VM.</p>
+<p><img src="/images/2013/manage_console.jpg" alt="Manage Console"></p>
+<p>Even after a little digging around in the usual search engines, the most useful suggestion I managed to locate was to download and install an FTP server onto the VM itself and play around a little with port settings! Whilst feasible, that level of tinkering was surely ridiculous. After a few moments of frustration I had an idea. Since I was connecting to my Windows Azure VM over RDP (and knowing that my RDP client is able to provide remote access to certain local resources such as the clipboard I decided to try taking the easy route and simply copy and paste an executable after enabling this option. To do so, you simply have to:-</p>
+<ul>
+<li>Launch your RDP client (<code>mstsc.exe</code> in Windows) and expand the details button to reveal the remote computer access to local resources checkboxes.</li>
+<li>Ensure that the Clipboard option is checked and connect and log into your Azure VM.</li>
+<li>Copy the files, folders or ISO from on your local host.</li>
+<li>Paste into your Azure VM.</li>
+</ul>
+<p><img src="/images/2013/remote.jpg" alt="Access local resources"><br/>
+<em>Remote Desktop can provide access to local resources!</em></p>
+<p>Whilst I have seen this fail in certain restrictive network configurations, to my delight <em>SUCCESS</em>. I know this operation is hardly rocket science, but sometimes the most simplest things are the hardest to figure out. Now my Azure VMs suddenly seem to be far more useful and I can’t wait to play further!</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/azure/">Azure</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/azurevm/">AzureVM</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/12/23/santa-comes-early/">
+            <span>previous: </span>
+            <span>My recent achievements</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/">
+            <span>next: </span>
+            <span>How to run SQL Server 2012 on the Kindle Fire HD</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

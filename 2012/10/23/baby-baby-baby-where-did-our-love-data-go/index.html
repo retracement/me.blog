@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Baby baby baby, where did our ROLLBACK go?">
+  <meta property="og:description" content="Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide “all or nothing” operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (groan). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2012-10-23T22:51:00+01:00">
+    <meta property="article:modified_time" content="2012-10-23T22:51:00+01:00">
+    <meta property="article:tag" content="Concurrency">
+    <meta property="article:tag" content="SQL">
+
+<title>tenbulls blog | Baby baby baby, where did our ROLLBACK go?</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Baby baby baby, where did our ROLLBACK go?</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2012-10-23T22:51:00&#43;01:00">October 23, 2012</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              8 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><img src="/images/2012/frankiesays.jpg" alt="Frankie Says Relax"></p>
+<p>Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide <em>&ldquo;all or nothing&rdquo;</em> operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (<strong>groan</strong>). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.</p>
+<p>What I am about to discuss is probably not the biggest secret to many of the “more informed” of you, and over the years many fantastic speakers (such as Kalen Delaney (<a href="https://sqlblog.com/blogs/kalen_delaney/">blog</a>|<a href="https://twitter.com/sqlqueen">twitter</a>) have revealed the truth about SQL Server’s transactional behavior.</p>
+<p>I first presented this subject (and this behavior) at SQLBits 9 (Liverpool) in 2011, and have subsequently presented the subject a few other times elsewhere (most recently at SQLSaturday #162 Cambridge), and each time never usually fails to spark the alarm of at least one person in the audience.</p>
+<p>When I was a relatively new DBA (and I do have to go back a considerable time) I struggled for a very long time to understand exactly what was the point of SQL Server’s <a href="https://msdn.microsoft.com/en-us/library/ms188792.aspx">SET XACT_ABORT ON</a> statement&hellip;</p>
+<p>&hellip;I mean, as I understood it, if transactions failed (and therefore aborted) everything was rolled back anyway wasn’t it? So what would be the point of setting XACT_ABORT ON then? This statement just didn’t make any sense to me.</p>
+<p>Then one day an incident happened at a company I was working for at the time, in which a massive amount of data had gone missing whilst it was being processed by an in-house application. The application would collect the data from a third party vendor, shred it and do funky things to it, before finally placing the data into a SQL database. Upon committing this data, the application would send an acknowledgement message to the third party vendor to provide a confirmation the data had been successfully received and could be removed from their queue.</p>
+<p>When the missing data was detected by the application developers, the predictable finger pointing ensued. They blamed us for OUR crummy database and <em>obviously</em> misconfiguration server, and we blamed them for THEIR atrociously written application that was somehow (incorrectly) deleting data.</p>
+<h1 id="a-typical-transactional-scenario">A typical transactional scenario</h1>
+<p>We have an orders table in which we wish to remove a record that needs to be fulfilled and insert the (fulfilled) record into the fulfilled table. If the insert fails, it is important that the delete is rolled back and if the delete fails it is important that the insert is rolled back.</p>
+<p>The code for this is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>orderid INT
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">@</span>orderid <span style="color:#f92672">=</span> <span style="color:#66d9ef">MAX</span>(id) <span style="color:#66d9ef">FROM</span> orders
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span> TRAN
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> orders <span style="color:#66d9ef">WHERE</span> id <span style="color:#f92672">=</span> <span style="color:#f92672">@</span>orderid
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> orders_fulfilled <span style="color:#66d9ef">VALUES</span>(<span style="color:#f92672">@</span>orderid, <span style="color:#ae81ff">4</span>, <span style="color:#f92672">@@</span>SPID)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COMMIT</span>
+</span></span></code></pre></div><p>So in the code snippet above you can see that we are deleting the top orderid from the orders table and inserting it into the orders_fulfilled table. If we execute this code, it does exactly what it says on the tin – deletes the record from orders table and adds it into orders_fulfilled table all within a transactional context. Pretty basic huh?</p>
+<p>Now if we rerun the code above, simply changing line 5 as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> orders_fulfilled <span style="color:#66d9ef">VALUES</span>(<span style="color:#f92672">@</span>orderid, <span style="color:#ae81ff">5</span>, <span style="color:#f92672">@@</span>SPID)
+</span></span></code></pre></div><p>The following error occurs…</p>
+<blockquote>
+<p>(1 row(s) affected)
+Msg 547, Level 16, State 0, Line 5
+The INSERT statement conflicted with the CHECK constraint “status”. The conflict occurred in database “READPAST &amp; Furious”, table “dbo.orders_fulfilled”, column ‘status’.
+The statement has been terminated.</p>
+</blockquote>
+<p>So the error message itself is remarkably explanatory. It has told us that our insert statement failed due to the presence of a <a href="https://msdn.microsoft.com/en-us/library/ms190377.aspx">CHECK constraint</a> on the orders_fulfilled table. Upon checking for open transactions, we note that there are none. Great, this must mean of course that our transaction will have automatically rolled back and undone our delete -right? <em>WRONG!</em></p>
+<p>Upon further inspection we note that not only did the insert not complete and that the transaction is no longer open, we observe that the delete did actually occur! The result if you were not expecting it is lost data.</p>
+<p>Going back to our in-house application, the developers had introduced some code which was shredding vast volumes of data and performing a similar transactional delete and insert, but had not accounted for the fact that the constraint might be broken by the vendor data OR what would happen if it was. Because the application was acknowledging the receipt and commit of this data to the third party, not only was the data failing to insert into the database, but was also being removed from the vendor’s transmission queue.</p>
+<h1 id="why-is-this-happening">Why is this happening?</h1>
+<p>This is not a bug in SQL Server, far from it. In fact this behavior is by design and occurs only when certain errors are raised within transactions. As you have seen, constraint errors are one such situation and the others that you may run into are (as far as I know still not documented in one single place).</p>
+<p>I believe the thinking behind this behavior is to avoid unnecessarily undoing work performed by all the successful statements, which could come in useful in certain expensive transactional loading operations. Besides…if you didn’t want this to happen, then you would have implemented an alternative right? 🙂</p>
+<h1 id="what-is-the-solution">What is the solution?</h1>
+<p>Well I’ve already mentioned the <a href="https://msdn.microsoft.com/en-us/library/ms188792.aspx">XACT_ABORT ON</a> statement, and now it suddenly makes sense doesn’t it? Since we have shown that transactions are not truly “all or nothing” operations by default, we need a way to direct SQL Server to make them atomic. <code>XACT_ABORT ON</code> informs SQL Server that it absolutely <strong>must</strong> rollback any transactions if there are ANY errors during their lifetime or commit everything.</p>
+<p>There is a second and more common way of making transactions behave as expected and this is by using error handling. SQL Server 2005 introduced the <a href="https://msdn.microsoft.com/en-us/library/ms175976.aspx">BEGIN TRY` and BEGIN CATCH</a> syntax which hugely simplified our transaction management. Within our catch-block we can simply perform any clean up actions that we want and <a href="https://msdn.microsoft.com/en-us/library/ms181299.aspx">ROLLBACK</a> our transaction should we so desire.</p>
+<p>So what happens if we use both methods together?
+There is a particular problem to be aware of when using error handling in conjunction with <code>XACT_ABORT ON</code> and this is really due to the implications of setting this behavior on. By doing so, as we have already discussed, you have told SQL Server to <a href="https://msdn.microsoft.com/en-us/library/ms190295.aspx">COMMIT</a> everything or roll everything back. When using error handling you are enabling functionality to take custom actions within your transactions. One such action could be a rollback to a <a href="https://msdn.microsoft.com/en-us/library/ms188378.aspx">savepoint</a>, or perhaps to insert logging information to another table.</p>
+<p>Let’s see what happens with the following code snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SET</span> XACT_ABORT <span style="color:#66d9ef">ON</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>orderid INT
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">@</span>orderid <span style="color:#f92672">=</span> <span style="color:#66d9ef">MAX</span>(id) <span style="color:#66d9ef">FROM</span> orders
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span> TRY
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">BEGIN</span> TRAN
+</span></span><span style="display:flex;"><span>      SAVE TRAN savetohere
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> orders <span style="color:#66d9ef">WHERE</span> id <span style="color:#f92672">=</span> <span style="color:#f92672">@</span>orderid
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> orders_fulfilled <span style="color:#66d9ef">VALUES</span>(<span style="color:#f92672">@</span>orderid,<span style="color:#ae81ff">5</span>,<span style="color:#f92672">@@</span>SPID)
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">COMMIT</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> TRY
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span> CATCH
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">ROLLBACK</span> TRAN savetohere
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">END</span> CATCH
+</span></span></code></pre></div><p>The following error occurs…</p>
+<blockquote>
+<p>Msg 3931, Level 16, State 1, Line 15
+The current transaction cannot be committed and cannot be rolled back to a savepoint. Roll back the entire transaction.</p>
+</blockquote>
+<p>The error we are experiencing here is known as an “uncommitable transaction” and occurs because <code>XACT_ABORT</code> is explicit in requiring that the whole transaction is rolled back on error. Performing ANY operation that causes log writes (such as an insert, delete, update or even rollbacks to savepoints) will result in error. It is not obvious from the error above, but rollback is automatic and no transactions are left open when this condition is hit.</p>
+<p>So should we ever use <code>XACT_ABORT ON</code> then?</p>
+<p>There are a couple of situations that using <code>XACT_ABORT ON</code> is the right or necessary thing to do (with or without additional error handling). One such situation is when you have unskilled (or lesser skilled) labour executing and promoting SQL scripts into your environments. You (or your developers) want to ensure that the scripts either work OR they do not. If you use distributed transactions then you will be required to use <code>XACT_ABORT ON</code>.</p>
+<p>In the scenario that you do use both techniques, it is important that within your catch-block you detect any uncommitable transactions before attempting to perform any logging operations. This is performed by detecting the transaction state and the <a href="https://msdn.microsoft.com/en-us/library/ms189797.aspx">XACT_STATE()</a> function enables us to programatically do this.</p>
+<p>For instance:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- if there is an open transaction, 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- then roll it back!
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">IF</span> XACT_STATE() <span style="color:#f92672">&lt;&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">ROLLBACK</span> TRAN 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Note that if tran state is -1, then tran uncommittable, 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- if 0 then no tran open, else if 1 tran is committable
+</span></span></span></code></pre></div><hr>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>Understanding SQL Server transaction management is far more difficult than you may realise and it is important that you know the implications of how your developers implement them. In the scenario presented here, we have demonstrated that if they/ you get things wrong then your database may be losing data without you even realizing it. The use of good T-SQL error handling and transaction state detection can be the difference and very simple to implement in the right hands.</p>
+<p>Whilst it is common in organizations for Developers and DBA’s to point fingers at each other when problems are experienced in your environment, it is important to understand that this usually happens due to poor communications between the two parties and most importantly because you both care. It is <em>YOUR</em> job as a DBA not only to protect your data but also ensure that you educate Developers where possible. Likewise it is the Developer’s job to ensure performant and accurate application code and educate DBAs. Understanding each other’s worlds better and communicating more efficiently can avoid some of the largest (and sometimes more costly) problems with very little effort.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/concurrency/">Concurrency</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/">
+            <span>previous: </span>
+            <span>The Curious Case of the Non-Escalating transaction locks</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2012/12/23/santa-comes-early/">
+            <span>next: </span>
+            <span>My recent achievements</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

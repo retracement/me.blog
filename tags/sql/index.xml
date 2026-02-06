@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 19 Sep 2012 18:47:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2013 13:44:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why don’t you go and LOCK OFF!</title>
+      <link>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
+      <pubDate>Wed, 17 Jul 2013 13:44:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
+      <description>&lt;p&gt;No this is not a Hekaton post 🙂 -perhaps I should have saved this title for another rainy day.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server concurrency is a particularly difficult subject to master and understanding the result of your actions can be confounded by some of SQL Server’s special behaviors and quirks that I so often like to talk and write about.&lt;/p&gt;&#xA;&lt;p&gt;As some of my &lt;del&gt;followers&lt;/del&gt; stalkers out there may remember, one of my favorite demonstrations I like to give is during my&#xA;&lt;a href=&#34;https://www.sqlpass.org/summit/2012/Sessions/SessionDetails.aspx?sid=2816&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking, and Isolation&lt;/a&gt; session -last performed at the &lt;a href=&#34;https://www.sqlpass.org/summit/2012/&#34;&gt;SQLPASS 2012 Summit&lt;/a&gt; and &lt;a href=&#34;https://www.sqlsaturday.com/viewsession.aspx?sat=229&amp;amp;sessionid=14975&#34;&gt;SQLSaturday #229 Dublin&lt;/a&gt; where in a little piece of code I discuss whether a transaction is really Atomic (or not). For anyone reading this paragraph who has immediately answered “ALWAYS” -then my friend you are in serious trouble with your code-base. And I am not even talking about the use of lower levels of isolation to perform dirty reads within your transaction here, isolation does not effect a transaction’s atomicity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to run SQL Server 2012 on the Kindle Fire HD</title>
+      <link>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</link>
+      <pubDate>Mon, 01 Apr 2013 12:44:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</guid>
+      <description>&lt;p&gt;&lt;mark&gt;Warning! Please do not attempt to perform any of the following steps on production systems. This information is provided purely for reference and any attempt to replicate these actions on your own hardware will be purely at your own risk!&lt;/mark&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits to the latest release of SQL Server (and reasons to upgrade) is that Windows Server Core is now a supported option. For those of you who are not yet familiar with Server Core, it could be best described as a reduced GUI version of Microsoft Windows. In other words, if you like the command line then you are in for a very big treat! Regular visitors to these pages will most likely be very aware of my passion for Windows Server Core and more to the point running SQL Server on it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Baby baby baby, where did our ROLLBACK go?</title>
+      <link>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
+      <pubDate>Tue, 23 Oct 2012 22:51:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Curious Case of the Non-Escalating transaction locks</title>
+      <link>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
+      <pubDate>Wed, 17 Oct 2012 13:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
+      <description>&lt;p&gt;SQL Server has many facets and behaviors that are often misunderstood and do not always work quite as we may have expected. At first you may believe that you understand the mechanics, only to realize after a little bit of delving deeper that your comprehension was wrong.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server Lock Escalation is one of these commonly misunderstood topics, and most recently after doing a little investigation into a few subjects related to escalation I was shocked and surprised in equal measure to find that things were not working quite as I expected.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Using the SQL Server Installation Wizard on Server Core!</title>
       <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
@@ -84,7 +112,7 @@
       <link>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
       <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using SQL Server Scalable Shared Database</title>

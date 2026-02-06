@@ -24,6 +24,69 @@
       <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Installing Azure CLI on Linux Mint</title>
+      <link>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</link>
+      <pubDate>Sat, 01 Dec 2018 21:35:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</guid>
+      <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Create multiple dashboards in the Azure Portal</title>
+      <link>https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</link>
+      <pubDate>Thu, 01 Nov 2018 10:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</guid>
+      <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Read your old CHM files from network storage on Windows</title>
+      <link>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
+      <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
+      <description>&lt;p&gt;I was just recently going through my old SQL Server documents and reference material and attempting to organize and tidy things up, when I re-discovered a huge collection of literature that even now is incredibly useful. The only problem is that many of these old electronic books and files are stored in &lt;em&gt;CHM&lt;/em&gt; format. Those old timers of you will remember that this was how SQL Server Books online was deployed up to and including SQL Server 2000.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why don’t you go and LOCK OFF!</title>
+      <link>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
+      <pubDate>Wed, 17 Jul 2013 13:44:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
+      <description>&lt;p&gt;No this is not a Hekaton post 🙂 -perhaps I should have saved this title for another rainy day.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server concurrency is a particularly difficult subject to master and understanding the result of your actions can be confounded by some of SQL Server’s special behaviors and quirks that I so often like to talk and write about.&lt;/p&gt;&#xA;&lt;p&gt;As some of my &lt;del&gt;followers&lt;/del&gt; stalkers out there may remember, one of my favorite demonstrations I like to give is during my&#xA;&lt;a href=&#34;https://www.sqlpass.org/summit/2012/Sessions/SessionDetails.aspx?sid=2816&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking, and Isolation&lt;/a&gt; session -last performed at the &lt;a href=&#34;https://www.sqlpass.org/summit/2012/&#34;&gt;SQLPASS 2012 Summit&lt;/a&gt; and &lt;a href=&#34;https://www.sqlsaturday.com/viewsession.aspx?sat=229&amp;amp;sessionid=14975&#34;&gt;SQLSaturday #229 Dublin&lt;/a&gt; where in a little piece of code I discuss whether a transaction is really Atomic (or not). For anyone reading this paragraph who has immediately answered “ALWAYS” -then my friend you are in serious trouble with your code-base. And I am not even talking about the use of lower levels of isolation to perform dirty reads within your transaction here, isolation does not effect a transaction’s atomicity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Selected again for the PASS Summit</title>
+      <link>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</link>
+      <pubDate>Wed, 22 May 2013 15:27:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</guid>
+      <description>&lt;p&gt;Well it is that time of year again where the results of the PASS Summit 2013 session selections become public. This year was of course a very difficult one to get selected since (I believe) a record number of submissions were received -but thankfully I still managed to knock one session (out of four) into the back of the net. I would also like to take this opportunity to congratulate all the other selected Speakers (especially if this is your first time at the Summit) and commiserations to all those who were not successful on this occasion. I know the usual inquests and finger pointing will naturally ensue by a small handful of people who feel personally aggrieved that they weren’t successful, but believe me when I say that the process is as fair as I could expect, but not without room for improvement (more on this very soon in a follow up post).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to run SQL Server 2012 on the Kindle Fire HD</title>
+      <link>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</link>
+      <pubDate>Mon, 01 Apr 2013 12:44:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</guid>
+      <description>&lt;p&gt;&lt;mark&gt;Warning! Please do not attempt to perform any of the following steps on production systems. This information is provided purely for reference and any attempt to replicate these actions on your own hardware will be purely at your own risk!&lt;/mark&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits to the latest release of SQL Server (and reasons to upgrade) is that Windows Server Core is now a supported option. For those of you who are not yet familiar with Server Core, it could be best described as a reduced GUI version of Microsoft Windows. In other words, if you like the command line then you are in for a very big treat! Regular visitors to these pages will most likely be very aware of my passion for Windows Server Core and more to the point running SQL Server on it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upload files to your Azure VM instance</title>
+      <link>https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</link>
+      <pubDate>Wed, 20 Mar 2013 17:19:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</guid>
+      <description>&lt;p&gt;Sometimes some of the simplest tips are the best, and recently I was trying to figure out just how to upload SQL Server 2012 Enterprise/ Developer Edition installation files to my Windows Azure Virtual Machine since my pre-provisioned copy of SQL Server (Evaluation Edition) had expired.&lt;/p&gt;&#xA;&lt;p&gt;As it turned out I realized pretty quickly that I didn’t need to bother since the VM also comes with a copy of SQL Server 2012 Evaluation Edition media pre-loaded at the root of the &lt;em&gt;C:\&lt;/em&gt; drive. All I had to do therefore was to grab an existing Developer Edition license key and run the Evaluation Edition media setup and step through the Edition Upgrade to &lt;em&gt;convert&lt;/em&gt; my existing instance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Baby baby baby, where did our ROLLBACK go?</title>
+      <link>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
+      <pubDate>Tue, 23 Oct 2012 22:51:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Curious Case of the Non-Escalating transaction locks</title>
+      <link>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
+      <pubDate>Wed, 17 Oct 2012 13:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
+      <description>&lt;p&gt;SQL Server has many facets and behaviors that are often misunderstood and do not always work quite as we may have expected. At first you may believe that you understand the mechanics, only to realize after a little bit of delving deeper that your comprehension was wrong.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server Lock Escalation is one of these commonly misunderstood topics, and most recently after doing a little investigation into a few subjects related to escalation I was shocked and surprised in equal measure to find that things were not working quite as I expected.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Using the SQL Server Installation Wizard on Server Core!</title>
       <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
       <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
@@ -77,7 +140,7 @@
       <link>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
       <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keep your Availability Group listener name short</title>
@@ -119,7 +182,7 @@
       <link>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
       <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Add metadata to your audio files</title>
@@ -175,7 +238,7 @@
       <link>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</link>
       <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Categorise your SQL Agent jobs</title>
@@ -224,7 +287,7 @@
       <link>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
       <pubDate>Tue, 11 Jan 2011 02:03:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to create CD ISO image In Linux</title>

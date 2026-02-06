@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="How to run SQL Server 2012 on the Kindle Fire HD">
+  <meta property="og:description" content="Warning! Please do not attempt to perform any of the following steps on production systems. This information is provided purely for reference and any attempt to replicate these actions on your own hardware will be purely at your own risk!
+One of the biggest benefits to the latest release of SQL Server (and reasons to upgrade) is that Windows Server Core is now a supported option. For those of you who are not yet familiar with Server Core, it could be best described as a reduced GUI version of Microsoft Windows. In other words, if you like the command line then you are in for a very big treat! Regular visitors to these pages will most likely be very aware of my passion for Windows Server Core and more to the point running SQL Server on it.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2013-04-01T12:44:00+01:00">
+    <meta property="article:modified_time" content="2013-04-01T12:44:00+01:00">
+    <meta property="article:tag" content="Funny">
+    <meta property="article:tag" content="SQL">
+
+<title>tenbulls blog | How to run SQL Server 2012 on the Kindle Fire HD</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">How to run SQL Server 2012 on the Kindle Fire HD</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2013-04-01T12:44:00&#43;01:00">April 1, 2013</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              6 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><mark>Warning! Please do not attempt to perform any of the following steps on production systems. This information is provided purely for reference and any attempt to replicate these actions on your own hardware will be purely at your own risk!</mark></p>
+<p>One of the biggest benefits to the latest release of SQL Server (and reasons to upgrade) is that Windows Server Core is now a supported option. For those of you who are not yet familiar with Server Core, it could be best described as a reduced GUI version of Microsoft Windows. In other words, if you like the command line then you are in for a very big treat! Regular visitors to these pages will most likely be very aware of my passion for Windows Server Core and more to the point running SQL Server on it.</p>
+<p>I digress slightly, but the point is that because SQL Server can now run on within a reduced graphical interface environment, one large beneficial side effect to this is the portability of the database engine. More specifically we can “hack” SQL Server to run on more and more types of hardware and software. The following is a closely guarded secret by <a href="https://www.microsoft.com/en-us/default.aspx">Microsoft</a>, but with with a few simple hacks, re-compilations and know how, we can spoof SQL Server to run on several other Operating Systems.</p>
+<p><img src="/images/2013/screen1.jpg" alt="SQL on Kindle"><br/>
+<em>Let’s get to this!!!</em></p>
+<p>Now is probably a good time to stress that whilst I will reveal some of the magic involved in fooling SQL to run elsewhere other than Windows, I am currently bound into a Non-Disclosure Agreement with Microsoft and will therefore be careful not to break it. Therefore any information that I have compiled within these pages are public domain and can be found from various sources elsewhere. It is also important to stress that as of this time of writing, only the SQL Server features supported by Windows Server Core can be “ported” across to other environments -so if you are wanting to use Master Data Services elsewhere other than “full-fat” Windows, then unfortunately you are out of luck.</p>
+<p>For a list of all the SQL Server features currently supported on Server Core you should visit <a href="https://msdn.microsoft.com/en-gb/library/hh231669.aspx">Install SQL Server 2012 on Server Core</a>.</p>
+<p>Several months ago I came into possession of a lovely new Kindle Fire HD and as you may know, this tablet runs a customized version of Google’s Android Operating System. Having had some recent (but limited) success with running SQL Server on some other Android based Hardware I decided to try my luck on this nice bit of kit, and the following is how I did it.</p>
+<h1 id="install-server-core">Install Server Core</h1>
+<p>Probably one of the most time consuming parts of this whole exercise is the installation of the Server Core Operating System. This can be especially bewildering if you have never done so before, but a very good source of information is the MSDN article <a href="https://technet.microsoft.com/en-gb/library/hh831620.aspx">Install and Deploy Windows Server 2012</a>. One reason I chose Windows 2012 as opposed to Windows 2008R2 was simply to eliminate any possible backwards compatibility issues with Android when we come to port SQL Server. For instance there is a well known bug in <a href="https://developer.android.com/about/versions/android-1.6.html">Android 1.6 Donut</a> where a port of SQL Server from Windows 2008 will cause erratic buffer pool memory corruption.</p>
+<h1 id="install-sql-server-onto-server-core">Install SQL Server onto Server Core</h1>
+<p>Installation of SQL Server onto Server Core is relatively straight forward (see the previous link provided) as long as you are comfortable with performing a command line installation -either through using a configuration file or a full  set of command line options. Unfortunately (and perhaps understandibly) GUI based installation will not work, however I did identify a “bug” which allows a workaround which I detailed in the following post <a href="https://tenbulls.co.uk/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/">Using the SQL Server Installation Wizard on Server Core!</a>.</p>
+<h1 id="dump-the-sql-server-process-to-disk">Dump the SQL Server Process to disk</h1>
+<p>There are lots of ways to dump a process working set (the memory a process is consuming) to disk. On Server Core, it is no more difficult to do so since the Task Manager is (partially) supported and works as you would expect. You simply need to locate the SQL Server Service process, right click it and select the Create Dump File option.</p>
+<p><img src="/images/2013/dump_process.jpg" alt="Dump Process"></p>
+<p>Once this is successful you will see a message telling you where the dump file has been created. One very important consideration for you is to make sure that you have set a fairly low <a href="https://msdn.microsoft.com/en-gb/library/ms178067.aspx">maximum memory</a> cap for SQL Server’s buffer pool otherwise it the dump file will be much larger (and take longer to output) in addition it will make your ported SQL Server application to run faster.</p>
+<p><img src="/images/2013/dumped-process.jpg" alt="Dumping process"></p>
+<h1 id="rename-the-dump-file-to-src">Rename the dump file to .src</h1>
+<p>A fairly simple but necessary step to perform is the renaming of the dump file that we have just created. The reason for doing so is so that we can recompile the assembly in the next step and target our assembly for Operating System of choice. Simply right click the dump file and rename its extension to <code>.src</code>.</p>
+<h1 id="recompile-the-source-file-using-the-net-native-image-generator">Recompile the source file using the .NET Native Image Generator</h1>
+<p>The Native Image Generator tool (<a href="https://msdn.microsoft.com/en-GB/library/6t9t5wcf(v=vs.110).aspx">ngen.exe</a>) is an often overlooked and ignored utility for the .NET Framework but is very useful for improving the performance of our .NET applications and avoiding JIT compilation. There are several undocumented options for ngen and we shall use them to port our application. Since SQL Server is not a full .NET application and only uses parts of the .NET Framework (for optimization reasons) we can use the undocumented <code>/partial</code> switch which will recompile all necessary IL code sections of the dump file and will translate all other machine code sections into one complete assembly. Since we are also moving to a different Operating System we must also use the undocumented <code>/architecture:ux64</code> switch to target a 64 bit Android environment.</p>
+<p><img src="/images/2013/ngen.jpg" alt="ngen.exe"></p>
+<p>Once we have created our native Android image of SQL Server there are only a few final steps remaining!</p>
+<h1 id="install-fsexplorer-on-your-kindle">Install FSExplorer on your Kindle</h1>
+<p>In order to copy our SQL Server Assembly across to our Kindle Fire HD, navigate to the root and create a new folder we need a decent file explorer application. Probably the best I have come across on the Android Operating System is a nice little free app called FSExplorer. Open the Kindle App Store, search for and install FSExplorer.</p>
+<p>Move the SQL Server image to your Kindle
+Using FSExplorer, navigate to the file system root and create a folder called <em>SQLSrvr</em> where you will stored the Android SQL Server assembly. Copy the recompiled SQL Server image to your Kindle under this folder.</p>
+<p>Set SQL Server to auto-load
+In order to auto-load SQL Server as a daemon process you should first create an auto loader file under the root calling it startp (if one does not already exist). Make sure the file has the execute permission assigned and within it enter one simple line start <code>/SQLSrvr/sqlsrvr.d</code>.</p>
+<p><img src="/images/2013/create_file_and_folder.jpg" alt="Create folder"><br/>
+<em>Don’t forget to edit the startp file and copy the SQL assembly!</em></p>
+<p>After you have made this last change, reboot your Kindle Fire HD and SQL Server should launch successfully.</p>
+<p>Enjoy!</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/funny/">Funny</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/">
+            <span>previous: </span>
+            <span>Upload files to your Azure VM instance</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/">
+            <span>next: </span>
+            <span>I love SQLBits</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
