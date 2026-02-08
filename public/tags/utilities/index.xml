@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Tue, 11 Feb 2014 12:10:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2015 14:33:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/utilities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing Flash in Chrome/ Chromium on Linux</title>
+      <link>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
+      <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Read your old CHM files from network storage on Windows</title>
       <link>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
