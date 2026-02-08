@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Thu, 05 Apr 2012 15:56:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2014 08:33:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 reasons why I HA-te you!</title>
+      <link>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</link>
+      <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</guid>
+      <description>&lt;p&gt;Designing, planning, deploying, administrating and recovering (known from now on as &lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;P&lt;/strong&gt;lan&lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;AR&lt;/strong&gt; – and pronounced in the tone of a Caribbean Grandma 🙂 ) a SQL Server High Availability and Disaster Recovery (HADR) solution is really not an easy thing to implement and maintain. There are many reasons for this and whilst (ultimately) our business is only interested in an almost permanent unbroken connectivity to the Database Engine for its Applications or Middleware Clients, the reality is that our databases/s play just a very small part of the whole availability story when maintaining one of these solutions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weight doesnt ALWAYS have to be AlwaysOn</title>
       <link>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>

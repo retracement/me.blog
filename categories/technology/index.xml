@@ -38,6 +38,41 @@
       <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Changing the boot order of generation 2 Virtual Machines in Systems Center VMM and Hyper-V</title>
+      <link>https://tenbulls.co.uk/posts/2015/02/24/scvmm_boot_order/</link>
+      <pubDate>Tue, 24 Feb 2015 14:20:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/02/24/scvmm_boot_order/</guid>
+      <description>&lt;p&gt;On Windows 2012 R2 hosts, Hyper-V introduced the concept of generation 2 Virtual Machines, which provide various &lt;a href=&#34;https://technet.microsoft.com/library/dn282285.aspx&#34;&gt;benefits and a set of restrictions&lt;/a&gt; to those VMs configured in this way. In most cases the performance improvements and functionality they provide make it desirable to create new Virtual Machines as generation 2 -assuming that you will run them on generation 2 capable hosts which at this time of writing is Windows 2012 R2 Servers! Furthermore you will also be restricted by your guest operating system because Windows Server 2008 R2 and Windows 7 are not supported by generation 2. There are also further considerations to take into account with regards to Linux support by Hyper-V and we shall look at that topic another time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fixing Flash in Chrome/ Chromium on Linux</title>
+      <link>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
+      <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Messy Meta-Described Views</title>
+      <link>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</link>
+      <pubDate>Wed, 18 Jun 2014 15:36:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</guid>
+      <description>&lt;p&gt;It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn’t know about. Some of it good and some of it bad, some of it just meh&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;The other day I was stumbling around a new environment, when I decided to use the GUI to script out an existing set of views when I saw something that had me scratching my head. Underneath the actual view definition was the following (some names removed to protect the innocent).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>10 reasons why I HA-te you!</title>
+      <link>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</link>
+      <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</guid>
+      <description>&lt;p&gt;Designing, planning, deploying, administrating and recovering (known from now on as &lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;P&lt;/strong&gt;lan&lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;AR&lt;/strong&gt; – and pronounced in the tone of a Caribbean Grandma 🙂 ) a SQL Server High Availability and Disaster Recovery (HADR) solution is really not an easy thing to implement and maintain. There are many reasons for this and whilst (ultimately) our business is only interested in an almost permanent unbroken connectivity to the Database Engine for its Applications or Middleware Clients, the reality is that our databases/s play just a very small part of the whole availability story when maintaining one of these solutions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ROLLBACK damn you!</title>
+      <link>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</link>
+      <pubDate>Wed, 05 Mar 2014 09:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</guid>
+      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Read your old CHM files from network storage on Windows</title>
       <link>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
       <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>

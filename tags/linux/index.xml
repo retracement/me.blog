@@ -24,6 +24,13 @@
       <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Fixing Flash in Chrome/ Chromium on Linux</title>
+      <link>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
+      <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to rip audio from your training videos</title>
       <link>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
       <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>

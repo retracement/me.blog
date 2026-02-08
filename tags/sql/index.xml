@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 17 Jul 2013 13:44:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2014 15:36:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Messy Meta-Described Views</title>
+      <link>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</link>
+      <pubDate>Wed, 18 Jun 2014 15:36:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</guid>
+      <description>&lt;p&gt;It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn’t know about. Some of it good and some of it bad, some of it just meh&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;The other day I was stumbling around a new environment, when I decided to use the GUI to script out an existing set of views when I saw something that had me scratching my head. Underneath the actual view definition was the following (some names removed to protect the innocent).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ROLLBACK damn you!</title>
+      <link>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</link>
+      <pubDate>Wed, 05 Mar 2014 09:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</guid>
+      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why don’t you go and LOCK OFF!</title>
       <link>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>

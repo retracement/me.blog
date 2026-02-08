@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2014/06/18/view-pugh/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Messy Meta-Described Views">
+  <meta property="og:description" content="It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn’t know about. Some of it good and some of it bad, some of it just meh…
+The other day I was stumbling around a new environment, when I decided to use the GUI to script out an existing set of views when I saw something that had me scratching my head. Underneath the actual view definition was the following (some names removed to protect the innocent).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2014-06-18T15:36:00+01:00">
+    <meta property="article:modified_time" content="2014-06-18T15:36:00+01:00">
+    <meta property="article:tag" content="SQL">
+
+<title>tenbulls blog | Messy Meta-Described Views</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Messy Meta-Described Views</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2014-06-18T15:36:00&#43;01:00">June 18, 2014</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn’t know about. Some of it good and some of it bad, some of it just meh&hellip;</p>
+<p>The other day I was stumbling around a new environment, when I decided to use the GUI to script out an existing set of views when I saw something that had me scratching my head. Underneath the actual view definition was the following (some names removed to protect the innocent).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">----------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-- note view definition removed --
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">----------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">EXEC</span> sys.sp_addextendedproperty <span style="color:#f92672">@</span>name<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;MS_DiagramPane1&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span>value<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Begin DesignProperties =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   Begin PaneConfigurations =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 4
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1[40] 4[20] 2[20] 3) )&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1 [50] 4 [25] 3))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1 [50] 2 [25] 3))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (4 [30] 2 [40] 3))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 4
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1 [56] 3))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 5
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (2 [66] 3))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 6
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (4 [50] 3))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 7
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(V (3))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 8
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1[56] 4[18] 2) )&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 9
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1 [75] 4))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 10
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1[66] 2) )&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 11
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (4 [60] 2))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 12
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(H (1) )&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 13
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(V (4))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin PaneConfiguration = 14
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NumPanes = 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Configuration = &#34;(V (2))&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      ActivePaneConfig = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   Begin DiagramPane =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin Origin =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Top = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Left = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin Tables =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Begin Table = &#34;Customer&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Begin Extent =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Top = 6
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Left = 38
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Bottom = 114
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Right = 227
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            DisplayFlags = 280
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            TopColumn = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Begin Table = &#34;Order&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Begin Extent =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Top = 6
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Left = 265
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Bottom = 114
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">               Right = 492
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            DisplayFlags = 280
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            TopColumn = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   Begin SQLPane =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   Begin DataPane =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin ParameterDefaults = &#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   Begin CriteriaPane =
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      Begin ColumnWidths = 12
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Column = 1440
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Alias = 900
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Table = 1170
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Output = 720
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Append = 1400
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         NewValue = 1170
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         SortType = 1350
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         SortOrder = 1410
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         GroupBy = 1350
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Filter = 1350
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Or = 1350
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Or = 1350
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         Or = 1350
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">End
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;</span> , <span style="color:#f92672">@</span>level0type<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;SCHEMA&#39;</span>,<span style="color:#f92672">@</span>level0name<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;dbo&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span>level1type<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;VIEW&#39;</span>,<span style="color:#f92672">@</span>level1name<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;omsPerMonth&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">EXEC</span> sys.sp_addextendedproperty <span style="color:#f92672">@</span>name<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;MS_DiagramPaneCount&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span>value<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> , <span style="color:#f92672">@</span>level0type<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;SCHEMA&#39;</span>,<span style="color:#f92672">@</span>level0name<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;dbo&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">@</span>level1type<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;VIEW&#39;</span>,<span style="color:#f92672">@</span>level1name<span style="color:#f92672">=</span>N<span style="color:#e6db74">&#39;omsPM&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>So after a few tests it turns out that when you create SQL Server Views using the SQL Server Management Studio View Designer, SSMS automatically generates and adds these properties to the view behind the scenes to aid the Designer for re-editing purposes. Please bear this in mind when generating scripts for deployment into your staging environments, whilst there doesn’t appear to be any performance drawbacks to this extra meta-data, it is messy and (imho) not best practice to redeploy into production.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2014/06/03/who-is-watching-the-watchmen/">
+            <span>previous: </span>
+            <span>Who is watching the Watchmen?</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2014/11/04/5-days-of-pass-day-1/">
+            <span>next: </span>
+            <span>5 Days of PASS – Day 1</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

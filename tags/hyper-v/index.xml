@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hyper-V on tenbulls blog</title>
-    <link>http://localhost:1313/tags/hyper-v/</link>
+    <link>https://tenbulls.co.uk/tags/hyper-v/</link>
     <description>Recent content in Hyper-V on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 14 Mar 2012 12:43:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hyper-v/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Feb 2015 14:20:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/hyper-v/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to remove your Virtual machines BLOAT</title>
-      <link>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</link>
-      <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</guid>
-      <description>&lt;p&gt;Well I guess its been a long time since I have offered you a useful nugget of information or help, so I have decided to haul myself to the keyboard and provide a useful tip that I have been saving for a rainy day. Regular readers to this blog will certainly be no stranger to my positively strong feelings towards Oracle’s VirtualBox and I have been a user of this product for more years than I can remember. The tip I am about to describe will use VirtualBox in the examples but it should be transferable to any virtualisation product that has the ability to shrink back virtual disks.&lt;/p&gt;</description>
+      <title>Changing the boot order of generation 2 Virtual Machines in Systems Center VMM and Hyper-V</title>
+      <link>https://tenbulls.co.uk/posts/2015/02/24/scvmm_boot_order/</link>
+      <pubDate>Tue, 24 Feb 2015 14:20:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/02/24/scvmm_boot_order/</guid>
+      <description>&lt;p&gt;On Windows 2012 R2 hosts, Hyper-V introduced the concept of generation 2 Virtual Machines, which provide various &lt;a href=&#34;https://technet.microsoft.com/library/dn282285.aspx&#34;&gt;benefits and a set of restrictions&lt;/a&gt; to those VMs configured in this way. In most cases the performance improvements and functionality they provide make it desirable to create new Virtual Machines as generation 2 -assuming that you will run them on generation 2 capable hosts which at this time of writing is Windows 2012 R2 Servers! Furthermore you will also be restricted by your guest operating system because Windows Server 2008 R2 and Windows 7 are not supported by generation 2. There are also further considerations to take into account with regards to Linux support by Hyper-V and we shall look at that topic another time.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

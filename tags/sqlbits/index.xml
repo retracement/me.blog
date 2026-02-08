@@ -7,13 +7,20 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Tue, 04 Mar 2014 09:02:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2015 13:36:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sqlbits/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Speaking at SQLBits XIV (after all!)</title>
+      <link>https://tenbulls.co.uk/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</link>
+      <pubDate>Fri, 20 Feb 2015 13:36:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</guid>
+      <description>&lt;p&gt;I don’t think it is a particularly big secret that I am a fan of &lt;a href=&#34;https://www.sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; (more posts about SQLBits can be found &lt;a href=&#34;https://tenbulls.co.uk/tags/sqlbits/&#34;&gt;here&lt;/a&gt;). I remember being at the PASS Summit in 2010 and enthusiastically talking about the SQLBits conference to those that cared to listen and was rather taken aback by the lack of awareness outside of Europe during my time there, so I like to think that my enthusiastic ramblings over the years have contributed in some very small way to promoting the conference to a wider global audience. SQLBits gave me my first speaking break, which allowed me soon after to speak at SQLRally in Orlando, so I am always grateful to them for offering me that opportunity.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>SQLBits 12 Announced!</title>
-      <link>https://tenbulls.co.uk/posts/2014/02/11/03/04/twelve-is-a-magic-number/</link>
+      <link>https://tenbulls.co.uk/posts/2014/03/04/twelve-is-a-magic-number/</link>
       <pubDate>Tue, 04 Mar 2014 09:02:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/02/11/03/04/twelve-is-a-magic-number/</guid>
+      <guid>https://tenbulls.co.uk/posts/2014/03/04/twelve-is-a-magic-number/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/coltsfoot_rock_small.png&#34; alt=&#34;Coltsfoot Rock&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A massive congratulations to the &lt;a href=&#34;https://www.sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; team for announcing what will become the 12th iteration of the UKs finest and largest SQL Server conference. Putting on events at this scale by such a small core team demands huge respect and I sincerely thank them for doing so. I have personally learnt a ton of information and grown as a person and as a SQL Professional because of their efforts and I know many others in the industry feel the same way too.&lt;/p&gt;</description>
     </item>
     <item>
