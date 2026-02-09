@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 20 Feb 2015 13:36:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2015 19:30:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/public-speaking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So you havent been selected for the PASS Summit?</title>
+      <link>https://tenbulls.co.uk/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</link>
+      <pubDate>Fri, 26 Jun 2015 19:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</guid>
+      <description>&lt;p&gt;I guess it could be easy to become complacent about being selected to speak at conferences and you could certainly argue that I have been tremendously lucky with the selection process since I first broke into the speaking circuit in 2010. In 2011 I delivered my first lightning talk at the Summit and this was already off the back of me being the only European speaker (AFAIK) at &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;SQLRally Orlando&lt;/a&gt;. Every year since then I have been fortunate enough to be selected to deliver one (or more) full session abstracts at the Summit and when combined with a nice collection of speaking gigs at &lt;a href=&#34;https://www.sqlsaturday.com/&#34;&gt;SQLSaturdays&lt;/a&gt;, &lt;a href=&#34;https://www.sqlpass.org/Events/24HoursofPASS.aspx&#34;&gt;24HOP&lt;/a&gt; and other events you could be forgiven for thinking that I must have the &lt;em&gt;magic touch&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaking at SharePoint Saturday London 2015</title>
+      <link>https://tenbulls.co.uk/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</link>
+      <pubDate>Fri, 05 Jun 2015 10:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/evoconf.jpg&#34; alt=&#34;Evoconf&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t think it is any great secret that I have had my eyes on the SharePoint Community for quite some time. With the introduction of a dedicated SharePoint track (and precon) in 2013 at &lt;a href=&#34;https://sqlcambs.org.uk/category/sqlsaturday/&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; (a World 1st, I believe) and most recently my attendance of the three day annual &lt;a href=&#34;https://www.sharepointevolutionconference.com/&#34;&gt;SharePoint Evolution Conference&lt;/a&gt; in London, it has been clear to me for years that the SQL and SharePoint Communities and technologies are more closely related and integrated than I think most professionals would realize. They are simply just different perspectives on what is essentially the end goal of presenting data to the end-user.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaking at SQLSaturday New York 2015</title>
+      <link>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
+      <pubDate>Thu, 09 Apr 2015 15:55:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
+      <description>&lt;p&gt;Back in August 2012 I had the honour of speaking at the last (but one) SQLSaturday to be held in New York City which marked a particular milestone in my SQL Server journey. While I had (by then) already spoken at the two American SQLRally events (&lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;Orlando&lt;/a&gt; and &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2012/dallas/Home.aspx&#34;&gt;Dallas&lt;/a&gt;) and delivered a lightning talk at the 2011 PASS Summit, SQLSaturday New York was my first ever SQLSaturday in the U.S.A and because of that it was already special before I had even arrived.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Speaking at SQLBits XIV (after all!)</title>
       <link>https://tenbulls.co.uk/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</link>

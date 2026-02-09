@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Tue, 17 Feb 2015 09:14:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2015 10:43:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sqlsaturday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing SharePoint Saturday Cambridge 2015</title>
+      <link>https://tenbulls.co.uk/posts/2015/06/25/twotribes/</link>
+      <pubDate>Thu, 25 Jun 2015 10:43:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/06/25/twotribes/</guid>
+      <description>&lt;p&gt;In 2013, &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; became the first ever SQLSaturday in the World to host a dedicated SharePoint track and the event was a great success. It struck me at the time how well we managed to get a SharePoint audience at an event that was largely about SQL Server so with the support of our dedicated SharePoint sponsors (&lt;a href=&#34;https://www.combined-knowledge.com/&#34;&gt;Combined Knowledge&lt;/a&gt;, &lt;a href=&#34;https://www.k2.com/&#34;&gt;K2&lt;/a&gt; and &lt;a href=&#34;https://www.axioworks.com/&#34;&gt;AxioWorks&lt;/a&gt;), a fantastic addition of SharePoint speakers and with the expert help from the SharePoint community through Peter Baddeley (&lt;a href=&#34;https:https://about.me/baddaz&#34;&gt;web&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/baddaz&#34;&gt;twitter&lt;/a&gt;) I think we managed to light the touch paper for my future plans for &lt;a href=&#34;https://www.sqlsaturday.com/411/EventHome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Choose your own agenda - from SQLSaturday to the PASS Summit</title>
+      <link>https://tenbulls.co.uk/posts/2015/05/26/progcomm/</link>
+      <pubDate>Tue, 26 May 2015 11:44:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/05/26/progcomm/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/buck-needs-you.webp&#34; alt=&#34;Buck needs you!&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;OK so sadly Buck can’t be with us this year, but if he could, he would tell you to join our Programme Committee!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This year, SQLSaturday Cambridge is pioneering the first ever Global Programme Committee for a SQLSaturday and we want you to be part of it!&lt;/p&gt;&#xA;&lt;p&gt;After being personally involved in the PASS Programme Committee for many many years and playing a small part in reviewing abstracts, speakers and anything else that needs an opinion, it might be natural that I would want to take my experiences of this process and attempt to improve things -or at very least try a different approach.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaking at SQLSaturday New York 2015</title>
+      <link>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
+      <pubDate>Thu, 09 Apr 2015 15:55:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
+      <description>&lt;p&gt;Back in August 2012 I had the honour of speaking at the last (but one) SQLSaturday to be held in New York City which marked a particular milestone in my SQL Server journey. While I had (by then) already spoken at the two American SQLRally events (&lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;Orlando&lt;/a&gt; and &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2012/dallas/Home.aspx&#34;&gt;Dallas&lt;/a&gt;) and delivered a lightning talk at the 2011 PASS Summit, SQLSaturday New York was my first ever SQLSaturday in the U.S.A and because of that it was already special before I had even arrived.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Speaking at SQLSaturday Lisbon 2015</title>
       <link>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</link>
