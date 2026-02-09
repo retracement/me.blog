@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SharePoint on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/sharepoint/</link>
+    <description>Recent content in SharePoint on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Mon, 30 Mar 2015 07:52:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/sharepoint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to install SharePoint 2013 on Windows 2012R2</title>
+      <link>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
+      <pubDate>Mon, 30 Mar 2015 07:52:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</guid>
+      <description>&lt;p&gt;&lt;em&gt;If you want to jump straight to the condensed solution, then please feel free to go to the &lt;a href=&#34;#condensed-installation&#34;&gt;Condensed Installation instructions&lt;/a&gt; below. If you find this post useful or have any feedback then please leave me a comment so that I know my efforts were not wasted!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Installing Microsoft Backoffice products on Microsoft Operating Systems has over the years become a much easier proposition and is largely the reason why SQL Server got the reputation of being “easy”. Except it isn’t. Ask any idiot to install a SQL Server instance and create a database and there is a good chance that they will succeed, but ask them to install SQL Server correctly and configured to best practice, suddenly the knowledge gap becomes a little more obvious.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

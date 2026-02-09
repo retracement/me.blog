@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="How to install SharePoint 2013 on Windows 2012R2">
+  <meta property="og:description" content="If you want to jump straight to the condensed solution, then please feel free to go to the Condensed Installation instructions below. If you find this post useful or have any feedback then please leave me a comment so that I know my efforts were not wasted!
+Installing Microsoft Backoffice products on Microsoft Operating Systems has over the years become a much easier proposition and is largely the reason why SQL Server got the reputation of being “easy”. Except it isn’t. Ask any idiot to install a SQL Server instance and create a database and there is a good chance that they will succeed, but ask them to install SQL Server correctly and configured to best practice, suddenly the knowledge gap becomes a little more obvious.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2015-03-30T07:52:00+01:00">
+    <meta property="article:modified_time" content="2015-03-30T07:52:00+01:00">
+    <meta property="article:tag" content="SharePoint">
+    <meta property="article:tag" content="Installation">
+    <meta property="article:tag" content="Windows">
+
+<title>tenbulls blog | How to install SharePoint 2013 on Windows 2012R2</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">How to install SharePoint 2013 on Windows 2012R2</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2015-03-30T07:52:00&#43;01:00">March 30, 2015</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              10 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><em>If you want to jump straight to the condensed solution, then please feel free to go to the <a href="#condensed-installation">Condensed Installation instructions</a> below. If you find this post useful or have any feedback then please leave me a comment so that I know my efforts were not wasted!</em></p>
+<p>Installing Microsoft Backoffice products on Microsoft Operating Systems has over the years become a much easier proposition and is largely the reason why SQL Server got the reputation of being “easy”. Except it isn’t. Ask any idiot to install a SQL Server instance and create a database and there is a good chance that they will succeed, but ask them to install SQL Server correctly and configured to best practice, suddenly the knowledge gap becomes a little more obvious.</p>
+<p>I recently had a requirement to deploy SharePoint 2013 and at very least expected a relatively easy installation. Working along the lines of current is probably best, I decided that Windows 2012 R2 was probably the right choice of OS going forward. Famous last words.</p>
+<h1 id="the-problem-with-sharepoint-2013-on-windows-2012-r2">The Problem with SharePoint 2013 on Windows 2012 R2</h1>
+<p>Prior to SharePoint 2013 SP1, Windows 2012 R2 is not supported and I suppose it shouldn’t surprise anyone since SharePoint 2013 came onto the market before Windows 2012 R2. Anyhow, I gathered that I could install SharePoint 2013 onto Windows 2012 R2 and then patch up to SharePoint 2013 SP1. No big deal right?</p>
+<p>Wrong.</p>
+<p><em>Before I start delving into the problem and solution, it is important for me to highlight that it is possible to download a Microsoft provided slip-streamed iso of SharePoint 2013 with SP1 assuming you have access to a lovely MSDN subscription. Using this media would avoid the problems documented within this post.</em></p>
+<p>However there will be many of you who do not have access to a MSDN subscription and may be using Microsoft Evaluation Editions for your test lab. Quite (un)helpfully Microsoft do not provide a slip-streamed Evaluation Edition of SharePoint 2013 -and as far as I know never provide slip-streamed Evaluation Edition images apart from exceptional circumstances. At this point you may ask yourself <em>“Why not create my own slip-streamed install?”</em> but unfortunately this would put you in an unsupported state due to package changes as mentioned in the blog post <a href="https://blogs.msdn.com/b/ronalg/archive/2014/02/27/sharepoint-2013-sp1-and-slipstreaming.aspx">SharePoint 2013, SP1 and Slipstreaming</a>.</p>
+<p><em>So let’s get back to business…</em></p>
+<p>The SharePoint media provides the ever so useful pre-requisite installer to help automate the configuration and installation of (you guessed it) pre-requisites prior to installing SharePoint. The problem with this approach is that on Window 2012 R2 the pre-requisite installer fails resulting in the error <em>“There was an error during installation. The tool was unable to install Application Server Role, Web Server (IIS) Role”</em> (the MSDN iso of SharePoint 2013 SP1 succeeds).</p>
+<p><img src="/images/2015/prereq_error.gif" alt="pre-requisite installer error"></p>
+<p>After a little bit of playing around, it became obvious that things were not going to be plain sailing and so I resorted to Google-Fu expecting to find an authoritative and straight-forward set of instructions from either Microsoft themselves or a SharePoint MVP/ community SharePoint expert. Sadly what I found was a whole melting pot of solutions -some of which appeared to be slightly more complicated than I suspected they needed to be. For instance many suggested enabling a whole long list of Windows Features through PowerShell, even though we can see quite clearly in the pre-requisite check a fairly simple list. Furthermore there was not one single set of instructions I found that took into account the latest releases of SQL Server or Microsoft AppFabric Cumulative Updates.</p>
+<p>I decided to have a go myself and see if I could simplify this process and arrive at what I hope will be the definitive solution, so that you (hopefully) won’t have to waste your time like I did!</p>
+<h1 id="defining-our-list-of-pre-requisites">Defining our list of pre-requisites</h1>
+<p>Probably your first port of call is to take a look at the <a href="https://technet.microsoft.com/en-GB/library/cc262485.aspx">Microsoft Hardware and software requirements for SharePoint 2013</a> which will give you a useful starting point -at least for minimum software requirements, but we can see from the pre-requisite installer feedback that in Windows 2012 R2, Microsoft .NET Framework 4.5 and Windows Management Framework 3.0 is already installed by default. The problem with this pre-requisite checker is that it is intended as an automated way to install the pre-requisite components rather than providing feedback for a manual install. After further executions after enabling a couple of Windows Features I decided that it didn’t really suit my purposes and instead decided to run the SharePoint setup executable hoping that it would provide a simpler way to get feedback.</p>
+<p>Thankfully setup immediately reports back on progress and provides those missing requirements.</p>
+<p><img src="/images/2015/setup_missing_prereqs.webp" alt="setup missing pre-reqs"></p>
+<h1 id="installing-the-pre-requisites">Installing the pre-requisites</h1>
+<p>The first thing I do is to enable those easy Windows-Features through PowerShell. I notice the Windows Identity Foundation requirement (you may find various posts alluding to the fact that this is a download but it is in fact a Windows Feature in 2012 R2).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Windows-Identity-Foundation|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs
+</span></span></code></pre></div><p>I will deal with the Identity Foundation extensions in a moment but for now the second feature of interest is Application Server and this is simple enough to add.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Application-Server|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs
+</span></span></code></pre></div><p>Next we can add the IIS Web Server (better known as the Web-Server feature); I include all management tools since I find the ability to troubleshoot and configure locally particularly valuable when problems are hit.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeatureWeb-Server|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs `
+</span></span><span style="display:flex;"><span>-IncludeManagementTools
+</span></span></code></pre></div><p>There is also a requirement for the IIS 6 Management Compatibility component and this can be found through the <code>Web-Mgmt-Compat</code> feature:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Web-Mgmt-Compat|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs
+</span></span></code></pre></div><p>I did initially think that the WCF Data Services 5.0 requirement equated to the <code>Net-WCF-Services</code> feature, but I was wrong. It is instead an executable that we need to download and we shall cover these downloads next.</p>
+<p>I originally tried the most recent WCF Data Services download (version 5.6.0) but <em>found that the SharePoint installer surprisingly did not detect it</em>. After running the installer again I opted for <em>Uninstall</em> and instead downloaded version 5.0.512 which can be found at <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=29306">http://www.microsoft.com/en-gb/download/details.aspx?id=29306</a> and installed it without incident. This time, setup no longer reported this component missing.</p>
+<p>You will recall we enabled the Windows Identity Foundation feature, but were still missing the Identity Extensions (1.0). After fumbling around for a little while expecting to find it as a sub-component Windows Feature to enable, I realized that it was a download as reported by several articles. The extensions can be downloaded from <a href="http://go.microsoft.com/fwlink/?LinkID=252368">http://go.microsoft.com/fwlink/?LinkID=252368</a> -irritatingly I could only find a direct link! Installing this component was painless and now the requirement was removed from the list of missing components.</p>
+<p>The next (and probably the most frustrating and problematic) component I installed was Windows Server Appfabric which can be downloaded via <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=27115">http://www.microsoft.com/en-gb/download/details.aspx?id=27115</a> and attempting GUI based execution caused me a few issues.</p>
+<p><img src="/images/2015/appfab.gif" alt="AppFabric MS Update"></p>
+<p>I first checked that I didn’t want to use Microsoft Update since my environment was disconnected from the Internet. Next I selected all the AppFabric features (which meant checking <em>Caching Services and Cache Administration</em>) and completed the installation.</p>
+<p><img src="/images/2015/appfabfeatures.gif" alt="AppFabric Features"></p>
+<p>Probably the must annoying aspect of the AppFabric installer is that it can leave your installation in a bit of a pickle. First off, if you cancel the installation and try and rerun SharePoint setup you will almost certainly receive a warning about Microsoft Update being required to run this tool (a crazy situation if you consider the dialog screen earlier), and the second point to raise is that even if you do perform a GUI based installation of AppFabric you will realize upon rerunning the SharePoint setup that it errors with the message <em>“Windows Server Appfabric is not correctly configured. You should uninstall Windows Server Appfabric and reinstall it using the SharePoint Products Preparation Tool.”</em> -obviously in our situation we cannot do this!</p>
+<p>To get around this conundrum you will first have to uninstall this failed installation of AppFabric. I confess I had a torrid time performing this having first used the command line <em>/r</em> switch but now could not get the SharePoint setup error to disappear. Eventually I noticed that the AppFabric installation was still registered after looking through <em>Control Panel/ Programs/ Programs and Features</em> but the GUI based removal kept erroring with message about the .NET Framework 3.5! To resolve this latest snag, I re-installed AppFabric before heading back to the Programs and Features app to remove it again! A fudge but it worked.</p>
+<p>Once the SharePoint setup only complains that AppFabric is missing (and not that it is incorrectly configured as described above), you can perform the AppFabric installation for SharePoint correctly through the command line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>WindowsServerAppFabricSetup_x64.exe /i CacheClient,CachingService,CacheAdmin /gac
+</span></span></code></pre></div><p>I should highlight that I have seen various references indicating that you must use quotes around the parameter options but this has not been my experience so far. Once installed (you will not receive a notification of completion!), reboot your server once more.</p>
+<p>AppFabric must be patched to CU1, but I decided to try applying 1.1 CU5. I should have known better since the installer really must have CU1 installed and you can obtain this from <a href="http://support.microsoft.com/en-us/kb/2671763">http://support.microsoft.com/en-us/kb/2671763</a> and installation can be performed through the GUI.</p>
+<p>The next component to address is the Sync Framework Runtime v1.0 SP1 and you can download this from <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=17616">http://www.microsoft.com/en-gb/download/details.aspx?id=17616</a> and install with no problems. Obviously in my case I chose <em>SyncSetup_en_x64.zip</em> for my installation. Extract and execute the <em>synchronization.msi</em> installer from the Microsoft Sync Framework directory.</p>
+<p>For some reason I could only find the Microsoft Information Protection and Control Client as a download link, simply download from <a href="http://go.microsoft.com/fwlink/p/?LinkID=219568">http://go.microsoft.com/fwlink/p/?LinkID=219568</a> and install. Like the Appfabric GUI I chose not to enable Microsoft Update.</p>
+<p><img src="/images/2015/mpicc.gif" alt="Update"></p>
+<p>A restart is required after installing this component.</p>
+<p>The final component to add is the SQL Server Native Client. The pre-requisite states Microsoft SQL Server 2008 R2 SP1 Native Client, but SQL Server 2012 Native Client appears to work too. Note that SQL Server 2014 does not have its own Native Client and instead installs 2012 Native Client. As mentioned earlier, my personal preference is to always deploy client management tools for troubleshooting so I would tend to always deploy the Native Client from full SQL Server 2014 installation media so that I can include those tools (such as SQL Server Management Studio). If you don’t have this requirement then you can download and install the SQL Server 2012 Native Client either as part of the <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=29065">SQL Server 2012 Feature pack</a> or directly from  <a href="http://go.microsoft.com/fwlink/?LinkID=239648">http://go.microsoft.com/fwlink/?LinkID=239648</a> and installation is of course fairly trivial.</p>
+<p>By this stage you should have met all pre-requisites and while a reboot is not necessary prior to installation, I advise doing so for one last time before running SharePoint 2013 setup -which you will be happy to see now prompts you for a license key! 🙂</p>
+<p>Once SharePoint 2013 installation has completed do not forget to install SharePoint 2013 Service Pack 1.</p>
+<hr>
+<h1 id="condensed-installation">Condensed installation</h1>
+<p><em>This section is intended as a quick and concise way for you to run through all the pre-requisites before attempting to install SharePoint 2013. If you run into any problems or want a more detailed explanation you should read the entire post described above.</em></p>
+<ol>
+<li>
+<p>Enable the Windows-Identity-Foundation feature:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Windows-Identity-Foundation|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs
+</span></span></code></pre></div></li>
+<li>
+<p>Enable the Application-Server role:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Application-Server|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs
+</span></span></code></pre></div></li>
+<li>
+<p>Enable the Web-Server role and management tools:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeatureWeb-Server|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs `
+</span></span><span style="display:flex;"><span>-IncludeManagementTools
+</span></span></code></pre></div></li>
+<li>
+<p>Enable the IIS 6 Management Compatibility component:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Web-Mgmt-Compat|
+</span></span><span style="display:flex;"><span>Add-WindowsFeature -source:D:\sources\sxs
+</span></span></code></pre></div></li>
+<li>
+<p>Download and install WCF Data Services (5.0.512) from <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=29306">http://www.microsoft.com/en-gb/download/details.aspx?id=29306</a></p>
+</li>
+<li>
+<p>Download and install Windows Identity Extensions (1.0) from <a href="http://go.microsoft.com/fwlink/?LinkID=252368">http://go.microsoft.com/fwlink/?LinkID=252368</a></p>
+</li>
+<li>
+<p>Download and install Windows Server AppFabric (1.1) from <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=27115">http://www.microsoft.com/en-gb/download/details.aspx?id=27115</a> through the command line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>WindowsServerAppFabricSetup_x64.exe /i CacheClient,CachingService,CacheAdmin /gac
+</span></span></code></pre></div></li>
+<li>
+<p>Reboot Server.</p>
+</li>
+<li>
+<p>Download and install AppFabric 1.1 CU1 from <a href="http://support.microsoft.com/en-us/kb/2671763">http://support.microsoft.com/en-us/kb/2671763</a></p>
+</li>
+<li>
+<p>Download and install Sync Framework Runtime v1.0 SP1 from <a href="http://www.microsoft.com/en-gb/download/details.aspx?id=17616">http://www.microsoft.com/en-gb/download/details.aspx?id=17616</a> (extract and execute the synchronization.msi installer from the Microsoft Sync Framework directory).</p>
+</li>
+<li>
+<p>Download and install Microsoft Information Protection and Control Client from <a href="http://go.microsoft.com/fwlink/p/?LinkID=219568">http://go.microsoft.com/fwlink/p/?LinkID=219568</a></p>
+</li>
+<li>
+<p>Reboot Server.</p>
+</li>
+<li>
+<p>Download and install the SQL Server 2012 Native Client from <a href="http://go.microsoft.com/fwlink/?LinkID=239648">http://go.microsoft.com/fwlink/?LinkID=239648</a> (minimum requirement is SQL Server 2008 R2 SP1).</p>
+</li>
+<li>
+<p>Reboot Server (for good measure) and SharePoint 2013 installation should work.</p>
+</li>
+<li>
+<p>Post SharePoint 2013 installation do not forget to patch to SharePoint 2013 Service Pack 1.</p>
+</li>
+</ol>
+<p>I hope this post was helpful to you, and if you would like to see more like this or have any useful feedback then I look forward to receiving your comments.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sharepoint/">SharePoint</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/installation/">Installation</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/windows/">Windows</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2015/02/24/scvmm_boot_order/">
+            <span>previous: </span>
+            <span>Changing the boot order of generation 2 Virtual Machines in Systems Center VMM and Hyper-V</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/">
+            <span>next: </span>
+            <span>Speaking at SQLSaturday New York 2015</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
