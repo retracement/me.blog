@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQLHelp on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/sqlhelp/</link>
+    <link>http://localhost:1313/tags/sqlhelp/</link>
     <description>Recent content in SQLHelp on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Tue, 17 Apr 2012 18:38:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/sqlhelp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sqlhelp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>whoisactive on SQL 2000</title>
-      <link>https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/</link>
+      <link>http://localhost:1313/posts/2012/04/17/whos-active-on-sql-2000/</link>
       <pubDate>Tue, 17 Apr 2012 18:38:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/</guid>
+      <guid>http://localhost:1313/posts/2012/04/17/whos-active-on-sql-2000/</guid>
       <description>&lt;p&gt;Yes yes yes I &lt;em&gt;know&lt;/em&gt; we are currently on SQL 2012 but just hear me out for a second…&lt;/p&gt;&#xA;&lt;p&gt;I think I am probably one of the only people on the planet who has not (yet) used Adam Machanic’s (&lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/archive/2011/04/27/who-is-active-v11-00-a-month-of-activity-monitoring-part-27-of-30.aspx&#34;&gt;twitter&lt;/a&gt;) whoisactive Stored Procedure. One of the reasons for this is that going right back to the days of SQL Server 2000 I had rolled my own stored procedure which worked very nicely and did everything that I ever needed it to.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everybody wants to be important</title>
-      <link>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</link>
+      <link>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</link>
       <pubDate>Fri, 25 Mar 2011 12:49:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/03/25/everybody-wants-to-be-important/</guid>
+      <guid>http://localhost:1313/posts/2011/03/25/everybody-wants-to-be-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a very big fan of &lt;em&gt;self-development&lt;/em&gt; materials whether they be books, audio, presentations or simply just ramblings on the Internet and last year during the *Meet an MVP lunch time at the SQL PASS 2010 Summit this was the hotly debated subject on our table.&lt;/p&gt;&#xA;&lt;p&gt;I know these materials generally get a bad press and I always remember a line from one of our comedians here in the UK who was criticising self-improvement training and said &lt;em&gt;&amp;ldquo;the clue is in the name&amp;hellip;.self! &amp;hellip;so why are you listening to someone else!&amp;rdquo;&lt;/em&gt;. For myself I believe that the &amp;ldquo;self&amp;rdquo; in the name self-improvement actually means that we always need to examine ourselves (and our behaviour) in order to grow into something better. One thing that I know for sure is that I have a lot of work ahead of me to become the person that I want to be and I know it is within my power to do so.&lt;/p&gt;</description>
     </item>
   </channel>

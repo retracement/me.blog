@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/security/</link>
+    <link>http://localhost:1313/tags/security/</link>
     <description>Recent content in Security on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Mon, 30 Jan 2012 14:29:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What are the impersonation rights for my database users?</title>
-      <link>https://tenbulls.co.uk/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</link>
+      <link>http://localhost:1313/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</link>
       <pubDate>Mon, 30 Jan 2012 14:29:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</guid>
+      <guid>http://localhost:1313/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</guid>
       <description>&lt;p&gt;From time to time I get thrown the odd request to provide various bits of information from the SQL Server environment and most recently I was asked about a group of databases that required migrating to another instance. For some reason there had been a little bit of a panic about the impersonation rights in each of the databases and their configuration. The request was &lt;em&gt;*ahem*&lt;/em&gt; kindly passed to me. The number of database users was huge in each database and performing a manual lookup through the SSMS GUI got rather tiresome very quickly (after about the second user).&lt;/p&gt;</description>
     </item>
   </channel>

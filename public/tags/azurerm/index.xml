@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AzureRM on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/azurerm/</link>
+    <link>http://localhost:1313/tags/azurerm/</link>
     <description>Recent content in AzureRM on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Fri, 01 Feb 2019 13:18:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/azurerm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/azurerm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AzureRM, Azure CLI and the PowerShell Az Module</title>
-      <link>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
+      <link>http://localhost:1313/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
       <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,32 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installation on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/installation/</link>
+    <link>http://localhost:1313/tags/installation/</link>
     <description>Recent content in Installation on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Mon, 30 Mar 2015 07:52:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2015 14:10:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</title>
+      <link>http://localhost:1313/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</link>
+      <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</guid>
+      <description>&lt;p&gt;Have you been attempting (and failing) to install &lt;a href=&#34;https://www.oracle.com/us/technologies/linux/overview/index.html&#34;&gt;Oracle Unbreakable Linux&lt;/a&gt; as a Virtual Machine under Hyper-V and cannot figure out what is wrong?&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;&#xA;&lt;p&gt;If you are receiving the following message:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device. Failed Secure Boot Verification.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE Network Boot using IPv4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;......&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE-E18: Server response timeout.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI Network.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No Operating System was Loaded.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Press a key to retry the boot sequence...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/secure-boot-verification.jpg&#34; alt=&#34;Secure Boot verification&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to install SharePoint 2013 on Windows 2012R2</title>
-      <link>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
+      <link>http://localhost:1313/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
       <pubDate>Mon, 30 Mar 2015 07:52:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</guid>
+      <guid>http://localhost:1313/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</guid>
       <description>&lt;p&gt;&lt;em&gt;If you want to jump straight to the condensed solution, then please feel free to go to the &lt;a href=&#34;#condensed-installation&#34;&gt;Condensed Installation instructions&lt;/a&gt; below. If you find this post useful or have any feedback then please leave me a comment so that I know my efforts were not wasted!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Installing Microsoft Backoffice products on Microsoft Operating Systems has over the years become a much easier proposition and is largely the reason why SQL Server got the reputation of being “easy”. Except it isn’t. Ask any idiot to install a SQL Server instance and create a database and there is a good chance that they will succeed, but ask them to install SQL Server correctly and configured to best practice, suddenly the knowledge gap becomes a little more obvious.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fixing Flash in Chrome/ Chromium on Linux</title>
-      <link>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
+      <link>http://localhost:1313/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using the SQL Server Installation Wizard on Server Core!</title>
-      <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
+      <link>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
       <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
+      <guid>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
       <description>&lt;p&gt;Ever heard the phrase &lt;em&gt;&amp;ldquo;just because you can, doesn’t mean you should?&amp;rdquo;&lt;/em&gt;. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn’t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I’m getting ahead of myself, first let me describe our scenario.&lt;/p&gt;</description>
     </item>
   </channel>

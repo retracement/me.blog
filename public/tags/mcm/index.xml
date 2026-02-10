@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MCM on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/mcm/</link>
+    <link>http://localhost:1313/tags/mcm/</link>
     <description>Recent content in MCM on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Thu, 06 Nov 2014 00:38:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/mcm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mcm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5 Days of PASS - Day 3</title>
-      <link>https://tenbulls.co.uk/posts/2014/11/06/5-days-of-pass-day-3/</link>
+      <link>http://localhost:1313/posts/2014/11/06/5-days-of-pass-day-3/</link>
       <pubDate>Thu, 06 Nov 2014 00:38:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/11/06/5-days-of-pass-day-3/</guid>
+      <guid>http://localhost:1313/posts/2014/11/06/5-days-of-pass-day-3/</guid>
       <description>&lt;p&gt;Well just when you thought things could not get any busier, along comes Day 3 of the PASS Summit. I started the day on the PASS Blogger Table for the opening Keynote speech of the Summit introduced by Thomas LaRock (the current PASS president). There was a distinct shortage of Australian representatives on the table, which was soon rectified by the arrival of the one an only Rob Farley (&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;|&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;), who is always amusing to listen to. To my left was one of my favourite German SQL Server experts, the ever happy Oliver Engels who was furiously typing away and in front of me Brent Ozar appeared to be switching backwards and forwards across different media platforms and applications and was no doubt constructing some interesting posts for our consumption.&lt;/p&gt;</description>
     </item>
   </channel>

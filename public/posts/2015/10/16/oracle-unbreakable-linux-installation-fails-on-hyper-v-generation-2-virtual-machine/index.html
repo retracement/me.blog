@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="http://localhost:1313/favicon.ico" />
+<meta property="og:url" content="http://localhost:1313/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine">
+  <meta property="og:description" content="Have you been attempting (and failing) to install Oracle Unbreakable Linux as a Virtual Machine under Hyper-V and cannot figure out what is wrong?
+The problem If you are receiving the following message:
+Boot Failed. EFI SCSI Device. Boot Failed. EFI SCSI Device. Boot Failed. EFI SCSI Device. Failed Secure Boot Verification. PXE Network Boot using IPv4 ...... PXE-E18: Server response timeout. Boot Failed. EFI Network. No Operating System was Loaded. Press a key to retry the boot sequence...">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2015-10-16T14:10:00+01:00">
+    <meta property="article:modified_time" content="2015-10-16T14:10:00+01:00">
+    <meta property="article:tag" content="Hyper-V">
+    <meta property="article:tag" content="Oracle">
+    <meta property="article:tag" content="Installation">
+    <meta property="article:tag" content="Windows">
+
+<title>tenbulls blog | Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/palette/default.css">
+
+      <script src="/js/main.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2015-10-16T14:10:00&#43;01:00">October 16, 2015</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Have you been attempting (and failing) to install <a href="https://www.oracle.com/us/technologies/linux/overview/index.html">Oracle Unbreakable Linux</a> as a Virtual Machine under Hyper-V and cannot figure out what is wrong?</p>
+<h1 id="the-problem">The problem</h1>
+<p>If you are receiving the following message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Boot Failed. EFI SCSI Device.
+</span></span><span style="display:flex;"><span>Boot Failed. EFI SCSI Device.
+</span></span><span style="display:flex;"><span>Boot Failed. EFI SCSI Device. Failed Secure Boot Verification.
+</span></span><span style="display:flex;"><span>PXE Network Boot using IPv4
+</span></span><span style="display:flex;"><span>......
+</span></span><span style="display:flex;"><span>PXE-E18: Server response timeout.
+</span></span><span style="display:flex;"><span>Boot Failed. EFI Network.
+</span></span><span style="display:flex;"><span>No Operating System was Loaded.
+</span></span><span style="display:flex;"><span>Press a key to retry the boot sequence...
+</span></span></code></pre></div><p><img src="/images/2015/secure-boot-verification.jpg" alt="Secure Boot verification"></p>
+<p>Then I bet you are using a Hyper-V generation 2 VM?!</p>
+<p>When I first saw the error message it is quite clear that something is not working properly with the boot sequence and my first thought was that either my install media was corrupt or that there was an incompatibility between the Oracle Linux boot media and Hyper-V generation 2 virtual machines (the error message gives a big clue on this).</p>
+<p>If you would prefer to attempt the original resolution detailed in this post and skip the update approach listed below click <a href="#the-resolution">here</a>.</p>
+<hr>
+<p><mark><strong>Update 11th October 2016</strong></mark></p>
+<p>Before continuing with this article, you should know that there is a slightly better way to address this problem, since you are also very likely to run into the same (or similar) problem on CentOS, Ubuntu, or anything else that is not Microsoft Windows in Hyper-V. For instance, I have noticed that on an attempted CentOS installation within a version 8 generation 2 Hyper-V VM (Windows 10 Anniversary Update Edition)  there is not even a visual clue given that there is a Secure Boot failure -at least not on the initial boot (as before).</p>
+<p>All we see is:</p>
+<p><img src="/images/2015/centos_no_boot.png" alt="centos_no_boot"></p>
+<p>However, if you wait long enough you will eventually arrive at the following screen:</p>
+<p><img src="/images/2015/no-uefi.png" alt="no-uefi"></p>
+<p>So rather than disable <em>Secure Boot</em> as this blog post instructs, I recommend changing Secure Boot to use the <em>Microsoft UEFI Certificate Authority</em> template rather than the <em>Microsoft Windows</em> template. Make this change through the Virtual Machine <em>Settings</em> page (<em>Security</em> node in the hardware pane) and if it is not already obvious, your VM must be stopped in order to change this setting.  Once you have made the change, your problems should be resolved and your Linux distribution should automatically boot.</p>
+<p><img src="/images/2015/secure_boot.png" alt="secure_boot"></p>
+<p>If you do not see this option available to you, then feel free to proceed with the alternative route as described <a href="#the-resolution">below</a>.</p>
+<p><mark><strong>End of update</strong></mark></p>
+<hr>
+<h1 id="the-resolution">The resolution</h1>
+<p>Immediately I tried installing to a generation 1 VM and it ran through smoothly without incident (proving media was fine), so I returned back to my generation 2 VM to resolve the issue. <em>Returning back to the error message, the Failed Secure Boot Verification warning stands out like a sore thumb</em>, and Hyper-V afficionados will recognise that secure boot was actually introduced by generation 2 VMs. Thankfully it is very easy to turn this off and disable secure boot through the <em>System Center/ Firmware</em> option within <em>Virtual Machine Properties</em> pages (or via <em>Hyper-V Manager/ Settings/ Firmware</em> option). Alternatively, we can also do this through PowerShell as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-VMFirmware <span style="color:#960050;background-color:#1e0010">–</span>VMName <span style="color:#e6db74">&#34;VMname&#34;</span> -EnableSecureBoot Off
+</span></span></code></pre></div><p>The next time the machine boots, the installer should automatically launch (and if it isn’t clear already, you must leave secure boot disabled post install).</p>
+<p><img src="/images/2015/installing.jpg" alt="installing"></p>
+<p>For more information on this subject see <a href="https://technet.microsoft.com/en-GB/library/dn609828.aspx">Oracle Linux virtual machines on Hyper-V</a> and visit <a href="https://technet.microsoft.com/en-gb/library/dn282278.aspx">What’s New in Hyper-V for Windows Server 2012 R2</a> for and in-depth discussion of Hyper-V new features in Windows 2012 R2.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/hyper-v/">Hyper-V</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/oracle/">Oracle</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/installation/">Installation</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/windows/">Windows</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="http://localhost:1313/posts/2015/08/20/announcing-our-sqlsaturday-cambridge-bring-a-boss-training-day-promotion/">
+            <span>previous: </span>
+            <span>Bring-A-Boss to SQLSaturday Training day promotion</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="http://localhost:1313/posts/2015/10/25/7-days-of-pass-day-1/">
+            <span>next: </span>
+            <span>7 Days of PASS – Day 1</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

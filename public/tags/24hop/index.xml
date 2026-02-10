@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>24HOP on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/24hop/</link>
+    <link>http://localhost:1313/tags/24hop/</link>
     <description>Recent content in 24HOP on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Mon, 26 Mar 2012 15:07:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/24hop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/24hop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Presenting Moves Like Jagger – my 24HOP baptism</title>
-      <link>https://tenbulls.co.uk/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</link>
+      <link>http://localhost:1313/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</link>
       <pubDate>Mon, 26 Mar 2012 15:07:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</guid>
-      <description>&lt;p&gt;It is now nearly one week since my début on &lt;a href=&#34;https://www.sqlpass.org/24hours/spring2012/Home.aspx&#34;&gt;24 Hours Of PASS&lt;/a&gt; and I thought it would be useful for people considering presenting on 24HOP themselves that I write my thoughts on the whole experience. I have also taken the liberty to publish in advance my &lt;a href=&#34;https://tenbulls.co.uk/documents/24hoursofpassppt_moves_like_jagger.pdf&#34;&gt;slide deck&lt;/a&gt;) whilst I have managed to catch a rare quiet period.&lt;/p&gt;&#xA;&lt;p&gt;I have been very lucky over the last couple of years to have presented many times to a selection of large and small events around the world and yet as nearly all presenters will tell you, we are always still learning the craft. Every event is a new experience, every delivery is different and perfection is always a distant and impossible dream. So although the prospect of talking to an audience was in itself not a particular problem, the difference in delivery medium, scale and truly International audience meant that the whole ball-game had totally changed.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</guid>
+      <description>&lt;p&gt;It is now nearly one week since my début on &lt;a href=&#34;https://www.sqlpass.org/24hours/spring2012/Home.aspx&#34;&gt;24 Hours Of PASS&lt;/a&gt; and I thought it would be useful for people considering presenting on 24HOP themselves that I write my thoughts on the whole experience. I have also taken the liberty to publish in advance my &lt;a href=&#34;http://localhost:1313/documents/24hoursofpassppt_moves_like_jagger.pdf&#34;&gt;slide deck&lt;/a&gt;) whilst I have managed to catch a rare quiet period.&lt;/p&gt;&#xA;&lt;p&gt;I have been very lucky over the last couple of years to have presented many times to a selection of large and small events around the world and yet as nearly all presenters will tell you, we are always still learning the craft. Every event is a new experience, every delivery is different and perfection is always a distant and impossible dream. So although the prospect of talking to an audience was in itself not a particular problem, the difference in delivery medium, scale and truly International audience meant that the whole ball-game had totally changed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>24 Hours Of PASS goes multi-lingual</title>
-      <link>https://tenbulls.co.uk/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</link>
+      <link>http://localhost:1313/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</link>
       <pubDate>Thu, 16 Feb 2012 21:50:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</guid>
+      <guid>http://localhost:1313/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</guid>
       <description>&lt;p&gt;Many many years ago when I was still in short trousers I started to take an interest in Movies. My parents had completely different sleeping patterns and my Father was an irritatingly early riser -a fact that would irritate me right into my adolescence and beyond. My mother was the opposite and (like me) very much a night owl. This resulted in there being a period of around 3 to 4 hours before my Mother went to bed, where the Television would be switched to whatever channel she wanted to watch -in other words &lt;em&gt;not&lt;/em&gt; Sport.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,96 +2,145 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PASS on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/pass/</link>
+    <link>http://localhost:1313/tags/pass/</link>
     <description>Recent content in PASS on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 26 Jun 2015 19:30:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/pass/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Nov 2015 15:28:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pass/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7 Days of PASS – Day 7</title>
+      <link>http://localhost:1313/posts/2015/11/04/7-days-of-pass-day-7/</link>
+      <pubDate>Wed, 04 Nov 2015 15:28:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/11/04/7-days-of-pass-day-7/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/conf.jpg&#34; alt=&#34;Conference Center&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I wake at 3 a.m. to find my plan of preparing my sessions into the late evening in tatters having completely crashed and burned after the huge meal the night before. My main session is scheduled to be delivered at 8 a.m so that means I have approximately &lt;em&gt;four hours&lt;/em&gt; to try and nail it. First I get showered at dressed, and then start running through my slide deck and correct error after error. Once I am happy with the deck, I read through my notes and study each slide until I am happy that I &lt;em&gt;understand&lt;/em&gt; each one. I run through the demos and complete main session preparation before returning back to the lightning talk. After working four solid hours I head to the Convention Centre so that I can grab a quick bite to eat and setup in my room with enough lead time before the session starts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 6</title>
+      <link>http://localhost:1313/posts/2015/11/03/7-days-of-pass-day-6/</link>
+      <pubDate>Tue, 03 Nov 2015 16:14:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/11/03/7-days-of-pass-day-6/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/nikocrazy.jpg&#34; alt=&#34;Crazy Niko&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s my 2nd and final day on the Blogger Table and also the 2nd day of the Summit proper. This time I am seated at the opposite end of the table to the day before and soon after sitting down I am greeted by Chris Yates (&lt;a href=&#34;https://chrisyatessql.wordpress.com/&#34;&gt;web&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/yatessql&#34;&gt;twitter&lt;/a&gt;) who turns out to be a really nice guy and a pleasure to sit with. This time the keynote focuses more on the logistics of PASS growth and their finances more than anything else. After an all too long discussion on those points we finally get to the ever brilliant Dr David DeWitt and Dr Rimma Nehme who talk about &lt;a href=&#34;https://en.wikipedia.org/wiki/Internet_of_Things&#34;&gt;IoT&lt;/a&gt;. I’ll be honest and say that I didn’t find much (personal) value in this discussion but that is probably because I am more interested in technical nitty gritty rather than more generalised discussion, but there is no doubting those two are not only brilliant individuals but are an incredible team together. Sad then that the real stand out announcement of the entire Summit Keynote sessions for me was their shock news that they would not be working together after this Summit due to David retiring and Rimma moving onto other things. The result was a couple of tears in my eyes and a standing ovation from all those present. I’ve been watching these guys present (especially David) since my very first Summit, and this feels like an end of an era to all concerned.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 5</title>
+      <link>http://localhost:1313/posts/2015/10/29/7-days-of-pass-day-5/</link>
+      <pubDate>Thu, 29 Oct 2015 23:58:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/10/29/7-days-of-pass-day-5/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/meandrob.jpg&#34; alt=&#34;Mark Broadbent and Rob Farley on Blogger table&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Today is the first day proper of the Summit and I am scheduled to be on the Blogger table again which means an early start for me. I need some breakfast but am running out of time so for the first time ever (out of 6 years of Summit) I decide to drop by the Conference Center and check-out the breakfast offerings. The only thing that I really care about is Bacon and I am pleased to report that the dining hall has a bountiful supply! I grab some Egg, fruit and (of course) Bacon and wonder why I have never done this before??? Could have saved myself hundreds of Bucks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 4</title>
+      <link>http://localhost:1313/posts/2015/10/28/7-days-of-pass-day-4/</link>
+      <pubDate>Wed, 28 Oct 2015 17:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/10/28/7-days-of-pass-day-4/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/pike.jpg&#34; alt=&#34;Pike&amp;rsquo;s Place&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Another day, another dawn, but somebody forgot to tell my body that what has gone has gone. I feel pretty bad from yesterday’s alcoholic Molotov concoctions and have been up since 2.30 a.m. unable to sleep with jet-lag and over exuberance. By the morning I have become an expert on Seattle Weather reports and American News but I’m feeling a little better and am grateful for those few bottles of water in my room. I decide to get in-touch with last nights partners in crime and we arrange to meetup at &lt;a href=&#34;https://eatatlowells.com/&#34;&gt;Lowells&lt;/a&gt; to have some breakfast. This is good for me because I have wanted to try breakfast at Lowells for a long time having only ever eaten there for dinner.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 3</title>
+      <link>http://localhost:1313/posts/2015/10/28/7-days-of-pass-day-3/</link>
+      <pubDate>Wed, 28 Oct 2015 08:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/10/28/7-days-of-pass-day-3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/ill.jpg&#34; alt=&#34;Ill&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is unbelievable to think that it is already Monday although it feels like I’ve now been in Seattle for a week. Today is the first day of SQLPASS pre-conference sessions although this year is the first time ever in 6 years that I will not be attending them. Instead I’ve decided to leave the days open to do other things and hopefully catch up on some work, so this is what I try to do for the next few hours until my hunger cannot take it any more. I head over to the &lt;a href=&#34;https://www.dailygrill.com/locations/daily-grill-seattle-washington/&#34;&gt;Daily Grill&lt;/a&gt; again for a quick breakfast and coffee and then head across the road to register at the &lt;a href=&#34;https://www.wscc.com/&#34;&gt;Convention Center&lt;/a&gt; to pick up the standard fare and obligatory conference bag.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 2</title>
+      <link>http://localhost:1313/posts/2015/10/28/7-days-of-pass-day-2/</link>
+      <pubDate>Wed, 28 Oct 2015 01:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/10/28/7-days-of-pass-day-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/soccer.jpg&#34; alt=&#34;Sounders&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is Sunday 8 a.m. and I’ve managed to sleep well after yesterday’s exuberance. My body aches, but I’m soaking my bones in a nice hot bath and starting to feel ready for the day. As I glance outside I can see that the darkened streets are glistening from the light rain that is gently falling. The Sun is not completely up and it is cloudy to boot. Welcome to Seattle weather.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 1</title>
+      <link>http://localhost:1313/posts/2015/10/25/7-days-of-pass-day-1/</link>
+      <pubDate>Sun, 25 Oct 2015 11:27:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/10/25/7-days-of-pass-day-1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/carnival.jpg&#34; alt=&#34;Carnival of Souls&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Having decided to avoid missing yet another day of work, rather than travel on my more traditional Friday slot, instead I managed to catch the early morning Saturday flight to Seattle from London Heathrow. Knowing that I had lots of work to do on the plane, I decided that an upgrade to Business Class was in order so upon boarding settled back for that more pampered experience. The flight itself was fairly uneventful and despite spending a couple of hours trying to go through presentation content, I could not resist the lure of the in-flight film system.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>So you havent been selected for the PASS Summit?</title>
-      <link>https://tenbulls.co.uk/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</link>
+      <link>http://localhost:1313/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</link>
       <pubDate>Fri, 26 Jun 2015 19:30:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</guid>
+      <guid>http://localhost:1313/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</guid>
       <description>&lt;p&gt;I guess it could be easy to become complacent about being selected to speak at conferences and you could certainly argue that I have been tremendously lucky with the selection process since I first broke into the speaking circuit in 2010. In 2011 I delivered my first lightning talk at the Summit and this was already off the back of me being the only European speaker (AFAIK) at &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;SQLRally Orlando&lt;/a&gt;. Every year since then I have been fortunate enough to be selected to deliver one (or more) full session abstracts at the Summit and when combined with a nice collection of speaking gigs at &lt;a href=&#34;https://www.sqlsaturday.com/&#34;&gt;SQLSaturdays&lt;/a&gt;, &lt;a href=&#34;https://www.sqlpass.org/Events/24HoursofPASS.aspx&#34;&gt;24HOP&lt;/a&gt; and other events you could be forgiven for thinking that I must have the &lt;em&gt;magic touch&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Choose your own agenda - from SQLSaturday to the PASS Summit</title>
-      <link>https://tenbulls.co.uk/posts/2015/05/26/progcomm/</link>
+      <link>http://localhost:1313/posts/2015/05/26/progcomm/</link>
       <pubDate>Tue, 26 May 2015 11:44:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/05/26/progcomm/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/buck-needs-you.webp&#34; alt=&#34;Buck needs you!&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;OK so sadly Buck can’t be with us this year, but if he could, he would tell you to join our Programme Committee!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This year, SQLSaturday Cambridge is pioneering the first ever Global Programme Committee for a SQLSaturday and we want you to be part of it!&lt;/p&gt;&#xA;&lt;p&gt;After being personally involved in the PASS Programme Committee for many many years and playing a small part in reviewing abstracts, speakers and anything else that needs an opinion, it might be natural that I would want to take my experiences of this process and attempt to improve things -or at very least try a different approach.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2015/05/26/progcomm/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/buck-needs-you.webp&#34; alt=&#34;Buck needs you!&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;OK so sadly Buck can’t be with us this year, but if he could, he would tell you to join our Programme Committee!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This year, SQLSaturday Cambridge is pioneering the first ever Global Programme Committee for a SQLSaturday and we want you to be part of it!&lt;/p&gt;&#xA;&lt;p&gt;After being personally involved in the PASS Programme Committee for many many years and playing a small part in reviewing abstracts, speakers and anything else that needs an opinion, it might be natural that I would want to take my experiences of this process and attempt to improve things -or at very least try a different approach.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLSaturday New York 2015</title>
-      <link>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
+      <link>http://localhost:1313/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
       <pubDate>Thu, 09 Apr 2015 15:55:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
+      <guid>http://localhost:1313/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
       <description>&lt;p&gt;Back in August 2012 I had the honour of speaking at the last (but one) SQLSaturday to be held in New York City which marked a particular milestone in my SQL Server journey. While I had (by then) already spoken at the two American SQLRally events (&lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;Orlando&lt;/a&gt; and &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2012/dallas/Home.aspx&#34;&gt;Dallas&lt;/a&gt;) and delivered a lightning talk at the 2011 PASS Summit, SQLSaturday New York was my first ever SQLSaturday in the U.S.A and because of that it was already special before I had even arrived.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLSaturday Lisbon 2015</title>
-      <link>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</link>
+      <link>http://localhost:1313/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</link>
       <pubDate>Tue, 17 Feb 2015 09:14:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/sqlportremington2.jpg&#34; alt=&#34;Remington&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;I liked the event so much, I bought the community&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you ever asked an experienced speaker what is the best formula to follow when starting out on your road to presenting, they would most likely tell you to start &lt;em&gt;small&lt;/em&gt; and work your way up to bigger events. First present to your work colleagues, next move onto User-Groups, then onto bigger events such as SQLSaturdays and then finally (when you are ready) talk at the biggest events in the World such as the PASS Summit (in the U.S.A) or SQLBits (in the U.K).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/sqlportremington2.jpg&#34; alt=&#34;Remington&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;I liked the event so much, I bought the community&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you ever asked an experienced speaker what is the best formula to follow when starting out on your road to presenting, they would most likely tell you to start &lt;em&gt;small&lt;/em&gt; and work your way up to bigger events. First present to your work colleagues, next move onto User-Groups, then onto bigger events such as SQLSaturdays and then finally (when you are ready) talk at the biggest events in the World such as the PASS Summit (in the U.S.A) or SQLBits (in the U.K).&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Days of PASSDay - 5</title>
-      <link>https://tenbulls.co.uk/posts/2014/11/08/5-days-of-pass-day-5/</link>
+      <link>http://localhost:1313/posts/2014/11/08/5-days-of-pass-day-5/</link>
       <pubDate>Sat, 08 Nov 2014 14:35:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/11/08/5-days-of-pass-day-5/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/enterthedragon.jpg&#34; alt=&#34;Enter the Dragon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I wake up to the faint sound of early morning traffic starting to roll slowly through the empty streets of Downtown Seattle as the occasional bark from a dog can be heard from somewhere in the distance. Nearby, just a few blocks away, the now empty Convention Center stands as a shell compared to the hive of activity that it was over the last week.&lt;/p&gt;&#xA;&lt;p&gt;The last day of the Summit has been and gone and I feel just a hint of sadness that my time here in Seattle and the U.S.A is almost over but can at least start to think about the end of 2014 and look forward to good things in 2015.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2014/11/08/5-days-of-pass-day-5/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2014/enterthedragon.jpg&#34; alt=&#34;Enter the Dragon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I wake up to the faint sound of early morning traffic starting to roll slowly through the empty streets of Downtown Seattle as the occasional bark from a dog can be heard from somewhere in the distance. Nearby, just a few blocks away, the now empty Convention Center stands as a shell compared to the hive of activity that it was over the last week.&lt;/p&gt;&#xA;&lt;p&gt;The last day of the Summit has been and gone and I feel just a hint of sadness that my time here in Seattle and the U.S.A is almost over but can at least start to think about the end of 2014 and look forward to good things in 2015.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Days of PASSDay - 4</title>
-      <link>https://tenbulls.co.uk/posts/2014/11/07/5-days-of-pass-day-4/</link>
+      <link>http://localhost:1313/posts/2014/11/07/5-days-of-pass-day-4/</link>
       <pubDate>Fri, 07 Nov 2014 14:56:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/11/07/5-days-of-pass-day-4/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/beingbuck.webp&#34; alt=&#34;Being Buck Woody&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As I write, the penultimate day of the PASS Summit has been and gone. It was again an overloaded rollercoster of a ride filled with appointments, chance meetings of old friends and most significantly the day I gave my Community Session called &lt;a href=&#34;https://www.sqlpass.org/summit/2014/Sessions.aspx#sid7377&#34;&gt;Being Buck Woody&lt;/a&gt; alongside the ever fabulous Buck Woody. I spent the early hours of the morning in deep concentration preparing for this session and even while eating breakfast I had my head down gathering thoughts and listening to some recorded notes. Later on, myself and Buck got together in the speaker room and did a final run through of the deck and both of us were fairly happy with the content and flow of the presentation.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2014/11/07/5-days-of-pass-day-4/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2014/beingbuck.webp&#34; alt=&#34;Being Buck Woody&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As I write, the penultimate day of the PASS Summit has been and gone. It was again an overloaded rollercoster of a ride filled with appointments, chance meetings of old friends and most significantly the day I gave my Community Session called &lt;a href=&#34;https://www.sqlpass.org/summit/2014/Sessions.aspx#sid7377&#34;&gt;Being Buck Woody&lt;/a&gt; alongside the ever fabulous Buck Woody. I spent the early hours of the morning in deep concentration preparing for this session and even while eating breakfast I had my head down gathering thoughts and listening to some recorded notes. Later on, myself and Buck got together in the speaker room and did a final run through of the deck and both of us were fairly happy with the content and flow of the presentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Days of PASS - Day 3</title>
-      <link>https://tenbulls.co.uk/posts/2014/11/06/5-days-of-pass-day-3/</link>
+      <link>http://localhost:1313/posts/2014/11/06/5-days-of-pass-day-3/</link>
       <pubDate>Thu, 06 Nov 2014 00:38:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/11/06/5-days-of-pass-day-3/</guid>
+      <guid>http://localhost:1313/posts/2014/11/06/5-days-of-pass-day-3/</guid>
       <description>&lt;p&gt;Well just when you thought things could not get any busier, along comes Day 3 of the PASS Summit. I started the day on the PASS Blogger Table for the opening Keynote speech of the Summit introduced by Thomas LaRock (the current PASS president). There was a distinct shortage of Australian representatives on the table, which was soon rectified by the arrival of the one an only Rob Farley (&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;|&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;), who is always amusing to listen to. To my left was one of my favourite German SQL Server experts, the ever happy Oliver Engels who was furiously typing away and in front of me Brent Ozar appeared to be switching backwards and forwards across different media platforms and applications and was no doubt constructing some interesting posts for our consumption.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 days of PASS - Blogger table</title>
-      <link>https://tenbulls.co.uk/posts/2014/11/05/blogger-table-day-1-thomas-larock/</link>
+      <link>http://localhost:1313/posts/2014/11/05/blogger-table-day-1-thomas-larock/</link>
       <pubDate>Wed, 05 Nov 2014 16:45:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/11/05/blogger-table-day-1-thomas-larock/</guid>
+      <guid>http://localhost:1313/posts/2014/11/05/blogger-table-day-1-thomas-larock/</guid>
       <description>&lt;p&gt;The key note has just begun and the number of first timers standing up is quite incredible and very large. Thomas LaRock has begun the keynote speech and runs through the board of Directors and then makes a plea for people to stop by the Community Zone and connect.&lt;/p&gt;&#xA;&lt;p&gt;Some of the numbers quoted regarding the number of Chapters, SQLSaturdays and Virtual Chapters is quite staggering and demonstrates the growth of PASS today. The discussion moves to looking back at how our personal careers have grown in the last 5 years, which is interesting  because 5 years ago just pre-dates my first ever Summit, how things have changed for me back then in that time frame.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Days of PASS – Day 2</title>
-      <link>https://tenbulls.co.uk/posts/2014/11/05/5-days-of-pass-day-2/</link>
+      <link>http://localhost:1313/posts/2014/11/05/5-days-of-pass-day-2/</link>
       <pubDate>Wed, 05 Nov 2014 13:42:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/11/05/5-days-of-pass-day-2/</guid>
+      <guid>http://localhost:1313/posts/2014/11/05/5-days-of-pass-day-2/</guid>
       <description>&lt;p&gt;Welcome folks to the second enthralling instalment of 5 days of PASS! As I am sure is about to become very clear, I type with the knowledge that I have a very busy day ahead with various pieces of preparation to complete. The biggest thing that bothers me is that by the time my PASS related workload ends, so will most of the conference. This is perhaps the biggest downside to being involved in events as something more than just an attendee, since you don’t quite get to relax and do as much with your time that you would normally do and your time doesn’t really feel like your own, however if I didn’t enjoy contributing I wouldn’t do it right?!&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Days of PASS – Day 1</title>
-      <link>https://tenbulls.co.uk/posts/2014/11/04/5-days-of-pass-day-1/</link>
+      <link>http://localhost:1313/posts/2014/11/04/5-days-of-pass-day-1/</link>
       <pubDate>Tue, 04 Nov 2014 15:18:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/11/04/5-days-of-pass-day-1/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/taphouse_beer.jpg&#34; alt=&#34;Taphouse Beer&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is now the morning after the night before, having completed the official first day of the &lt;a href=&#34;https://www.sqlpass.org/summit/2014/Home.aspx&#34;&gt;PASS Summit 2014&lt;/a&gt;. It is nice to be back in Seattle and America after not being able to travel last year so it has been particularly great to catch up with a couple of old friends and ex-colleagues. I actually arrived in the States on Saturday evening (two days ago) where I met up with my good friend &lt;a href=&#34;https://theblobfarm.wordpress.com/&#34;&gt;Régis Baccaro&lt;/a&gt; at the Airport, and then later we had a nice meal and drinks with the most excellent &lt;a href=&#34;https://blogs.solidq.com/rpertusa/home.aspx&#34;&gt;Ruben Pertusa Lopez&lt;/a&gt; and a bunch of other &lt;a href=&#34;https://www.solidq.com/&#34;&gt;SolidQ&lt;/a&gt; guys (at the &lt;a href=&#34;https://http://www.taphousegrill.com/&#34;&gt;Taphouse&lt;/a&gt; -of course).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2014/11/04/5-days-of-pass-day-1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2014/taphouse_beer.jpg&#34; alt=&#34;Taphouse Beer&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is now the morning after the night before, having completed the official first day of the &lt;a href=&#34;https://www.sqlpass.org/summit/2014/Home.aspx&#34;&gt;PASS Summit 2014&lt;/a&gt;. It is nice to be back in Seattle and America after not being able to travel last year so it has been particularly great to catch up with a couple of old friends and ex-colleagues. I actually arrived in the States on Saturday evening (two days ago) where I met up with my good friend &lt;a href=&#34;https://theblobfarm.wordpress.com/&#34;&gt;Régis Baccaro&lt;/a&gt; at the Airport, and then later we had a nice meal and drinks with the most excellent &lt;a href=&#34;https://blogs.solidq.com/rpertusa/home.aspx&#34;&gt;Ruben Pertusa Lopez&lt;/a&gt; and a bunch of other &lt;a href=&#34;https://www.solidq.com/&#34;&gt;SolidQ&lt;/a&gt; guys (at the &lt;a href=&#34;https://http://www.taphousegrill.com/&#34;&gt;Taphouse&lt;/a&gt; -of course).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Who is watching the Watchmen?</title>
-      <link>https://tenbulls.co.uk/posts/2014/06/03/who-is-watching-the-watchmen/</link>
+      <link>http://localhost:1313/posts/2014/06/03/who-is-watching-the-watchmen/</link>
       <pubDate>Tue, 03 Jun 2014 17:06:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/06/03/who-is-watching-the-watchmen/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/smiley.png&#34; alt=&#34;Watchmen&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is funny, but when I first decided to put myself forward for the Nominations Committee this year, I didn’t realize that the whole process would turn into a Campaign for Election. It really goes against much of what I stand for and is not really what I believe the Community is truly about. My involvement with community efforts, whether they be PASS related or not, are done so because I believe that my input (if required) would be beneficial to the cause that  I am offering to invest my time, efforts and possibly finances into. I am not seeking publicity, nor am I interested in promoting any personal ventures, Companies or other self-serving interests into those efforts. What I &lt;strong&gt;am&lt;/strong&gt; interested in, is that this ‘thing’ we all are part of benefits from my investment, whatever that may be. That is surely the whole purpose of being a volunteer? I volunteer my time and effort to you, so that you can benefit -not me.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2014/06/03/who-is-watching-the-watchmen/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2014/smiley.png&#34; alt=&#34;Watchmen&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is funny, but when I first decided to put myself forward for the Nominations Committee this year, I didn’t realize that the whole process would turn into a Campaign for Election. It really goes against much of what I stand for and is not really what I believe the Community is truly about. My involvement with community efforts, whether they be PASS related or not, are done so because I believe that my input (if required) would be beneficial to the cause that  I am offering to invest my time, efforts and possibly finances into. I am not seeking publicity, nor am I interested in promoting any personal ventures, Companies or other self-serving interests into those efforts. What I &lt;strong&gt;am&lt;/strong&gt; interested in, is that this ‘thing’ we all are part of benefits from my investment, whatever that may be. That is surely the whole purpose of being a volunteer? I volunteer my time and effort to you, so that you can benefit -not me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PASS NomCom is announced</title>
-      <link>https://tenbulls.co.uk/posts/2014/05/28/your-country-needs-you-pass-nomcom-is-announced/</link>
+      <link>http://localhost:1313/posts/2014/05/28/your-country-needs-you-pass-nomcom-is-announced/</link>
       <pubDate>Wed, 28 May 2014 21:06:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/05/28/your-country-needs-you-pass-nomcom-is-announced/</guid>
-      <description>&lt;p&gt;&lt;em&gt;(Please also check out my latest post on the NomCom election found &lt;a href=&#34;https://tenbulls.co.uk/posts/2014/06/03/who-is-watching-the-watchmen&#34;&gt;here&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you haven’t already heard, the official slate for the 2014  NomCom committee has been finalized and published by the Professional Association for SQL Server (that’s PASS to you and me) and can be found on their website via this &lt;a href=&#34;https://bit.ly/SfTpBD&#34;&gt;link&lt;/a&gt;. You can check out the list of 11 candidates (and how to vote) in which I am very pleased to announce I am one of them having decided to put myself forward this year for reasons that will become clearer in future posts.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2014/05/28/your-country-needs-you-pass-nomcom-is-announced/</guid>
+      <description>&lt;p&gt;&lt;em&gt;(Please also check out my latest post on the NomCom election found &lt;a href=&#34;http://localhost:1313/posts/2014/06/03/who-is-watching-the-watchmen&#34;&gt;here&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you haven’t already heard, the official slate for the 2014  NomCom committee has been finalized and published by the Professional Association for SQL Server (that’s PASS to you and me) and can be found on their website via this &lt;a href=&#34;https://bit.ly/SfTpBD&#34;&gt;link&lt;/a&gt;. You can check out the list of 11 candidates (and how to vote) in which I am very pleased to announce I am one of them having decided to put myself forward this year for reasons that will become clearer in future posts.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,89 +2,96 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQLSaturday on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/sqlsaturday/</link>
+    <link>http://localhost:1313/tags/sqlsaturday/</link>
     <description>Recent content in SQLSaturday on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Thu, 25 Jun 2015 10:43:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/sqlsaturday/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Aug 2015 14:31:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sqlsaturday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bring-A-Boss to SQLSaturday Training day promotion</title>
+      <link>http://localhost:1313/posts/2015/08/20/announcing-our-sqlsaturday-cambridge-bring-a-boss-training-day-promotion/</link>
+      <pubDate>Thu, 20 Aug 2015 14:31:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/08/20/announcing-our-sqlsaturday-cambridge-bring-a-boss-training-day-promotion/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/david_brent_111.jpg&#34; alt=&#34;David Brent&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Microsoft are delivering a dedicated full day pre-conference training day session at &lt;a href=&#34;https://sqlcambs.org.uk/&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; aimed towards Data Professional Leaders and Executives, delivered by industry leading technology movers and shakers. &lt;a href=&#34;https://sqlcambs.org.uk/precon7/&#34;&gt;Building a Data Driven Strategy&lt;/a&gt; will help your boss understand how they invest in Data Driven Data Analytics and how they can implement them. They will learn all about Microsoft’s future data vision and understand what theirs should be. It is something they will not want to miss.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Announcing SharePoint Saturday Cambridge 2015</title>
-      <link>https://tenbulls.co.uk/posts/2015/06/25/twotribes/</link>
+      <link>http://localhost:1313/posts/2015/06/25/twotribes/</link>
       <pubDate>Thu, 25 Jun 2015 10:43:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/06/25/twotribes/</guid>
+      <guid>http://localhost:1313/posts/2015/06/25/twotribes/</guid>
       <description>&lt;p&gt;In 2013, &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; became the first ever SQLSaturday in the World to host a dedicated SharePoint track and the event was a great success. It struck me at the time how well we managed to get a SharePoint audience at an event that was largely about SQL Server so with the support of our dedicated SharePoint sponsors (&lt;a href=&#34;https://www.combined-knowledge.com/&#34;&gt;Combined Knowledge&lt;/a&gt;, &lt;a href=&#34;https://www.k2.com/&#34;&gt;K2&lt;/a&gt; and &lt;a href=&#34;https://www.axioworks.com/&#34;&gt;AxioWorks&lt;/a&gt;), a fantastic addition of SharePoint speakers and with the expert help from the SharePoint community through Peter Baddeley (&lt;a href=&#34;https:https://about.me/baddaz&#34;&gt;web&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/baddaz&#34;&gt;twitter&lt;/a&gt;) I think we managed to light the touch paper for my future plans for &lt;a href=&#34;https://www.sqlsaturday.com/411/EventHome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Choose your own agenda - from SQLSaturday to the PASS Summit</title>
-      <link>https://tenbulls.co.uk/posts/2015/05/26/progcomm/</link>
+      <link>http://localhost:1313/posts/2015/05/26/progcomm/</link>
       <pubDate>Tue, 26 May 2015 11:44:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/05/26/progcomm/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/buck-needs-you.webp&#34; alt=&#34;Buck needs you!&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;OK so sadly Buck can’t be with us this year, but if he could, he would tell you to join our Programme Committee!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This year, SQLSaturday Cambridge is pioneering the first ever Global Programme Committee for a SQLSaturday and we want you to be part of it!&lt;/p&gt;&#xA;&lt;p&gt;After being personally involved in the PASS Programme Committee for many many years and playing a small part in reviewing abstracts, speakers and anything else that needs an opinion, it might be natural that I would want to take my experiences of this process and attempt to improve things -or at very least try a different approach.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2015/05/26/progcomm/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/buck-needs-you.webp&#34; alt=&#34;Buck needs you!&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;OK so sadly Buck can’t be with us this year, but if he could, he would tell you to join our Programme Committee!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;This year, SQLSaturday Cambridge is pioneering the first ever Global Programme Committee for a SQLSaturday and we want you to be part of it!&lt;/p&gt;&#xA;&lt;p&gt;After being personally involved in the PASS Programme Committee for many many years and playing a small part in reviewing abstracts, speakers and anything else that needs an opinion, it might be natural that I would want to take my experiences of this process and attempt to improve things -or at very least try a different approach.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLSaturday New York 2015</title>
-      <link>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
+      <link>http://localhost:1313/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
       <pubDate>Thu, 09 Apr 2015 15:55:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
+      <guid>http://localhost:1313/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
       <description>&lt;p&gt;Back in August 2012 I had the honour of speaking at the last (but one) SQLSaturday to be held in New York City which marked a particular milestone in my SQL Server journey. While I had (by then) already spoken at the two American SQLRally events (&lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;Orlando&lt;/a&gt; and &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2012/dallas/Home.aspx&#34;&gt;Dallas&lt;/a&gt;) and delivered a lightning talk at the 2011 PASS Summit, SQLSaturday New York was my first ever SQLSaturday in the U.S.A and because of that it was already special before I had even arrived.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLSaturday Lisbon 2015</title>
-      <link>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</link>
+      <link>http://localhost:1313/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</link>
       <pubDate>Tue, 17 Feb 2015 09:14:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/sqlportremington2.jpg&#34; alt=&#34;Remington&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;I liked the event so much, I bought the community&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you ever asked an experienced speaker what is the best formula to follow when starting out on your road to presenting, they would most likely tell you to start &lt;em&gt;small&lt;/em&gt; and work your way up to bigger events. First present to your work colleagues, next move onto User-Groups, then onto bigger events such as SQLSaturdays and then finally (when you are ready) talk at the biggest events in the World such as the PASS Summit (in the U.S.A) or SQLBits (in the U.K).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/sqlportremington2.jpg&#34; alt=&#34;Remington&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;I liked the event so much, I bought the community&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you ever asked an experienced speaker what is the best formula to follow when starting out on your road to presenting, they would most likely tell you to start &lt;em&gt;small&lt;/em&gt; and work your way up to bigger events. First present to your work colleagues, next move onto User-Groups, then onto bigger events such as SQLSaturdays and then finally (when you are ready) talk at the biggest events in the World such as the PASS Summit (in the U.S.A) or SQLBits (in the U.K).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inside SQLSaturday: Lisbon</title>
-      <link>https://tenbulls.co.uk/posts/2014/04/07/inside-sqlsaturday-niko-neugebauer-sqlsaturday-lisbon/</link>
+      <link>http://localhost:1313/posts/2014/04/07/inside-sqlsaturday-niko-neugebauer-sqlsaturday-lisbon/</link>
       <pubDate>Mon, 07 Apr 2014 13:32:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/04/07/inside-sqlsaturday-niko-neugebauer-sqlsaturday-lisbon/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/sintra.webp&#34; alt=&#34;Sintra&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;The beautiful Sintra&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Welcome to Inside SQLSaturday, and today I am joined by Portugal’s very own Niko Neugebauer (&lt;a href=&#34;https://www.nikoport.com/&#34;&gt;web&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/NikoNeugebauer&#34;&gt;twitter&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;Niko is the event lead to &lt;a href=&#34;https://www.sqlsaturday.com/267/eventhome.aspx&#34;&gt;SQLSaturday Lisbon&lt;/a&gt; which holds the honour of being the first SQLSaturday &lt;strong&gt;ever&lt;/strong&gt; to be held outside of the United States and the launch pad for so many other great events to follow around the world. Along with his team, they run a selection of Community events and innovative initiatives.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2014/04/07/inside-sqlsaturday-niko-neugebauer-sqlsaturday-lisbon/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2014/sintra.webp&#34; alt=&#34;Sintra&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;The beautiful Sintra&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Welcome to Inside SQLSaturday, and today I am joined by Portugal’s very own Niko Neugebauer (&lt;a href=&#34;https://www.nikoport.com/&#34;&gt;web&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/NikoNeugebauer&#34;&gt;twitter&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;Niko is the event lead to &lt;a href=&#34;https://www.sqlsaturday.com/267/eventhome.aspx&#34;&gt;SQLSaturday Lisbon&lt;/a&gt; which holds the honour of being the first SQLSaturday &lt;strong&gt;ever&lt;/strong&gt; to be held outside of the United States and the launch pad for so many other great events to follow around the world. Along with his team, they run a selection of Community events and innovative initiatives.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLSaturday Cambridge raises £££ for charity!</title>
-      <link>https://tenbulls.co.uk/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</link>
+      <link>http://localhost:1313/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</link>
       <pubDate>Sun, 29 Sep 2013 20:46:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</guid>
-      <description>&lt;p&gt;We are very pleased to announce that the final figures of the SQLSaturday Cambridge fundraising has been counted.&lt;/p&gt;&#xA;&lt;p&gt;Some of you will know that we were collecting for Children’s Cancer Charity &lt;a href=&#34;https://www.younglivesvscancer.org.uk/&#34;&gt;CLIC Sargent&lt;/a&gt; and the reasons why we were doing this can be understood by reading my previous post &lt;a href=&#34;https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference&#34;&gt;Change (your event) and make a difference!&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The amount collected at the event through various different means amounts to &lt;strong&gt;£490.03&lt;/strong&gt;!!!&lt;/p&gt;&#xA;&lt;p&gt;SQLSaturday Cambridge are therefore honoring our commitment to match this figure, which means that &lt;mark&gt;we are therfore donating a grand total of £980.06 to charity&lt;/mark&gt;. I’m hoping to write a bit more about this further in due course.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</guid>
+      <description>&lt;p&gt;We are very pleased to announce that the final figures of the SQLSaturday Cambridge fundraising has been counted.&lt;/p&gt;&#xA;&lt;p&gt;Some of you will know that we were collecting for Children’s Cancer Charity &lt;a href=&#34;https://www.younglivesvscancer.org.uk/&#34;&gt;CLIC Sargent&lt;/a&gt; and the reasons why we were doing this can be understood by reading my previous post &lt;a href=&#34;http://localhost:1313/posts/2013/09/25/change-your-event-and-make-a-difference&#34;&gt;Change (your event) and make a difference!&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The amount collected at the event through various different means amounts to &lt;strong&gt;£490.03&lt;/strong&gt;!!!&lt;/p&gt;&#xA;&lt;p&gt;SQLSaturday Cambridge are therefore honoring our commitment to match this figure, which means that &lt;mark&gt;we are therfore donating a grand total of £980.06 to charity&lt;/mark&gt;. I’m hoping to write a bit more about this further in due course.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Change (your event) and make a difference!</title>
-      <link>https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference/</link>
+      <link>http://localhost:1313/posts/2013/09/25/change-your-event-and-make-a-difference/</link>
       <pubDate>Wed, 25 Sep 2013 22:52:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference/</guid>
-      <description>&lt;p&gt;Regular readers may remember a post I wrote many moons ago in which I described just how exactly &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference&#34;&gt;SQLSaturday Cambridge started&lt;/a&gt; and hopefully gave a lesson in why we should all attempt to grow as much as possible as individuals and embrace (unforeseen) opportunities, as and when they appear. These days I suppose you could describe me as a seasoned presenter (note: seasoning doesn’t necessarily equal good 🙂) and &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; is soon to celebrate its second birthday and outing this coming Friday and Saturday. I know I have only just scratched the surface of what I could become and what I would like to be and that I only have myself and genetic limitations to get in the way of my &lt;em&gt;&amp;ldquo;enlightenment&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2013/09/25/change-your-event-and-make-a-difference/</guid>
+      <description>&lt;p&gt;Regular readers may remember a post I wrote many moons ago in which I described just how exactly &lt;a href=&#34;http://localhost:1313/posts/2012/05/04/change-and-make-a-difference&#34;&gt;SQLSaturday Cambridge started&lt;/a&gt; and hopefully gave a lesson in why we should all attempt to grow as much as possible as individuals and embrace (unforeseen) opportunities, as and when they appear. These days I suppose you could describe me as a seasoned presenter (note: seasoning doesn’t necessarily equal good 🙂) and &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; is soon to celebrate its second birthday and outing this coming Friday and Saturday. I know I have only just scratched the surface of what I could become and what I would like to be and that I only have myself and genetic limitations to get in the way of my &lt;em&gt;&amp;ldquo;enlightenment&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Countdown to SQLSaturday Edinburgh</title>
-      <link>https://tenbulls.co.uk/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</link>
+      <link>http://localhost:1313/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</link>
       <pubDate>Thu, 06 Jun 2013 10:25:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2013/xeventjonathan2.jpg&#34; alt=&#34;Jonathan Kehayias&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;A pre-conference good enough for Super heros&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In exactly 2 days time the United Kingdom’s 3rd SQLSaturday will be in full swing, showcasing a group of SQL Server MVPs, MCMs and Community experts. This will be the very first time that SQLSaturday has happened in Scotland and it is going to be fantastic to bolster the PASS membership and exposure in that area which can only good news for all concerned.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2013/xeventjonathan2.jpg&#34; alt=&#34;Jonathan Kehayias&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;A pre-conference good enough for Super heros&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In exactly 2 days time the United Kingdom’s 3rd SQLSaturday will be in full swing, showcasing a group of SQL Server MVPs, MCMs and Community experts. This will be the very first time that SQLSaturday has happened in Scotland and it is going to be fantastic to bolster the PASS membership and exposure in that area which can only good news for all concerned.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memoirs of SQLSaturday Cambridge #162 - Speaker Dinner</title>
-      <link>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</link>
+      <link>http://localhost:1313/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</link>
       <pubDate>Mon, 01 Oct 2012 18:11:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</guid>
+      <guid>http://localhost:1313/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</guid>
       <description>&lt;p&gt;Probably one of the most over-looked parts of any big or small SQL Event can sometimes be the speaker dinner -which essentially boils down to one thing… the organisers way of showing their appreciation to the speakers who have traveled far and wide usually at their own expense to present expert technical content at no cost to the attendees.&lt;/p&gt;&#xA;&lt;p&gt;As a fairly regular speaker myself, I have experienced many events who have either made very little effort with the dinner, poorly handled its organization (meaning many speakers aren’t even informed that it is happening) or simply don’t bother arranging one at all. And whilst I don’t want to suggest that by organizing an event you absolutely &lt;em&gt;MUST&lt;/em&gt; provide a speaker dinner in order for the event to be regarded as a success, I do personally feel that the speaker meal helps define your event and give it a &lt;em&gt;feel&lt;/em&gt; or your &lt;em&gt;stamp of identity&lt;/em&gt; -and hopefully one along the lines that you were aiming for.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memoirs of SQLSaturday Cambridge #162 - Precons</title>
-      <link>https://tenbulls.co.uk/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</link>
+      <link>http://localhost:1313/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</link>
       <pubDate>Wed, 12 Sep 2012 11:26:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</guid>
+      <guid>http://localhost:1313/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</guid>
       <description>&lt;p&gt;Days have passed since we closed the first ever SQLSaturday to hit the shores of the UK and I write with an element of sadness that it is over, relief that my time can start to be more of my own again for other projects, and optimism of what may come.&lt;/p&gt;&#xA;&lt;p&gt;When I first set out on the path of recording what I view as very much a mixture of personal and technical journal in the pages of this blog (and hopefully at times a good resource for others), I always intended to write at least one post per month. I always viewed it as a cardinal sin to let things slip, but unfortunately I truly underestimated the enormity of the work involved in planning, implementing and executing a major IT event. Now it is almost over (there are still many small administrative issues to complete) I think it is fair to say that Team &lt;a href=&#34;https://www.sqlsaturday.com/162/eventhome.aspx&#34;&gt;SQLSaturday #162 Cambridge&lt;/a&gt; are able to take a deep breath and be proud of what we did.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Change and make a difference</title>
-      <link>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</link>
+      <link>http://localhost:1313/posts/2012/05/04/change-and-make-a-difference/</link>
       <pubDate>Fri, 04 May 2012 18:03:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Let me tell you a story&amp;hellip;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/sqlsat162_print_small.jpg&#34; alt=&#34;SQLSaturday #162 Cambridge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is a drizzly night in November and I am sat with a bunch of people I have never met before. They are all eating and I am not (one too many Whiskys the night before). They all appear to know each other and are vigorously moving from subject to subject with enthusiasm and I am listening intently to the conversation but not really saying too much.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2012/05/04/change-and-make-a-difference/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Let me tell you a story&amp;hellip;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2012/sqlsat162_print_small.jpg&#34; alt=&#34;SQLSaturday #162 Cambridge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is a drizzly night in November and I am sat with a bunch of people I have never met before. They are all eating and I am not (one too many Whiskys the night before). They all appear to know each other and are vigorously moving from subject to subject with enthusiasm and I am listening intently to the conversation but not really saying too much.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

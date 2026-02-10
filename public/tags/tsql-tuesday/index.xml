@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TSQL Tuesday on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/tsql-tuesday/</link>
+    <link>http://localhost:1313/tags/tsql-tuesday/</link>
     <description>Recent content in TSQL Tuesday on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Tue, 09 Apr 2013 21:55:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/tsql-tuesday/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/tsql-tuesday/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I love SQLBits</title>
-      <link>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</link>
+      <link>http://localhost:1313/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</link>
       <pubDate>Tue, 09 Apr 2013 21:55:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s been a long time since I last wrote a T-SQL Tuesday post but the combination of a great topic along with a spare 5 minutes of downtime has resulted in my contribution to the mix this month.&lt;/p&gt;&#xA;&lt;p&gt;This time around T-SQL Tuesday is hosted by Bob Pusateri (&lt;a href=&#34;https://www.bobpusateri.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLBob&#34;&gt;twitter&lt;/a&gt;) and his chosen topic is &lt;strong&gt;how did you come to love presenting?&lt;/strong&gt;. So here goes…&lt;/p&gt;&#xA;&lt;p&gt;In 2010 I had traveled to my very first conference as a presenter. So there I was, stood on the stage in front of a motley collection of SQL professionals, realizing the enormity of what was about to happen.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s been a long time since I last wrote a T-SQL Tuesday post but the combination of a great topic along with a spare 5 minutes of downtime has resulted in my contribution to the mix this month.&lt;/p&gt;&#xA;&lt;p&gt;This time around T-SQL Tuesday is hosted by Bob Pusateri (&lt;a href=&#34;https://www.bobpusateri.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLBob&#34;&gt;twitter&lt;/a&gt;) and his chosen topic is &lt;strong&gt;how did you come to love presenting?&lt;/strong&gt;. So here goes…&lt;/p&gt;&#xA;&lt;p&gt;In 2010 I had traveled to my very first conference as a presenter. So there I was, stood on the stage in front of a motley collection of SQL professionals, realizing the enormity of what was about to happen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Database corruption - Your mistake, my problem!</title>
-      <link>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
+      <link>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
       <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType</title>
-      <link>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</link>
+      <link>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</link>
       <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automate now to save time later</title>
-      <link>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</link>
+      <link>http://localhost:1313/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</link>
       <pubDate>Tue, 08 Feb 2011 12:50:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s T-SQL Tuesday time again and this month I&amp;rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright &lt;a href=&#34;https://sqlasylum.wordpress.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/SqlAsylum&#34;&gt;twitter&lt;/a&gt; and the subject of the month is all about &amp;ldquo;Automation in SQL Server&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/02/08/t-sql-tuesday-015-spend-time-now-to-save-time-later/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s T-SQL Tuesday time again and this month I&amp;rsquo;m a little late off the starting block. This time it is being hosted by Pat Wright &lt;a href=&#34;https://sqlasylum.wordpress.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/SqlAsylum&#34;&gt;twitter&lt;/a&gt; and the subject of the month is all about &amp;ldquo;Automation in SQL Server&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;So what is my favourite automation script or technique that I use in SQL Server? I had to have a think about this and my problem is that I have quite a few. I believe that the accessibility and usability of the Windows and SQL GUI (and related tools) means that SQL DBAs in particular have a tendency to automate much more than other IT Professionals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Start as you mean to go on</title>
-      <link>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
+      <link>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
       <pubDate>Tue, 11 Jan 2011 02:03:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

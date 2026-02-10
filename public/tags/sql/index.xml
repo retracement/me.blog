@@ -2,165 +2,172 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/sql/</link>
+    <link>http://localhost:1313/tags/sql/</link>
     <description>Recent content in SQL on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 18 Jun 2014 15:36:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2015 01:01:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitesize SSIS - Passing SSIS variables into script components</title>
+      <link>http://localhost:1313/posts/2015/11/30/bitesize-ssis-1/</link>
+      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/11/30/bitesize-ssis-1/</guid>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Messy Meta-Described Views</title>
-      <link>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</link>
+      <link>http://localhost:1313/posts/2014/06/18/view-pugh/</link>
       <pubDate>Wed, 18 Jun 2014 15:36:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</guid>
+      <guid>http://localhost:1313/posts/2014/06/18/view-pugh/</guid>
       <description>&lt;p&gt;It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn’t know about. Some of it good and some of it bad, some of it just meh&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;The other day I was stumbling around a new environment, when I decided to use the GUI to script out an existing set of views when I saw something that had me scratching my head. Underneath the actual view definition was the following (some names removed to protect the innocent).&lt;/p&gt;</description>
     </item>
     <item>
       <title>ROLLBACK damn you!</title>
-      <link>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</link>
+      <link>http://localhost:1313/posts/2014/03/05/rollback-damn-you/</link>
       <pubDate>Wed, 05 Mar 2014 09:30:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</guid>
-      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2014/03/05/rollback-damn-you/</guid>
+      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why don’t you go and LOCK OFF!</title>
-      <link>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
+      <link>http://localhost:1313/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
       <pubDate>Wed, 17 Jul 2013 13:44:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
+      <guid>http://localhost:1313/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
       <description>&lt;p&gt;No this is not a Hekaton post 🙂 -perhaps I should have saved this title for another rainy day.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server concurrency is a particularly difficult subject to master and understanding the result of your actions can be confounded by some of SQL Server’s special behaviors and quirks that I so often like to talk and write about.&lt;/p&gt;&#xA;&lt;p&gt;As some of my &lt;del&gt;followers&lt;/del&gt; stalkers out there may remember, one of my favorite demonstrations I like to give is during my&#xA;&lt;a href=&#34;https://www.sqlpass.org/summit/2012/Sessions/SessionDetails.aspx?sid=2816&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking, and Isolation&lt;/a&gt; session -last performed at the &lt;a href=&#34;https://www.sqlpass.org/summit/2012/&#34;&gt;SQLPASS 2012 Summit&lt;/a&gt; and &lt;a href=&#34;https://www.sqlsaturday.com/viewsession.aspx?sat=229&amp;amp;sessionid=14975&#34;&gt;SQLSaturday #229 Dublin&lt;/a&gt; where in a little piece of code I discuss whether a transaction is really Atomic (or not). For anyone reading this paragraph who has immediately answered “ALWAYS” -then my friend you are in serious trouble with your code-base. And I am not even talking about the use of lower levels of isolation to perform dirty reads within your transaction here, isolation does not effect a transaction’s atomicity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to run SQL Server 2012 on the Kindle Fire HD</title>
-      <link>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</link>
+      <link>http://localhost:1313/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</link>
       <pubDate>Mon, 01 Apr 2013 12:44:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</guid>
+      <guid>http://localhost:1313/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</guid>
       <description>&lt;p&gt;&lt;mark&gt;Warning! Please do not attempt to perform any of the following steps on production systems. This information is provided purely for reference and any attempt to replicate these actions on your own hardware will be purely at your own risk!&lt;/mark&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits to the latest release of SQL Server (and reasons to upgrade) is that Windows Server Core is now a supported option. For those of you who are not yet familiar with Server Core, it could be best described as a reduced GUI version of Microsoft Windows. In other words, if you like the command line then you are in for a very big treat! Regular visitors to these pages will most likely be very aware of my passion for Windows Server Core and more to the point running SQL Server on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Baby baby baby, where did our ROLLBACK go?</title>
-      <link>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
+      <link>http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
       <pubDate>Tue, 23 Oct 2012 22:51:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Curious Case of the Non-Escalating transaction locks</title>
-      <link>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
+      <link>http://localhost:1313/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
       <pubDate>Wed, 17 Oct 2012 13:40:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
+      <guid>http://localhost:1313/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
       <description>&lt;p&gt;SQL Server has many facets and behaviors that are often misunderstood and do not always work quite as we may have expected. At first you may believe that you understand the mechanics, only to realize after a little bit of delving deeper that your comprehension was wrong.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server Lock Escalation is one of these commonly misunderstood topics, and most recently after doing a little investigation into a few subjects related to escalation I was shocked and surprised in equal measure to find that things were not working quite as I expected.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using the SQL Server Installation Wizard on Server Core!</title>
-      <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
+      <link>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
       <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
+      <guid>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
       <description>&lt;p&gt;Ever heard the phrase &lt;em&gt;&amp;ldquo;just because you can, doesn’t mean you should?&amp;rdquo;&lt;/em&gt;. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn’t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I’m getting ahead of myself, first let me describe our scenario.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Remember your OS when upgrading to SQL 2012</title>
-      <link>https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</link>
+      <link>http://localhost:1313/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</link>
       <pubDate>Tue, 24 Apr 2012 19:18:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</guid>
+      <guid>http://localhost:1313/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</guid>
       <description>&lt;p&gt;Probably as far back as the end of last year when I first started putting material together for my Enter the Dragon and Moves like Jagger presentations and giving very early mash up presentations of them combined together, I started emphasising one very important upgrade consideration which is very often ignored. It is also a fact that is quite nicely touched upon by Glenn Berry (&lt;a href=&#34;https://twitter.com/#!/glennalanberry&#34;&gt;twitter&lt;/a&gt;|&lt;a href=&#34;https://sqlserverperformance.wordpress.com/&#34;&gt;blog&lt;/a&gt;) in his excellent book SQL Server Hardware and if you have yet to discover its unique delights then I strongly advise you to check it out.&lt;/p&gt;</description>
     </item>
     <item>
       <title>whoisactive on SQL 2000</title>
-      <link>https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/</link>
+      <link>http://localhost:1313/posts/2012/04/17/whos-active-on-sql-2000/</link>
       <pubDate>Tue, 17 Apr 2012 18:38:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/</guid>
+      <guid>http://localhost:1313/posts/2012/04/17/whos-active-on-sql-2000/</guid>
       <description>&lt;p&gt;Yes yes yes I &lt;em&gt;know&lt;/em&gt; we are currently on SQL 2012 but just hear me out for a second…&lt;/p&gt;&#xA;&lt;p&gt;I think I am probably one of the only people on the planet who has not (yet) used Adam Machanic’s (&lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/archive/2011/04/27/who-is-active-v11-00-a-month-of-activity-monitoring-part-27-of-30.aspx&#34;&gt;twitter&lt;/a&gt;) whoisactive Stored Procedure. One of the reasons for this is that going right back to the days of SQL Server 2000 I had rolled my own stored procedure which worked very nicely and did everything that I ever needed it to.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weight doesnt ALWAYS have to be AlwaysOn</title>
-      <link>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>
+      <link>http://localhost:1313/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>
       <pubDate>Thu, 05 Apr 2012 15:56:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</guid>
+      <guid>http://localhost:1313/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</guid>
       <description>&lt;p&gt;One thing I keep hearing myself mentioning more and more in conversation (and most recently in a discussion group at &lt;a href=&#34;https://sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; a few days ago) is the ability to configure your Windows Cluster Quorum for situations where each cluster node may not be of equal importance.&lt;/p&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/default.aspx&#34;&gt;SQL Server 2012&lt;/a&gt; we have various high availability enhancements and improvements and most of these are branded under the term &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/solutions-technologies/mission-critical-operations/SQL-Server-2012-high-availability.aspx&#34;&gt;AlwaysOn&lt;/a&gt;. In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won’t bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are the impersonation rights for my database users?</title>
-      <link>https://tenbulls.co.uk/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</link>
+      <link>http://localhost:1313/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</link>
       <pubDate>Mon, 30 Jan 2012 14:29:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</guid>
+      <guid>http://localhost:1313/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</guid>
       <description>&lt;p&gt;From time to time I get thrown the odd request to provide various bits of information from the SQL Server environment and most recently I was asked about a group of databases that required migrating to another instance. For some reason there had been a little bit of a panic about the impersonation rights in each of the databases and their configuration. The request was &lt;em&gt;*ahem*&lt;/em&gt; kindly passed to me. The number of database users was huge in each database and performing a manual lookup through the SSMS GUI got rather tiresome very quickly (after about the second user).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keep your Availability Group listener name short</title>
-      <link>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</link>
+      <link>http://localhost:1313/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</link>
       <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</guid>
+      <guid>http://localhost:1313/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</guid>
       <description>&lt;p&gt;Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I&amp;rsquo;d found in Linux Gnome which he had never seen before &lt;em&gt;&amp;ldquo;after all his years working with the product&amp;rdquo;&lt;/em&gt;. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won&amp;rsquo;t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lock Compatibility Matrix 1.2</title>
-      <link>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</link>
+      <link>http://localhost:1313/posts/2011/11/17/compatibility-matrix-1-2/</link>
       <pubDate>Thu, 17 Nov 2011 22:29:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</guid>
-      <description>&lt;p&gt;A couple of months back I published my version of SQL Server&amp;rsquo;s Lock Compatibility Matrix under the post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix&#34;&gt;Fancy a decent Compatibility Matrix?&lt;/a&gt; since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.&lt;/p&gt;&#xA;&lt;p&gt;One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and &lt;em&gt;told the story&lt;/em&gt; of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&amp;gt; GO (i.e. lock grant), RED -&amp;gt; STOP (i.e. lock wait). BUT that doesn&amp;rsquo;t help colour blind people very much does it!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/11/17/compatibility-matrix-1-2/</guid>
+      <description>&lt;p&gt;A couple of months back I published my version of SQL Server&amp;rsquo;s Lock Compatibility Matrix under the post &lt;a href=&#34;http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix&#34;&gt;Fancy a decent Compatibility Matrix?&lt;/a&gt; since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.&lt;/p&gt;&#xA;&lt;p&gt;One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and &lt;em&gt;told the story&lt;/em&gt; of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&amp;gt; GO (i.e. lock grant), RED -&amp;gt; STOP (i.e. lock wait). BUT that doesn&amp;rsquo;t help colour blind people very much does it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fancy a decent Compatibility Matrix?</title>
-      <link>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</link>
+      <link>http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</link>
       <pubDate>Tue, 27 Sep 2011 21:12:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</guid>
-      <description>&lt;p&gt;Have you ever taken a look at Microsoft&amp;rsquo;s published &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms186396.aspx&#34;&gt;compatibility matrix&lt;/a&gt; for SQL Server lock compatibility? If you have, then I don&amp;rsquo;t need to tell you that it sucks in a very big way.&lt;/p&gt;&#xA;&lt;p&gt;Have no fear, I have painstakingly redrawn at better one (via PowerPoint no less!) and am making available to you totally free of charge as a lovely PDF slide found via &lt;a href=&#34;https://tenbulls.co.uk/documents/readpastfuriouslockcompatibilitymatrix.pdf&#34;&gt;here&lt;/a&gt;&amp;hellip; Why you ask? Because I love you all!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</guid>
+      <description>&lt;p&gt;Have you ever taken a look at Microsoft&amp;rsquo;s published &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms186396.aspx&#34;&gt;compatibility matrix&lt;/a&gt; for SQL Server lock compatibility? If you have, then I don&amp;rsquo;t need to tell you that it sucks in a very big way.&lt;/p&gt;&#xA;&lt;p&gt;Have no fear, I have painstakingly redrawn at better one (via PowerPoint no less!) and am making available to you totally free of charge as a lovely PDF slide found via &lt;a href=&#34;http://localhost:1313/documents/readpastfuriouslockcompatibilitymatrix.pdf&#34;&gt;here&lt;/a&gt;&amp;hellip; Why you ask? Because I love you all!&lt;/p&gt;</description>
     </item>
     <item>
       <title>When should you use NOLOCK?</title>
-      <link>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</link>
+      <link>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</link>
       <pubDate>Wed, 14 Sep 2011 12:31:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</guid>
+      <guid>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</guid>
       <description>&lt;p&gt;Well the quick answer to that question is never. And there you have it, the quickest blog post in history (perhaps!).&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip;Except that I should really have said &lt;em&gt;&amp;ldquo;When should you use &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation or hint?&amp;rdquo;&lt;/em&gt; and then the question takes a little more of a surprising turn. Let me first start and explain why I have categorically ruled against the use of &lt;code&gt;NOLOCK&lt;/code&gt;. The reason, is that at some point in the dim and distant future Microsoft may decide to remove this hint from the product. If they could do it today, they probably would; the only thing that is really stopping them is the numerous lines of external T-SQL code that dirtys the floors of many Development teams around the world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Review of Inside the SQL Server Query Optimizer</title>
-      <link>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
+      <link>http://localhost:1313/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</link>
       <pubDate>Fri, 19 Aug 2011 14:02:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/insidequerysmall.jpg&#34; alt=&#34;Inside the SQL Server Query Optimizer&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (&lt;a href=&#34;https://www.benjaminnevarez.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/#!/BenjaminNevarez&#34;&gt;twitter&lt;/a&gt;) is one of those. As someone I&amp;rsquo;ve been following technically for several years, when I saw that his book &lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;Inside the SQL Server Query Optimizer&lt;/a&gt; had been released to the Kindle format, I immediately clicked the purchase button and I haven&amp;rsquo;t been disappointed.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/08/19/inside-the-sql-server-query-optimizer-book-review/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/2011/insidequerysmall.jpg&#34; alt=&#34;Inside the SQL Server Query Optimizer&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are only a handful of people that when they talk about something you should sit up and take notice, and for me Benjamin Nevarez (&lt;a href=&#34;https://www.benjaminnevarez.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;http://twitter.com/#!/BenjaminNevarez&#34;&gt;twitter&lt;/a&gt;) is one of those. As someone I&amp;rsquo;ve been following technically for several years, when I saw that his book &lt;a href=&#34;https://www.amazon.com/Inside-SQL-Server-Query-Optimizer/dp/1906434603&#34;&gt;Inside the SQL Server Query Optimizer&lt;/a&gt; had been released to the Kindle format, I immediately clicked the purchase button and I haven&amp;rsquo;t been disappointed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Database corruption - Your mistake, my problem!</title>
-      <link>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
+      <link>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
       <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using SQL Server Scalable Shared Database</title>
-      <link>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
+      <link>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
       <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don&amp;rsquo;t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn&amp;rsquo;t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don&amp;rsquo;t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn&amp;rsquo;t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to run SQL Server on Linux</title>
-      <link>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</link>
+      <link>http://localhost:1313/posts/2011/04/01/how-to-run-sql-server-on-linux/</link>
       <pubDate>Fri, 01 Apr 2011 14:51:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</guid>
+      <guid>http://localhost:1313/posts/2011/04/01/how-to-run-sql-server-on-linux/</guid>
       <description>&lt;p&gt;&lt;em&gt;UPDATE 2011-04-10: PLEASE NOTE THIS WAS AN APRILS FOOL JOKE 🙂&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well I have finally cracked it, after years of trying (and a little help from the R2 release) to get SQL Server to install and run happily on the Linux Platform. I could hardly believe it when it all came together, but I&amp;rsquo;m very pleased that it has. What is even more exciting is that the performance of the SQL Engine is going through the roof.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Categorise your SQL Agent jobs</title>
-      <link>https://tenbulls.co.uk/posts/2011/03/04/job-category/</link>
+      <link>http://localhost:1313/posts/2011/03/04/job-category/</link>
       <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/03/04/job-category/</guid>
+      <guid>http://localhost:1313/posts/2011/03/04/job-category/</guid>
       <description>&lt;p&gt;Perhaps you are one of those people who&amp;rsquo;s house is immaculate? The lid is firmly placed back on the toothpaste, shoes left in a neat pile, coat in the cupboard. You know the sort of thing? Well I&amp;rsquo;m not quite like that but I try to be. Organized effort is a good thing and although it might not be obvious at the time can make life so much more easier further down the line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating your SQL snapshots</title>
-      <link>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</link>
+      <link>http://localhost:1313/posts/2011/02/15/automating-your-snapshots/</link>
       <pubDate>Tue, 15 Feb 2011 16:49:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</guid>
+      <guid>http://localhost:1313/posts/2011/02/15/automating-your-snapshots/</guid>
       <description>&lt;p&gt;A little while ago I was talking to someone about possibilities of reporting from SQL Server to avoid impacting the production server and the very first thing that sprang to mind was for them to use snapshotting from a mirror. They had already considered this option but it was not really viable because an almost real-time reporting solution was required. It wasn&amp;rsquo;t until later that I wondered whether I had not really been precise enough in my explanation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where to go for WAIT stat information</title>
-      <link>https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</link>
+      <link>http://localhost:1313/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</link>
       <pubDate>Tue, 08 Feb 2011 21:07:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</guid>
+      <guid>http://localhost:1313/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</guid>
       <description>&lt;p&gt;Fairly recently I was talking with a rather talented SQL Specialist internally at Microsoft and was asked the question by him as to where I get my Wait Stat information from. Query tuning isn&amp;rsquo;t really something I currently am required to do on a regular basis so I tend to get my information as and when I need it (even though I have a couple of articles and urls bookmarked I couldn&amp;rsquo;t particularly reference them in a conversation so perhaps I could go one better and officially post them). My answer then was that I Bing for my Wait Stat references (actually replace that with another search engine – but I was on the MS site!).&lt;/p&gt;</description>
     </item>
   </channel>

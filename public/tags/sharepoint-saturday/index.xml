@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SharePoint Saturday on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/sharepoint-saturday/</link>
+    <link>http://localhost:1313/tags/sharepoint-saturday/</link>
     <description>Recent content in SharePoint Saturday on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Thu, 25 Jun 2015 10:43:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/sharepoint-saturday/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sharepoint-saturday/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Announcing SharePoint Saturday Cambridge 2015</title>
-      <link>https://tenbulls.co.uk/posts/2015/06/25/twotribes/</link>
+      <link>http://localhost:1313/posts/2015/06/25/twotribes/</link>
       <pubDate>Thu, 25 Jun 2015 10:43:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/06/25/twotribes/</guid>
+      <guid>http://localhost:1313/posts/2015/06/25/twotribes/</guid>
       <description>&lt;p&gt;In 2013, &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; became the first ever SQLSaturday in the World to host a dedicated SharePoint track and the event was a great success. It struck me at the time how well we managed to get a SharePoint audience at an event that was largely about SQL Server so with the support of our dedicated SharePoint sponsors (&lt;a href=&#34;https://www.combined-knowledge.com/&#34;&gt;Combined Knowledge&lt;/a&gt;, &lt;a href=&#34;https://www.k2.com/&#34;&gt;K2&lt;/a&gt; and &lt;a href=&#34;https://www.axioworks.com/&#34;&gt;AxioWorks&lt;/a&gt;), a fantastic addition of SharePoint speakers and with the expert help from the SharePoint community through Peter Baddeley (&lt;a href=&#34;https:https://about.me/baddaz&#34;&gt;web&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/baddaz&#34;&gt;twitter&lt;/a&gt;) I think we managed to light the touch paper for my future plans for &lt;a href=&#34;https://www.sqlsaturday.com/411/EventHome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SharePoint Saturday London 2015</title>
-      <link>https://tenbulls.co.uk/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</link>
+      <link>http://localhost:1313/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</link>
       <pubDate>Fri, 05 Jun 2015 10:43:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/evoconf.jpg&#34; alt=&#34;Evoconf&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t think it is any great secret that I have had my eyes on the SharePoint Community for quite some time. With the introduction of a dedicated SharePoint track (and precon) in 2013 at &lt;a href=&#34;https://sqlcambs.org.uk/category/sqlsaturday/&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; (a World 1st, I believe) and most recently my attendance of the three day annual &lt;a href=&#34;https://www.sharepointevolutionconference.com/&#34;&gt;SharePoint Evolution Conference&lt;/a&gt; in London, it has been clear to me for years that the SQL and SharePoint Communities and technologies are more closely related and integrated than I think most professionals would realize. They are simply just different perspectives on what is essentially the end goal of presenting data to the end-user.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/evoconf.jpg&#34; alt=&#34;Evoconf&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t think it is any great secret that I have had my eyes on the SharePoint Community for quite some time. With the introduction of a dedicated SharePoint track (and precon) in 2013 at &lt;a href=&#34;https://sqlcambs.org.uk/category/sqlsaturday/&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; (a World 1st, I believe) and most recently my attendance of the three day annual &lt;a href=&#34;https://www.sharepointevolutionconference.com/&#34;&gt;SharePoint Evolution Conference&lt;/a&gt; in London, it has been clear to me for years that the SQL and SharePoint Communities and technologies are more closely related and integrated than I think most professionals would realize. They are simply just different perspectives on what is essentially the end goal of presenting data to the end-user.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

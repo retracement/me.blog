@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Charity on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/charity/</link>
+    <link>http://localhost:1313/tags/charity/</link>
     <description>Recent content in Charity on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Sun, 29 Sep 2013 20:46:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/charity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/charity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQLSaturday Cambridge raises £££ for charity!</title>
-      <link>https://tenbulls.co.uk/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</link>
+      <link>http://localhost:1313/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</link>
       <pubDate>Sun, 29 Sep 2013 20:46:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</guid>
-      <description>&lt;p&gt;We are very pleased to announce that the final figures of the SQLSaturday Cambridge fundraising has been counted.&lt;/p&gt;&#xA;&lt;p&gt;Some of you will know that we were collecting for Children’s Cancer Charity &lt;a href=&#34;https://www.younglivesvscancer.org.uk/&#34;&gt;CLIC Sargent&lt;/a&gt; and the reasons why we were doing this can be understood by reading my previous post &lt;a href=&#34;https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference&#34;&gt;Change (your event) and make a difference!&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The amount collected at the event through various different means amounts to &lt;strong&gt;£490.03&lt;/strong&gt;!!!&lt;/p&gt;&#xA;&lt;p&gt;SQLSaturday Cambridge are therefore honoring our commitment to match this figure, which means that &lt;mark&gt;we are therfore donating a grand total of £980.06 to charity&lt;/mark&gt;. I’m hoping to write a bit more about this further in due course.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2013/09/29/sqlsaturday-cambridge-raises-for-charity/</guid>
+      <description>&lt;p&gt;We are very pleased to announce that the final figures of the SQLSaturday Cambridge fundraising has been counted.&lt;/p&gt;&#xA;&lt;p&gt;Some of you will know that we were collecting for Children’s Cancer Charity &lt;a href=&#34;https://www.younglivesvscancer.org.uk/&#34;&gt;CLIC Sargent&lt;/a&gt; and the reasons why we were doing this can be understood by reading my previous post &lt;a href=&#34;http://localhost:1313/posts/2013/09/25/change-your-event-and-make-a-difference&#34;&gt;Change (your event) and make a difference!&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The amount collected at the event through various different means amounts to &lt;strong&gt;£490.03&lt;/strong&gt;!!!&lt;/p&gt;&#xA;&lt;p&gt;SQLSaturday Cambridge are therefore honoring our commitment to match this figure, which means that &lt;mark&gt;we are therfore donating a grand total of £980.06 to charity&lt;/mark&gt;. I’m hoping to write a bit more about this further in due course.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Change (your event) and make a difference!</title>
-      <link>https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference/</link>
+      <link>http://localhost:1313/posts/2013/09/25/change-your-event-and-make-a-difference/</link>
       <pubDate>Wed, 25 Sep 2013 22:52:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2013/09/25/change-your-event-and-make-a-difference/</guid>
-      <description>&lt;p&gt;Regular readers may remember a post I wrote many moons ago in which I described just how exactly &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference&#34;&gt;SQLSaturday Cambridge started&lt;/a&gt; and hopefully gave a lesson in why we should all attempt to grow as much as possible as individuals and embrace (unforeseen) opportunities, as and when they appear. These days I suppose you could describe me as a seasoned presenter (note: seasoning doesn’t necessarily equal good 🙂) and &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; is soon to celebrate its second birthday and outing this coming Friday and Saturday. I know I have only just scratched the surface of what I could become and what I would like to be and that I only have myself and genetic limitations to get in the way of my &lt;em&gt;&amp;ldquo;enlightenment&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2013/09/25/change-your-event-and-make-a-difference/</guid>
+      <description>&lt;p&gt;Regular readers may remember a post I wrote many moons ago in which I described just how exactly &lt;a href=&#34;http://localhost:1313/posts/2012/05/04/change-and-make-a-difference&#34;&gt;SQLSaturday Cambridge started&lt;/a&gt; and hopefully gave a lesson in why we should all attempt to grow as much as possible as individuals and embrace (unforeseen) opportunities, as and when they appear. These days I suppose you could describe me as a seasoned presenter (note: seasoning doesn’t necessarily equal good 🙂) and &lt;a href=&#34;https://www.sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; is soon to celebrate its second birthday and outing this coming Friday and Saturday. I know I have only just scratched the surface of what I could become and what I would like to be and that I only have myself and genetic limitations to get in the way of my &lt;em&gt;&amp;ldquo;enlightenment&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

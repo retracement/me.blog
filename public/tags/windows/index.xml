@@ -2,61 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/windows/</link>
+    <link>http://localhost:1313/tags/windows/</link>
     <description>Recent content in Windows on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Mon, 30 Mar 2015 07:52:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2015 14:10:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</title>
+      <link>http://localhost:1313/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</link>
+      <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</guid>
+      <description>&lt;p&gt;Have you been attempting (and failing) to install &lt;a href=&#34;https://www.oracle.com/us/technologies/linux/overview/index.html&#34;&gt;Oracle Unbreakable Linux&lt;/a&gt; as a Virtual Machine under Hyper-V and cannot figure out what is wrong?&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;&#xA;&lt;p&gt;If you are receiving the following message:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device. Failed Secure Boot Verification.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE Network Boot using IPv4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;......&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE-E18: Server response timeout.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI Network.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No Operating System was Loaded.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Press a key to retry the boot sequence...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/secure-boot-verification.jpg&#34; alt=&#34;Secure Boot verification&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to install SharePoint 2013 on Windows 2012R2</title>
-      <link>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
+      <link>http://localhost:1313/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
       <pubDate>Mon, 30 Mar 2015 07:52:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</guid>
+      <guid>http://localhost:1313/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</guid>
       <description>&lt;p&gt;&lt;em&gt;If you want to jump straight to the condensed solution, then please feel free to go to the &lt;a href=&#34;#condensed-installation&#34;&gt;Condensed Installation instructions&lt;/a&gt; below. If you find this post useful or have any feedback then please leave me a comment so that I know my efforts were not wasted!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Installing Microsoft Backoffice products on Microsoft Operating Systems has over the years become a much easier proposition and is largely the reason why SQL Server got the reputation of being “easy”. Except it isn’t. Ask any idiot to install a SQL Server instance and create a database and there is a good chance that they will succeed, but ask them to install SQL Server correctly and configured to best practice, suddenly the knowledge gap becomes a little more obvious.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Read your old CHM files from network storage on Windows</title>
-      <link>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
+      <link>http://localhost:1313/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
       <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
+      <guid>http://localhost:1313/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
       <description>&lt;p&gt;I was just recently going through my old SQL Server documents and reference material and attempting to organize and tidy things up, when I re-discovered a huge collection of literature that even now is incredibly useful. The only problem is that many of these old electronic books and files are stored in &lt;em&gt;CHM&lt;/em&gt; format. Those old timers of you will remember that this was how SQL Server Books online was deployed up to and including SQL Server 2000.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using the SQL Server Installation Wizard on Server Core!</title>
-      <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
+      <link>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
       <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
+      <guid>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
       <description>&lt;p&gt;Ever heard the phrase &lt;em&gt;&amp;ldquo;just because you can, doesn’t mean you should?&amp;rdquo;&lt;/em&gt;. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn’t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I’m getting ahead of myself, first let me describe our scenario.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Remember your OS when upgrading to SQL 2012</title>
-      <link>https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</link>
+      <link>http://localhost:1313/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</link>
       <pubDate>Tue, 24 Apr 2012 19:18:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</guid>
+      <guid>http://localhost:1313/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</guid>
       <description>&lt;p&gt;Probably as far back as the end of last year when I first started putting material together for my Enter the Dragon and Moves like Jagger presentations and giving very early mash up presentations of them combined together, I started emphasising one very important upgrade consideration which is very often ignored. It is also a fact that is quite nicely touched upon by Glenn Berry (&lt;a href=&#34;https://twitter.com/#!/glennalanberry&#34;&gt;twitter&lt;/a&gt;|&lt;a href=&#34;https://sqlserverperformance.wordpress.com/&#34;&gt;blog&lt;/a&gt;) in his excellent book SQL Server Hardware and if you have yet to discover its unique delights then I strongly advise you to check it out.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Visualising disk space usage</title>
-      <link>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
+      <link>http://localhost:1313/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
       <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to increase your OS Virtual Processors</title>
-      <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
+      <link>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
       <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
+      <guid>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
       <description>&lt;p&gt;There usually comes a time in your Virtual Machine life-cycle that you think&amp;hellip; &lt;em&gt;I wish I&amp;rsquo;d given that baby more processors for me to play with!&lt;/em&gt; This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as &lt;em&gt;Processor Affinity&lt;/em&gt; and &lt;em&gt;MAXDOP&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Add metadata to your audio files</title>
-      <link>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
+      <link>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
       <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
-      <description>&lt;p&gt;In my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
+      <description>&lt;p&gt;In my recent post &lt;a href=&#34;http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

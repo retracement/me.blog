@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HADR on tenbulls blog</title>
-    <link>https://tenbulls.co.uk/tags/hadr/</link>
+    <link>http://localhost:1313/tags/hadr/</link>
     <description>Recent content in HADR on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Fri, 25 Apr 2014 08:33:00 +0100</lastBuildDate>
-    <atom:link href="https://tenbulls.co.uk/tags/hadr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hadr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>10 reasons why I HA-te you!</title>
-      <link>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</link>
+      <link>http://localhost:1313/posts/2014/04/25/10-reasons-why-i-hate-you/</link>
       <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</guid>
+      <guid>http://localhost:1313/posts/2014/04/25/10-reasons-why-i-hate-you/</guid>
       <description>&lt;p&gt;Designing, planning, deploying, administrating and recovering (known from now on as &lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;P&lt;/strong&gt;lan&lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;AR&lt;/strong&gt; – and pronounced in the tone of a Caribbean Grandma 🙂 ) a SQL Server High Availability and Disaster Recovery (HADR) solution is really not an easy thing to implement and maintain. There are many reasons for this and whilst (ultimately) our business is only interested in an almost permanent unbroken connectivity to the Database Engine for its Applications or Middleware Clients, the reality is that our databases/s play just a very small part of the whole availability story when maintaining one of these solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weight doesnt ALWAYS have to be AlwaysOn</title>
-      <link>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>
+      <link>http://localhost:1313/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>
       <pubDate>Thu, 05 Apr 2012 15:56:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</guid>
+      <guid>http://localhost:1313/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</guid>
       <description>&lt;p&gt;One thing I keep hearing myself mentioning more and more in conversation (and most recently in a discussion group at &lt;a href=&#34;https://sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; a few days ago) is the ability to configure your Windows Cluster Quorum for situations where each cluster node may not be of equal importance.&lt;/p&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/default.aspx&#34;&gt;SQL Server 2012&lt;/a&gt; we have various high availability enhancements and improvements and most of these are branded under the term &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/solutions-technologies/mission-critical-operations/SQL-Server-2012-high-availability.aspx&#34;&gt;AlwaysOn&lt;/a&gt;. In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won’t bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clustering nodes on different subnets</title>
-      <link>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
+      <link>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
       <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
+      <guid>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s rather ironic that the answer to a question that came my way recently, had been sitting in my feed-reader for the last month. Apart from the length of time that the item/s had been sitting there, I had opened them on numerous occasions and re-marked as &lt;em&gt;unread&lt;/em&gt; because I believed they needed more than just a quick skim.&lt;/p&gt;&#xA;&lt;p&gt;I consider myself very experienced with SQL Clustering but one cannot know everything about everything. I&amp;rsquo;m endeavouring to fill any gaps in order to be not just very good, but hopefully at some point a leading (or how about &lt;em&gt;the leading&lt;/em&gt; expert in this field. Right now there are only a few people that I am aware of that I consider to be authorities in SQL Clustering -at least people I can learn from, I&amp;rsquo;ve even been using it as long as some of them. There will of course be more experts who I am unaware of but the ones I follow are Geoff Hiten, Allan Hirt and Symon Perriman of course! Whether I achieve my own personal aims will depend upon how many other areas of specialism I lend my eye to, but one can only try and right now I think I&amp;rsquo;ve been heading in the right direction.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is Disaster Recovery?</title>
-      <link>https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/</link>
+      <link>http://localhost:1313/posts/2011/02/01/what-is-dr/</link>
       <pubDate>Tue, 01 Feb 2011 19:39:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/</guid>
+      <guid>http://localhost:1313/posts/2011/02/01/what-is-dr/</guid>
       <description>&lt;p&gt;I was recently asked &lt;em&gt;&amp;ldquo;What is DR?&amp;rdquo;&lt;/em&gt; when talking about SQL Clustering, Mirroring and the like to someone. The question was asked not because they didn&amp;rsquo;t know but because they were interested in what I thought. The answer is quite simple right?&lt;/p&gt;&#xA;&lt;p&gt;After a moments pause I answered, &lt;em&gt;Disaster Recovery is the ability to restore a companies IT infrastructure to a minimum level required in order for that company to continue operating&lt;/em&gt;. OK so that wasn&amp;rsquo;t a really great response and of course DR means different things to different people, so it is probably important that we can be as explicit as possible. When the business asks &lt;em&gt;&amp;ldquo;Have you got a DR strategy in place&amp;rdquo;&lt;/em&gt;, I personally believe that we should already have established with the Business what they would class as &lt;em&gt;&amp;ldquo;Recovery&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

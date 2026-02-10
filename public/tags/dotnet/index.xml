@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dotnet on tenbulls blog</title>
+    <link>http://localhost:1313/tags/dotnet/</link>
+    <description>Recent content in Dotnet on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Mon, 30 Nov 2015 01:01:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitesize SSIS - Passing SSIS variables into script components</title>
+      <link>http://localhost:1313/posts/2015/11/30/bitesize-ssis-1/</link>
+      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2015/11/30/bitesize-ssis-1/</guid>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
