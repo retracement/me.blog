@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Utilities on tenbulls blog</title>
-    <link>http://localhost:1313/tags/utilities/</link>
+    <link>https://tenbulls.co.uk/tags/utilities/</link>
     <description>Recent content in Utilities on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Tue, 06 Jan 2015 14:33:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/utilities/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/utilities/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fixing Flash in Chrome/ Chromium on Linux</title>
-      <link>http://localhost:1313/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
+      <link>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Read your old CHM files from network storage on Windows</title>
-      <link>http://localhost:1313/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
+      <link>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
       <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
+      <guid>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
       <description>&lt;p&gt;I was just recently going through my old SQL Server documents and reference material and attempting to organize and tidy things up, when I re-discovered a huge collection of literature that even now is incredibly useful. The only problem is that many of these old electronic books and files are stored in &lt;em&gt;CHM&lt;/em&gt; format. Those old timers of you will remember that this was how SQL Server Books online was deployed up to and including SQL Server 2000.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to remove your VirtualBox machines BLOAT</title>
-      <link>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</link>
+      <link>https://tenbulls.co.uk/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</link>
       <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</guid>
       <description>&lt;p&gt;Well I guess its been a long time since I have offered you a useful nugget of information or help, so I have decided to haul myself to the keyboard and provide a useful tip that I have been saving for a rainy day. Regular readers to this blog will certainly be no stranger to my positively strong feelings towards Oracle’s VirtualBox and I have been a user of this product for more years than I can remember. The tip I am about to describe will use VirtualBox in the examples but it should be transferable to any virtualisation product that has the ability to shrink back virtual disks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Visualising disk space usage</title>
-      <link>http://localhost:1313/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
+      <link>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
       <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Add metadata to your audio files</title>
-      <link>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
       <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
-      <description>&lt;p&gt;In my recent post &lt;a href=&#34;http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
+      <description>&lt;p&gt;In my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to rip audio from your training videos</title>
-      <link>http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
       <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Although the following post is Linux related my dear SQL Server geek, you might just find what I am about to say useful in your pursuit of SQL Server greatness. If this possibility doesn&amp;rsquo;t interest you then I advise to stop reading right&amp;hellip; now!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t normally publish short blog posts and as a result, when I am really busy, it means nothing gets posted due to the large amount of time the bigger articles take. However from time to time I see something that I really want to shout about and this is one of those times.&lt;/p&gt;</description>
     </item>
   </channel>

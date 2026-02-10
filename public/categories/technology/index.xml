@@ -2,410 +2,438 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on tenbulls blog</title>
-    <link>http://localhost:1313/categories/technology/</link>
+    <link>https://tenbulls.co.uk/categories/technology/</link>
     <description>Recent content in Technology on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Thu, 25 Apr 2019 17:40:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Azure Cloud Shell</title>
-      <link>http://localhost:1313/posts/2019/04/25/introduction-to-azure-cloud-shell/</link>
+      <link>https://tenbulls.co.uk/posts/2019/04/25/introduction-to-azure-cloud-shell/</link>
       <pubDate>Thu, 25 Apr 2019 17:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2019/04/25/introduction-to-azure-cloud-shell/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2019/cloudshell.jpg&#34; alt=&#34;On the beach&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In my last couple of posts, I have described the remote management of Azure through the command line from what was essentially a fat (or thick) client. This gives you an awful lot of scripting and automation control over the platform by using either the Azure CLI or PowerShell through the PowerShell Az Module. This is perfect for most cases, but what if you are using an unsupported Operating System or you only have access to the browser (perhaps via a thin client)?&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2019/04/25/introduction-to-azure-cloud-shell/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/cloudshell.jpg&#34; alt=&#34;On the beach&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In my last couple of posts, I have described the remote management of Azure through the command line from what was essentially a fat (or thick) client. This gives you an awful lot of scripting and automation control over the platform by using either the Azure CLI or PowerShell through the PowerShell Az Module. This is perfect for most cases, but what if you are using an unsupported Operating System or you only have access to the browser (perhaps via a thin client)?&lt;/p&gt;</description>
     </item>
     <item>
       <title>AzureRM, Azure CLI and the PowerShell Az Module</title>
-      <link>http://localhost:1313/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
+      <link>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
       <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing Azure CLI on Linux Mint</title>
-      <link>http://localhost:1313/posts/2018/12/01/installing-azure-cli-on-linux-mint/</link>
+      <link>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</link>
       <pubDate>Sat, 01 Dec 2018 21:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2018/12/01/installing-azure-cli-on-linux-mint/</guid>
+      <guid>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</guid>
       <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create multiple dashboards in the Azure Portal</title>
-      <link>http://localhost:1313/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</link>
+      <link>https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</link>
       <pubDate>Thu, 01 Nov 2018 10:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</guid>
+      <guid>https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</guid>
       <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Using the new Azure Dashboard favourites and tiles</title>
+      <link>https://tenbulls.co.uk/posts/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/</link>
+      <pubDate>Mon, 29 Feb 2016 14:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/</guid>
+      <description>&lt;p&gt;The new Azure Portal represents a huge improvement over the old Classic Azure Portal in terms of User eXperience and performance.&lt;/p&gt;&#xA;&lt;p&gt;If you were used to the old portal you’ll most probably have got to like the quirks and simplicity, but the new portal has a lot to offer and does a great job in providing a more customised and colourful end-user experience.&lt;/p&gt;&#xA;&lt;p&gt;In this post I shall discuss some of the functionality that will make your Azure UX experience more productive and enjoyable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem removing files from TempDB</title>
+      <link>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</link>
+      <pubDate>Wed, 13 Jan 2016 13:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</guid>
+      <description>&lt;p&gt;I recently ran into an interesting problem while attempting to remove approximately half of the TempDB data files configured in a testing environment. As you might expect, there are various SQL Server tasks that are performed infrequently by a DBA, and this is a good example of one of them. Most environments have usually been misconfigured with too few TempDB data files or wrongly sized usually resulting in the classic allocation page contention problems (which is explained by this excellent SQLSkills article &lt;a href=&#34;https://www.sqlskills.com/blogs/paul/the-accidental-dba-day-27-of-30-troubleshooting-tempdb-contention/&#34;&gt;The Accidental DBA (Day 27 of 30): Troubleshooting: Tempdb Contention&lt;/a&gt;), but this particular environment had been temporarily over provisioned with disks and TempDB data files (for testing purposes).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Incrementing SQL Sequences</title>
+      <link>https://tenbulls.co.uk/posts/2015/12/22/incrementing-sql-sequences/</link>
+      <pubDate>Tue, 22 Dec 2015 12:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/12/22/incrementing-sql-sequences/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ff878091(v=sql.110).aspx&#34;&gt;Sequences&lt;/a&gt; were first introduced in SQL Server 2012 and are a way to improve performance in situations that would have traditionally been implemented using the column based identity property. One of the biggest downfalls of the identity property is that new values are generated on inserts meaning that they are also transactionally dependent. Sequences on the other hand are not and allow for caching and many other benefits which you can compare and contrast in this really good SQL Server Pro magazine article by Itzik titled &lt;a href=&#34;https://sqlmag.com/blog/sql-server-2012-t-sql-glance-sequences&#34;&gt;SQL Server 2012 T-SQL at a Glance – Sequences&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Restoring CDC enabled databases</title>
+      <link>https://tenbulls.co.uk/posts/2015/12/18/restoring-cdc-enabled-databases/</link>
+      <pubDate>Fri, 18 Dec 2015 17:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/12/18/restoring-cdc-enabled-databases/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/surprised.jpg&#34; alt=&#34;Surprised&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Performing database and transaction log backups (and restores) are the meat and veg of a DBA’s responsibilities and if you are a seasoned professional I am sure you will have performed those operations ad-infinitum. Being complacent is perhaps the biggest mistake you can make as a &lt;em&gt;“Guardian of Data”&lt;/em&gt; so you should always be prepared for the unexpected&amp;hellip;&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-happened&#34;&gt;What happened&lt;/h1&gt;&#xA;&lt;p&gt;Several years ago in a Disaster Recovery scenario, I was asked to perform the migration of a large database which was used for a fairly complex ETL process that was both undocumented and something that the DBA team had no insight or involvement.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Bitesize SSIS - Passing SSIS variables into script components</title>
-      <link>http://localhost:1313/posts/2015/11/30/bitesize-ssis-1/</link>
+      <link>https://tenbulls.co.uk/posts/2015/11/30/bitesize-ssis-1/</link>
       <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/11/30/bitesize-ssis-1/</guid>
+      <guid>https://tenbulls.co.uk/posts/2015/11/30/bitesize-ssis-1/</guid>
       <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</title>
-      <link>http://localhost:1313/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</link>
+      <link>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</link>
       <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</guid>
-      <description>&lt;p&gt;Have you been attempting (and failing) to install &lt;a href=&#34;https://www.oracle.com/us/technologies/linux/overview/index.html&#34;&gt;Oracle Unbreakable Linux&lt;/a&gt; as a Virtual Machine under Hyper-V and cannot figure out what is wrong?&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;&#xA;&lt;p&gt;If you are receiving the following message:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device. Failed Secure Boot Verification.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE Network Boot using IPv4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;......&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE-E18: Server response timeout.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI Network.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No Operating System was Loaded.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Press a key to retry the boot sequence...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/secure-boot-verification.jpg&#34; alt=&#34;Secure Boot verification&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</guid>
+      <description>&lt;p&gt;Have you been attempting (and failing) to install &lt;a href=&#34;https://www.oracle.com/us/technologies/linux/overview/index.html&#34;&gt;Oracle Unbreakable Linux&lt;/a&gt; as a Virtual Machine under Hyper-V and cannot figure out what is wrong?&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;&#xA;&lt;p&gt;If you are receiving the following message:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device. Failed Secure Boot Verification.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE Network Boot using IPv4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;......&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE-E18: Server response timeout.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI Network.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No Operating System was Loaded.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Press a key to retry the boot sequence...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/secure-boot-verification.jpg&#34; alt=&#34;Secure Boot verification&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to install SharePoint 2013 on Windows 2012R2</title>
-      <link>http://localhost:1313/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
+      <link>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
       <pubDate>Mon, 30 Mar 2015 07:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</guid>
+      <guid>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</guid>
       <description>&lt;p&gt;&lt;em&gt;If you want to jump straight to the condensed solution, then please feel free to go to the &lt;a href=&#34;#condensed-installation&#34;&gt;Condensed Installation instructions&lt;/a&gt; below. If you find this post useful or have any feedback then please leave me a comment so that I know my efforts were not wasted!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Installing Microsoft Backoffice products on Microsoft Operating Systems has over the years become a much easier proposition and is largely the reason why SQL Server got the reputation of being “easy”. Except it isn’t. Ask any idiot to install a SQL Server instance and create a database and there is a good chance that they will succeed, but ask them to install SQL Server correctly and configured to best practice, suddenly the knowledge gap becomes a little more obvious.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing the boot order of generation 2 Virtual Machines in Systems Center VMM and Hyper-V</title>
-      <link>http://localhost:1313/posts/2015/02/24/scvmm_boot_order/</link>
+      <link>https://tenbulls.co.uk/posts/2015/02/24/scvmm_boot_order/</link>
       <pubDate>Tue, 24 Feb 2015 14:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/02/24/scvmm_boot_order/</guid>
+      <guid>https://tenbulls.co.uk/posts/2015/02/24/scvmm_boot_order/</guid>
       <description>&lt;p&gt;On Windows 2012 R2 hosts, Hyper-V introduced the concept of generation 2 Virtual Machines, which provide various &lt;a href=&#34;https://technet.microsoft.com/library/dn282285.aspx&#34;&gt;benefits and a set of restrictions&lt;/a&gt; to those VMs configured in this way. In most cases the performance improvements and functionality they provide make it desirable to create new Virtual Machines as generation 2 -assuming that you will run them on generation 2 capable hosts which at this time of writing is Windows 2012 R2 Servers! Furthermore you will also be restricted by your guest operating system because Windows Server 2008 R2 and Windows 7 are not supported by generation 2. There are also further considerations to take into account with regards to Linux support by Hyper-V and we shall look at that topic another time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fixing Flash in Chrome/ Chromium on Linux</title>
-      <link>http://localhost:1313/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
+      <link>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/parliament_not_working.jpg&#34; alt=&#34;Flash not working&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When Linux works it works well, and when it doesn’t it can be a real pain in the backside. Usually though, the failings are not necessarily the fault of the OS, but more the fault of the way in which packages, snap-ins, extensions and other third party code is deployed. Granted, it doesn’t really help that there are numerous methods and &lt;em&gt;Package Managers&lt;/em&gt; available to install applications, codecs and their ilk, but often the fault lies partially with the Third-party vendors for not making the process as easy and transparent as possible (especially for the less technical savvy amongst us).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Messy Meta-Described Views</title>
-      <link>http://localhost:1313/posts/2014/06/18/view-pugh/</link>
+      <link>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</link>
       <pubDate>Wed, 18 Jun 2014 15:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/06/18/view-pugh/</guid>
+      <guid>https://tenbulls.co.uk/posts/2014/06/18/view-pugh/</guid>
       <description>&lt;p&gt;It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn’t know about. Some of it good and some of it bad, some of it just meh&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;The other day I was stumbling around a new environment, when I decided to use the GUI to script out an existing set of views when I saw something that had me scratching my head. Underneath the actual view definition was the following (some names removed to protect the innocent).&lt;/p&gt;</description>
     </item>
     <item>
       <title>10 reasons why I HA-te you!</title>
-      <link>http://localhost:1313/posts/2014/04/25/10-reasons-why-i-hate-you/</link>
+      <link>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</link>
       <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/04/25/10-reasons-why-i-hate-you/</guid>
+      <guid>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</guid>
       <description>&lt;p&gt;Designing, planning, deploying, administrating and recovering (known from now on as &lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;P&lt;/strong&gt;lan&lt;strong&gt;D&lt;/strong&gt;e&lt;strong&gt;AR&lt;/strong&gt; – and pronounced in the tone of a Caribbean Grandma 🙂 ) a SQL Server High Availability and Disaster Recovery (HADR) solution is really not an easy thing to implement and maintain. There are many reasons for this and whilst (ultimately) our business is only interested in an almost permanent unbroken connectivity to the Database Engine for its Applications or Middleware Clients, the reality is that our databases/s play just a very small part of the whole availability story when maintaining one of these solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ROLLBACK damn you!</title>
-      <link>http://localhost:1313/posts/2014/03/05/rollback-damn-you/</link>
+      <link>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</link>
       <pubDate>Wed, 05 Mar 2014 09:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/03/05/rollback-damn-you/</guid>
-      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</guid>
+      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Read your old CHM files from network storage on Windows</title>
-      <link>http://localhost:1313/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
+      <link>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</link>
       <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
+      <guid>https://tenbulls.co.uk/posts/2014/02/11/read-your-old-chm-files-from-network-storage-on-windows-8/</guid>
       <description>&lt;p&gt;I was just recently going through my old SQL Server documents and reference material and attempting to organize and tidy things up, when I re-discovered a huge collection of literature that even now is incredibly useful. The only problem is that many of these old electronic books and files are stored in &lt;em&gt;CHM&lt;/em&gt; format. Those old timers of you will remember that this was how SQL Server Books online was deployed up to and including SQL Server 2000.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why don’t you go and LOCK OFF!</title>
-      <link>http://localhost:1313/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
+      <link>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
       <pubDate>Wed, 17 Jul 2013 13:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
+      <guid>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
       <description>&lt;p&gt;No this is not a Hekaton post 🙂 -perhaps I should have saved this title for another rainy day.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server concurrency is a particularly difficult subject to master and understanding the result of your actions can be confounded by some of SQL Server’s special behaviors and quirks that I so often like to talk and write about.&lt;/p&gt;&#xA;&lt;p&gt;As some of my &lt;del&gt;followers&lt;/del&gt; stalkers out there may remember, one of my favorite demonstrations I like to give is during my&#xA;&lt;a href=&#34;https://www.sqlpass.org/summit/2012/Sessions/SessionDetails.aspx?sid=2816&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking, and Isolation&lt;/a&gt; session -last performed at the &lt;a href=&#34;https://www.sqlpass.org/summit/2012/&#34;&gt;SQLPASS 2012 Summit&lt;/a&gt; and &lt;a href=&#34;https://www.sqlsaturday.com/viewsession.aspx?sat=229&amp;amp;sessionid=14975&#34;&gt;SQLSaturday #229 Dublin&lt;/a&gt; where in a little piece of code I discuss whether a transaction is really Atomic (or not). For anyone reading this paragraph who has immediately answered “ALWAYS” -then my friend you are in serious trouble with your code-base. And I am not even talking about the use of lower levels of isolation to perform dirty reads within your transaction here, isolation does not effect a transaction’s atomicity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Selected again for the PASS Summit</title>
-      <link>http://localhost:1313/posts/2013/05/22/see-you-in-charlotte/</link>
+      <link>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</link>
       <pubDate>Wed, 22 May 2013 15:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/05/22/see-you-in-charlotte/</guid>
+      <guid>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</guid>
       <description>&lt;p&gt;Well it is that time of year again where the results of the PASS Summit 2013 session selections become public. This year was of course a very difficult one to get selected since (I believe) a record number of submissions were received -but thankfully I still managed to knock one session (out of four) into the back of the net. I would also like to take this opportunity to congratulate all the other selected Speakers (especially if this is your first time at the Summit) and commiserations to all those who were not successful on this occasion. I know the usual inquests and finger pointing will naturally ensue by a small handful of people who feel personally aggrieved that they weren’t successful, but believe me when I say that the process is as fair as I could expect, but not without room for improvement (more on this very soon in a follow up post).&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to run SQL Server 2012 on the Kindle Fire HD</title>
-      <link>http://localhost:1313/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</link>
+      <link>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</link>
       <pubDate>Mon, 01 Apr 2013 12:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</guid>
+      <guid>https://tenbulls.co.uk/posts/2013/04/01/how-to-run-sql-server-2012-on-the-kindle-fire-hd/</guid>
       <description>&lt;p&gt;&lt;mark&gt;Warning! Please do not attempt to perform any of the following steps on production systems. This information is provided purely for reference and any attempt to replicate these actions on your own hardware will be purely at your own risk!&lt;/mark&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the biggest benefits to the latest release of SQL Server (and reasons to upgrade) is that Windows Server Core is now a supported option. For those of you who are not yet familiar with Server Core, it could be best described as a reduced GUI version of Microsoft Windows. In other words, if you like the command line then you are in for a very big treat! Regular visitors to these pages will most likely be very aware of my passion for Windows Server Core and more to the point running SQL Server on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upload files to your Azure VM instance</title>
-      <link>http://localhost:1313/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</link>
+      <link>https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</link>
       <pubDate>Wed, 20 Mar 2013 17:19:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</guid>
+      <guid>https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</guid>
       <description>&lt;p&gt;Sometimes some of the simplest tips are the best, and recently I was trying to figure out just how to upload SQL Server 2012 Enterprise/ Developer Edition installation files to my Windows Azure Virtual Machine since my pre-provisioned copy of SQL Server (Evaluation Edition) had expired.&lt;/p&gt;&#xA;&lt;p&gt;As it turned out I realized pretty quickly that I didn’t need to bother since the VM also comes with a copy of SQL Server 2012 Evaluation Edition media pre-loaded at the root of the &lt;em&gt;C:\&lt;/em&gt; drive. All I had to do therefore was to grab an existing Developer Edition license key and run the Evaluation Edition media setup and step through the Edition Upgrade to &lt;em&gt;convert&lt;/em&gt; my existing instance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Baby baby baby, where did our ROLLBACK go?</title>
-      <link>http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
+      <link>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
       <pubDate>Tue, 23 Oct 2012 22:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Curious Case of the Non-Escalating transaction locks</title>
-      <link>http://localhost:1313/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
+      <link>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
       <pubDate>Wed, 17 Oct 2012 13:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
       <description>&lt;p&gt;SQL Server has many facets and behaviors that are often misunderstood and do not always work quite as we may have expected. At first you may believe that you understand the mechanics, only to realize after a little bit of delving deeper that your comprehension was wrong.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server Lock Escalation is one of these commonly misunderstood topics, and most recently after doing a little investigation into a few subjects related to escalation I was shocked and surprised in equal measure to find that things were not working quite as I expected.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using the SQL Server Installation Wizard on Server Core!</title>
-      <link>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
+      <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
       <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
       <description>&lt;p&gt;Ever heard the phrase &lt;em&gt;&amp;ldquo;just because you can, doesn’t mean you should?&amp;rdquo;&lt;/em&gt;. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn’t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I’m getting ahead of myself, first let me describe our scenario.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Remember your OS when upgrading to SQL 2012</title>
-      <link>http://localhost:1313/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</link>
+      <link>https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</link>
       <pubDate>Tue, 24 Apr 2012 19:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/04/24/remember-your-os-when-upgrading-to-sql-2012/</guid>
       <description>&lt;p&gt;Probably as far back as the end of last year when I first started putting material together for my Enter the Dragon and Moves like Jagger presentations and giving very early mash up presentations of them combined together, I started emphasising one very important upgrade consideration which is very often ignored. It is also a fact that is quite nicely touched upon by Glenn Berry (&lt;a href=&#34;https://twitter.com/#!/glennalanberry&#34;&gt;twitter&lt;/a&gt;|&lt;a href=&#34;https://sqlserverperformance.wordpress.com/&#34;&gt;blog&lt;/a&gt;) in his excellent book SQL Server Hardware and if you have yet to discover its unique delights then I strongly advise you to check it out.&lt;/p&gt;</description>
     </item>
     <item>
       <title>whoisactive on SQL 2000</title>
-      <link>http://localhost:1313/posts/2012/04/17/whos-active-on-sql-2000/</link>
+      <link>https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/</link>
       <pubDate>Tue, 17 Apr 2012 18:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/04/17/whos-active-on-sql-2000/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/04/17/whos-active-on-sql-2000/</guid>
       <description>&lt;p&gt;Yes yes yes I &lt;em&gt;know&lt;/em&gt; we are currently on SQL 2012 but just hear me out for a second…&lt;/p&gt;&#xA;&lt;p&gt;I think I am probably one of the only people on the planet who has not (yet) used Adam Machanic’s (&lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://sqlblog.com/blogs/adam_machanic/archive/2011/04/27/who-is-active-v11-00-a-month-of-activity-monitoring-part-27-of-30.aspx&#34;&gt;twitter&lt;/a&gt;) whoisactive Stored Procedure. One of the reasons for this is that going right back to the days of SQL Server 2000 I had rolled my own stored procedure which worked very nicely and did everything that I ever needed it to.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Schedule so far</title>
-      <link>http://localhost:1313/posts/2012/04/13/schedule-so-far/</link>
+      <link>https://tenbulls.co.uk/posts/2012/04/13/schedule-so-far/</link>
       <pubDate>Fri, 13 Apr 2012 19:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/04/13/schedule-so-far/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/04/13/schedule-so-far/</guid>
       <description>&lt;p&gt;Recently I have been starting to get a little stressed about whether or not I have a speaking engagement coming up.&lt;/p&gt;&#xA;&lt;p&gt;Whilst I use &lt;a href=&#34;https://www.google.com/calendar&#34;&gt;Google Calendar&lt;/a&gt; and most recently have set up a premium &lt;a href=&#34;https://www.rememberthemilk.com/&#34;&gt;Remember the Milk&lt;/a&gt; account to organise my life a little better, I thought it was probably a good idea to see where I am with my past and forth coming presentations for the first half of this year.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weight doesnt ALWAYS have to be AlwaysOn</title>
-      <link>http://localhost:1313/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>
+      <link>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</link>
       <pubDate>Thu, 05 Apr 2012 15:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/04/05/weight-doesnt-always-have-to-be-alwayson/</guid>
       <description>&lt;p&gt;One thing I keep hearing myself mentioning more and more in conversation (and most recently in a discussion group at &lt;a href=&#34;https://sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; a few days ago) is the ability to configure your Windows Cluster Quorum for situations where each cluster node may not be of equal importance.&lt;/p&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/default.aspx&#34;&gt;SQL Server 2012&lt;/a&gt; we have various high availability enhancements and improvements and most of these are branded under the term &lt;a href=&#34;https://www.microsoft.com/sqlserver/en/us/solutions-technologies/mission-critical-operations/SQL-Server-2012-high-availability.aspx&#34;&gt;AlwaysOn&lt;/a&gt;. In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won’t bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to remove your VirtualBox machines BLOAT</title>
-      <link>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</link>
+      <link>https://tenbulls.co.uk/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</link>
       <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</guid>
       <description>&lt;p&gt;Well I guess its been a long time since I have offered you a useful nugget of information or help, so I have decided to haul myself to the keyboard and provide a useful tip that I have been saving for a rainy day. Regular readers to this blog will certainly be no stranger to my positively strong feelings towards Oracle’s VirtualBox and I have been a user of this product for more years than I can remember. The tip I am about to describe will use VirtualBox in the examples but it should be transferable to any virtualisation product that has the ability to shrink back virtual disks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are the impersonation rights for my database users?</title>
-      <link>http://localhost:1313/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</link>
+      <link>https://tenbulls.co.uk/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</link>
       <pubDate>Mon, 30 Jan 2012 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/01/30/what-are-the-impersonation-rights-for-my-database-users/</guid>
       <description>&lt;p&gt;From time to time I get thrown the odd request to provide various bits of information from the SQL Server environment and most recently I was asked about a group of databases that required migrating to another instance. For some reason there had been a little bit of a panic about the impersonation rights in each of the databases and their configuration. The request was &lt;em&gt;*ahem*&lt;/em&gt; kindly passed to me. The number of database users was huge in each database and performing a manual lookup through the SSMS GUI got rather tiresome very quickly (after about the second user).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Visualising disk space usage</title>
-      <link>http://localhost:1313/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
+      <link>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</link>
       <pubDate>Tue, 13 Dec 2011 22:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/12/13/t-sql-tuesday-25-the-best-tool-youve-never-used/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;T-SQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wow, it&amp;rsquo;s been a long time since my last T-SQL Tuesday post and I have disappointingly missed it 5 times for one reason or another. Still, the important thing is that I am back people!&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen White (&lt;a href=&#34;https://sqlblog.com/blogs/allen_white/default.aspx&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLRunr&#34;&gt;twitter&lt;/a&gt;) who many of you will know for his PowerShell, SMO and SQL Server expertise.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Ironically for this post (or the subject at least) I was saving up towards a larger Data Visualisation article that I was putting together, but when I read the subject of this months T-SQL Tuesday I just knew it was time to spill the beans.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keep your Availability Group listener name short</title>
-      <link>http://localhost:1313/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</link>
+      <link>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</link>
       <pubDate>Fri, 25 Nov 2011 00:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/11/25/lets-keep-it-short-problem-creating-availability-group-listeners/</guid>
       <description>&lt;p&gt;Someone once said to me that he thought I should work as a GUI tester since I always seemed to find problems in the UI -after I had highlighted a problem to him that I&amp;rsquo;d found in Linux Gnome which he had never seen before &lt;em&gt;&amp;ldquo;after all his years working with the product&amp;rdquo;&lt;/em&gt;. I guess there is an element of truth to that statement since I really do like clicking around and trying different things. However I suspect that my latest discovery won&amp;rsquo;t necessarily be one of those obscure problems that no-one else comes across since it is such an obvious problem and fairly easy to run into.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lock Compatibility Matrix 1.2</title>
-      <link>http://localhost:1313/posts/2011/11/17/compatibility-matrix-1-2/</link>
+      <link>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</link>
       <pubDate>Thu, 17 Nov 2011 22:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/11/17/compatibility-matrix-1-2/</guid>
-      <description>&lt;p&gt;A couple of months back I published my version of SQL Server&amp;rsquo;s Lock Compatibility Matrix under the post &lt;a href=&#34;http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix&#34;&gt;Fancy a decent Compatibility Matrix?&lt;/a&gt; since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.&lt;/p&gt;&#xA;&lt;p&gt;One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and &lt;em&gt;told the story&lt;/em&gt; of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&amp;gt; GO (i.e. lock grant), RED -&amp;gt; STOP (i.e. lock wait). BUT that doesn&amp;rsquo;t help colour blind people very much does it!&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</guid>
+      <description>&lt;p&gt;A couple of months back I published my version of SQL Server&amp;rsquo;s Lock Compatibility Matrix under the post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix&#34;&gt;Fancy a decent Compatibility Matrix?&lt;/a&gt; since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.&lt;/p&gt;&#xA;&lt;p&gt;One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and &lt;em&gt;told the story&lt;/em&gt; of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&amp;gt; GO (i.e. lock grant), RED -&amp;gt; STOP (i.e. lock wait). BUT that doesn&amp;rsquo;t help colour blind people very much does it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fancy a decent Compatibility Matrix?</title>
-      <link>http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</link>
+      <link>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</link>
       <pubDate>Tue, 27 Sep 2011 21:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</guid>
-      <description>&lt;p&gt;Have you ever taken a look at Microsoft&amp;rsquo;s published &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms186396.aspx&#34;&gt;compatibility matrix&lt;/a&gt; for SQL Server lock compatibility? If you have, then I don&amp;rsquo;t need to tell you that it sucks in a very big way.&lt;/p&gt;&#xA;&lt;p&gt;Have no fear, I have painstakingly redrawn at better one (via PowerPoint no less!) and am making available to you totally free of charge as a lovely PDF slide found via &lt;a href=&#34;http://localhost:1313/documents/readpastfuriouslockcompatibilitymatrix.pdf&#34;&gt;here&lt;/a&gt;&amp;hellip; Why you ask? Because I love you all!&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</guid>
+      <description>&lt;p&gt;Have you ever taken a look at Microsoft&amp;rsquo;s published &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms186396.aspx&#34;&gt;compatibility matrix&lt;/a&gt; for SQL Server lock compatibility? If you have, then I don&amp;rsquo;t need to tell you that it sucks in a very big way.&lt;/p&gt;&#xA;&lt;p&gt;Have no fear, I have painstakingly redrawn at better one (via PowerPoint no less!) and am making available to you totally free of charge as a lovely PDF slide found via &lt;a href=&#34;https://tenbulls.co.uk/documents/readpastfuriouslockcompatibilitymatrix.pdf&#34;&gt;here&lt;/a&gt;&amp;hellip; Why you ask? Because I love you all!&lt;/p&gt;</description>
     </item>
     <item>
       <title>When should you use NOLOCK?</title>
-      <link>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</link>
+      <link>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</link>
       <pubDate>Wed, 14 Sep 2011 12:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</guid>
       <description>&lt;p&gt;Well the quick answer to that question is never. And there you have it, the quickest blog post in history (perhaps!).&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip;Except that I should really have said &lt;em&gt;&amp;ldquo;When should you use &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation or hint?&amp;rdquo;&lt;/em&gt; and then the question takes a little more of a surprising turn. Let me first start and explain why I have categorically ruled against the use of &lt;code&gt;NOLOCK&lt;/code&gt;. The reason, is that at some point in the dim and distant future Microsoft may decide to remove this hint from the product. If they could do it today, they probably would; the only thing that is really stopping them is the numerous lines of external T-SQL code that dirtys the floors of many Development teams around the world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to increase your OS Virtual Processors</title>
-      <link>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
       <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
       <description>&lt;p&gt;There usually comes a time in your Virtual Machine life-cycle that you think&amp;hellip; &lt;em&gt;I wish I&amp;rsquo;d given that baby more processors for me to play with!&lt;/em&gt; This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as &lt;em&gt;Processor Affinity&lt;/em&gt; and &lt;em&gt;MAXDOP&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Database corruption - Your mistake, my problem!</title>
-      <link>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</link>
       <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/06/14/t-sql-tuesday-19-your-mistake-my-problem/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This month&amp;rsquo;s T-SQL Tuesday is brought to you by Allen Kinsel (&lt;a href=&#34;https://www.allenkinsel.com&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlinsaneo&#34;&gt;twitter&lt;/a&gt;) who contributes a great amount of his time to the SQL Community and so we can only say a huge thank you for your efforts and keep up the good work! I&amp;rsquo;ve not been able to participate in T-SQL Tuesday for a while so it is good to catch this one which is made easier by keeping a close eye on what Rob Farley (&lt;a href=&#34;https://sqlblog.com/blogs/rob_farley/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/rob_farley&#34;&gt;twitter&lt;/a&gt;) is up to because he is always on time every time! Here&amp;rsquo;s my entry&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Add metadata to your audio files</title>
-      <link>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</link>
       <pubDate>Thu, 09 Jun 2011 20:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
-      <description>&lt;p&gt;In my recent post &lt;a href=&#34;http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/06/09/add-meta-to-your-audio-training-files/</guid>
+      <description>&lt;p&gt;In my recent post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos.md&#34;&gt;How to rip audio from your training videos&lt;/a&gt; I gave Linux a very big thumbs up for providing users with a very easy (free and fast) route to rip audio from our SQL Server training videos. Now as much as I like Linux, it is not the answer to every single problem. In fact it is undeniable that Microsoft has established Windows as a platform of choice for many very polished and useful third party applications -free or otherwise. Sometimes finding open source equivalents on Linux can be a real pain in the posterior since the reality is that every now and again the best application is a Windows application (take SQL Server as an example 🙂) and the application I will demonstrate today is exactly that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to rip audio from your training videos</title>
-      <link>http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
+      <link>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</link>
       <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/06/07/how-to-rip-audio-from-your-training-videos/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Although the following post is Linux related my dear SQL Server geek, you might just find what I am about to say useful in your pursuit of SQL Server greatness. If this possibility doesn&amp;rsquo;t interest you then I advise to stop reading right&amp;hellip; now!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t normally publish short blog posts and as a result, when I am really busy, it means nothing gets posted due to the large amount of time the bigger articles take. However from time to time I see something that I really want to shout about and this is one of those times.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using SQL Server Scalable Shared Database</title>
-      <link>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
+      <link>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
       <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don&amp;rsquo;t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn&amp;rsquo;t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don&amp;rsquo;t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn&amp;rsquo;t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to run SQL Server on Linux</title>
-      <link>http://localhost:1313/posts/2011/04/01/how-to-run-sql-server-on-linux/</link>
+      <link>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</link>
       <pubDate>Fri, 01 Apr 2011 14:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/04/01/how-to-run-sql-server-on-linux/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/04/01/how-to-run-sql-server-on-linux/</guid>
       <description>&lt;p&gt;&lt;em&gt;UPDATE 2011-04-10: PLEASE NOTE THIS WAS AN APRILS FOOL JOKE 🙂&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Well I have finally cracked it, after years of trying (and a little help from the R2 release) to get SQL Server to install and run happily on the Linux Platform. I could hardly believe it when it all came together, but I&amp;rsquo;m very pleased that it has. What is even more exciting is that the performance of the SQL Engine is going through the roof.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft Business Intelligence Seminar 2011</title>
-      <link>http://localhost:1313/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</link>
+      <link>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</link>
       <pubDate>Tue, 29 Mar 2011 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</guid>
+      <guid>https://tenbulls.co.uk/enlightenment/presentation-notepad/microsoft-bi-seminar-2011/</guid>
       <description>&lt;p&gt;The seminar was given on the Microsoft Campus at Reading UK on the 3rd March 2011. The presentation was split into four sections and the end of each section represents a real world intermission. You would be advised to download the slides (download link in notes) and follow the notes as you step through the slides. I personally think there is some excellent information embedded in these notes, your job now oh dear Business Analyst is start “data mining” for what is important and what is not! Within these notes you will also find a video link to last years presentation. Unfortunately due to the &lt;em&gt;NDA&lt;/em&gt; nature of some of the information talked about this years session, it was not recorded.&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtualBox random behaviour</title>
-      <link>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</link>
       <pubDate>Mon, 21 Mar 2011 13:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; If you want to learn something then stop reading this post now&amp;hellip; however if you (like me) take enjoyment in the weird, unusual, and unexplained, then please continue reading on.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Regular readers of my ramblings will by now appreciate that I love VirtualBox and I&amp;rsquo;ve been using it for a considerable amount of time -long before those Oracle boys muscled in on Sun, and just recently I saw something that I found a little puzzling.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A visit to the Microsoft Business Intelligence Seminar 2011</title>
-      <link>http://localhost:1313/posts/2011/03/09/business_intelligence_seminar_2011/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</link>
       <pubDate>Wed, 09 Mar 2011 12:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/09/business_intelligence_seminar_2011/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/09/business_intelligence_seminar_2011/</guid>
       <description>&lt;p&gt;Last week I visited Microsoft for the Microsoft Business Intelligence Seminar presentation given by  Rafal Lukawiecki (&lt;a href=&#34;https://twitter.com/rafaldotnet&#34;&gt;Twitter&lt;/a&gt;|&lt;a href=&#34;https://rafal.net/&#34;&gt;Blog&lt;/a&gt;). I must say that I found this one of the most valuable full day presentations that I have watched in a VERY long time for many different reasons. It is probably fair to say that I have probably not engaged BI as much as I probably should have over the last few years, since I have been focused on many other things. However it was plain to see that much of Rafal&amp;rsquo;s vision for the future of BI in IT was a very real possibility and as such is a compelling reason for me to re-engage. Certainly since the introduction of SQL 2000 Analysis Services, I am impressed by the pace in which the technology has matured.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SELECT MediaType, SUM(Content) FROM #Sources GROUP BY MediaType</title>
-      <link>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</link>
       <pubDate>Tue, 08 Mar 2011 00:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/08/t-sql_tuesday_16/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/03/08/t-sql_tuesday_16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Yes people, for a change I have written my T-SQL Tuesday contribution several days in advance, ready for that very satisfying &lt;em&gt;Publish&lt;/em&gt; button to be pressed. But why you might ask? (OK well you didn&amp;rsquo;t ask but I&amp;rsquo;m going to tell you anyway). 🙂&lt;/p&gt;&#xA;&lt;p&gt;The reason that I decided to make that extra special bit of effort to write something in advance of Tuesday was precisely because I didn&amp;rsquo;t have a Scooby Doo (clue) of what exactly I was going to write about! This was thanks to the chosen subject of the month &lt;em&gt;Aggregation&lt;/em&gt; by the most excellent grrlgeek – Jes Borland (&lt;a href=&#34;https://twitter.com/#!/grrl_geek&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://blogs.lessthandot.com/index.php/All/?author=420&#34;&gt;Blog&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Categorise your SQL Agent jobs</title>
-      <link>http://localhost:1313/posts/2011/03/04/job-category/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/04/job-category/</link>
       <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/04/job-category/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/04/job-category/</guid>
       <description>&lt;p&gt;Perhaps you are one of those people who&amp;rsquo;s house is immaculate? The lid is firmly placed back on the toothpaste, shoes left in a neat pile, coat in the cupboard. You know the sort of thing? Well I&amp;rsquo;m not quite like that but I try to be. Organized effort is a good thing and although it might not be obvious at the time can make life so much more easier further down the line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clustering nodes on different subnets</title>
-      <link>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</link>
       <pubDate>Thu, 17 Feb 2011 19:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/17/clusterin-nodes-on-different-subnets/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s rather ironic that the answer to a question that came my way recently, had been sitting in my feed-reader for the last month. Apart from the length of time that the item/s had been sitting there, I had opened them on numerous occasions and re-marked as &lt;em&gt;unread&lt;/em&gt; because I believed they needed more than just a quick skim.&lt;/p&gt;&#xA;&lt;p&gt;I consider myself very experienced with SQL Clustering but one cannot know everything about everything. I&amp;rsquo;m endeavouring to fill any gaps in order to be not just very good, but hopefully at some point a leading (or how about &lt;em&gt;the leading&lt;/em&gt; expert in this field. Right now there are only a few people that I am aware of that I consider to be authorities in SQL Clustering -at least people I can learn from, I&amp;rsquo;ve even been using it as long as some of them. There will of course be more experts who I am unaware of but the ones I follow are Geoff Hiten, Allan Hirt and Symon Perriman of course! Whether I achieve my own personal aims will depend upon how many other areas of specialism I lend my eye to, but one can only try and right now I think I&amp;rsquo;ve been heading in the right direction.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating your SQL snapshots</title>
-      <link>http://localhost:1313/posts/2011/02/15/automating-your-snapshots/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</link>
       <pubDate>Tue, 15 Feb 2011 16:49:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/15/automating-your-snapshots/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/15/automating-your-snapshots/</guid>
       <description>&lt;p&gt;A little while ago I was talking to someone about possibilities of reporting from SQL Server to avoid impacting the production server and the very first thing that sprang to mind was for them to use snapshotting from a mirror. They had already considered this option but it was not really viable because an almost real-time reporting solution was required. It wasn&amp;rsquo;t until later that I wondered whether I had not really been precise enough in my explanation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where to go for WAIT stat information</title>
-      <link>http://localhost:1313/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</link>
       <pubDate>Tue, 08 Feb 2011 21:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</guid>
       <description>&lt;p&gt;Fairly recently I was talking with a rather talented SQL Specialist internally at Microsoft and was asked the question by him as to where I get my Wait Stat information from. Query tuning isn&amp;rsquo;t really something I currently am required to do on a regular basis so I tend to get my information as and when I need it (even though I have a couple of articles and urls bookmarked I couldn&amp;rsquo;t particularly reference them in a conversation so perhaps I could go one better and officially post them). My answer then was that I Bing for my Wait Stat references (actually replace that with another search engine – but I was on the MS site!).&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is Disaster Recovery?</title>
-      <link>http://localhost:1313/posts/2011/02/01/what-is-dr/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/</link>
       <pubDate>Tue, 01 Feb 2011 19:39:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/01/what-is-dr/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/01/what-is-dr/</guid>
       <description>&lt;p&gt;I was recently asked &lt;em&gt;&amp;ldquo;What is DR?&amp;rdquo;&lt;/em&gt; when talking about SQL Clustering, Mirroring and the like to someone. The question was asked not because they didn&amp;rsquo;t know but because they were interested in what I thought. The answer is quite simple right?&lt;/p&gt;&#xA;&lt;p&gt;After a moments pause I answered, &lt;em&gt;Disaster Recovery is the ability to restore a companies IT infrastructure to a minimum level required in order for that company to continue operating&lt;/em&gt;. OK so that wasn&amp;rsquo;t a really great response and of course DR means different things to different people, so it is probably important that we can be as explicit as possible. When the business asks &lt;em&gt;&amp;ldquo;Have you got a DR strategy in place&amp;rdquo;&lt;/em&gt;, I personally believe that we should already have established with the Business what they would class as &lt;em&gt;&amp;ldquo;Recovery&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From Gnome to Flux</title>
-      <link>http://localhost:1313/posts/2011/01/25/from-gnome-to-flux/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/25/from-gnome-to-flux/</link>
       <pubDate>Tue, 25 Jan 2011 07:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/25/from-gnome-to-flux/</guid>
-      <description>&lt;p&gt;In between the time I am looking into all things SQL and all things Microsoft I am usually tinkering in Linux, and this usually consists of tweaking my user desktop environment so that I may have a more productive and enjoyable experience – you might recall the post &lt;a href=&#34;http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop&#34;&gt;My Big Fat Greek Desktop&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/my_menu.png&#34; alt=&#34;Flux Menu&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I knew the time would come when I would finally move on from the &lt;a href=&#34;https://www.gnome.org/&#34;&gt;Gnome&lt;/a&gt; desktop on my trusty Linux boxes, and I had toyed with that idea several times without the jump. Over the last few weeks and months I have been trialling &lt;a href=&#34;https://blog.linuxmint.com/?p=1523&#34;&gt;Linux Mint Fluxbox&lt;/a&gt; edition and to be honest I really didn&amp;rsquo;t like it at first. One of the things that struck me was the simplicity of it, but then that was the whole point for the move. Simplicity equals speed and speed equals productivity as long as I could navigate my way around. One of the things that I first hated about this desktop that I now love, was the right-click behaviour on the taskbar. For instance if you right-click any running application on the taskbar, a close signal is sent to the application. At this stage you might be thinking that this would drive you mad and believe me for a small amount of time it did -until I started to realise actually how many times I right-click applications in Gnome or Windows and then do something with the context menu -which is usually always to close anyway. This action has now been reduced to a one-click operation, and I find that I am not constantly minimizing or maximizing windows all the time because I can close applications very quickly and tend to do just that. The other part of the equation (opening applications) can also be performed very quickly by moving the mouse to any part of the blank desktop, some of which can always be found at the bottom left and bottom right of the taskbar and right-clicking. This initially was a real pain until I discovered that the Fluxbox menus can be easily edited and customized to your requirements via a simple text edit of the menu files under the .fluxbox directory in your home.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/25/from-gnome-to-flux/</guid>
+      <description>&lt;p&gt;In between the time I am looking into all things SQL and all things Microsoft I am usually tinkering in Linux, and this usually consists of tweaking my user desktop environment so that I may have a more productive and enjoyable experience – you might recall the post &lt;a href=&#34;https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop&#34;&gt;My Big Fat Greek Desktop&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/my_menu.png&#34; alt=&#34;Flux Menu&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I knew the time would come when I would finally move on from the &lt;a href=&#34;https://www.gnome.org/&#34;&gt;Gnome&lt;/a&gt; desktop on my trusty Linux boxes, and I had toyed with that idea several times without the jump. Over the last few weeks and months I have been trialling &lt;a href=&#34;https://blog.linuxmint.com/?p=1523&#34;&gt;Linux Mint Fluxbox&lt;/a&gt; edition and to be honest I really didn&amp;rsquo;t like it at first. One of the things that struck me was the simplicity of it, but then that was the whole point for the move. Simplicity equals speed and speed equals productivity as long as I could navigate my way around. One of the things that I first hated about this desktop that I now love, was the right-click behaviour on the taskbar. For instance if you right-click any running application on the taskbar, a close signal is sent to the application. At this stage you might be thinking that this would drive you mad and believe me for a small amount of time it did -until I started to realise actually how many times I right-click applications in Gnome or Windows and then do something with the context menu -which is usually always to close anyway. This action has now been reduced to a one-click operation, and I find that I am not constantly minimizing or maximizing windows all the time because I can close applications very quickly and tend to do just that. The other part of the equation (opening applications) can also be performed very quickly by moving the mouse to any part of the blank desktop, some of which can always be found at the bottom left and bottom right of the taskbar and right-clicking. This initially was a real pain until I discovered that the Fluxbox menus can be easily edited and customized to your requirements via a simple text edit of the menu files under the .fluxbox directory in your home.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Start as you mean to go on</title>
-      <link>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</link>
       <pubDate>Tue, 11 Jan 2011 02:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/11/t-sql-tuesday-014-start-as-you-mean-to-go-on/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I cant believe T-SQL Tuesday has come around so soon again, and luckily I have just seen a tweet for someone else&amp;rsquo;s contribution just before I was about to turn into bed (it has just gone 01:17 a.m here in the UK).&lt;/p&gt;&#xA;&lt;p&gt;So people, be grateful that I&amp;rsquo;m sacrificing those precious extra minutes counting sheep just to spout nonsense to you all! Actually you&amp;rsquo;d probably prefer that I just went to bed right? Well tough, I&amp;rsquo;m writing this even if it takes me all night (which I can assure you it won&amp;rsquo;t!).&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to create CD ISO image In Linux</title>
-      <link>http://localhost:1313/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</link>
+      <link>https://tenbulls.co.uk/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</link>
       <pubDate>Tue, 10 Aug 2010 11:21:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</guid>
-      <description>&lt;p&gt;You may recall me mentioning the dd command from a previous post many moons ago in &lt;a href=&#34;http://localhost:1313/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard&#34;&gt;Cloning and Expanding VirtualBox Disks&lt;/a&gt; and saw for yourself how incredibly easy Linux and useful can be at times. Well lets put dd to a similar use -and a common necessity for all of us from time to time, especially in relation to building virtual machines quickly. I am of course talking about creating ISO cd/dvd images from physical media.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/08/10/how-to-create-a-cd-image-in-linux/</guid>
+      <description>&lt;p&gt;You may recall me mentioning the dd command from a previous post many moons ago in &lt;a href=&#34;https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard&#34;&gt;Cloning and Expanding VirtualBox Disks&lt;/a&gt; and saw for yourself how incredibly easy Linux and useful can be at times. Well lets put dd to a similar use -and a common necessity for all of us from time to time, especially in relation to building virtual machines quickly. I am of course talking about creating ISO cd/dvd images from physical media.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Big Fat Greek Desktop</title>
-      <link>http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop/</link>
+      <link>https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop/</link>
       <pubDate>Tue, 03 Aug 2010 22:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/08/03/my-big-fat-greek-desktop/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/08/03/my-big-fat-greek-desktop/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt;&#xA;Although this post may look at first to be about Linux and whilst many of you visiting this post will be either Windows or SQL centric you might think this is not for you. &lt;em&gt;Actually you are exactly the right people to be reading it because I want you to understand that you have options out there open to you&lt;/em&gt;. Your desktop can be a blank piece of paper and you can draw what you want. You are not constrained by software boundaries if you do not want to be. My desktop is all about flexibility, speed and usability. I can do anything I want whether it be Linux, Windows, SQL, Oracle whatever on my beloved desktop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing the Citrix client on Linux</title>
-      <link>http://localhost:1313/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</link>
+      <link>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</link>
       <pubDate>Wed, 12 May 2010 20:53:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</guid>
-      <description>&lt;p&gt;The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&amp;rsquo;s website download the tarball of the Citrix Receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/citrix1.jpg&#34; alt=&#34;Citrix clients&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Extract the tarball&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/citrix2.jpg&#34; alt=&#34;Extract&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip;and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2010/citrix3.jpg&#34; alt=&#34;Run setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message &lt;em&gt;&amp;ldquo;You have not chosen to trust &amp;ldquo;&amp;rdquo;, the issuer of the server&amp;rsquo;s security certificate (SSL error 61).&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</guid>
+      <description>&lt;p&gt;The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&amp;rsquo;s website download the tarball of the Citrix Receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix1.jpg&#34; alt=&#34;Citrix clients&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Extract the tarball&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix2.jpg&#34; alt=&#34;Extract&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip;and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix3.jpg&#34; alt=&#34;Run setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message &lt;em&gt;&amp;ldquo;You have not chosen to trust &amp;ldquo;&amp;rdquo;, the issuer of the server&amp;rsquo;s security certificate (SSL error 61).&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Webcam troubleshooting on Linux</title>
-      <link>http://localhost:1313/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</link>
+      <link>https://tenbulls.co.uk/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</link>
       <pubDate>Mon, 10 May 2010 08:47:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/05/10/skype-on-helena-can-you-see-me-yes-we-can/</guid>
       <description>&lt;p&gt;The other day, due to a long distance friendship, I really thought it was time to try and get Skype up and running on one of my Linux machines (currently running the Helena release of Mint).&lt;/p&gt;&#xA;&lt;p&gt;Upon plugging in the USB cam (a nice little Logitech Quickcam Communicate STX), all initially looked promising with a little blue light briefly coming on.&lt;/p&gt;&#xA;&lt;p&gt;Downloading and installation of Skype occurred without incident, and I then proceeded to set-up my account. Unfortunately when I can to set-up my video device, even though Skype looked like it could see one, clicking the test button just had no effect and the screen was black.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Permanently changing xterm size defaults</title>
-      <link>http://localhost:1313/posts/2009/12/29/changing-xterm-size-defaults-for-good/</link>
+      <link>https://tenbulls.co.uk/posts/2009/12/29/changing-xterm-size-defaults-for-good/</link>
       <pubDate>Tue, 29 Dec 2009 15:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/12/29/changing-xterm-size-defaults-for-good/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a good tip from a fellow blogger which for all those people (like me) who have lots of tweeks and customisations here and there might just get fed up of constantly resizing their xterm settings. Works an absolute treat.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&#34;&gt;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2009/xtermdefaults.jpg&#34; alt=&#34;change xterm defaults&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its just a shame that it is currently not possible to do this through the xterm profile settings.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2009/12/29/changing-xterm-size-defaults-for-good/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a good tip from a fellow blogger which for all those people (like me) who have lots of tweeks and customisations here and there might just get fed up of constantly resizing their xterm settings. Works an absolute treat.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&#34;&gt;http://www.codealpha.net/36/how-to-change-the-gnome-terminal-default-size-ubuntu/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2009/xtermdefaults.jpg&#34; alt=&#34;change xterm defaults&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its just a shame that it is currently not possible to do this through the xterm profile settings.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rejoining split files in Windows and Linux</title>
-      <link>http://localhost:1313/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</link>
+      <link>https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</link>
       <pubDate>Mon, 21 Dec 2009 14:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/12/21/joining-split-files-through-the-os-a-classic-command-example-of-command-line-flexibility/</guid>
       <description>&lt;p&gt;If you frequently download large files in many parts then you are probably not a stranger to HJSplit. This application can be used to connect these parts back together and is quite frankly completely unnecessary since your operating system likely already has a way! So how do you do it?&lt;/p&gt;&#xA;&lt;p&gt;Lets say you have just downloaded the following files:&lt;/p&gt;&#xA;&lt;p&gt;big_file_part.iso.001&#xA;big_file_part.iso.002&#xA;big_file_part.iso.003&lt;/p&gt;&#xA;&lt;p&gt;To join these into one big file:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;In Windows&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A quick ramble about Linux Mint 8</title>
-      <link>http://localhost:1313/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</link>
+      <link>https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</link>
       <pubDate>Tue, 15 Dec 2009 22:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/12/15/mint-8-ramblings-eee-its-rather-good/</guid>
       <description>&lt;p&gt;Well, I&amp;rsquo;m just typing this from my new (extra) desktop setup at home installed to Linux Mint 8.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve got to say that it just keeps getting better. Unlike my recent disappointment with the latest Windows offerings (excepting Windows 7 because it is too early for me to fairly judge), I have been very pleased with the latest Mint offering. Not only does it retain it&amp;rsquo;s familiar interface (which I have to say is why linux may imo one day trump Windows), but it appears crisper, more user friendly and accessible than ever.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cloning and Expanding VirtualBox disks in Linux</title>
-      <link>http://localhost:1313/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</link>
+      <link>https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</link>
       <pubDate>Mon, 09 Nov 2009 13:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/11/09/cloning-and-expanding-virtualbox-disks-its-not-that-hard/</guid>
       <description>&lt;p&gt;You always know when someone is very knowledgeable about a subject by the way in which they answer a question. A simple question is always answered with a simple solution, and this is what happened to me recently when I wanted to expand or migrate a virtualbox virtual disk attached to a real physical disk partition so that I could double my capacity.&lt;/p&gt;&#xA;&lt;p&gt;The problem was that I had built a virtual machine with a 16GB disk and realised pretty quickly that it was not going to be enough, so I posed a question to the Linux gurus &amp;ldquo;how do I clone a disk in Linux?&amp;rdquo;. Sure enough the reply came &amp;ldquo;&lt;code&gt;dd if=source of=destination bb=512&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Started using Linux Mint</title>
-      <link>http://localhost:1313/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</link>
+      <link>https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</link>
       <pubDate>Sun, 19 Jul 2009 21:48:15 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</guid>
+      <guid>https://tenbulls.co.uk/posts/2009/07/19/choosing-the-right-distro-at-last-it-has-been-found/</guid>
       <description>&lt;p&gt;For a very long time now (over 10 years) I&amp;rsquo;ve been trying very hard to &amp;ldquo;get into&amp;rdquo; Linux and there has always been a major obstacle hit along the way to make me put the OS back on the shelf for another day. Over this last year I have been seriously looking into a few distributions and I am very impressed. Whilst everything is not perfect, I have been very surprised how polished everything is begining to look and if I was Microsoft I would be really starting to look over my shoulder.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VirtualBox on tenbulls blog</title>
-    <link>http://localhost:1313/tags/virtualbox/</link>
+    <link>https://tenbulls.co.uk/tags/virtualbox/</link>
     <description>Recent content in VirtualBox on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Wed, 14 Mar 2012 12:43:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to remove your VirtualBox machines BLOAT</title>
-      <link>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</link>
+      <link>https://tenbulls.co.uk/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</link>
       <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/03/14/how-to-remove-you-virtual-machines-bloat/</guid>
       <description>&lt;p&gt;Well I guess its been a long time since I have offered you a useful nugget of information or help, so I have decided to haul myself to the keyboard and provide a useful tip that I have been saving for a rainy day. Regular readers to this blog will certainly be no stranger to my positively strong feelings towards Oracle’s VirtualBox and I have been a user of this product for more years than I can remember. The tip I am about to describe will use VirtualBox in the examples but it should be transferable to any virtualisation product that has the ability to shrink back virtual disks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to increase your OS Virtual Processors</title>
-      <link>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</link>
       <pubDate>Tue, 30 Aug 2011 22:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/08/30/how-to-increase-your-virtual-processors-in-the-os/</guid>
       <description>&lt;p&gt;There usually comes a time in your Virtual Machine life-cycle that you think&amp;hellip; &lt;em&gt;I wish I&amp;rsquo;d given that baby more processors for me to play with!&lt;/em&gt; This is especially true if the Virtual Machine in question is your little plaything that you use to test out funky stuff using parallelism and allows you to play with various SQL Server settings and functionality such as &lt;em&gt;Processor Affinity&lt;/em&gt; and &lt;em&gt;MAXDOP&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So there was a time in the dark and distant past when wanting to increase your processor count for your OS would mean a reinstall. Thankfully, this is no longer necessary and once you have performed this operation once you will never forget. So here goes&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtualBox random behaviour</title>
-      <link>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</link>
+      <link>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</link>
       <pubDate>Mon, 21 Mar 2011 13:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/03/21/virtualbox-randomness/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/03/21/virtualbox-randomness/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; If you want to learn something then stop reading this post now&amp;hellip; however if you (like me) take enjoyment in the weird, unusual, and unexplained, then please continue reading on.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Regular readers of my ramblings will by now appreciate that I love VirtualBox and I&amp;rsquo;ve been using it for a considerable amount of time -long before those Oracle boys muscled in on Sun, and just recently I saw something that I found a little puzzling.&lt;/p&gt;</description>
     </item>
   </channel>

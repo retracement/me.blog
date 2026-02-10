@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure CLI on tenbulls blog</title>
-    <link>http://localhost:1313/tags/azure-cli/</link>
+    <link>https://tenbulls.co.uk/tags/azure-cli/</link>
     <description>Recent content in Azure CLI on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Fri, 01 Feb 2019 13:18:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/azure-cli/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/azure-cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AzureRM, Azure CLI and the PowerShell Az Module</title>
-      <link>http://localhost:1313/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
+      <link>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</link>
       <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2019/02/01/azurerm-azure-cli-and-the-powershell-az-module/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2019/azurecli.png&#34; alt=&#34;Azure CLI&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is now a variety of Microsoft provided command line tools available to connect to (and manage) Azure Resources and the situation is quite confusing to new-comers or those individuals who have not kept up to date with new developments. This post is designed to rectify this situation.&lt;/p&gt;&#xA;&lt;p&gt;It is probably also worth me mentioning that I am focusing on the usage and deployment of these tools with Linux in mind, however, the following explanation is also applicable to Windows and macOS environments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing Azure CLI on Linux Mint</title>
-      <link>http://localhost:1313/posts/2018/12/01/installing-azure-cli-on-linux-mint/</link>
+      <link>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</link>
       <pubDate>Sat, 01 Dec 2018 21:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2018/12/01/installing-azure-cli-on-linux-mint/</guid>
+      <guid>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</guid>
       <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
     </item>
   </channel>

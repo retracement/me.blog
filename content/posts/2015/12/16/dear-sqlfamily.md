@@ -44,4 +44,4 @@ Credit to them all that despite our difficulties, they have allowed me to contin
 
 Our lives revolved around treatment and perhaps my involvement with the community has helped focus our attention on other things whilst we faced difficult times together. While the last couple of months have been insanely hard with potential health scares (as a result of the prolonged medication), I am pleased to say that Lucy has now recently entered remission which will last into her early adulthood. We are now looking towards a brighter future and I cannot wait to tell her what you all have done for her in sending her to [Disney World](https://disneyworld.disney.go.com/) to experience a holiday of a lifetime (which we are hoping to do early in 2016).
 
-Thanks again, and I we love you all!
+Thanks again, and ~I~ we love you all!

@@ -2,256 +2,256 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Public Speaking on tenbulls blog</title>
-    <link>http://localhost:1313/tags/public-speaking/</link>
+    <link>https://tenbulls.co.uk/tags/public-speaking/</link>
     <description>Recent content in Public Speaking on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Wed, 04 Nov 2015 15:28:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/public-speaking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/public-speaking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>7 Days of PASS – Day 7</title>
-      <link>http://localhost:1313/posts/2015/11/04/7-days-of-pass-day-7/</link>
+      <link>https://tenbulls.co.uk/posts/2015/11/04/7-days-of-pass-day-7/</link>
       <pubDate>Wed, 04 Nov 2015 15:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/11/04/7-days-of-pass-day-7/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/conf.jpg&#34; alt=&#34;Conference Center&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I wake at 3 a.m. to find my plan of preparing my sessions into the late evening in tatters having completely crashed and burned after the huge meal the night before. My main session is scheduled to be delivered at 8 a.m so that means I have approximately &lt;em&gt;four hours&lt;/em&gt; to try and nail it. First I get showered at dressed, and then start running through my slide deck and correct error after error. Once I am happy with the deck, I read through my notes and study each slide until I am happy that I &lt;em&gt;understand&lt;/em&gt; each one. I run through the demos and complete main session preparation before returning back to the lightning talk. After working four solid hours I head to the Convention Centre so that I can grab a quick bite to eat and setup in my room with enough lead time before the session starts.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2015/11/04/7-days-of-pass-day-7/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/conf.jpg&#34; alt=&#34;Conference Center&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I wake at 3 a.m. to find my plan of preparing my sessions into the late evening in tatters having completely crashed and burned after the huge meal the night before. My main session is scheduled to be delivered at 8 a.m so that means I have approximately &lt;em&gt;four hours&lt;/em&gt; to try and nail it. First I get showered at dressed, and then start running through my slide deck and correct error after error. Once I am happy with the deck, I read through my notes and study each slide until I am happy that I &lt;em&gt;understand&lt;/em&gt; each one. I run through the demos and complete main session preparation before returning back to the lightning talk. After working four solid hours I head to the Convention Centre so that I can grab a quick bite to eat and setup in my room with enough lead time before the session starts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>So you havent been selected for the PASS Summit?</title>
-      <link>http://localhost:1313/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</link>
+      <link>https://tenbulls.co.uk/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</link>
       <pubDate>Fri, 26 Jun 2015 19:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</guid>
+      <guid>https://tenbulls.co.uk/posts/2015/06/26/not-accepted-for-the-pass-summit-2015/</guid>
       <description>&lt;p&gt;I guess it could be easy to become complacent about being selected to speak at conferences and you could certainly argue that I have been tremendously lucky with the selection process since I first broke into the speaking circuit in 2010. In 2011 I delivered my first lightning talk at the Summit and this was already off the back of me being the only European speaker (AFAIK) at &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;SQLRally Orlando&lt;/a&gt;. Every year since then I have been fortunate enough to be selected to deliver one (or more) full session abstracts at the Summit and when combined with a nice collection of speaking gigs at &lt;a href=&#34;https://www.sqlsaturday.com/&#34;&gt;SQLSaturdays&lt;/a&gt;, &lt;a href=&#34;https://www.sqlpass.org/Events/24HoursofPASS.aspx&#34;&gt;24HOP&lt;/a&gt; and other events you could be forgiven for thinking that I must have the &lt;em&gt;magic touch&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SharePoint Saturday London 2015</title>
-      <link>http://localhost:1313/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</link>
+      <link>https://tenbulls.co.uk/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</link>
       <pubDate>Fri, 05 Jun 2015 10:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/evoconf.jpg&#34; alt=&#34;Evoconf&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t think it is any great secret that I have had my eyes on the SharePoint Community for quite some time. With the introduction of a dedicated SharePoint track (and precon) in 2013 at &lt;a href=&#34;https://sqlcambs.org.uk/category/sqlsaturday/&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; (a World 1st, I believe) and most recently my attendance of the three day annual &lt;a href=&#34;https://www.sharepointevolutionconference.com/&#34;&gt;SharePoint Evolution Conference&lt;/a&gt; in London, it has been clear to me for years that the SQL and SharePoint Communities and technologies are more closely related and integrated than I think most professionals would realize. They are simply just different perspectives on what is essentially the end goal of presenting data to the end-user.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2015/06/05/speaking-at-sharepoint-saturday-london/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/evoconf.jpg&#34; alt=&#34;Evoconf&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don’t think it is any great secret that I have had my eyes on the SharePoint Community for quite some time. With the introduction of a dedicated SharePoint track (and precon) in 2013 at &lt;a href=&#34;https://sqlcambs.org.uk/category/sqlsaturday/&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; (a World 1st, I believe) and most recently my attendance of the three day annual &lt;a href=&#34;https://www.sharepointevolutionconference.com/&#34;&gt;SharePoint Evolution Conference&lt;/a&gt; in London, it has been clear to me for years that the SQL and SharePoint Communities and technologies are more closely related and integrated than I think most professionals would realize. They are simply just different perspectives on what is essentially the end goal of presenting data to the end-user.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLSaturday New York 2015</title>
-      <link>http://localhost:1313/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
+      <link>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</link>
       <pubDate>Thu, 09 Apr 2015 15:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
+      <guid>https://tenbulls.co.uk/posts/2015/04/09/speaking-at-sqlsaturday-380-new-york/</guid>
       <description>&lt;p&gt;Back in August 2012 I had the honour of speaking at the last (but one) SQLSaturday to be held in New York City which marked a particular milestone in my SQL Server journey. While I had (by then) already spoken at the two American SQLRally events (&lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/orlando/Home.aspx&#34;&gt;Orlando&lt;/a&gt; and &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2012/dallas/Home.aspx&#34;&gt;Dallas&lt;/a&gt;) and delivered a lightning talk at the 2011 PASS Summit, SQLSaturday New York was my first ever SQLSaturday in the U.S.A and because of that it was already special before I had even arrived.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLBits XIV (after all!)</title>
-      <link>http://localhost:1313/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</link>
+      <link>https://tenbulls.co.uk/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</link>
       <pubDate>Fri, 20 Feb 2015 13:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</guid>
-      <description>&lt;p&gt;I don’t think it is a particularly big secret that I am a fan of &lt;a href=&#34;https://www.sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; (more posts about SQLBits can be found &lt;a href=&#34;http://localhost:1313/tags/sqlbits/&#34;&gt;here&lt;/a&gt;). I remember being at the PASS Summit in 2010 and enthusiastically talking about the SQLBits conference to those that cared to listen and was rather taken aback by the lack of awareness outside of Europe during my time there, so I like to think that my enthusiastic ramblings over the years have contributed in some very small way to promoting the conference to a wider global audience. SQLBits gave me my first speaking break, which allowed me soon after to speak at SQLRally in Orlando, so I am always grateful to them for offering me that opportunity.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</guid>
+      <description>&lt;p&gt;I don’t think it is a particularly big secret that I am a fan of &lt;a href=&#34;https://www.sqlbits.com/&#34;&gt;SQLBits&lt;/a&gt; (more posts about SQLBits can be found &lt;a href=&#34;https://tenbulls.co.uk/tags/sqlbits/&#34;&gt;here&lt;/a&gt;). I remember being at the PASS Summit in 2010 and enthusiastically talking about the SQLBits conference to those that cared to listen and was rather taken aback by the lack of awareness outside of Europe during my time there, so I like to think that my enthusiastic ramblings over the years have contributed in some very small way to promoting the conference to a wider global audience. SQLBits gave me my first speaking break, which allowed me soon after to speak at SQLRally in Orlando, so I am always grateful to them for offering me that opportunity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLSaturday Lisbon 2015</title>
-      <link>http://localhost:1313/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</link>
+      <link>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</link>
       <pubDate>Tue, 17 Feb 2015 09:14:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2015/sqlportremington2.jpg&#34; alt=&#34;Remington&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;I liked the event so much, I bought the community&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you ever asked an experienced speaker what is the best formula to follow when starting out on your road to presenting, they would most likely tell you to start &lt;em&gt;small&lt;/em&gt; and work your way up to bigger events. First present to your work colleagues, next move onto User-Groups, then onto bigger events such as SQLSaturdays and then finally (when you are ready) talk at the biggest events in the World such as the PASS Summit (in the U.S.A) or SQLBits (in the U.K).&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/sqlportremington2.jpg&#34; alt=&#34;Remington&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;I liked the event so much, I bought the community&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you ever asked an experienced speaker what is the best formula to follow when starting out on your road to presenting, they would most likely tell you to start &lt;em&gt;small&lt;/em&gt; and work your way up to bigger events. First present to your work colleagues, next move onto User-Groups, then onto bigger events such as SQLSaturdays and then finally (when you are ready) talk at the biggest events in the World such as the PASS Summit (in the U.S.A) or SQLBits (in the U.K).&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Days of PASSDay - 5</title>
-      <link>http://localhost:1313/posts/2014/11/08/5-days-of-pass-day-5/</link>
+      <link>https://tenbulls.co.uk/posts/2014/11/08/5-days-of-pass-day-5/</link>
       <pubDate>Sat, 08 Nov 2014 14:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/11/08/5-days-of-pass-day-5/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2014/enterthedragon.jpg&#34; alt=&#34;Enter the Dragon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I wake up to the faint sound of early morning traffic starting to roll slowly through the empty streets of Downtown Seattle as the occasional bark from a dog can be heard from somewhere in the distance. Nearby, just a few blocks away, the now empty Convention Center stands as a shell compared to the hive of activity that it was over the last week.&lt;/p&gt;&#xA;&lt;p&gt;The last day of the Summit has been and gone and I feel just a hint of sadness that my time here in Seattle and the U.S.A is almost over but can at least start to think about the end of 2014 and look forward to good things in 2015.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2014/11/08/5-days-of-pass-day-5/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/enterthedragon.jpg&#34; alt=&#34;Enter the Dragon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I wake up to the faint sound of early morning traffic starting to roll slowly through the empty streets of Downtown Seattle as the occasional bark from a dog can be heard from somewhere in the distance. Nearby, just a few blocks away, the now empty Convention Center stands as a shell compared to the hive of activity that it was over the last week.&lt;/p&gt;&#xA;&lt;p&gt;The last day of the Summit has been and gone and I feel just a hint of sadness that my time here in Seattle and the U.S.A is almost over but can at least start to think about the end of 2014 and look forward to good things in 2015.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Days of PASSDay - 4</title>
-      <link>http://localhost:1313/posts/2014/11/07/5-days-of-pass-day-4/</link>
+      <link>https://tenbulls.co.uk/posts/2014/11/07/5-days-of-pass-day-4/</link>
       <pubDate>Fri, 07 Nov 2014 14:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/11/07/5-days-of-pass-day-4/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2014/beingbuck.webp&#34; alt=&#34;Being Buck Woody&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As I write, the penultimate day of the PASS Summit has been and gone. It was again an overloaded rollercoster of a ride filled with appointments, chance meetings of old friends and most significantly the day I gave my Community Session called &lt;a href=&#34;https://www.sqlpass.org/summit/2014/Sessions.aspx#sid7377&#34;&gt;Being Buck Woody&lt;/a&gt; alongside the ever fabulous Buck Woody. I spent the early hours of the morning in deep concentration preparing for this session and even while eating breakfast I had my head down gathering thoughts and listening to some recorded notes. Later on, myself and Buck got together in the speaker room and did a final run through of the deck and both of us were fairly happy with the content and flow of the presentation.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2014/11/07/5-days-of-pass-day-4/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2014/beingbuck.webp&#34; alt=&#34;Being Buck Woody&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As I write, the penultimate day of the PASS Summit has been and gone. It was again an overloaded rollercoster of a ride filled with appointments, chance meetings of old friends and most significantly the day I gave my Community Session called &lt;a href=&#34;https://www.sqlpass.org/summit/2014/Sessions.aspx#sid7377&#34;&gt;Being Buck Woody&lt;/a&gt; alongside the ever fabulous Buck Woody. I spent the early hours of the morning in deep concentration preparing for this session and even while eating breakfast I had my head down gathering thoughts and listening to some recorded notes. Later on, myself and Buck got together in the speaker room and did a final run through of the deck and both of us were fairly happy with the content and flow of the presentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Countdown to SQLSaturday Edinburgh</title>
-      <link>http://localhost:1313/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</link>
+      <link>https://tenbulls.co.uk/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</link>
       <pubDate>Thu, 06 Jun 2013 10:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2013/xeventjonathan2.jpg&#34; alt=&#34;Jonathan Kehayias&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;A pre-conference good enough for Super heros&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In exactly 2 days time the United Kingdom’s 3rd SQLSaturday will be in full swing, showcasing a group of SQL Server MVPs, MCMs and Community experts. This will be the very first time that SQLSaturday has happened in Scotland and it is going to be fantastic to bolster the PASS membership and exposure in that area which can only good news for all concerned.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2013/06/06/countdown-to-sqlsaturday-edinburgh/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2013/xeventjonathan2.jpg&#34; alt=&#34;Jonathan Kehayias&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;A pre-conference good enough for Super heros&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In exactly 2 days time the United Kingdom’s 3rd SQLSaturday will be in full swing, showcasing a group of SQL Server MVPs, MCMs and Community experts. This will be the very first time that SQLSaturday has happened in Scotland and it is going to be fantastic to bolster the PASS membership and exposure in that area which can only good news for all concerned.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Selected again for the PASS Summit</title>
-      <link>http://localhost:1313/posts/2013/05/22/see-you-in-charlotte/</link>
+      <link>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</link>
       <pubDate>Wed, 22 May 2013 15:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/05/22/see-you-in-charlotte/</guid>
+      <guid>https://tenbulls.co.uk/posts/2013/05/22/see-you-in-charlotte/</guid>
       <description>&lt;p&gt;Well it is that time of year again where the results of the PASS Summit 2013 session selections become public. This year was of course a very difficult one to get selected since (I believe) a record number of submissions were received -but thankfully I still managed to knock one session (out of four) into the back of the net. I would also like to take this opportunity to congratulate all the other selected Speakers (especially if this is your first time at the Summit) and commiserations to all those who were not successful on this occasion. I know the usual inquests and finger pointing will naturally ensue by a small handful of people who feel personally aggrieved that they weren’t successful, but believe me when I say that the process is as fair as I could expect, but not without room for improvement (more on this very soon in a follow up post).&lt;/p&gt;</description>
     </item>
     <item>
       <title>I love SQLBits</title>
-      <link>http://localhost:1313/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</link>
+      <link>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</link>
       <pubDate>Tue, 09 Apr 2013 21:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s been a long time since I last wrote a T-SQL Tuesday post but the combination of a great topic along with a spare 5 minutes of downtime has resulted in my contribution to the mix this month.&lt;/p&gt;&#xA;&lt;p&gt;This time around T-SQL Tuesday is hosted by Bob Pusateri (&lt;a href=&#34;https://www.bobpusateri.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLBob&#34;&gt;twitter&lt;/a&gt;) and his chosen topic is &lt;strong&gt;how did you come to love presenting?&lt;/strong&gt;. So here goes…&lt;/p&gt;&#xA;&lt;p&gt;In 2010 I had traveled to my very first conference as a presenter. So there I was, stood on the stage in front of a motley collection of SQL professionals, realizing the enormity of what was about to happen.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2013/04/09/t-sql-tuesday-41-i--sqlbits/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/shared/tsql2sday150x15032.webp&#34; alt=&#34;TSQL Tuesday&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s been a long time since I last wrote a T-SQL Tuesday post but the combination of a great topic along with a spare 5 minutes of downtime has resulted in my contribution to the mix this month.&lt;/p&gt;&#xA;&lt;p&gt;This time around T-SQL Tuesday is hosted by Bob Pusateri (&lt;a href=&#34;https://www.bobpusateri.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/SQLBob&#34;&gt;twitter&lt;/a&gt;) and his chosen topic is &lt;strong&gt;how did you come to love presenting?&lt;/strong&gt;. So here goes…&lt;/p&gt;&#xA;&lt;p&gt;In 2010 I had traveled to my very first conference as a presenter. So there I was, stood on the stage in front of a motley collection of SQL professionals, realizing the enormity of what was about to happen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memoirs of SQLSaturday Cambridge #162 - Speaker Dinner</title>
-      <link>http://localhost:1313/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</link>
+      <link>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</link>
       <pubDate>Mon, 01 Oct 2012 18:11:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/10/01/memoirs-of-sqlsaturday-162-part-ii-speaker-dinner/</guid>
       <description>&lt;p&gt;Probably one of the most over-looked parts of any big or small SQL Event can sometimes be the speaker dinner -which essentially boils down to one thing… the organisers way of showing their appreciation to the speakers who have traveled far and wide usually at their own expense to present expert technical content at no cost to the attendees.&lt;/p&gt;&#xA;&lt;p&gt;As a fairly regular speaker myself, I have experienced many events who have either made very little effort with the dinner, poorly handled its organization (meaning many speakers aren’t even informed that it is happening) or simply don’t bother arranging one at all. And whilst I don’t want to suggest that by organizing an event you absolutely &lt;em&gt;MUST&lt;/em&gt; provide a speaker dinner in order for the event to be regarded as a success, I do personally feel that the speaker meal helps define your event and give it a &lt;em&gt;feel&lt;/em&gt; or your &lt;em&gt;stamp of identity&lt;/em&gt; -and hopefully one along the lines that you were aiming for.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memoirs of SQLSaturday Cambridge #162 - Precons</title>
-      <link>http://localhost:1313/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</link>
+      <link>https://tenbulls.co.uk/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</link>
       <pubDate>Wed, 12 Sep 2012 11:26:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/09/12/memoirs-of-sqlsaturday-162-part-i-pre-cons/</guid>
       <description>&lt;p&gt;Days have passed since we closed the first ever SQLSaturday to hit the shores of the UK and I write with an element of sadness that it is over, relief that my time can start to be more of my own again for other projects, and optimism of what may come.&lt;/p&gt;&#xA;&lt;p&gt;When I first set out on the path of recording what I view as very much a mixture of personal and technical journal in the pages of this blog (and hopefully at times a good resource for others), I always intended to write at least one post per month. I always viewed it as a cardinal sin to let things slip, but unfortunately I truly underestimated the enormity of the work involved in planning, implementing and executing a major IT event. Now it is almost over (there are still many small administrative issues to complete) I think it is fair to say that Team &lt;a href=&#34;https://www.sqlsaturday.com/162/eventhome.aspx&#34;&gt;SQLSaturday #162 Cambridge&lt;/a&gt; are able to take a deep breath and be proud of what we did.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Change and make a difference</title>
-      <link>http://localhost:1313/posts/2012/05/04/change-and-make-a-difference/</link>
+      <link>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</link>
       <pubDate>Fri, 04 May 2012 18:03:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/05/04/change-and-make-a-difference/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Let me tell you a story&amp;hellip;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2012/sqlsat162_print_small.jpg&#34; alt=&#34;SQLSaturday #162 Cambridge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is a drizzly night in November and I am sat with a bunch of people I have never met before. They are all eating and I am not (one too many Whiskys the night before). They all appear to know each other and are vigorously moving from subject to subject with enthusiasm and I am listening intently to the conversation but not really saying too much.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2012/05/04/change-and-make-a-difference/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Let me tell you a story&amp;hellip;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/sqlsat162_print_small.jpg&#34; alt=&#34;SQLSaturday #162 Cambridge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It is a drizzly night in November and I am sat with a bunch of people I have never met before. They are all eating and I am not (one too many Whiskys the night before). They all appear to know each other and are vigorously moving from subject to subject with enthusiasm and I am listening intently to the conversation but not really saying too much.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Schedule so far</title>
-      <link>http://localhost:1313/posts/2012/04/13/schedule-so-far/</link>
+      <link>https://tenbulls.co.uk/posts/2012/04/13/schedule-so-far/</link>
       <pubDate>Fri, 13 Apr 2012 19:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/04/13/schedule-so-far/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/04/13/schedule-so-far/</guid>
       <description>&lt;p&gt;Recently I have been starting to get a little stressed about whether or not I have a speaking engagement coming up.&lt;/p&gt;&#xA;&lt;p&gt;Whilst I use &lt;a href=&#34;https://www.google.com/calendar&#34;&gt;Google Calendar&lt;/a&gt; and most recently have set up a premium &lt;a href=&#34;https://www.rememberthemilk.com/&#34;&gt;Remember the Milk&lt;/a&gt; account to organise my life a little better, I thought it was probably a good idea to see where I am with my past and forth coming presentations for the first half of this year.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Presenting Moves Like Jagger – my 24HOP baptism</title>
-      <link>http://localhost:1313/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</link>
+      <link>https://tenbulls.co.uk/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</link>
       <pubDate>Mon, 26 Mar 2012 15:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</guid>
-      <description>&lt;p&gt;It is now nearly one week since my début on &lt;a href=&#34;https://www.sqlpass.org/24hours/spring2012/Home.aspx&#34;&gt;24 Hours Of PASS&lt;/a&gt; and I thought it would be useful for people considering presenting on 24HOP themselves that I write my thoughts on the whole experience. I have also taken the liberty to publish in advance my &lt;a href=&#34;http://localhost:1313/documents/24hoursofpassppt_moves_like_jagger.pdf&#34;&gt;slide deck&lt;/a&gt;) whilst I have managed to catch a rare quiet period.&lt;/p&gt;&#xA;&lt;p&gt;I have been very lucky over the last couple of years to have presented many times to a selection of large and small events around the world and yet as nearly all presenters will tell you, we are always still learning the craft. Every event is a new experience, every delivery is different and perfection is always a distant and impossible dream. So although the prospect of talking to an audience was in itself not a particular problem, the difference in delivery medium, scale and truly International audience meant that the whole ball-game had totally changed.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2012/03/26/moves-like-jagger-my-24hop-baptism/</guid>
+      <description>&lt;p&gt;It is now nearly one week since my début on &lt;a href=&#34;https://www.sqlpass.org/24hours/spring2012/Home.aspx&#34;&gt;24 Hours Of PASS&lt;/a&gt; and I thought it would be useful for people considering presenting on 24HOP themselves that I write my thoughts on the whole experience. I have also taken the liberty to publish in advance my &lt;a href=&#34;https://tenbulls.co.uk/documents/24hoursofpassppt_moves_like_jagger.pdf&#34;&gt;slide deck&lt;/a&gt;) whilst I have managed to catch a rare quiet period.&lt;/p&gt;&#xA;&lt;p&gt;I have been very lucky over the last couple of years to have presented many times to a selection of large and small events around the world and yet as nearly all presenters will tell you, we are always still learning the craft. Every event is a new experience, every delivery is different and perfection is always a distant and impossible dream. So although the prospect of talking to an audience was in itself not a particular problem, the difference in delivery medium, scale and truly International audience meant that the whole ball-game had totally changed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>24 Hours Of PASS goes multi-lingual</title>
-      <link>http://localhost:1313/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</link>
+      <link>https://tenbulls.co.uk/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</link>
       <pubDate>Thu, 16 Feb 2012 21:50:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/02/16/i-can-speak-english-i-learn-it-from-a-book/</guid>
       <description>&lt;p&gt;Many many years ago when I was still in short trousers I started to take an interest in Movies. My parents had completely different sleeping patterns and my Father was an irritatingly early riser -a fact that would irritate me right into my adolescence and beyond. My mother was the opposite and (like me) very much a night owl. This resulted in there being a period of around 3 to 4 hours before my Mother went to bed, where the Television would be switched to whatever channel she wanted to watch -in other words &lt;em&gt;not&lt;/em&gt; Sport.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLRally and Beyond</title>
-      <link>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</link>
+      <link>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/01/25/sqlrally-and-beyond/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/01/25/sqlrally-and-beyond/</guid>
       <description>&lt;p&gt;I am almost ashamed to say that I have let over a month pass since my last post and truth be told I have come close a few times without never actually pressing that submit button.&lt;/p&gt;&#xA;&lt;p&gt;I shan&amp;rsquo;t bore you with my excuses or reasons for my inactivity but what matters is I&amp;rsquo;m back!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been seeing an increasing amount of noise about &lt;a href=&#34;http://www.sqlpass.org/sqlrally/2012/dallas/&#34;&gt;SQLRally Dallas&lt;/a&gt; and I felt that I wanted to share my own personal experience with you about this rather unique event (in Orlando) -for it quite literary changed my life.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NOLOCK hits Mythbusters!</title>
-      <link>http://localhost:1313/posts/2011/10/14/nolock-hits-mythbusters/</link>
+      <link>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</link>
       <pubDate>Fri, 14 Oct 2011 15:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/10/14/nolock-hits-mythbusters/</guid>
-      <description>&lt;p&gt;Exactly one month to this very day I wrote the article &lt;a href=&#34;http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock&#34;&gt;When should you use NOLOCK?&lt;/a&gt; which explained exactly when the use of the &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation level was acceptable and when it wasn&amp;rsquo;t. I also revealed that it not only takes out a &lt;em&gt;Schema Stability (Sch-S)&lt;/em&gt; lock on the object (which is documented in Books Online for the hint) but also took out a special &lt;em&gt;Shared (S) Bulk Operation&lt;/em&gt; lock when used on heaps. This latter behaviour is not even mentioned in Books Online for the hint and as far as I know, has never been documented or mentioned anywhere else before.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</guid>
+      <description>&lt;p&gt;Exactly one month to this very day I wrote the article &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock&#34;&gt;When should you use NOLOCK?&lt;/a&gt; which explained exactly when the use of the &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation level was acceptable and when it wasn&amp;rsquo;t. I also revealed that it not only takes out a &lt;em&gt;Schema Stability (Sch-S)&lt;/em&gt; lock on the object (which is documented in Books Online for the hint) but also took out a special &lt;em&gt;Shared (S) Bulk Operation&lt;/em&gt; lock when used on heaps. This latter behaviour is not even mentioned in Books Online for the hint and as far as I know, has never been documented or mentioned anywhere else before.&lt;/p&gt;</description>
     </item>
     <item>
       <title>At the Bloggers Table - Post 2</title>
-      <link>http://localhost:1313/posts/2011/10/12/community-is-driving-sql-to-success/</link>
+      <link>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</link>
       <pubDate>Wed, 12 Oct 2011 08:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/10/12/community-is-driving-sql-to-success/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/10/12/community-is-driving-sql-to-success/</guid>
       <description>&lt;p&gt;Well the keynote speech has begun, Ted Kummert is on stage and the focus at the beginning has been very much on the Community and SQL Azure. It is clear to me that Microsoft recognize the value of our amazing community -and they should because together we are helping to shape that future of this product into something that is becoming truly amazing. There was a time when Oracle DBA&amp;rsquo;s used to look down on SQL Server, but now they are worried and are desperately trying to get up to speed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>At the Bloggers Table - Post 1</title>
-      <link>http://localhost:1313/posts/2011/10/12/my-alarm-clock-worked/</link>
+      <link>https://tenbulls.co.uk/posts/2011/10/12/my-alarm-clock-worked/</link>
       <pubDate>Wed, 12 Oct 2011 07:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/10/12/my-alarm-clock-worked/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/10/12/my-alarm-clock-worked/</guid>
       <description>&lt;p&gt;Well the good news is my alarm clock worked!&lt;/p&gt;&#xA;&lt;p&gt;So the time is around 7:30 am and I managed to get out of bed for my second official appointment of the PASS Summit 2011 and things are getting warmed up. I&amp;rsquo;m sat here on the front row of the Blogger table whilst to my left I have Brent Ozar, Aaron Bertrand and to my right Wes Brown and the Midnight DBA&amp;rsquo;s. If that wasn&amp;rsquo;t enough in front of me I have Stacia Misner and behind me I have Wendy Dance and Glen Berry! I don&amp;rsquo;t know how I managed this gig but it feels really good and it is an absolute pleasure to be part of it all.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Im gonna be on the Bloggers Table!</title>
-      <link>http://localhost:1313/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</link>
+      <link>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</link>
       <pubDate>Sun, 09 Oct 2011 20:27:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/10/09/im-gonna-be-on-the-bloggers-table/</guid>
       <description>&lt;p&gt;So I&amp;rsquo;m currently sat here in the lounge of the &lt;a href=&#34;https://www.marriott.com/en-us/hotels/seasi-sheraton-grand-seattle/overview/&#34;&gt;Seattle Sheraton&lt;/a&gt; and finally have time to reflect upon my week ahead here at this years &lt;a href=&#34;https://www.sqlpass.org/summit/2011/&#34;&gt;SQLPASS Summit&lt;/a&gt;. At this point in time it is very hard to say exactly how busy I am going to be this week but I suspect that my time here will be slightly more focused than last time since I have a few more responsibilities than before.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 9 Slidedeck for READPAST &amp; Furious</title>
-      <link>http://localhost:1313/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</link>
+      <link>https://tenbulls.co.uk/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</link>
       <pubDate>Mon, 03 Oct 2011 16:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</guid>
-      <description>&lt;p&gt;I am very pleased to publish the slide-deck for my Friday presentation &lt;a href=&#34;https://sqlbits.com/Sessions/Event9/READPAST__Furious_Transactions_Locking_and_Isolation&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking and Isolation&lt;/a&gt;. Just click &lt;a href=&#34;http://localhost:1313/documents/readpastfurious.pdf&#34;&gt;here&lt;/a&gt; to obtain the slide-deck in PDF format.&lt;/p&gt;&#xA;&lt;p&gt;I had an absolutely fantastic time giving the presentation and really enjoyed the audience participation (though it took some of you guys a bit of time to warm up 🙂). No seriously, the thing that makes all those weeks/ months of preparation and collation of material worthwhile is the possibility that I have managed to communicate something of value to you all -and &lt;em&gt;hopefully&lt;/em&gt; I managed to do that. I learnt a massive amount of stuff myself in the process of preparing for this session and I cannot wait for the next time (whenever this may be).&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/10/03/sqlbits-9-slidedeck-for-readpast-furious/</guid>
+      <description>&lt;p&gt;I am very pleased to publish the slide-deck for my Friday presentation &lt;a href=&#34;https://sqlbits.com/Sessions/Event9/READPAST__Furious_Transactions_Locking_and_Isolation&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking and Isolation&lt;/a&gt;. Just click &lt;a href=&#34;https://tenbulls.co.uk/documents/readpastfurious.pdf&#34;&gt;here&lt;/a&gt; to obtain the slide-deck in PDF format.&lt;/p&gt;&#xA;&lt;p&gt;I had an absolutely fantastic time giving the presentation and really enjoyed the audience participation (though it took some of you guys a bit of time to warm up 🙂). No seriously, the thing that makes all those weeks/ months of preparation and collation of material worthwhile is the possibility that I have managed to communicate something of value to you all -and &lt;em&gt;hopefully&lt;/em&gt; I managed to do that. I learnt a massive amount of stuff myself in the process of preparing for this session and I cannot wait for the next time (whenever this may be).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Standing upon the shoulders of Giants</title>
-      <link>http://localhost:1313/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
+      <link>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</link>
       <pubDate>Mon, 01 Aug 2011 13:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/08/01/standing-upon-the-shoulders-of-giants/</guid>
       <description>&lt;p&gt;In the very late nineties and early naughties I used to co-habit the Microsoft Newsgroups (which was then located at &lt;em&gt;news.microsoft.com&lt;/em&gt; over the NNTP protocol), and in particular I posted primarily on the SQL Server forums to help others where I could. A by product of my helping out was of course learning lots of hints, tips and best practices from other users and there is a lesson in that for everybody.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using SQL Server Scalable Shared Database</title>
-      <link>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
+      <link>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</link>
       <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don&amp;rsquo;t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn&amp;rsquo;t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/05/25/sqlrally-scalable-shared-database-demo-redux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/orders.jpg&#34; alt=&#34;Presentation slide&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several weeks ago now I had the honour of presenting at the very first ever SQLRally event in Orlando Florida and I gave a presentation around the very large (no pun intended) subject of scaling out your SQL Server data. At the end of one of my demos it unfortunately crashed and burned and the annoying thing was, that up to then it had worked flawlessly!&lt;/p&gt;&#xA;&lt;p&gt;The problem that I hit in the demo was (I believe) related to a virtual machine crash that had happened the previous evening and I don&amp;rsquo;t think I allowed the database to run through recovery the following day. I am presuming that my iSCSI targets were not connected to my SQL Server on startup which meant that the database in question which was located on my shared drive still needed to run through recovery and couldn&amp;rsquo;t because I had (as part of the demo) changed the attribute of the drive to read-only in order to prepare it for the next stage. The error was suggesting that there was a version compatibility problem between the two instances and I had several members of the audience suggesting that this was the problem when I knew the versions were identical. Disappointingly, we were so short of time that I needed to move on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The real value of attending SQLRally</title>
-      <link>http://localhost:1313/posts/2011/05/18/the-real-value-of-attending-sqlrally/</link>
+      <link>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</link>
       <pubDate>Wed, 18 May 2011 18:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/05/18/the-real-value-of-attending-sqlrally/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/05/18/the-real-value-of-attending-sqlrally/</guid>
       <description>&lt;p&gt;&lt;em&gt;(This post was written primarily whilst travelling back from SQLRally and subsequently edited, amended and added to where necessary before publishing)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently sat here at Orlando Airport and I am able to reflect a little bit whilst waiting to board my plane back to the U.K. after having spent the last 5 days of preparation, learning and socialising at SQLRally and I need to ask myself &lt;em&gt;was it worth the expense?&lt;/em&gt;. I&amp;rsquo;m not too sure how many attendees or indeed speakers were from Europe but I am pretty sure I was one of a very small number and therefore the cost to myself was indeed far more than it would have cost for the majority of the attendees. It is therefore important that I look at the return on investment of not just my attending the event, but also of me speaking. One key thing to remember about going to conferences, is that the knowledge &lt;em&gt;retained&lt;/em&gt; is usually very little of what you have actually heard but hopefully with the efforts of the presenters, the materials provided will help to reinforce the important parts of this knowledge. It is true that I went to some excellent presentations but was sadly unable to attend many of them due to the amount of work I felt I needed to do on the preparation of my own session since I was really not quite happy where I was at. This particular point is a key take home for me, and I &lt;em&gt;must&lt;/em&gt; now ensure that I am far more prepared going forward. Unfortunately due to working commitments, family and other events it is sometimes easier said than done.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 8 - a presenters review</title>
-      <link>http://localhost:1313/posts/2011/04/20/sqlbits-8-finis/</link>
+      <link>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</link>
       <pubDate>Wed, 20 Apr 2011 15:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/04/20/sqlbits-8-finis/</guid>
-      <description>&lt;p&gt;Nearly two weeks has passed after another SQLBits and what another fabulous event. After an incredibly early morning train journey down to Brighton for the excellent Thursday training session with Thomas Kejser and an enjoyable time presenting my &lt;em&gt;SQL Server Clustering for Dummies&lt;/em&gt; session I am well and truly back down to earth with a thump.&lt;/p&gt;&#xA;&lt;p&gt;Personal highs for me were:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Finally getting to meet Allan Hirt and not only that but I had a Geo-Cluster debate with him in the speaker room.&lt;/li&gt;&#xA;&lt;li&gt;Meeting a few of the new first time SQLBits speakers -in particular Atul Thakor (blog|twitter) who I had a very long chat with in the speaker room and on the morning before his presentation. He had run into lots of problems with his laptop and demos prior to his session -which can strike the best of us, but managed to keep his wits about him an plow onto success when he finally came to present. What a top guy, and look forward to meeting him again in a User Group or another conference.&lt;/li&gt;&#xA;&lt;li&gt;Recognizing some audience members in my Clustering for Dummies session from my SQLBits 7 session. I ran into a couple of them later on and said a big thanks for the support, gave them my personal email and very much hope they do drop me a mail sometime to say hello.&lt;/li&gt;&#xA;&lt;li&gt;Bumping into some old faces&amp;hellip;people I&amp;rsquo;ve met in Seattle, previous UK conferences and User Groups and old colleagues. A special big-up to Judith Kinsella who made the effort to come to my presentation (which threw me when I saw her in the audience), although she keeps telling me that I remind her of John Peel and just can&amp;rsquo;t take me seriously 🙂🙂🙂&lt;/li&gt;&#xA;&lt;li&gt;Being able to enjoy the experience a little more, due to familiarity of proceedings. Anyone who presents at a major conference for the first time will tell you that it is all a bit of a daze, stressful and is a big unknown what you have let yourself in for. This time I knew what to expect, what I was doing and what I needed to do.&lt;/li&gt;&#xA;&lt;li&gt;Seeing some great presentations.&lt;/li&gt;&#xA;&lt;li&gt;Excellent weather!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/introduction.jpg&#34; alt=&#34;Mark Broadbent Introduction&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;In full flow!&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/04/20/sqlbits-8-finis/</guid>
+      <description>&lt;p&gt;Nearly two weeks has passed after another SQLBits and what another fabulous event. After an incredibly early morning train journey down to Brighton for the excellent Thursday training session with Thomas Kejser and an enjoyable time presenting my &lt;em&gt;SQL Server Clustering for Dummies&lt;/em&gt; session I am well and truly back down to earth with a thump.&lt;/p&gt;&#xA;&lt;p&gt;Personal highs for me were:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Finally getting to meet Allan Hirt and not only that but I had a Geo-Cluster debate with him in the speaker room.&lt;/li&gt;&#xA;&lt;li&gt;Meeting a few of the new first time SQLBits speakers -in particular Atul Thakor (blog|twitter) who I had a very long chat with in the speaker room and on the morning before his presentation. He had run into lots of problems with his laptop and demos prior to his session -which can strike the best of us, but managed to keep his wits about him an plow onto success when he finally came to present. What a top guy, and look forward to meeting him again in a User Group or another conference.&lt;/li&gt;&#xA;&lt;li&gt;Recognizing some audience members in my Clustering for Dummies session from my SQLBits 7 session. I ran into a couple of them later on and said a big thanks for the support, gave them my personal email and very much hope they do drop me a mail sometime to say hello.&lt;/li&gt;&#xA;&lt;li&gt;Bumping into some old faces&amp;hellip;people I&amp;rsquo;ve met in Seattle, previous UK conferences and User Groups and old colleagues. A special big-up to Judith Kinsella who made the effort to come to my presentation (which threw me when I saw her in the audience), although she keeps telling me that I remind her of John Peel and just can&amp;rsquo;t take me seriously 🙂🙂🙂&lt;/li&gt;&#xA;&lt;li&gt;Being able to enjoy the experience a little more, due to familiarity of proceedings. Anyone who presents at a major conference for the first time will tell you that it is all a bit of a daze, stressful and is a big unknown what you have let yourself in for. This time I knew what to expect, what I was doing and what I needed to do.&lt;/li&gt;&#xA;&lt;li&gt;Seeing some great presentations.&lt;/li&gt;&#xA;&lt;li&gt;Excellent weather!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/introduction.jpg&#34; alt=&#34;Mark Broadbent Introduction&#34;&gt;&lt;br/&gt;&#xA;&lt;em&gt;In full flow!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLRally is live!</title>
-      <link>http://localhost:1313/posts/2011/02/25/sqlrally-area-is-live/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</link>
       <pubDate>Fri, 25 Feb 2011 16:34:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/25/sqlrally-area-is-live/</guid>
-      <description>&lt;p&gt;Over the coming weeks and months leading up to SQLRally, I will be adding information, news and more detail about my presentation. For now though the root area is live which is effectively the &amp;ldquo;press release&amp;rdquo; provided to the selected speakers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/tags/sqlrally&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/2011/sqlrally_banner_240x120_1.webp&#34; alt=&#34;SQLRally Orlando&#34;&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t forget, if you do see me wandering around in Orlando, to say hello. It&amp;rsquo;s always great to meet new people and I am always humbled by the high level of skill in the SQL community. Also (and most importantly) expanding our IT Professional Support Network will ensure that we always will have an ear to bend when we have technical problems.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/02/25/sqlrally-area-is-live/</guid>
+      <description>&lt;p&gt;Over the coming weeks and months leading up to SQLRally, I will be adding information, news and more detail about my presentation. For now though the root area is live which is effectively the &amp;ldquo;press release&amp;rdquo; provided to the selected speakers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://tenbulls.co.uk/tags/sqlrally&#34;&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/sqlrally_banner_240x120_1.webp&#34; alt=&#34;SQLRally Orlando&#34;&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t forget, if you do see me wandering around in Orlando, to say hello. It&amp;rsquo;s always great to meet new people and I am always humbled by the high level of skill in the SQL community. Also (and most importantly) expanding our IT Professional Support Network will ensure that we always will have an ear to bend when we have technical problems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 7 the forgotten photos part 2</title>
-      <link>http://localhost:1313/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</link>
+      <link>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</link>
       <pubDate>Sat, 12 Feb 2011 19:48:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</guid>
       <description>&lt;p&gt;Well &lt;a href=&#34;https://sqlbits.com/default.aspx&#34;&gt;SQLBits&lt;/a&gt; 8 voting has now ended so perhaps it is a good time to publish the second and final post of the series. I wonder if any of my sessions will get selected this time? One of my submitted sessions is the same one that has made it to the reserve list for the first ever &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; in Orlando and although slightly disappointed at just making the reserve list I was very proud that out of all the reserve sessions I came joint top (I took 38% of the vote in my category). The winner of that category is the well known Edwin Sarmiento (&lt;a href=&#34;https://bassplayerdoc.blogspot.com/&#34;&gt;blog&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/bassplayerdoc&#34;&gt;twitter&lt;/a&gt;) and he is an absolutely smashing chap so I&amp;rsquo;m nothing but pleased for him.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My submitted SQLRally sessions</title>
-      <link>http://localhost:1313/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</link>
       <pubDate>Thu, 27 Jan 2011 10:41:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2011/sqlrally1.png&#34; alt=&#34;SQLRally logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several months ago, I submitted two sessions to SQLRally with great enthusiasm as detailed in this post. The first &amp;ldquo;The Great High Availability Hustle&amp;rdquo; I had been thinking about for a very long time and is hopefully going to fill a void that has existed for too long. As a DBA, if you are not already using Clustering I guarantee that you will be, sooner or later. SQL 2008 finally gave us true HA product for the Enterprise and I believe SQL High Availability is going to start gaining traction and market share over the coming months and years. But there is a problem with this. I believe that probably nearly every DBA that has become competent with SQL Clustering will at one point have had a baptism of fire with the technology.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/27/sqlrally-just-proud-to-be-in-there-with-you/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2011/sqlrally1.png&#34; alt=&#34;SQLRally logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Several months ago, I submitted two sessions to SQLRally with great enthusiasm as detailed in this post. The first &amp;ldquo;The Great High Availability Hustle&amp;rdquo; I had been thinking about for a very long time and is hopefully going to fill a void that has existed for too long. As a DBA, if you are not already using Clustering I guarantee that you will be, sooner or later. SQL 2008 finally gave us true HA product for the Enterprise and I believe SQL High Availability is going to start gaining traction and market share over the coming months and years. But there is a problem with this. I believe that probably nearly every DBA that has become competent with SQL Clustering will at one point have had a baptism of fire with the technology.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goodbye SQL 7</title>
-      <link>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</link>
       <pubDate>Sun, 16 Jan 2011 20:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</guid>
-      <description>&lt;p&gt;I cannot let the week go by without a special goodbye to an old friend. If you hadn&amp;rsquo;t already heard, &lt;a href=&#34;https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0&#34;&gt;SQL 7.0 support officially ended on the 11th January&lt;/a&gt; of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in how I got started with SQL Server and you haven&amp;rsquo;t done so already, you might want to take a quick peek at my &lt;a href=&#34;http://localhost:1313/about&#34;&gt;about&lt;/a&gt; page. Here I mention how I quite insightfully (read luckily) took a training opportunity and put myself on a SQL 7 beta course rather than the one my company was expecting – one for SQL 6.5. That decision had a very big effect on my future IT career. Whilst at the training centre I remember that there was a guy there who claimed that he had been one of the first 100 people in the world to certify as an MCSE+i and his efforts to do so had been made a little easier because of the fact that he had apparently been based in Saudi Arabia for six months in a company that had not only a testing centre but all course materials available to him. He said of being out there &lt;em&gt;&amp;ldquo;well what else can you do for 6 months in Saudi? I thought I might as well do something productive!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/01/16/countdown-to-extinction-goodbye-sql-7/</guid>
+      <description>&lt;p&gt;I cannot let the week go by without a special goodbye to an old friend. If you hadn&amp;rsquo;t already heard, &lt;a href=&#34;https://blogs.msdn.com/b/sqlreleaseservices/archive/2010/09/29/end-of-support-for-sql-server-7-0.aspx?wa=wsignin1.0&#34;&gt;SQL 7.0 support officially ended on the 11th January&lt;/a&gt; of this week. This means that as of now, legacy installations of SQL Server 7 are threatened with extinction and is only a matter of time before they become as scarce as SQL 6.5 installs.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in how I got started with SQL Server and you haven&amp;rsquo;t done so already, you might want to take a quick peek at my &lt;a href=&#34;https://tenbulls.co.uk/about&#34;&gt;about&lt;/a&gt; page. Here I mention how I quite insightfully (read luckily) took a training opportunity and put myself on a SQL 7 beta course rather than the one my company was expecting – one for SQL 6.5. That decision had a very big effect on my future IT career. Whilst at the training centre I remember that there was a guy there who claimed that he had been one of the first 100 people in the world to certify as an MCSE+i and his efforts to do so had been made a little easier because of the fact that he had apparently been based in Saudi Arabia for six months in a company that had not only a testing centre but all course materials available to him. He said of being out there &lt;em&gt;&amp;ldquo;well what else can you do for 6 months in Saudi? I thought I might as well do something productive!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>2010 in reflection</title>
-      <link>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</link>
+      <link>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</link>
       <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/01/01/a-year-in-provence/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/01/01/a-year-in-provence/</guid>
       <description>&lt;p&gt;Firstly let me wish you all a very happy New Year and secondly a big thank you to all of you who have been dropping by my blog and I sincerely hope you continue to do so. I&amp;rsquo;ve been seeing at least a 10% month on month growth in traffic since the start of the year and its the prospect that I might be producing something (however remote) of interest to someone makes my efforts even more rewarding. I would also like to pay my respects to all those other Bloggers in the Blogosphere who provide great content for me to consume – more on this in the next few days. Also lets not forget the Tweeps, and if you do both then a huge big-up to you!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Speaking at SQLRally 2011!</title>
-      <link>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</link>
       <pubDate>Thu, 16 Dec 2010 13:42:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/16/excited-about-sqlrally-2011/</guid>
       <description>&lt;p&gt;I am very pleased/ proud to announce that I have submitted 2 abstracts for presentations to &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/&#34;&gt;SQLRally&lt;/a&gt; and should I be chosen they will be given in Orlando, Florida between May 11th to May 13th. For those of you not already aware, SQLRally is a little bit like a mini SQL PASS Summit and enables people from the East Coast of America to visit an event closer to them should they have not been able to attend the PASS Summit due to the distance and cost restrictions. It has been devised to fill the gap between SQL Saturday events and more can be found by visiting this &lt;a href=&#34;https://www.sqlpass.org/sqlrally/2011/About.aspx&#34;&gt;url&lt;/a&gt;. I believe it is going to be a great success. Should I be chosen to present at SQLRally, which will be a tall order given the very strong competition it will be only my second time going to a SQL Event in the States (PASS 2010 was my first) it will be my very first visit to the East Coast.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits 7 the forgotten photos part 1</title>
-      <link>http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</link>
+      <link>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</link>
       <pubDate>Wed, 01 Dec 2010 15:05:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/12/01/sqlbits-7-forgotten-photos-part-1/</guid>
       <description>&lt;p&gt;Several weeks back I attached my Blackberry to my PC to clear down all the photos in preparation for SQL Pass and I stumbled across these grainy old photos taken during those rainy few days in York. It all seems like a lifetime ago now and much has happened to me since &lt;a href=&#34;https://sqlbits.com&#34;&gt;SQL Bits&lt;/a&gt; 7, but this was my story of an interesting and enjoyable but all too brief few days.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQLBits Speaker Training Day</title>
-      <link>http://localhost:1313/posts/2010/09/19/speaker-training-day/</link>
+      <link>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</link>
       <pubDate>Sun, 19 Sep 2010 18:16:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2010/09/19/speaker-training-day/</guid>
+      <guid>https://tenbulls.co.uk/posts/2010/09/19/speaker-training-day/</guid>
       <description>&lt;p&gt;A couple of weeks ago, I (like many others) rolled into Reading to attend the Speaker Training day held at Microsoft HQ in the UK. This event was organized to help people prepare for speaking at SQLBits 7 (if your submission was successful) or to prepare for a future successful submission (if it wasn&amp;rsquo;t). Upon arriving at Microsoft it was quite funny because the receptionist seemed to recognize me, but since I hadn&amp;rsquo;t been to that building for around 3 years I&amp;rsquo;m not sure how she could have done &amp;hellip;still it&amp;rsquo;s always nice to be &amp;ldquo;recognized&amp;rdquo; 🙂&lt;/p&gt;</description>
     </item>
   </channel>

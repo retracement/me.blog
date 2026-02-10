@@ -2,389 +2,424 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on tenbulls blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://tenbulls.co.uk/tags/</link>
     <description>Recent content in Tags on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Thu, 25 Apr 2019 17:40:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure</title>
-      <link>http://localhost:1313/tags/azure/</link>
+      <link>https://tenbulls.co.uk/tags/azure/</link>
       <pubDate>Thu, 25 Apr 2019 17:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/azure/</guid>
+      <guid>https://tenbulls.co.uk/tags/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>PowerShell</title>
-      <link>http://localhost:1313/tags/powershell/</link>
+      <link>https://tenbulls.co.uk/tags/powershell/</link>
       <pubDate>Thu, 25 Apr 2019 17:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/powershell/</guid>
+      <guid>https://tenbulls.co.uk/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure CLI</title>
-      <link>http://localhost:1313/tags/azure-cli/</link>
+      <link>https://tenbulls.co.uk/tags/azure-cli/</link>
       <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/azure-cli/</guid>
+      <guid>https://tenbulls.co.uk/tags/azure-cli/</guid>
       <description></description>
     </item>
     <item>
       <title>AzureRM</title>
-      <link>http://localhost:1313/tags/azurerm/</link>
+      <link>https://tenbulls.co.uk/tags/azurerm/</link>
       <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/azurerm/</guid>
+      <guid>https://tenbulls.co.uk/tags/azurerm/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://tenbulls.co.uk/tags/linux/</link>
       <pubDate>Fri, 01 Feb 2019 13:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://tenbulls.co.uk/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Community</title>
-      <link>http://localhost:1313/tags/community/</link>
-      <pubDate>Wed, 16 Dec 2015 15:32:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/community/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dotnet</title>
-      <link>http://localhost:1313/tags/dotnet/</link>
-      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQL</title>
-      <link>http://localhost:1313/tags/sql/</link>
-      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SSIS</title>
-      <link>http://localhost:1313/tags/ssis/</link>
-      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/ssis/</guid>
+      <link>https://tenbulls.co.uk/tags/community/</link>
+      <pubDate>Tue, 12 Jul 2016 11:17:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/community/</guid>
       <description></description>
     </item>
     <item>
       <title>PASS</title>
-      <link>http://localhost:1313/tags/pass/</link>
-      <pubDate>Wed, 04 Nov 2015 15:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/pass/</guid>
+      <link>https://tenbulls.co.uk/tags/pass/</link>
+      <pubDate>Tue, 12 Jul 2016 11:17:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/pass/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HybridVUG</title>
+      <link>https://tenbulls.co.uk/tags/hybridvug/</link>
+      <pubDate>Fri, 22 Jan 2016 14:59:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/hybridvug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://tenbulls.co.uk/tags/sql/</link>
+      <pubDate>Wed, 13 Jan 2016 13:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TempDB</title>
+      <link>https://tenbulls.co.uk/tags/tempdb/</link>
+      <pubDate>Wed, 13 Jan 2016 13:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/tempdb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLNexus</title>
+      <link>https://tenbulls.co.uk/tags/sqlnexus/</link>
+      <pubDate>Thu, 07 Jan 2016 11:13:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlnexus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sequences</title>
+      <link>https://tenbulls.co.uk/tags/sequences/</link>
+      <pubDate>Tue, 22 Dec 2015 12:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sequences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CDC</title>
+      <link>https://tenbulls.co.uk/tags/cdc/</link>
+      <pubDate>Fri, 18 Dec 2015 17:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/cdc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://tenbulls.co.uk/tags/dotnet/</link>
+      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSIS</title>
+      <link>https://tenbulls.co.uk/tags/ssis/</link>
+      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/ssis/</guid>
       <description></description>
     </item>
     <item>
       <title>PASS Summit</title>
-      <link>http://localhost:1313/tags/pass-summit/</link>
+      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
       <pubDate>Wed, 04 Nov 2015 15:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/pass-summit/</guid>
+      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
       <description></description>
     </item>
     <item>
       <title>Public Speaking</title>
-      <link>http://localhost:1313/tags/public-speaking/</link>
+      <link>https://tenbulls.co.uk/tags/public-speaking/</link>
       <pubDate>Wed, 04 Nov 2015 15:28:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/public-speaking/</guid>
+      <guid>https://tenbulls.co.uk/tags/public-speaking/</guid>
       <description></description>
     </item>
     <item>
       <title>Hyper-V</title>
-      <link>http://localhost:1313/tags/hyper-v/</link>
+      <link>https://tenbulls.co.uk/tags/hyper-v/</link>
       <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/hyper-v/</guid>
+      <guid>https://tenbulls.co.uk/tags/hyper-v/</guid>
       <description></description>
     </item>
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/tags/installation/</link>
+      <link>https://tenbulls.co.uk/tags/installation/</link>
       <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/installation/</guid>
+      <guid>https://tenbulls.co.uk/tags/installation/</guid>
       <description></description>
     </item>
     <item>
       <title>Oracle</title>
-      <link>http://localhost:1313/tags/oracle/</link>
+      <link>https://tenbulls.co.uk/tags/oracle/</link>
       <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/oracle/</guid>
+      <guid>https://tenbulls.co.uk/tags/oracle/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/tags/windows/</link>
+      <link>https://tenbulls.co.uk/tags/windows/</link>
       <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/windows/</guid>
+      <guid>https://tenbulls.co.uk/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>SQLSaturday</title>
-      <link>http://localhost:1313/tags/sqlsaturday/</link>
+      <link>https://tenbulls.co.uk/tags/sqlsaturday/</link>
       <pubDate>Thu, 20 Aug 2015 14:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sqlsaturday/</guid>
+      <guid>https://tenbulls.co.uk/tags/sqlsaturday/</guid>
       <description></description>
     </item>
     <item>
       <title>Training</title>
-      <link>http://localhost:1313/tags/training/</link>
+      <link>https://tenbulls.co.uk/tags/training/</link>
       <pubDate>Thu, 20 Aug 2015 14:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/training/</guid>
+      <guid>https://tenbulls.co.uk/tags/training/</guid>
       <description></description>
     </item>
     <item>
       <title>SharePoint Saturday</title>
-      <link>http://localhost:1313/tags/sharepoint-saturday/</link>
+      <link>https://tenbulls.co.uk/tags/sharepoint-saturday/</link>
       <pubDate>Thu, 25 Jun 2015 10:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sharepoint-saturday/</guid>
+      <guid>https://tenbulls.co.uk/tags/sharepoint-saturday/</guid>
       <description></description>
     </item>
     <item>
       <title>SharePoint</title>
-      <link>http://localhost:1313/tags/sharepoint/</link>
+      <link>https://tenbulls.co.uk/tags/sharepoint/</link>
       <pubDate>Mon, 30 Mar 2015 07:52:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sharepoint/</guid>
+      <guid>https://tenbulls.co.uk/tags/sharepoint/</guid>
       <description></description>
     </item>
     <item>
       <title>SCVMM</title>
-      <link>http://localhost:1313/tags/scvmm/</link>
+      <link>https://tenbulls.co.uk/tags/scvmm/</link>
       <pubDate>Tue, 24 Feb 2015 14:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/scvmm/</guid>
+      <guid>https://tenbulls.co.uk/tags/scvmm/</guid>
       <description></description>
     </item>
     <item>
       <title>SQLBits</title>
-      <link>http://localhost:1313/tags/sqlbits/</link>
+      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
       <pubDate>Fri, 20 Feb 2015 13:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sqlbits/</guid>
+      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
       <description></description>
     </item>
     <item>
       <title>Audio</title>
-      <link>http://localhost:1313/tags/audio/</link>
+      <link>https://tenbulls.co.uk/tags/audio/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/audio/</guid>
+      <guid>https://tenbulls.co.uk/tags/audio/</guid>
       <description></description>
     </item>
     <item>
       <title>Utilities</title>
-      <link>http://localhost:1313/tags/utilities/</link>
+      <link>https://tenbulls.co.uk/tags/utilities/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/utilities/</guid>
+      <guid>https://tenbulls.co.uk/tags/utilities/</guid>
       <description></description>
     </item>
     <item>
       <title>Video</title>
-      <link>http://localhost:1313/tags/video/</link>
+      <link>https://tenbulls.co.uk/tags/video/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/video/</guid>
+      <guid>https://tenbulls.co.uk/tags/video/</guid>
       <description></description>
     </item>
     <item>
       <title>MCM</title>
-      <link>http://localhost:1313/tags/mcm/</link>
+      <link>https://tenbulls.co.uk/tags/mcm/</link>
       <pubDate>Thu, 06 Nov 2014 00:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/mcm/</guid>
+      <guid>https://tenbulls.co.uk/tags/mcm/</guid>
       <description></description>
     </item>
     <item>
       <title>Availability Groups</title>
-      <link>http://localhost:1313/tags/availability-groups/</link>
+      <link>https://tenbulls.co.uk/tags/availability-groups/</link>
       <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/availability-groups/</guid>
+      <guid>https://tenbulls.co.uk/tags/availability-groups/</guid>
       <description></description>
     </item>
     <item>
       <title>Clustering</title>
-      <link>http://localhost:1313/tags/clustering/</link>
+      <link>https://tenbulls.co.uk/tags/clustering/</link>
       <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/clustering/</guid>
+      <guid>https://tenbulls.co.uk/tags/clustering/</guid>
       <description></description>
     </item>
     <item>
       <title>HADR</title>
-      <link>http://localhost:1313/tags/hadr/</link>
+      <link>https://tenbulls.co.uk/tags/hadr/</link>
       <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/hadr/</guid>
+      <guid>https://tenbulls.co.uk/tags/hadr/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrency</title>
-      <link>http://localhost:1313/tags/concurrency/</link>
+      <link>https://tenbulls.co.uk/tags/concurrency/</link>
       <pubDate>Wed, 05 Mar 2014 09:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/concurrency/</guid>
+      <guid>https://tenbulls.co.uk/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>http://localhost:1313/tags/books/</link>
+      <link>https://tenbulls.co.uk/tags/books/</link>
       <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/books/</guid>
+      <guid>https://tenbulls.co.uk/tags/books/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
-      <link>http://localhost:1313/tags/learning/</link>
+      <link>https://tenbulls.co.uk/tags/learning/</link>
       <pubDate>Tue, 11 Feb 2014 12:10:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/learning/</guid>
+      <guid>https://tenbulls.co.uk/tags/learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Charity</title>
-      <link>http://localhost:1313/tags/charity/</link>
+      <link>https://tenbulls.co.uk/tags/charity/</link>
       <pubDate>Sun, 29 Sep 2013 20:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/charity/</guid>
+      <guid>https://tenbulls.co.uk/tags/charity/</guid>
       <description></description>
     </item>
     <item>
       <title>TSQL Tuesday</title>
-      <link>http://localhost:1313/tags/tsql-tuesday/</link>
+      <link>https://tenbulls.co.uk/tags/tsql-tuesday/</link>
       <pubDate>Tue, 09 Apr 2013 21:55:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/tsql-tuesday/</guid>
+      <guid>https://tenbulls.co.uk/tags/tsql-tuesday/</guid>
       <description></description>
     </item>
     <item>
       <title>Funny</title>
-      <link>http://localhost:1313/tags/funny/</link>
+      <link>https://tenbulls.co.uk/tags/funny/</link>
       <pubDate>Mon, 01 Apr 2013 12:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/funny/</guid>
+      <guid>https://tenbulls.co.uk/tags/funny/</guid>
       <description></description>
     </item>
     <item>
       <title>AzureVM</title>
-      <link>http://localhost:1313/tags/azurevm/</link>
+      <link>https://tenbulls.co.uk/tags/azurevm/</link>
       <pubDate>Wed, 20 Mar 2013 17:19:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/azurevm/</guid>
+      <guid>https://tenbulls.co.uk/tags/azurevm/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
+      <link>https://tenbulls.co.uk/tags/automation/</link>
       <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
+      <guid>https://tenbulls.co.uk/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Upgrade</title>
-      <link>http://localhost:1313/tags/upgrade/</link>
+      <link>https://tenbulls.co.uk/tags/upgrade/</link>
       <pubDate>Tue, 24 Apr 2012 19:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/upgrade/</guid>
+      <guid>https://tenbulls.co.uk/tags/upgrade/</guid>
       <description></description>
     </item>
     <item>
       <title>SQLHelp</title>
-      <link>http://localhost:1313/tags/sqlhelp/</link>
+      <link>https://tenbulls.co.uk/tags/sqlhelp/</link>
       <pubDate>Tue, 17 Apr 2012 18:38:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sqlhelp/</guid>
+      <guid>https://tenbulls.co.uk/tags/sqlhelp/</guid>
       <description></description>
     </item>
     <item>
       <title>24HOP</title>
-      <link>http://localhost:1313/tags/24hop/</link>
+      <link>https://tenbulls.co.uk/tags/24hop/</link>
       <pubDate>Mon, 26 Mar 2012 15:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/24hop/</guid>
+      <guid>https://tenbulls.co.uk/tags/24hop/</guid>
       <description></description>
     </item>
     <item>
       <title>Storage</title>
-      <link>http://localhost:1313/tags/storage/</link>
+      <link>https://tenbulls.co.uk/tags/storage/</link>
       <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/storage/</guid>
+      <guid>https://tenbulls.co.uk/tags/storage/</guid>
       <description></description>
     </item>
     <item>
       <title>VirtualBox</title>
-      <link>http://localhost:1313/tags/virtualbox/</link>
+      <link>https://tenbulls.co.uk/tags/virtualbox/</link>
       <pubDate>Wed, 14 Mar 2012 12:43:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/virtualbox/</guid>
+      <guid>https://tenbulls.co.uk/tags/virtualbox/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
+      <link>https://tenbulls.co.uk/tags/security/</link>
       <pubDate>Mon, 30 Jan 2012 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
+      <guid>https://tenbulls.co.uk/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>SQLRally</title>
-      <link>http://localhost:1313/tags/sqlrally/</link>
+      <link>https://tenbulls.co.uk/tags/sqlrally/</link>
       <pubDate>Wed, 25 Jan 2012 02:06:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sqlrally/</guid>
+      <guid>https://tenbulls.co.uk/tags/sqlrally/</guid>
       <description></description>
     </item>
     <item>
       <title>SQLCambs</title>
-      <link>http://localhost:1313/tags/sqlcambs/</link>
+      <link>https://tenbulls.co.uk/tags/sqlcambs/</link>
       <pubDate>Mon, 24 Oct 2011 11:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sqlcambs/</guid>
+      <guid>https://tenbulls.co.uk/tags/sqlcambs/</guid>
       <description></description>
     </item>
     <item>
       <title>SQL Solstice</title>
-      <link>http://localhost:1313/tags/sql-solstice/</link>
+      <link>https://tenbulls.co.uk/tags/sql-solstice/</link>
       <pubDate>Sun, 31 Jul 2011 20:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sql-solstice/</guid>
+      <guid>https://tenbulls.co.uk/tags/sql-solstice/</guid>
       <description></description>
     </item>
     <item>
       <title>Corruption</title>
-      <link>http://localhost:1313/tags/corruption/</link>
+      <link>https://tenbulls.co.uk/tags/corruption/</link>
       <pubDate>Tue, 14 Jun 2011 08:46:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/corruption/</guid>
+      <guid>https://tenbulls.co.uk/tags/corruption/</guid>
       <description></description>
     </item>
     <item>
       <title>Ffmpeg</title>
-      <link>http://localhost:1313/tags/ffmpeg/</link>
+      <link>https://tenbulls.co.uk/tags/ffmpeg/</link>
       <pubDate>Tue, 07 Jun 2011 20:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/ffmpeg/</guid>
+      <guid>https://tenbulls.co.uk/tags/ffmpeg/</guid>
       <description></description>
     </item>
     <item>
       <title>Scalability</title>
-      <link>http://localhost:1313/tags/scalability/</link>
+      <link>https://tenbulls.co.uk/tags/scalability/</link>
       <pubDate>Wed, 25 May 2011 23:24:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/scalability/</guid>
+      <guid>https://tenbulls.co.uk/tags/scalability/</guid>
       <description></description>
     </item>
     <item>
       <title>Business Intelligence</title>
-      <link>http://localhost:1313/tags/business-intelligence/</link>
+      <link>https://tenbulls.co.uk/tags/business-intelligence/</link>
       <pubDate>Tue, 29 Mar 2011 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/business-intelligence/</guid>
+      <guid>https://tenbulls.co.uk/tags/business-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>SQLAgent</title>
-      <link>http://localhost:1313/tags/sqlagent/</link>
+      <link>https://tenbulls.co.uk/tags/sqlagent/</link>
       <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sqlagent/</guid>
+      <guid>https://tenbulls.co.uk/tags/sqlagent/</guid>
       <description></description>
     </item>
     <item>
       <title>Performance</title>
-      <link>http://localhost:1313/tags/performance/</link>
+      <link>https://tenbulls.co.uk/tags/performance/</link>
       <pubDate>Tue, 08 Feb 2011 21:07:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/performance/</guid>
+      <guid>https://tenbulls.co.uk/tags/performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Fluxbox</title>
-      <link>http://localhost:1313/tags/fluxbox/</link>
+      <link>https://tenbulls.co.uk/tags/fluxbox/</link>
       <pubDate>Tue, 25 Jan 2011 07:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/fluxbox/</guid>
+      <guid>https://tenbulls.co.uk/tags/fluxbox/</guid>
       <description></description>
     </item>
     <item>
       <title>Certification</title>
-      <link>http://localhost:1313/tags/certification/</link>
+      <link>https://tenbulls.co.uk/tags/certification/</link>
       <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/certification/</guid>
+      <guid>https://tenbulls.co.uk/tags/certification/</guid>
       <description></description>
     </item>
   </channel>

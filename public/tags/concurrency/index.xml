@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Concurrency on tenbulls blog</title>
-    <link>http://localhost:1313/tags/concurrency/</link>
+    <link>https://tenbulls.co.uk/tags/concurrency/</link>
     <description>Recent content in Concurrency on tenbulls blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
     <lastBuildDate>Wed, 05 Mar 2014 09:30:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tenbulls.co.uk/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ROLLBACK damn you!</title>
-      <link>http://localhost:1313/posts/2014/03/05/rollback-damn-you/</link>
+      <link>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</link>
       <pubDate>Wed, 05 Mar 2014 09:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2014/03/05/rollback-damn-you/</guid>
-      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</guid>
+      <description>&lt;p&gt;A good question was asked on #SQLHELP the other day regarding the use of &lt;code&gt;XACT_ABORT ON&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If you don’t have a &lt;code&gt;BEGIN TRAN COMMIT TRAN&lt;/code&gt; in a stored procedure, will SET XACT_ABORT ON do anything?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;My immediate reply to this was:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes it makes the transaction atomic. See my blog post &lt;a href=&#34;https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go&#34;&gt;Baby baby baby, where did our ROLLBACK go?&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In response to this, the follow-up question was raised:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;wouldn’t executing the stored procedure by itself be atomic?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why don’t you go and LOCK OFF!</title>
-      <link>http://localhost:1313/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
+      <link>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</link>
       <pubDate>Wed, 17 Jul 2013 13:44:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
+      <guid>https://tenbulls.co.uk/posts/2013/07/17/why-dont-you-go-and-lock-off/</guid>
       <description>&lt;p&gt;No this is not a Hekaton post 🙂 -perhaps I should have saved this title for another rainy day.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server concurrency is a particularly difficult subject to master and understanding the result of your actions can be confounded by some of SQL Server’s special behaviors and quirks that I so often like to talk and write about.&lt;/p&gt;&#xA;&lt;p&gt;As some of my &lt;del&gt;followers&lt;/del&gt; stalkers out there may remember, one of my favorite demonstrations I like to give is during my&#xA;&lt;a href=&#34;https://www.sqlpass.org/summit/2012/Sessions/SessionDetails.aspx?sid=2816&#34;&gt;READPAST &amp;amp; Furious: Transactions, Locking, and Isolation&lt;/a&gt; session -last performed at the &lt;a href=&#34;https://www.sqlpass.org/summit/2012/&#34;&gt;SQLPASS 2012 Summit&lt;/a&gt; and &lt;a href=&#34;https://www.sqlsaturday.com/viewsession.aspx?sat=229&amp;amp;sessionid=14975&#34;&gt;SQLSaturday #229 Dublin&lt;/a&gt; where in a little piece of code I discuss whether a transaction is really Atomic (or not). For anyone reading this paragraph who has immediately answered “ALWAYS” -then my friend you are in serious trouble with your code-base. And I am not even talking about the use of lower levels of isolation to perform dirty reads within your transaction here, isolation does not effect a transaction’s atomicity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Baby baby baby, where did our ROLLBACK go?</title>
-      <link>http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
+      <link>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</link>
       <pubDate>Tue, 23 Oct 2012 22:51:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2012/10/23/baby-baby-baby-where-did-our-love-data-go/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2012/frankiesays.jpg&#34; alt=&#34;Frankie Says Relax&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Possibly one of the very first things we learn as fledgling DBA’s is that transactions are used to provide &lt;em&gt;&amp;ldquo;all or nothing&amp;rdquo;&lt;/em&gt; operations. If you ever go for a SQL Server job interview, you are almost guaranteed to be asked exactly what constitutes the ACID properties (&lt;strong&gt;groan&lt;/strong&gt;). The A in ACID is of course Atomicity and basically represents the fact that a given set of operations within a transaction either succeeds as an atomic unit OR it doesn’t.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Curious Case of the Non-Escalating transaction locks</title>
-      <link>http://localhost:1313/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
+      <link>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</link>
       <pubDate>Wed, 17 Oct 2012 13:40:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
+      <guid>https://tenbulls.co.uk/posts/2012/10/17/the-curious-case-of-the-non-escalating-transaction-locks/</guid>
       <description>&lt;p&gt;SQL Server has many facets and behaviors that are often misunderstood and do not always work quite as we may have expected. At first you may believe that you understand the mechanics, only to realize after a little bit of delving deeper that your comprehension was wrong.&lt;/p&gt;&#xA;&lt;p&gt;SQL Server Lock Escalation is one of these commonly misunderstood topics, and most recently after doing a little investigation into a few subjects related to escalation I was shocked and surprised in equal measure to find that things were not working quite as I expected.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lock Compatibility Matrix 1.2</title>
-      <link>http://localhost:1313/posts/2011/11/17/compatibility-matrix-1-2/</link>
+      <link>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</link>
       <pubDate>Thu, 17 Nov 2011 22:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/11/17/compatibility-matrix-1-2/</guid>
-      <description>&lt;p&gt;A couple of months back I published my version of SQL Server&amp;rsquo;s Lock Compatibility Matrix under the post &lt;a href=&#34;http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix&#34;&gt;Fancy a decent Compatibility Matrix?&lt;/a&gt; since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.&lt;/p&gt;&#xA;&lt;p&gt;One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and &lt;em&gt;told the story&lt;/em&gt; of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&amp;gt; GO (i.e. lock grant), RED -&amp;gt; STOP (i.e. lock wait). BUT that doesn&amp;rsquo;t help colour blind people very much does it!&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/11/17/compatibility-matrix-1-2/</guid>
+      <description>&lt;p&gt;A couple of months back I published my version of SQL Server&amp;rsquo;s Lock Compatibility Matrix under the post &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix&#34;&gt;Fancy a decent Compatibility Matrix?&lt;/a&gt; since the one provided by MSDN is really very poorly designed and difficult for the average Joe to understand.This is one reason I believe that lock compatibility is a very misunderstood subject.&lt;/p&gt;&#xA;&lt;p&gt;One thing that has bothered me about my version from the very beginning was the use of green and red to respectively indicate compatible or incompatible locks. The reason this has bothered me from the offset is because I was aware that those two colours could be a very big problem for colour blind DBAs. However, for me they really DID look great together and &lt;em&gt;told the story&lt;/em&gt; of the compatibility between the locks without even needing words -every (non colour blind) person understands the concept of GREEN -&amp;gt; GO (i.e. lock grant), RED -&amp;gt; STOP (i.e. lock wait). BUT that doesn&amp;rsquo;t help colour blind people very much does it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>NOLOCK hits Mythbusters!</title>
-      <link>http://localhost:1313/posts/2011/10/14/nolock-hits-mythbusters/</link>
+      <link>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</link>
       <pubDate>Fri, 14 Oct 2011 15:59:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/10/14/nolock-hits-mythbusters/</guid>
-      <description>&lt;p&gt;Exactly one month to this very day I wrote the article &lt;a href=&#34;http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock&#34;&gt;When should you use NOLOCK?&lt;/a&gt; which explained exactly when the use of the &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation level was acceptable and when it wasn&amp;rsquo;t. I also revealed that it not only takes out a &lt;em&gt;Schema Stability (Sch-S)&lt;/em&gt; lock on the object (which is documented in Books Online for the hint) but also took out a special &lt;em&gt;Shared (S) Bulk Operation&lt;/em&gt; lock when used on heaps. This latter behaviour is not even mentioned in Books Online for the hint and as far as I know, has never been documented or mentioned anywhere else before.&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/10/14/nolock-hits-mythbusters/</guid>
+      <description>&lt;p&gt;Exactly one month to this very day I wrote the article &lt;a href=&#34;https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock&#34;&gt;When should you use NOLOCK?&lt;/a&gt; which explained exactly when the use of the &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation level was acceptable and when it wasn&amp;rsquo;t. I also revealed that it not only takes out a &lt;em&gt;Schema Stability (Sch-S)&lt;/em&gt; lock on the object (which is documented in Books Online for the hint) but also took out a special &lt;em&gt;Shared (S) Bulk Operation&lt;/em&gt; lock when used on heaps. This latter behaviour is not even mentioned in Books Online for the hint and as far as I know, has never been documented or mentioned anywhere else before.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fancy a decent Compatibility Matrix?</title>
-      <link>http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</link>
+      <link>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</link>
       <pubDate>Tue, 27 Sep 2011 21:12:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</guid>
-      <description>&lt;p&gt;Have you ever taken a look at Microsoft&amp;rsquo;s published &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms186396.aspx&#34;&gt;compatibility matrix&lt;/a&gt; for SQL Server lock compatibility? If you have, then I don&amp;rsquo;t need to tell you that it sucks in a very big way.&lt;/p&gt;&#xA;&lt;p&gt;Have no fear, I have painstakingly redrawn at better one (via PowerPoint no less!) and am making available to you totally free of charge as a lovely PDF slide found via &lt;a href=&#34;http://localhost:1313/documents/readpastfuriouslockcompatibilitymatrix.pdf&#34;&gt;here&lt;/a&gt;&amp;hellip; Why you ask? Because I love you all!&lt;/p&gt;</description>
+      <guid>https://tenbulls.co.uk/posts/2011/09/27/fancy-a-decent-compatibility-matrix/</guid>
+      <description>&lt;p&gt;Have you ever taken a look at Microsoft&amp;rsquo;s published &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ms186396.aspx&#34;&gt;compatibility matrix&lt;/a&gt; for SQL Server lock compatibility? If you have, then I don&amp;rsquo;t need to tell you that it sucks in a very big way.&lt;/p&gt;&#xA;&lt;p&gt;Have no fear, I have painstakingly redrawn at better one (via PowerPoint no less!) and am making available to you totally free of charge as a lovely PDF slide found via &lt;a href=&#34;https://tenbulls.co.uk/documents/readpastfuriouslockcompatibilitymatrix.pdf&#34;&gt;here&lt;/a&gt;&amp;hellip; Why you ask? Because I love you all!&lt;/p&gt;</description>
     </item>
     <item>
       <title>When should you use NOLOCK?</title>
-      <link>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</link>
+      <link>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</link>
       <pubDate>Wed, 14 Sep 2011 12:31:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/2011/09/14/when-should-you-use-nolock/</guid>
+      <guid>https://tenbulls.co.uk/posts/2011/09/14/when-should-you-use-nolock/</guid>
       <description>&lt;p&gt;Well the quick answer to that question is never. And there you have it, the quickest blog post in history (perhaps!).&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip;Except that I should really have said &lt;em&gt;&amp;ldquo;When should you use &lt;code&gt;READUNCOMMITTED&lt;/code&gt; isolation or hint?&amp;rdquo;&lt;/em&gt; and then the question takes a little more of a surprising turn. Let me first start and explain why I have categorically ruled against the use of &lt;code&gt;NOLOCK&lt;/code&gt;. The reason, is that at some point in the dim and distant future Microsoft may decide to remove this hint from the product. If they could do it today, they probably would; the only thing that is really stopping them is the numerous lines of external T-SQL code that dirtys the floors of many Development teams around the world.&lt;/p&gt;</description>
     </item>
   </channel>
