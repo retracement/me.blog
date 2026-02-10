@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sequences on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/sequences/</link>
+    <description>Recent content in Sequences on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Tue, 22 Dec 2015 12:40:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/sequences/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Incrementing SQL Sequences</title>
+      <link>https://tenbulls.co.uk/posts/2015/12/22/incrementing-sql-sequences/</link>
+      <pubDate>Tue, 22 Dec 2015 12:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/12/22/incrementing-sql-sequences/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ff878091(v=sql.110).aspx&#34;&gt;Sequences&lt;/a&gt; were first introduced in SQL Server 2012 and are a way to improve performance in situations that would have traditionally been implemented using the column based identity property. One of the biggest downfalls of the identity property is that new values are generated on inserts meaning that they are also transactionally dependent. Sequences on the other hand are not and allow for caching and many other benefits which you can compare and contrast in this really good SQL Server Pro magazine article by Itzik titled &lt;a href=&#34;https://sqlmag.com/blog/sql-server-2012-t-sql-glance-sequences&#34;&gt;SQL Server 2012 T-SQL at a Glance – Sequences&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

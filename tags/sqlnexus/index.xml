@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLNexus on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/sqlnexus/</link>
+    <description>Recent content in SQLNexus on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Thu, 07 Jan 2016 11:13:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/sqlnexus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing SQLNexus</title>
+      <link>https://tenbulls.co.uk/posts/2016/01/07/sql-nexus-is-alive/</link>
+      <pubDate>Thu, 07 Jan 2016 11:13:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/01/07/sql-nexus-is-alive/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2016/sqlnexus.webp&#34; alt=&#34;SQLNexus&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you have not already heard, SQL Nexus (a next generation SQL Server focused event) will be held on May 2nd – 4th 2016 in Copenhagen, Denmark.&lt;/p&gt;&#xA;&lt;p&gt;The “idea” for SQL Nexus (&lt;a href=&#34;https://www.sqlnexus.com/&#34;&gt;w&lt;/a&gt;|&lt;a href=&#34;https://twitter.com/sqlnexus&#34;&gt;t&lt;/a&gt;) was first conceived in 2012 more as a future pipe dream than anything else and it was something that I had in mind when we delivered the second &lt;a href=&#34;https://sqlsaturday.com/228/eventhome.aspx&#34;&gt;SQLSaturday Cambridge in 2012&lt;/a&gt; in which we included a dedicated SharePoint track.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

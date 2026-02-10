@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Problem removing files from TempDB">
+  <meta property="og:description" content="I recently ran into an interesting problem while attempting to remove approximately half of the TempDB data files configured in a testing environment. As you might expect, there are various SQL Server tasks that are performed infrequently by a DBA, and this is a good example of one of them. Most environments have usually been misconfigured with too few TempDB data files or wrongly sized usually resulting in the classic allocation page contention problems (which is explained by this excellent SQLSkills article The Accidental DBA (Day 27 of 30): Troubleshooting: Tempdb Contention), but this particular environment had been temporarily over provisioned with disks and TempDB data files (for testing purposes).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2016-01-13T13:30:00+01:00">
+    <meta property="article:modified_time" content="2016-01-13T13:30:00+01:00">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="TempDB">
+
+<title>tenbulls blog | Problem removing files from TempDB</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Problem removing files from TempDB</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2016-01-13T13:30:00&#43;01:00">January 13, 2016</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              5 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>I recently ran into an interesting problem while attempting to remove approximately half of the TempDB data files configured in a testing environment. As you might expect, there are various SQL Server tasks that are performed infrequently by a DBA, and this is a good example of one of them. Most environments have usually been misconfigured with too few TempDB data files or wrongly sized usually resulting in the classic allocation page contention problems (which is explained by this excellent SQLSkills article <a href="https://www.sqlskills.com/blogs/paul/the-accidental-dba-day-27-of-30-troubleshooting-tempdb-contention/">The Accidental DBA (Day 27 of 30): Troubleshooting: Tempdb Contention</a>), but this particular environment had been temporarily over provisioned with disks and TempDB data files (for testing purposes).</p>
+<hr>
+<p><em>Bonus fact: SQL Server 2016 attempts to automatically address the tempdb datafile allocation page contention problem by defaulting to 8 TempDB data files (or less if the number of cores is smaller). This can be overridden on install through the GUI or by using the <code>/SQLTEMPDBFILECOUNT</code> switch if performing a command line installation. Further optimisations have been implemented such as the adoption of uniform extent allocations by default and auto-growing all files simultaneously -both behaviours would formally have required turning on Traceflags <a href="https://blogs.technet.com/technet_blog_images/b/sql_server_sizing_ha_and_performance_hints/archive/2012/02/09/sql-server-2008-trace-flag-t-1117.aspx">1117</a> and <a href="https://blogs.msdn.microsoft.com/psssql/2008/12/17/sql-server-2005-and-2008-trace-flag-1118-t1118-usage/">1118</a>. Several other improvements have been made to the performance of TempDB database which you can read about yourself in this (currently preview) <a href="https://msdn.microsoft.com/en-us/library/ms190768.aspx?f=255&amp;MSPPError=-2147217396">documentation</a>.</em></p>
+<hr>
+<p>So the plan was to remove each TempDB file one by one, restart the instance (if required) and decommission those spare disks so that they can be returned and reallocated elsewhere in the environment. In order to remove each data file we would:</p>
+<ol>
+<li>Empty each file at a time (using <code>DBCC SHRINKFILE</code>).</li>
+<li>Remove each file upon empty.</li>
+</ol>
+<p>Now there was a time (prior to SQL Server 2005) when we were told to tread very very carefully when shrinking TempDB files, and doing so could result in corruption. This perception remains with some of the longer serving SQL Server professionals (I question myself frequently) but if we take a look at <a href="https://support.microsoft.com/en-gb/kb/307487">KB307487</a> article <a href="https://support.microsoft.com/en-gb/kb/307487">How to shrink the tempdb database in SQL Server</a> we can see that it is now safe to do so -although (as the Knowledge Base article states) certain scenarios can cause the shrink operation to fail.</p>
+<p>So I ran the following code for each TempDB data file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>DBCC SHRINKFILE (tempdb_15, EMPTYFILE)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">go</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">DATABASE</span> [tempdb] REMOVE FILE [tempdb_15]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>The code succeeded for the first few files, right up to TempDB data file 12, where I hit the following error:</p>
+<blockquote>
+<p>DBCC SHRINKFILE: Page 14:56 could not be moved
+because it is a work table page.
+Msg 2555, Level 16, State 1, Line 1
+Cannot move all contents of file &ldquo;tempdb_12&rdquo; to
+other places to complete the emptyfile operation.
+DBCC execution completed. If DBCC printed error
+messages, contact your system administrator.
+Msg 5042, Level 16, State 1, Line 1
+The file &rsquo;tempdb_12&rsquo; cannot be removed
+because it is not empty.</p>
+</blockquote>
+<p>As odd as this error was (especially since the SQL instance was not currently <em>in use</em>) I decided to bounce it but after restarting the instance was again greeted with the same error message! After some very quick Google-Fu I came across an old MSDN Forum question <a href="https://social.msdn.microsoft.com/Forums/sqlserver/en-US/2a00c314-f35e-4900-babb-f42dcde1944b/dbcc-shrinkfile-page-411283400-could-not-be-moved-because-it-is-a-work-table-page?forum=sqldatabaseengine">DBCC SHRINKFILE: Page 4:11283400 could not be moved because it is a work table page</a>. I ruled out some of the responses but came across the response by Mike Rose:</p>
+<blockquote>
+<p>I realize this is an old thread but I have found that in most cases work tables are related to Query Plans.
+Try issuing the following commands and the shrinking the tempdb:</p>
+<p>DBCC FREESYSTEMCACHE (‘ALL’)</p>
+<p>DBCC FREEPROCCACHE</p>
+<p>there will be some performance hit for this as SQL will have to recreate its Query Plans, but it should allow you to shrink you TEMPDB.</p>
+<p>Hope this helps,</p>
+<p>M Rose</p>
+</blockquote>
+<p>Now my initial thoughts were that this response was clearly nonsense since I had just restarted the SQL Service for the instance (thereby flushing the SQL caches), but hey what the hell, why not give it a whirl&hellip;</p>
+<p><strong>&hellip;and success! It worked.</strong></p>
+<p>Apart from the flushing of the caches, the outcome was even more strange to me for another reason. Upon reboot TempDB is <em>recreated</em> upon startup<sub>*1</sub> and I would have expected that fact alone to have fixed the problem but from the behaviour I had experienced, something had persisted across instance restart.</p>
+<p>Also of interest to me was whether running <code>FREEPROCCACHE</code> and <code>FREESYSTEMCACHE</code> was overkill so when the opportunity arose I attempted first to try only clearing the systemcache specific to TempDB through:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>DBCC FREESYSTEMCACHE (<span style="color:#e6db74">&#39;tempdb&#39;</span>)
+</span></span></code></pre></div><p>&hellip;and then tried clearing temporary tables and table variables through:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>DBCC FREESYSTEMCACHE (<span style="color:#e6db74">&#39;Temporary Tables &amp; Table Variables&#39;</span>)
+</span></span></code></pre></div><p>&hellip;and then by using both together.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>DBCC FREESYSTEMCACHE (<span style="color:#e6db74">&#39;tempdb&#39;</span>)
+</span></span><span style="display:flex;"><span>DBCC FREESYSTEMCACHE (<span style="color:#e6db74">&#39;Temporary Tables &amp; Table Variables&#39;</span>)
+</span></span></code></pre></div><p>Sadly these did not seem to work.</p>
+<p>On my final opportunity I tried clearing the procedure cache (<code>DBCC FREEPROCCACHE</code>) and after running this a few times it appeared to solve the problem and I was able to remove the TempDB file without error.</p>
+<hr>
+<p>Clearing system caches on a Production SQL Server instance is never a good thing and should be avoided, but at least the next time I run into this problem I have (what appears) to be a work around to the problem I ran into and at least the requirement to remove TempDB data files should be a rare occurrence for most of us!</p>
+<p>I confess that I am left with a few unanswered questions and clearly what I experienced does make me doubt the results somewhat (and my sanity) and there were further tests that I would like to perform at some point. So if you run into this problem yourself I encourage you to try this (<em><strong>disclaimer:</strong> your fault if you destroy your SQL Server</em> 😉) and I would be delighted if you leave feedback of what works for you (and what doesn’t)!</p>
+<hr>
+<p>*<sub><em>1</sub> you may want to read this interesting post by Jonathan Kehayias <a href="https://sqlblog.com/blogs/jonathan_kehayias/archive/2010/05/14/does-tempdb-get-recreated-from-model-at-startup.aspx">Does tempdb Get Recreated From model at Startup?</a></em></p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/tempdb/">TempDB</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2016/01/07/sql-nexus-is-alive/">
+            <span>previous: </span>
+            <span>Announcing SQLNexus</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2016/01/22/goodbye-oraclevc/">
+            <span>next: </span>
+            <span>Anouncing Hybrid Virtual Chapter</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

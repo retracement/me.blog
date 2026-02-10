@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HybridVUG on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/hybridvug/</link>
+    <description>Recent content in HybridVUG on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Fri, 22 Jan 2016 14:59:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/hybridvug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anouncing Hybrid Virtual Chapter</title>
+      <link>https://tenbulls.co.uk/posts/2016/01/22/goodbye-oraclevc/</link>
+      <pubDate>Fri, 22 Jan 2016 14:59:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/01/22/goodbye-oraclevc/</guid>
+      <description>&lt;p&gt;It is with a tinge of sadness that we announce the Oracle Virtual Chapter is no more, but do not despair, all is not lost!&lt;/p&gt;&#xA;&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;Around 14 months ago the leadership of the &lt;a href=&#34;https://oracle.sqlpass.org/Home.aspx&#34;&gt;Oracle Virtual Chapter&lt;/a&gt; changed hands after it had laid dormant for approximately the same length of time as from then to now. Back then &lt;a href=&#34;https://www.sqlpass.org/&#34;&gt;PASS&lt;/a&gt; were not entirely convinced that there was an audience or market for this Chapter, but we discussed our vision for it’s future and for a time the VC had a stay of execution.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

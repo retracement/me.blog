@@ -38,6 +38,13 @@
       <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Using the new Azure Dashboard favourites and tiles</title>
+      <link>https://tenbulls.co.uk/posts/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/</link>
+      <pubDate>Mon, 29 Feb 2016 14:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/</guid>
+      <description>&lt;p&gt;The new Azure Portal represents a huge improvement over the old Classic Azure Portal in terms of User eXperience and performance.&lt;/p&gt;&#xA;&lt;p&gt;If you were used to the old portal you’ll most probably have got to like the quirks and simplicity, but the new portal has a lot to offer and does a great job in providing a more customised and colourful end-user experience.&lt;/p&gt;&#xA;&lt;p&gt;In this post I shall discuss some of the functionality that will make your Azure UX experience more productive and enjoyable.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Upload files to your Azure VM instance</title>
       <link>https://tenbulls.co.uk/posts/2013/03/20/upload-files-to-your-azure-vm-instance/</link>
       <pubDate>Wed, 20 Mar 2013 17:19:00 +0100</pubDate>

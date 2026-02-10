@@ -38,6 +38,48 @@
       <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Using the new Azure Dashboard favourites and tiles</title>
+      <link>https://tenbulls.co.uk/posts/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/</link>
+      <pubDate>Mon, 29 Feb 2016 14:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/</guid>
+      <description>&lt;p&gt;The new Azure Portal represents a huge improvement over the old Classic Azure Portal in terms of User eXperience and performance.&lt;/p&gt;&#xA;&lt;p&gt;If you were used to the old portal you’ll most probably have got to like the quirks and simplicity, but the new portal has a lot to offer and does a great job in providing a more customised and colourful end-user experience.&lt;/p&gt;&#xA;&lt;p&gt;In this post I shall discuss some of the functionality that will make your Azure UX experience more productive and enjoyable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problem removing files from TempDB</title>
+      <link>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</link>
+      <pubDate>Wed, 13 Jan 2016 13:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</guid>
+      <description>&lt;p&gt;I recently ran into an interesting problem while attempting to remove approximately half of the TempDB data files configured in a testing environment. As you might expect, there are various SQL Server tasks that are performed infrequently by a DBA, and this is a good example of one of them. Most environments have usually been misconfigured with too few TempDB data files or wrongly sized usually resulting in the classic allocation page contention problems (which is explained by this excellent SQLSkills article &lt;a href=&#34;https://www.sqlskills.com/blogs/paul/the-accidental-dba-day-27-of-30-troubleshooting-tempdb-contention/&#34;&gt;The Accidental DBA (Day 27 of 30): Troubleshooting: Tempdb Contention&lt;/a&gt;), but this particular environment had been temporarily over provisioned with disks and TempDB data files (for testing purposes).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Incrementing SQL Sequences</title>
+      <link>https://tenbulls.co.uk/posts/2015/12/22/incrementing-sql-sequences/</link>
+      <pubDate>Tue, 22 Dec 2015 12:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/12/22/incrementing-sql-sequences/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/ff878091(v=sql.110).aspx&#34;&gt;Sequences&lt;/a&gt; were first introduced in SQL Server 2012 and are a way to improve performance in situations that would have traditionally been implemented using the column based identity property. One of the biggest downfalls of the identity property is that new values are generated on inserts meaning that they are also transactionally dependent. Sequences on the other hand are not and allow for caching and many other benefits which you can compare and contrast in this really good SQL Server Pro magazine article by Itzik titled &lt;a href=&#34;https://sqlmag.com/blog/sql-server-2012-t-sql-glance-sequences&#34;&gt;SQL Server 2012 T-SQL at a Glance – Sequences&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Restoring CDC enabled databases</title>
+      <link>https://tenbulls.co.uk/posts/2015/12/18/restoring-cdc-enabled-databases/</link>
+      <pubDate>Fri, 18 Dec 2015 17:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/12/18/restoring-cdc-enabled-databases/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/surprised.jpg&#34; alt=&#34;Surprised&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Performing database and transaction log backups (and restores) are the meat and veg of a DBA’s responsibilities and if you are a seasoned professional I am sure you will have performed those operations ad-infinitum. Being complacent is perhaps the biggest mistake you can make as a &lt;em&gt;“Guardian of Data”&lt;/em&gt; so you should always be prepared for the unexpected&amp;hellip;&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-happened&#34;&gt;What happened&lt;/h1&gt;&#xA;&lt;p&gt;Several years ago in a Disaster Recovery scenario, I was asked to perform the migration of a large database which was used for a fairly complex ETL process that was both undocumented and something that the DBA team had no insight or involvement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitesize SSIS - Passing SSIS variables into script components</title>
+      <link>https://tenbulls.co.uk/posts/2015/11/30/bitesize-ssis-1/</link>
+      <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/11/30/bitesize-ssis-1/</guid>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</title>
+      <link>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</link>
+      <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</guid>
+      <description>&lt;p&gt;Have you been attempting (and failing) to install &lt;a href=&#34;https://www.oracle.com/us/technologies/linux/overview/index.html&#34;&gt;Oracle Unbreakable Linux&lt;/a&gt; as a Virtual Machine under Hyper-V and cannot figure out what is wrong?&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;&#xA;&lt;p&gt;If you are receiving the following message:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device. Failed Secure Boot Verification.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE Network Boot using IPv4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;......&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE-E18: Server response timeout.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI Network.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No Operating System was Loaded.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Press a key to retry the boot sequence...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/secure-boot-verification.jpg&#34; alt=&#34;Secure Boot verification&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to install SharePoint 2013 on Windows 2012R2</title>
       <link>https://tenbulls.co.uk/posts/2015/03/30/how-to-install-sharepoint-2013-on-windows-2012r2/</link>
       <pubDate>Mon, 30 Mar 2015 07:52:00 +0100</pubDate>

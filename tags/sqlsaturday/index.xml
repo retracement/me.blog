@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Thu, 25 Jun 2015 10:43:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2015 14:31:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sqlsaturday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bring-A-Boss to SQLSaturday Training day promotion</title>
+      <link>https://tenbulls.co.uk/posts/2015/08/20/announcing-our-sqlsaturday-cambridge-bring-a-boss-training-day-promotion/</link>
+      <pubDate>Thu, 20 Aug 2015 14:31:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/08/20/announcing-our-sqlsaturday-cambridge-bring-a-boss-training-day-promotion/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/david_brent_111.jpg&#34; alt=&#34;David Brent&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Microsoft are delivering a dedicated full day pre-conference training day session at &lt;a href=&#34;https://sqlcambs.org.uk/&#34;&gt;SQLSaturday Cambridge&lt;/a&gt; aimed towards Data Professional Leaders and Executives, delivered by industry leading technology movers and shakers. &lt;a href=&#34;https://sqlcambs.org.uk/precon7/&#34;&gt;Building a Data Driven Strategy&lt;/a&gt; will help your boss understand how they invest in Data Driven Data Analytics and how they can implement them. They will learn all about Microsoft’s future data vision and understand what theirs should be. It is something they will not want to miss.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Announcing SharePoint Saturday Cambridge 2015</title>
       <link>https://tenbulls.co.uk/posts/2015/06/25/twotribes/</link>

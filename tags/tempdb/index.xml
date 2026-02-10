@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TempDB on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/tempdb/</link>
+    <description>Recent content in TempDB on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Wed, 13 Jan 2016 13:30:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/tempdb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem removing files from TempDB</title>
+      <link>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</link>
+      <pubDate>Wed, 13 Jan 2016 13:30:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</guid>
+      <description>&lt;p&gt;I recently ran into an interesting problem while attempting to remove approximately half of the TempDB data files configured in a testing environment. As you might expect, there are various SQL Server tasks that are performed infrequently by a DBA, and this is a good example of one of them. Most environments have usually been misconfigured with too few TempDB data files or wrongly sized usually resulting in the classic allocation page contention problems (which is explained by this excellent SQLSkills article &lt;a href=&#34;https://www.sqlskills.com/blogs/paul/the-accidental-dba-day-27-of-30-troubleshooting-tempdb-contention/&#34;&gt;The Accidental DBA (Day 27 of 30): Troubleshooting: Tempdb Contention&lt;/a&gt;), but this particular environment had been temporarily over provisioned with disks and TempDB data files (for testing purposes).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/oracle/</link>
+    <description>Recent content in Oracle on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Fri, 16 Oct 2015 14:10:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</title>
+      <link>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</link>
+      <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</guid>
+      <description>&lt;p&gt;Have you been attempting (and failing) to install &lt;a href=&#34;https://www.oracle.com/us/technologies/linux/overview/index.html&#34;&gt;Oracle Unbreakable Linux&lt;/a&gt; as a Virtual Machine under Hyper-V and cannot figure out what is wrong?&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;&#xA;&lt;p&gt;If you are receiving the following message:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI SCSI Device. Failed Secure Boot Verification.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE Network Boot using IPv4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;......&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PXE-E18: Server response timeout.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Boot Failed. EFI Network.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;No Operating System was Loaded.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Press a key to retry the boot sequence...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2015/secure-boot-verification.jpg&#34; alt=&#34;Secure Boot verification&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
