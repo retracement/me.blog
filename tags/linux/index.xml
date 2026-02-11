@@ -24,6 +24,13 @@
       <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Configuring Red Hat Enterprise Linux 7.2 for YUM without a Redhat Subscription</title>
+      <link>https://tenbulls.co.uk/posts/2016/10/11/rhelyum/</link>
+      <pubDate>Tue, 11 Oct 2016 11:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/10/11/rhelyum/</guid>
+      <description>&lt;p&gt;It has been a very long time since I have installed a &lt;a href=&#34;https://www.redhat.com/en/resources/whats-new-red-hat-enterprise-linux-7&#34;&gt;Redhat Enterprise Linux&lt;/a&gt; distribution having tended to prefer Ubuntu based distributions (such as Linux Mint) or CentOS if I really wanted a Redhat derivative (although for Oracle Database installations on Linux, I would always tend to use Oracle Enterprise Linux for simplicity). With the development and impending arrival of SQL Server on Linux, I thought it was about time that I returned back to the playground with a vanilla copy of Redhat EL so that I could test it with &lt;a href=&#34;https://www.microsoft.com/en-gb/cloud-platform/sql-server-on-linux&#34;&gt;SQL Server&lt;/a&gt;, &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker Linux Containers&lt;/a&gt;, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Spark&lt;/a&gt; and lots of other sexy things that have been avoiding my immediate attention for a little too long.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Fixing Flash in Chrome/ Chromium on Linux</title>
       <link>https://tenbulls.co.uk/posts/2015/01/06/flash-not-working-in-chrome-chromium/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>

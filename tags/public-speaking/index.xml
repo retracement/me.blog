@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 04 Nov 2015 15:28:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 18 Dec 2016 18:07:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/public-speaking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing my SQLBits 2017 Pre-conference Session</title>
+      <link>https://tenbulls.co.uk/posts/2016/12/18/sqlbitsprecon2017/</link>
+      <pubDate>Sun, 18 Dec 2016 18:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/12/18/sqlbitsprecon2017/</guid>
+      <description>&lt;p&gt;Having been a speaker at SQLBits since 2010, I am excited to announce that I will be finally delivering a preconference session at this year’s event in Telford and it is only fitting that my session returns to subject matter that is quite close to my heart.&lt;/p&gt;&#xA;&lt;p&gt;In 1998 I was made responsible for a SQL Server 6.5 Failover Cluster (running on Windows NT 4 Enterprise) and quickly learned the value of having test environments for Availability solutions. The only problem was that Virtualization was in its infancy, physical hardware for non-production loads was restrictively expensive for Enterprises, and not many people understood the technology! If you wanted to test out High Availability concepts and functionality, you were generally forced to do so in Production – And a lot of us got burnt!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 7</title>
+      <link>https://tenbulls.co.uk/posts/2016/10/30/7-days-of-pass-day-7-2/</link>
+      <pubDate>Sun, 30 Oct 2016 01:16:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/10/30/7-days-of-pass-day-7-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2016/karla.jpg&#34; alt=&#34;Karla&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;After a very heavy night (my only one of the trip) I wake to a pounding head and dry mouth. Having consumed at least one bottle of soda during the night I start on another and then move onto Coffee. There is no keynote today and therefore no rush, so I leisurely get my stuff together and contemplate breakfast. No rush that is until I look to my phone and notice a tweet telling me that the UK community is in the Community Zone at 8am, but given that the time is currently 7:30am I realize that it will be impossible for me to make it in time. I’ve represented this area many times before and am no longer the UK RM, so I excuse myself and let others step up.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>7 Days of PASS – Day 6</title>
+      <link>https://tenbulls.co.uk/posts/2016/10/29/7-days-of-pass-day-6-2/</link>
+      <pubDate>Sat, 29 Oct 2016 17:24:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/10/29/7-days-of-pass-day-6-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2016/drdewitt.jpg&#34; alt=&#34;Dr DeWitt&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Today is the big day of my presentation, and it is Thursday 3am and I have slept since 10pm, having managed to achieve a few extra hours of prep on my session the night before until jetlag smashed me across my head. My session is the last one of the day which means I have just under 14hours to go before completing what I actually came here to do.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>7 Days of PASS – Day 7</title>
       <link>https://tenbulls.co.uk/posts/2015/11/04/7-days-of-pass-day-7/</link>
