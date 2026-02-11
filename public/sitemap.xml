@@ -119,16 +119,82 @@
     <loc>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</loc>
     <lastmod>2017-08-08T20:31:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/community/</loc>
-    <lastmod>2016-07-12T11:17:00+01:00</lastmod>
+    <loc>https://tenbulls.co.uk/tags/clustering/</loc>
+    <lastmod>2017-04-03T16:09:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/posts/2016/07/12/big-up-to-karla/</loc>
-    <lastmod>2016-07-12T11:17:00+01:00</lastmod>
+    <loc>https://tenbulls.co.uk/tags/hadr/</loc>
+    <lastmod>2017-04-03T16:09:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/pass/</loc>
-    <lastmod>2016-07-12T11:17:00+01:00</lastmod>
+    <loc>https://tenbulls.co.uk/tags/installation/</loc>
+    <lastmod>2017-04-03T16:09:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/</loc>
+    <lastmod>2017-04-03T16:09:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/windows/</loc>
+    <lastmod>2017-04-03T16:09:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/12/18/sqlbitsprecon2017/</loc>
+    <lastmod>2016-12-18T18:07:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/categories/personal-development/</loc>
+    <lastmod>2016-12-18T18:07:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/public-speaking/</loc>
+    <lastmod>2016-12-18T18:07:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
+    <lastmod>2016-12-18T18:07:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/30/7-days-of-pass-day-7-2/</loc>
+    <lastmod>2016-10-30T01:16:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/community/</loc>
+    <lastmod>2016-10-30T01:16:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/pass/</loc>
+    <lastmod>2016-10-30T01:16:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
+    <lastmod>2016-10-30T01:16:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/29/7-days-of-pass-day-6-2/</loc>
+    <lastmod>2016-10-29T17:24:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/27/7-days-of-pass-day-5-2/</loc>
+    <lastmod>2016-10-27T13:06:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/26/7-days-of-pass-day-4-2/</loc>
+    <lastmod>2016-10-26T13:43:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/25/7-days-of-pass-day-3-2/</loc>
+    <lastmod>2016-10-25T14:17:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/24/7-days-of-pass-day-2/</loc>
+    <lastmod>2016-10-24T14:19:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/23/7-days-of-pass-day-1-2/</loc>
+    <lastmod>2016-10-23T12:52:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/11/rhelyum/</loc>
+    <lastmod>2016-10-11T11:47:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/concurrency/</loc>
+    <lastmod>2016-10-04T15:57:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/delayed-durability/</loc>
+    <lastmod>2016-10-04T15:57:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/performance/</loc>
+    <lastmod>2016-10-04T15:57:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sql/</loc>
+    <lastmod>2016-10-04T15:57:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/10/04/tlog-dd-oltp-1-2/</loc>
+    <lastmod>2016-10-04T15:57:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2016/07/12/big-up-to-karla/</loc>
     <lastmod>2016-07-12T11:17:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/</loc>
@@ -141,9 +207,6 @@
     <lastmod>2016-01-22T14:59:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</loc>
-    <lastmod>2016-01-13T13:30:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sql/</loc>
     <lastmod>2016-01-13T13:30:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/tempdb/</loc>
@@ -182,12 +245,6 @@
     <loc>https://tenbulls.co.uk/posts/2015/11/04/7-days-of-pass-day-7/</loc>
     <lastmod>2015-11-04T15:28:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/pass-summit/</loc>
-    <lastmod>2015-11-04T15:28:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/public-speaking/</loc>
-    <lastmod>2015-11-04T15:28:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2015/11/03/7-days-of-pass-day-6/</loc>
     <lastmod>2015-11-03T16:14:00+01:00</lastmod>
   </url><url>
@@ -209,16 +266,10 @@
     <loc>https://tenbulls.co.uk/tags/hyper-v/</loc>
     <lastmod>2015-10-16T14:10:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/installation/</loc>
-    <lastmod>2015-10-16T14:10:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/tags/oracle/</loc>
     <lastmod>2015-10-16T14:10:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</loc>
-    <lastmod>2015-10-16T14:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/windows/</loc>
     <lastmod>2015-10-16T14:10:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2015/08/20/announcing-our-sqlsaturday-cambridge-bring-a-boss-training-day-promotion/</loc>
@@ -261,9 +312,6 @@
     <lastmod>2015-02-24T14:20:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</loc>
-    <lastmod>2015-02-20T13:36:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/sqlbits/</loc>
     <lastmod>2015-02-20T13:36:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2015/02/17/speaking-at-sqlsaturday-lisbon-2015/</loc>
@@ -317,17 +365,8 @@
     <loc>https://tenbulls.co.uk/tags/availability-groups/</loc>
     <lastmod>2014-04-25T08:33:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/clustering/</loc>
-    <lastmod>2014-04-25T08:33:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/hadr/</loc>
-    <lastmod>2014-04-25T08:33:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2014/04/07/inside-sqlsaturday-niko-neugebauer-sqlsaturday-lisbon/</loc>
     <lastmod>2014-04-07T13:32:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/concurrency/</loc>
-    <lastmod>2014-03-05T09:30:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2014/03/05/rollback-damn-you/</loc>
     <lastmod>2014-03-05T09:30:00+01:00</lastmod>
@@ -568,9 +607,6 @@
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/12/sqlbits-7-forgotten-photos-part-2/</loc>
     <lastmod>2011-02-12T19:48:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/performance/</loc>
-    <lastmod>2011-02-08T21:07:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2011/02/08/where-to-go-for-your-wait-stat-information/</loc>
     <lastmod>2011-02-08T21:07:00+01:00</lastmod>

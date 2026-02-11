@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 16 Oct 2015 14:10:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 03 Apr 2017 16:09:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resolving Windows Cluster creation problems in Powershell</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/</link>
+      <pubDate>Mon, 03 Apr 2017 16:09:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/</guid>
+      <description>&lt;p&gt;Creating a Windows Cluster is surprisingly easy, but every now and again you run into small problems which irritate and are not really helped by the error messages – a problem which is exacerbated by the do all in one go power of PowerShell.&lt;/p&gt;&#xA;&lt;p&gt;One such problem is when you use the New-Cluster command to add all your nodes in one go.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;New-Cluster -Name magrathea -node server5,server6,server7&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-staticaddress &lt;span style=&#34;color:#ae81ff&#34;&gt;192.168&lt;/span&gt;.1.70&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Simple right? Well no. In this instance I ran into the following error:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Configuring Red Hat Enterprise Linux 7.2 for YUM without a Redhat Subscription</title>
+      <link>https://tenbulls.co.uk/posts/2016/10/11/rhelyum/</link>
+      <pubDate>Tue, 11 Oct 2016 11:47:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/10/11/rhelyum/</guid>
+      <description>&lt;p&gt;It has been a very long time since I have installed a &lt;a href=&#34;https://www.redhat.com/en/resources/whats-new-red-hat-enterprise-linux-7&#34;&gt;Redhat Enterprise Linux&lt;/a&gt; distribution having tended to prefer Ubuntu based distributions (such as Linux Mint) or CentOS if I really wanted a Redhat derivative (although for Oracle Database installations on Linux, I would always tend to use Oracle Enterprise Linux for simplicity). With the development and impending arrival of SQL Server on Linux, I thought it was about time that I returned back to the playground with a vanilla copy of Redhat EL so that I could test it with &lt;a href=&#34;https://www.microsoft.com/en-gb/cloud-platform/sql-server-on-linux&#34;&gt;SQL Server&lt;/a&gt;, &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker Linux Containers&lt;/a&gt;, &lt;a href=&#34;https://spark.apache.org/&#34;&gt;Spark&lt;/a&gt; and lots of other sexy things that have been avoiding my immediate attention for a little too long.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Oracle Unbreakable Linux installation fails on Hyper-V Generation 2 Virtual Machine</title>
       <link>https://tenbulls.co.uk/posts/2015/10/16/oracle-unbreakable-linux-installation-fails-on-hyper-v-generation-2-virtual-machine/</link>

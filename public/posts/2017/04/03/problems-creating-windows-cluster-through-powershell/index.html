@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Resolving Windows Cluster creation problems in Powershell">
+  <meta property="og:description" content="Creating a Windows Cluster is surprisingly easy, but every now and again you run into small problems which irritate and are not really helped by the error messages – a problem which is exacerbated by the do all in one go power of PowerShell.
+One such problem is when you use the New-Cluster command to add all your nodes in one go.
+New-Cluster -Name magrathea -node server5,server6,server7 -staticaddress 192.168.1.70 Simple right? Well no. In this instance I ran into the following error:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-04-03T16:09:00+01:00">
+    <meta property="article:modified_time" content="2017-04-03T16:09:00+01:00">
+    <meta property="article:tag" content="PowerShell">
+    <meta property="article:tag" content="HADR">
+    <meta property="article:tag" content="Clustering">
+    <meta property="article:tag" content="Windows">
+    <meta property="article:tag" content="Installation">
+
+<title>tenbulls blog | Resolving Windows Cluster creation problems in Powershell</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Resolving Windows Cluster creation problems in Powershell</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2017-04-03T16:09:00&#43;01:00">April 3, 2017</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              3 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Creating a Windows Cluster is surprisingly easy, but every now and again you run into small problems which irritate and are not really helped by the error messages – a problem which is exacerbated by the do all in one go power of PowerShell.</p>
+<p>One such problem is when you use the New-Cluster command to add all your nodes in one go.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>New-Cluster -Name magrathea -node server5,server6,server7
+</span></span><span style="display:flex;"><span>-staticaddress <span style="color:#ae81ff">192.168</span>.1.70
+</span></span></code></pre></div><p>Simple right? Well no. In this instance I ran into the following error:</p>
+<blockquote>
+<p>New-Cluster : There was an error adding node &lsquo;server7&rsquo; to the cluster</p>
+<p>the node cannot be contacted. Ensure that the node is powered on and is connected to the network.</p>
+<p>At line:1 char:1</p>
+<p>+ New-Cluster -Name magrathea -node server5,server6,server7 -staticaddress &hellip;</p>
+<p>+ ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</p>
+<p>+ CategoryInfo : ConnectionError: (:) [New-Cluster], ClusterCmdletException</p>
+<p>+ FullyQualifiedErrorId : ClusterNodeNotReachable,Microsoft.FailoverClusters.PowerShell.NewClusterCommand</p>
+</blockquote>
+<p><img src="/images/2017/create-cluster.webp" alt="Cluster create error"></p>
+<p>Ok, so the problem is obvious, isn’t it? You have misconfigured the node IP address, Firewall is blocking, or even Remote Administration is disabled. Let’s create the Cluster with only server5 and server6 and then try adding server7.</p>
+<p>We then get this error:</p>
+<blockquote>
+<p>Add-ClusterNode : Failed to access remote registry on &lsquo;server7.hitchhikers.galaxy&rsquo;.  Ensure that the remote registry service is running, and have remote administration enabled.
+The network path was not found.
+At line:1 char:1
++ Add-ClusterNode -Name server7 -Cluster magrathea
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ CategoryInfo          : NotSpecified: (:) [Add-ClusterNode], ClusterCmdletException
++ FullyQualifiedErrorId : Add-ClusterNode,Microsoft.FailoverClusters.PowerShell.AddClusterNodeCommand</p>
+</blockquote>
+<p>The error message is even more damming this time, and it is fairly clear you must have forgotten to enable remote administration -except you haven’t. In fact, nothing seems wrongly configured with the node and everything looks identical to server5 and server6.</p>
+<p>This time you decide to try adding the node directly from the problem server itself:</p>
+<blockquote>
+<p>Add-ClusterNode : The term &lsquo;Add-ClusterNode&rsquo; is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Add-ClusterNode -Name server7 -Cluster magrathea
++ ~~~~~~~~~~~~~~~
+\    + CategoryInfo          : ObjectNotFound: (Add-ClusterNode:String) [], CommandNotFoundException
+\    + FullyQualifiedErrorId : CommandNotFoundException</p>
+</blockquote>
+<p>Finally, all becomes clear! This time the error message fails, stating that the <code>Add-ClusterNode</code> cmdlet is not available and it is obvious that you have forgotten to install the <em>Failover-Clustering</em> feature on this node (doh!).</p>
+<p>From the node in question we run the following in Powershell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Failover-Clustering|Add-WindowsFeature
+</span></span></code></pre></div><p>Once installed, it is time to try again…</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Add-ClusterNode -Name server7 -Cluster magrathea
+</span></span></code></pre></div><p>Let&rsquo;s query the cluster node:</p>
+<p><img src="/images/2016/get-clusternode.png" alt="Get-Clusternode"></p>
+<p><strong>Success!</strong></p>
+<hr>
+<h1 id="conclusion">Conclusion</h1>
+<p>The moral of this story is that error messages are misleading, so when dealing with something as (potentially) complex as a Windows Cluster, it is always useful to break operations down into small fragments in order to understand the real reason for failure.</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/powershell/">PowerShell</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/hadr/">HADR</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/clustering/">Clustering</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/windows/">Windows</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/installation/">Installation</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2016/12/18/sqlbitsprecon2017/">
+            <span>previous: </span>
+            <span>Announcing my SQLBits 2017 Pre-conference Session</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/">
+            <span>next: </span>
+            <span>Learning to say NO</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

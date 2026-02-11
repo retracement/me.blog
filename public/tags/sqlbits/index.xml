@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 20 Feb 2015 13:36:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 18 Dec 2016 18:07:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sqlbits/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing my SQLBits 2017 Pre-conference Session</title>
+      <link>https://tenbulls.co.uk/posts/2016/12/18/sqlbitsprecon2017/</link>
+      <pubDate>Sun, 18 Dec 2016 18:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/12/18/sqlbitsprecon2017/</guid>
+      <description>&lt;p&gt;Having been a speaker at SQLBits since 2010, I am excited to announce that I will be finally delivering a preconference session at this year’s event in Telford and it is only fitting that my session returns to subject matter that is quite close to my heart.&lt;/p&gt;&#xA;&lt;p&gt;In 1998 I was made responsible for a SQL Server 6.5 Failover Cluster (running on Windows NT 4 Enterprise) and quickly learned the value of having test environments for Availability solutions. The only problem was that Virtualization was in its infancy, physical hardware for non-production loads was restrictively expensive for Enterprises, and not many people understood the technology! If you wanted to test out High Availability concepts and functionality, you were generally forced to do so in Production – And a lot of us got burnt!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Speaking at SQLBits XIV (after all!)</title>
       <link>https://tenbulls.co.uk/posts/2015/02/20/speaking-at-sqlbits-xiv-after-all/</link>

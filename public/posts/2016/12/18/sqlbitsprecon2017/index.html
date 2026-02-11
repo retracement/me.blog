@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2016/12/18/sqlbitsprecon2017/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Announcing my SQLBits 2017 Pre-conference Session">
+  <meta property="og:description" content="Having been a speaker at SQLBits since 2010, I am excited to announce that I will be finally delivering a preconference session at this year’s event in Telford and it is only fitting that my session returns to subject matter that is quite close to my heart.
+In 1998 I was made responsible for a SQL Server 6.5 Failover Cluster (running on Windows NT 4 Enterprise) and quickly learned the value of having test environments for Availability solutions. The only problem was that Virtualization was in its infancy, physical hardware for non-production loads was restrictively expensive for Enterprises, and not many people understood the technology! If you wanted to test out High Availability concepts and functionality, you were generally forced to do so in Production – And a lot of us got burnt!">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2016-12-18T18:07:00+01:00">
+    <meta property="article:modified_time" content="2016-12-18T18:07:00+01:00">
+    <meta property="article:tag" content="Public Speaking">
+    <meta property="article:tag" content="SQLBits">
+
+<title>tenbulls blog | Announcing my SQLBits 2017 Pre-conference Session</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Announcing my SQLBits 2017 Pre-conference Session</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2016-12-18T18:07:00&#43;01:00">December 18, 2016</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Having been a speaker at SQLBits since 2010, I am excited to announce that I will be finally delivering a preconference session at this year’s event in Telford and it is only fitting that my session returns to subject matter that is quite close to my heart.</p>
+<p>In 1998 I was made responsible for a SQL Server 6.5 Failover Cluster (running on Windows NT 4 Enterprise) and quickly learned the value of having test environments for Availability solutions. The only problem was that Virtualization was in its infancy, physical hardware for non-production loads was restrictively expensive for Enterprises, and not many people understood the technology! If you wanted to test out High Availability concepts and functionality, you were generally forced to do so in Production – And a lot of us got burnt!</p>
+<p>Today we have numerous rich Virtualization Platforms, hardware is cheap and Evaluation Software is free (for time-limited evaluation), but despite all these things, I still see most companies failing to provide Highly Available Virtualized test platforms for their DBA’s and Administrators.</p>
+<p><img src="/images/2016/creeper1.png" alt="Creeper"><br/>
+<em>Don’t wait until your environment is hit by the Creeper!</em></p>
+<p>In this session, I will show you how to Build Your Own SQL Server High Availability Test Lab (on your Laptop and beyond!) so that you no longer need to put your production environment at risk, and are empowered to play with varying scenarios to your hearts content from the comfort of your own armchair. Once we have our own test platform, we will then focus on SQL Server High Availability (up to and including SQL Server 2016, Windows 2016 and Azure) and take a comprehensive look from the ground up covering simple and complex topics in an easy to understand format!</p>
+<p>After attending this training day you will have comprehensively learnt the fundamentals of implementing and managing SQL Server High Availability solutions and will understand how you can deploy these on your laptop, home network, and work test environments.</p>
+<p>If this all sounds like your cup-of-tea, then check out the rest of my abstract below:</p>
+<hr>
+<h1 id="session">Session</h1>
+<p>Build Your Own SQL Server High Availability Test Lab (on your Laptop and beyond!)</p>
+<h1 id="speaker-bio">Speaker Bio</h1>
+<p>Mark Broadbent is a Microsoft Certified Master in SQL Server, Microsoft Data Platform MVP, Chapter Leader, Virtual Chapter Leader, SQLSaturday Cambridge founder (the UKs first SQLSaturday), SharePoint Saturday Cambridge founder, SQL Nexus board member and was awarded Microsoft’s Community Contributor award in 2011 and the PASS Outstanding Volunteer award in 2012. Mark is a regular speaker at both International and National events and is an expert in HADR solutions, SQL Server migration, and SQL Server Concurrency control.</p>
+<h1 id="abstract">Abstract</h1>
+<p>• Are you struggling to understand SQL Server High Availability?
+• Would you like to build your own test environment?
+• Would you like to practice fail-overs, adding or removing Availability Group Replicas, Cluster Storage Migrations or play with Hybrid deployments -all from the comfort of your own arm-chair?</p>
+<p>If any of these are true then have no fear, for in this demo-rich pre-conference I will explain how you can build your own “High Availability” environment in the safety of your own laptop<sub>*1</sub>, home network or work test network.</p>
+<p>We will start from <em>nothing</em> and configure your lab from the ground up until we have a fully functional working Virtualized Domain, Availability Group Replicas and even a multi-instance SQL Server Failover Cluster and then start playing with them to destruction.</p>
+<p>By the end of the day you will not only learn the fundamentals of SQL Server High Availability, but will also understand more advanced topics such as:
+• Deployment and builds
+• Cluster troubleshooting.
+• Hybrid deployments and Interoperability.
+• Availability Group Monitoring and Performance.
+• Virtualization for High Availability.
+• New features in Windows 2016/ SQL 2016</p>
+<p>*<sub><em>1</sub> Please note that deployment on a single host is for testing purposes only (in case that wasn’t obvious!)</em></p>
+<h1 id="take-aways">Take aways</h1>
+<p>Attendees to this session will receive access to a set of scripts, notes and a pre-built Hyper-V time-limited virtual lab for your own testing and enjoyment.</p>
+<h1 id="audience">Audience:</h1>
+<p>Attendees will not be expected to have prior knowledge of High Availability, Virtualization, and Operating System configuration and Networking, but a basic understanding of these concepts will lessen the learning curve when we come to implement those things.</p>
+<p><strong>Please note that the SQLBits Preconference sessions are not yet available for booking, these will be made available in the New Year</strong></p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/public-speaking/">Public Speaking</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sqlbits/">SQLBits</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2016/10/30/7-days-of-pass-day-7-2/">
+            <span>previous: </span>
+            <span>7 Days of PASS – Day 7</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/">
+            <span>next: </span>
+            <span>Resolving Windows Cluster creation problems in Powershell</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

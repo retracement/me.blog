@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Wed, 13 Jan 2016 13:30:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 04 Oct 2016 15:57:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transaction Log, Delayed Durability, and considerations for its use with In-Memory OLTP – Part I</title>
+      <link>https://tenbulls.co.uk/posts/2016/10/04/tlog-dd-oltp-1-2/</link>
+      <pubDate>Tue, 04 Oct 2016 15:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2016/10/04/tlog-dd-oltp-1-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2016/warhol_smaller.jpg&#34; alt=&#34;Warhol&#34;&gt;&lt;br/&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this mini-series of posts, we will discuss how the mechanics of SQL Server’s transaction logging work to provide transactional durability. We will look at how Delayed Durability changes the logging landscape and then we will specifically see how In-Memory OLTP logging builds upon the on-disk logging mechanism. Finally, we will pose the question &lt;em&gt;should we use Delayed Durability with In-Memory or not&lt;/em&gt; and discuss this scenario in detail. But in order to understand how delayed durability works, it is first important for us to understand how the transaction log works -so we shall start there&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Problem removing files from TempDB</title>
       <link>https://tenbulls.co.uk/posts/2016/01/13/problem-removing-files-from-tempdb/</link>

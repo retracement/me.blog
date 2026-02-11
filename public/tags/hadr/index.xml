@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 25 Apr 2014 08:33:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 03 Apr 2017 16:09:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/hadr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resolving Windows Cluster creation problems in Powershell</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/</link>
+      <pubDate>Mon, 03 Apr 2017 16:09:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/</guid>
+      <description>&lt;p&gt;Creating a Windows Cluster is surprisingly easy, but every now and again you run into small problems which irritate and are not really helped by the error messages – a problem which is exacerbated by the do all in one go power of PowerShell.&lt;/p&gt;&#xA;&lt;p&gt;One such problem is when you use the New-Cluster command to add all your nodes in one go.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;New-Cluster -Name magrathea -node server5,server6,server7&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-staticaddress &lt;span style=&#34;color:#ae81ff&#34;&gt;192.168&lt;/span&gt;.1.70&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Simple right? Well no. In this instance I ran into the following error:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>10 reasons why I HA-te you!</title>
       <link>https://tenbulls.co.uk/posts/2014/04/25/10-reasons-why-i-hate-you/</link>

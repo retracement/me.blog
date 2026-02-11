@@ -45,17 +45,94 @@
       <description></description>
     </item>
     <item>
+      <title>Clustering</title>
+      <link>https://tenbulls.co.uk/tags/clustering/</link>
+      <pubDate>Mon, 03 Apr 2017 16:09:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/clustering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HADR</title>
+      <link>https://tenbulls.co.uk/tags/hadr/</link>
+      <pubDate>Mon, 03 Apr 2017 16:09:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/hadr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>https://tenbulls.co.uk/tags/installation/</link>
+      <pubDate>Mon, 03 Apr 2017 16:09:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/installation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://tenbulls.co.uk/tags/windows/</link>
+      <pubDate>Mon, 03 Apr 2017 16:09:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Public Speaking</title>
+      <link>https://tenbulls.co.uk/tags/public-speaking/</link>
+      <pubDate>Sun, 18 Dec 2016 18:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/public-speaking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQLBits</title>
+      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
+      <pubDate>Sun, 18 Dec 2016 18:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Community</title>
       <link>https://tenbulls.co.uk/tags/community/</link>
-      <pubDate>Tue, 12 Jul 2016 11:17:00 +0100</pubDate>
+      <pubDate>Sun, 30 Oct 2016 01:16:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/community/</guid>
       <description></description>
     </item>
     <item>
       <title>PASS</title>
       <link>https://tenbulls.co.uk/tags/pass/</link>
-      <pubDate>Tue, 12 Jul 2016 11:17:00 +0100</pubDate>
+      <pubDate>Sun, 30 Oct 2016 01:16:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/pass/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PASS Summit</title>
+      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
+      <pubDate>Sun, 30 Oct 2016 01:16:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Concurrency</title>
+      <link>https://tenbulls.co.uk/tags/concurrency/</link>
+      <pubDate>Tue, 04 Oct 2016 15:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Delayed Durability</title>
+      <link>https://tenbulls.co.uk/tags/delayed-durability/</link>
+      <pubDate>Tue, 04 Oct 2016 15:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/delayed-durability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://tenbulls.co.uk/tags/performance/</link>
+      <pubDate>Tue, 04 Oct 2016 15:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://tenbulls.co.uk/tags/sql/</link>
+      <pubDate>Tue, 04 Oct 2016 15:57:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql/</guid>
       <description></description>
     </item>
     <item>
@@ -63,13 +140,6 @@
       <link>https://tenbulls.co.uk/tags/hybridvug/</link>
       <pubDate>Fri, 22 Jan 2016 14:59:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/hybridvug/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQL</title>
-      <link>https://tenbulls.co.uk/tags/sql/</link>
-      <pubDate>Wed, 13 Jan 2016 13:30:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sql/</guid>
       <description></description>
     </item>
     <item>
@@ -115,20 +185,6 @@
       <description></description>
     </item>
     <item>
-      <title>PASS Summit</title>
-      <link>https://tenbulls.co.uk/tags/pass-summit/</link>
-      <pubDate>Wed, 04 Nov 2015 15:28:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/pass-summit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Public Speaking</title>
-      <link>https://tenbulls.co.uk/tags/public-speaking/</link>
-      <pubDate>Wed, 04 Nov 2015 15:28:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/public-speaking/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Hyper-V</title>
       <link>https://tenbulls.co.uk/tags/hyper-v/</link>
       <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
@@ -136,24 +192,10 @@
       <description></description>
     </item>
     <item>
-      <title>Installation</title>
-      <link>https://tenbulls.co.uk/tags/installation/</link>
-      <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/installation/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Oracle</title>
       <link>https://tenbulls.co.uk/tags/oracle/</link>
       <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/oracle/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Windows</title>
-      <link>https://tenbulls.co.uk/tags/windows/</link>
-      <pubDate>Fri, 16 Oct 2015 14:10:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/windows/</guid>
       <description></description>
     </item>
     <item>
@@ -192,13 +234,6 @@
       <description></description>
     </item>
     <item>
-      <title>SQLBits</title>
-      <link>https://tenbulls.co.uk/tags/sqlbits/</link>
-      <pubDate>Fri, 20 Feb 2015 13:36:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sqlbits/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Audio</title>
       <link>https://tenbulls.co.uk/tags/audio/</link>
       <pubDate>Tue, 06 Jan 2015 14:33:00 +0100</pubDate>
@@ -231,27 +266,6 @@
       <link>https://tenbulls.co.uk/tags/availability-groups/</link>
       <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/availability-groups/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Clustering</title>
-      <link>https://tenbulls.co.uk/tags/clustering/</link>
-      <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/clustering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HADR</title>
-      <link>https://tenbulls.co.uk/tags/hadr/</link>
-      <pubDate>Fri, 25 Apr 2014 08:33:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/hadr/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Concurrency</title>
-      <link>https://tenbulls.co.uk/tags/concurrency/</link>
-      <pubDate>Wed, 05 Mar 2014 09:30:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
@@ -399,13 +413,6 @@
       <link>https://tenbulls.co.uk/tags/sqlagent/</link>
       <pubDate>Fri, 04 Mar 2011 16:12:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/sqlagent/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Performance</title>
-      <link>https://tenbulls.co.uk/tags/performance/</link>
-      <pubDate>Tue, 08 Feb 2011 21:07:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/performance/</guid>
       <description></description>
     </item>
     <item>
