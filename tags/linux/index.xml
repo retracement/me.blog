@@ -24,6 +24,13 @@
       <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Setting up Samba on Linux Mint (the easy way)</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/18/samba_on_mint/</link>
+      <pubDate>Tue, 18 Apr 2017 10:32:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/18/samba_on_mint/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/hamster_share.jpg&#34; alt=&#34;Sharing&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Server Message Block (SMB) Protocol is a network file sharing protocol introduced by Microsoft and can be incredibly useful when moving files across multiplatform machines (particularly if your primary machine is a Windows desktop). Samba is a file and print sharing suite of utilities in Linux which uses and provides integration with other machines using the SMB transport.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-this-quick-guide-covers&#34;&gt;What this quick guide covers&lt;/h1&gt;&#xA;&lt;p&gt;If you only want to provide basic folder sharing capabilities from your Linux distribution of choice, configuration and setup of Samba is (in my humble opinion) over complicated at best and a little bit messy at worst.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Configuring Red Hat Enterprise Linux 7.2 for YUM without a Redhat Subscription</title>
       <link>https://tenbulls.co.uk/posts/2016/10/11/rhelyum/</link>
       <pubDate>Tue, 11 Oct 2016 11:47:00 +0100</pubDate>

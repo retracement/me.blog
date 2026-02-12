@@ -38,6 +38,41 @@
       <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Using conditional COUNT(*)s</title>
+      <link>https://tenbulls.co.uk/posts/2017/08/02/using-conditional-counts/</link>
+      <pubDate>Wed, 02 Aug 2017 12:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/08/02/using-conditional-counts/</guid>
+      <description>&lt;h1 id=&#34;the-problem&#34;&gt;The Problem&lt;/h1&gt;&#xA;&lt;p&gt;Whilst recently working with historic financial data, I ran across a situation that needed an aggregate view of transactional data grouped by a certain set of attributes in order to backfill some missing aggregate data sets. In front of me, I had transactional data from time immemorial along with a series of pre-built (validated) historic aggregates which had been created from a different (but now unknown) process.&lt;/p&gt;&#xA;&lt;p&gt;My mission then, was to understand how this source transactional data must be aggregated so that it could be compared against the sets of pre-built aggregate data. Once I validated the process, I could (re)populate the missing aggregate tables in confidence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitesize SSIS - Compressing files from the SSIS Script Task</title>
+      <link>https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/</link>
+      <pubDate>Tue, 18 Jul 2017 15:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/</guid>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run…&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitesize SSIS - Deploying the SSIS Catalog</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/27/deploying-ssiscat/</link>
+      <pubDate>Thu, 27 Apr 2017 11:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/27/deploying-ssiscat/</guid>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting up Samba on Linux Mint (the easy way)</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/18/samba_on_mint/</link>
+      <pubDate>Tue, 18 Apr 2017 10:32:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/18/samba_on_mint/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/hamster_share.jpg&#34; alt=&#34;Sharing&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Server Message Block (SMB) Protocol is a network file sharing protocol introduced by Microsoft and can be incredibly useful when moving files across multiplatform machines (particularly if your primary machine is a Windows desktop). Samba is a file and print sharing suite of utilities in Linux which uses and provides integration with other machines using the SMB transport.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-this-quick-guide-covers&#34;&gt;What this quick guide covers&lt;/h1&gt;&#xA;&lt;p&gt;If you only want to provide basic folder sharing capabilities from your Linux distribution of choice, configuration and setup of Samba is (in my humble opinion) over complicated at best and a little bit messy at worst.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moving lost applications back into your Desktop on Windows</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</link>
+      <pubDate>Fri, 07 Apr 2017 12:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</guid>
+      <description>&lt;p&gt;Ok, I confess that this post is about as far removed as I can probably get from my blogging &lt;em&gt;focus&lt;/em&gt;, but as of late I have been running into this problem more and more frequently on my Windows 10 tablet and it is starting to annoy me. So to use my blogging platform for the original purpose (as a reference for me in the first instance), I have decided to make a little note of what actions I take to get these dastardly disappearing applications back.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Resolving Windows Cluster creation problems in Powershell</title>
       <link>https://tenbulls.co.uk/posts/2017/04/03/problems-creating-windows-cluster-through-powershell/</link>
       <pubDate>Mon, 03 Apr 2017 16:09:00 +0100</pubDate>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSQLSaturday on tenbulls blog</title>
+    <link>http://localhost:1313/tags/ssqlsaturday/</link>
+    <description>Recent content in SSQLSaturday on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Fri, 21 Apr 2017 17:52:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ssqlsaturday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speaking at SharePoint Saturday New York 2017</title>
+      <link>http://localhost:1313/posts/2017/04/21/back-in-the-big-apple/</link>
+      <pubDate>Fri, 21 Apr 2017 17:52:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2017/04/21/back-in-the-big-apple/</guid>
+      <description>&lt;p&gt;I am delighted to announce that I’ll once again be speaking at &lt;a href=&#34;https://http://www.sqlsaturday.com/588/eventhome.aspx&#34;&gt;SQLSaturday New York&lt;/a&gt; on the 20th May and this is my Third time speaking at this event and my FOURTH time speaking at the Microsoft offices in New York, after last year speaking at SharePoint Saturday New York (since the SQLSaturday didn’t run that year).&lt;/p&gt;&#xA;&lt;p&gt;I’m a huge fan of the event and obviously, it is a mammoth task for the organizers to put on given the location and size of the audience, but I have always had great fun and (unexpectedly) refreshingly good feedback speaking there.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

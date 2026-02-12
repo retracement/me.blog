@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General Tips on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/general-tips/</link>
+    <description>Recent content in General Tips on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Fri, 07 Apr 2017 12:34:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/general-tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving lost applications back into your Desktop on Windows</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</link>
+      <pubDate>Fri, 07 Apr 2017 12:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</guid>
+      <description>&lt;p&gt;Ok, I confess that this post is about as far removed as I can probably get from my blogging &lt;em&gt;focus&lt;/em&gt;, but as of late I have been running into this problem more and more frequently on my Windows 10 tablet and it is starting to annoy me. So to use my blogging platform for the original purpose (as a reference for me in the first instance), I have decided to make a little note of what actions I take to get these dastardly disappearing applications back.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2017/10/19/4-days-of-dockercon-day-3/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="4 Days of Dockercon – Day 3">
+  <meta property="og:description" content="The second and final day of general sessions arrives and I manage to leave my room with a little more time to spare than yesterday. Again, I grab a bite to eat in the exhibitor room and then find myself a good seat for the keynote day 2. This time it was lead by Scott Johnson (COO of Docker) and focused again on Docker Enterprise Edition but with a strong focus on the MTA program and migrating legacy apps to Docker. The atmosphere was slightly more subdued today -probably because people were nursing hangovers from last nights party, but I was intrigued by a few things. For instance, when they talked about migrating a legacy .NET app and modernizing it to Docker, it wasn’t really clear to me whether doing so was also irradicating dependencies on older .NET frameworks.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-10-19T08:17:00+01:00">
+    <meta property="article:modified_time" content="2017-10-19T08:17:00+01:00">
+    <meta property="article:tag" content="Community">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Dockercon">
+
+<title>tenbulls blog | 4 Days of Dockercon – Day 3</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">4 Days of Dockercon – Day 3</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2017-10-19T08:17:00&#43;01:00">October 19, 2017</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              4 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p><img src="/images/2017/handsonlabs.jpg" alt="Hands on labs"></p>
+<p>The second and final day of general sessions arrives and I manage to leave my room with a little more time to spare than yesterday. Again, I grab a bite to eat in the exhibitor room and then find myself a good seat for the keynote day 2. This time it was lead by Scott Johnson (COO of Docker) and focused again on Docker Enterprise Edition but with a strong focus on the MTA program and migrating legacy apps to Docker. The atmosphere was slightly more subdued today -probably because people were nursing hangovers from last nights party, but I was intrigued by a few things. For instance, when they talked about migrating a legacy .NET app and modernizing it to Docker, it wasn’t really clear to me whether doing so was also irradicating dependencies on older .NET frameworks.</p>
+<p>During the break between the keynote and first session, I decided to pick up where I left off with the Docker Labs and managed to go through the Docker on Linux 101 and Docker on Windows 101 excercises. Apart from a few minor typos in the demo code, these worked really well, although the Windows environment was noticeably slower than Linux which was a little frustrating. I decided to skip the first session so I could work my way through more lab material which took me up to lunchtime.</p>
+<p>For my first session of the day I decided to attend <em>Docker EE Deep Dive</em> by Patrick Devine, which I found quite interesting but felt that it didn’t quite go as <em>&ldquo;deep&rdquo;</em> as I’d like to have seen.  That said, I am convinced that I need to spend more time familiarizing myself with Enterprise Edition if I am ever going to make a success of my <em>&ldquo;microservices journey&rdquo;</em>.</p>
+<p><img src="/images/2017/eedeep.jpg" alt="docker history"></p>
+<p>After lunch, I decided to speak with a few more storage solution vendors and deliberated whether to go to my second session of the day. None of the sessions that were on offer grabbed me enough, so I decided to extend my adventures with the lab environment and worked through a few more scenarios. So by the time my next session arrived, I was really looking forward to it and chose <em>Becoming the Docker Champion: Bringing Docker Back to Work</em> by Jim Armstrong. To be honest, I was more than a little disappointed that the content was not technical and focused more on the <em>&ldquo;politics&rdquo;</em> of the workplace and your company’s staff motivations for adopting of Docker (or not). For me, this was largely a waste of my time even though Jim presented the session well, the session needed really to live in a management track (had one existed). During the next long break, I headed back to the Lab area and continued to work through the material. After the last session, I deliberated whether I should attend the last session of the day (of which a Serverless panel was quite appealing), and ultimately came to the conclusion that it was probably more worthwhile if I continued working my way through the labs.</p>
+<p>That was really the end of (a slightly disappointing) day, but at least I got some good value from the Labs. In the evening I struggled to remote onto my machine back home so I could watch the Chelsea v Roma game and failed. Therefore I had to resort to finding a hooky stream which kept cutting out every 5-10 minutes. Even though Chelsea went 2-0 up quite early on, the match ended 3-3 to compound my disappointment!</p>
+<p>Tomorrow is my last day in Denmark, in which I will be attending one the post-conference Summits.</p>
+<hr>
+<p>See also in this series:</p>
+<p><a href="/posts/2017/10/19/4-days-of-dockercon-day-4">4 Days of Dockercon - Day 4</a></p>
+<p><a href="/posts/2017/10/19/4-days-of-dockercon-day-3">4 Days of Dockercon - Day 3</a></p>
+<p><a href="/posts/2017/10/17/4-days-of-dockercon-day-2">4 Days of Dockercon - Day 2</a></p>
+<p><a href="/posts/2017/10/17/4-days-of-dockercon-day-1">4 Days of Dockercon - Day 1</a></p>
+<p><a href="/posts/2017/10/15/4-days-of-dockercon-day-0">4 Days of Dockercon - Day 0</a></p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/community/">Community</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/docker/">Docker</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/dockercon/">Dockercon</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/10/17/4-days-of-dockercon-day-2/">
+            <span>previous: </span>
+            <span>4 Days of Dockercon – Day 2</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/10/19/4-days-of-dockercon-day-4/">
+            <span>next: </span>
+            <span>4 Days of Dockercon – Day 4</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
