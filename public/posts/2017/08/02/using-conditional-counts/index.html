@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2017/08/02/using-conditional-counts/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Using conditional COUNT(*)s">
+  <meta property="og:description" content="The Problem Whilst recently working with historic financial data, I ran across a situation that needed an aggregate view of transactional data grouped by a certain set of attributes in order to backfill some missing aggregate data sets. In front of me, I had transactional data from time immemorial along with a series of pre-built (validated) historic aggregates which had been created from a different (but now unknown) process.
+My mission then, was to understand how this source transactional data must be aggregated so that it could be compared against the sets of pre-built aggregate data. Once I validated the process, I could (re)populate the missing aggregate tables in confidence.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-08-02T12:00:00+01:00">
+    <meta property="article:modified_time" content="2017-08-02T12:00:00+01:00">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="Query">
+
+<title>tenbulls blog | Using conditional COUNT(*)s</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Using conditional COUNT(*)s</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2017-08-02T12:00:00&#43;01:00">August 2, 2017</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              6 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <h1 id="the-problem">The Problem</h1>
+<p>Whilst recently working with historic financial data, I ran across a situation that needed an aggregate view of transactional data grouped by a certain set of attributes in order to backfill some missing aggregate data sets. In front of me, I had transactional data from time immemorial along with a series of pre-built (validated) historic aggregates which had been created from a different (but now unknown) process.</p>
+<p>My mission then, was to understand how this source transactional data must be aggregated so that it could be compared against the sets of pre-built aggregate data. Once I validated the process, I could (re)populate the missing aggregate tables in confidence.</p>
+<p>The source transactional table (simplified for brevity) consisted of:
+<em>Transaction_Date</em>, <em>Credit_Card_Type</em>, <em>Transaction_Type</em>, and <em>Sales_Value</em>.</p>
+<p><img src="/images/2017/sourcetable.jpg" alt="Source table"></p>
+<p>The aggregated destination table consisted of:
+<em>Transaction_YYMM</em>, <em>Credit_Card</em>, <em>Number_Of_Sales</em>, and <em>Sales_Value</em></p>
+<p>The task in itself appeared relatively trivial and looked to require a grouping on <em>Transaction_YYMM</em> (a calculated field from <em>Transaction_Date</em>) and <em>Credit_Card_Type</em>, with <em>Number_Of_Sales</em> being a simple <code>COUNT(*)</code> of each transaction. Therefore <em>Sales_Value</em> appeared to be a simple <code>SUM</code> of the transaction <em>Sales_Value</em> -easy right!</p>
+<p>If we run the following query:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#66d9ef">max</span>)) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Transaction_YYMM&#39;</span>,
+</span></span><span style="display:flex;"><span>    Credit_Card_Type,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Sales&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(Transaction_Amount) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Sales_Value&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#f92672">#</span>Transactions
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#66d9ef">max</span>)),
+</span></span><span style="display:flex;"><span>    Credit_Card_Type
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>We get the following results:</p>
+<p><img src="/images/2017/results1.jpg" alt="results1"></p>
+<p>When I came to compare the results against aggregated data, I noticed that the values were off and it became fairly obvious that the transactional data also contained refunds and rebates (positive values but logically reflected as negative by the <em>Transaction_Type</em> status) and these were not just causing inaccuracies for the <code>SUM</code> on <em>Sales_Value</em>, but were also causing the <code>COUNT</code> for <em>Number_Of_Sales</em> to be wrong. In other words, refunds and rebates must be removed from the <code>SUM</code> total and not aggregated in the <em>Number_Of_Sales</em> columns. Now at this stage, you might be thinking that we can do this by a simple WHERE clause to filter them from the aggregates, but not only is it wrong to <em>&ldquo;throw away&rdquo;</em> data, I realised that my target tables also contained aggregate columns for refunds and rebates.</p>
+<p>Therefore our target table now consists of the following columns:
+<em>Transaction_Date</em>, <em>Credit_Card_Type</em>, <em>Transaction_Type</em>, and <em>Sales_Value</em>, <em>Number_Of_Refunds</em>, <em>Refund_Value</em></p>
+<h1 id="solving-the-conditional-count">Solving the conditional COUNT</h1>
+<p>In order to achieve this goal from our source data, it is obvious that we need a conditional statement to aggregate the payment data only within the payment columns and aggregate the refund data only in the refund columns. Implementing this logic within the SUM statement was easy and was as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> Transaction_Amount
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Sales_Value&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> ...
+</span></span></code></pre></div><p>In the function above, <code>SUM</code> will simply aggregate all Transaction_Amount(s) if they are of <em>Transaction_Type</em> <strong>PAYM</strong>, otherwise it will consider that specific value as zero (thereby excluding it from the aggregation). When it came to the COUNT statement, things were not quite so obvious. I confess to mostly using <code>COUNT</code> in its <code>COUNT(*)</code> guise in the past, <em>but imagine my surprise after browsing the online pages for the COUNT statement, I notice the expression keyword (see below)</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">COUNT</span> ( <span style="color:#960050;background-color:#1e0010">{</span> [ [ <span style="color:#66d9ef">ALL</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">DISTINCT</span> ] expression ] <span style="color:#f92672">|</span> <span style="color:#f92672">*</span> <span style="color:#960050;background-color:#1e0010">}</span> )
+</span></span></code></pre></div><p>If expressions are also permitted inside the COUNT function (like SUM) then perhaps I can do something similar to the way I calculated the conditional SUM?</p>
+<p>I tried the following function call for that aggregation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Sales&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> ...
+</span></span></code></pre></div><p>And while this code code ran, it did not make any difference to the counts returned (let’s demonstrate this using the full code for payments and refunds):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#ae81ff">7</span>)) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Transaction_YYMM&#39;</span>,
+</span></span><span style="display:flex;"><span>    Credit_Card_Type,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Sales&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> Transaction_Amount
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Sales_Value&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;REVR&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Refunds&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;REVR&#39;</span>) <span style="color:#66d9ef">THEN</span> Transaction_Amount
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Refund_Value&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#f92672">#</span>Transactions
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#ae81ff">7</span>)),
+</span></span><span style="display:flex;"><span>    Credit_Card_Type
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>We get the following results:</p>
+<p><img src="/images/2017/results2.jpg" alt="results2"></p>
+<p>We can quite clearly see that this time the <em>Sales_Value</em> and <em>Refund_Value</em> aggregates (using <code>SUM</code>) are correct (see the difference for BARCLAYSCARD data), but the counts are obviously wrong -in fact the <em>&ldquo;conditional COUNT&rdquo;</em> appears to just be ignoring the expression.</p>
+<p>However I realised that I could use SUM instead of COUNT as a workaround to this problem as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#ae81ff">7</span>)) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Transaction_YYMM&#39;</span>,
+</span></span><span style="display:flex;"><span>    Credit_Card_Type,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Sales&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> Transaction_Amount
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Sales_Value&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;REVR&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Refunds&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;REVR&#39;</span>) <span style="color:#66d9ef">THEN</span> Transaction_Amount
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Refund_Value&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#f92672">#</span>Transactions
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#ae81ff">7</span>)),
+</span></span><span style="display:flex;"><span>    Credit_Card_Type
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>And this time we get the results we were looking for:</p>
+<p><img src="/images/2017/results3.jpg" alt="results3"></p>
+<p>It was only after getting a working solution that I revisited using a conditional count to perform the aggregation. After thinking a little more about what COUNT is actually doing (increments a “count for every item in a group”), my expression logic didn’t quite make sense. In that case COUNT was incrementing regardless of whether a 1 or 0 was returned, so instead of returning a 0, this time I decided to return a NULL. The code fragment is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> ...
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ELSE</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Sales&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> ...
+</span></span></code></pre></div><p>The results were a success! However we are not entirely done since this code could be refactored further to remove the <em>ELSE</em> clause since a <em>NULL</em> would be implicitly returned if the <em>CASE</em> statement did not find a match.</p>
+<p>The final solution is as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#ae81ff">7</span>)) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Transaction_YYMM&#39;</span>,
+</span></span><span style="display:flex;"><span>    Credit_Card_Type,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Sales&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;PAYM&#39;</span>) <span style="color:#66d9ef">THEN</span> Transaction_Amount
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Sales_Value&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;REVR&#39;</span>) <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Number_Of_Refunds&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SUM</span>(<span style="color:#66d9ef">CASE</span> <span style="color:#66d9ef">WHEN</span> Transaction_Type <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;REVR&#39;</span>) <span style="color:#66d9ef">THEN</span> Transaction_Amount
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ELSE</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">END</span>) <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;Refund_Value&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#f92672">#</span>Transactions
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">CAST</span>(FORMAT(Transaction_Date, <span style="color:#e6db74">&#39;yyyy-MM&#39;</span>) <span style="color:#66d9ef">AS</span> VARCHAR(<span style="color:#ae81ff">7</span>)),
+</span></span><span style="display:flex;"><span>    Credit_Card_Type
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>And the results are identical as before.</p>
+<h1 id="should-we-use-sum-or-count">Should we use SUM or COUNT?</h1>
+<p>While my head tells me that using the COUNT operator to perform conditional counts is the purest (and most logical) solution,  I personally think it is less readable (despite being less code) for the layman and instead quite like the SUM approach since it is self-explanatory.</p>
+<p>Furthermore, while the query plans of both approaches appear to be identical upon first glance, I noticed that the COUNT approach had (very) slightly higher query costs. I haven’t compared execution times or other performance metrics, but I suspect there will be little difference between them. In other words, use whatever works for you!</p>
+<hr>
+<h1 id="summary">Summary</h1>
+<p>After using the COUNT operator for well over 20 years, this exercise has proved to me that there are still functional nuances lurking that will bite me from time to time. This is not a SQL Server problem, it’s just a ME problem (in not always understanding operations correctly)!</p>
+<p>If you would like to try this out yourself I have provided the setup code below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">#</span>Transactions
+</span></span><span style="display:flex;"><span>    (Transaction_Date DATE,
+</span></span><span style="display:flex;"><span>     Credit_Card_Type VARCHAR(<span style="color:#ae81ff">16</span>),
+</span></span><span style="display:flex;"><span>     Transaction_Type CHAR(<span style="color:#ae81ff">4</span>),
+</span></span><span style="display:flex;"><span>     Transaction_Amount INT)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#f92672">#</span>Transactions <span style="color:#66d9ef">VALUES</span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#e6db74">&#39;2010-11-14&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;BARCLAYSCARD&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;PAYM&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">12000</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>    (<span style="color:#e6db74">&#39;2010-11-14&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;GOLDENFISH&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;PAYM&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">10000</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>    (<span style="color:#e6db74">&#39;2010-11-14&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;BARCLAYSCARD&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;REVR&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">12000</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>    (<span style="color:#e6db74">&#39;2010-11-15&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;BARCLAYSCARD&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;PAYM&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">9000</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>    (<span style="color:#e6db74">&#39;2010-11-18&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;AMERICANEXPRESSO&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;PAYM&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">9000</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>    (<span style="color:#e6db74">&#39;2010-11-18&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;AMERICANEXPRESSO&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#39;PAYM&#39;</span>,
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">5610</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div>
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/query/">Query</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/">
+            <span>previous: </span>
+            <span>Bitesize SSIS - Compressing files from the SSIS Script Task</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/">
+            <span>next: </span>
+            <span>Learning to say NO</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Thu, 20 Aug 2015 14:31:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 20 Sep 2017 09:02:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/sqlsaturday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speaking at SQLSaturday Parma 2017</title>
+      <link>https://tenbulls.co.uk/posts/2017/09/20/speaking-at-sqlsaturday-parma/</link>
+      <pubDate>Wed, 20 Sep 2017 09:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/09/20/speaking-at-sqlsaturday-parma/</guid>
+      <description>&lt;p&gt;Anyone who knows me well will know that I like to fly my colors close to my chest and am a proud Chelsea fan. I have supported them since they fell to and rose back from the English old Second Division as Champions under the then manager Bobby Campbell, and have seen highs and lows (mostly lows) for the next seven years. That is until Dutch legend Ruud Gullit became the manager in ’96 and bought perhaps the greatest player ever to grace the blue shirt of Chelsea FC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaking at SQLSaturday New York 2017</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/21/back-in-the-big-apple/</link>
+      <pubDate>Fri, 21 Apr 2017 17:52:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/21/back-in-the-big-apple/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/go-mets.jpg&#34; alt=&#34;Go Mets!!!&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I am delighted to announce that I’ll once again be speaking at &lt;a href=&#34;https://http://www.sqlsaturday.com/588/eventhome.aspx&#34;&gt;SQLSaturday New York&lt;/a&gt; on the 20th May and this is my Third time speaking at this event and my FOURTH time speaking at the Microsoft offices in New York, after last year speaking at &lt;a href=&#34;https://href.li/?http://www.spsevents.org/city/NYC/nyc2016&#34;&gt;SharePoint Saturday New York&lt;/a&gt; (since the SQLSaturday didn’t run that year).&lt;/p&gt;&#xA;&lt;p&gt;I’m a huge fan of the event and obviously, it is a mammoth task for the organizers to put on given the location and size of the audience, but I have always had great fun and (unexpectedly) refreshingly good feedback speaking there.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Bring-A-Boss to SQLSaturday Training day promotion</title>
       <link>https://tenbulls.co.uk/posts/2015/08/20/announcing-our-sqlsaturday-cambridge-bring-a-boss-training-day-promotion/</link>

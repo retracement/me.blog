@@ -185,11 +185,95 @@
       <description>&lt;p&gt;Several years ago I wrote a very quick post on the Azure Portal user-experience called &lt;a href=&#34;https://tenbulls.co.uk/2016/02/29/using-the-new-azure-dashboard-favourites-and-tiles/&#34;&gt;Using the new Azure Dashboard favourites and tiles&lt;/a&gt; which demonstrated how Microsoft is improving the usability of the Azure Portal. As such, It is probably worth a very quick mention that I recently noticed the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure Portal&lt;/a&gt; now supports multiple dashboards, and according to my Google-Bing-Fu seems to have done so for a couple of years.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>4 Days of Dockercon – Day 4</title>
+      <link>https://tenbulls.co.uk/posts/2017/10/19/4-days-of-dockercon-day-4/</link>
+      <pubDate>Thu, 19 Oct 2017 19:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/10/19/4-days-of-dockercon-day-4/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/entsummit.jpg&#34; alt=&#34;Enterprise Summit&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;After doing some more work in the evening for Microsoft and watching my Football match, I didn’t get to sleep until midnight, so I woke with my usual conference groggy feeling. At my age, I really need more hours in bed! Thankfully I had done most of my packing the night before so didn’t have an awful lot to do. However given the fact that I had skipped dinner/ supper the night before I was determined to grab a big breakfast. I’d skipped my evening meal since I really couldn’t be bothered to wander down to the Shopping Mall and waste 40 minutes on a round trip in doing so, nor did I fancy a meal in the hotel restaurant wasting 2 hours of messing around.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4 Days of Dockercon – Day 3</title>
+      <link>https://tenbulls.co.uk/posts/2017/10/19/4-days-of-dockercon-day-3/</link>
+      <pubDate>Thu, 19 Oct 2017 08:17:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/10/19/4-days-of-dockercon-day-3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/handsonlabs.jpg&#34; alt=&#34;Hands on labs&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The second and final day of general sessions arrives and I manage to leave my room with a little more time to spare than yesterday. Again, I grab a bite to eat in the exhibitor room and then find myself a good seat for the keynote day 2. This time it was lead by Scott Johnson (COO of Docker) and focused again on Docker Enterprise Edition but with a strong focus on the MTA program and migrating legacy apps to Docker. The atmosphere was slightly more subdued today -probably because people were nursing hangovers from last nights party, but I was intrigued by a few things. For instance, when they talked about migrating a legacy .NET app and modernizing it to Docker, it wasn’t really clear to me whether doing so was also irradicating dependencies on older .NET frameworks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4 Days of Dockercon – Day 2</title>
+      <link>https://tenbulls.co.uk/posts/2017/10/17/4-days-of-dockercon-day-2/</link>
+      <pubDate>Tue, 17 Oct 2017 22:19:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/10/17/4-days-of-dockercon-day-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/keynote.jpg&#34; alt=&#34;Keynote&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Why is it that at every conference I always seem to be rushing around in the morning trying to get to the keynote sessions in time. No matter how early I wake, I always seem to run out of time. Today was the first main day of sessions and I was determined to grab a bite to eat before heading to the keynote, so I headed across to the sponsor hall and grabbed my required bacon supplement for the day and managed to have a very interesting chat with a Docker insider (who is apparently contributing to the keynote the next day – I’ll insert name if that is correct). We discussed the future of containers in a potentially Serverless world and it was really interesting (and reassuring) to note that Docker has their eyes and ears firmly planted in all the right places (can’t say any more right now!).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4 Days of Dockercon – Day 1</title>
+      <link>https://tenbulls.co.uk/posts/2017/10/17/4-days-of-dockercon-day-1/</link>
+      <pubDate>Tue, 17 Oct 2017 06:40:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/10/17/4-days-of-dockercon-day-1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/dockercon.jpg&#34; alt=&#34;Dockercon&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s those little things in life that you come to be grateful for when you are staying in a different country and significantly helps make your trip more relaxing and enjoyable. A quick visit to Starbucks in the morning or being able to grab a half decent lunch in a nearby restaurant during the conference or simply popping into a nearby newsagent to grab a newspaper to read in your room in the evening just make the days away from home a little more bearable…&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4 Days of Dockercon – Day 0</title>
+      <link>https://tenbulls.co.uk/posts/2017/10/15/4-days-of-dockercon-day-0/</link>
+      <pubDate>Sun, 15 Oct 2017 19:37:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/10/15/4-days-of-dockercon-day-0/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/food.webp&#34; alt=&#34;BASALT&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It’s around this time of year that I’d usually begin blogging my traditional 5,6 or 7 days of PASS (another conference about another technology) and I have been doing this for at least 3-4 years (primarily as a speaker). This year, due to a multitude of reasons, I decided to pull my sessions just prior to selection after deciding that it really was time for me to do something different. Those people who know me quite well will know that I have harbored a very strong interest in Microservices and container technologies (long before they started getting “hip” in the world of Microsoft) and have had a bucket list desire to attend Dockercon since it’s inception.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaking at SQLSaturday Parma 2017</title>
+      <link>https://tenbulls.co.uk/posts/2017/09/20/speaking-at-sqlsaturday-parma/</link>
+      <pubDate>Wed, 20 Sep 2017 09:02:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/09/20/speaking-at-sqlsaturday-parma/</guid>
+      <description>&lt;p&gt;Anyone who knows me well will know that I like to fly my colors close to my chest and am a proud Chelsea fan. I have supported them since they fell to and rose back from the English old Second Division as Champions under the then manager Bobby Campbell, and have seen highs and lows (mostly lows) for the next seven years. That is until Dutch legend Ruud Gullit became the manager in ’96 and bought perhaps the greatest player ever to grace the blue shirt of Chelsea FC.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Learning to say NO</title>
       <link>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</link>
       <pubDate>Tue, 08 Aug 2017 20:31:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2017/08/08/learning-to-say-no/</guid>
       <description>&lt;p&gt;Thank you to Kendra Little who is hosting this month&amp;rsquo;s T-SQL Tuesday topic on &amp;ldquo;Interviewing Patterns and Anti-Patterns&amp;rdquo; - and what advice I might have for someone preparing for an interview. But instead of regurgitating the obvious advice you can find in other places, I&amp;rsquo;d rather talk about my own personal experiences, in-particular about a specific dark period in my professional career and how I avoided jumping into yet another bad experience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using conditional COUNT(*)s</title>
+      <link>https://tenbulls.co.uk/posts/2017/08/02/using-conditional-counts/</link>
+      <pubDate>Wed, 02 Aug 2017 12:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/08/02/using-conditional-counts/</guid>
+      <description>&lt;h1 id=&#34;the-problem&#34;&gt;The Problem&lt;/h1&gt;&#xA;&lt;p&gt;Whilst recently working with historic financial data, I ran across a situation that needed an aggregate view of transactional data grouped by a certain set of attributes in order to backfill some missing aggregate data sets. In front of me, I had transactional data from time immemorial along with a series of pre-built (validated) historic aggregates which had been created from a different (but now unknown) process.&lt;/p&gt;&#xA;&lt;p&gt;My mission then, was to understand how this source transactional data must be aggregated so that it could be compared against the sets of pre-built aggregate data. Once I validated the process, I could (re)populate the missing aggregate tables in confidence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitesize SSIS - Compressing files from the SSIS Script Task</title>
+      <link>https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/</link>
+      <pubDate>Tue, 18 Jul 2017 15:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/</guid>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run…&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitesize SSIS - Deploying the SSIS Catalog</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/27/deploying-ssiscat/</link>
+      <pubDate>Thu, 27 Apr 2017 11:10:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/27/deploying-ssiscat/</guid>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaking at SQLSaturday New York 2017</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/21/back-in-the-big-apple/</link>
+      <pubDate>Fri, 21 Apr 2017 17:52:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/21/back-in-the-big-apple/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/go-mets.jpg&#34; alt=&#34;Go Mets!!!&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I am delighted to announce that I’ll once again be speaking at &lt;a href=&#34;https://http://www.sqlsaturday.com/588/eventhome.aspx&#34;&gt;SQLSaturday New York&lt;/a&gt; on the 20th May and this is my Third time speaking at this event and my FOURTH time speaking at the Microsoft offices in New York, after last year speaking at &lt;a href=&#34;https://href.li/?http://www.spsevents.org/city/NYC/nyc2016&#34;&gt;SharePoint Saturday New York&lt;/a&gt; (since the SQLSaturday didn’t run that year).&lt;/p&gt;&#xA;&lt;p&gt;I’m a huge fan of the event and obviously, it is a mammoth task for the organizers to put on given the location and size of the audience, but I have always had great fun and (unexpectedly) refreshingly good feedback speaking there.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting up Samba on Linux Mint (the easy way)</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/18/samba_on_mint/</link>
+      <pubDate>Tue, 18 Apr 2017 10:32:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/18/samba_on_mint/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2017/hamster_share.jpg&#34; alt=&#34;Sharing&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Server Message Block (SMB) Protocol is a network file sharing protocol introduced by Microsoft and can be incredibly useful when moving files across multiplatform machines (particularly if your primary machine is a Windows desktop). Samba is a file and print sharing suite of utilities in Linux which uses and provides integration with other machines using the SMB transport.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-this-quick-guide-covers&#34;&gt;What this quick guide covers&lt;/h1&gt;&#xA;&lt;p&gt;If you only want to provide basic folder sharing capabilities from your Linux distribution of choice, configuration and setup of Samba is (in my humble opinion) over complicated at best and a little bit messy at worst.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moving lost applications back into your Desktop on Windows</title>
+      <link>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</link>
+      <pubDate>Fri, 07 Apr 2017 12:34:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</guid>
+      <description>&lt;p&gt;Ok, I confess that this post is about as far removed as I can probably get from my blogging &lt;em&gt;focus&lt;/em&gt;, but as of late I have been running into this problem more and more frequently on my Windows 10 tablet and it is starting to annoy me. So to use my blogging platform for the original purpose (as a reference for me in the first instance), I have decided to make a little note of what actions I take to get these dastardly disappearing applications back.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resolving Windows Cluster creation problems in Powershell</title>

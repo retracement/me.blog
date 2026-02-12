@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="Bitesize SSIS - Compressing files from the SSIS Script Task">
+  <meta property="og:description" content="I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run…">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-07-18T15:10:00+01:00">
+    <meta property="article:modified_time" content="2017-07-18T15:10:00+01:00">
+    <meta property="article:tag" content="Dotnet">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="SSIS">
+
+<title>tenbulls blog | Bitesize SSIS - Compressing files from the SSIS Script Task</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Bitesize SSIS - Compressing files from the SSIS Script Task</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2017-07-18T15:10:00&#43;01:00">July 18, 2017</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              2 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run…</p>
+<hr>
+<p>Ok, so before I get started I will caveat this quick post by saying that there is an easier (or preferred) way to perform compression on files in SSIS using the ZipFile Class in the recent version of the .NET framework, this is sadly not available if you are using any legacy deployments.</p>
+<p>While I have not spent ages adapting the following code to perform what should be a simple thing to do, I have spent enough time to justify sharing what I have done, so hopefully you will also find some benefit from the code below too.</p>
+<p>Before you get started&hellip;</p>
+<ul>
+<li>Add in the namespaces <code>System.IO</code> and <code>System.IO.Compression</code> into the Namespaces region of your script task script.</li>
+<li>Define the <em>static Compress</em> method which takes a <code>FileInfo</code> type parameter (the FileInfo Class is essentially a wrapper class created from a file path).</li>
+<li>Utilize the Compress method by instantiating a new FileInfo object from a source file name.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">#region</span> Namespaces
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.IO;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.IO.Compression;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endregion</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Compress(FileInfo file)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Compress file</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">using</span> (FileStream originalFileStream = file.OpenRead())
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (File.GetAttributes(file.FullName) != FileAttributes.Hidden &amp; file.Extension != <span style="color:#e6db74">&#34;.gz&#34;</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">using</span> (FileStream compressedFileStream = File.Create(file.FullName + <span style="color:#e6db74">&#34;.gz&#34;</span>))
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">using</span> (GZipStream compressionStream = <span style="color:#66d9ef">new</span> GZipStream(compressedFileStream,
+</span></span><span style="display:flex;"><span>                   CompressionMode.Compress))
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    originalFileStream.CopyTo(compressionStream);
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Main()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// get the source file </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> inputfile = (<span style="color:#66d9ef">string</span>)Dts.Variables[<span style="color:#e6db74">&#34;$Project::TemporaryFile&#34;</span>].Value;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    FileInfo file = <span style="color:#66d9ef">new</span> FileInfo(inputfile);
+</span></span><span style="display:flex;"><span>    Compress(file);
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    Dts.TaskResult = (<span style="color:#66d9ef">int</span>)ScriptResults.Success;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the code above I simply use a SSIS Project variable to pass in the required file path to create the compressed archive. Obviously you should modify the code to meet your needs, but his is enough for you to get started.</p>
+<p>If you are interested in the reference article that I have adapted (and simplified) to produce this code, then visit <a href="https://msdn.microsoft.com/en-us/library/ms404280(v=vs.100).aspx">How to: Compress Files</a>.</p>
+<hr>
+<p>Want more Bitesize SSIS tips? Then keep an eye open for the other posts in the series!</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/dotnet/">Dotnet</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/ssis/">SSIS</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/04/27/deploying-ssiscat/">
+            <span>previous: </span>
+            <span>Bitesize SSIS - Deploying the SSIS Catalog</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2017/08/02/using-conditional-counts/">
+            <span>next: </span>
+            <span>Using conditional COUNT(*)s</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
