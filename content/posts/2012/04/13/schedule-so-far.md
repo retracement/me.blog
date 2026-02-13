@@ -10,7 +10,7 @@ Recently I have been starting to get a little stressed about whether or not I ha
 
 Whilst I use [Google Calendar](https://www.google.com/calendar) and most recently have set up a premium [Remember the Milk](https://www.rememberthemilk.com/) account to organise my life a little better, I thought it was probably a good idea to see where I am with my past and forth coming presentations for the first half of this year.
 
-I was quite surprised that I’ve already equalled the number of my presentations for the whole of last year…
+I was quite surprised that I've already equalled the number of my presentations for the whole of last year...
 
 ![Say Hi](/images/2012/sayhi.jpg)<br/>
 *Don't forget to say hi!*

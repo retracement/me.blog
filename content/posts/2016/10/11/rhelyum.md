@@ -45,7 +45,7 @@ enabled=1
 gpgcheck=0
 ```
 
-Once you have created this file, if you have performed every step correctly, you can take a look at YUM’s repolists.
+Once you have created this file, if you have performed every step correctly, you can take a look at YUM's repolists.
 
 ```bash
 sudo yum repolist
@@ -53,7 +53,7 @@ sudo yum repolist
 
 And while you still receive the same error regarding the System not being registered to Red Hat Subscription Management, you should also see your new repo listed underneath.
 
-To check it all works, let’s install nano!
+To check it all works, let's install nano!
 
 ```bash
 sudo yum install nano

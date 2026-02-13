@@ -8,7 +8,7 @@ tags = ['Availability Groups','Clustering','HADR','SQL']
 
 One thing I keep hearing myself mentioning more and more in conversation (and most recently in a discussion group at [SQLBits](https://sqlbits.com/) a few days ago) is the ability to configure your Windows Cluster Quorum for situations where each cluster node may not be of equal importance.
 
-In [SQL Server 2012](https://www.microsoft.com/sqlserver/en/us/default.aspx) we have various high availability enhancements and improvements and most of these are branded under the term [AlwaysOn](https://www.microsoft.com/sqlserver/en/us/solutions-technologies/mission-critical-operations/SQL-Server-2012-high-availability.aspx). In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won’t bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.
+In [SQL Server 2012](https://www.microsoft.com/sqlserver/en/us/default.aspx) we have various high availability enhancements and improvements and most of these are branded under the term [AlwaysOn](https://www.microsoft.com/sqlserver/en/us/solutions-technologies/mission-critical-operations/SQL-Server-2012-high-availability.aspx). In particular we have enhancements to AlwaysOn SQL Failover Clustering and a new technology known as AlwaysOn Availability Groups. Whilst I won't bore you with any specific details about what these are or how to use them -since that is no doubt something for another day, you may probably be already aware that for both, each require the existence of a Windows Cluster in order to use them.
 
 One of the biggest reasons why Windows Clustering has been adopted as a pre-requisite for AlwaysOn Availability Groups is to use the mechanism known as the *Quorum* that provides a voting mechanism to determine which nodes can collectively be considered to be still *"alive"* and which nodes can be singularly or collectively be considered to have *"failed"*. This mechanism is a very important concept to AlwaysOn since it prevents the classic *split brain* problem. With respect to Availability Groups it also means that the Database Witness server that is used for Database Mirroring is not needed to implement this technology and because of this, is more scalable and reliable than it otherwise would be. <sub>*1</sub>
 
@@ -22,13 +22,13 @@ As you may also be aware, in Windows 2008/R2 there are four types of [Quorum mod
 - **Node and File Share Majority** -where the file share acts as an extra vote and that more than half the votes must be available.
 - **No Majority: Disk Only** -the disk quorum must remain available.
 
-In all cases, should the required situations not be true, each Windows Cluster Node’s Cluster Service will automatically shutdown since *Quorum* is lost.
+In all cases, should the required situations not be true, each Windows Cluster Node's Cluster Service will automatically shutdown since *Quorum* is lost.
 
 In situations where the total number of Cluster Nodes is an odd number then you would traditionally use the Node Majority Quorum model so that you could lose a total of half of your cluster nodes minus one before having a cluster failure. Otherwise the other three Quorum models should be considered (generally Disk Only Quorum could be a valid option when the node count is one or two but should otherwise only be considered in special cases).
 
 What is not commonly known is that a Cluster Node does not *HAVE* to have a quorum vote. By default they do, but it is possible to set what is known as *Node Weight* to zero. Before we come onto that though, you are probably wondering exactly why you would want to do this? Well there are several scenarios that make this a desirable thing to do such as in situations where you have implemented a Geo-Cluster (a Cluster across Geographic locations).
 
-Consider the following diagram :-
+Consider the following diagram:
 
 ![Windows Cluster](/images/2012/cluster600.png)<br/>
 *AlwaysOn FCI or AG nodes across sites*
@@ -46,7 +46,7 @@ Import-Module failoverclusters
 Get-Clusternode|Format-Table -auto -property Name, State, NodeWeight
 ```
 
-We get the following result:-
+We get the following result:
 
 ```text
 Name         State NodeWeight
@@ -64,13 +64,13 @@ wonko           Up          1
 wowbagger       Up          0
 ```
 
-As you can see from the above, I have already set the NodeWeight of wowbagger to zero and I did so by running the following PowerShell command:-
+As you can see from the above, I have already set the NodeWeight of wowbagger to zero and I did so by running the following PowerShell command:
 
 ```powershell
 (Get-ClusterNode "wowbagger").NodeWeight = 0
 ```
 
-Before you get all Jackie Chan on me and set some of your Cluster Nodes node weights to zero you should first seriously sit down and draw up a design strategy as to whether this makes sense to do so. In the scenario I proposed “the Business” had stipulated that a loss of Site B or any of the Cluster Nodes within it should not in any way effect the availability of the primary Site A but by doing so we reduce the total number of possible failures on site A to a maximum of one failure in a Cluster containing five nodes! Therefore be very careful and cautious and only when necessary remember that your Cluster Node weight doesn’t always have to be AlwaysOn.
+Before you get all Jackie Chan on me and set some of your Cluster Nodes node weights to zero you should first seriously sit down and draw up a design strategy as to whether this makes sense to do so. In the scenario I proposed "the Business" had stipulated that a loss of Site B or any of the Cluster Nodes within it should not in any way effect the availability of the primary Site A but by doing so we reduce the total number of possible failures on site A to a maximum of one failure in a Cluster containing five nodes! Therefore be very careful and cautious and only when necessary remember that your Cluster Node weight doesn't always have to be AlwaysOn.
 
 ---
 

@@ -22,15 +22,15 @@ Yes people you heard me right, should you choose to upgrade your environment to 
 
 At the turn of the year I went slightly out on a limb by saying that because of the Mainstream Support expiry dates it was my firm belief that Microsoft would release their newest Operating System (I called it Windows 8 Server at the time 🙂) before mid July and that if you did not have a compelling reason to upgrade to SQL 2012 now, then it is probably a good idea to wait a while.
 
-Well so far my guesstimate appears to be coming true. We now know that the next Server release of Windows is called Windows 2012 (I personally like the fact it is in-line with the Server based Application names) and  today I have seen the following url- [Windows Server 2012 Release Candidate Timing](https://blogs.technet.com/b/windowsserver/archive/2012/04/24/windows-server-2012-release-candidate-timing.aspx?). So we know by the very name that the OS is coming this year and at the time of writing all indications point to an imminent release but let me stress that I have no inside knowledge and this is all guesswork so please don’t get upset if the release happens on the 31st of December 2012 -however unlikely!
+Well so far my guesstimate appears to be coming true. We now know that the next Server release of Windows is called Windows 2012 (I personally like the fact it is in-line with the Server based Application names) and  today I have seen the following url- [Windows Server 2012 Release Candidate Timing](https://blogs.technet.com/b/windowsserver/archive/2012/04/24/windows-server-2012-release-candidate-timing.aspx?). So we know by the very name that the OS is coming this year and at the time of writing all indications point to an imminent release but let me stress that I have no inside knowledge and this is all guesswork so please don't get upset if the release happens on the 31st of December 2012 -however unlikely!
 
 In summary I believe you should take three approaches to implementing SQL Server 2012 at this present time:
 
 1. The first and probably my most recommended option would be to wait for (hopefully only) a few more months if you can until the release of Windows 2012.
 
-The second and third options are to plan for the Mainstream Support end of Windows 2008/R2 by :-
+The second and third options are to plan for the Mainstream Support end of Windows 2008/R2 by:
 
 2. Arranging and paying for Extended Support.
 3. Implementing SQL 2012 in an HA configuration that enables you up blow away your base Operating System and start again (for instance using AlwaysOn or even Peer to Peer Replication are possible routes you can take).
 
-Whatever you do, don’t forget the obvious... and remember your dates.
+Whatever you do, don't forget the obvious... and remember your dates.

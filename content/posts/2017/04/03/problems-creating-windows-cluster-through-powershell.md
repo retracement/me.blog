@@ -27,13 +27,13 @@ Simple right? Well no. In this instance I ran into the following error:
 > 
 >\+ ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
 > 
->\+ CategoryInfo : ConnectionError: (:) [New-Cluster], ClusterCmdletException
+>\+ CategoryInfo : ConnectionError: (🙂 [New-Cluster], ClusterCmdletException
 > 
 >\+ FullyQualifiedErrorId : ClusterNodeNotReachable,Microsoft.FailoverClusters.PowerShell.NewClusterCommand
 
 ![Cluster create error](/images/2017/create-cluster.webp)
 
-Ok, so the problem is obvious, isn’t it? You have misconfigured the node IP address, Firewall is blocking, or even Remote Administration is disabled. Let’s create the Cluster with only server5 and server6 and then try adding server7. 
+Ok, so the problem is obvious, isn't it? You have misconfigured the node IP address, Firewall is blocking, or even Remote Administration is disabled. Let's create the Cluster with only server5 and server6 and then try adding server7. 
 
 We then get this error:
 
@@ -42,10 +42,10 @@ We then get this error:
 >At line:1 char:1
 >\+ Add-ClusterNode -Name server7 -Cluster magrathea
 >\+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
->\+ CategoryInfo          : NotSpecified: (:) [Add-ClusterNode], ClusterCmdletException
+>\+ CategoryInfo          : NotSpecified: (🙂 [Add-ClusterNode], ClusterCmdletException
 >\+ FullyQualifiedErrorId : Add-ClusterNode,Microsoft.FailoverClusters.PowerShell.AddClusterNodeCommand
 
-The error message is even more damming this time, and it is fairly clear you must have forgotten to enable remote administration -except you haven’t. In fact, nothing seems wrongly configured with the node and everything looks identical to server5 and server6.
+The error message is even more damming this time, and it is fairly clear you must have forgotten to enable remote administration -except you haven't. In fact, nothing seems wrongly configured with the node and everything looks identical to server5 and server6.
 
 This time you decide to try adding the node directly from the problem server itself:
 
@@ -64,7 +64,7 @@ From the node in question we run the following in Powershell:
 Get-WindowsFeature Failover-Clustering|Add-WindowsFeature
 ```
 
-Once installed, it is time to try again…
+Once installed, it is time to try again...
 
 ```powershell
 Add-ClusterNode -Name server7 -Cluster magrathea

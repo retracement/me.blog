@@ -135,7 +135,7 @@ because it is not empty.</p>
 <blockquote>
 <p>I realize this is an old thread but I have found that in most cases work tables are related to Query Plans.
 Try issuing the following commands and the shrinking the tempdb:</p>
-<p>DBCC FREESYSTEMCACHE (‘ALL’)</p>
+<p>DBCC FREESYSTEMCACHE (&lsquo;ALL&rsquo;)</p>
 <p>DBCC FREEPROCCACHE</p>
 <p>there will be some performance hit for this as SQL will have to recreate its Query Plans, but it should allow you to shrink you TEMPDB.</p>
 <p>Hope this helps,</p>
@@ -155,7 +155,7 @@ Try issuing the following commands and the shrinking the tempdb:</p>
 <p>On my final opportunity I tried clearing the procedure cache (<code>DBCC FREEPROCCACHE</code>) and after running this a few times it appeared to solve the problem and I was able to remove the TempDB file without error.</p>
 <hr>
 <p>Clearing system caches on a Production SQL Server instance is never a good thing and should be avoided, but at least the next time I run into this problem I have (what appears) to be a work around to the problem I ran into and at least the requirement to remove TempDB data files should be a rare occurrence for most of us!</p>
-<p>I confess that I am left with a few unanswered questions and clearly what I experienced does make me doubt the results somewhat (and my sanity) and there were further tests that I would like to perform at some point. So if you run into this problem yourself I encourage you to try this (<em><strong>disclaimer:</strong> your fault if you destroy your SQL Server</em> 😉) and I would be delighted if you leave feedback of what works for you (and what doesn’t)!</p>
+<p>I confess that I am left with a few unanswered questions and clearly what I experienced does make me doubt the results somewhat (and my sanity) and there were further tests that I would like to perform at some point. So if you run into this problem yourself I encourage you to try this (<em><strong>disclaimer:</strong> your fault if you destroy your SQL Server</em> 😉) and I would be delighted if you leave feedback of what works for you (and what doesn&rsquo;t)!</p>
 <hr>
 <p>*<sub><em>1</sub> you may want to read this interesting post by Jonathan Kehayias <a href="https://sqlblog.com/blogs/jonathan_kehayias/archive/2010/05/14/does-tempdb-get-recreated-from-model-at-startup.aspx">Does tempdb Get Recreated From model at Startup?</a></em></p>
 

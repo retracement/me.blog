@@ -128,10 +128,10 @@ The next step is to mount the DVD to a mount point. For simplicities sake, I cho
 </span></span><span style="display:flex;"><span>baseurl=file:/cdrom/
 </span></span><span style="display:flex;"><span>enabled=1
 </span></span><span style="display:flex;"><span>gpgcheck=0
-</span></span></code></pre></div><p>Once you have created this file, if you have performed every step correctly, you can take a look at YUM’s repolists.</p>
+</span></span></code></pre></div><p>Once you have created this file, if you have performed every step correctly, you can take a look at YUM&rsquo;s repolists.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum repolist
 </span></span></code></pre></div><p>And while you still receive the same error regarding the System not being registered to Red Hat Subscription Management, you should also see your new repo listed underneath.</p>
-<p>To check it all works, let’s install nano!</p>
+<p>To check it all works, let&rsquo;s install nano!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum install nano
 </span></span></code></pre></div><p><img src="/images/2016/yum.webp" alt="yum"></p>
 <p>Perfect! Like everything in Linux, it is easy when you know how. On a closing note, it is unclear to me at this moment in time, whether this will entirely resolve my installation problems since I will still obviously need access to an online repo or sources in order to install third-party packages not included with the installation media,  but once I have figured that out, I will update this post.</p>

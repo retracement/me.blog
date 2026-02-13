@@ -3,7 +3,7 @@ date = '2010-05-12T20:53:00+01:00'
 draft = false
 title = 'Installing the Citrix client on Linux'
 categories = ['Technology']
-tags = ['Linux']
+tags = ['Linux','Installation','Citrix']
 +++
 
 The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix's website download the tarball of the Citrix Receiver.

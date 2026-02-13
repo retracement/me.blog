@@ -10,16 +10,16 @@ tags = ['Funny','SQL']
 
 One of the biggest benefits to the latest release of SQL Server (and reasons to upgrade) is that Windows Server Core is now a supported option. For those of you who are not yet familiar with Server Core, it could be best described as a reduced GUI version of Microsoft Windows. In other words, if you like the command line then you are in for a very big treat! Regular visitors to these pages will most likely be very aware of my passion for Windows Server Core and more to the point running SQL Server on it.
 
-I digress slightly, but the point is that because SQL Server can now run on within a reduced graphical interface environment, one large beneficial side effect to this is the portability of the database engine. More specifically we can “hack” SQL Server to run on more and more types of hardware and software. The following is a closely guarded secret by [Microsoft](https://www.microsoft.com/en-us/default.aspx), but with with a few simple hacks, re-compilations and know how, we can spoof SQL Server to run on several other Operating Systems.
+I digress slightly, but the point is that because SQL Server can now run on within a reduced graphical interface environment, one large beneficial side effect to this is the portability of the database engine. More specifically we can "hack" SQL Server to run on more and more types of hardware and software. The following is a closely guarded secret by [Microsoft](https://www.microsoft.com/en-us/default.aspx), but with with a few simple hacks, re-compilations and know how, we can spoof SQL Server to run on several other Operating Systems.
 
 ![SQL on Kindle](/images/2013/screen1.jpg)<br/>
-*Let’s get to this!!!*
+*Let's get to this!!!*
 
-Now is probably a good time to stress that whilst I will reveal some of the magic involved in fooling SQL to run elsewhere other than Windows, I am currently bound into a Non-Disclosure Agreement with Microsoft and will therefore be careful not to break it. Therefore any information that I have compiled within these pages are public domain and can be found from various sources elsewhere. It is also important to stress that as of this time of writing, only the SQL Server features supported by Windows Server Core can be “ported” across to other environments -so if you are wanting to use Master Data Services elsewhere other than “full-fat” Windows, then unfortunately you are out of luck.
+Now is probably a good time to stress that whilst I will reveal some of the magic involved in fooling SQL to run elsewhere other than Windows, I am currently bound into a Non-Disclosure Agreement with Microsoft and will therefore be careful not to break it. Therefore any information that I have compiled within these pages are public domain and can be found from various sources elsewhere. It is also important to stress that as of this time of writing, only the SQL Server features supported by Windows Server Core can be "ported" across to other environments -so if you are wanting to use Master Data Services elsewhere other than "full-fat" Windows, then unfortunately you are out of luck.
 
 For a list of all the SQL Server features currently supported on Server Core you should visit [Install SQL Server 2012 on Server Core](https://msdn.microsoft.com/en-gb/library/hh231669.aspx).
 
-Several months ago I came into possession of a lovely new Kindle Fire HD and as you may know, this tablet runs a customized version of Google’s Android Operating System. Having had some recent (but limited) success with running SQL Server on some other Android based Hardware I decided to try my luck on this nice bit of kit, and the following is how I did it.
+Several months ago I came into possession of a lovely new Kindle Fire HD and as you may know, this tablet runs a customized version of Google's Android Operating System. Having had some recent (but limited) success with running SQL Server on some other Android based Hardware I decided to try my luck on this nice bit of kit, and the following is how I did it.
 
 # Install Server Core
 
@@ -27,7 +27,7 @@ Probably one of the most time consuming parts of this whole exercise is the inst
 
 # Install SQL Server onto Server Core
 
-Installation of SQL Server onto Server Core is relatively straight forward (see the previous link provided) as long as you are comfortable with performing a command line installation -either through using a configuration file or a full  set of command line options. Unfortunately (and perhaps understandibly) GUI based installation will not work, however I did identify a “bug” which allows a workaround which I detailed in the following post [Using the SQL Server Installation Wizard on Server Core!](https://tenbulls.co.uk/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/).
+Installation of SQL Server onto Server Core is relatively straight forward (see the previous link provided) as long as you are comfortable with performing a command line installation -either through using a configuration file or a full  set of command line options. Unfortunately (and perhaps understandibly) GUI based installation will not work, however I did identify a "bug" which allows a workaround which I detailed in the following post [Using the SQL Server Installation Wizard on Server Core!](https://tenbulls.co.uk/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/).
 
 # Dump the SQL Server Process to disk
 
@@ -35,7 +35,7 @@ There are lots of ways to dump a process working set (the memory a process is co
 
 ![Dump Process](/images/2013/dump_process.jpg)
 
-Once this is successful you will see a message telling you where the dump file has been created. One very important consideration for you is to make sure that you have set a fairly low [maximum memory](https://msdn.microsoft.com/en-gb/library/ms178067.aspx) cap for SQL Server’s buffer pool otherwise it the dump file will be much larger (and take longer to output) in addition it will make your ported SQL Server application to run faster.
+Once this is successful you will see a message telling you where the dump file has been created. One very important consideration for you is to make sure that you have set a fairly low [maximum memory](https://msdn.microsoft.com/en-gb/library/ms178067.aspx) cap for SQL Server's buffer pool otherwise it the dump file will be much larger (and take longer to output) in addition it will make your ported SQL Server application to run faster.
 
 ![Dumping process](/images/2013/dumped-process.jpg)
 
@@ -62,7 +62,7 @@ Set SQL Server to auto-load
 In order to auto-load SQL Server as a daemon process you should first create an auto loader file under the root calling it startp (if one does not already exist). Make sure the file has the execute permission assigned and within it enter one simple line start `/SQLSrvr/sqlsrvr.d`.
 
 ![Create folder](/images/2013/create_file_and_folder.jpg)<br/>
-*Don’t forget to edit the startp file and copy the SQL assembly!*
+*Don't forget to edit the startp file and copy the SQL assembly!*
 
 After you have made this last change, reboot your Kindle Fire HD and SQL Server should launch successfully.
 

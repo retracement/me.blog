@@ -10,7 +10,7 @@ Anyone old enough to remember this song from the eighties will remember the catc
 
 >Pass the Duchie pon the left hand side pass the Duchie pon the left hand side... It gonna burn...
 
-...Ah yes, I've now got my foot tapping away remembering the good old days of my youth :). The song (as some of you will be aware) is about passing a cooking pot around and sharing food with each other, but the more astute of you will know that it was based upon a track titled *Pass the Kouchie* -a ditty about smoking cannabis! <sub>*1</sub>
+...Ah yes, I've now got my foot tapping away remembering the good old days of my youth 🙂. The song (as some of you will be aware) is about passing a cooking pot around and sharing food with each other, but the more astute of you will know that it was based upon a track titled *Pass the Kouchie* -a ditty about smoking cannabis! <sub>*1</sub>
 
 ![Duchie Pan](/images/2011/duchie.jpg)<br/>
 *Food for the Community*

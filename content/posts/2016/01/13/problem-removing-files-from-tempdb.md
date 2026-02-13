@@ -48,7 +48,7 @@ As odd as this error was (especially since the SQL instance was not currently *i
 >I realize this is an old thread but I have found that in most cases work tables are related to Query Plans.
 >Try issuing the following commands and the shrinking the tempdb:
 >
->DBCC FREESYSTEMCACHE (‘ALL’)
+>DBCC FREESYSTEMCACHE ('ALL')
 >
 >DBCC FREEPROCCACHE
 >
@@ -91,7 +91,7 @@ On my final opportunity I tried clearing the procedure cache (`DBCC FREEPROCCACH
 
 Clearing system caches on a Production SQL Server instance is never a good thing and should be avoided, but at least the next time I run into this problem I have (what appears) to be a work around to the problem I ran into and at least the requirement to remove TempDB data files should be a rare occurrence for most of us!
 
-I confess that I am left with a few unanswered questions and clearly what I experienced does make me doubt the results somewhat (and my sanity) and there were further tests that I would like to perform at some point. So if you run into this problem yourself I encourage you to try this (_**disclaimer:** your fault if you destroy your SQL Server_ 😉) and I would be delighted if you leave feedback of what works for you (and what doesn’t)!
+I confess that I am left with a few unanswered questions and clearly what I experienced does make me doubt the results somewhat (and my sanity) and there were further tests that I would like to perform at some point. So if you run into this problem yourself I encourage you to try this (_**disclaimer:** your fault if you destroy your SQL Server_ 😉) and I would be delighted if you leave feedback of what works for you (and what doesn't)!
 
 ---
 

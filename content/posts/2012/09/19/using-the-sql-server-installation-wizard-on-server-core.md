@@ -6,7 +6,7 @@ categories = ['Technology']
 tags = ['SQL','Windows','Automation','Installation']
 +++
 
-Ever heard the phrase *"just because you can, doesn’t mean you should?"*. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn’t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I’m getting ahead of myself, first let me describe our scenario.
+Ever heard the phrase *"just because you can, doesn't mean you should?"*. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn't -certainly not in a development environment OR using this technique to produce a configuration installation file. But I'm getting ahead of myself, first let me describe our scenario.
 
 With SQL server 2012, Windows Server Core became a supported option (on versions 2008 R2 and above) and whilst not every single component of SQL Server is supported on Core, there is now a very strong argument to move to that flavour of the Windows Operating System should your scenario warrant it. In fact for the last 12 months or so and in particular when I am presenting my *Enter the Dragon: SQL 2012 on Server Core* presentation, I always like to try and make a point to the audience that if they do not yet know what Server Core is, then they very much will do in 2 years time. Love it or loathe it, in my opinion, they **will** be using it by then. I predict a massive shift to what I like to call *"Skinny"* (or *"Low Fat"*) Windows as opposed to *"Full Fat"* Windows.
 
@@ -19,8 +19,8 @@ By the time you are ready to install SQL Server on your Server Core Operating sy
 ![Server Core Error](/images/2012/servercoreerror.png)<br/>
 *Oh flip!*
 
-In fact I am sure you probably won’t have ever got to that error message because being the type of person I know you probably are, you will have read all the necessary literature and have noticed in the MSDN article [Install SQL Server 2012 on Server Core](https://msdn.microsoft.com/en-us/library/hh231669.aspx) it explicitly states:
-> SQL Server 2012 does not support setup by using the installation wizard on the Server Core operating system. When installing on Server Core, SQL Server Setup supports full quiet mode by using the /Q parameter, or Quiet Simple mode by using the /QS parameter“.
+In fact I am sure you probably won't have ever got to that error message because being the type of person I know you probably are, you will have read all the necessary literature and have noticed in the MSDN article [Install SQL Server 2012 on Server Core](https://msdn.microsoft.com/en-us/library/hh231669.aspx) it explicitly states:
+> SQL Server 2012 does not support setup by using the installation wizard on the Server Core operating system. When installing on Server Core, SQL Server Setup supports full quiet mode by using the /Q parameter, or Quiet Simple mode by using the /QS parameter".
 
 There is a rather interesting parameter that you may see mentioned in the error message in the previous screen shot called **UIMODE**. Essentially if we pass in the switch and parameter of `/UIMODE=EnableUIOnServerCore` to `setup.exe`, this time we DO get the Installation Wizard. But (and this is a big BUT) none of the installation options will work.
 
@@ -32,12 +32,12 @@ By now you are probably starting to curse, and wondering what is the point of th
 Ironically we can simply specify the `QUIETSIMPLE` parameter without `UIMODE` set and now see the installation progress but only for unattended installs using a configuration file. For example:
 
 ```bash
-setup.exe /IACCEPTSQLSERVERLICENSETERMS /CONFIGURATIONFILE=”ConfigurationFile.ini” /QUIETSIMPLE
+setup.exe /IACCEPTSQLSERVERLICENSETERMS /CONFIGURATIONFILE="ConfigurationFile.ini" /QUIETSIMPLE
 ```
 
 ![Install with quietsimple](/images/2012/installing-core-with-quietsimple.png)
 
-We will return to the `UIMODE` shortly but it is worth highlighting that we are still no closer to using the SQL Server Installation Wizard on Server Core! We have proved that the GUI does seem to work (albeit in unattended mode) and you will be wondering why *if* the GUI appears to work without error on Server Core in unattended mode, doesn’t it work in Wizard based attended mode. The truth of the matter is that the SQL installer is blocking itself on the Server Core OS and I assume Microsoft are gently trying to nudge you away from this type of deployment and that way of thinking on Server Core.
+We will return to the `UIMODE` shortly but it is worth highlighting that we are still no closer to using the SQL Server Installation Wizard on Server Core! We have proved that the GUI does seem to work (albeit in unattended mode) and you will be wondering why *if* the GUI appears to work without error on Server Core in unattended mode, doesn't it work in Wizard based attended mode. The truth of the matter is that the SQL installer is blocking itself on the Server Core OS and I assume Microsoft are gently trying to nudge you away from this type of deployment and that way of thinking on Server Core.
 
 Now what if I told you that you can?
 
@@ -58,7 +58,7 @@ Cool eh?!
 
 Now I have to confess that through my connect item you will note that it has been marked as fixed in the next Service Pack... I might have single handily caused the demise of the most useful SQL Server 2012 bug (for Server Core deployments) by raising that connect 🙂...Just call me badassss!
 
-But have no fear. Whilst writing this post and performing a little testing I came across another bypass. Whilst I demonstrated earlier the relative uselessness of the *UIMODE* switch, and it is worth pointing out that according to [Connect 706799](https://connect.microsoft.com/SQLServer/feedback/details/706799/rc0-core-install-with-enableuionservercore-not-functional) it seems the switch is not even a supported feature, we can actually use it to perform a similar piece of magic as before. If you remember earlier, when we used the switch and parameter of `/UIMODE=EnableUIOnServerCore`, we did not need to specify an unattended installation switch such as `/QUIETSIMPLE` or `/QUIET`. Unfortunately, when we performed this operation we essentially entered the rather useless setup screen. **HOWEVER** all we need to do is provide a switch to a configuration file ensuring that within it, we have set `QUIET=”False”` and `QUIETSIMPLE=”False”`. By doing so you will also skip the installation block and viola enter a fully functional SQL Server Installation Wizard on Server Core!
+But have no fear. Whilst writing this post and performing a little testing I came across another bypass. Whilst I demonstrated earlier the relative uselessness of the *UIMODE* switch, and it is worth pointing out that according to [Connect 706799](https://connect.microsoft.com/SQLServer/feedback/details/706799/rc0-core-install-with-enableuionservercore-not-functional) it seems the switch is not even a supported feature, we can actually use it to perform a similar piece of magic as before. If you remember earlier, when we used the switch and parameter of `/UIMODE=EnableUIOnServerCore`, we did not need to specify an unattended installation switch such as `/QUIETSIMPLE` or `/QUIET`. Unfortunately, when we performed this operation we essentially entered the rather useless setup screen. **HOWEVER** all we need to do is provide a switch to a configuration file ensuring that within it, we have set `QUIET="False"` and `QUIETSIMPLE="False"`. By doing so you will also skip the installation block and viola enter a fully functional SQL Server Installation Wizard on Server Core!
 
 Enjoy.
 

@@ -10,7 +10,7 @@ So the first thing you are probably wondering is... *does this post have anythin
 
 Is this post relevant to you? It depends. Do you care about connectivity to your SQL Server and if you come across an issue obviously outside of the SQL Server application domain will you take ownership of the problem or pass the buck to the Windows admins? If it is the latter then now is the time to stop reading...
 
-...If you are still with me then congratulations because what I am going to discuss is a little problem that I have seen a few times over the last couple of years and relates to a rather nasty and annoying problem where the Windows IP stack decides it is going to forget the statically configured IP address and give your server a horrible auto configured address! This means that the connectivity to your SQL instance will obviously be severely hampered :).
+...If you are still with me then congratulations because what I am going to discuss is a little problem that I have seen a few times over the last couple of years and relates to a rather nasty and annoying problem where the Windows IP stack decides it is going to forget the statically configured IP address and give your server a horrible auto configured address! This means that the connectivity to your SQL instance will obviously be severely hampered 🙂.
 
 This problem is a most unusual one to troubleshoot because the behaviour being displayed really shouldn't happen. The static IP address is just that... *STATIC*, so the fact that Windows is deciding to auto configure it is rather infuriating to say the least. If you view the IP configuration of TCP/IP through the GUI, all looks absolutely fine. However when you view the configuration through `ipconfig /all` a different story appears.
 

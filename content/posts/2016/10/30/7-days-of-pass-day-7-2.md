@@ -8,7 +8,7 @@ tags = ['Community','PASS','PASS Summit','Public Speaking']
 
 ![Karla](/images/2016/karla.jpg)
 
-After a very heavy night (my only one of the trip) I wake to a pounding head and dry mouth. Having consumed at least one bottle of soda during the night I start on another and then move onto Coffee. There is no keynote today and therefore no rush, so I leisurely get my stuff together and contemplate breakfast. No rush that is until I look to my phone and notice a tweet telling me that the UK community is in the Community Zone at 8am, but given that the time is currently 7:30am I realize that it will be impossible for me to make it in time. I’ve represented this area many times before and am no longer the UK RM, so I excuse myself and let others step up.
+After a very heavy night (my only one of the trip) I wake to a pounding head and dry mouth. Having consumed at least one bottle of soda during the night I start on another and then move onto Coffee. There is no keynote today and therefore no rush, so I leisurely get my stuff together and contemplate breakfast. No rush that is until I look to my phone and notice a tweet telling me that the UK community is in the Community Zone at 8am, but given that the time is currently 7:30am I realize that it will be impossible for me to make it in time. I've represented this area many times before and am no longer the UK RM, so I excuse myself and let others step up.
 
 When I finally make it across to the convention center at around 10:20am, I hang out in the Community Zone for an hour and chat to a few people whilst recharging my batteries and eating my breakfast. I also start scribbling some notes for a 5-minute segment that Kevin Kline ([b](https://kevinekline.com/)|[t](https://twitter.com/kekline)) has asked me to fill for his *Staying involved with PASS Community* session. 30 minutes later I bumped into Karla Landrum ([t](https://twitter.com/karlakay22)) and accompanied her to Round 3 of Speaker idol. I will be honest and say that in my opinion (and the opinion of a few others I talked to) the best man (delivery) did not win that round and instead the win should have been given to Robert Verell ([b](https://sqlcowbell.com/wordpress/)|[t](https://twitter.com/sqlcowbell)). No matter, because it became a mute point when Robert was ultimately granted a runner-up slot to the final.
 
@@ -16,9 +16,9 @@ By the time lunch arrived, I bump into Niko and sit with him for a while, and af
 
 The session is fairly well attended and goes quite well, as do our 5-minute segments. Hopefully, there was a little value to be had, but the session was cut a little short so attendees could go to the prize draw.
 
-Next up on my schedule was Chris Hyde’s *R session* to lend my moral support and even though I had seen his material before in Phoenix, I felt he did a good job presenting that topic and set the level about right. Analytics are clearly something that I want to get more into, and while I have spent a little time with R Services, I am currently focusing my efforts more towards using Spark for now before returning back to SQL Server R Services and integration.
+Next up on my schedule was Chris Hyde's *R session* to lend my moral support and even though I had seen his material before in Phoenix, I felt he did a good job presenting that topic and set the level about right. Analytics are clearly something that I want to get more into, and while I have spent a little time with R Services, I am currently focusing my efforts more towards using Spark for now before returning back to SQL Server R Services and integration.
 
-After a short break, I decide to join Karla again for the last session of the day and final round of Speaker Idol. Kudos must go to the eventual and well-deserved winner who had definitely stepped up his game since winning the last round. His delivery was better than Robert’s this time -but it was close.
+After a short break, I decide to join Karla again for the last session of the day and final round of Speaker Idol. Kudos must go to the eventual and well-deserved winner who had definitely stepped up his game since winning the last round. His delivery was better than Robert's this time -but it was close.
 
 The end of this session marked the end of the Summit.
 
@@ -28,7 +28,7 @@ I went back to my hotel for a very quick rest before meeting up with fellow MCM 
 
 ---
 
-This marks the end of my trip to the PASS Summit in 2016, and due to personal reasons, may even be my last time at the PASS Summit period. But things can change, so I’m keeping my options and intentions open for now.
+This marks the end of my trip to the PASS Summit in 2016, and due to personal reasons, may even be my last time at the PASS Summit period. But things can change, so I'm keeping my options and intentions open for now.
 
 If it does prove to be my last, it has been a blast and has been great knowing you all. For those of you returning in a weeks time for the MVP Summit, I look forward to seeing you there!
 

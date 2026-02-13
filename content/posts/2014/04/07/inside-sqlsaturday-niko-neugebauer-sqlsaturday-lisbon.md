@@ -9,7 +9,7 @@ tags = ['Community','SQLSaturday']
 ![Sintra](/images/2014/sintra.webp)<br/>
 *The beautiful Sintra*
 
-Welcome to Inside SQLSaturday, and today I am joined by Portugal’s very own Niko Neugebauer ([web](https://www.nikoport.com/)|[twitter](https://twitter.com/NikoNeugebauer)).
+Welcome to Inside SQLSaturday, and today I am joined by Portugal's very own Niko Neugebauer ([web](https://www.nikoport.com/)|[twitter](https://twitter.com/NikoNeugebauer)).
 
 Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/eventhome.aspx) which holds the honour of being the first SQLSaturday **ever** to be held outside of the United States and the launch pad for so many other great events to follow around the world. Along with his team, they run a selection of Community events and innovative initiatives.
 
@@ -39,8 +39,8 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 >The most important thing when organizing a community event is to have a community *PASSION*. Passion will help you – it will lead, it will guide, it will open doors, it will find a way. The first key to any success is having the faith – you gotta believe in what you are doing. You gotta do it for the much higher purposes that you as an individual can strive for.
 >
 >The second most important thing is the plan. And not just 1 plan, but multiple layers of plans.
->Plan A -> Plan A.A -> Plan A.B -> …
->Plan B -> Plan B.A -> …
+>Plan A -> Plan A.A -> Plan A.B -> ...
+>Plan B -> Plan B.A -> ...
 >Plan for success, prepare for the failure. Plan for everyone to support you. Plan for a lack of support. Prepare for everything. Be ready to face problems, your faith in your mission will give you the necessary courage.
 >Do not be afraid of being abstracted and rejected. Once you get on the wave of success, everyone will want to join because of opportunities of being associated with that success.
 >Use this desire of success and plan for it. Plant seeds that will grow if not this year, than maybe the next one.
@@ -49,7 +49,7 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 
 >**Mark:** I think out of any event I have been to, your team has to be the closest, most single minded entity of them all. Can you tell me about your team, the individuals within it, and why they are so special?
 
->**Niko:** I can’t say anything about other events because I have never been a part of any other team, but my team is what makes things work. Having people such as Paulo Matos & Paulo Borges who are core members is what makes it what it is.
+>**Niko:** I can't say anything about other events because I have never been a part of any other team, but my team is what makes things work. Having people such as Paulo Matos & Paulo Borges who are core members is what makes it what it is.
 >I can trust and entrust tasks knowing that some things will be done much better, compared to any of my personal efforts.
 >Paulo (Borges) is one heck of a creative guy who helps to invent stuff. He can take a hit from any side and keep on carrying on like no other person.
 >
@@ -59,7 +59,7 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 >
 >Vitor Pombeiro is our arrival & departure master managing the schedule to decide who is collecting and dropping off speakers and this year we also have have Murilo Miranda running the speaker dinner. So far, I praise his efforts. He is on time and delivers updates regularly – I am happy as anyone in my position can be.
 >
->Finally we have one more important addition to the team in André Batisita – his availability and desire to help motivate each one of us and get some of the “smaller” tasks done, have already made a very BIG difference in our organisation.
+>Finally we have one more important addition to the team in André Batisita – his availability and desire to help motivate each one of us and get some of the "smaller" tasks done, have already made a very BIG difference in our organisation.
 >
 >Thanks to him and his resources we have every piece of content printed and prepared on Sunday – 6 days before the event!
 >
@@ -69,12 +69,12 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 
 >**Mark:** Leading up to your events you appear to get quite stressed and concerned -or perhaps more accurately described as very attentive to detail! Normally you are outwardly the most relaxed person I know, so explain to me exactly how you and your team are feeling in those final few hours before your event is due to start?
 
->**Niko:** It is because we are trying to achieve perfection, but knowing that it is impossible, but we still try. I am a strong believer in improvement and I don’t want to fail. I do fail a lot and I am trying to improve. I want to see things running the way we envision them and I do get disappointed when it is not happening, but it is a process and I am keep on learning & improving.
+>**Niko:** It is because we are trying to achieve perfection, but knowing that it is impossible, but we still try. I am a strong believer in improvement and I don't want to fail. I do fail a lot and I am trying to improve. I want to see things running the way we envision them and I do get disappointed when it is not happening, but it is a process and I am keep on learning & improving.
 >This year we are trying to lower stress by preparing everything in advance, like any printed materials are already done and packed.
 >We have well defined plans and we shall try to get them right. 🙂
 >
->Those final hours, oh those final hours …
->Its all about anxiety, we are working around 9 months on our event, so you know – when you arrive to the final moments of those thoughts, conversations and dreams …
+>Those final hours, oh those final hours ...
+>Its all about anxiety, we are working around 9 months on our event, so you know – when you arrive to the final moments of those thoughts, conversations and dreams ...
 >I feel happy arriving there, I feel exhausted, I feel like I am on the top of the mountain and like riding with speed of the wind. I am anxious waiting to see it happen and I am willing to see the results of our sleepless days and nights.
 
 ![Stained Glass](/images/2014/stainglass.jpg)
@@ -84,7 +84,7 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 >**Mark:** SQLSaturday Lisbon holds a very special place in my heart because it was the first ever SQLSaturday I spoke at despite having spoken at numerous events around the world. I believe this was the second event that you had ran. For those of us who did not manage to go to the very first event, could you describe that event for us and how it all went?
 
 >**Niko:** The first event was a simple 1-track event where everyone were on the verge of having heart attack. Unknown and inexperienced guys running one of the biggest community events – insane!!!
->In my books, through all the nerves, ups & downs – it was still amazing. I remember so many little insignificant details, such as the place where I was sitting, words I was saying, etc…
+>In my books, through all the nerves, ups & downs – it was still amazing. I remember so many little insignificant details, such as the place where I was sitting, words I was saying, etc...
 >
 >I remember all of our speakers giving the best they could and the crowd were a little unsure of how to interpret what we were doing (what? a community event? what the heck is that?).
 >
@@ -102,9 +102,9 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 
 ---
 
->**Mark:** As a speaker I find it really interesting delivering sessions to a different cultural audience. It is harder to judge what is funny and exactly what they expect from you. For the benefit of English Speaking presenters at this year’s event, what tips would you give them for a successful session?
+>**Mark:** As a speaker I find it really interesting delivering sessions to a different cultural audience. It is harder to judge what is funny and exactly what they expect from you. For the benefit of English Speaking presenters at this year's event, what tips would you give them for a successful session?
 
->**Niko:** Be yourself. If you are true to who you are, people will feel it and will trust you, even if they don’t completely get it. Don’t try to be funny, just try to be objective and friendly. Make people learn together with you. Learn from them.
+>**Niko:** Be yourself. If you are true to who you are, people will feel it and will trust you, even if they don't completely get it. Don't try to be funny, just try to be objective and friendly. Make people learn together with you. Learn from them.
 
 ---
 
@@ -120,7 +120,7 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 >**Mark:** I suppose I really should mention the pre-conference sessions you are running this year. You have managed to land a fantastic selection of big name speakers including my good friend [Edwin Sarmiento](https://twitter.com/EdwinMSarmiento). Can you tell me about these guys, their sessions and why people really should attend them?
 
 >**Niko:** We have 5 amazing pre-conference sessions this year:
->Edwin is doing High Availability, Tim Mitchell is talking about SSIS, Milos Radivojevic is doing a great stuff for developers (note that he is a developer for Bwin.Party, one of the most-talked companies in SQL Server space at the moment), Paul Turley is doing great precon for BI on Friday and Brent Ozar will take it on the next level with Virtualization Storage and Hardware for SQL Server. All DBA’s are very much invited. *For just 120€*. 🙂
+>Edwin is doing High Availability, Tim Mitchell is talking about SSIS, Milos Radivojevic is doing a great stuff for developers (note that he is a developer for Bwin.Party, one of the most-talked companies in SQL Server space at the moment), Paul Turley is doing great precon for BI on Friday and Brent Ozar will take it on the next level with Virtualization Storage and Hardware for SQL Server. All DBA's are very much invited. *For just 120€*. 🙂
 >
 >We have the following sessions:
 >
@@ -144,15 +144,15 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 
 >**Mark:** You can refuse to answer this question if you like (bearing in mind I might steal your idea 😉), but if you could pick anyone at all to give a pre-conference session at SQLPort, who would you choose and why?
 
->**Niko:** Well for a start I’d pick all those guys who are doing them this year!
+>**Niko:** Well for a start I'd pick all those guys who are doing them this year!
 >We hand-picked them from a good number of submissions.
 
 ---
 
 >**Mark:** Before I visited your event for the first time, I had never been to Portugal before. Whilst I know that many British tourists (sadly) bypass mainland destinations and head to The [Algarve](https://en.wikipedia.org/wiki/Algarve), this had never really appealed to me. I think it is fair to describe Lisbon as a very beautiful and historic City, could you explain for those fortunate enough to visit, what exactly it has to offer them and why they should visit?
 
->**Niko:** I guess it all depends on one’s priorities. Lisbon has it all – from historic Roman ruins to beaches for swimming and surfing, but the Algarve attracts those who are looking for a different type of entertainment. I am not a big fan of that type of culture. Catching a tram on the streets of Lisbon, getting a nice food with red wine, listening to [Fado](https://en.wikipedia.org/wiki/Fado) (traditional Portuguese music) are some of the things that help me to find my true self.
->Some great Britons came to Portugal and found a peace of mind and heart. For example, Lord Byron described [Sintra](https://en.wikipedia.org/wiki/Sintra) (a place near Lisbon) as a “glorious Eden”.
+>**Niko:** I guess it all depends on one's priorities. Lisbon has it all – from historic Roman ruins to beaches for swimming and surfing, but the Algarve attracts those who are looking for a different type of entertainment. I am not a big fan of that type of culture. Catching a tram on the streets of Lisbon, getting a nice food with red wine, listening to [Fado](https://en.wikipedia.org/wiki/Fado) (traditional Portuguese music) are some of the things that help me to find my true self.
+>Some great Britons came to Portugal and found a peace of mind and heart. For example, Lord Byron described [Sintra](https://en.wikipedia.org/wiki/Sintra) (a place near Lisbon) as a "glorious Eden".
 
 ---
 
@@ -162,27 +162,27 @@ Niko is the event lead to [SQLSaturday Lisbon](https://www.sqlsaturday.com/267/e
 
 ---
 
->**Mark:** At SQLSaturday Cambridge and many other events around the world, Portuguese speakers are becoming an integral part of those events. Once, when I asked you to remind me who a particular Portuguese speaker was, I remember you telling me that “(he) was only the best SQL trainer in the whole of Portugal!”. Could you explain why your country has so much technical talent?
+>**Mark:** At SQLSaturday Cambridge and many other events around the world, Portuguese speakers are becoming an integral part of those events. Once, when I asked you to remind me who a particular Portuguese speaker was, I remember you telling me that "(he) was only the best SQL trainer in the whole of Portugal!". Could you explain why your country has so much technical talent?
 
 >**Niko:** Like any other nation we have some great people, but there are a couple of things that might be helping develop talent. We are a small country (just over 10 Million) and are accepting of change. In the tech world we are very open to new technologies and a lot of pioneer programs are actually being run in Portugal without a big fanfare. We (SQLPort) try to help people to transform and to achieve their dreams.
 >But there is one big flaw that my nation has – a lack of marketing knowledge & exposure.
->I don’t think that some of the most capable people I know are publicising themselves in any way. So it stays a kind of a hidden secret, waiting to be discovered.
+>I don't think that some of the most capable people I know are publicising themselves in any way. So it stays a kind of a hidden secret, waiting to be discovered.
 
 ![Whats for dinner](/images/2014/menu.jpg)<br/>
 What's for dinner!
 
 ---
 
->**Mark:** I’ve had discussions with you and your team before regarding the location of Portugal with respect to the rest of Europe (Portugal runs along the Western most tip of the European continent, bordering Spain). Do you think that this location makes it harder sometimes to “sell” Portugal as an international IT powerhouse and could this ever be achievable in this slowly changing world without borders?
+>**Mark:** I've had discussions with you and your team before regarding the location of Portugal with respect to the rest of Europe (Portugal runs along the Western most tip of the European continent, bordering Spain). Do you think that this location makes it harder sometimes to "sell" Portugal as an international IT powerhouse and could this ever be achievable in this slowly changing world without borders?
 
->**Niko:** Absolutely. Not many people are travelling through Lisbon and this “hurts” any potential new ideas and business developments. We are getting some of the best professionals in the world, such as yourself, willing to come over and to share knowledge, so I guess it is a question of time before the results will appear.
+>**Niko:** Absolutely. Not many people are travelling through Lisbon and this "hurts" any potential new ideas and business developments. We are getting some of the best professionals in the world, such as yourself, willing to come over and to share knowledge, so I guess it is a question of time before the results will appear.
 
 ---
 
->**Mark:** From discussions I’ve had with a few sponsors I think some of them mistakenly overlook your event for the reasons just mentioned in my previous question and yet they forget the reach of the Portuguese IT Community in and around Europe and the UK. Would you agree with this statement, and could you say why a company really should consider sponsoring SQLSaturday Lisbon?
+>**Mark:** From discussions I've had with a few sponsors I think some of them mistakenly overlook your event for the reasons just mentioned in my previous question and yet they forget the reach of the Portuguese IT Community in and around Europe and the UK. Would you agree with this statement, and could you say why a company really should consider sponsoring SQLSaturday Lisbon?
 
 >**Niko:** I believe so. I have argued much with international sponsors before, but I understand that everything has their own priorities.
->I can guarantee 1 thing – we try harder, we bust ourselves further than we have ever thought we could. I see SQLSaturday Portugal as truly international event – speakers from 17 different countries, attendees from 12 different countries, countless MVP’s & MCM’s.
+>I can guarantee 1 thing – we try harder, we bust ourselves further than we have ever thought we could. I see SQLSaturday Portugal as truly international event – speakers from 17 different countries, attendees from 12 different countries, countless MVP's & MCM's.
 >It is a perfect opportunity to get to know the local community (which is very strong), but also get great talks & insights from some of the most forward thinking specialists on this planet.
 
 ---
@@ -190,14 +190,14 @@ What's for dinner!
 >**Mark:** Niko you have the ability to speak at least 4 to 5 languages fluently (which by the way makes me incredibly jealous). I remember you telling me in the past that the way you learn these languages is not by using the traditional approach, could you explain your special technique again for the benefit of people like me?
 
 >**Niko:** I try to learn any language in the same way I believe any child would learn it – hearing and repeating. Making mistakes and not fearing sounding profoundly funny. Always improving.
->I connect objects that I see with the sound of the words that I hear, I don’t map it to any other language (which is the normal way a language is taught).
->I don’t think this method makes you good at translation but once you switch the language – it will flow, because you will feel it.
+>I connect objects that I see with the sound of the words that I hear, I don't map it to any other language (which is the normal way a language is taught).
+>I don't think this method makes you good at translation but once you switch the language – it will flow, because you will feel it.
 
 ---
 
 >**Mark:** I have often observed that multi-lingual individuals are usually very intelligent people, and I wonder if their ability to speak multiple languages is simply a result of their intelligence or something more. What I really mean by this is that I wonder if you can solve problems thinking in one language that you would struggle to do so in say you native tongue?
 
->**Niko:** I honestly don’t know how true it is, mate.
+>**Niko:** I honestly don't know how true it is, mate.
 >It sounds very beautiful, but I never thought about it.
 >Listening, trying and repeating are the keys for any success.
 
@@ -210,7 +210,7 @@ What's for dinner!
 
 ---
 
->**Mark:** For his year’s event do you have any surprises in store that you can tell me about?
+>**Mark:** For his year's event do you have any surprises in store that you can tell me about?
 
 >**Niko:** Be social my friend, be social! 🙂
 
@@ -218,14 +218,14 @@ What's for dinner!
 
 >**Mark:** Now before I go, I really have to ask you, which Football team is the best in Lisbon? [Sporting](https://www.sporting.pt) or [Benfica](https://www.slbenfica.pt)?
 
->**Niko:** My personal preferences are unimportant but for what matters I love the color blue… 
+>**Niko:** My personal preferences are unimportant but for what matters I love the color blue... 
 >
 >In my extended family we also enjoy green colours, but that is as far as I am ready to go in the Portuguese championship, but for international games – I can proudly wear any color of any Portuguese teams.
 >
 
 ---
 
->**Mark:** As always Niko, it has been an absolute pleasure to talk to you. I am sure your event is going to be another great success and showcase for the SQLSaturday Community. I’m really looking forward to it and seeing what you and your team have in store for us all!
+>**Mark:** As always Niko, it has been an absolute pleasure to talk to you. I am sure your event is going to be another great success and showcase for the SQLSaturday Community. I'm really looking forward to it and seeing what you and your team have in store for us all!
 
 🙂
 

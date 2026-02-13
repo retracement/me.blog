@@ -6,7 +6,7 @@ categories = ['Technology']
 tags = ['Dotnet','SQL','SSIS']
 +++
 
-I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run…
+I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a "Bitesize" series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run...
 
 ---
 

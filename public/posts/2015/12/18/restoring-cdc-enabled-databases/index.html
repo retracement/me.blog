@@ -105,17 +105,17 @@ What happened Several years ago in a Disaster Recovery scenario, I was asked to 
       
       <article>
         <p><img src="/images/2015/surprised.jpg" alt="Surprised"></p>
-<p>Performing database and transaction log backups (and restores) are the meat and veg of a DBA’s responsibilities and if you are a seasoned professional I am sure you will have performed those operations ad-infinitum. Being complacent is perhaps the biggest mistake you can make as a <em>“Guardian of Data”</em> so you should always be prepared for the unexpected&hellip;</p>
+<p>Performing database and transaction log backups (and restores) are the meat and veg of a DBA&rsquo;s responsibilities and if you are a seasoned professional I am sure you will have performed those operations ad-infinitum. Being complacent is perhaps the biggest mistake you can make as a <em>&ldquo;Guardian of Data&rdquo;</em> so you should always be prepared for the unexpected&hellip;</p>
 <h1 id="what-happened">What happened</h1>
 <p>Several years ago in a Disaster Recovery scenario, I was asked to perform the migration of a large database which was used for a fairly complex ETL process that was both undocumented and something that the DBA team had no insight or involvement.</p>
-<p>Due to a complete lack of a Disaster Recovery Plan for the system and process (how many times have we seen this guys!) I was forced to follow best practices, common sense and draw on my experiences in order to bring the service back to a <em>“best known good”</em> as quickly as possible. Since we had access to all existing backups taken so far, and having the ability to take a tail log backup I was able to recover across to DR with no data-loss (at least as far as I was concerned). I handed the environment back to the Business Intelligence team for their validation, operational testing and re-acceptance.</p>
+<p>Due to a complete lack of a Disaster Recovery Plan for the system and process (how many times have we seen this guys!) I was forced to follow best practices, common sense and draw on my experiences in order to bring the service back to a <em>&ldquo;best known good&rdquo;</em> as quickly as possible. Since we had access to all existing backups taken so far, and having the ability to take a tail log backup I was able to recover across to DR with no data-loss (at least as far as I was concerned). I handed the environment back to the Business Intelligence team for their validation, operational testing and re-acceptance.</p>
 <p>Of course it passed acceptance and resumed operation in production.</p>
 <p>Now of course, what was not known at the time I performed this work was that the Database in question was enabled for Change Data Capture (CDC). Perhaps it should have been a logical assumption for me to make, but I suspect that even if I was aware of its presence, the significance of the situation might have escaped me.</p>
 <p>I am not really sure what acceptance testing was performed (if indeed it was!), because after a few hours of activity (just enough time for a scheduled ETL process to execute and fail) it became clear that something was very wrong with the database.</p>
 <p>Apparently the Change Data Capture tables were missing!</p>
 <h1 id="the-problem">The problem</h1>
-<p>So now I knew about the existence of CDC in the database (and after digging around MSDN documentation for a few minutes) our mistake was obvious – we had not used the <code>KEEP_CDC</code> option upon restore, meaning that the CDC tables were no longer present. Unfortunately acceptance testing hadn’t detected this problem ahead of time and now our recovered database was live. After some discussion, the Business Intelligence team decided for us to re-create CDC on this warm database and to temporarily restore a copy of the old one (with KEEP_CDC!) to pull out those missed changes.</p>
-<p>So what’s the problem with restoring CDC enabled databases?</p>
+<p>So now I knew about the existence of CDC in the database (and after digging around MSDN documentation for a few minutes) our mistake was obvious – we had not used the <code>KEEP_CDC</code> option upon restore, meaning that the CDC tables were no longer present. Unfortunately acceptance testing hadn&rsquo;t detected this problem ahead of time and now our recovered database was live. After some discussion, the Business Intelligence team decided for us to re-create CDC on this warm database and to temporarily restore a copy of the old one (with KEEP_CDC!) to pull out those missed changes.</p>
+<p>So what&rsquo;s the problem with restoring CDC enabled databases?</p>
 <p><em>The main problem with CDC enabled databases is that the <code>KEEP_CDC</code> option is incompatible with the <code>NORECOVERY</code> option.</em></p>
 <p>For instance the following command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>RESTORE <span style="color:#66d9ef">DATABASE</span> [CDCEnabledDB] 
@@ -142,14 +142,14 @@ Remove the conflicting option and reissue the statement.</p>
 </ul>
 <p>Quite infuriatingly the Connect Item was closed with:</p>
 <blockquote>
-<p>“we looked into this but there is no plan as of now to change the current design and extend the support of this in the foreseeable future. Again, thanks for taking the time to share your feedback, this is really important to us.”</p>
+<p>&ldquo;we looked into this but there is no plan as of now to change the current design and extend the support of this in the foreseeable future. Again, thanks for taking the time to share your feedback, this is really important to us.&rdquo;</p>
 </blockquote>
 <p>And that was that&hellip; for a time.</p>
 <hr>
 <h1 id="so-what-has-changed">So what has changed?</h1>
 <p>Several months ago I was investigating the use of CDC enabled tables for a client project when I stumbled across the following statement in the MSDN documentation Replication, Change Tracking, Change Data Capture, and AlwaysOn Availability Groups :</p>
 <blockquote>
-<p>“SQL Server Replication, change data capture (CDC), and change tracking (CT) are supported on AlwaysOn Availability Groups.”</p>
+<p>&ldquo;SQL Server Replication, change data capture (CDC), and change tracking (CT) are supported on AlwaysOn Availability Groups.&rdquo;</p>
 </blockquote>
 <p>Remembering the problems I faced years earlier I read that statement with interest and decided to spend time playing with the recovery of Change Data Capture when it dawned on me that mine and the other posters to the Connect Item (including the Microsoft respondent) had completely misunderstood the use of the KEEP_CDC clause.</p>
 <p>Our misunderstanding was (unsurprisingly) that the KEEP_CDC clause was necessary to protect Change Data Capture tables from being lost on every restore sequence (which is wrong). Instead the clause is required to protect CDC tables upon RECOVERY. Change Data Capture schema and data is transparently restored behind the scenes during NORECOVERY in anticipation that you use the KEEP_CDC clause on RECOVERY -if not then CDC is dropped (again transparently).</p>

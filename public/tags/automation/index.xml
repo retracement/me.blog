@@ -14,7 +14,7 @@
       <link>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</link>
       <pubDate>Wed, 19 Sep 2012 18:47:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2012/09/19/using-the-sql-server-installation-wizard-on-server-core/</guid>
-      <description>&lt;p&gt;Ever heard the phrase &lt;em&gt;&amp;ldquo;just because you can, doesn’t mean you should?&amp;rdquo;&lt;/em&gt;. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn’t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I’m getting ahead of myself, first let me describe our scenario.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ever heard the phrase &lt;em&gt;&amp;ldquo;just because you can, doesn&amp;rsquo;t mean you should?&amp;rdquo;&lt;/em&gt;. Yep me too -many times, and what I am about to say comes with that caveat in mind although as I shall explain, I see absolutely no reason why you shouldn&amp;rsquo;t -certainly not in a development environment OR using this technique to produce a configuration installation file. But I&amp;rsquo;m getting ahead of myself, first let me describe our scenario.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

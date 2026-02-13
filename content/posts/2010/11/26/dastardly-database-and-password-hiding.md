@@ -14,7 +14,7 @@ For those of you who are not aware of how to type out an ascii code it is fairly
 
 After much trial, error and disappointment I was not having much success with invisible codes although I did find one immediate surprise -namely that you can call databases with no names! I'm sure I must have read this somewhere but my conscious self does not recall it. One interesting thing about this, is that irrespective of how many spaces you put between your squared brackets it is always interpreted as the same name so essentially you can only create one database using spaces (or ascii 032).
 
-But much toying later I finally I had my eureka moment! I found that invisible ascii code 255 does generate an invisible character which isn't interpreted as an empty space. Even more interesting was that unlike ascii 032, multiple codes were being taken as a unique database name meaning that multiple databases could be created each with an apparent blank name – a good one for scaring your junior dbas :).
+But much toying later I finally I had my eureka moment! I found that invisible ascii code 255 does generate an invisible character which isn't interpreted as an empty space. Even more interesting was that unlike ascii 032, multiple codes were being taken as a unique database name meaning that multiple databases could be created each with an apparent blank name – a good one for scaring your junior dbas 🙂.
 
 So is there any use for doing this? Actually I can think of a couple but would be interested in any of your suggestions. I may at some stage follow this post up to go through a few of them.
 

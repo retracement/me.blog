@@ -7,21 +7,35 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Tue, 18 Jul 2017 15:10:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 02 Aug 2018 12:14:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manipulating SQL Agent Jobs through PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/</link>
+      <pubDate>Thu, 02 Aug 2018 12:14:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/</guid>
+      <description>&lt;p&gt;In our last post titled &lt;a href=&#34;https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell&#34;&gt;Loading and using SQL Server Management Objects in PowerShell&lt;/a&gt;, we demonstrated how to load and consume SQL Server Management Objects in PowerShell, which then allows us to access your SQL instance through an SMO instance object. Please make sure you read that post before continuing.&lt;/p&gt;&#xA;&lt;p&gt;In this specific post, we will demonstrate and walk through how to use PSH and SMO to view and change SQL Agent jobs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loading and using SQL Server Management Objects in PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell/</link>
+      <pubDate>Wed, 01 Aug 2018 17:37:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell/</guid>
+      <description>&lt;p&gt;I recently came across a snippet of code I had written for a client several years ago – one of those &amp;ldquo;by the way, how would you do this&amp;rdquo; type of requests. On the face of it, the task at hand seemed fairly simple to deliver since they wanted to query SQL Server Agent jobs through PowerShell. But because they also wanted to be able to change the SQL Server Agent jobs using PowerShell, I decided that the simplest way would be to programmatically access these jobs as Objects thereby providing &lt;em&gt;Methods&lt;/em&gt; to call and &lt;em&gt;Properties&lt;/em&gt; that can be easily returned or changed through their &lt;em&gt;get&lt;/em&gt; and &lt;em&gt;set&lt;/em&gt; accessors.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Bitesize SSIS - Compressing files from the SSIS Script Task</title>
       <link>https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/</link>
       <pubDate>Tue, 18 Jul 2017 15:10:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/</guid>
-      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run…&lt;/p&gt;</description>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a &amp;ldquo;Bitesize&amp;rdquo; series of posts that encapsulate simple operations in order to help not just you, but more importantly, remind me! Hopefully, this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bitesize SSIS - Passing SSIS variables into script components</title>
       <link>https://tenbulls.co.uk/posts/2015/11/30/bitesize-ssis-1/</link>
       <pubDate>Mon, 30 Nov 2015 01:01:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2015/11/30/bitesize-ssis-1/</guid>
-      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a &amp;ldquo;Bitesize&amp;rdquo; series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

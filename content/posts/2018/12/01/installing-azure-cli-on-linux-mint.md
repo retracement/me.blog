@@ -8,7 +8,7 @@ tags = ['Azure CLI','PowerShell','Linux','Azure']
 
 The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control [Microsoft Azure](https://portal.azure.com) easily through the command line, then it is probably something you should have.
 
-I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an [Ubuntu derivative distribution](https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives) such as [Linux Mint](https://linuxmint.com/). Microsoft’s basic installation guide [Install Azure CLI with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest) has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:
+I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an [Ubuntu derivative distribution](https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives) such as [Linux Mint](https://linuxmint.com/). Microsoft's basic installation guide [Install Azure CLI with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest) has one specific problem for those distros, so let's take a look at the Ubuntu section of that guide:
 
 ![Install Azure CLI](/images/2018/installazurecli.png)
 
@@ -52,9 +52,9 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO 
     sudo tee /etc/apt/sources.list.d/azure-cli.list
 ```
 
-And that’s it, once the right package base has been corrected, you can rerun the step 4 script which should no longer error. Azure CLI is now ready for you to manage and deploy your Azure resources from your lovely Linux Ubuntu derivative distribution! Check out [Common Azure CLI commands for managing Azure resources](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage) for some guidance on how to use it.
+And that's it, once the right package base has been corrected, you can rerun the step 4 script which should no longer error. Azure CLI is now ready for you to manage and deploy your Azure resources from your lovely Linux Ubuntu derivative distribution! Check out [Common Azure CLI commands for managing Azure resources](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage) for some guidance on how to use it.
 
-I’ll give it a try and attempt to list all my Azure resource groups in tabular format:
+I'll give it a try and attempt to list all my Azure resource groups in tabular format:
 
 ```bash
 az group list --output table
@@ -78,4 +78,4 @@ techdays                                  northeurope  Succeeded
 Testing                                   eastus       Succeeded
 ```
 
-As you can see, Azure CLI is very cool and you should start using it now, so don’t let minor configuration difficulties stop you!
+As you can see, Azure CLI is very cool and you should start using it now, so don't let minor configuration difficulties stop you!

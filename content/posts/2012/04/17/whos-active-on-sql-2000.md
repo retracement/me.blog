@@ -6,15 +6,15 @@ categories = ['Technology']
 tags = ['SQL','SQLHelp']
 +++
 
-Yes yes yes I *know* we are currently on SQL 2012 but just hear me out for a second…
+Yes yes yes I *know* we are currently on SQL 2012 but just hear me out for a second...
 
-I think I am probably one of the only people on the planet who has not (yet) used Adam Machanic’s ([blog](https://sqlblog.com/blogs/adam_machanic/default.aspx)|[twitter](https://sqlblog.com/blogs/adam_machanic/archive/2011/04/27/who-is-active-v11-00-a-month-of-activity-monitoring-part-27-of-30.aspx)) whoisactive Stored Procedure. One of the reasons for this is that going right back to the days of SQL Server 2000 I had rolled my own stored procedure which worked very nicely and did everything that I ever needed it to.
+I think I am probably one of the only people on the planet who has not (yet) used Adam Machanic's ([blog](https://sqlblog.com/blogs/adam_machanic/default.aspx)|[twitter](https://sqlblog.com/blogs/adam_machanic/archive/2011/04/27/who-is-active-v11-00-a-month-of-activity-monitoring-part-27-of-30.aspx)) whoisactive Stored Procedure. One of the reasons for this is that going right back to the days of SQL Server 2000 I had rolled my own stored procedure which worked very nicely and did everything that I ever needed it to.
 
 With the advent of SQL Server 2005 came the ever so useful DMOs and whilst these gave an even more insightful portal into the guts of SQL 2005 (and now all versions above) internals, my own Stored Procedure still gave me all the information I needed. If there was any extra information I needed to obtain, I would usually delve into the DMVs using code snippets taken primarily from Louis Davidson or Glenn Berry.
 
-I’ll be honest. I never got around to rewriting the code I wrote -I got lazy people! I always intended on doing so, but never quite found the time or excuse.
+I'll be honest. I never got around to rewriting the code I wrote -I got lazy people! I always intended on doing so, but never quite found the time or excuse.
 
-Well today whilst monitoring Twitter’s *#SQLHELP* hashtag I came across a request for a SQL 2000 version of whoisactive. I offered up my dusty ol’ proc and it was gratefully accepted...
+Well today whilst monitoring Twitter's *#SQLHELP* hashtag I came across a request for a SQL 2000 version of whoisactive. I offered up my dusty ol' proc and it was gratefully accepted...
 
 ---
 
@@ -23,19 +23,19 @@ Please be aware the the following code has been provided as is, taken straight f
 1. A dbaadmin database
 1. An activity table created in the dbaadmin database
 
-I appreciate that in your environment, you may have your own administrative databases -but luckily I have extensively commented my code so it really shouldn’t be very difficult for you to do the switch. With respect to the activity table, that is simply needed for the capture parameter if you wish to persist activity statistics. If that is not something that you need, then again you can remove the code segment for that and therefore remove the dependency.
+I appreciate that in your environment, you may have your own administrative databases -but luckily I have extensively commented my code so it really shouldn't be very difficult for you to do the switch. With respect to the activity table, that is simply needed for the capture parameter if you wish to persist activity statistics. If that is not something that you need, then again you can remove the code segment for that and therefore remove the dependency.
 
 Before I give you the code let me tell you roughly how it works. In SQL 2000, in order to obtain the last executed statement for a SPID we would use [DBCC INPUTBUFFER(spidid)](https://msdn.microsoft.com/en-us/library/ms187730.aspx). The other part of the equation is the querying of the `master.dbo.sysprocesses` table to view all active SPIDs on our instance. Unfortunately, since the `DBCC` result set is being returned per SPID and not as a tabular result set for all, we are unable to join our last executed statement result to the sysprocesses result set. In addition, the second challenge is that in order to store the output of each `DBCC INPUTBUFFER` request (using the `INSERT EXEC` technique)  we must insert each item separately into a table as is. The output does not have a SPID id and therefore this means we are missing the join key in this table. To overcome this second challenge I simply perform the insert (into a table that has a column for a SPID id) and then update the SPID number as a separate operation. We perform our `DBCC INPUTBUFFER` for each SPID in succession using a cursor. Now we have our last executed statement table with respective SPID ids. More importantly we have also solved our first problem and are able to join our `sysprocesses` data (first captured into a temporary table) against our statement data ...who needs DMOs!
 
 The stored procedure uses a selection of named parameters with defaults and the most important of these is the `@help` parameter.
 
-If you execute the stored procedure as follows :-
+If you execute the stored procedure as follows:
 
 ```sql
 exec dbo.usp_activity @help=1
 ```
 
-Then you will receive the very useful help output :-
+Then you will receive the very useful help output:
 
 ```text
 Help Specified.
@@ -59,7 +59,7 @@ exec dbo.usp_activity @blockedonly=1
 This returns a very useful amount of information about our blockers and blocked SPIDs and has saved my bacon on many occasions (result set below has been condensed):
 ![usp_activity result set](/images/2012/spid4.png)
 
-I shan’t go into any more detail about any of the other parameters or how you would use them since I think they are fairly obvious but if not they shouldn’t take you very long to figure them out. So for now I shall list the code that you will need to setup `usp_activity`.
+I shan't go into any more detail about any of the other parameters or how you would use them since I think they are fairly obvious but if not they shouldn't take you very long to figure them out. So for now I shall list the code that you will need to setup `usp_activity`.
 
 First we create the dbaadmin database.
 
@@ -146,4 +146,4 @@ And finally the Stored Procedure itself must be created.
 
 You can download the entire script from [here](https://bit.ly/1fhTcZv).
 
-So there you have it. I don’t pretend for one minute that the T-SQL code is perfect, even during the process of putting this post together I spotted a couple of things that should be changed such as wrong choices for datatypes and a slightly roundabout way for checking the existence of objects, but the important thing is that the code works and works well. Therefore if you are still using SQL Server 2000 in your existing environment and need whoisactive style functionality then look know further. Enjoy.
+So there you have it. I don't pretend for one minute that the T-SQL code is perfect, even during the process of putting this post together I spotted a couple of things that should be changed such as wrong choices for datatypes and a slightly roundabout way for checking the existence of objects, but the important thing is that the code works and works well. Therefore if you are still using SQL Server 2000 in your existing environment and need whoisactive style functionality then look know further. Enjoy.

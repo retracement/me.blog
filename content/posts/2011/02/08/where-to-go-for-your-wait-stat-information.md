@@ -16,7 +16,7 @@ Anyway after a little bit of searching I managed to pull up a rather nice White 
 
 So the next time you are "waiting" perhaps you might want to find out why and check out these links:
 
-[SQL Server Best Practices Article](https://msdn.microsoft.com/en-us/library/cc966413.aspx) by Tom Davidson with [whitepaper download](https://download.microsoft.com/download/4/7/a/47a548b9-249e-484c-abd7-29f31282b04d/Performance_Tuning_Waits_Queues.doc) for Performance Tuning Waits Queues. -the original article that spawned a post :).
+[SQL Server Best Practices Article](https://msdn.microsoft.com/en-us/library/cc966413.aspx) by Tom Davidson with [whitepaper download](https://download.microsoft.com/download/4/7/a/47a548b9-249e-484c-abd7-29f31282b04d/Performance_Tuning_Waits_Queues.doc) for Performance Tuning Waits Queues. -the original article that spawned a post 🙂.
 
 [sys.dm_os_wait_stats (Transact-SQL)](https://msdn.microsoft.com/en-us/library/ms179984.aspx) – this official MSDN page actually looks rather useful and might give you all the information you need.
 

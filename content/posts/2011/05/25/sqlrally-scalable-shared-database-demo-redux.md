@@ -35,7 +35,7 @@ Now at this stage, if this attribute really has been set then any attempt to cre
 ![Test write protection](/images/2011/4-test_volume_for_write.jpg)<br/>
 *Can no longer write to read-only volume... obviously!*
 
-At this stage we are all ready to go! We can bring our SSD online on our very first instance and as you can see below, the database is open for business :).
+At this stage we are all ready to go! We can bring our SSD online on our very first instance and as you can see below, the database is open for business 🙂.
 
 ![Bring database online](/images/2011/5-bring_online.jpg)<br/>
 Bring database back online

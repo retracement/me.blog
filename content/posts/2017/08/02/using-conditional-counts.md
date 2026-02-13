@@ -73,7 +73,7 @@ ELSE 0 END) AS 'Number_Of_Sales'
 FROM ...
 ```
 
-And while this code code ran, it did not make any difference to the counts returned (let’s demonstrate this using the full code for payments and refunds):
+And while this code code ran, it did not make any difference to the counts returned (let's demonstrate this using the full code for payments and refunds):
 
 ```sql
 SELECT
@@ -125,7 +125,7 @@ And this time we get the results we were looking for:
 
 ![results3](/images/2017/results3.jpg)
 
-It was only after getting a working solution that I revisited using a conditional count to perform the aggregation. After thinking a little more about what COUNT is actually doing (increments a “count for every item in a group”), my expression logic didn’t quite make sense. In that case COUNT was incrementing regardless of whether a 1 or 0 was returned, so instead of returning a 0, this time I decided to return a NULL. The code fragment is as follows:
+It was only after getting a working solution that I revisited using a conditional count to perform the aggregation. After thinking a little more about what COUNT is actually doing (increments a "count for every item in a group"), my expression logic didn't quite make sense. In that case COUNT was incrementing regardless of whether a 1 or 0 was returned, so instead of returning a 0, this time I decided to return a NULL. The code fragment is as follows:
 
 ```sql
 SELECT ...
@@ -161,13 +161,13 @@ And the results are identical as before.
 
 While my head tells me that using the COUNT operator to perform conditional counts is the purest (and most logical) solution,  I personally think it is less readable (despite being less code) for the layman and instead quite like the SUM approach since it is self-explanatory.
 
-Furthermore, while the query plans of both approaches appear to be identical upon first glance, I noticed that the COUNT approach had (very) slightly higher query costs. I haven’t compared execution times or other performance metrics, but I suspect there will be little difference between them. In other words, use whatever works for you!
+Furthermore, while the query plans of both approaches appear to be identical upon first glance, I noticed that the COUNT approach had (very) slightly higher query costs. I haven't compared execution times or other performance metrics, but I suspect there will be little difference between them. In other words, use whatever works for you!
 
 ---
 
 # Summary
 
-After using the COUNT operator for well over 20 years, this exercise has proved to me that there are still functional nuances lurking that will bite me from time to time. This is not a SQL Server problem, it’s just a ME problem (in not always understanding operations correctly)!
+After using the COUNT operator for well over 20 years, this exercise has proved to me that there are still functional nuances lurking that will bite me from time to time. This is not a SQL Server problem, it's just a ME problem (in not always understanding operations correctly)!
 
 If you would like to try this out yourself I have provided the setup code below:
 

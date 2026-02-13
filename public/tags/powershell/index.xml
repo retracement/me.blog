@@ -28,7 +28,35 @@
       <link>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</link>
       <pubDate>Sat, 01 Dec 2018 21:35:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/posts/2018/12/01/installing-azure-cli-on-linux-mint/</guid>
-      <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft’s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
+      <description>&lt;p&gt;The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control &lt;a href=&#34;https://portal.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; easily through the command line, then it is probably something you should have.&lt;/p&gt;&#xA;&lt;p&gt;I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives&#34;&gt;Ubuntu derivative distribution&lt;/a&gt; such as &lt;a href=&#34;https://linuxmint.com/&#34;&gt;Linux Mint&lt;/a&gt;. Microsoft&amp;rsquo;s basic installation guide &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest&#34;&gt;Install Azure CLI with apt&lt;/a&gt; has one specific problem for those distros, so let&amp;rsquo;s take a look at the Ubuntu section of that guide:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Job scheduling, Remote queries, and avoiding false negatives using PowerShell and SQL Agent</title>
+      <link>https://tenbulls.co.uk/posts/2018/10/01/custom-schedule-exceptions-for-sql-jobs-using-powershell/</link>
+      <pubDate>Mon, 01 Oct 2018 17:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/10/01/custom-schedule-exceptions-for-sql-jobs-using-powershell/</guid>
+      <description>&lt;p&gt;Say what you want about the SQL Server Agent, it is the lifeblood of SQL Server for scheduling maintenance routines, data loading, and other such ongoing operations. It has been around since the dawn of time and has grown into a rich (but simple) job execution scheduler, yet at the same time, still lacks certain capabilities that mildly annoy me.&lt;/p&gt;&#xA;&lt;h1 id=&#34;scheduling-exclusions&#34;&gt;Scheduling exclusions&lt;/h1&gt;&#xA;&lt;p&gt;One such annoyance is the inability to create intelligent exclusions for job schedules. In other words the &lt;em&gt;&amp;ldquo;Don&amp;rsquo;t run this job if&amp;rdquo;&lt;/em&gt; scenarios that you might commonly run into at retailers, education or health sectors, financial institutions and other environments that may have time-sensitive or complex execution logic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manipulating SQL Agent Jobs through PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/</link>
+      <pubDate>Thu, 02 Aug 2018 12:14:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/</guid>
+      <description>&lt;p&gt;In our last post titled &lt;a href=&#34;https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell&#34;&gt;Loading and using SQL Server Management Objects in PowerShell&lt;/a&gt;, we demonstrated how to load and consume SQL Server Management Objects in PowerShell, which then allows us to access your SQL instance through an SMO instance object. Please make sure you read that post before continuing.&lt;/p&gt;&#xA;&lt;p&gt;In this specific post, we will demonstrate and walk through how to use PSH and SMO to view and change SQL Agent jobs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loading and using SQL Server Management Objects in PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell/</link>
+      <pubDate>Wed, 01 Aug 2018 17:37:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell/</guid>
+      <description>&lt;p&gt;I recently came across a snippet of code I had written for a client several years ago – one of those &amp;ldquo;by the way, how would you do this&amp;rdquo; type of requests. On the face of it, the task at hand seemed fairly simple to deliver since they wanted to query SQL Server Agent jobs through PowerShell. But because they also wanted to be able to change the SQL Server Agent jobs using PowerShell, I decided that the simplest way would be to programmatically access these jobs as Objects thereby providing &lt;em&gt;Methods&lt;/em&gt; to call and &lt;em&gt;Properties&lt;/em&gt; that can be easily returned or changed through their &lt;em&gt;get&lt;/em&gt; and &lt;em&gt;set&lt;/em&gt; accessors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reading very BIG text files using PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/03/14/reading-big-text-files-using-ps/</link>
+      <pubDate>Wed, 14 Mar 2018 13:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/03/14/reading-big-text-files-using-ps/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2018/big.jpg&#34; alt=&#34;Big&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I frequently have to troubleshoot a variety of data feeds (populated from very very large files) which are regularly ingested into SQL Server for reporting and data validation purposes. From time to time, these feeds break due to malformed or invalid data provided by the third parties, and often due to the size of the files and limitations of third-party text file applications, loading them into a text file viewer is not possible.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resolving Windows Cluster creation problems in Powershell</title>

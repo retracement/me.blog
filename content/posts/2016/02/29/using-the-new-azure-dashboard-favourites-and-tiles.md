@@ -8,7 +8,7 @@ tags = ['Azure']
 
 The new Azure Portal represents a huge improvement over the old Classic Azure Portal in terms of User eXperience and performance.
 
-If you were used to the old portal you’ll most probably have got to like the quirks and simplicity, but the new portal has a lot to offer and does a great job in providing a more customised and colourful end-user experience.
+If you were used to the old portal you'll most probably have got to like the quirks and simplicity, but the new portal has a lot to offer and does a great job in providing a more customised and colourful end-user experience.
 
 In this post I shall discuss some of the functionality that will make your Azure UX experience more productive and enjoyable.
 
@@ -33,7 +33,7 @@ Once you have customized your menu to your satisfaction it is worth minimizing t
 
 # Navigation bar
 
-Your Azure experience will consist of many click-select-click-select operations and each time you will navigate further and further down the resource tree in order to make changes required to your resources. This could pose a problem when trying to step back up the tree if it wasn’t for the presence of the Menu Ribbon (found at the top of the Azure Portal). Every sub-menu that is selected will cause a new item to appear to the right of the ribbon (see below).
+Your Azure experience will consist of many click-select-click-select operations and each time you will navigate further and further down the resource tree in order to make changes required to your resources. This could pose a problem when trying to step back up the tree if it wasn't for the presence of the Menu Ribbon (found at the top of the Azure Portal). Every sub-menu that is selected will cause a new item to appear to the right of the ribbon (see below).
 
 ![menu ribbon](/images/2016/menuribbon.png)
 
@@ -57,7 +57,7 @@ Newly created resources will be automatically added (by default) onto the Azure 
 
 # Theme
 
-If you are not crazy about the default colours used in the Azure Portal you can easily change to another pre-defined theme by clicking the <img src="/static/images/2016/settings.webp" alt="settings"/> settings button on the Portal Menu ribbon. This will give you the option to select (currently) 1 of 4 themes, turn *Animations* on or off and enable or disable *Toast notifications*. Personally I like the default theme and I don’t really see any point in turning off animations or toast notifications, but you can if you want to…
+If you are not crazy about the default colours used in the Azure Portal you can easily change to another pre-defined theme by clicking the <img src="/static/images/2016/settings.webp" alt="settings"/> settings button on the Portal Menu ribbon. This will give you the option to select (currently) 1 of 4 themes, turn *Animations* on or off and enable or disable *Toast notifications*. Personally I like the default theme and I don't really see any point in turning off animations or toast notifications, but you can if you want to...
 
 # History
 

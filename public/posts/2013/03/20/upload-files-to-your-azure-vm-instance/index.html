@@ -105,10 +105,10 @@ As it turned out I realized pretty quickly that I didn’t need to bother since 
       
       <article>
         <p>Sometimes some of the simplest tips are the best, and recently I was trying to figure out just how to upload SQL Server 2012 Enterprise/ Developer Edition installation files to my Windows Azure Virtual Machine since my pre-provisioned copy of SQL Server (Evaluation Edition) had expired.</p>
-<p>As it turned out I realized pretty quickly that I didn’t need to bother since the VM also comes with a copy of SQL Server 2012 Evaluation Edition media pre-loaded at the root of the <em>C:\</em> drive. All I had to do therefore was to grab an existing Developer Edition license key and run the Evaluation Edition media setup and step through the Edition Upgrade to <em>convert</em> my existing instance.</p>
+<p>As it turned out I realized pretty quickly that I didn&rsquo;t need to bother since the VM also comes with a copy of SQL Server 2012 Evaluation Edition media pre-loaded at the root of the <em>C:\</em> drive. All I had to do therefore was to grab an existing Developer Edition license key and run the Evaluation Edition media setup and step through the Edition Upgrade to <em>convert</em> my existing instance.</p>
 <p>However, I also knew that there were other utilities and tools (and possibly other installation media) that I would want to bring into my Azure VM and it all felt slightly restrictive. After checking out the <a href="https://manage.windowsazure.com">Windows Azure Management Dashboard</a> I could not find any options whatsoever to upload files to my VM.</p>
 <p><img src="/images/2013/manage_console.jpg" alt="Manage Console"></p>
-<p>Even after a little digging around in the usual search engines, the most useful suggestion I managed to locate was to download and install an FTP server onto the VM itself and play around a little with port settings! Whilst feasible, that level of tinkering was surely ridiculous. After a few moments of frustration I had an idea. Since I was connecting to my Windows Azure VM over RDP (and knowing that my RDP client is able to provide remote access to certain local resources such as the clipboard I decided to try taking the easy route and simply copy and paste an executable after enabling this option. To do so, you simply have to:-</p>
+<p>Even after a little digging around in the usual search engines, the most useful suggestion I managed to locate was to download and install an FTP server onto the VM itself and play around a little with port settings! Whilst feasible, that level of tinkering was surely ridiculous. After a few moments of frustration I had an idea. Since I was connecting to my Windows Azure VM over RDP (and knowing that my RDP client is able to provide remote access to certain local resources such as the clipboard I decided to try taking the easy route and simply copy and paste an executable after enabling this option. To do so, you simply have to:</p>
 <ul>
 <li>Launch your RDP client (<code>mstsc.exe</code> in Windows) and expand the details button to reveal the remote computer access to local resources checkboxes.</li>
 <li>Ensure that the Clipboard option is checked and connect and log into your Azure VM.</li>
@@ -117,7 +117,7 @@ As it turned out I realized pretty quickly that I didn’t need to bother since 
 </ul>
 <p><img src="/images/2013/remote.jpg" alt="Access local resources"><br/>
 <em>Remote Desktop can provide access to local resources!</em></p>
-<p>Whilst I have seen this fail in certain restrictive network configurations, to my delight <em>SUCCESS</em>. I know this operation is hardly rocket science, but sometimes the most simplest things are the hardest to figure out. Now my Azure VMs suddenly seem to be far more useful and I can’t wait to play further!</p>
+<p>Whilst I have seen this fail in certain restrictive network configurations, to my delight <em>SUCCESS</em>. I know this operation is hardly rocket science, but sometimes the most simplest things are the hardest to figure out. Now my Azure VMs suddenly seem to be far more useful and I can&rsquo;t wait to play further!</p>
 
       </article>
       

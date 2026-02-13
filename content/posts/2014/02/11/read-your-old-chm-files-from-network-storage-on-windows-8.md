@@ -13,9 +13,9 @@ So I tried opening one of these documents and I got the classic (and expected) s
 ![Book](/images/2014/addison_blank.png)<br/>
 *Try reading this sucker!*
 
-Now this wasn’t really a big surprise since the restriction was actually put in place by Microsoft many years ago to prevent content loading from remote and untrusted sources (i.e. the Internet or Network/ UNC paths) and resulting in an infection to your machine. In the past I seemed to remember that it was a simple registry hack, and this time around various searches across the internet were again suggesting that this would be the case. Unfortunately no single article  appeared to join all the dots but after a frustrating period of time I finally managed to figure it out again. This fix works on Windows 8/ 8.1 and should also work on prior versions of Windows going back to XP but I have not tested it on these platforms.
+Now this wasn't really a big surprise since the restriction was actually put in place by Microsoft many years ago to prevent content loading from remote and untrusted sources (i.e. the Internet or Network/ UNC paths) and resulting in an infection to your machine. In the past I seemed to remember that it was a simple registry hack, and this time around various searches across the internet were again suggesting that this would be the case. Unfortunately no single article  appeared to join all the dots but after a frustrating period of time I finally managed to figure it out again. This fix works on Windows 8/ 8.1 and should also work on prior versions of Windows going back to XP but I have not tested it on these platforms.
 
-I have decided to blog it, not only to help anyone else struggling getting your remote CHM files working, but also so I don’t have to waste one single minute more trying to figure out what the fix is. Assuming you trust the Remote source and the files therein, you have two choices:
+I have decided to blog it, not only to help anyone else struggling getting your remote CHM files working, but also so I don't have to waste one single minute more trying to figure out what the fix is. Assuming you trust the Remote source and the files therein, you have two choices:
 
 1. Copy the remote CHM file/s locally.
 1. Implement the fix described below.
@@ -46,11 +46,11 @@ It was only really when I discovered these meanings that the next step fell into
 
 The solution then is to ensure that the *MaxAllowedZone* is set to a value of *1* and to ensure that your network path is added into the *Local Intranet Zone* and we do this through Internet Explorer:
 
-1. Select *Internet Options* via it’s Tools menu (Alt+x).
+1. Select *Internet Options* via it's Tools menu (Alt+x).
 1. Click the *Security* tab and click on the *Local Intranet Zone*.
 1. Next click the *Sites* button and then click the *Advanced* button from the *Local intranet* dialog.
-1. Ensure that you deselect *Require server verification (https:) for all sites in this zone* option.
-1. Finally all you need to do is type the path to your network drive. In my case I have mapped the network path to my *Z:\\* drive, so I simply type Z:\ in the “Add this website to the zone:” textbox. The path will be resolved to its real hostname.
+1. Ensure that you deselect *Require server verification (https🙂 for all sites in this zone* option.
+1. Finally all you need to do is type the path to your network drive. In my case I have mapped the network path to my *Z:\\* drive, so I simply type Z:\ in the "Add this website to the zone:" textbox. The path will be resolved to its real hostname.
 1. Click the *Close* button and click any resulting *OK* buttons and close Internet Explorer.
 
 ![Internet Options](/images/2014/sites.png)

@@ -48,7 +48,7 @@ Just looking at the whole transaction statement you would assume that since arou
 
 ![No escalation](/images/2012/locks2.jpg)
 
-As you can see, escalation hasn’t happened. This can however be explained by the statement I made earlier, that escalation will occur if the threshold is exceeded for a single statement on a single resource. I have performed tests and found that there does not appear to be any upper limited on the number of locks you can take on a single resource as long as each statement does not break the threshold and the memory threshold is not broken.
+As you can see, escalation hasn't happened. This can however be explained by the statement I made earlier, that escalation will occur if the threshold is exceeded for a single statement on a single resource. I have performed tests and found that there does not appear to be any upper limited on the number of locks you can take on a single resource as long as each statement does not break the threshold and the memory threshold is not broken.
 
 So now let us try to get escalation occurring. We shall first execute the following in the same transaction:
 
@@ -74,7 +74,7 @@ When I first saw this escalation behavior I was of the opinion that it was indee
 You could argue that perhaps SQL Server should have an optimization to cumulatively add the total number of locks owned by a SPID on a resource and compare this figure against the threshold limit, but I assume the Database Engine team must have ruled that out for concurrency optimization.
 
 Can you use this oddity in a useful way? Perhaps...
-Lets assume you need to perform a large data set change on a very large table or partition which is highly active. The data must be changed and performed whilst your environment is live, but you wish to minimize the impact to the table’s concurrency. (I should also add here as an aside that escalation is not guaranteed if incompatible locks exist when it is attempted, but do you really want to run the risk that it could happen in this proposed scenario?)
+Lets assume you need to perform a large data set change on a very large table or partition which is highly active. The data must be changed and performed whilst your environment is live, but you wish to minimize the impact to the table's concurrency. (I should also add here as an aside that escalation is not guaranteed if incompatible locks exist when it is attempted, but do you really want to run the risk that it could happen in this proposed scenario?)
 
 Your first thought may be to change the data in batches, but perhaps you require that the whole operation is transitionally consistent? All of the dataset is updated OR it is not.
 
@@ -84,4 +84,4 @@ In this situation you could break down the updates into logical statement batche
 
 # One Final Note
 
-Hopefully this post has demonstrated that SQL Server mechanisms do not always work the way you expect (or have read in a book). With a little bit of testing and observation, it is usually possible to understand what is really going on. So don’t delay and dive into your test environment!
+Hopefully this post has demonstrated that SQL Server mechanisms do not always work the way you expect (or have read in a book). With a little bit of testing and observation, it is usually possible to understand what is really going on. So don't delay and dive into your test environment!

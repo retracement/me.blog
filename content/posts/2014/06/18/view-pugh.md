@@ -6,7 +6,7 @@ categories = ['Technology']
 tags = ['SQL']
 +++
 
-It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn’t know about. Some of it good and some of it bad, some of it just meh...
+It never ceases to amaze me that there is always that little bit of SQL Server functionality that you didn't know about. Some of it good and some of it bad, some of it just meh...
 
 The other day I was stumbling around a new environment, when I decided to use the GUI to script out an existing set of views when I saw something that had me scratching my head. Underneath the actual view definition was the following (some names removed to protect the innocent).
 
@@ -143,4 +143,4 @@ EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPaneCount',
 GO
 ```
 
-So after a few tests it turns out that when you create SQL Server Views using the SQL Server Management Studio View Designer, SSMS automatically generates and adds these properties to the view behind the scenes to aid the Designer for re-editing purposes. Please bear this in mind when generating scripts for deployment into your staging environments, whilst there doesn’t appear to be any performance drawbacks to this extra meta-data, it is messy and (imho) not best practice to redeploy into production.
+So after a few tests it turns out that when you create SQL Server Views using the SQL Server Management Studio View Designer, SSMS automatically generates and adds these properties to the view behind the scenes to aid the Designer for re-editing purposes. Please bear this in mind when generating scripts for deployment into your staging environments, whilst there doesn't appear to be any performance drawbacks to this extra meta-data, it is messy and (imho) not best practice to redeploy into production.

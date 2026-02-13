@@ -18,7 +18,7 @@ Upon taking my seat on the plane, I am surprisingly joined by Richard Douglas ([
 
 Upon landing and arriving into the City of Seattle, I dropped my bags off and headed with Richard to my favorite Starbucks ([Starbucks Reserve Roastery & Tasting Room](https://roastery.starbucks.com/)) but my GPS was playing tricks on us, and we got slightly more exercise climbing hills than is advisable for someone of my fitness. After consuming a spiffingly good cup of coffee we headed to the [Taphouse](https://taphousegrill.com/) for a bite to eat and to watch the [Washington Huskies](https://www.gohuskies.com/index.aspx) versus the [Oregon State Beavers](https://osubeavers.com/sports/football) on TV in which the Huskies completely dominated the match and ended up winning 41 to 17.
 
-Finally, to end the day, I headed back to my room to continue working on my Thursday Summit Session for a few hours. I’ve got a lot of work still to do on it, but I’m not panicking... yet!
+Finally, to end the day, I headed back to my room to continue working on my Thursday Summit Session for a few hours. I've got a lot of work still to do on it, but I'm not panicking... yet!
 
 ---
 

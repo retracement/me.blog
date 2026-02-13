@@ -6,7 +6,7 @@ categories = ['Technology']
 tags = ['Dotnet','SQL','SSIS']
 +++
 
-I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a “Bitesize” series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run...
+I hate SSIS. It seems to me that it is full of certain nuances and unless you are regularly developing SSIS packages, they are easy to forget or it is easy to miss specific important steps. I first started using SSIS back in 2005 when it was directly introduced to replace DTS, but even today I am constantly going around in circles whenever I have to return to write certain functionality.Therefore I have decided to put together a "Bitesize" series of posts that encapsulate simple operations in order to help not just you, but more importantly remind me! Hopefully this will save me time in the long run...
 
 ---
 
@@ -38,7 +38,7 @@ Now you have the Variables pane visible, simply click on the *Add variable* butt
 
 This is one of those operations which might not be obvious to anyone returning back to SSIS after any length of time but SSIS variables are not available to Script Tasks unless you explicitly declare them to the Script Task (yes I know they are declared to the package, but the script task needs to know that you want to use them and how).
 
-If you don’t and attempt to use them you will see something like this...
+If you don't and attempt to use them you will see something like this...
 
 ![error](/images/2015/error.jpg)
 
@@ -92,11 +92,11 @@ Once you have finished writing your code block you may save your code and close 
 
 ---
 
-To be honest, that is all there really is to using SSIS variables within a script task.  I hope this has been a useful post for you, but at very least I won’t keep forgetting!
+To be honest, that is all there really is to using SSIS variables within a script task.  I hope this has been a useful post for you, but at very least I won't keep forgetting!
 
 ---
 
 ![extendingssis](/images/2015/extendingssis.webp)
 
-Want more Bitesize SSIS tips? Then keep an eye open for the other posts in the series and if you cannot wait until then, you might want to take a look at my good friend Régis Baccaro’s new book [Extending SSIS with .NET Scripting](https://www.apress.com/9781484206393) which is out now through [Apress](https://www.apress.com/). And for those who are curious, No he didn’t give me a free copy!
+Want more Bitesize SSIS tips? Then keep an eye open for the other posts in the series and if you cannot wait until then, you might want to take a look at my good friend Régis Baccaro's new book [Extending SSIS with .NET Scripting](https://www.apress.com/9781484206393) which is out now through [Apress](https://www.apress.com/). And for those who are curious, No he didn't give me a free copy!
 

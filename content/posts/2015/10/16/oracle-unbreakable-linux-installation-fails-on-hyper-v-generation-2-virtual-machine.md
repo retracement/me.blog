@@ -62,8 +62,8 @@ Immediately I tried installing to a generation 1 VM and it ran through smoothly 
 Set-VMFirmware –VMName "VMname" -EnableSecureBoot Off
 ```
 
-The next time the machine boots, the installer should automatically launch (and if it isn’t clear already, you must leave secure boot disabled post install).
+The next time the machine boots, the installer should automatically launch (and if it isn't clear already, you must leave secure boot disabled post install).
 
 ![installing](/images/2015/installing.jpg)
 
-For more information on this subject see [Oracle Linux virtual machines on Hyper-V](https://technet.microsoft.com/en-GB/library/dn609828.aspx) and visit [What’s New in Hyper-V for Windows Server 2012 R2](https://technet.microsoft.com/en-gb/library/dn282278.aspx) for and in-depth discussion of Hyper-V new features in Windows 2012 R2.
+For more information on this subject see [Oracle Linux virtual machines on Hyper-V](https://technet.microsoft.com/en-GB/library/dn609828.aspx) and visit [What's New in Hyper-V for Windows Server 2012 R2](https://technet.microsoft.com/en-gb/library/dn282278.aspx) for and in-depth discussion of Hyper-V new features in Windows 2012 R2.
