@@ -119,11 +119,11 @@ New-Cluster -Name magrathea -node server5,server6,server7 -staticaddress 192.168
 <p>At line:1 char:1</p>
 <p>+ New-Cluster -Name magrathea -node server5,server6,server7 -staticaddress &hellip;</p>
 <p>+ ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</p>
-<p>+ CategoryInfo : ConnectionError: (:) [New-Cluster], ClusterCmdletException</p>
+<p>+ CategoryInfo : ConnectionError: (🙂 [New-Cluster], ClusterCmdletException</p>
 <p>+ FullyQualifiedErrorId : ClusterNodeNotReachable,Microsoft.FailoverClusters.PowerShell.NewClusterCommand</p>
 </blockquote>
 <p><img src="/images/2017/create-cluster.webp" alt="Cluster create error"></p>
-<p>Ok, so the problem is obvious, isn’t it? You have misconfigured the node IP address, Firewall is blocking, or even Remote Administration is disabled. Let’s create the Cluster with only server5 and server6 and then try adding server7.</p>
+<p>Ok, so the problem is obvious, isn&rsquo;t it? You have misconfigured the node IP address, Firewall is blocking, or even Remote Administration is disabled. Let&rsquo;s create the Cluster with only server5 and server6 and then try adding server7.</p>
 <p>We then get this error:</p>
 <blockquote>
 <p>Add-ClusterNode : Failed to access remote registry on &lsquo;server7.hitchhikers.galaxy&rsquo;.  Ensure that the remote registry service is running, and have remote administration enabled.
@@ -131,10 +131,10 @@ The network path was not found.
 At line:1 char:1
 + Add-ClusterNode -Name server7 -Cluster magrathea
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-+ CategoryInfo          : NotSpecified: (:) [Add-ClusterNode], ClusterCmdletException
++ CategoryInfo          : NotSpecified: (🙂 [Add-ClusterNode], ClusterCmdletException
 + FullyQualifiedErrorId : Add-ClusterNode,Microsoft.FailoverClusters.PowerShell.AddClusterNodeCommand</p>
 </blockquote>
-<p>The error message is even more damming this time, and it is fairly clear you must have forgotten to enable remote administration -except you haven’t. In fact, nothing seems wrongly configured with the node and everything looks identical to server5 and server6.</p>
+<p>The error message is even more damming this time, and it is fairly clear you must have forgotten to enable remote administration -except you haven&rsquo;t. In fact, nothing seems wrongly configured with the node and everything looks identical to server5 and server6.</p>
 <p>This time you decide to try adding the node directly from the problem server itself:</p>
 <blockquote>
 <p>Add-ClusterNode : The term &lsquo;Add-ClusterNode&rsquo; is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
@@ -147,7 +147,7 @@ At line:1 char:1
 <p>Finally, all becomes clear! This time the error message fails, stating that the <code>Add-ClusterNode</code> cmdlet is not available and it is obvious that you have forgotten to install the <em>Failover-Clustering</em> feature on this node (doh!).</p>
 <p>From the node in question we run the following in Powershell:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsFeature Failover-Clustering|Add-WindowsFeature
-</span></span></code></pre></div><p>Once installed, it is time to try again…</p>
+</span></span></code></pre></div><p>Once installed, it is time to try again&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Add-ClusterNode -Name server7 -Cluster magrathea
 </span></span></code></pre></div><p>Let&rsquo;s query the cluster node:</p>
 <p><img src="/images/2016/get-clusternode.png" alt="Get-Clusternode"></p>

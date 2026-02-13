@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © {year} Mark Broadbent</copyright>
-    <lastBuildDate>Fri, 07 Apr 2017 12:34:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 14 Mar 2018 13:00:00 +0100</lastBuildDate>
     <atom:link href="https://tenbulls.co.uk/tags/general-tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading very BIG text files using PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/03/14/reading-big-text-files-using-ps/</link>
+      <pubDate>Wed, 14 Mar 2018 13:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/03/14/reading-big-text-files-using-ps/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2018/big.jpg&#34; alt=&#34;Big&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I frequently have to troubleshoot a variety of data feeds (populated from very very large files) which are regularly ingested into SQL Server for reporting and data validation purposes. From time to time, these feeds break due to malformed or invalid data provided by the third parties, and often due to the size of the files and limitations of third-party text file applications, loading them into a text file viewer is not possible.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Moving lost applications back into your Desktop on Windows</title>
       <link>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</link>

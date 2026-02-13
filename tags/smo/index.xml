@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SMO on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/smo/</link>
+    <description>Recent content in SMO on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Thu, 02 Aug 2018 12:14:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/smo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manipulating SQL Agent Jobs through PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/</link>
+      <pubDate>Thu, 02 Aug 2018 12:14:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/</guid>
+      <description>&lt;p&gt;In our last post titled &lt;a href=&#34;https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell&#34;&gt;Loading and using SQL Server Management Objects in PowerShell&lt;/a&gt;, we demonstrated how to load and consume SQL Server Management Objects in PowerShell, which then allows us to access your SQL instance through an SMO instance object. Please make sure you read that post before continuing.&lt;/p&gt;&#xA;&lt;p&gt;In this specific post, we will demonstrate and walk through how to use PSH and SMO to view and change SQL Agent jobs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loading and using SQL Server Management Objects in PowerShell</title>
+      <link>https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell/</link>
+      <pubDate>Wed, 01 Aug 2018 17:37:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell/</guid>
+      <description>&lt;p&gt;I recently came across a snippet of code I had written for a client several years ago – one of those &amp;ldquo;by the way, how would you do this&amp;rdquo; type of requests. On the face of it, the task at hand seemed fairly simple to deliver since they wanted to query SQL Server Agent jobs through PowerShell. But because they also wanted to be able to change the SQL Server Agent jobs using PowerShell, I decided that the simplest way would be to programmatically access these jobs as Objects thereby providing &lt;em&gt;Methods&lt;/em&gt; to call and &lt;em&gt;Properties&lt;/em&gt; that can be easily returned or changed through their &lt;em&gt;get&lt;/em&gt; and &lt;em&gt;set&lt;/em&gt; accessors.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

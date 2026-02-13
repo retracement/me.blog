@@ -116,13 +116,52 @@
     <loc>https://tenbulls.co.uk/posts/2018/11/01/create-multiple-dashboards-in-the-azure-portal/</loc>
     <lastmod>2018-11-01T10:12:00+01:00</lastmod>
   </url><url>
+    <loc>https://tenbulls.co.uk/posts/2018/10/01/custom-schedule-exceptions-for-sql-jobs-using-powershell/</loc>
+    <lastmod>2018-10-01T17:07:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/sql/</loc>
+    <lastmod>2018-10-01T17:07:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2018/09/01/in-memory-logging-and-log-compression/</loc>
+    <lastmod>2018-09-01T14:38:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/in-memory-oltp/</loc>
+    <lastmod>2018-09-01T14:38:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/transaction-log/</loc>
+    <lastmod>2018-09-01T14:38:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/dotnet/</loc>
+    <lastmod>2018-08-02T12:14:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/</loc>
+    <lastmod>2018-08-02T12:14:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/smo/</loc>
+    <lastmod>2018-08-02T12:14:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2018/08/01/loading-and-using-sql-server-management-objects-in-powershell/</loc>
+    <lastmod>2018-08-01T17:37:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/general-tips/</loc>
+    <lastmod>2018-03-14T13:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2018/03/14/reading-big-text-files-using-ps/</loc>
+    <lastmod>2018-03-14T13:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/docker/</loc>
+    <lastmod>2018-02-06T19:27:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/installation/</loc>
+    <lastmod>2018-02-06T19:27:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/posts/2018/02/installing-docker-on-linux-mint/</loc>
+    <lastmod>2018-02-06T19:27:00+01:00</lastmod>
+  </url><url>
     <loc>https://tenbulls.co.uk/posts/2017/10/19/4-days-of-dockercon-day-4/</loc>
     <lastmod>2017-10-19T19:12:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/community/</loc>
-    <lastmod>2017-10-19T19:12:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/docker/</loc>
     <lastmod>2017-10-19T19:12:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/dockercon/</loc>
@@ -161,16 +200,10 @@
     <loc>https://tenbulls.co.uk/tags/query/</loc>
     <lastmod>2017-08-02T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/sql/</loc>
-    <lastmod>2017-08-02T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/posts/2017/08/02/using-conditional-counts/</loc>
     <lastmod>2017-08-02T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2017/07/18/compressing-files-from-the-ssis-script-task/</loc>
-    <lastmod>2017-07-18T15:10:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/dotnet/</loc>
     <lastmod>2017-07-18T15:10:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/tags/ssis/</loc>
@@ -182,9 +215,6 @@
     <loc>https://tenbulls.co.uk/posts/2017/04/21/back-in-the-big-apple/</loc>
     <lastmod>2017-04-21T17:52:00+01:00</lastmod>
   </url><url>
-    <loc>https://tenbulls.co.uk/tags/installation/</loc>
-    <lastmod>2017-04-18T10:32:00+01:00</lastmod>
-  </url><url>
     <loc>https://tenbulls.co.uk/tags/samba/</loc>
     <lastmod>2017-04-18T10:32:00+01:00</lastmod>
   </url><url>
@@ -193,9 +223,6 @@
   </url><url>
     <loc>https://tenbulls.co.uk/tags/windows/</loc>
     <lastmod>2017-04-18T10:32:00+01:00</lastmod>
-  </url><url>
-    <loc>https://tenbulls.co.uk/tags/general-tips/</loc>
-    <lastmod>2017-04-07T12:34:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2017/04/07/moving-lost-applications-back-into-your-desktop-on-windows/</loc>
     <lastmod>2017-04-07T12:34:00+01:00</lastmod>
@@ -793,6 +820,9 @@
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2010/05/13/windows-7-install-sit-back-and-watch/</loc>
     <lastmod>2010-05-13T20:17:00+01:00</lastmod>
+  </url><url>
+    <loc>https://tenbulls.co.uk/tags/citrix/</loc>
+    <lastmod>2010-05-12T20:53:00+01:00</lastmod>
   </url><url>
     <loc>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</loc>
     <lastmod>2010-05-12T20:53:00+01:00</lastmod>

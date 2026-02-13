@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Citrix on tenbulls blog</title>
+    <link>https://tenbulls.co.uk/tags/citrix/</link>
+    <description>Recent content in Citrix on tenbulls blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © {year} Mark Broadbent</copyright>
+    <lastBuildDate>Wed, 12 May 2010 20:53:00 +0100</lastBuildDate>
+    <atom:link href="https://tenbulls.co.uk/tags/citrix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing the Citrix client on Linux</title>
+      <link>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</link>
+      <pubDate>Wed, 12 May 2010 20:53:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/posts/2010/05/12/installing-citrix-client-on-linuxcertify-your-client/</guid>
+      <description>&lt;p&gt;The first step of installing Citrix client on your Linux machine is to first obtain the package. From Citrix&amp;rsquo;s website download the tarball of the Citrix Receiver.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix1.jpg&#34; alt=&#34;Citrix clients&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Extract the tarball&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix2.jpg&#34; alt=&#34;Extract&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip;and run the setupwfc executable. Select the first menu item to start the installer, and keep defaults. Once the installer has completed, exit the installer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://tenbulls.co.uk/images/2010/citrix3.jpg&#34; alt=&#34;Run setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once complete you should try launching a published Citrix Application. At this stage you will probably encounter a client error message &lt;em&gt;&amp;ldquo;You have not chosen to trust &amp;ldquo;&amp;rdquo;, the issuer of the server&amp;rsquo;s security certificate (SSL error 61).&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

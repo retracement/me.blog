@@ -107,7 +107,7 @@ I wanted to write a very quick post in order to explain the very simple steps yo
       
       <article>
         <p>The Azure CLI (or Azure Command Line Interface) allows provides an easy way to create and manage your Azure resources on macOS, Linux, and Windows. If you (like me) are using Linux and wish to use and control <a href="https://portal.azure.com">Microsoft Azure</a> easily through the command line, then it is probably something you should have.</p>
-<p>I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an <a href="https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives">Ubuntu derivative distribution</a> such as <a href="https://linuxmint.com/">Linux Mint</a>. Microsoft’s basic installation guide <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest">Install Azure CLI with apt</a> has one specific problem for those distros, so let’s take a look at the Ubuntu section of that guide:</p>
+<p>I wanted to write a very quick post in order to explain the very simple steps you must follow to get the Azure CLI working for you if are using an <a href="https://en.wikipedia.org/wiki/Category:Ubuntu_derivatives">Ubuntu derivative distribution</a> such as <a href="https://linuxmint.com/">Linux Mint</a>. Microsoft&rsquo;s basic installation guide <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest">Install Azure CLI with apt</a> has one specific problem for those distros, so let&rsquo;s take a look at the Ubuntu section of that guide:</p>
 <p><img src="/images/2018/installazurecli.png" alt="Install Azure CLI"></p>
 <p>If you run steps 1 to 3 you will not observe a problem at the time of execution but will hit an error on running the first line of step 4. We see the following error:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Ign:13 https://packages.microsoft.com/repos/azure-cli serena/main Translation-en
@@ -130,8 +130,8 @@ I wanted to write a very quick post in order to explain the very simple steps yo
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>AZ_REPO<span style="color:#f92672">=</span>xenial
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ </span>$AZ_REPO<span style="color:#e6db74"> main&#34;</span> | <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>    sudo tee /etc/apt/sources.list.d/azure-cli.list
-</span></span></code></pre></div><p>And that’s it, once the right package base has been corrected, you can rerun the step 4 script which should no longer error. Azure CLI is now ready for you to manage and deploy your Azure resources from your lovely Linux Ubuntu derivative distribution! Check out <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage">Common Azure CLI commands for managing Azure resources</a> for some guidance on how to use it.</p>
-<p>I’ll give it a try and attempt to list all my Azure resource groups in tabular format:</p>
+</span></span></code></pre></div><p>And that&rsquo;s it, once the right package base has been corrected, you can rerun the step 4 script which should no longer error. Azure CLI is now ready for you to manage and deploy your Azure resources from your lovely Linux Ubuntu derivative distribution! Check out <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-manage">Common Azure CLI commands for managing Azure resources</a> for some guidance on how to use it.</p>
+<p>I&rsquo;ll give it a try and attempt to list all my Azure resource groups in tabular format:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>az group list --output table
 </span></span></code></pre></div><p>Which gives me:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Name                                      Location     Status
@@ -147,7 +147,7 @@ I wanted to write a very quick post in order to explain the very simple steps yo
 </span></span><span style="display:flex;"><span>stretchgroup-techdaysvm-northeurope       northeurope  Succeeded
 </span></span><span style="display:flex;"><span>techdays                                  northeurope  Succeeded
 </span></span><span style="display:flex;"><span>Testing                                   eastus       Succeeded
-</span></span></code></pre></div><p>As you can see, Azure CLI is very cool and you should start using it now, so don’t let minor configuration difficulties stop you!</p>
+</span></span></code></pre></div><p>As you can see, Azure CLI is very cool and you should start using it now, so don&rsquo;t let minor configuration difficulties stop you!</p>
 
       </article>
       

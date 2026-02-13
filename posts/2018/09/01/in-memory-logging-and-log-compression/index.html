@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://tenbulls.co.uk/favicon.ico" />
+<meta property="og:url" content="https://tenbulls.co.uk/posts/2018/09/01/in-memory-logging-and-log-compression/">
+  <meta property="og:site_name" content="tenbulls blog">
+  <meta property="og:title" content="In-Memory logging and log &#34;compression&#34;">
+  <meta property="og:description" content="Introduced with SQL Server 2014, In-Memory OLTP (IMOLTP) provided a new optimistic concurrency model which implemented a lockless and latchless mechanism resulting in far better throughput for short concurrent OLTP workloads. Unlike the traditional on-disk concurrency model, IMOLTP stores table data as data rows in-memory (rather than in-buffer page structures) and this data (or changes to it) will eventually be asynchronously written into checkpoint file pair structures on-disk. Given that the speed of physical disk is no longer a major consideration for the speed of data changes when compared against the traditional on-disk concurrency model, you would presume that we no longer need to worry too much about their performance. Unfortunately, we have something else to consider – the transaction log.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-09-01T14:38:00+01:00">
+    <meta property="article:modified_time" content="2018-09-01T14:38:00+01:00">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="In-Memory OLTP">
+    <meta property="article:tag" content="Transaction Log">
+
+<title>tenbulls blog | In-Memory logging and log &#34;compression&#34;</title>
+
+      <link rel="stylesheet" href="/css/main.min.9c8fd37ab394163a75f3b9f19662b76ee3aa3538a20e35f5c0abe36f677c8302.css" integrity="sha256-nI/TerOUFjp187nxlmK3buOqNTiiDjX1wKvjb2d8gwI=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/palette/default.min.98db41a18eb278705557b678b4ad23b154f0f60e0dc69d3672f24207a951505b.css" integrity="sha256-mNtBoY6yeHBVV7Z4tK0jsVTw9g4Nxp02cvJCB6lRUFs=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
+      <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/about"
+        
+      >about</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/"
+        
+      >home</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="https://www.meetup.com/hybrid-virtual-group/"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >meetup</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >posts</a>
+      
+    </li>
+    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+      <a href="/tags"
+        
+      >tags</a>
+      
+    </li>
+      </ol>
+    </div>
+  </nav>
+
+    </div>
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">In-Memory logging and log &#34;compression&#34;</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              
+              <time datetime="2018-09-01T14:38:00&#43;01:00">September 1, 2018</time>
+            </li>
+            
+            
+            <li class="breadcrumb-item small">
+              6 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      
+      <article>
+        <p>Introduced with SQL Server 2014, In-Memory OLTP (IMOLTP) provided a new optimistic concurrency model which implemented a lockless and latchless mechanism resulting in far better throughput for short concurrent OLTP workloads. Unlike the traditional on-disk concurrency model, IMOLTP stores table data as data rows in-memory (rather than in-buffer page structures) and this data (or changes to it) will eventually be asynchronously written into checkpoint file pair structures on-disk. Given that the speed of physical disk is no longer a major consideration for the speed of data changes when compared against the traditional on-disk concurrency model, you would presume that we no longer need to worry too much about their performance. Unfortunately, we have something else to consider – the transaction log.</p>
+<p>The transaction log is almost certainly going to become your biggest concern for potential bottlenecks with databases enabled for IMOLTP since (for <a href="https://docs.microsoft.com/en-us/sql/relational-databases/in-memory-oltp/defining-durability-for-memory-optimized-objects">SCHEMA_AND_DATA</a> In-Memory tables at least) the transaction log is still required to persist transaction log records for durability purposes. In other words, under default behavior, even In-Memory transaction log records must be flushed and written to the transaction log when those transactions commit.</p>
+<p>Luckily IMOLTP provides several logging benefits including the following:</p>
+<ul>
+<li>No index logging overhead. Only index definitions are persisted meaning that they are rebuilt upon database recovery (should that happen!)</li>
+<li>No undo logging overhead. Undo is unnecessary because In-Memory data structures are not overwritten and instead, new structures are created (on commit, the old structures are marked for garbage collection). Rollback, therefore, only requires the old structures to remain.</li>
+<li>Log record ordering by Transaction End Timestamp. This removes the requirement for a single log stream (implemented in SQL 2016).</li>
+<li>Log record &ldquo;compression&rdquo;. We will examine this in more detail below.</li>
+</ul>
+<h1 id="log-record-compression">Log record &ldquo;compression&rdquo;</h1>
+<p>It is perhaps important to highlight the fact that the term Log record <em>&ldquo;compression&rdquo;</em> is something that I have coined myself, and may or may not be the correct or official term for this feature. However, I have not managed to find any official terminology for it to date, but after reading further I think it will become clear why I am using it. Before we do that, first let&rsquo;s examine logging with on-disk tables.</p>
+<p><strong>Logging with on-disk tables</strong></p>
+<p>I will first create a simple table called <em>Assimilations</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> Assimilations
+</span></span><span style="display:flex;"><span>    (id INT <span style="color:#66d9ef">IDENTITY</span>,
+</span></span><span style="display:flex;"><span>    assimilation_date datetime <span style="color:#66d9ef">DEFAULT</span> getdate(),
+</span></span><span style="display:flex;"><span>    NewBorg INT,
+</span></span><span style="display:flex;"><span>    Details CHAR (<span style="color:#ae81ff">50</span>));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>Next we will execute a multi-statement transaction:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span> TRAN
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> Assimilations (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> Assimilations (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">15</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> Assimilations (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> Assimilations (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">7</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COMMIT</span>
+</span></span></code></pre></div><p>This committed transaction&rsquo;s log records should now be available to query using fn.dblog. We first find the most recent transaction id in the log for our operation, and then use that to pull back all log records for it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>TransactionID NVARCHAR(<span style="color:#ae81ff">14</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>CurrentLSN NVARCHAR(<span style="color:#ae81ff">23</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> TOP <span style="color:#ae81ff">1</span> <span style="color:#f92672">@</span>TransactionID <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        [<span style="color:#66d9ef">Transaction</span> ID], <span style="color:#f92672">@</span>CurrentLSN <span style="color:#f92672">=</span> [<span style="color:#66d9ef">Current</span> LSN]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span>    sys.fn_dblog(<span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">WHERE</span>   <span style="color:#66d9ef">Operation</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;LOP_INSERT_ROWS&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> [<span style="color:#66d9ef">Current</span> LSN] <span style="color:#66d9ef">DESC</span>;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>  [<span style="color:#66d9ef">Current</span> LSN], [<span style="color:#66d9ef">Operation</span>], [<span style="color:#66d9ef">Transaction</span> ID]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span>    sys.fn_dblog(<span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">WHERE</span>   [<span style="color:#66d9ef">Transaction</span> ID] <span style="color:#f92672">=</span> <span style="color:#f92672">@</span>TransactionID
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> [<span style="color:#66d9ef">Current</span> LSN] <span style="color:#66d9ef">ASC</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>This returns the following results:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Current LSN             Operation         Transaction ID
+</span></span><span style="display:flex;"><span>----------------------- ----------------- --------------
+</span></span><span style="display:flex;"><span>00000024:00000378:0001  LOP_BEGIN_XACT    0000:00000384
+</span></span><span style="display:flex;"><span>00000024:00000378:0002  LOP_INSERT_ROWS   000:00000384
+</span></span><span style="display:flex;"><span>00000024:00000378:0003  LOP_INSERT_ROWS   0000:00000384
+</span></span><span style="display:flex;"><span>00000024:00000378:0004  LOP_INSERT_ROWS   000:00000384
+</span></span><span style="display:flex;"><span>00000024:00000378:0005  LOP_INSERT_ROWS   0000:00000384
+</span></span><span style="display:flex;"><span>00000024:00000378:0006  LOP_COMMIT_XACT   0000:00000384
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>(6 rows affected)
+</span></span></code></pre></div><p>As you can see, we have a total of six log records returned. The first being the transaction <code>BEGIN</code> log record followed by four <code>INSERT</code> log records and terminating with one <code>COMMIT</code> log record. You will see that these quite obviously align with our transactional statements.</p>
+<p><strong>Logging with In-Memory tables</strong></p>
+<p>For this example I will create a similar but basic IMOLTP table called <em>AssimilationsIM</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> AssimilationsIM
+</span></span><span style="display:flex;"><span>    (id INT <span style="color:#66d9ef">IDENTITY</span> <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> NONCLUSTERED HASH
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">WITH</span> (BUCKET_COUNT<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>    Assimilation_Date datetime <span style="color:#66d9ef">DEFAULT</span> getdate(),
+</span></span><span style="display:flex;"><span>    NewBorg INT,
+</span></span><span style="display:flex;"><span>    Details CHAR (<span style="color:#ae81ff">50</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">WITH</span> (MEMORY_OPTIMIZED<span style="color:#f92672">=</span><span style="color:#66d9ef">ON</span>,
+</span></span><span style="display:flex;"><span>    DURABILITY <span style="color:#f92672">=</span> SCHEMA_AND_DATA)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>And of course we still need to execute a multi-statement transaction (as before) but this time inserting values into our new in-memory table:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">BEGIN</span> TRAN
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> AssimilationsIM (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> AssimilationsIM (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">15</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> AssimilationsIM (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> AssimilationsIM (assimilation_date, NewBorg)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">VALUES</span> (GETDATE(), <span style="color:#ae81ff">7</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COMMIT</span>
+</span></span></code></pre></div><p>Again our committed transaction&rsquo;s log records should now be available to query using <code>fn.dblog</code>. As before we first find the most recent transaction id in the log for our operation (this time we are looking for the <em>LOP_HK</em> operation rather than the <em>LOP_INSERT_ROWS</em> operation), and then use that to pull back all log records for it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>TransactionID NVARCHAR(<span style="color:#ae81ff">14</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">DECLARE</span> <span style="color:#f92672">@</span>CurrentLSN NVARCHAR(<span style="color:#ae81ff">23</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> TOP <span style="color:#ae81ff">1</span> <span style="color:#f92672">@</span>TransactionID <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        [<span style="color:#66d9ef">Transaction</span> ID], <span style="color:#f92672">@</span>CurrentLSN <span style="color:#f92672">=</span> [<span style="color:#66d9ef">Current</span> LSN]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span>    sys.fn_dblog(<span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">WHERE</span>   <span style="color:#66d9ef">Operation</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;LOP_HK&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> [<span style="color:#66d9ef">Current</span> LSN] <span style="color:#66d9ef">DESC</span>;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">@</span>TransactionID <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;[Transaction ID]&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">@</span>CurrentLSN <span style="color:#66d9ef">AS</span> <span style="color:#e6db74">&#39;[Current LSN]&#39;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>  <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span>    sys.fn_dblog(<span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">WHERE</span>   [<span style="color:#66d9ef">Transaction</span> ID] <span style="color:#f92672">=</span> <span style="color:#f92672">@</span>TransactionID
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> [<span style="color:#66d9ef">Current</span> LSN] <span style="color:#66d9ef">ASC</span>;
+</span></span></code></pre></div><p>Interestingly this now returns the following results:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Current LSN             Operation         Transaction ID
+</span></span><span style="display:flex;"><span>----------------------- ----------------- --------------
+</span></span><span style="display:flex;"><span>00000024:00000478:0002  LOP_BEGIN_XACT    0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  LOP_HK            0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0004  LOP_COMMIT_XACT   0000:00000396
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>(3 rows affected)
+</span></span></code></pre></div><p>This time, we have a total of three log records returned. The first and last being the transaction <code>BEGIN</code> and <code>COMMIT</code> log records as before, but now we have a single log record sandwiched in-between. We can use an undocumented in-memory function (<code>fn_dblog_xtp</code>) to break this record open based up our transaction id:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">Current</span> LSN],
+</span></span><span style="display:flex;"><span>    operation_desc,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Operation</span>,
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">Transaction</span> ID]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">FROM</span>    sys.fn_dblog_xtp(<span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">WHERE</span>   [<span style="color:#66d9ef">Current</span> LSN] <span style="color:#f92672">=</span> <span style="color:#f92672">@</span>CurrentLSN
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> [<span style="color:#66d9ef">Current</span> LSN] <span style="color:#66d9ef">ASC</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GO</span>
+</span></span></code></pre></div><p>This now yields the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Current LSN             operation_desc      Operation    Transaction ID
+</span></span><span style="display:flex;"><span>----------------------- ------------------- ------------ --------------
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  HK_LOP_BEGIN_TX     LOP_HK       0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  HK_LOP_UPDATE_ROW   LOP_HK       0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  HK_LOP_INSERT_ROW   LOP_HK       0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  HK_LOP_INSERT_ROW   LOP_HK       0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  HK_LOP_INSERT_ROW   LOP_HK       0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  HK_LOP_INSERT_ROW   LOP_HK       0000:00000396
+</span></span><span style="display:flex;"><span>00000024:00000478:0003  HK_LOP_COMMIT_TX    LOP_HK       0000:00000396
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>(7 rows affected)
+</span></span></code></pre></div><p>We can now see the same number of <code>BEGIN</code>, <code>INSERT</code>, and <code>COMMIT</code> log records as with the on-disk transaction. This means that IMOLTP has somehow <em>&ldquo;compressed&rdquo;</em> our multiple log records into one single log record. This is made possible by another optimization that we haven&rsquo;t yet mentioned, although it could have perhaps been inferred by the fact that <em>UNDO</em> is not logged. Basically, IMOLTP transactions do not cause any physical log IO until they have been committed and allows these multi-statement log records to be rolled into one.</p>
+<p>On a final note, I have yet to figure out what exactly the <em>HK_LOP_UPDATE_ROW</em> record is recording, but it is my suspicion that this is related to an internal meta operation or something to do with the hash index on the table. I may update this post when this mystery is solved.</p>
+<h1 id="summary">Summary</h1>
+<p>In summary, IMOLTP has many logging efficiencies baked into it out of the box. If the log file of your database is one of your biggest bottlenecks, then using this technology in the right situation could be a very good idea!</p>
+
+      </article>
+      
+  <div class="tags pb-4 pt-2">
+    
+    
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/sql/">SQL</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/in-memory-oltp/">In-Memory OLTP</a>
+        <a class="badge rounded-pill text-uppercase text-bg-secondary" href="/tags/transaction-log/">Transaction Log</a>
+  </div>
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://tenbulls.co.uk/posts/2018/08/02/manipulating-sql-agent-jobs-through-powershell/">
+            <span>previous: </span>
+            <span>Manipulating SQL Agent Jobs through PowerShell</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+        <a href="https://tenbulls.co.uk/posts/2018/10/01/custom-schedule-exceptions-for-sql-jobs-using-powershell/">
+            <span>next: </span>
+            <span>Custom Job scheduling, Remote queries, and avoiding false negatives using PowerShell and SQL Agent</span>
+        </a>
+        
+    </div>
+</div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        Copyright © 2026 Mark Broadbent
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

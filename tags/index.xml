@@ -45,17 +45,66 @@
       <description></description>
     </item>
     <item>
-      <title>Community</title>
-      <link>https://tenbulls.co.uk/tags/community/</link>
-      <pubDate>Thu, 19 Oct 2017 19:12:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/community/</guid>
+      <title>SQL</title>
+      <link>https://tenbulls.co.uk/tags/sql/</link>
+      <pubDate>Mon, 01 Oct 2018 17:07:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>In-Memory OLTP</title>
+      <link>https://tenbulls.co.uk/tags/in-memory-oltp/</link>
+      <pubDate>Sat, 01 Sep 2018 14:38:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/in-memory-oltp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transaction Log</title>
+      <link>https://tenbulls.co.uk/tags/transaction-log/</link>
+      <pubDate>Sat, 01 Sep 2018 14:38:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/transaction-log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://tenbulls.co.uk/tags/dotnet/</link>
+      <pubDate>Thu, 02 Aug 2018 12:14:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SMO</title>
+      <link>https://tenbulls.co.uk/tags/smo/</link>
+      <pubDate>Thu, 02 Aug 2018 12:14:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/smo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>General Tips</title>
+      <link>https://tenbulls.co.uk/tags/general-tips/</link>
+      <pubDate>Wed, 14 Mar 2018 13:00:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/general-tips/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
       <link>https://tenbulls.co.uk/tags/docker/</link>
-      <pubDate>Thu, 19 Oct 2017 19:12:00 +0100</pubDate>
+      <pubDate>Tue, 06 Feb 2018 19:27:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>https://tenbulls.co.uk/tags/installation/</link>
+      <pubDate>Tue, 06 Feb 2018 19:27:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/installation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Community</title>
+      <link>https://tenbulls.co.uk/tags/community/</link>
+      <pubDate>Thu, 19 Oct 2017 19:12:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/community/</guid>
       <description></description>
     </item>
     <item>
@@ -94,31 +143,10 @@
       <description></description>
     </item>
     <item>
-      <title>SQL</title>
-      <link>https://tenbulls.co.uk/tags/sql/</link>
-      <pubDate>Wed, 02 Aug 2017 12:00:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dotnet</title>
-      <link>https://tenbulls.co.uk/tags/dotnet/</link>
-      <pubDate>Tue, 18 Jul 2017 15:10:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>SSIS</title>
       <link>https://tenbulls.co.uk/tags/ssis/</link>
       <pubDate>Tue, 18 Jul 2017 15:10:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/ssis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Installation</title>
-      <link>https://tenbulls.co.uk/tags/installation/</link>
-      <pubDate>Tue, 18 Apr 2017 10:32:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/installation/</guid>
       <description></description>
     </item>
     <item>
@@ -133,13 +161,6 @@
       <link>https://tenbulls.co.uk/tags/windows/</link>
       <pubDate>Tue, 18 Apr 2017 10:32:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/windows/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>General Tips</title>
-      <link>https://tenbulls.co.uk/tags/general-tips/</link>
-      <pubDate>Fri, 07 Apr 2017 12:34:00 +0100</pubDate>
-      <guid>https://tenbulls.co.uk/tags/general-tips/</guid>
       <description></description>
     </item>
     <item>
@@ -462,6 +483,13 @@
       <link>https://tenbulls.co.uk/tags/certification/</link>
       <pubDate>Sat, 01 Jan 2011 23:59:00 +0100</pubDate>
       <guid>https://tenbulls.co.uk/tags/certification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citrix</title>
+      <link>https://tenbulls.co.uk/tags/citrix/</link>
+      <pubDate>Wed, 12 May 2010 20:53:00 +0100</pubDate>
+      <guid>https://tenbulls.co.uk/tags/citrix/</guid>
       <description></description>
     </item>
   </channel>

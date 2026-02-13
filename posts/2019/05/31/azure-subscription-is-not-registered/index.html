@@ -141,7 +141,7 @@ Microsoft.DevOps                NotRegistered
 Microsoft.DigitalTwins          NotRegistered
 Microsoft.DocumentDB            NotRegistered
 Microsoft.DomainRegistration    NotRegistered
-</code></pre><p>Notice that the Microsoft.DocumentDB namespace is disabled. If you are wondering, DocumentDB was the precursor name of the Cosmos DB SQL API (before Cosmos DB supported multiple APIs). Like many other Microsoft products, early names tend to stick with the products :).</p>
+</code></pre><p>Notice that the Microsoft.DocumentDB namespace is disabled. If you are wondering, DocumentDB was the precursor name of the Cosmos DB SQL API (before Cosmos DB supported multiple APIs). Like many other Microsoft products, early names tend to stick with the products 🙂.</p>
 <p>To register this namespace we can simply run the following line of code against the subscription using the <a href="https://docs.microsoft.com/en-us/powershell/module/az.resources/register-azresourceprovider?view=azps-3.6.1">Register-AzResourceProvider</a> cmdlet.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Register-AzResourceProvider -ProviderNamespace Microsoft.DocumentDB
 </span></span></code></pre></div><p>The following output is returned:</p>
